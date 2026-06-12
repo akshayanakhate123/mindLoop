@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { useLocalStorage } from "../hooks/useLocalStorage";
@@ -19,7 +19,7 @@ interface TranscriptEntry {
   editing: boolean;
 }
 
-export default function QuestionPage() {
+function QuestionPageInner() {
   const [transcriptEntries, setTranscriptEntries] = useState<TranscriptEntry[]>([]);
   const [liveText, setLiveText] = useState("");
   const liveTextRef = useRef("");
@@ -759,5 +759,13 @@ export default function QuestionPage() {
         <span className={styles.bottomBannerTarget}><Target size={20} /></span>
       </motion.div>
     </div>
+  );
+}
+
+export default function QuestionPage() {
+  return (
+    <Suspense fallback={null}>
+      <QuestionPageInner />
+    </Suspense>
   );
 }
