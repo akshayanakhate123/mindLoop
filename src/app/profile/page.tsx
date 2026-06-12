@@ -115,6 +115,10 @@ export default function ProfilePage() {
   const [mounted, setMounted] = useState(false);
   const [showApiKey, setShowApiKey] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [memberSince, setMemberSince] = useState<string | null>(null);
+  const [userTimezone] = useState(() =>
+    typeof window !== "undefined" ? Intl.DateTimeFormat().resolvedOptions().timeZone : "UTC"
+  );
   const router = useRouter();
 
   useEffect(() => {
@@ -128,6 +132,26 @@ export default function ProfilePage() {
     loadSessions().then(setSessions).catch(() => {});
     loadBestStreak().then(setBestStreak).catch(() => {});
     loadCompletedDays().then(setCompletedDays).catch(() => {});
+
+    // Get real member-since date from Supabase auth
+    const supabase = createBrowserClient();
+    supabase.auth.getUser().then(({ data }) => {
+      if (data.user?.created_at) {
+        setMemberSince(new Date(data.user.created_at).toLocaleDateString("en-US", {
+          month: "short", day: "numeric", year: "numeric",
+        }));
+      } else {
+        // Fallback: store today on first profile load
+        const stored = localStorage.getItem("mindloop_member_since");
+        if (stored) {
+          setMemberSince(new Date(stored).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }));
+        } else {
+          const today = new Date().toISOString();
+          localStorage.setItem("mindloop_member_since", today);
+          setMemberSince(new Date(today).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }));
+        }
+      }
+    }).catch(() => {});
   }, []);
 
   const stats = useMemo(() => {
@@ -220,17 +244,27 @@ export default function ProfilePage() {
           <div className={styles.avatarCircle}>{initial}</div>
           <div className={styles.heroInfo}>
             <h1 className={styles.heroName}>{displayName}</h1>
-            <p className={styles.heroTitle}>Structured Thinker</p>
-            <p className={styles.heroQuote}><span className={styles.quoteGlyph}>&ldquo;</span> You break complex problems into clear, logical steps.</p>
+            <p className={styles.heroTitle}>{stats ? "Structured Thinker" : "Mindloop Member"}</p>
+            {stats && (
+              <p className={styles.heroQuote}><span className={styles.quoteGlyph}>&ldquo;</span> You break complex problems into clear, logical steps.</p>
+            )}
           </div>
         </div>
         <div className={styles.heroRight}>
-          <p className={styles.topPct}>Top {stats?.topPct ?? 18}% <span className={styles.topArrow}><TrendingUp size={14} /></span></p>
-          <p className={styles.topSub}>of the month</p>
-          <div className={styles.progressTrack}>
-            <div className={styles.progressFill} style={{ width: `${stats?.progressPct ?? 78}%` }} />
-          </div>
-          <p className={styles.progressPct}>{stats?.progressPct ?? 78}%</p>
+          {stats ? (
+            <>
+              <p className={styles.topPct}>Top {stats.topPct}% <span className={styles.topArrow}><TrendingUp size={14} /></span></p>
+              <p className={styles.topSub}>of the month</p>
+              <div className={styles.progressTrack}>
+                <div className={styles.progressFill} style={{ width: `${stats.progressPct}%` }} />
+              </div>
+              <p className={styles.progressPct}>{stats.progressPct}%</p>
+            </>
+          ) : (
+            <p className={styles.topSub} style={{ color: "#9CA3AF", fontSize: "0.8rem", textAlign: "center" }}>
+              Complete sessions<br />to earn your rank
+            </p>
+          )}
         </div>
         {/* Stat chips */}
         <div className={styles.heroChips}>
@@ -255,7 +289,7 @@ export default function ProfilePage() {
             {/* Member Since */}
             <div className={styles.fieldCell}>
               <div className={styles.fieldLabel}><span className={styles.fieldIcon}><Calendar size={14} /></span> Member Since</div>
-              <p className={styles.fieldValue}>{stats?.firstDate ?? "—"}</p>
+              <p className={styles.fieldValue}>{memberSince ?? "—"}</p>
             </div>
             {/* AI Provider */}
             <div className={styles.fieldCell}>
@@ -277,7 +311,7 @@ export default function ProfilePage() {
             {/* Time Zone */}
             <div className={styles.fieldCell}>
               <div className={styles.fieldLabel}><span className={styles.fieldIcon}><Globe size={14} /></span> Time Zone</div>
-              <p className={styles.fieldValue}>(GMT+5:30) Asia/Kolkata</p>
+              <p className={styles.fieldValue}>{userTimezone}</p>
             </div>
             {/* API Key */}
             <div className={styles.fieldCell}>
@@ -316,8 +350,11 @@ export default function ProfilePage() {
           <div className={styles.consistencyRow}>
             <span className={styles.consistencyCheck}><Check size={16} /></span>
             <p className={styles.consistencyText}>
-              <strong className={styles.consistencyGreen}>Great consistency!</strong>{" "}
-              You practiced {stats?.daysThisWeek ?? 0} of the last 7 days.
+              {stats && stats.daysThisWeek > 0 ? (
+                <><strong className={styles.consistencyGreen}>Great consistency!</strong>{" "}You practiced {stats.daysThisWeek} of the last 7 days.</>
+              ) : (
+                <><strong style={{ color: "#9CA3AF" }}>No sessions yet.</strong>{" "}Start your first challenge today!</>
+              )}
             </p>
           </div>
           <p className={styles.consistencySub}>Keep practicing daily to build your interview edge.</p>
@@ -329,33 +366,41 @@ export default function ProfilePage() {
             <div className={styles.thinkingIconCircle}><Brain size={16} /></div>
             <h2 className={styles.sectionTitle}>Your Thinking Profile</h2>
           </div>
-          <div className={styles.traitList}>
-            <div className={styles.traitRow}>
-              <span className={`${styles.traitDot} ${styles.traitDotGreen}`} />
-              <div>
-                <p className={styles.traitName}>Strong in structured breakdowns</p>
-                <p className={styles.traitDesc}>You break problems down logically.</p>
-              </div>
+          {stats ? (
+            <div className={styles.traitList}>
+              {stats.avgStr >= 60 && (
+                <div className={styles.traitRow}>
+                  <span className={`${styles.traitDot} ${styles.traitDotGreen}`} />
+                  <div>
+                    <p className={styles.traitName}>Strong in structured breakdowns</p>
+                    <p className={styles.traitDesc}>You break problems down logically.</p>
+                  </div>
+                </div>
+              )}
+              {stats.strongest && (
+                <div className={styles.traitRow}>
+                  <span className={`${styles.traitDot} ${styles.traitDotGreen}`} />
+                  <div>
+                    <p className={styles.traitName}>Excellent at {stats.strongest.name.toLowerCase()}</p>
+                    <p className={styles.traitDesc}>Your estimates are well-reasoned.</p>
+                  </div>
+                </div>
+              )}
+              {stats.weakest && stats.weakest.name !== stats.strongest?.name && (
+                <div className={styles.traitRow}>
+                  <span className={`${styles.traitDot} ${styles.traitDotAmber}`} />
+                  <div>
+                    <p className={styles.traitName}>Focus area: {stats.weakest.name}</p>
+                    <p className={styles.traitDesc}>Work on making explicit, testable assumptions.</p>
+                  </div>
+                </div>
+              )}
             </div>
-            <div className={styles.traitRow}>
-              <span className={`${styles.traitDot} ${styles.traitDotGreen}`} />
-              <div>
-                <p className={styles.traitName}>
-                  {stats?.strongest ? `Excellent at ${stats.strongest.name.toLowerCase()}` : "Excellent at market sizing"}
-                </p>
-                <p className={styles.traitDesc}>Your estimates are well-reasoned.</p>
-              </div>
-            </div>
-            <div className={styles.traitRow}>
-              <span className={`${styles.traitDot} ${styles.traitDotAmber}`} />
-              <div>
-                <p className={styles.traitName}>
-                  {stats?.weakest ? `Focus area: ${stats.weakest.name}` : "Focus area: Assumptions"}
-                </p>
-                <p className={styles.traitDesc}>Work on making explicit, testable assumptions.</p>
-              </div>
-            </div>
-          </div>
+          ) : (
+            <p style={{ color: "#9CA3AF", fontSize: "0.85rem", padding: "1rem 0" }}>
+              Complete your first session to see your thinking profile.
+            </p>
+          )}
           <button className={styles.insightsLink} onClick={() => router.push("/insights")}>
             View Detailed Insights →
           </button>
