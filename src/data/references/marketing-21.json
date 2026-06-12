@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-21",
+  "domain": "marketing",
+  "question": "Estimate the social media reach of a viral hashtag movement during a brand crisis or controversy.",
+  "idealClarificationQuestions": [
+    "Negative virality (e.g., a brand misstep going trend)? Yes.",
+    "All platforms: X + Instagram + LinkedIn + WhatsApp + news? Multi-platform.",
+    "Over a 5-day crisis cycle? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Trending hashtag dynamics: organic mentions × follower reach × media amplification."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Hashtag mentions over 5 days (typical brand crisis virality): ~5-10 lakh tweets/posts."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Organic reach across all mentions: ~10-15 crore impressions."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus WhatsApp/Telegram forwards (impossible to track precisely): ~5-10 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "But many people see fragments only; deeply engaged audience: ~5-10 crore."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Hashtag mentions over 5 days (typical brand crisis virality)",
+      "value": "~5-10 lakh tweets/posts.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reach of each post (avg follower count of users posting)",
+      "value": "~500-1,000 followers each, but top influencers add 1-5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Organic reach across all mentions",
+      "value": "~10-15 crore impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus news coverage (mainstream + digital news)",
+      "value": "~30-50 crore additional reach.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus WhatsApp/Telegram forwards (impossible to track precisely)",
+      "value": "~5-10 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total unique reach",
+      "value": "~30-50 crore Indians exposed to the controversy in some form.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But many people see fragments only; deeply engaged audience",
+      "value": "~5-10 crore.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Hashtag mentions over 5 days (typical brand crisis virality): ~5-10 lakh tweets/posts.",
+    "Organic reach across all mentions: ~10-15 crore impressions.",
+    "Plus news coverage (mainstream + digital news): ~30-50 crore additional reach.",
+    "Plus WhatsApp/Telegram forwards (impossible to track precisely): ~5-10 crore.",
+    "Total unique reach: ~30-50 crore Indians exposed to the controversy in some form.",
+    "But many people see fragments only; deeply engaged audience: ~5-10 crore."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "But many people see fragments only; deeply engaged audience: ~5-10 crore."
+  }
+}

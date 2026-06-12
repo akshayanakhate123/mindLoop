@@ -1,0 +1,86 @@
+{
+  "questionId": "generalist-87",
+  "domain": "generalist",
+  "question": "Estimate the additional electricity demand spike during India-Pakistan cricket match prime time.",
+  "idealClarificationQuestions": [
+    "MW or GWh of additional load during match window? MW peak load increase.",
+    "Pan-India? Yes.",
+    "Match prime time (8:30-11:30 PM)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Marginal viewing-related load: TVs on, lights on, AC running."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian peak power demand evening (normal): ~250 GW."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Each TV draws ~100W average; AC concurrently due to viewing = ~500W extra."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "But: this overlaps with normal evening AC use; net incremental marginal is more like ~3-4 GW."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total spike: ~4-5 GW above what would otherwise occur."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian peak power demand evening (normal)",
+      "value": "~250 GW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cricket match adds incremental TV viewing households",
+      "value": "~10 crore HH watching simultaneously (TV/OTT-on-TV).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Marginal load per HH",
+      "value": "~600W = 0.6 kW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total marginal",
+      "value": "10 crore × 0.6 = 6 GW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But",
+      "value": "this overlaps with normal evening AC use; net incremental marginal is more like ~3-4 GW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus public viewing (clubs, restaurants)",
+      "value": "~500 MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total spike",
+      "value": "~4-5 GW above what would otherwise occur.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Cricket match adds incremental TV viewing households: ~10 crore HH watching simultaneously (TV/OTT-on-TV).",
+    "Each TV draws ~100W average; AC concurrently due to viewing = ~500W extra.",
+    "Marginal load per HH: ~600W = 0.6 kW.",
+    "Total marginal: 10 crore × 0.6 = 6 GW."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total spike: ~4-5 GW above what would otherwise occur."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-32",
+  "domain": "sales",
+  "question": "Estimate the number of supermarkets + hypermarkets in India (DMart + Reliance + More + Easyday + others).",
+  "idealClarificationQuestions": [
+    "Organized large-format grocery stores (>3,000 sqft)? Yes.",
+    "Excludes Reliance Smart Point and small format? Yes — large format only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across major chains."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "DMart (Avenue Supermarts): ~390 stores (high growth)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Spencer's Retail: ~125."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Heritage Fresh, EasyDay (now under Star Bazaar): ~250."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~5,000-5,500 large-format organized supermarkets and hypermarkets."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "DMart (Avenue Supermarts)",
+      "value": "~390 stores (high growth).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reliance Smart + Smart Bazaar",
+      "value": "~3,500 (some are smaller; large-format ~1,000).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "More Retail (Samara + Amazon)",
+      "value": "~1,400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Spencer's Retail",
+      "value": "~125.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Star Bazaar (Trent)",
+      "value": "~80.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Vishal Mega Mart",
+      "value": "~650.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Heritage Fresh, EasyDay (now under Star Bazaar)",
+      "value": "~250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smaller regional (Sangeetha, Margin Free, Le Marche)",
+      "value": "~500.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Reliance Smart + Smart Bazaar: ~3,500 (some are smaller; large-format ~1,000).",
+    "More Retail (Samara + Amazon): ~1,400."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~5,000-5,500 large-format organized supermarkets and hypermarkets."
+  }
+}

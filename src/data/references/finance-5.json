@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-5",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of OYO (India operations).",
+  "idealClarificationQuestions": [
+    "OYO India revenue (not global)? Yes.",
+    "Net revenue after pass-through to hotel partners? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "GBV × take rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "OYO global GBV FY26: ~$2.5B (~₹21,000 Cr); India share ~60% = ₹12,500 Cr GBV India."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Net revenue India: ₹12,500 × 22% = ~₹2,750 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus tech licensing + advertising: ~₹150 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: total OYO global revenue ~₹5,400 Cr (FY25 IPO docs)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "OYO global GBV FY26",
+      "value": "~$2.5B (~₹21,000 Cr); India share ~60% = ₹12,500 Cr GBV India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OYO take rate (net revenue / GBV)",
+      "value": "~20-25% (hotel net margin model — keeps a slice, pays partner the rest).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net revenue India",
+      "value": "₹12,500 × 22% = ~₹2,750 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus OYO Vacation Homes + Townhouse + Premium properties",
+      "value": "~₹500 Cr extra.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus tech licensing + advertising",
+      "value": "~₹150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total India revenue",
+      "value": "~₹3,400-3,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "total OYO global revenue ~₹5,400 Cr (FY25 IPO docs).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "OYO global GBV FY26: ~$2.5B (~₹21,000 Cr); India share ~60% = ₹12,500 Cr GBV India.",
+    "Net revenue India: ₹12,500 × 22% = ~₹2,750 Cr.",
+    "Plus OYO Vacation Homes + Townhouse + Premium properties: ~₹500 Cr extra.",
+    "Plus tech licensing + advertising: ~₹150 Cr.",
+    "Total India revenue: ~₹3,400-3,800 Cr.",
+    "Note: total OYO global revenue ~₹5,400 Cr (FY25 IPO docs)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: total OYO global revenue ~₹5,400 Cr (FY25 IPO docs)."
+  }
+}

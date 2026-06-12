@@ -1,0 +1,91 @@
+{
+  "questionId": "sales-63",
+  "domain": "sales",
+  "question": "Estimate the conversion rate for a wealth-management firm acquiring HNI clients.",
+  "idealClarificationQuestions": [
+    "PMS (Portfolio Management Services) firm targeting ₹5 Cr+ AUM HNIs? Yes.",
+    "Lead = referred or warm intro? Yes.",
+    "Conversion = client onboarded with min AUM funded? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "HNI wealth-mgmt long cycle funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Warm leads / referrals: 100."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Follow-up meeting (after research, comparison with other PMS): ~50% = 35."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Funded account with minimum AUM: ~80% = 7."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Sales cycle for HNI: typically 4-8 months."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Warm leads / referrals",
+      "value": "100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Initial meeting / pitch",
+      "value": "~70%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Follow-up meeting (after research, comparison with other PMS)",
+      "value": "~50% = 35.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Detailed financial planning + scenario analysis",
+      "value": "~50% = 17-18.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Decision to commit",
+      "value": "~50% = 9.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Funded account with minimum AUM",
+      "value": "~80% = 7.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net lead-to-client",
+      "value": "~7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sales cycle for HNI",
+      "value": "typically 4-8 months.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Follow-up meeting (after research, comparison with other PMS): ~50% = 35.",
+    "Detailed financial planning + scenario analysis: ~50% = 17-18.",
+    "Decision to commit: ~50% = 9.",
+    "Funded account with minimum AUM: ~80% = 7."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Sales cycle for HNI: typically 4-8 months."
+  }
+}

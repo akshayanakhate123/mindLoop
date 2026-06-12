@@ -1,0 +1,91 @@
+{
+  "questionId": "product-99",
+  "domain": "product",
+  "question": "Estimate the EV battery factory capacity India needs by 2030.",
+  "idealClarificationQuestions": [
+    "GWh capacity domestically manufactured? Yes.",
+    "By 2030? Yes.",
+    "All segments: 2W + 3W + cars + grid storage? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "EV stock 2030 × battery size + grid storage demand."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "EV stock by 2030 (cumulative on-road): ~30-40M units."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Buses: ~50K × 250 kWh = ~12.5 GWh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus grid stationary storage (India's 50 GW solar/wind + storage push): ~30-40 GWh annual."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total domestic capacity needed: ~125-150 GWh annual by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "EV stock by 2030 (cumulative on-road)",
+      "value": "~30-40M units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 2W + 3W",
+      "value": "~32M × ~3 kWh avg = ~96 GWh (cumulative installed).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cars",
+      "value": "~3M × ~50 kWh = ~150 GWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Buses",
+      "value": "~50K × 250 kWh = ~12.5 GWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Total cumulative on-road",
+      "value": "~258 GWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual battery production needed (2030 alone)",
+      "value": "~80-100 GWh (covers new sales + replacement).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus grid stationary storage (India's 50 GW solar/wind + storage push)",
+      "value": "~30-40 GWh annual.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus reserve / export",
+      "value": "~10-20 GWh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- 2W + 3W: ~32M × ~3 kWh avg = ~96 GWh (cumulative installed).",
+    "- Cars: ~3M × ~50 kWh = ~150 GWh.",
+    "- Buses: ~50K × 250 kWh = ~12.5 GWh.",
+    "Annual battery production needed (2030 alone): ~80-100 GWh (covers new sales + replacement).",
+    "Plus grid stationary storage (India's 50 GW solar/wind + storage push): ~30-40 GWh annual."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total domestic capacity needed: ~125-150 GWh annual by 2030."
+  }
+}

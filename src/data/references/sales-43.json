@@ -1,0 +1,86 @@
+{
+  "questionId": "sales-43",
+  "domain": "sales",
+  "question": "Estimate the number of LIC agents in India.",
+  "idealClarificationQuestions": [
+    "Life Insurance Corporation field agents (active)? Yes.",
+    "Tier-wise: development officers + agents + assistants? Primarily agents.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct disclosure."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "LIC of India agent count: ~13.5 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Senior business associates: ~30,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus development officers: ~1.5 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~13-14 lakh active LIC agents."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "LIC of India agent count",
+      "value": "~13.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior business associates",
+      "value": "~30,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regular agents",
+      "value": "~12.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Chief Life Insurance Advisors (top performers)",
+      "value": "~5,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus development officers",
+      "value": "~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total field force",
+      "value": "~15 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~13-14 lakh active LIC agents.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "LIC of India agent count: ~13.5 lakh.",
+    "- Regular agents: ~12.5 lakh.",
+    "Plus development officers: ~1.5 lakh.",
+    "Total field force: ~15 lakh.",
+    "Round: ~13-14 lakh active LIC agents."
+  ],
+  "finalAnswerRange": {
+    "low": "13",
+    "high": "14",
+    "ideal": "~13-14 lakh active LIC agents."
+  }
+}

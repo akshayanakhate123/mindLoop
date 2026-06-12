@@ -1,0 +1,74 @@
+{
+  "questionId": "generalist-94",
+  "domain": "generalist",
+  "question": "Estimate the additional milk demand during Holi (festival of colors but also bhang + thandai + sweets).",
+  "idealClarificationQuestions": [
+    "Daily milk demand uplift on Holi day? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Normal demand × Holi uplift driven by sweets, gujiya, thandai, bhang."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India daily milk demand: ~64 crore litres/day (LME including all dairy)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Holi uplift drivers: gujiya (mawa requires concentrated milk), thandai (~2L milk per pitcher; many homes prepare), kheer, sweets."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Holi day milk demand: 64 crore × 1.13 = ~72 crore litres/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Marginal extra: ~8 crore litres."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India daily milk demand",
+      "value": "~64 crore litres/day (LME including all dairy).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Holi uplift drivers",
+      "value": "gujiya (mawa requires concentrated milk), thandai (~2L milk per pitcher; many homes prepare), kheer, sweets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pan-India spike on Holi day",
+      "value": "~10-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Holi day milk demand",
+      "value": "64 crore × 1.13 = ~72 crore litres/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Marginal extra",
+      "value": "~8 crore litres.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India daily milk demand: ~64 crore litres/day (LME including all dairy).",
+    "Holi day milk demand: 64 crore × 1.13 = ~72 crore litres/day.",
+    "Marginal extra: ~8 crore litres."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Marginal extra: ~8 crore litres."
+  }
+}

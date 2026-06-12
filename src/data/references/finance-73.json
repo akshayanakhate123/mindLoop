@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-73",
+  "domain": "finance",
+  "question": "Estimate the size of India's drone industry opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Drone manufacturing + services (delivery, surveying, agriculture, defense) by 2030? Yes.",
+    "Both civilian + defence? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Build-out across segments."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Drone manufacturing in India (DJI alternatives + Indian OEMs like ideaForge, Garuda Aerospace): ~₹6,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Construction + surveying: ~₹3,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Inspection (industrial, infrastructure): ~₹2,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹25,000-30,000 Cr Indian drone industry by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Agriculture (spraying, mapping)",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Construction + surveying",
+      "value": "~₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Defence (HAL, BEL, Tata, Adani)",
+      "value": "~₹10,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Delivery (limited at scale by 2030)",
+      "value": "~₹2,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Inspection (industrial, infrastructure)",
+      "value": "~₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹27,500 Cr by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹25,000-30,000 Cr Indian drone industry by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Drone manufacturing in India (DJI alternatives + Indian OEMs like ideaForge, Garuda Aerospace): ~₹6,000 Cr.",
+    "- Agriculture (spraying, mapping): ~₹4,000 Cr.",
+    "- Construction + surveying: ~₹3,000 Cr.",
+    "- Defence (HAL, BEL, Tata, Adani): ~₹10,000 Cr.",
+    "- Delivery (limited at scale by 2030): ~₹2,000 Cr.",
+    "- Inspection (industrial, infrastructure): ~₹2,500 Cr.",
+    "Total: ~₹27,500 Cr by 2030.",
+    "Round: ~₹25,000-30,000 Cr Indian drone industry by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "25,000",
+    "high": "30,000",
+    "ideal": "~₹25,000-30,000 Cr Indian drone industry by 2030."
+  }
+}

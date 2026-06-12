@@ -1,0 +1,64 @@
+{
+  "questionId": "marketing-46",
+  "domain": "marketing",
+  "question": "Estimate the freemium-to-paid conversion rate for a streaming service in India (e.g., Spotify).",
+  "idealClarificationQuestions": [
+    "Free user upgrades to premium subscription? Yes.",
+    "Year-on-year conversion (any user upgrading in a year)? Yes.",
+    "India-specific Spotify (or comparable)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "India price sensitivity vs global."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Spotify India free users: ~52M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual upgrade rate (free-to-paid in any year): ~6-8%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Convertion incentive: ad-free + offline, but Indian free tier is generous (full song library, ads tolerable)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Compared to Spotify global (~45% paid conversion), India is ~7-8% — extreme price sensitivity."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Spotify India free users",
+      "value": "~52M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual upgrade rate (free-to-paid in any year)",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cumulative paying base",
+      "value": "~4-5M out of 57M MAU = ~7-9% of active.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Cumulative paying base: ~4-5M out of 57M MAU = ~7-9% of active.",
+    "Convertion incentive: ad-free + offline, but Indian free tier is generous (full song library, ads tolerable)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Compared to Spotify global (~45% paid conversion), India is ~7-8% — extreme price sensitivity."
+  }
+}

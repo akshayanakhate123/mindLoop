@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-70",
+  "domain": "sales",
+  "question": "Estimate the conversion rate from food delivery app's first push notification offer to first order.",
+  "idealClarificationQuestions": [
+    "User has installed app but not ordered; push notification with first-order offer (e.g., 50% off)? Yes.",
+    "Conversion = first order placed? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Activation funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Push notifications sent to non-transactor users: 1,00,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Opened app to explore: ~80% of tappers = 2,800."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Placed first order: ~50% of cart adders = ~290."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of delivered: ~0.4%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Push notifications sent to non-transactor users",
+      "value": "1,00,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Delivered (notification enabled)",
+      "value": "~70% = 70,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Seen / tapped",
+      "value": "~5% of delivered = 3,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Opened app to explore",
+      "value": "~80% of tappers = 2,800.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Browsed restaurants",
+      "value": "~70% = 1,960.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Added items to cart",
+      "value": "~30% = 588.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Placed first order",
+      "value": "~50% of cart adders = ~290.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net push-to-first-order",
+      "value": "290 / 1,00,000 = ~0.3%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Delivered (notification enabled): ~70% = 70,000.",
+    "Seen / tapped: ~5% of delivered = 3,500.",
+    "Opened app to explore: ~80% of tappers = 2,800.",
+    "Browsed restaurants: ~70% = 1,960.",
+    "Added items to cart: ~30% = 588.",
+    "Placed first order: ~50% of cart adders = ~290.",
+    "Net push-to-first-order: 290 / 1,00,000 = ~0.3%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of delivered: ~0.4%."
+  }
+}

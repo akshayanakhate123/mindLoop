@@ -1,0 +1,81 @@
+{
+  "questionId": "marketing-9",
+  "domain": "marketing",
+  "question": "Estimate the reach of a print ad in Times of India (full-page colour, all India editions).",
+  "idealClarificationQuestions": [
+    "Single-day full-page colour TOI ad across all editions? Yes.",
+    "Reach = unique readers who see the ad? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Circulation × readers per copy × ad-noticing rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TOI total daily circulation (all editions): ~26-28 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total readership (eyeballs on the paper): ~10-11 crore opportunities."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Estimated unique readers exposed: 10.5 crore × 0.72 = ~7.5 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Pure reach number: ~7.5 crore unique readers see the page; ~1.9 crore actively process/recall."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TOI total daily circulation (all editions)",
+      "value": "~26-28 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Readers per copy (RPC, Indian newspaper average)",
+      "value": "~4 (newspaper read by multiple family members, office subscribers).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total readership (eyeballs on the paper)",
+      "value": "~10-11 crore opportunities.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Estimated unique readers exposed",
+      "value": "10.5 crore × 0.72 = ~7.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, recall the ad (after 1 day)",
+      "value": "~25% = ~1.9 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pure reach number",
+      "value": "~7.5 crore unique readers see the page; ~1.9 crore actively process/recall.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TOI total daily circulation (all editions): ~26-28 lakh.",
+    "Total readership (eyeballs on the paper): ~10-11 crore opportunities.",
+    "Estimated unique readers exposed: 10.5 crore × 0.72 = ~7.5 crore.",
+    "Of these, recall the ad (after 1 day): ~25% = ~1.9 crore.",
+    "Pure reach number: ~7.5 crore unique readers see the page; ~1.9 crore actively process/recall."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Pure reach number: ~7.5 crore unique readers see the page; ~1.9 crore actively process/recall."
+  }
+}

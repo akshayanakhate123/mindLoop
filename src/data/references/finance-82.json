@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-82",
+  "domain": "finance",
+  "question": "Estimate the cost of running a hospital ICU bed per day in India.",
+  "idealClarificationQuestions": [
+    "Tertiary-care private hospital ICU bed (Apollo / Max / Fortis tier)? Yes.",
+    "Total cost per day all-in? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct + indirect cost allocation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Direct daily costs per ICU bed:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Consumables (catheters, tubes, ventilator circuits): ~₹2,500."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Bed depreciation + capex amortization: ~₹3,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Billed to patient: ~₹35,000-65,000/day (varies by hospital tier + city)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Nursing care (1",
+      "value": "1 nurse ratio in ICU; 3 shifts): ~₹6,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Doctor consultations (intensivist + specialists)",
+      "value": "~₹4,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Medicines + IV fluids",
+      "value": "~₹5,000-15,000 (highly variable by patient).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Consumables (catheters, tubes, ventilator circuits)",
+      "value": "~₹2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Investigations (blood tests, X-rays)",
+      "value": "~₹3,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Power for life-support equipment",
+      "value": "~₹1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bed depreciation + capex amortization",
+      "value": "~₹3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Building + admin overhead",
+      "value": "~₹4,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Nursing care (1:1 nurse ratio in ICU; 3 shifts): ~₹6,000.",
+    "- Doctor consultations (intensivist + specialists): ~₹4,000.",
+    "- Medicines + IV fluids: ~₹5,000-15,000 (highly variable by patient).",
+    "- Consumables (catheters, tubes, ventilator circuits): ~₹2,500.",
+    "- Investigations (blood tests, X-rays): ~₹3,500.",
+    "- Power for life-support equipment: ~₹1,500.",
+    "- Bed depreciation + capex amortization: ~₹3,000.",
+    "- Building + admin overhead: ~₹4,000.",
+    "- Insurance + risk: ~₹1,500.",
+    "Total cost per ICU bed-day: ~₹30,000-40,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Billed to patient: ~₹35,000-65,000/day (varies by hospital tier + city)."
+  }
+}

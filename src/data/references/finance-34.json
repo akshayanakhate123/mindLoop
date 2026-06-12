@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-34",
+  "domain": "finance",
+  "question": "Estimate the profitability of a Tata Starbucks outlet in Mumbai (unit-level).",
+  "idealClarificationQuestions": [
+    "Single outlet, store-level P&L? Yes.",
+    "Standard outlet (not flagship)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Single-store cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Monthly revenue (per Q2): ~₹40 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Staff (15-20 baristas + manager): ~₹6 lakh = 15%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total store cost: ~₹28 lakh = ~71% of revenue."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net store contribution to company PAT: ~12-15%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Monthly revenue (per Q2)",
+      "value": "~₹40 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS (coffee beans, milk, food, syrups)",
+      "value": "~22-25% of revenue = ~₹10 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rent (premium Mumbai location)",
+      "value": "~₹6-8 lakh = 18%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff (15-20 baristas + manager)",
+      "value": "~₹6 lakh = 15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Utilities + maintenance + supplies",
+      "value": "~₹2.5 lakh = 6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Royalty to Starbucks USA (paid by Tata Consumer)",
+      "value": "~₹2 lakh = 5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other store overhead",
+      "value": "~₹1.5 lakh = 4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total store cost",
+      "value": "~₹28 lakh = ~71% of revenue.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Monthly revenue (per Q2): ~₹40 lakh.",
+    "- COGS (coffee beans, milk, food, syrups): ~22-25% of revenue = ~₹10 lakh.",
+    "- Rent (premium Mumbai location): ~₹6-8 lakh = 18%.",
+    "- Staff (15-20 baristas + manager): ~₹6 lakh = 15%.",
+    "- Utilities + maintenance + supplies: ~₹2.5 lakh = 6%.",
+    "- Royalty to Starbucks USA (paid by Tata Consumer): ~₹2 lakh = 5%.",
+    "- Other store overhead: ~₹1.5 lakh = 4%.",
+    "Total store cost: ~₹28 lakh = ~71% of revenue.",
+    "Store-level EBITDA: ~₹12 lakh/month = 29%.",
+    "Less corporate overhead allocation + central marketing: ~15%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net store contribution to company PAT: ~12-15%."
+  }
+}

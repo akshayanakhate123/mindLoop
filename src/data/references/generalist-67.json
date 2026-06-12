@@ -1,0 +1,93 @@
+{
+  "questionId": "generalist-67",
+  "domain": "generalist",
+  "question": "Estimate the number of police personnel in India.",
+  "idealClarificationQuestions": [
+    "Civil + armed police across states + central forces (CRPF, BSF, CISF, ITBP)? All.",
+    "Sanctioned or actual strength? Actual on rolls.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum from MHA reports."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "State police (civil + armed) actual strength: ~22 lakh (sanctioned ~26 lakh; ~16% vacancies)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- CRPF: ~3 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- NSG, RAF: ~50K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Police-to-population ratio: ~22 per 1 lakh population (UN recommended is 222 per 1 lakh — India is highly under-policed)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "State police (civil + armed) actual strength",
+      "value": "~22 lakh (sanctioned ~26 lakh; ~16% vacancies).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Central Armed Police Forces (CAPFs)",
+      "value": "~9.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- CRPF",
+      "value": "~3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- BSF",
+      "value": "~2.6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- CISF",
+      "value": "~1.7 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ITBP",
+      "value": "~90K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- SSB",
+      "value": "~95K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- NSG, RAF",
+      "value": "~50K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "State police (civil + armed) actual strength: ~22 lakh (sanctioned ~26 lakh; ~16% vacancies).",
+    "Central Armed Police Forces (CAPFs): ~9.5 lakh.",
+    "- CRPF: ~3 lakh.",
+    "- BSF: ~2.6 lakh.",
+    "- CISF: ~1.7 lakh.",
+    "Total uniformed personnel: ~31-32 lakh.",
+    "Police-to-population ratio: ~22 per 1 lakh population (UN recommended is 222 per 1 lakh — India is highly under-policed)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Police-to-population ratio: ~22 per 1 lakh population (UN recommended is 222 per 1 lakh — India is highly under-policed)."
+  }
+}

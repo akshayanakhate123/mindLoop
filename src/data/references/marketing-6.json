@@ -1,0 +1,76 @@
+{
+  "questionId": "marketing-6",
+  "domain": "marketing",
+  "question": "Estimate the radio listenership reach of an FM ad campaign in Bengaluru.",
+  "idealClarificationQuestions": [
+    "Top private FM stations (Radio Mirchi, Red FM, Big FM, Radio City)? Yes.",
+    "Reach over 30 days? Yes.",
+    "Bengaluru metro? Yes (~14M).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "FM listener base × campaign GRP-equivalent reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Bengaluru radio listeners (RAM measured TG): ~6-7 crore weekly listenership cumulative across top 4 FMs (note: this counts each station separately due to listener overlap, unique base ~3-4M)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly cume reach (1+): ~5M (broader than weekly)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "30-day campaign with multi-station buy at 800 GRPs: 1+ reach ~80% of FM-listening universe = ~4M unique people."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Effective 3+ reach: ~2.5-3M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Bengaluru radio listeners (RAM measured TG)",
+      "value": "~6-7 crore weekly listenership cumulative across top 4 FMs (note: this counts each station separately due to listener overlap, unique base ~3-4M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique weekly FM listeners in Bengaluru",
+      "value": "~3-4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly cume reach (1+)",
+      "value": "~5M (broader than weekly).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "30-day campaign with multi-station buy at 800 GRPs",
+      "value": "1+ reach ~80% of FM-listening universe = ~4M unique people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Effective 3+ reach",
+      "value": "~2.5-3M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Bengaluru radio listeners (RAM measured TG): ~6-7 crore weekly listenership cumulative across top 4 FMs (note: this counts each station separately due to listener overlap, unique base ~3-4M).",
+    "Monthly cume reach (1+): ~5M (broader than weekly).",
+    "30-day campaign with multi-station buy at 800 GRPs: 1+ reach ~80% of FM-listening universe = ~4M unique people.",
+    "Effective 3+ reach: ~2.5-3M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Effective 3+ reach: ~2.5-3M."
+  }
+}

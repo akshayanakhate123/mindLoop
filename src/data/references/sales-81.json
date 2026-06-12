@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-81",
+  "domain": "sales",
+  "question": "Estimate the B2B sales potential for cloud computing services (AWS, Azure, GCP) in India.",
+  "idealClarificationQuestions": [
+    "Total Indian cloud services revenue (IaaS + PaaS + SaaS, public cloud)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Public cloud market."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian public cloud services market FY26: ~₹85,000 Cr (~$10B)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- SaaS (Microsoft 365, Google Workspace, Salesforce): ~₹35,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Google Cloud India: ~₹6,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹85,000 Cr / ~$10B."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian public cloud services market FY26",
+      "value": "~₹85,000 Cr (~$10B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- IaaS (compute, storage, networking — bulk of AWS, Azure, GCP)",
+      "value": "~₹35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- PaaS (managed databases, dev platforms)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- SaaS (Microsoft 365, Google Workspace, Salesforce)",
+      "value": "~₹35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- AWS India",
+      "value": "~₹22,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Microsoft Azure",
+      "value": "~₹20,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Google Cloud India",
+      "value": "~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Indian + others (Yotta, CtrlS, Adani Connex private cloud)",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian public cloud services market FY26: ~₹85,000 Cr (~$10B).",
+    "- IaaS (compute, storage, networking — bulk of AWS, Azure, GCP): ~₹35,000 Cr.",
+    "- PaaS (managed databases, dev platforms): ~₹15,000 Cr.",
+    "- SaaS (Microsoft 365, Google Workspace, Salesforce): ~₹35,000 Cr.",
+    "- AWS India: ~₹22,000 Cr.",
+    "- Microsoft Azure: ~₹20,000 Cr.",
+    "- Google Cloud India: ~₹6,000 Cr.",
+    "- Indian + others (Yotta, CtrlS, Adani Connex private cloud): ~₹4,000 Cr.",
+    "- Microsoft Office 365 (counted in SaaS): ~₹15,000 Cr.",
+    "Round: ~₹85,000 Cr / ~$10B."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹85,000 Cr / ~$10B."
+  }
+}

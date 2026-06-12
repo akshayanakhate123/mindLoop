@@ -1,0 +1,78 @@
+{
+  "questionId": "product-4",
+  "domain": "product",
+  "question": "Estimate monthly orders for Zomato in Bengaluru.",
+  "idealClarificationQuestions": [
+    "Food delivery only or include Hyperpure (B2B), Blinkit (quick commerce)? Food delivery only.",
+    "Greater Bengaluru or core city? Greater Bengaluru (~14M).",
+    "Zomato's market share assumption? Roughly 50-55% of food delivery in Bengaluru (Bengaluru is a Zomato stronghold).",
+    "Average month or peak (festive, IPL)? Average month."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Same as Mumbai food delivery, but adjust for Bengaluru's demographics (higher tech-employed population, higher ordering frequency) and apply Zomato share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Greater Bengaluru population: ~14M; adults: ~10M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Food delivery users: ~40% of smartphone adults = ~3.6M (higher than Mumbai due to large young/single tech workforce)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly orders (total food delivery in Bengaluru) = 650K×18 + 1.26M×7 + 1.7M×1.5 = 11.7M + 8.8M + 2.6M ≈ 23M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round to ~11-12 million monthly Zomato orders in Bengaluru."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Greater Bengaluru population",
+      "value": "~14M; adults: ~10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone + internet adults",
+      "value": "~9M (high penetration — IT hub).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Food delivery users",
+      "value": "~40% of smartphone adults = ~3.6M (higher than Mumbai due to large young/single tech workforce).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Segmentation",
+      "value": "Heavy 18% = 650K @ ~18 orders; Medium 35% = 1.26M @ ~7; Light 47% = 1.7M @ ~1.5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Zomato share",
+      "value": "~50% → 23M × 0.5 = 11.5M orders/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Smartphone + internet adults: ~9M (high penetration — IT hub).",
+    "Food delivery users: ~40% of smartphone adults = ~3.6M (higher than Mumbai due to large young/single tech workforce).",
+    "Segmentation: Heavy 18% = 650K @ ~18 orders; Medium 35% = 1.26M @ ~7; Light 47% = 1.7M @ ~1.5.",
+    "Monthly orders (total food delivery in Bengaluru) = 650K×18 + 1.26M×7 + 1.7M×1.5 = 11.7M + 8.8M + 2.6M ≈ 23M.",
+    "Zomato share: ~50% → 23M × 0.5 = 11.5M orders/month.",
+    "Round to ~11-12 million monthly Zomato orders in Bengaluru."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round to ~11-12 million monthly Zomato orders in Bengaluru."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "questionId": "product-38",
+  "domain": "product",
+  "question": "Estimate the daily food delivery orders per young professional (22-30) in metros.",
+  "idealClarificationQuestions": [
+    "Average across all young professionals or only food-delivery active? Active food delivery users in this segment.",
+    "Metros = Top 8 cities? Yes.",
+    "Per day or per week? Per day (decimal OK).",
+    "Average day across the year? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment users by intensity, weight by share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Young professional food delivery active users in metros: ~15M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Frequent (2-4/week): 40% = 6M @ ~3 orders/week = ~0.45/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Weighted average: 0.20×1 + 0.40×0.45 + 0.40×0.21 = 0.2 + 0.18 + 0.084 ≈ 0.46 orders per day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round to ~0.4-0.5 orders per day, or ~3-3.5 per week."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Young professional food delivery active users in metros",
+      "value": "~15M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Lunch + dinner regulars (5+/week meal replacement)",
+      "value": "20% = 3M @ ~7 orders/week = 1 per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Frequent (2-4/week)",
+      "value": "40% = 6M @ ~3 orders/week = ~0.45/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Occasional (1-2/week)",
+      "value": "40% = 6M @ ~1.5 orders/week = ~0.21/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted average",
+      "value": "0.20×1 + 0.40×0.45 + 0.40×0.21 = 0.2 + 0.18 + 0.084 ≈ 0.46 orders per day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Lunch + dinner regulars (5+/week meal replacement): 20% = 3M @ ~7 orders/week = 1 per day.",
+    "- Frequent (2-4/week): 40% = 6M @ ~3 orders/week = ~0.45/day.",
+    "- Occasional (1-2/week): 40% = 6M @ ~1.5 orders/week = ~0.21/day.",
+    "Weighted average: 0.20×1 + 0.40×0.45 + 0.40×0.21 = 0.2 + 0.18 + 0.084 ≈ 0.46 orders per day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round to ~0.4-0.5 orders per day, or ~3-3.5 per week."
+  }
+}

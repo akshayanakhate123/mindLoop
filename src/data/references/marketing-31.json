@@ -1,0 +1,89 @@
+{
+  "questionId": "marketing-31",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate for a Meta (Instagram + Facebook) ad campaign for a D2C apparel brand.",
+  "idealClarificationQuestions": [
+    "Conversion = website purchase? Yes.",
+    "Campaign optimized for purchases? Yes.",
+    "Indian D2C apparel (Bewakoof, Souled Store, Mamaearth, etc.) at scale? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Click → land → purchase funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Ad CTR (impression-to-click): ~1-1.5% on Meta India for apparel."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Product detail → add to cart: ~10-12%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "End-to-end impression-to-purchase: ~0.015% (very low)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: 1-1.5% click-to-purchase; ROAS ~3-4x for healthy campaigns."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Ad CTR (impression-to-click)",
+      "value": "~1-1.5% on Meta India for apparel.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Click-to-landing-page-load",
+      "value": "~85% (rest bounce on load).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Landing page → product detail navigation",
+      "value": "~50%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Product detail → add to cart",
+      "value": "~10-12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Add to cart → purchase",
+      "value": "~25-30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net click-to-purchase",
+      "value": "50% × 10% × 27% = ~1.3-1.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "End-to-end impression-to-purchase",
+      "value": "~0.015% (very low).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cost per purchase at ₹50 CPM",
+      "value": "1L impressions = 1,000 clicks (at 1% CTR) = ~13 purchases at ₹5K spend = ₹385 cost per purchase.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Net click-to-purchase: 50% × 10% × 27% = ~1.3-1.5%.",
+    "Cost per purchase at ₹50 CPM: 1L impressions = 1,000 clicks (at 1% CTR) = ~13 purchases at ₹5K spend = ₹385 cost per purchase."
+  ],
+  "finalAnswerRange": {
+    "low": "1",
+    "high": "1.5",
+    "ideal": "1-1.5% click-to-purchase; ROAS ~3-4x for healthy campaigns."
+  }
+}

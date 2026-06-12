@@ -1,0 +1,87 @@
+{
+  "questionId": "sales-30",
+  "domain": "sales",
+  "question": "Estimate the number of Reliance Retail stores across all formats pan-India.",
+  "idealClarificationQuestions": [
+    "All Reliance Retail formats: Smart + Fresh + Trends + Digital + Jio Stores + Smart Bazaar + Smart Point + Jewellers + others? Yes — total.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from RIL disclosures."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Reliance Retail FY26 total stores (across all banners):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Reliance Digital (electronics/appliances): ~1,200."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Reliance Jewels: ~120."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~15,000 stores across all RR formats."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Reliance Smart + Smart Bazaar + Fresh (grocery formats)",
+      "value": "~3,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Reliance Trends (apparel)",
+      "value": "~2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Reliance Digital (electronics/appliances)",
+      "value": "~1,200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Jio Stores (mobile + DTH)",
+      "value": "~5,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Reliance Smart Point (small format kirana plus)",
+      "value": "~600.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Reliance Jewels",
+      "value": "~120.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other (Hamleys, AJIO, Specialty)",
+      "value": "~1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~14,400-15,000 stores.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Reliance Smart + Smart Bazaar + Fresh (grocery formats): ~3,500.",
+    "- Jio Stores (mobile + DTH): ~5,500."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~15,000 stores across all RR formats."
+  }
+}

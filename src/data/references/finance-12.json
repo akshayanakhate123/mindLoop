@@ -1,0 +1,66 @@
+{
+  "questionId": "finance-12",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a leading Indian fintech (Paytm).",
+  "idealClarificationQuestions": [
+    "Paytm One97 Communications revenue (total)? Yes.",
+    "Includes payments + financial services + commerce + cloud? Yes.",
+    "FY26 (post-RBI restrictions, recovery phase)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment-wise stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Payments business (PG + UPI + soundbox + merchant fees): ~₹4,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Financial services (lending distribution commissions, insurance, MF distribution): ~₹2,500 Cr (down post-RBI restrictions on Paytm Payments Bank)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total revenue: ~₹8,500-9,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "FY24 was ₹9,978 Cr; FY25 dropped to ~₹6,800 Cr post-RBI action; FY26 recovery to ~₹8,500-9,500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Payments business (PG + UPI + soundbox + merchant fees)",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Commerce + cloud (ticketing, deals, ads, cloud services)",
+      "value": "~₹2,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹8,500-9,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Payments business (PG + UPI + soundbox + merchant fees): ~₹4,000 Cr.",
+    "Financial services (lending distribution commissions, insurance, MF distribution): ~₹2,500 Cr (down post-RBI restrictions on Paytm Payments Bank).",
+    "Commerce + cloud (ticketing, deals, ads, cloud services): ~₹2,000 Cr.",
+    "Total revenue: ~₹8,500-9,000 Cr.",
+    "FY24 was ₹9,978 Cr; FY25 dropped to ~₹6,800 Cr post-RBI action; FY26 recovery to ~₹8,500-9,500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "FY24 was ₹9,978 Cr; FY25 dropped to ~₹6,800 Cr post-RBI action; FY26 recovery to ~₹8,500-9,500 Cr."
+  }
+}

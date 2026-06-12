@@ -1,0 +1,81 @@
+{
+  "questionId": "finance-25",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a leading Indian InsurTech (PB Fintech — Policybazaar).",
+  "idealClarificationQuestions": [
+    "PB Fintech total revenue (Policybazaar + Paisabazaar)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Premium booked × commission rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Policybazaar premium booked FY26: ~₹22,000 Cr (insurance distribution)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Policybazaar revenue (insurance + new initiatives like POSP): ~₹3,500 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~₹4,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test understanding of cost structure and margins. The playbook: revenue stack against a cost stack (COGS, opex, marketing, employee, other) to arrive at EBITDA; then subtract D&A, interest, tax to get PAT. Know category-typical EBITDA margins by industry (FMCG 22-25%, IT 22-26%, banks 50%+ ratio, telecom 50%+ EBITDA, D2C 5-15%)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Policybazaar premium booked FY26",
+      "value": "~₹22,000 Cr (insurance distribution).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Commission rate (paid by insurers)",
+      "value": "~12-15% blended (life lower, health/motor higher).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Policybazaar revenue (insurance + new initiatives like POSP)",
+      "value": "~₹3,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paisabazaar (lending distribution)",
+      "value": "~₹600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹4,000-4,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Policybazaar premium booked FY26: ~₹22,000 Cr (insurance distribution).",
+    "Policybazaar revenue (insurance + new initiatives like POSP): ~₹3,500 Cr.",
+    "Paisabazaar (lending distribution): ~₹600 Cr.",
+    "Total: ~₹4,000-4,200 Cr.",
+    "Round: ~₹4,000 Cr.",
+    "These questions test understanding of cost structure and margins. The playbook: revenue stack against a cost stack (COGS, opex, marketing, employee, other) to arrive at EBITDA; then subtract D&A, interest, tax to get PAT. Know category-typical EBITDA margins by industry (FMCG 22-25%, IT 22-26%, banks 50%+ ratio, telecom 50%+ EBITDA, D2C 5-15%)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹4,000 Cr."
+  }
+}

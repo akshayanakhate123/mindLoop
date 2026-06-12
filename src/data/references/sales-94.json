@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-94",
+  "domain": "sales",
+  "question": "Estimate the B2B sales opportunity for procurement / supply chain software in India.",
+  "idealClarificationQuestions": [
+    "ERP modules + standalone procurement (SAP Ariba, GEP, Tata nXX, Procol, Moglix-enterprise)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Enterprise procurement spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian large enterprises with formal procurement processes: ~5,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total: 5,000 × ₹3 Cr = ~₹15,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Indian players (Moglix Enterprise, Procol, ZetWerk Tech, Bizongo): ~25%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total procurement + B2B platform: ~₹20,000-25,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian large enterprises with formal procurement processes",
+      "value": "~5,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual procurement-tech spend per enterprise",
+      "value": "~₹50 lakh to ₹15 Cr (varies hugely).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Blended average",
+      "value": "~₹3 Cr/year per enterprise.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "5,000 × ₹3 Cr = ~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- SAP Ariba",
+      "value": "~30% = ₹4,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Oracle Procurement Cloud, Coupa",
+      "value": "~15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- GEP, Ivalua, Jaggaer",
+      "value": "~10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Indian players (Moglix Enterprise, Procol, ZetWerk Tech, Bizongo)",
+      "value": "~25%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual procurement-tech spend per enterprise: ~₹50 lakh to ₹15 Cr (varies hugely).",
+    "Blended average: ~₹3 Cr/year per enterprise.",
+    "Total: 5,000 × ₹3 Cr = ~₹15,000 Cr.",
+    "- SAP Ariba: ~30% = ₹4,500 Cr.",
+    "- Open-source + custom: ~20%.",
+    "Plus B2B marketplaces (Udaan, Moglix, ZetWerk, Bizongo platform revenue): ~₹8,000 Cr.",
+    "Total procurement + B2B platform: ~₹20,000-25,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total procurement + B2B platform: ~₹20,000-25,000 Cr."
+  }
+}

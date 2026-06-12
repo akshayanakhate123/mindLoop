@@ -1,0 +1,802 @@
+[
+  {
+    "id": "sales-1",
+    "domain": "sales",
+    "question": "Estimate monthly biscuit sales (in tonnage and value) in a Tier-2 city like Indore.",
+    "hint": "Population × per-capita biscuit consumption × city-specific premium.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-2",
+    "domain": "sales",
+    "question": "How many smartphones can be sold in Indore in a month?",
+    "hint": "City population × annual smartphone sales rate.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-3",
+    "domain": "sales",
+    "question": "Estimate paint demand in a growing urban locality (Whitefield in Bengaluru — 50,000 households).",
+    "hint": "New construction + repaint cycle frequency × paint per household.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-4",
+    "domain": "sales",
+    "question": "Estimate monthly soft drink sales (Coca-Cola + Pepsi + Thums Up etc.) in a Tier 1 city like Hyderabad.",
+    "hint": "Population × per-capita CSD × city premium.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-5",
+    "domain": "sales",
+    "question": "Estimate monthly cement bag sales in a typical Tier 2 district (e.g., Ratnagiri, Maharashtra).",
+    "hint": "Population × per-capita cement consumption × monthly distribution.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-6",
+    "domain": "sales",
+    "question": "Estimate monthly TV sales in Bengaluru.",
+    "hint": "Population × annual TV purchase rate × monthly distribution.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-7",
+    "domain": "sales",
+    "question": "Estimate annual two-wheeler sales potential in a typical state — say Rajasthan.",
+    "hint": "State population × per-capita 2W sales × state-specific tilt.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-8",
+    "domain": "sales",
+    "question": "Estimate monthly footwear sales (organized + branded) in a single Tier 2 city like Coimbatore.",
+    "hint": "Population × annual pairs per capita × organized share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-9",
+    "domain": "sales",
+    "question": "Estimate monthly air conditioner (AC) sales in Delhi NCR during peak summer.",
+    "hint": "Total annual AC sales × peak season concentration × NCR share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-10",
+    "domain": "sales",
+    "question": "Estimate monthly sales of premium chocolates (₹100+ bar) in Mumbai.",
+    "hint": "Affluent HH × consumption × frequency.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-11",
+    "domain": "sales",
+    "question": "Estimate monthly sales of 5-star refrigerators in a Tier 1 city like Pune.",
+    "hint": "Annual refrigerator sales × 5-star share × city contribution.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-12",
+    "domain": "sales",
+    "question": "Estimate monthly motorcycle sales (specifically Royal Enfield) in a Tier 1 metro — say Bengaluru.",
+    "hint": "RE national sales × city share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-13",
+    "domain": "sales",
+    "question": "Estimate monthly LCD/LED light bulb sales in a UP district (Gorakhpur ~45 lakh).",
+    "hint": "Population × annual bulb-buying rate × replacement cycle.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-14",
+    "domain": "sales",
+    "question": "Estimate monthly milk demand in a small town like Solapur (~12 lakh population).",
+    "hint": "Population × per-capita milk consumption.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-15",
+    "domain": "sales",
+    "question": "Estimate monthly sales of small-ticket loans (personal loans, BNPL <₹50K) in a single Tier 2 city like Lucknow.",
+    "hint": "Adults × digital lending penetration × monthly transaction frequency.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-16",
+    "domain": "sales",
+    "question": "Estimate the monthly fresh fruit sales in Crawford Market, Mumbai.",
+    "hint": "Mumbai fruit consumption × Crawford share of wholesale.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-17",
+    "domain": "sales",
+    "question": "Estimate monthly demand for diesel pumps at a single highway petrol station on NH-48.",
+    "hint": "Vehicles passing × refuel rate × volume per refuel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-18",
+    "domain": "sales",
+    "question": "Estimate monthly EV (electric scooter + bike) sales in Bengaluru.",
+    "hint": "City share of national EV 2W.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-19",
+    "domain": "sales",
+    "question": "Estimate monthly tile sales (vitrified + ceramic) in Gujarat — a state that's also India's tile manufacturing hub.",
+    "hint": "Production vs consumption in state.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-20",
+    "domain": "sales",
+    "question": "Estimate the monthly sales of premium notebooks/stationery (Classmate, Camlin, Faber-Castell) in a school-heavy city like Pune.",
+    "hint": "Student + working population × stationery spend per month.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-21",
+    "domain": "sales",
+    "question": "Estimate monthly sales of premium liquor (Scotch + premium IMFL >₹2000/bottle) in Goa.",
+    "hint": "Population + tourist × premium consumption rate.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-22",
+    "domain": "sales",
+    "question": "Estimate monthly toy sales (organized + unorganized) in Chennai metro.",
+    "hint": "Children × toy spend × monthly distribution.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-23",
+    "domain": "sales",
+    "question": "Estimate monthly demand for tractors in Punjab (agriculture-heavy state).",
+    "hint": "Punjab share of national tractor demand.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-24",
+    "domain": "sales",
+    "question": "Estimate monthly mobile data pack recharges in a Tier 3 city like Aligarh (~12 lakh population).",
+    "hint": "Active subscribers × recharge frequency × ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-25",
+    "domain": "sales",
+    "question": "Estimate monthly demand for premium watches (₹50K+) in a Tier 1 city like Hyderabad.",
+    "hint": "Affluent population × annual premium watch buyers × monthly distribution.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-26",
+    "domain": "sales",
+    "question": "How many kirana stores are there in India?",
+    "hint": "Per-HH ratio benchmark.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-27",
+    "domain": "sales",
+    "question": "Estimate the number of distributors Coca-Cola needs in Maharashtra to serve the state effectively.",
+    "hint": "Total retail outlets to be served / outlets per distributor.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-28",
+    "domain": "sales",
+    "question": "How many pharmacies exist in Mumbai (Greater Mumbai)?",
+    "hint": "Population × pharmacy density.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-29",
+    "domain": "sales",
+    "question": "Estimate the number of HUL stockists / distributors needed for pan-India coverage.",
+    "hint": "Outlets to cover / stockist effective coverage.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-30",
+    "domain": "sales",
+    "question": "Estimate the number of Reliance Retail stores across all formats pan-India.",
+    "hint": "Direct from RIL disclosures.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-31",
+    "domain": "sales",
+    "question": "How many ATMs does SBI operate in India?",
+    "hint": "Direct disclosure.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-32",
+    "domain": "sales",
+    "question": "Estimate the number of supermarkets + hypermarkets in India (DMart + Reliance + More + Easyday + others).",
+    "hint": "Sum across major chains.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-33",
+    "domain": "sales",
+    "question": "Estimate the number of mobile phone retailers (organized + unorganized) in India.",
+    "hint": "Outlets per smartphones-sold ratio.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-34",
+    "domain": "sales",
+    "question": "Estimate the number of auto dealers (passenger cars) in India.",
+    "hint": "OEM-wise dealer network.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-35",
+    "domain": "sales",
+    "question": "Estimate the number of fuel pumps Indian Oil (IOC) operates in India.",
+    "hint": "Direct disclosure.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-36",
+    "domain": "sales",
+    "question": "Estimate the number of branded apparel retail stores in India (Reliance Trends, Zudio, Westside, Pantaloons, Max, etc.).",
+    "hint": "Sum across major chains.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-37",
+    "domain": "sales",
+    "question": "Estimate the number of bank branches in a Tier 2 city like Coimbatore.",
+    "hint": "Population × branch density.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-38",
+    "domain": "sales",
+    "question": "Estimate the number of e-commerce delivery agents (last-mile) needed for pan-India coverage.",
+    "hint": "Daily orders / agent productivity.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-39",
+    "domain": "sales",
+    "question": "Estimate the number of CSC (Common Service Center) outlets in rural India.",
+    "hint": "Direct from CSC SPV data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-40",
+    "domain": "sales",
+    "question": "Estimate the number of jewellery showrooms (organized) in India (Tanishq + Malabar + Kalyan + Joyalukkas + Senco etc.).",
+    "hint": "Sum of major chain footprints.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-41",
+    "domain": "sales",
+    "question": "Estimate the number of authorized service centers Maruti Suzuki has in India.",
+    "hint": "Direct disclosure.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-42",
+    "domain": "sales",
+    "question": "Estimate the number of e-commerce pickup points / kirana partners enabling DotPe / ONDC delivery.",
+    "hint": "Multi-platform aggregation.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-43",
+    "domain": "sales",
+    "question": "Estimate the number of LIC agents in India.",
+    "hint": "Direct disclosure.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-44",
+    "domain": "sales",
+    "question": "Estimate the number of Swiggy + Zomato delivery partners pan-India.",
+    "hint": "Daily orders / partner productivity.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-45",
+    "domain": "sales",
+    "question": "Estimate the number of pharmacy stores McDonald's India would need to compete with KFC + Burger King + Domino's in any metro.",
+    "hint": "Population × per-capita QSR density × McDonald's catch-up.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-46",
+    "domain": "sales",
+    "question": "Estimate the number of dental clinics in India.",
+    "hint": "Dentists × clinic-to-dentist ratio.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-47",
+    "domain": "sales",
+    "question": "Estimate the number of independent paint dealers (small/medium) in a state like Karnataka.",
+    "hint": "State paint demand / per-dealer turnover.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-48",
+    "domain": "sales",
+    "question": "Estimate the number of pharmacies needed to serve a new township of 1 lakh population.",
+    "hint": "Standard pharmacy density.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-49",
+    "domain": "sales",
+    "question": "Estimate the number of retail outlets ITC needs for full nationwide distribution of its FMCG portfolio.",
+    "hint": "Outlets touched per FY.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-50",
+    "domain": "sales",
+    "question": "Estimate the number of distributors required for a new D2C brand to launch into Tier 2 modern trade pan-India.",
+    "hint": "City coverage + distributor catchment.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-51",
+    "domain": "sales",
+    "question": "Out of 10,000 insurance leads, how many become customers?",
+    "hint": "Standard insurance lead funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-52",
+    "domain": "sales",
+    "question": "Estimate conversions for a real-estate sales team handling 500 monthly leads.",
+    "hint": "Real estate funnel decay.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-53",
+    "domain": "sales",
+    "question": "Estimate number of credit cards sold by a single bank branch (HDFC / ICICI tier) monthly.",
+    "hint": "Branch funnel: walk-ins + outbound × conversion.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-54",
+    "domain": "sales",
+    "question": "Estimate the SaaS sales funnel for a B2B Indian SaaS company doing outbound to enterprise prospects.",
+    "hint": "Top-down outbound funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-55",
+    "domain": "sales",
+    "question": "Estimate the personal loan funnel for a digital lender (KreditBee/Slice tier) in India.",
+    "hint": "Standard digital lending funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-56",
+    "domain": "sales",
+    "question": "Estimate the conversions for an Indian study-abroad consultancy from initial inquiry to enrolled student.",
+    "hint": "Long sales cycle funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-57",
+    "domain": "sales",
+    "question": "Estimate the funnel from car showroom test drives to actual purchase.",
+    "hint": "Showroom funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-58",
+    "domain": "sales",
+    "question": "Estimate the conversion rate for a B2B SaaS demo-to-customer in India.",
+    "hint": "Demo-to-customer funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-59",
+    "domain": "sales",
+    "question": "Estimate the conversion rate for door-to-door FMCG promo sampling.",
+    "hint": "Sampling effectiveness benchmarks.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-60",
+    "domain": "sales",
+    "question": "Estimate the conversion rate for online classifieds (OLX) for used items.",
+    "hint": "Listing → contact → meet → transaction.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-61",
+    "domain": "sales",
+    "question": "Estimate the conversion rate for solar rooftop sales (residential).",
+    "hint": "Solar funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-62",
+    "domain": "sales",
+    "question": "Estimate the conversion from app store browse to MAU for a new e-commerce app.",
+    "hint": "Funnel from listing to MAU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-63",
+    "domain": "sales",
+    "question": "Estimate the conversion rate for a wealth-management firm acquiring HNI clients.",
+    "hint": "HNI wealth-mgmt long cycle funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-64",
+    "domain": "sales",
+    "question": "Estimate the conversion from Diwali festive ad exposure to actual brand purchase.",
+    "hint": "Brand campaign impact.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-65",
+    "domain": "sales",
+    "question": "Estimate the conversion rate from event-marketing / trade fair leads.",
+    "hint": "B2B event-lead funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-66",
+    "domain": "sales",
+    "question": "Estimate the funnel for a recruiter / staffing agency placing candidates.",
+    "hint": "Staffing funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-67",
+    "domain": "sales",
+    "question": "Estimate the conversion rate from a TV shopping channel (HomeShop18 / NaaptolMax) ad-impressionn to purchase.",
+    "hint": "TV shopping conversion benchmarks.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-68",
+    "domain": "sales",
+    "question": "Estimate the conversion rate for telecom recharge upsells (postpaid plan upgrade calls).",
+    "hint": "Outbound upsell funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-69",
+    "domain": "sales",
+    "question": "Estimate the conversion from financial advisor seminar leads.",
+    "hint": "Seminar-to-client funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-70",
+    "domain": "sales",
+    "question": "Estimate the conversion rate from food delivery app's first push notification offer to first order.",
+    "hint": "Activation funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-71",
+    "domain": "sales",
+    "question": "Estimate the conversion from FMCG distributor sales rep visit to retailer order.",
+    "hint": "Retail beat conversion.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-72",
+    "domain": "sales",
+    "question": "Estimate the conversion from a renewable energy lead to commercial solar installation (B2B).",
+    "hint": "B2B solar funnel (long cycle, large ticket).",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-73",
+    "domain": "sales",
+    "question": "Estimate the conversion from job-portal job application to hiring.",
+    "hint": "Application funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-74",
+    "domain": "sales",
+    "question": "Estimate the conversion from car insurance renewal reminder SMS / WhatsApp to actual renewal.",
+    "hint": "Renewal reminder funnel.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-75",
+    "domain": "sales",
+    "question": "Estimate the conversion rate from in-store retail customer to credit card sign-up at point-of-sale.",
+    "hint": "POS conversion.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-76",
+    "domain": "sales",
+    "question": "Estimate the SaaS sales opportunity among Indian SMEs.",
+    "hint": "SME count × SaaS spend per SME.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-77",
+    "domain": "sales",
+    "question": "How many restaurants in India can use POS software?",
+    "hint": "Total restaurants × POS-adoptable share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-78",
+    "domain": "sales",
+    "question": "Estimate the market size for CRM tools among Indian startups.",
+    "hint": "Startups × adoption × ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-79",
+    "domain": "sales",
+    "question": "Estimate the market size for HR software for Indian SMEs and mid-market.",
+    "hint": "Companies × adoption × ARPU.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-80",
+    "domain": "sales",
+    "question": "Estimate the market size for fleet management software for Indian logistics + transport companies.",
+    "hint": "Fleet × adoption × per-vehicle cost.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-81",
+    "domain": "sales",
+    "question": "Estimate the B2B sales potential for cloud computing services (AWS, Azure, GCP) in India.",
+    "hint": "Public cloud market.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-82",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for cybersecurity products in India.",
+    "hint": "Indian cybersec spend.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-83",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for marketing automation tools in India.",
+    "hint": "MAU-driven ARPU × customer count.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-84",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for e-commerce enabler tools (Shopify, GoKwik, Razorpay, etc.) for Indian D2C brands.",
+    "hint": "D2C brands × tech stack ARPU.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-85",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for AI tools (LLMs, AI APIs, AI agents) in Indian enterprise.",
+    "hint": "Enterprise AI adoption + spend.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-86",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for accounting software for Indian SMBs.",
+    "hint": "SMB count × adoption × ARPU.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-87",
+    "domain": "sales",
+    "question": "Estimate the B2B sales potential for legaltech (contract management, e-signatures, compliance) in India.",
+    "hint": "Enterprise + SMB adoption.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-88",
+    "domain": "sales",
+    "question": "Estimate the B2B sales potential for testing + DevTools software (Browserstack, Postman, LambdaTest) globally driven by Indian companies.",
+    "hint": "Sum across Indian DevTools companies.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-89",
+    "domain": "sales",
+    "question": "Estimate the B2B sales potential for ed-tech enterprise / corporate learning in India.",
+    "hint": "Corporate spend on training.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-90",
+    "domain": "sales",
+    "question": "Estimate the B2B sales potential for hotel + restaurant management software in India.",
+    "hint": "Properties + restaurants × ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-91",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for video conferencing / collaboration tools in India (Zoom, Teams, Meet).",
+    "hint": "Knowledge workers × paid seat conversion.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-92",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for sales-engagement and call-recording tools in India.",
+    "hint": "Indian B2C + B2B sales teams × adoption.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-93",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for digital ads platforms (DSP, programmatic, ad-tech) in India.",
+    "hint": "Programmatic tech-fee layer.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-94",
+    "domain": "sales",
+    "question": "Estimate the B2B sales opportunity for procurement / supply chain software in India.",
+    "hint": "Enterprise procurement spend.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-95",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for cold-chain logistics (refrigerated transport + cold storage) in India.",
+    "hint": "Cold-chain ecosystem.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-96",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for trade-finance and SME lending platforms in India.",
+    "hint": "MSME lending TAM.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-97",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for facility management services in India.",
+    "hint": "Commercial space × FM cost.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-98",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for staffing / contract workforce solutions in India.",
+    "hint": "Workforce × pricing.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-99",
+    "domain": "sales",
+    "question": "Estimate the B2B opportunity for testing / inspection / certification (TIC) services in India.",
+    "hint": "Industries × TIC spend.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "sales-100",
+    "domain": "sales",
+    "question": "Estimate the B2B sales opportunity for industrial IoT (IIoT) and Industry 4.0 in India by 2028.",
+    "hint": "Manufacturing × IIoT spend.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  }
+]

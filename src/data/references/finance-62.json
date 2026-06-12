@@ -1,0 +1,83 @@
+{
+  "questionId": "finance-62",
+  "domain": "finance",
+  "question": "Estimate the market opportunity for Indian online education (formal degree + upskilling) by 2030.",
+  "idealClarificationQuestions": [
+    "Online + hybrid education market by 2030? Yes.",
+    "Includes K-12 + JEE/NEET + UG/PG online degrees + upskilling? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment-wise market."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "K-12 EdTech (PhysicsWallah, Aakash digital, Allen): ~₹40,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Online UG/PG degrees (UpGrad, Great Learning, Coursera India, Simplilearn): ~₹20,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Hindi/vernacular content (free + low-price): ~₹4,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "vs current FY26: ~₹35,000-40,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "K-12 EdTech (PhysicsWallah, Aakash digital, Allen)",
+      "value": "~₹40,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Test prep (JEE, NEET, UPSC, banking)",
+      "value": "~₹25,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Coding bootcamps (Scaler, Masai, Newton School)",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hindi/vernacular content (free + low-price)",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹1.1 lakh Cr Indian online ed market by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "vs current FY26",
+      "value": "~₹35,000-40,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "K-12 EdTech (PhysicsWallah, Aakash digital, Allen): ~₹40,000 Cr.",
+    "Test prep (JEE, NEET, UPSC, banking): ~₹25,000 Cr.",
+    "Online UG/PG degrees (UpGrad, Great Learning, Coursera India, Simplilearn): ~₹20,000 Cr.",
+    "Corporate upskilling (Skillsoft, LinkedIn Learning, internal corporate L&D): ~₹15,000 Cr.",
+    "Coding bootcamps (Scaler, Masai, Newton School): ~₹8,000 Cr.",
+    "Hindi/vernacular content (free + low-price): ~₹4,000 Cr.",
+    "Total: ~₹1.1 lakh Cr Indian online ed market by 2030.",
+    "vs current FY26: ~₹35,000-40,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "vs current FY26: ~₹35,000-40,000 Cr."
+  }
+}

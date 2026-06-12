@@ -1,0 +1,87 @@
+{
+  "questionId": "marketing-40",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate from EdTech app installs to paid course enrollments (post-2024 reality, after the bust).",
+  "idealClarificationQuestions": [
+    "EdTech for K-12 / test prep? Yes.",
+    "Realistic post-2024 conversion (when category cleaned up high-pressure sales)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Updated post-bust conversion rates."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Install: 100,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Sign up with phone for further access: ~30%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Enroll in paid course: ~1.5-2.5% (post-bust, much lower than 2021-22's 5-7%)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average paid course value: ~₹8,000-25,000."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Install",
+      "value": "100,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open app",
+      "value": "~75%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sample free content / try lesson",
+      "value": "~40%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sign up with phone for further access",
+      "value": "~30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paid course interest (browsed paid pricing)",
+      "value": "~15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take a demo/trial class",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Enroll in paid course",
+      "value": "~1.5-2.5% (post-bust, much lower than 2021-22's 5-7%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net install-to-paid",
+      "value": "~1.5-2.5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average paid course value: ~₹8,000-25,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average paid course value: ~₹8,000-25,000."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-41",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of eggs in India.",
+  "idealClarificationQuestions": [
+    "Both retail + restaurant/processed? Yes — total.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita egg consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per-capita egg consumption: ~120 eggs/year (rising — was 80 in 2018)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily: ~33 crore (330 million) eggs."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus eggs in processed foods (cake, biscuits, mayonnaise): ~5% extra."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Egg-eating population (vegetarian-Jain-strict-Brahmin exclusion)",
+      "value": "~70% = ~1.0B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita egg consumption",
+      "value": "~120 eggs/year (rising — was 80 in 2018).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual",
+      "value": "1.0B × 120 = ~120 billion eggs/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~33 crore (330 million) eggs.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus eggs in processed foods (cake, biscuits, mayonnaise)",
+      "value": "~5% extra.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Egg-eating population (vegetarian-Jain-strict-Brahmin exclusion): ~70% = ~1.0B.",
+    "Annual: 1.0B × 120 = ~120 billion eggs/year.",
+    "Daily: ~33 crore (330 million) eggs."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus eggs in processed foods (cake, biscuits, mayonnaise): ~5% extra."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "questionId": "finance-10",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a top Indian D2C unicorn (e.g., Mamaearth / Honasa).",
+  "idealClarificationQuestions": [
+    "Honasa Consumer (parent of Mamaearth, The Derma Co., Aqualogica, BBlunt, Dr. Sheth's)? Yes.",
+    "Total revenue across all brands? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "GMV × revenue recognition."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Honasa GMV FY26: ~₹2,700-3,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Net revenue (after returns, marketplace fees): ~75% of GMV = ~₹2,100-2,200 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Channel mix: ~35% own DTC, ~30% modern trade + general trade, ~25% Amazon/Flipkart marketplace, ~10% quick commerce."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹2,200 Cr revenue."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Honasa GMV FY26",
+      "value": "~₹2,700-3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net revenue (after returns, marketplace fees)",
+      "value": "~75% of GMV = ~₹2,100-2,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Channel mix",
+      "value": "~35% own DTC, ~30% modern trade + general trade, ~25% Amazon/Flipkart marketplace, ~10% quick commerce.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹2,200 Cr revenue.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Honasa GMV FY26: ~₹2,700-3,000 Cr.",
+    "Net revenue (after returns, marketplace fees): ~75% of GMV = ~₹2,100-2,200 Cr.",
+    "Channel mix: ~35% own DTC, ~30% modern trade + general trade, ~25% Amazon/Flipkart marketplace, ~10% quick commerce.",
+    "Round: ~₹2,200 Cr revenue."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹2,200 Cr revenue."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "questionId": "marketing-60",
+  "domain": "marketing",
+  "question": "Estimate the size of the Indian crypto investor segment (post-2024 tax + RBI cautions).",
+  "idealClarificationQuestions": [
+    "Active crypto investors (any trade in past 12 months)? Yes.",
+    "Through Indian exchanges (CoinDCX, WazirX) or offshore? Both.",
+    "Year 2026 (after 30% tax + 1% TDS)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total crypto-aware × active investor share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian crypto-aware adults (heard of, know what it is): ~150M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active in past 12 months (post-tax-regime — most went dormant): ~6-8M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~6-8M active Indian crypto investors (down from peak ~15-20M in 2021-22)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Many users moved to offshore (Binance, Bybit) to avoid TDS — exact count uncertain."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian crypto-aware adults (heard of, know what it is)",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, ever opened a crypto exchange account",
+      "value": "~25M cumulative.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active in past 12 months (post-tax-regime — most went dormant)",
+      "value": "~6-8M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, actively trading (>1 trade/month)",
+      "value": "~3-4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~6-8M active Indian crypto investors (down from peak ~15-20M in 2021-22).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian crypto holdings",
+      "value": "~$2-3B (vs peak $20B in 2021).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total Indian crypto holdings: ~$2-3B (vs peak $20B in 2021)."
+  ],
+  "finalAnswerRange": {
+    "low": "6",
+    "high": "8",
+    "ideal": "~6-8M active Indian crypto investors (down from peak ~15-20M in 2021-22)."
+  }
+}

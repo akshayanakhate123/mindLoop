@@ -1,0 +1,81 @@
+{
+  "questionId": "sales-100",
+  "domain": "sales",
+  "question": "Estimate the B2B sales opportunity for industrial IoT (IIoT) and Industry 4.0 in India by 2028.",
+  "idealClarificationQuestions": [
+    "Smart factories + sensor networks + predictive maintenance + connected machinery (Siemens, GE, Tata Elxsi, Indian IIoT startups)? Yes.",
+    "By 2028? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Manufacturing × IIoT spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian manufacturing GDP: ~₹35 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "IIoT spend as % of manufacturing revenue: ~0.5-1% by 2028."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus connected supply chain + warehouse IoT: ~₹5,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹18,000-22,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian manufacturing GDP",
+      "value": "~₹35 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "IIoT spend as % of manufacturing revenue",
+      "value": "~0.5-1% by 2028.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "IIoT market",
+      "value": "₹20L × 0.75% = ~₹15,000 Cr by 2028.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus connected supply chain + warehouse IoT",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian IIoT B2B by 2028",
+      "value": "~₹20,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹18,000-22,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian manufacturing GDP: ~₹35 lakh Cr.",
+    "Of which IIoT-addressable (auto, pharma, electronics, FMCG, metals, machinery): ~₹20 lakh Cr revenue.",
+    "IIoT market: ₹20L × 0.75% = ~₹15,000 Cr by 2028.",
+    "Plus connected supply chain + warehouse IoT: ~₹5,000 Cr.",
+    "Total Indian IIoT B2B by 2028: ~₹20,000 Cr.",
+    "Round: ~₹18,000-22,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "18,000",
+    "high": "22,000",
+    "ideal": "~₹18,000-22,000 Cr."
+  }
+}

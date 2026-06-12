@@ -1,0 +1,81 @@
+{
+  "questionId": "generalist-40",
+  "domain": "generalist",
+  "question": "How many cigarettes are smoked in India daily?",
+  "idealClarificationQuestions": [
+    "Cigarettes only (not bidis, hookah)? Yes.",
+    "Both legal-duty-paid + illicit? Both.",
+    "Year 2026? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Smoking population × cigarettes per smoker per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Adult Indian smokers (cigarette specifically): ~5-6% of adults = ~50M (most tobacco users use bidi or smokeless)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Daily cigarettes (legal market): 50M × 7.5 = ~375M cigarettes/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total: ~500M cigarettes/day = ~50 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual: ~180 billion sticks."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Adult Indian smokers (cigarette specifically)",
+      "value": "~5-6% of adults = ~50M (most tobacco users use bidi or smokeless).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average cigarettes per smoker per day",
+      "value": "~7-8.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily cigarettes (legal market)",
+      "value": "50M × 7.5 = ~375M cigarettes/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus illicit cigarettes (~25% of market)",
+      "value": "adds ~125M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~500M cigarettes/day = ~50 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual",
+      "value": "~180 billion sticks.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Adult Indian smokers (cigarette specifically): ~5-6% of adults = ~50M (most tobacco users use bidi or smokeless).",
+    "Daily cigarettes (legal market): 50M × 7.5 = ~375M cigarettes/day.",
+    "Total: ~500M cigarettes/day = ~50 crore.",
+    "Annual: ~180 billion sticks."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual: ~180 billion sticks."
+  }
+}

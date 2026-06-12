@@ -1,0 +1,76 @@
+{
+  "questionId": "sales-92",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for sales-engagement and call-recording tools in India.",
+  "idealClarificationQuestions": [
+    "Tools like Knowlarity, Exotel, Servetel, Ozonetel, Twilio India, Salesken + sales-engagement (Salesloft, Outreach equivalents)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Indian B2C + B2B sales teams × adoption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian companies with sales call operations: ~70,000 (excluding small business)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Avg ARPU per company: ~₹3-4 lakh/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus AI-powered conversation intelligence (Salesken, Chorus equivalents): ~₹250 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹2,000 Cr Indian sales-engagement + telephony market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian companies with sales call operations",
+      "value": "~70,000 (excluding small business).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg ARPU per company",
+      "value": "~₹3-4 lakh/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cloud telephony + recording market",
+      "value": "35K × ₹3.5L = ~₹1,225 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus telemarketing platforms (LeadSquared, Knolwarity Sales)",
+      "value": "~₹500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹2,000 Cr Indian sales-engagement + telephony market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, paying for call infrastructure (cloud telephony / call recording / IVR): ~50% = 35,000.",
+    "Avg ARPU per company: ~₹3-4 lakh/year.",
+    "Total cloud telephony + recording market: 35K × ₹3.5L = ~₹1,225 Cr.",
+    "Plus AI-powered conversation intelligence (Salesken, Chorus equivalents): ~₹250 Cr.",
+    "Plus telemarketing platforms (LeadSquared, Knolwarity Sales): ~₹500 Cr.",
+    "Total: ~₹2,000 Cr Indian sales-engagement + telephony market."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹2,000 Cr Indian sales-engagement + telephony market."
+  }
+}

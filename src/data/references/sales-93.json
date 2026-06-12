@@ -1,0 +1,83 @@
+{
+  "questionId": "sales-93",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for digital ads platforms (DSP, programmatic, ad-tech) in India.",
+  "idealClarificationQuestions": [
+    "Programmatic ad-tech ecosystem (Google Ad Manager, Adobe Ad Cloud, Indian DSPs): platform fees only? Yes — excluding actual media spend.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Programmatic tech-fee layer."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian programmatic ad spend FY26: ~₹15,000-18,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Google Ad Manager + DV360 + Display Network: ~60%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Adobe Ad Cloud: ~8%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Indian DSPs (Inmobi, Vdo.AI, Affle): ~12%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian programmatic ad spend FY26",
+      "value": "~₹15,000-18,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tech-fee / DSP-SSP layer (take rate ~15-20%)",
+      "value": "~₹2,500-3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Google Ad Manager + DV360 + Display Network",
+      "value": "~60%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- The Trade Desk (TTD)",
+      "value": "~10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Adobe Ad Cloud",
+      "value": "~8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Indian DSPs (Inmobi, Vdo.AI, Affle)",
+      "value": "~12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other",
+      "value": "~10%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian programmatic ad spend FY26: ~₹15,000-18,000 Cr.",
+    "Tech-fee / DSP-SSP layer (take rate ~15-20%): ~₹2,500-3,000 Cr.",
+    "- Google Ad Manager + DV360 + Display Network: ~60%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Other: ~10%."
+  }
+}

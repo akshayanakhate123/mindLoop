@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-39",
+  "domain": "finance",
+  "question": "Estimate the profitability of a Reliance Retail store (Reliance Smart / Reliance Fresh).",
+  "idealClarificationQuestions": [
+    "Single Reliance grocery store EBITDA margin? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Grocery retail thin margins."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per-store annual revenue (Reliance Smart, mid-sized): ~₹40-50 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Utilities + maintenance + supplies: ~2-3%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Store-level EBITDA: ~3-7% margin."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Grocery is volume game; ROCE matters more than margin."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Per-store annual revenue (Reliance Smart, mid-sized)",
+      "value": "~₹40-50 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS (grocery items wholesale buy)",
+      "value": "~78-82% (grocery has thin gross margin 18-22%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Store rent",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff",
+      "value": "~4-5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Utilities + maintenance + supplies",
+      "value": "~2-3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other store-level overhead",
+      "value": "~2-3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~89-97%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Store-level EBITDA",
+      "value": "~3-7% margin.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per-store annual revenue (Reliance Smart, mid-sized): ~₹40-50 Cr.",
+    "- Utilities + maintenance + supplies: ~2-3%.",
+    "PAT (after corporate overhead + capex): ~1-3%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT (after corporate overhead + capex): ~1-3%."
+  }
+}

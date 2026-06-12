@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-53",
+  "domain": "finance",
+  "question": "Estimate the investment opportunity (annual TAM) for solar rooftop installations in India.",
+  "idealClarificationQuestions": [
+    "Total annual market value for rooftop solar installations? Yes.",
+    "Residential + commercial + industrial? All.",
+    "FY26 + 5-year horizon? Provide both."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Capacity addition × cost per kW."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual rooftop solar capacity addition target (FY26): ~5-6 GW."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual market value FY26: 5,500 MW × ₹55 lakh/MW = ~₹30,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "By FY30 annual addition target: ~12-15 GW = ~₹60,000-75,000 Cr annual market."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total annual market FY30: ~₹75,000-90,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual rooftop solar capacity addition target (FY26)",
+      "value": "~5-6 GW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average installed cost",
+      "value": "~₹50-60 per Watt = ₹5-6 crore per MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual market value FY26",
+      "value": "5,500 MW × ₹55 lakh/MW = ~₹30,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PM Surya Ghar Yojana target",
+      "value": "30 GW residential by 2027 = average 8-10 GW/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By FY30 annual addition target",
+      "value": "~12-15 GW = ~₹60,000-75,000 Cr annual market.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus operations & maintenance + battery + accessories",
+      "value": "~25% on top = additional ₹15,000-18,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual market FY30",
+      "value": "~₹75,000-90,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average installed cost: ~₹50-60 per Watt = ₹5-6 crore per MW.",
+    "Annual market value FY26: 5,500 MW × ₹55 lakh/MW = ~₹30,000 Cr.",
+    "PM Surya Ghar Yojana target: 30 GW residential by 2027 = average 8-10 GW/year.",
+    "By FY30 annual addition target: ~12-15 GW = ~₹60,000-75,000 Cr annual market.",
+    "Plus operations & maintenance + battery + accessories: ~25% on top = additional ₹15,000-18,000 Cr.",
+    "Total annual market FY30: ~₹75,000-90,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total annual market FY30: ~₹75,000-90,000 Cr."
+  }
+}

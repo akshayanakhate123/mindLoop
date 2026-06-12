@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-59",
+  "domain": "finance",
+  "question": "Estimate the size of India's listed-equity investor universe (demat accounts) by 2030.",
+  "idealClarificationQuestions": [
+    "Demat accounts (NSDL + CDSL) by 2030? Yes.",
+    "Active accounts (traded in past 12 months)? Provide total + active."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Current base + growth."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Current total demat accounts FY26: ~17 crore (NSDL + CDSL combined; some overlap)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual addition: ~3 crore/year (steadily)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Unique investors: ~16-18 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~17-18 crore unique demat holders; ~6-7 crore active by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Current total demat accounts FY26",
+      "value": "~17 crore (NSDL + CDSL combined; some overlap).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique investors",
+      "value": "~10 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual addition",
+      "value": "~3 crore/year (steadily).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2030",
+      "value": "17 crore + 12 crore = ~29-30 crore demat accounts total.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique investors",
+      "value": "~16-18 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active (transacted in past 12 months)",
+      "value": "~40% = ~6-7 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~17-18 crore unique demat holders; ~6-7 crore active by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Current total demat accounts FY26: ~17 crore (NSDL + CDSL combined; some overlap).",
+    "Unique investors: ~10 crore.",
+    "Annual addition: ~3 crore/year (steadily).",
+    "By 2030: 17 crore + 12 crore = ~29-30 crore demat accounts total.",
+    "Unique investors: ~16-18 crore.",
+    "Active (transacted in past 12 months): ~40% = ~6-7 crore.",
+    "Round: ~17-18 crore unique demat holders; ~6-7 crore active by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "17",
+    "high": "18",
+    "ideal": "~17-18 crore unique demat holders; ~6-7 crore active by 2030."
+  }
+}

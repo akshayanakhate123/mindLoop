@@ -1,0 +1,73 @@
+{
+  "questionId": "product-87",
+  "domain": "product",
+  "question": "Estimate the warehouse staff needed for Blinkit dark store operations in Delhi NCR.",
+  "idealClarificationQuestions": [
+    "Across all Blinkit Delhi NCR dark stores? Yes.",
+    "Warehouse pickers + supervisors (excluding delivery riders)? Yes — in-store staff only.",
+    "Active monthly? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Number of stores × staff per store."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Blinkit Delhi NCR dark stores: ~80 (NCR is largest market)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per store staffing: ~6-8 pickers per shift × 2 shifts/day = 12-16 pickers + 2-3 supervisors per store = ~16-20 in-store staff per store."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total NCR Blinkit warehouse staff: 80 × 23 = ~1,800-2,000 staff."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1,800-2,000 warehouse staff for Blinkit in Delhi NCR."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Blinkit Delhi NCR dark stores",
+      "value": "~80 (NCR is largest market).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per store staffing",
+      "value": "~6-8 pickers per shift × 2 shifts/day = 12-16 pickers + 2-3 supervisors per store = ~16-20 in-store staff per store.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily staff need per store (3 shifts considered, factoring rest)",
+      "value": "~22-25 staff on payroll per store.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total NCR Blinkit warehouse staff",
+      "value": "80 × 23 = ~1,800-2,000 staff.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1,800-2,000 warehouse staff for Blinkit in Delhi NCR.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per store staffing: ~6-8 pickers per shift × 2 shifts/day = 12-16 pickers + 2-3 supervisors per store = ~16-20 in-store staff per store.",
+    "Total NCR Blinkit warehouse staff: 80 × 23 = ~1,800-2,000 staff."
+  ],
+  "finalAnswerRange": {
+    "low": "1,800",
+    "high": "2,000",
+    "ideal": "~1,800-2,000 warehouse staff for Blinkit in Delhi NCR."
+  }
+}

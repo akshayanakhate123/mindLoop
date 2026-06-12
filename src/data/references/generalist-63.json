@@ -1,0 +1,73 @@
+{
+  "questionId": "generalist-63",
+  "domain": "generalist",
+  "question": "Estimate the total length of railway tracks in India.",
+  "idealClarificationQuestions": [
+    "Route length (network distance) or running track length (multiple parallel tracks counted separately)? Provide both.",
+    "Indian Railways only? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from IR data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Railways route length: ~68,000 km (operational)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Running track length (counting multi-tracking): ~1.05 lakh km."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of route: electrified ~62,000 km (~91%); diesel ~6,000 km."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~68K route-km, ~1.05L running-km, ~1.27L total track-km."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Railways route length",
+      "value": "~68,000 km (operational).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Running track length (counting multi-tracking)",
+      "value": "~1.05 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total track-km laid (counting yards, sidings)",
+      "value": "~1.27 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of route",
+      "value": "electrified ~62,000 km (~91%); diesel ~6,000 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~68K route-km, ~1.05L running-km, ~1.27L total track-km.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Running track length (counting multi-tracking): ~1.05 lakh km.",
+    "Total track-km laid (counting yards, sidings): ~1.27 lakh km."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~68K route-km, ~1.05L running-km, ~1.27L total track-km."
+  }
+}

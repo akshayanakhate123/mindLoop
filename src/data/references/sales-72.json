@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-72",
+  "domain": "sales",
+  "question": "Estimate the conversion from a renewable energy lead to commercial solar installation (B2B).",
+  "idealClarificationQuestions": [
+    "B2B commercial / industrial solar lead → installation completed? Yes.",
+    "Capex or RESCO (rental) model? Both.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "B2B solar funnel (long cycle, large ticket)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Inquiries / B2B leads: 100."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Commercial discussion: ~50% of proposed = 17."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Installation completed (6-9 months later): ~90% = 4-5."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average ticket size: ~₹4-8 Cr (commercial 0.5-2 MW project)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Inquiries / B2B leads",
+      "value": "100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Site feasibility study",
+      "value": "~50% = 50.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Detailed proposal + financial model shared",
+      "value": "~70% of feasibility-passed = 35.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Commercial discussion",
+      "value": "~50% of proposed = 17.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "MoU / LoI signed",
+      "value": "~40% = 7.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PPA / contract signed (legal + finance)",
+      "value": "~70% = 5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Installation completed (6-9 months later)",
+      "value": "~90% = 4-5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net inquiry-to-installed",
+      "value": "~4-5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Site feasibility study: ~50% = 50.",
+    "Detailed proposal + financial model shared: ~70% of feasibility-passed = 35.",
+    "Commercial discussion: ~50% of proposed = 17.",
+    "MoU / LoI signed: ~40% = 7.",
+    "PPA / contract signed (legal + finance): ~70% = 5.",
+    "Installation completed (6-9 months later): ~90% = 4-5.",
+    "Average ticket size: ~₹4-8 Cr (commercial 0.5-2 MW project)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average ticket size: ~₹4-8 Cr (commercial 0.5-2 MW project)."
+  }
+}

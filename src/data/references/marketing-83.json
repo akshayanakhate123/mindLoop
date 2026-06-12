@@ -1,0 +1,82 @@
+{
+  "questionId": "marketing-83",
+  "domain": "marketing",
+  "question": "Estimate the annual advertising revenue of Meta (Facebook + Instagram + WhatsApp) from India.",
+  "idealClarificationQuestions": [
+    "Total ad revenue from India advertisers across Meta platforms? Yes.",
+    "Year 2026? Yes.",
+    "Includes WhatsApp Business + Click-to-WhatsApp ads? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Estimate from India advertiser activity."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian advertisers on Meta: ~25-30 lakh active monthly (SMBs + large brands)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Top 1,000 brands: ₹5-50 Cr each = ~₹15,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Long tail SMBs: ~₹50K-2 lakh each = ~₹3,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹28,000-32,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian advertisers on Meta",
+      "value": "~25-30 lakh active monthly (SMBs + large brands).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Top 1,000 brands",
+      "value": "₹5-50 Cr each = ~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-tier ~50,000 D2C / SMBs",
+      "value": "~₹10-30 lakh each = ~₹12,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Long tail SMBs",
+      "value": "~₹50K-2 lakh each = ~₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Meta India ad revenue",
+      "value": "~₹30,000 Cr annually (~$3.6B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹28,000-32,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian advertisers on Meta: ~25-30 lakh active monthly (SMBs + large brands).",
+    "- Top 1,000 brands: ₹5-50 Cr each = ~₹15,000 Cr.",
+    "- Mid-tier ~50,000 D2C / SMBs: ~₹10-30 lakh each = ~₹12,000 Cr.",
+    "- Long tail SMBs: ~₹50K-2 lakh each = ~₹3,000 Cr.",
+    "Total Meta India ad revenue: ~₹30,000 Cr annually (~$3.6B).",
+    "Round: ~₹28,000-32,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "28,000",
+    "high": "32,000",
+    "ideal": "~₹28,000-32,000 Cr."
+  }
+}

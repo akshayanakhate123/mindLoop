@@ -1,0 +1,71 @@
+{
+  "questionId": "generalist-97",
+  "domain": "generalist",
+  "question": "Estimate the fireworks (cracker industry) revenue during Diwali.",
+  "idealClarificationQuestions": [
+    "Total cracker industry revenue tied to Diwali? Yes.",
+    "Pan-India (sourced largely from Sivakasi)? Yes.",
+    "Despite court bans, realistic ground figure? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual cracker market × Diwali share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian fireworks industry annual size: ~₹6,500 Cr (FY26)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of which Diwali season (Sept-Nov): ~75-80% = ~₹5,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total Diwali-related cracker spend: ~₹6,500-7,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Sivakasi (Tamil Nadu) accounts for ~90% of legal manufacturing."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian fireworks industry annual size",
+      "value": "~₹6,500 Cr (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which Diwali season (Sept-Nov)",
+      "value": "~75-80% = ~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus grey market / unorganized (significant)",
+      "value": "~30-40% on top = ~₹2,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Diwali-related cracker spend",
+      "value": "~₹6,500-7,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian fireworks industry annual size: ~₹6,500 Cr (FY26).",
+    "Of which Diwali season (Sept-Nov): ~75-80% = ~₹5,000 Cr.",
+    "Plus grey market / unorganized (significant): ~30-40% on top = ~₹2,000 Cr.",
+    "Total Diwali-related cracker spend: ~₹6,500-7,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Sivakasi (Tamil Nadu) accounts for ~90% of legal manufacturing."
+  }
+}

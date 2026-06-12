@@ -1,0 +1,71 @@
+{
+  "questionId": "generalist-55",
+  "domain": "generalist",
+  "question": "Estimate the number of mobile cell towers in India (across all telcos).",
+  "idealClarificationQuestions": [
+    "Total tower-sites (passive infra) shared by Jio + Airtel + Vi + BSNL? Yes.",
+    "Includes 4G + 5G + small cells (count separately)? Macro tower-sites primarily.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "TRAI BTS data + tower companies disclosures."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian tower companies (Indus Towers, ATC, Summit Digitel) operate ~7-8 lakh tower-sites combined."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Plus operator-owned (Jio's Jio Digital Infrastructure, BSNL towers): ~1.5-2 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "BTS (Base Transceiver Stations — radio cells, multiple per tower): ~25 lakh+ (4G+5G)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7.5-8.5 lakh tower-sites; ~25-30 lakh BTS."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Plus operator-owned (Jio's Jio Digital Infrastructure, BSNL towers)",
+      "value": "~1.5-2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total tower-sites pan-India",
+      "value": "~7.5-8.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "BTS (Base Transceiver Stations — radio cells, multiple per tower)",
+      "value": "~25 lakh+ (4G+5G).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7.5-8.5 lakh tower-sites; ~25-30 lakh BTS.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian tower companies (Indus Towers, ATC, Summit Digitel) operate ~7-8 lakh tower-sites combined.",
+    "Plus operator-owned (Jio's Jio Digital Infrastructure, BSNL towers): ~1.5-2 lakh.",
+    "Total tower-sites pan-India: ~7.5-8.5 lakh.",
+    "BTS (Base Transceiver Stations — radio cells, multiple per tower): ~25 lakh+ (4G+5G).",
+    "Round: ~7.5-8.5 lakh tower-sites; ~25-30 lakh BTS."
+  ],
+  "finalAnswerRange": {
+    "low": "7.5",
+    "high": "8.5",
+    "ideal": "~7.5-8.5 lakh tower-sites; ~25-30 lakh BTS."
+  }
+}

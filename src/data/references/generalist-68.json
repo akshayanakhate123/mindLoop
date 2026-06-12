@@ -1,0 +1,92 @@
+{
+  "questionId": "generalist-68",
+  "domain": "generalist",
+  "question": "Estimate the number of registered companies in India.",
+  "idealClarificationQuestions": [
+    "All private + public companies registered with MCA? Yes.",
+    "Active only (filing returns)? Yes — active.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from MCA21 portal data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "MCA registered companies (cumulative): ~25 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Inactive/struck-off: ~8 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- One Person Companies (OPC): ~30K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus partnership firms (Registrar of Firms): ~25 lakh+ (but not centrally tracked)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "MCA registered companies (cumulative)",
+      "value": "~25 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Active (filing)",
+      "value": "~17 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Inactive/struck-off",
+      "value": "~8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Private limited",
+      "value": "~16 lakh active.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Public limited",
+      "value": "~70K active.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- One Person Companies (OPC)",
+      "value": "~30K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus LLPs (registered separately)",
+      "value": "~3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus partnership firms (Registrar of Firms)",
+      "value": "~25 lakh+ (but not centrally tracked).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "MCA registered companies (cumulative): ~25 lakh.",
+    "- Active (filing): ~17 lakh.",
+    "- Inactive/struck-off: ~8 lakh.",
+    "- Private limited: ~16 lakh active.",
+    "Plus LLPs (registered separately): ~3 lakh.",
+    "Plus partnership firms (Registrar of Firms): ~25 lakh+ (but not centrally tracked)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus partnership firms (Registrar of Firms): ~25 lakh+ (but not centrally tracked)."
+  }
+}

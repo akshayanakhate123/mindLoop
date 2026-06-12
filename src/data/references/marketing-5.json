@@ -1,0 +1,89 @@
+{
+  "questionId": "marketing-5",
+  "domain": "marketing",
+  "question": "Estimate the unique reach of a hoarding (OOH) campaign on Mumbai's Western Express Highway.",
+  "idealClarificationQuestions": [
+    "Single hoarding for a 30-day campaign on WEH (one of Mumbai's busiest roads)? Yes.",
+    "Reach = unique people who saw the hoarding at least once? Yes.",
+    "WEH stretch: ~40 km Andheri-Borivali-Dahisar area? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily traffic × campaign duration × unique-passenger conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "WEH daily vehicular traffic (BMC + traffic police data): ~2.5 lakh vehicles/day passing a given prime hoarding location."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, repeat commuters (same person passing daily): ~70% = ~3.85 lakh repeat individuals."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Add pedestrians and side-road viewers: ~5 lakh extra."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~55-60 lakh unique people in 30 days."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "WEH daily vehicular traffic (BMC + traffic police data)",
+      "value": "~2.5 lakh vehicles/day passing a given prime hoarding location.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average occupancy per vehicle (cars + 2W + buses + autos)",
+      "value": "~2.2 people = ~5.5 lakh person-pass-bys per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, repeat commuters (same person passing daily)",
+      "value": "~70% = ~3.85 lakh repeat individuals.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique person-pass-bys per day",
+      "value": "~1.65 lakh new + 3.85 lakh repeats; daily total impressions ~5.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Add pedestrians and side-road viewers",
+      "value": "~5 lakh extra.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total unique reach",
+      "value": "~58-60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~55-60 lakh unique people in 30 days.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "WEH daily vehicular traffic (BMC + traffic police data): ~2.5 lakh vehicles/day passing a given prime hoarding location.",
+    "Average occupancy per vehicle (cars + 2W + buses + autos): ~2.2 people = ~5.5 lakh person-pass-bys per day.",
+    "Of these, repeat commuters (same person passing daily): ~70% = ~3.85 lakh repeat individuals.",
+    "Unique person-pass-bys per day: ~1.65 lakh new + 3.85 lakh repeats; daily total impressions ~5.5 lakh.",
+    "Over 30 days, accumulating new unique commuters (visitors, occasional travellers): ~3.85 lakh repeats + 30 × 1.65 lakh = ~3.85L + 49.5L = ~53 lakh unique people.",
+    "Add pedestrians and side-road viewers: ~5 lakh extra.",
+    "Total unique reach: ~58-60 lakh.",
+    "Round: ~55-60 lakh unique people in 30 days."
+  ],
+  "finalAnswerRange": {
+    "low": "55",
+    "high": "60",
+    "ideal": "~55-60 lakh unique people in 30 days."
+  }
+}

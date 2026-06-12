@@ -1,0 +1,91 @@
+{
+  "questionId": "product-80",
+  "domain": "product",
+  "question": "Estimate the number of cell towers Jio needs to cover India.",
+  "idealClarificationQuestions": [
+    "All technologies: 4G + 5G + fiber-related sites? Cell towers (RAN sites).",
+    "Existing Jio infrastructure? Yes — total deployed.",
+    "Including indoor small cells? Macro towers primarily.",
+    "2026 reality? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × tower density per user OR area × tower density per sq km."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India geographic area: 3.3M sq km."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Urban area in India: ~100K sq km × 3 = 300K towers."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total tower-shareable infra needed: ~1.15M tower-locations pan-India."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Jio publicly disclosed ~3.5L sites and 5G NSA across 7L+ small cells."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India geographic area",
+      "value": "3.3M sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which populated/urbanized requiring coverage",
+      "value": "~2M sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tower density needed",
+      "value": "urban dense ~3 towers/sq km, suburban ~1/sq km, rural ~0.3/sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban area in India",
+      "value": "~100K sq km × 3 = 300K towers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Suburban + small towns",
+      "value": "~400K sq km × 1 = 400K towers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural populated",
+      "value": "~1.5M sq km × 0.3 = 450K towers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total tower-shareable infra needed",
+      "value": "~1.15M tower-locations pan-India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Jio's share of telecom market (~40% subs)",
+      "value": "Jio has ~600K-700K BTS sites including 5G. Towers (shared infrastructure with Indus Towers, ATC etc.) ~250K-350K physical Jio-anchored.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban area in India: ~100K sq km × 3 = 300K towers.",
+    "Suburban + small towns: ~400K sq km × 1 = 400K towers.",
+    "Rural populated: ~1.5M sq km × 0.3 = 450K towers.",
+    "Jio publicly disclosed ~3.5L sites and 5G NSA across 7L+ small cells."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Jio publicly disclosed ~3.5L sites and 5G NSA across 7L+ small cells."
+  }
+}

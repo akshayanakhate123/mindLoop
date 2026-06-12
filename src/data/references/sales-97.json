@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-97",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for facility management services in India.",
+  "idealClarificationQuestions": [
+    "Integrated FM services (cleaning, security, maintenance, pest control) for corporate clients? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Commercial space × FM cost."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian commercial real estate Grade A + B: ~750 million sqft."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "FM market: 750M × ₹85 = ~₹64,000 Cr/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total: ~₹1 lakh Cr Indian FM market."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹95,000-1 lakh Cr Indian FM market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian commercial real estate Grade A + B",
+      "value": "~750 million sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual FM spend per sqft (Grade A + B blended)",
+      "value": "~₹70-100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "FM market",
+      "value": "750M × ₹85 = ~₹64,000 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus residential gated community FM (housing complexes)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus hospitals + airports + railway stations + retail malls FM",
+      "value": "~₹20,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹1 lakh Cr Indian FM market.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which organized",
+      "value": "~50% = ~₹50,000 Cr (Quess + Updater + Sodexo + Aramark + ISS + JLL + ServiceMaster + Berger Becker).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹95,000-1 lakh Cr Indian FM market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian commercial real estate Grade A + B: ~750 million sqft.",
+    "Annual FM spend per sqft (Grade A + B blended): ~₹70-100.",
+    "FM market: 750M × ₹85 = ~₹64,000 Cr/year.",
+    "Plus residential gated community FM (housing complexes): ~₹15,000 Cr.",
+    "Plus hospitals + airports + railway stations + retail malls FM: ~₹20,000 Cr.",
+    "Total: ~₹1 lakh Cr Indian FM market.",
+    "Of which organized: ~50% = ~₹50,000 Cr (Quess + Updater + Sodexo + Aramark + ISS + JLL + ServiceMaster + Berger Becker).",
+    "Round: ~₹95,000-1 lakh Cr Indian FM market."
+  ],
+  "finalAnswerRange": {
+    "low": "95,000",
+    "high": "1",
+    "ideal": "~₹95,000-1 lakh Cr Indian FM market."
+  }
+}

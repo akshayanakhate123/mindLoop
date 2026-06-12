@@ -1,0 +1,79 @@
+{
+  "questionId": "product-2",
+  "domain": "product",
+  "question": "Estimate the annual food delivery market size (GMV) in Mumbai.",
+  "idealClarificationQuestions": [
+    "GMV (gross order value) or net revenue? Assume GMV.",
+    "Only online aggregators (Swiggy/Zomato/Magicpin) or include direct restaurant phone orders? Aggregators only.",
+    "Greater Mumbai metropolitan region or just BMC area? Greater Mumbai (~22M).",
+    "Include corporate catering / B2B office meals? Exclude — only consumer."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: Mumbai population → food delivery users → segment users by frequency → monthly orders → AOV → annual GMV."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Greater Mumbai population: ~22M; adults: ~16M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Food delivery app users (ordered at least once in past 3 months): ~35% of smartphone adults = ~5M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Mumbai AOV: ~₹450 (higher than national average of ₹350-380 due to premium customer base, higher restaurant prices)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual GMV ≈ ₹14,000 Cr (~$1.7B)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Greater Mumbai population",
+      "value": "~22M; adults: ~16M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone + internet enabled adults",
+      "value": "~14M (Mumbai has ~85% smartphone penetration among adults).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Food delivery app users (ordered at least once in past 3 months)",
+      "value": "~35% of smartphone adults = ~5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Segmentation",
+      "value": "Heavy users (4+/week) 15% = 750K @ ~16 orders/month; Medium (1-2/week) 35% = 1.75M @ ~6/month; Light (1-2/month) 50% = 2.5M @ ~1.5/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Mumbai AOV",
+      "value": "~₹450 (higher than national average of ₹350-380 due to premium customer base, higher restaurant prices).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Smartphone + internet enabled adults: ~14M (Mumbai has ~85% smartphone penetration among adults).",
+    "Food delivery app users (ordered at least once in past 3 months): ~35% of smartphone adults = ~5M.",
+    "Segmentation: Heavy users (4+/week) 15% = 750K @ ~16 orders/month; Medium (1-2/week) 35% = 1.75M @ ~6/month; Light (1-2/month) 50% = 2.5M @ ~1.5/month.",
+    "Monthly orders = 750K×16 + 1.75M×6 + 2.5M×1.5 = 12M + 10.5M + 3.75M ≈ 26M.",
+    "Mumbai AOV: ~₹450 (higher than national average of ₹350-380 due to premium customer base, higher restaurant prices).",
+    "Monthly GMV ≈ 26M × ₹450 = ₹1,170 Cr.",
+    "Annual GMV ≈ ₹14,000 Cr (~$1.7B)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual GMV ≈ ₹14,000 Cr (~$1.7B)."
+  }
+}

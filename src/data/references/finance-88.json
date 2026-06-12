@@ -1,0 +1,94 @@
+{
+  "questionId": "finance-88",
+  "domain": "finance",
+  "question": "Estimate the cost of running a 24x7 fintech customer support center in India.",
+  "idealClarificationQuestions": [
+    "Major fintech (PhonePe / Paytm scale, ~250M MAU)? Yes.",
+    "Total annual cost of CS operations (incl. infra + tech + people)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Headcount + tech + facility."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total CS + T&S headcount (per Q98 of marketing doc): ~9,000-10,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Office facilities (rent + utilities) for 4-5 sites: ~₹40 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- BPO outsourcing component (specific languages): ~₹40 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹450-500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total CS + T&S headcount (per Q98 of marketing doc)",
+      "value": "~9,000-10,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Salaries (avg ₹3.5L/year per agent fully loaded incl benefits)",
+      "value": "9,500 × ₹3.5L = ~₹330 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Office facilities (rent + utilities) for 4-5 sites",
+      "value": "~₹40 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech (ticketing system, voice infra, AI chatbot license)",
+      "value": "~₹35 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Training + QA + supervisory layer",
+      "value": "~₹25 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- BPO outsourcing component (specific languages)",
+      "value": "~₹40 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual CS cost",
+      "value": "~₹470-500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹450-500 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total CS + T&S headcount (per Q98 of marketing doc): ~9,000-10,000.",
+    "- Salaries (avg ₹3.5L/year per agent fully loaded incl benefits): 9,500 × ₹3.5L = ~₹330 Cr.",
+    "- Office facilities (rent + utilities) for 4-5 sites: ~₹40 Cr.",
+    "- Tech (ticketing system, voice infra, AI chatbot license): ~₹35 Cr.",
+    "- Training + QA + supervisory layer: ~₹25 Cr.",
+    "- BPO outsourcing component (specific languages): ~₹40 Cr.",
+    "Total annual CS cost: ~₹470-500 Cr.",
+    "Round: ~₹450-500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "450",
+    "high": "500",
+    "ideal": "~₹450-500 Cr."
+  }
+}

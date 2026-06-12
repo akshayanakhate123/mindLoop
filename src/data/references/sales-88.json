@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-88",
+  "domain": "sales",
+  "question": "Estimate the B2B sales potential for testing + DevTools software (Browserstack, Postman, LambdaTest) globally driven by Indian companies.",
+  "idealClarificationQuestions": [
+    "Indian-headquartered DevTools companies and their global revenue? Yes.",
+    "Includes Browserstack, Postman, LambdaTest, Hasura, Atlan, Chargebee? Yes.",
+    "FY26 revenue? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across Indian DevTools companies."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Browserstack: ~$200M (₹1,700 Cr)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Hasura: ~$50-80M (₹400-650 Cr)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Razorpay (cross-border, dev-oriented): partial allocation."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹7,000-8,500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Browserstack",
+      "value": "~$200M (₹1,700 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Postman",
+      "value": "~$300M+ (₹2,500 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "LambdaTest",
+      "value": "~$50M (₹400 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hasura",
+      "value": "~$50-80M (₹400-650 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Atlan",
+      "value": "~$30M (₹250 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Chargebee (billing + subscription mgmt, dev-heavy)",
+      "value": "~$200M (₹1,700 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other Indian DevTools (Devtron, Postman alt, etc.)",
+      "value": "~₹500 Cr combined.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian DevTools (global revenue, but Indian-HQ)",
+      "value": "~$850M-1B (₹7,000-8,500 Cr).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Browserstack: ~$200M (₹1,700 Cr).",
+    "Postman: ~$300M+ (₹2,500 Cr).",
+    "LambdaTest: ~$50M (₹400 Cr).",
+    "Hasura: ~$50-80M (₹400-650 Cr).",
+    "Atlan: ~$30M (₹250 Cr).",
+    "Chargebee (billing + subscription mgmt, dev-heavy): ~$200M (₹1,700 Cr).",
+    "Other Indian DevTools (Devtron, Postman alt, etc.): ~₹500 Cr combined.",
+    "Total Indian DevTools (global revenue, but Indian-HQ): ~$850M-1B (₹7,000-8,500 Cr).",
+    "Round: ~₹7,000-8,500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "7,000",
+    "high": "8,500",
+    "ideal": "~₹7,000-8,500 Cr."
+  }
+}

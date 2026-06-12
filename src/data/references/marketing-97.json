@@ -1,0 +1,93 @@
+{
+  "questionId": "marketing-97",
+  "domain": "marketing",
+  "question": "Estimate the annual revenue of a single-screen movie cinema in a Tier 2 Indian city.",
+  "idealClarificationQuestions": [
+    "Single-screen, non-multiplex theater in Tier 2 (Indore/Bhopal/Lucknow/Coimbatore)? Yes.",
+    "All revenue: tickets + F&B + ads? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Capacity × occupancy × pricing."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Single-screen Tier 2 cinema: ~600 seats; ~4 shows/day; ~30% occupancy."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average ticket price Tier 2 single-screen: ~₹150."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Advertising / slide revenue: ~₹1-2 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual: ~₹5-5.5 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Single-screen Tier 2 cinema",
+      "value": "~600 seats; ~4 shows/day; ~30% occupancy.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily tickets",
+      "value": "600 × 4 × 0.30 = 720.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly tickets",
+      "value": "~22,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ticket price Tier 2 single-screen",
+      "value": "~₹150.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly ticket revenue",
+      "value": "22K × ₹150 = ~₹33 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "F&B revenue (lower mix in single-screen vs multiplex)",
+      "value": "~₹8-12 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Advertising / slide revenue",
+      "value": "~₹1-2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly",
+      "value": "~₹42-47 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily tickets: 600 × 4 × 0.30 = 720.",
+    "Average ticket price Tier 2 single-screen: ~₹150.",
+    "Monthly ticket revenue: 22K × ₹150 = ~₹33 lakh.",
+    "F&B revenue (lower mix in single-screen vs multiplex): ~₹8-12 lakh.",
+    "Advertising / slide revenue: ~₹1-2 lakh.",
+    "Total monthly: ~₹42-47 lakh.",
+    "Annual: ~₹5-5.5 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual: ~₹5-5.5 Cr."
+  }
+}

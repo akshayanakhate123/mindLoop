@@ -1,0 +1,79 @@
+{
+  "questionId": "sales-59",
+  "domain": "sales",
+  "question": "Estimate the conversion rate for door-to-door FMCG promo sampling.",
+  "idealClarificationQuestions": [
+    "Brand sampling — door-to-door distribution of free product sachet + coupon? Yes.",
+    "Conversion = household buys the product at retail in next 30 days (verified via coupon redemption)? Yes.",
+    "FMCG category (shampoo / detergent / dental)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sampling effectiveness benchmarks."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Samples distributed: 1,000 households."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of triers, satisfied / consider repurchase: ~40%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net sampling-to-purchase: 1,000 × 75% × 40% × 25% = ~75 purchases = 7.5%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7-8% sample-to-purchase; ~4% sample-to-loyal-user."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Samples distributed",
+      "value": "1,000 households.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, actually try the product",
+      "value": "~75% (most try if free).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of triers, satisfied / consider repurchase",
+      "value": "~40%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net sampling-to-purchase",
+      "value": "1,000 × 75% × 40% × 25% = ~75 purchases = 7.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, sustained users (3+ months)",
+      "value": "~50% = ~37 households become longer-term users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7-8% sample-to-purchase; ~4% sample-to-loyal-user.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Net sampling-to-purchase: 1,000 × 75% × 40% × 25% = ~75 purchases = 7.5%.",
+    "Of these, sustained users (3+ months): ~50% = ~37 households become longer-term users."
+  ],
+  "finalAnswerRange": {
+    "low": "7",
+    "high": "8",
+    "ideal": "~7-8% sample-to-purchase; ~4% sample-to-loyal-user."
+  }
+}

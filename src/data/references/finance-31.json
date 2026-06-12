@@ -1,0 +1,89 @@
+{
+  "questionId": "finance-31",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for IndiGo Airlines.",
+  "idealClarificationQuestions": [
+    "Standalone or consolidated? Standalone.",
+    "Pre or post pandemic recovery? Post-recovery FY26."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Airline cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "- ATF (aviation turbine fuel): ~30-35% (largest variable cost)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Airport fees + landing charges: ~7-8%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~78-82%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT margin: ~10-13% (in strong yield environment); much lower in fuel-spike years."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ATF (aviation turbine fuel)",
+      "value": "~30-35% (largest variable cost).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Aircraft lease + maintenance",
+      "value": "~18-20%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Crew + employee cost",
+      "value": "~10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Airport fees + landing charges",
+      "value": "~7-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Sales + distribution + GDS",
+      "value": "~5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~78-82%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Aircraft lease + maintenance: ~18-20%.",
+    "- Crew + employee cost: ~10%.",
+    "- Airport fees + landing charges: ~7-8%.",
+    "- Sales + distribution + GDS: ~5%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT margin: ~10-13% (in strong yield environment); much lower in fuel-spike years."
+  }
+}

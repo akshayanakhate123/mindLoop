@@ -1,0 +1,95 @@
+{
+  "questionId": "generalist-2",
+  "domain": "generalist",
+  "question": "Estimate the number of elevators in Mumbai.",
+  "idealClarificationQuestions": [
+    "Working passenger elevators in residential + commercial buildings? Yes — operational only.",
+    "Greater Mumbai (~22M) or just BMC area (~13M)? Greater Mumbai including Thane and Navi Mumbai.",
+    "Include service/freight elevators? Yes — total.",
+    "Hospitals + malls + offices + residential all combined? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment by building type → buildings of each type → elevators per building."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Greater Mumbai households: ~5.5M; ~70% in apartments (rest in chawls / standalone) = ~3.85M apartment HH."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Residential elevators: 128K × 2 = ~256K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Hospitals + hotels: ~1,500; avg 4 each = ~6K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: 256K + 30K + 3K + 6K + 5K = ~300,000 elevators."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Greater Mumbai households",
+      "value": "~5.5M; ~70% in apartments (rest in chawls / standalone) = ~3.85M apartment HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of residential apartment buildings",
+      "value": "3.85M / 30 = ~128K buildings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Residential elevators",
+      "value": "128K × 2 = ~256K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Commercial offices in Mumbai",
+      "value": "~5,000 buildings (estimate based on commercial floor space ~150M sqft and avg 30K sqft per building); avg 6 elevators each = 30K elevators.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Malls + multiplexes",
+      "value": "~150 large + 500 mid; avg 5 each = ~3K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hospitals + hotels",
+      "value": "~1,500; avg 4 each = ~6K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Schools, govt buildings, others",
+      "value": "~5K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "256K + 30K + 3K + 6K + 5K = ~300,000 elevators.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Greater Mumbai households: ~5.5M; ~70% in apartments (rest in chawls / standalone) = ~3.85M apartment HH.",
+    "Average apartment building has ~30 flats and ~2 elevators (G+7 to G+30 mix).",
+    "Number of residential apartment buildings: 3.85M / 30 = ~128K buildings.",
+    "Residential elevators: 128K × 2 = ~256K.",
+    "Commercial offices in Mumbai: ~5,000 buildings (estimate based on commercial floor space ~150M sqft and avg 30K sqft per building); avg 6 elevators each = 30K elevators.",
+    "Malls + multiplexes: ~150 large + 500 mid; avg 5 each = ~3K.",
+    "Hospitals + hotels: ~1,500; avg 4 each = ~6K.",
+    "Total: 256K + 30K + 3K + 6K + 5K = ~300,000 elevators."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: 256K + 30K + 3K + 6K + 5K = ~300,000 elevators."
+  }
+}

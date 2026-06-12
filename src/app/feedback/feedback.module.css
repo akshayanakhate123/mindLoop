@@ -1,0 +1,686 @@
+/* ── Page ─────────────────────────────────────────────────────────────────── */
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 6rem;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+/* ── Page header ──────────────────────────────────────────────────────────── */
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pageTitle {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--foreground);
+  letter-spacing: -0.5px;
+  margin: 0 0 0.25rem;
+}
+
+.pageSubtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.downloadBtn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.downloadBtn:hover { background: #F0EBE0; }
+
+/* ── Row (two-column) ─────────────────────────────────────────────────────── */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* ── Overall Evaluation card ──────────────────────────────────────────────── */
+.evalCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.evalTop {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.evalIcon { font-size: 1.2rem; }
+
+.evalTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--foreground);
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.readinessBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+}
+
+.badgeReady     { background: #DCFCE7; color: #166534; }
+.badgeNeedsWork { background: #FEE2E2; color: #991B1B; }
+.badgeAlmost    { background: #FEF3C7; color: #92400E; }
+
+.evalBody {
+  font-size: 0.925rem;
+  color: #374151;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Accuracy Trend card ──────────────────────────────────────────────────── */
+.trendCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trendTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--foreground);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.trendBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.625rem;
+  height: 100px;
+  flex: 1;
+}
+
+.trendBarCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 1;
+  height: 100%;
+}
+
+.trendBar {
+  width: 100%;
+  background: #4A6CF7;
+  border-radius: 4px 4px 0 0;
+  min-height: 4px;
+  transition: height 0.3s ease;
+}
+
+.trendBarPct {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.noTrend {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  width: 100%;
+  align-self: center;
+}
+
+/* ── Score cards ──────────────────────────────────────────────────────────── */
+.scoreCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Donut chart */
+.donut {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.donutHole {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donutPct {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--foreground);
+}
+
+.scoreCardLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.infoIcon {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: help;
+}
+
+.scoreCardDesc {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Section heading ──────────────────────────────────────────────────────── */
+.sectionHeading {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--foreground);
+  letter-spacing: -0.25px;
+  margin: 0.5rem 0 0;
+}
+
+/* ── Half-col layout ──────────────────────────────────────────────────────── */
+.halfCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ── Step breakdown ───────────────────────────────────────────────────────── */
+.stepsCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stepRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stepTop {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.stepBadge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+  flex: 1;
+}
+
+.stepScore {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.stepBar {
+  height: 6px;
+  background: #EDEAE4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stepFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.stepComment {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Assumption table ─────────────────────────────────────────────────────── */
+.tableCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.825rem;
+}
+
+.table thead tr {
+  background: #F7F3EC;
+}
+
+.table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid #F0EBE0;
+}
+
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #F0EBE0;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.table tbody tr:last-child td { border-bottom: none; }
+
+.matchRow td:first-child    { border-left: 3px solid #22C55E; }
+.mismatchRow td:first-child { border-left: 3px solid #EF4444; }
+
+.missed {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── Clarification card ───────────────────────────────────────────────────── */
+.clarCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.clarLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.clarTop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clarIcon { font-size: 1.1rem; }
+
+.clarCount {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--foreground);
+  flex: 1;
+}
+
+.clarBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  padding: 0.25rem 0.7rem;
+}
+
+.qualGood     { background: #DCFCE7; color: #166534; }
+.qualAdequate { background: #FEF3C7; color: #92400E; }
+.qualPoor     { background: #FEE2E2; color: #991B1B; }
+.qualNone     { background: #F3F4F6; color: #6B7280; }
+
+.clarText {
+  font-size: 0.875rem;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.clarRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.clarSugTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.clarList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.clarList li {
+  font-size: 0.825rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* ── Qualitative feedback ─────────────────────────────────────────────────── */
+.qualRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.qualCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.qualGreen { border-top: 3px solid #22C55E; }
+.qualRed   { border-top: 3px solid #EF4444; }
+.qualAmber { border-top: 3px solid #F59E0B; }
+
+.qualHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qualIconGreen,
+.qualIconRed,
+.qualIconAmber { font-size: 1.1rem; }
+
+.qualTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.qualBody {
+  font-size: 0.875rem;
+  color: #374151;
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+/* ── Model answer ─────────────────────────────────────────────────────────── */
+.modelCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F0EBE0;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.modelSteps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modelStep {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.modelStep:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 28px;
+  bottom: 0;
+  width: 2px;
+  background: #EDEAE4;
+}
+
+.modelStepFinal { padding-bottom: 0; }
+
+.stepNum {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #EDEAE4;
+  color: var(--foreground);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.stepNumFinal {
+  background: var(--navy);
+  color: white;
+}
+
+.modelStepText {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.65;
+  margin: 0.25rem 0 0;
+}
+
+.modelStepTextFinal {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.modelOwl {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0.85;
+}
+
+/* ── Sticky footer ────────────────────────────────────────────────────────── */
+.stickyFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border);
+  padding: 1rem 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  z-index: 100;
+}
+
+.footerBtnPrimary {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.footerBtnPrimary:hover { background: #2a3a5c; transform: translateY(-1px); }
+
+.footerBtnSecondary {
+  background: var(--card-bg);
+  color: var(--foreground);
+  border: 1.5px solid var(--border);
+  padding: 0.875rem 2rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.footerBtnSecondary:hover { background: #F0EBE0; transform: translateY(-1px); }
+
+/* ── Loading state ────────────────────────────────────────────────────────── */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 0.925rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #EDEAE4;
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.toastBanner {
+  background: #FFFBEB;
+  border: 1.5px solid #FDE68A;
+  border-radius: 10px;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #92400E;
+  text-align: center;
+  max-width: 360px;
+}
+
+/* ── Nudge banner (inline, dismissible) ───────────────────────────────────── */
+@keyframes nudgeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.nudgeBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: white;
+  border: 1px solid #F0EBE0;
+  border-left: 4px solid var(--primary);
+  border-radius: 12px;
+  padding: 0.875rem 1.25rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.45;
+  animation: nudgeIn 0.3s ease-out;
+}
+
+.nudgeBannerClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.nudgeBannerClose:hover { color: var(--foreground); }

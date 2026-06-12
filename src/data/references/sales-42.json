@@ -1,0 +1,80 @@
+{
+  "questionId": "sales-42",
+  "domain": "sales",
+  "question": "Estimate the number of e-commerce pickup points / kirana partners enabling DotPe / ONDC delivery.",
+  "idealClarificationQuestions": [
+    "Outlets serving as e-commerce pickup or local fulfillment partners (DotPe, ONDC, JioMart Kirana, Amazon Easy etc.)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Multi-platform aggregation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon Easy (kirana partners for assisted commerce): ~50,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "DotPe (food + grocery + retail digital enablement): ~10 lakh small businesses."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Mystore / Pincode / Magicpin retail integrations: ~50,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~12-15 lakh unique kiranas + small merchants connected to e-commerce platforms."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Amazon Easy (kirana partners for assisted commerce)",
+      "value": "~50,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "JioMart Kirana partners",
+      "value": "~3 lakh kiranas integrated.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "DotPe (food + grocery + retail digital enablement)",
+      "value": "~10 lakh small businesses.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "ONDC seller-side participants",
+      "value": "~2-3 lakh active.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Mystore / Pincode / Magicpin retail integrations",
+      "value": "~50,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~12-15 lakh unique kiranas + small merchants connected to e-commerce platforms.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "JioMart Kirana partners: ~3 lakh kiranas integrated.",
+    "DotPe (food + grocery + retail digital enablement): ~10 lakh small businesses.",
+    "ONDC seller-side participants: ~2-3 lakh active.",
+    "Total unique kirana / small business pickup points enabled by e-commerce: ~10-15 lakh (heavy overlap among platforms).",
+    "Round: ~12-15 lakh unique kiranas + small merchants connected to e-commerce platforms."
+  ],
+  "finalAnswerRange": {
+    "low": "12",
+    "high": "15",
+    "ideal": "~12-15 lakh unique kiranas + small merchants connected to e-commerce platforms."
+  }
+}

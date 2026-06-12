@@ -1,0 +1,64 @@
+{
+  "questionId": "sales-12",
+  "domain": "sales",
+  "question": "Estimate monthly motorcycle sales (specifically Royal Enfield) in a Tier 1 metro — say Bengaluru.",
+  "idealClarificationQuestions": [
+    "Royal Enfield (RE) sales — Classic + Bullet + Meteor + Hunter + Himalayan? Yes — all RE models.",
+    "Bengaluru metro? Yes.",
+    "Monthly average FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "RE national sales × city share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "RE annual India sales FY26: ~9.5 lakh units."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Bengaluru share of RE sales (RE-strong metro due to weekend riding culture, premium 2W buyer base): ~5-6% of national = ~5,500 units/month."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~5,000-6,000 RE units/month in Bengaluru."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "By model: Classic 350 ~38%, Bullet 350 ~20%, Hunter 350 ~22%, Meteor 350 ~10%, Himalayan + Continental GT + 650 twins ~10%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "RE annual India sales FY26",
+      "value": "~9.5 lakh units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~5,000-6,000 RE units/month in Bengaluru.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By model",
+      "value": "Classic 350 ~38%, Bullet 350 ~20%, Hunter 350 ~22%, Meteor 350 ~10%, Himalayan + Continental GT + 650 twins ~10%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "RE annual India sales FY26: ~9.5 lakh units.",
+    "Bengaluru share of RE sales (RE-strong metro due to weekend riding culture, premium 2W buyer base): ~5-6% of national = ~5,500 units/month.",
+    "By model: Classic 350 ~38%, Bullet 350 ~20%, Hunter 350 ~22%, Meteor 350 ~10%, Himalayan + Continental GT + 650 twins ~10%."
+  ],
+  "finalAnswerRange": {
+    "low": "5,000",
+    "high": "6,000",
+    "ideal": "~5,000-6,000 RE units/month in Bengaluru."
+  }
+}

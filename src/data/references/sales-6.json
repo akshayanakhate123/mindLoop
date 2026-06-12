@@ -1,0 +1,87 @@
+{
+  "questionId": "sales-6",
+  "domain": "sales",
+  "question": "Estimate monthly TV sales in Bengaluru.",
+  "idealClarificationQuestions": [
+    "All TVs: smart + non-smart, all screen sizes? Yes.",
+    "Greater Bengaluru? Yes (~14M).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × annual TV purchase rate × monthly distribution."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian TV market FY26: ~150 lakh units/year (1.5 crore)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly: ~40,000-45,000 units."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- 43-55 inch (most popular drawing room): ~22% = 9,400."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Brand mix: Xiaomi/Mi ~15%, Samsung ~14%, LG ~12%, OnePlus/Realme/Vu ~20%, Sony ~9%, others 30%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian TV market FY26",
+      "value": "~150 lakh units/year (1.5 crore).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~40,000-45,000 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- <32-inch (smaller / bedroom secondary)",
+      "value": "~30% = 13,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 32-43 inch",
+      "value": "~40% = 17,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 43-55 inch (most popular drawing room)",
+      "value": "~22% = 9,400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 55-inch+ premium",
+      "value": "~8% = 3,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand mix",
+      "value": "Xiaomi/Mi ~15%, Samsung ~14%, LG ~12%, OnePlus/Realme/Vu ~20%, Sony ~9%, others 30%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian TV market FY26: ~150 lakh units/year (1.5 crore).",
+    "Bengaluru's share of national TV demand (high purchasing power, large young workforce): ~3-4% of national = ~5 lakh units/year.",
+    "- <32-inch (smaller / bedroom secondary): ~30% = 13,000.",
+    "- 32-43 inch: ~40% = 17,000.",
+    "- 43-55 inch (most popular drawing room): ~22% = 9,400.",
+    "- 55-inch+ premium: ~8% = 3,500."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Brand mix: Xiaomi/Mi ~15%, Samsung ~14%, LG ~12%, OnePlus/Realme/Vu ~20%, Sony ~9%, others 30%."
+  }
+}

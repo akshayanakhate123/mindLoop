@@ -1,0 +1,91 @@
+{
+  "questionId": "finance-54",
+  "domain": "finance",
+  "question": "Estimate the AUM of Indian mutual fund industry by 2030.",
+  "idealClarificationQuestions": [
+    "Total industry AUM (equity + debt + hybrid + passive)? Yes.",
+    "By 2030? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Growth from current base + investor base expansion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Current AUM FY26: ~₹70 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Market appreciation (assuming 11-13% nominal returns): ~10% YoY on existing."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "AUM by FY30 (4 years out): ₹70L Cr × 1.18^4 = ~₹1.36 lakh Cr × 1 = ₹135-140 lakh Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Penetration: AUM/GDP would rise from ~17% (today) to ~25% (still below US 80%+)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Current AUM FY26",
+      "value": "~₹70 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- SIP inflows",
+      "value": "~₹3 lakh Cr/year and rising.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Market appreciation (assuming 11-13% nominal returns)",
+      "value": "~10% YoY on existing.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- New investor additions",
+      "value": "~1 crore new folios per year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected CAGR",
+      "value": "17-20%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AUM by FY30 (4 years out)",
+      "value": "₹70L Cr × 1.18^4 = ~₹1.36 lakh Cr × 1 = ₹135-140 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹130-140 lakh Cr ($16-17 trillion) by FY30.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Penetration",
+      "value": "AUM/GDP would rise from ~17% (today) to ~25% (still below US 80%+).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Current AUM FY26: ~₹70 lakh Cr.",
+    "- SIP inflows: ~₹3 lakh Cr/year and rising.",
+    "- New investor additions: ~1 crore new folios per year.",
+    "AUM by FY30 (4 years out): ₹70L Cr × 1.18^4 = ~₹1.36 lakh Cr × 1 = ₹135-140 lakh Cr.",
+    "Round: ~₹130-140 lakh Cr ($16-17 trillion) by FY30.",
+    "Penetration: AUM/GDP would rise from ~17% (today) to ~25% (still below US 80%+)."
+  ],
+  "finalAnswerRange": {
+    "low": "130",
+    "high": "140",
+    "ideal": "~₹130-140 lakh Cr ($16-17 trillion) by FY30."
+  }
+}

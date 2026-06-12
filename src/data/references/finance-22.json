@@ -1,0 +1,86 @@
+{
+  "questionId": "finance-22",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a leading Indian QSR chain (Jubilant FoodWorks — Domino's India).",
+  "idealClarificationQuestions": [
+    "Jubilant FoodWorks total India revenue (Domino's + Dunkin + Popeyes + Hong's Kitchen)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Store count × per-store revenue."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Domino's India stores: ~2,100."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Domino's revenue: 2,100 × ₹2.5 Cr = ₹5,250 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus packaged food (ChefBoss): ~₹50 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹6,000-6,200 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Domino's India stores",
+      "value": "~2,100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per-store annual revenue",
+      "value": "~₹2.5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domino's revenue",
+      "value": "2,100 × ₹2.5 Cr = ₹5,250 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Popeyes + Dunkin + Hong's + others",
+      "value": "~150 stores × ₹2 Cr = ₹300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus packaged food (ChefBoss)",
+      "value": "~₹50 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus international (Sri Lanka, Bangladesh)",
+      "value": "~₹500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹6,000-6,200 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average per-store annual revenue: ~₹2.5 Cr.",
+    "Domino's revenue: 2,100 × ₹2.5 Cr = ₹5,250 Cr.",
+    "Popeyes + Dunkin + Hong's + others: ~150 stores × ₹2 Cr = ₹300 Cr.",
+    "Plus packaged food (ChefBoss): ~₹50 Cr.",
+    "Plus international (Sri Lanka, Bangladesh): ~₹500 Cr.",
+    "Total: ~₹6,000-6,200 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹6,000-6,200 Cr."
+  }
+}

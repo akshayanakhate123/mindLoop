@@ -1,0 +1,70 @@
+{
+  "questionId": "generalist-27",
+  "domain": "generalist",
+  "question": "How many litres of milk are consumed in Delhi daily?",
+  "idealClarificationQuestions": [
+    "Liquid milk + value-added (curd, paneer, butter, ghee equivalent in milk-equivalent)? Provide both.",
+    "Greater Delhi NCR (~32M) or just Delhi (~22M)? Use Delhi proper, ~22M.",
+    "Year 2026? Yes.",
+    "Sources: Mother Dairy + Amul + DMS + Paras + private dairies + sachet milk + tetra packs? All."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita milk consumption × Delhi-specific premium."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Delhi population: ~22M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per-capita milk consumption: India avg ~440 ml/day; Delhi ~500-550 ml/day (higher income, higher dairy intensity)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus milk-equivalent in value-added (curd, paneer, ghee made by HH or consumed prepared): adds ~30% = 16M LME (litre milk equivalent)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~12 million litres of liquid milk daily; ~16 million LME including all dairy products."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Delhi population",
+      "value": "~22M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita milk consumption",
+      "value": "India avg ~440 ml/day; Delhi ~500-550 ml/day (higher income, higher dairy intensity).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Liquid milk",
+      "value": "22M × 0.55L = 12.1M litres/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~12 million litres of liquid milk daily; ~16 million LME including all dairy products.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Liquid milk: 22M × 0.55L = 12.1M litres/day.",
+    "Plus milk-equivalent in value-added (curd, paneer, ghee made by HH or consumed prepared): adds ~30% = 16M LME (litre milk equivalent).",
+    "Round: ~12 million litres of liquid milk daily; ~16 million LME including all dairy products."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~12 million litres of liquid milk daily; ~16 million LME including all dairy products."
+  }
+}

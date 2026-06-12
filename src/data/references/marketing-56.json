@@ -1,0 +1,94 @@
+{
+  "questionId": "marketing-56",
+  "domain": "marketing",
+  "question": "Estimate the addressable market size for organic / clean-label food products in urban India.",
+  "idealClarificationQuestions": [
+    "Organic + clean-label (no preservatives, natural) packaged food? Yes.",
+    "Includes fresh produce certified organic? Yes.",
+    "Urban India (Tier 1 + Tier 2)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Affluent urban × organic-buying penetration × annual spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Urban India HH: ~110M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, health-conscious / aware of organic: ~40% = ~13M HH."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Market size: 4M × ₹15,000 = ~₹6,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹7,500-8,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Urban India HH",
+      "value": "~110M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Top 30% income tier (₹10L+ HH income)",
+      "value": "~33M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, health-conscious / aware of organic",
+      "value": "~40% = ~13M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, regular organic buyers (any frequency)",
+      "value": "~30% = ~4M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual organic spend per buying HH",
+      "value": "~₹15,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Market size",
+      "value": "4M × ₹15,000 = ~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus institutional/HoReCa organic (cafes, premium restaurants)",
+      "value": "~₹1,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹7,500-8,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Top 30% income tier (₹10L+ HH income): ~33M HH.",
+    "Of these, health-conscious / aware of organic: ~40% = ~13M HH.",
+    "Of these, regular organic buyers (any frequency): ~30% = ~4M HH.",
+    "Average annual organic spend per buying HH: ~₹15,000.",
+    "Market size: 4M × ₹15,000 = ~₹6,000 Cr.",
+    "Plus institutional/HoReCa organic (cafes, premium restaurants): ~₹1,500 Cr.",
+    "Total: ~₹7,500-8,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹7,500-8,000 Cr."
+  }
+}

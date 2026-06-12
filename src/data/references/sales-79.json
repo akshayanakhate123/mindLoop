@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-79",
+  "domain": "sales",
+  "question": "Estimate the market size for HR software for Indian SMEs and mid-market.",
+  "idealClarificationQuestions": [
+    "HRMS / HR software (Keka, Darwinbox, GreytHR, Zoho People, PeopleStrong)? Yes.",
+    "SMEs + mid-market (50-2,000 employees)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Companies × adoption × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian companies with 50-2000 employees: ~3 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average company size: 200 employees."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Tier 2 (Keka, ZohoPeople, Pocket HR): ~50,000 customers × ₹6L = ₹3,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "TAM (if all 3L companies adopted): ~₹15,000-18,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian companies with 50-2000 employees",
+      "value": "~3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, on paid HRMS / payroll software",
+      "value": "~40% = 1.2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU (per employee per year)",
+      "value": "~₹2,400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average company size",
+      "value": "200 employees.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tier 1 (Darwinbox, PeopleStrong)",
+      "value": "~10,000 customers × ₹50L avg ACV = ₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tier 2 (Keka, ZohoPeople, Pocket HR)",
+      "value": "~50,000 customers × ₹6L = ₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Self-serve / startup tier",
+      "value": "~60,000 × ₹1.5L = ₹900 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹8,500 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian companies with 50-2000 employees: ~3 lakh.",
+    "Of these, on paid HRMS / payroll software: ~40% = 1.2 lakh.",
+    "Average ARPU (per employee per year): ~₹2,400.",
+    "- Tier 1 (Darwinbox, PeopleStrong): ~10,000 customers × ₹50L avg ACV = ₹5,000 Cr.",
+    "- Tier 2 (Keka, ZohoPeople, Pocket HR): ~50,000 customers × ₹6L = ₹3,000 Cr.",
+    "- Self-serve / startup tier: ~60,000 × ₹1.5L = ₹900 Cr.",
+    "Total: ~₹8,500 Cr.",
+    "TAM (if all 3L companies adopted): ~₹15,000-18,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "TAM (if all 3L companies adopted): ~₹15,000-18,000 Cr."
+  }
+}

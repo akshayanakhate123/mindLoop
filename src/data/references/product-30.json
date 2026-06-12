@@ -1,0 +1,74 @@
+{
+  "questionId": "product-30",
+  "domain": "product",
+  "question": "Estimate the daily Instagram reels watched per Indian user (active reels viewer).",
+  "idealClarificationQuestions": [
+    "Average across all Indian Instagram users or only those who watch reels? Active reels viewers.",
+    "'Watched' means tapped through or watched >3 seconds? Watched at least 3 seconds (Meta's view definition).",
+    "Average weekday? Yes.",
+    "Year: 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: average user time on reels per day × average reel length watched."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Active Instagram reels viewers in India: ~250M DAU."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of which reels consumption: ~70% = ~30 min."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Reels watched per day per user: 30 × 60 ÷ 13 = ~140 reels."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round to ~120-150 reels per day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Active Instagram reels viewers in India",
+      "value": "~250M DAU.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average time spent on Instagram in India",
+      "value": "~38-45 min/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which reels consumption",
+      "value": "~70% = ~30 min.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average reel length viewed",
+      "value": "~12-15 seconds (mix of 7-sec scroll-aways and full 30-60-sec watches).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reels watched per day per user",
+      "value": "30 × 60 ÷ 13 = ~140 reels.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of which reels consumption: ~70% = ~30 min.",
+    "Reels watched per day per user: 30 × 60 ÷ 13 = ~140 reels."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round to ~120-150 reels per day."
+  }
+}

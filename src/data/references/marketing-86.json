@@ -1,0 +1,85 @@
+{
+  "questionId": "marketing-86",
+  "domain": "marketing",
+  "question": "Estimate the brand value premium for an Indian premium hospitality brand (e.g., Oberoi, Taj, ITC).",
+  "idealClarificationQuestions": [
+    "Brand premium = ARR (average room rate) premium over an equivalent unbranded property? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Compare branded vs unbranded."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Comparable city/quality unbranded 5-star: ARR ₹10,000-12,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Brand premium: ~80-110% ARR uplift."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Unbranded annual revenue: ~₹50-60 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Brand-attributed revenue lift: ~₹50-90 Cr per property per year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Comparable city/quality unbranded 5-star",
+      "value": "ARR ₹10,000-12,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Taj/Oberoi/ITC 5-star",
+      "value": "ARR ₹18,000-25,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand premium",
+      "value": "~80-110% ARR uplift.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus higher F&B catchment, banquet pricing premium, weddings",
+      "value": "total brand-derived revenue premium ~70-90%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Unbranded annual revenue",
+      "value": "~₹50-60 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Branded (Taj/Oberoi)",
+      "value": "~₹100-150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Brand-attributed revenue lift",
+      "value": "~₹50-90 Cr per property per year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Comparable city/quality unbranded 5-star: ARR ₹10,000-12,000.",
+    "Taj/Oberoi/ITC 5-star: ARR ₹18,000-25,000.",
+    "- Unbranded annual revenue: ~₹50-60 Cr.",
+    "- Branded (Taj/Oberoi): ~₹100-150 Cr.",
+    "- Brand-attributed revenue lift: ~₹50-90 Cr per property per year."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Brand-attributed revenue lift: ~₹50-90 Cr per property per year."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "questionId": "sales-26",
+  "domain": "sales",
+  "question": "How many kirana stores are there in India?",
+  "idealClarificationQuestions": [
+    "All neighborhood grocery / general stores combined? Yes.",
+    "Formal + informal (mom-and-pop included)? Yes — total.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-HH ratio benchmark."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households: ~310 million."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total kiranas: 1.45B / 125 = ~1.15-1.2 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Rural kiranas: ~80 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.2-1.3 crore kiranas pan-India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households",
+      "value": "~310 million.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Population per kirana ratio (well-documented industry norm)",
+      "value": "~120-130 people per kirana.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total kiranas",
+      "value": "1.45B / 125 = ~1.15-1.2 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Urban kiranas",
+      "value": "~35 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rural kiranas",
+      "value": "~80 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.2-1.3 crore kiranas pan-India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian households: ~310 million.",
+    "Total kiranas: 1.45B / 125 = ~1.15-1.2 crore.",
+    "- Urban kiranas: ~35 lakh.",
+    "- Rural kiranas: ~80 lakh.",
+    "Round: ~1.2-1.3 crore kiranas pan-India."
+  ],
+  "finalAnswerRange": {
+    "low": "1.2",
+    "high": "1.3",
+    "ideal": "~1.2-1.3 crore kiranas pan-India."
+  }
+}

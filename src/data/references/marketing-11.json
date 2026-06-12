@@ -1,0 +1,72 @@
+{
+  "questionId": "marketing-11",
+  "domain": "marketing",
+  "question": "Estimate the reach of a WhatsApp Business broadcast to 5 lakh customers.",
+  "idealClarificationQuestions": [
+    "Reach = messages successfully delivered AND read? Yes.",
+    "Sender = brand using WhatsApp Business API (e.g., Tata Cliq, Lenskart)? Yes.",
+    "5 lakh opted-in users? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Delivery rate × open rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Sent messages: 5 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Delivery rate (active WhatsApp accounts, not blocked): ~92-95% = 4.65 lakh delivered."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "CTR on a CTA in the message (link click): ~10-15% of opened = ~50K clicks."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Reach (delivered + read): ~3.7 lakh actively engaged."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Sent messages",
+      "value": "5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Delivery rate (active WhatsApp accounts, not blocked)",
+      "value": "~92-95% = 4.65 lakh delivered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "CTR on a CTA in the message (link click)",
+      "value": "~10-15% of opened = ~50K clicks.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reach (delivered + read)",
+      "value": "~3.7 lakh actively engaged.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Sent messages: 5 lakh.",
+    "Delivery rate (active WhatsApp accounts, not blocked): ~92-95% = 4.65 lakh delivered.",
+    "Open rate (read in first 24 hours — WhatsApp dramatically outperforms email): ~75-85% = ~3.7 lakh read.",
+    "CTR on a CTA in the message (link click): ~10-15% of opened = ~50K clicks.",
+    "Reach (delivered + read): ~3.7 lakh actively engaged."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Reach (delivered + read): ~3.7 lakh actively engaged."
+  }
+}

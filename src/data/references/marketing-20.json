@@ -1,0 +1,72 @@
+{
+  "questionId": "marketing-20",
+  "domain": "marketing",
+  "question": "Estimate the brand recall reach of a celebrity-endorsed TVC featuring a top-tier star.",
+  "idealClarificationQuestions": [
+    "Top-tier star = Shah Rukh Khan / Virat Kohli / Deepika Padukone level? Yes.",
+    "Reach = unique people aware of the brand-celebrity association after a 3-month TVC blitz? Yes.",
+    "Budget ~₹30 cr media + endorsement fee? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "TV reach + digital reach + earned media (PR) reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TV reach over 3 months at 5,000+ GRPs across Hindi GEC + sports + movies: ~70-75 crore TV individuals (1+ reach), ~50 cr (3+)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Digital reach (YouTube + Meta + OTT) at ~₹5 cr digital media: ~20 crore unique."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total cumulative cross-media reach (deduped): ~70-80 crore unique Indians."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of these, recall the celebrity-brand association: ~40-50% = ~30-40 crore have spontaneous recall."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Digital reach (YouTube + Meta + OTT) at ~₹5 cr digital media",
+      "value": "~20 crore unique.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Earned media / PR (interviews, branded content)",
+      "value": "~15 crore additional.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cumulative cross-media reach (deduped)",
+      "value": "~70-80 crore unique Indians.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, recall the celebrity-brand association",
+      "value": "~40-50% = ~30-40 crore have spontaneous recall.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TV reach over 3 months at 5,000+ GRPs across Hindi GEC + sports + movies: ~70-75 crore TV individuals (1+ reach), ~50 cr (3+).",
+    "Digital reach (YouTube + Meta + OTT) at ~₹5 cr digital media: ~20 crore unique.",
+    "Earned media / PR (interviews, branded content): ~15 crore additional.",
+    "Total cumulative cross-media reach (deduped): ~70-80 crore unique Indians.",
+    "Of these, recall the celebrity-brand association: ~40-50% = ~30-40 crore have spontaneous recall."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of these, recall the celebrity-brand association: ~40-50% = ~30-40 crore have spontaneous recall."
+  }
+}

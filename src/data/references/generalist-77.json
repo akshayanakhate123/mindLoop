@@ -1,0 +1,89 @@
+{
+  "questionId": "generalist-77",
+  "domain": "generalist",
+  "question": "How many people travel during the Holi weekend (across all transport modes) in India?",
+  "idealClarificationQuestions": [
+    "Holi weekend = Friday before Holi to Monday after (4 days)? Yes.",
+    "Inter-city travel only (excluding daily commute)? Yes.",
+    "Train + bus + flight + private car? All.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up by mode."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Railways daily passenger trips: ~2.1 crore. Holi weekend 4 days = 8.4 crore base + Holi uplift ~50% = ~13 crore rail trips."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Bus (state + private intercity): ~3 crore daily inter-city; 4 days × 1.4 (Holi uplift) = ~17 crore bus trips ≈ 8.5 crore unique."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Private cars (long-distance): ~2 crore family travellers (estimate based on highway toll data)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~17-18 crore Indians make inter-city trips during Holi weekend."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Railways daily passenger trips",
+      "value": "~2.1 crore. Holi weekend 4 days = 8.4 crore base + Holi uplift ~50% = ~13 crore rail trips.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But unique travellers (not trips)",
+      "value": "~50% are roundtrip = ~6.5 crore unique inter-city rail travellers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bus (state + private intercity)",
+      "value": "~3 crore daily inter-city; 4 days × 1.4 (Holi uplift) = ~17 crore bus trips ≈ 8.5 crore unique.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domestic flights",
+      "value": "5 lakh daily passengers × 4 days × 1.3 = ~26 lakh flights ≈ ~13 lakh unique.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Private cars (long-distance)",
+      "value": "~2 crore family travellers (estimate based on highway toll data).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total unique inter-city Holi travellers",
+      "value": "6.5 + 8.5 + 0.13 + 2 = ~17 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~17-18 crore Indians make inter-city trips during Holi weekend.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian Railways daily passenger trips: ~2.1 crore. Holi weekend 4 days = 8.4 crore base + Holi uplift ~50% = ~13 crore rail trips.",
+    "But unique travellers (not trips): ~50% are roundtrip = ~6.5 crore unique inter-city rail travellers.",
+    "Bus (state + private intercity): ~3 crore daily inter-city; 4 days × 1.4 (Holi uplift) = ~17 crore bus trips ≈ 8.5 crore unique.",
+    "Domestic flights: 5 lakh daily passengers × 4 days × 1.3 = ~26 lakh flights ≈ ~13 lakh unique.",
+    "Private cars (long-distance): ~2 crore family travellers (estimate based on highway toll data).",
+    "Total unique inter-city Holi travellers: 6.5 + 8.5 + 0.13 + 2 = ~17 crore.",
+    "Round: ~17-18 crore Indians make inter-city trips during Holi weekend."
+  ],
+  "finalAnswerRange": {
+    "low": "17",
+    "high": "18",
+    "ideal": "~17-18 crore Indians make inter-city trips during Holi weekend."
+  }
+}

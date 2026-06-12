@@ -1,0 +1,86 @@
+{
+  "questionId": "finance-64",
+  "domain": "finance",
+  "question": "Estimate the EV battery manufacturing market opportunity in India by 2030.",
+  "idealClarificationQuestions": [
+    "Battery cell + pack manufacturing revenue in India? Yes.",
+    "By 2030? Yes.",
+    "Domestic + export? Both."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Capacity × ASP × utilization."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India 2030 battery manufacturing capacity target: ~150 GWh annual (PLI scheme + private investments)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Capacity utilization: ~80%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual revenue at production: 120 GWh × ₹65L/kWh = ~₹78,000 Cr (~$9.5B)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹90,000 Cr (~$11B) Indian battery manufacturing market by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India 2030 battery manufacturing capacity target",
+      "value": "~150 GWh annual (PLI scheme + private investments).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average price (declining)",
+      "value": "~$80/kWh by 2030 (vs $110 today) = ~₹6,500/kWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Capacity utilization",
+      "value": "~80%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Production",
+      "value": "~120 GWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual revenue at production",
+      "value": "120 GWh × ₹65L/kWh = ~₹78,000 Cr (~$9.5B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus battery pack assembly + thermal management + BMS systems",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹90,000 Cr (~$11B) Indian battery manufacturing market by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India 2030 battery manufacturing capacity target: ~150 GWh annual (PLI scheme + private investments).",
+    "Average price (declining): ~$80/kWh by 2030 (vs $110 today) = ~₹6,500/kWh.",
+    "Annual revenue at production: 120 GWh × ₹65L/kWh = ~₹78,000 Cr (~$9.5B).",
+    "Plus battery pack assembly + thermal management + BMS systems: ~₹15,000 Cr.",
+    "Total: ~₹90,000 Cr (~$11B) Indian battery manufacturing market by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹90,000 Cr (~$11B) Indian battery manufacturing market by 2030."
+  }
+}

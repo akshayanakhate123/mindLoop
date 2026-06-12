@@ -1,0 +1,80 @@
+{
+  "questionId": "product-35",
+  "domain": "product",
+  "question": "Estimate the songs streamed daily on Spotify India.",
+  "idealClarificationQuestions": [
+    "Total streams across free + premium users? Yes.",
+    "India users only? Yes.",
+    "Stream defined as a song played for >30 seconds? Yes (industry standard).",
+    "Average day in 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "DAU × songs per session × sessions per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Spotify India MAU: ~57M (calculated earlier)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average listening time per DAU: ~45-60 minutes."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Songs per DAU: ~50 mins ÷ 3.5 = ~14 songs."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily streams: 28M × 14 = ~390M streams."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Spotify India MAU",
+      "value": "~57M (calculated earlier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "DAU/MAU ratio for music streaming (high stickiness)",
+      "value": "~50% = ~28M DAU.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average listening time per DAU",
+      "value": "~45-60 minutes.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average song length",
+      "value": "~3.5 minutes.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Songs per DAU",
+      "value": "~50 mins ÷ 3.5 = ~14 songs.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily streams",
+      "value": "28M × 14 = ~390M streams.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "DAU/MAU ratio for music streaming (high stickiness): ~50% = ~28M DAU.",
+    "Songs per DAU: ~50 mins ÷ 3.5 = ~14 songs.",
+    "Daily streams: 28M × 14 = ~390M streams."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily streams: 28M × 14 = ~390M streams."
+  }
+}

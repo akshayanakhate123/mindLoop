@@ -1,0 +1,89 @@
+{
+  "questionId": "finance-84",
+  "domain": "finance",
+  "question": "Estimate the cost to acquire a customer (CAC) for a major Indian e-commerce platform (Amazon / Flipkart).",
+  "idealClarificationQuestions": [
+    "Blended new-customer CAC (across all channels)? Yes.",
+    "Definition: new customer = first successful order? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Marketing spend / new customers acquired."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon India marketing spend FY26: ~₹4,500-5,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "New customers added per year (Amazon): ~3-4 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Pure paid-acquisition CAC: ~₹400-700 per new customer."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1,200-1,500 blended CAC; ~₹500-700 pure acquisition CAC."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Amazon India marketing spend FY26",
+      "value": "~₹4,500-5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Flipkart marketing spend FY26",
+      "value": "~₹4,000-4,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "New customers added per year (Amazon)",
+      "value": "~3-4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "CAC",
+      "value": "₹5,000 Cr / 3.5 crore = ~₹1,400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pure paid-acquisition CAC",
+      "value": "~₹400-700 per new customer.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "All-in (incl. brand + retention spend)",
+      "value": "~₹1,200-1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1,200-1,500 blended CAC; ~₹500-700 pure acquisition CAC.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Amazon India marketing spend FY26: ~₹4,500-5,000 Cr.",
+    "Flipkart marketing spend FY26: ~₹4,000-4,500 Cr.",
+    "New customers added per year (Amazon): ~3-4 crore.",
+    "CAC: ₹5,000 Cr / 3.5 crore = ~₹1,400.",
+    "But: this counts all marketing spend (including brand + retention); true paid acquisition CAC is lower.",
+    "Pure paid-acquisition CAC: ~₹400-700 per new customer.",
+    "All-in (incl. brand + retention spend): ~₹1,200-1,500.",
+    "Round: ~₹1,200-1,500 blended CAC; ~₹500-700 pure acquisition CAC."
+  ],
+  "finalAnswerRange": {
+    "low": "1,200",
+    "high": "1,500",
+    "ideal": "~₹1,200-1,500 blended CAC; ~₹500-700 pure acquisition CAC."
+  }
+}

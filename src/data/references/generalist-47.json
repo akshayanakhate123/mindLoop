@@ -1,0 +1,77 @@
+{
+  "questionId": "generalist-47",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of pulses (dal) in India.",
+  "idealClarificationQuestions": [
+    "All pulses: tur, moong, urad, masoor, chana etc.? All.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Production + imports = consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian pulses production FY26: ~26-28 MT."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total availability: ~30 MT."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Per-capita: ~19 kg/year (rising due to NFSA distribution and protein awareness)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily: ~75,000 tonnes/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian pulses production FY26",
+      "value": "~26-28 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Imports (significant — India is world's largest pulse importer)",
+      "value": "~3-4 MT (down from peak ~6 MT).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total availability",
+      "value": "~30 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domestic consumption",
+      "value": "~28 MT (some seed + losses).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita",
+      "value": "~19 kg/year (rising due to NFSA distribution and protein awareness).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~75,000 tonnes/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Domestic consumption: ~28 MT (some seed + losses)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily: ~75,000 tonnes/day."
+  }
+}

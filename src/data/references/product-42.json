@@ -1,0 +1,70 @@
+{
+  "questionId": "product-42",
+  "domain": "product",
+  "question": "Estimate the tweets (X posts) per day from India.",
+  "idealClarificationQuestions": [
+    "Original posts + replies? Yes (reposts excluded).",
+    "From India (geo-located accounts)? Yes.",
+    "Average day, 2026? Yes.",
+    "Includes verified + non-verified? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Indian X (Twitter) MAU × % who tweet × average tweets per active poster."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "X India MAU: ~25M (X is small in India vs US, but powerful among media/political users)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, posters (tweet at least once a week): ~12% = ~3M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average tweets/replies per active poster per day: ~3-4 (heavy users do 20+, light users <1)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily posts from India: 3M × 3.5 = ~10.5M posts."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "X India MAU",
+      "value": "~25M (X is small in India vs US, but powerful among media/political users).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, posters (tweet at least once a week)",
+      "value": "~12% = ~3M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average tweets/replies per active poster per day",
+      "value": "~3-4 (heavy users do 20+, light users <1).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily posts from India",
+      "value": "3M × 3.5 = ~10.5M posts.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, posters (tweet at least once a week): ~12% = ~3M.",
+    "Average tweets/replies per active poster per day: ~3-4 (heavy users do 20+, light users <1).",
+    "Daily posts from India: 3M × 3.5 = ~10.5M posts."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily posts from India: 3M × 3.5 = ~10.5M posts."
+  }
+}

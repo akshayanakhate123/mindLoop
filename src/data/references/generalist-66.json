@@ -1,0 +1,82 @@
+{
+  "questionId": "generalist-66",
+  "domain": "generalist",
+  "question": "Estimate the number of insurance agents in India.",
+  "idealClarificationQuestions": [
+    "LIC + private life + general insurance + health insurance individual agents combined? All licensed agents.",
+    "Active agents (commission earned in past year)? Active.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across insurer disclosures + IRDAI data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "LIC of India agents: ~13.5 lakh (largest single agent force globally)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "General insurers (ICICI Lombard, Bajaj Allianz, etc.) agents: ~3 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus PoS (Point of Sale) agents licensed for simpler products: ~3 lakh additional."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total active agents: ~28-30 lakh; total licensed (incl. dormant): ~40 lakh."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "LIC of India agents",
+      "value": "~13.5 lakh (largest single agent force globally).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Private life insurers (HDFC Life, ICICI Pru, Max, SBI Life, etc.)",
+      "value": "~10 lakh combined.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "General insurers (ICICI Lombard, Bajaj Allianz, etc.) agents",
+      "value": "~3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Health insurance specialists + independent advisors",
+      "value": "~2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus PoS (Point of Sale) agents licensed for simpler products",
+      "value": "~3 lakh additional.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total active agents",
+      "value": "~28-30 lakh; total licensed (incl. dormant): ~40 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "LIC of India agents: ~13.5 lakh (largest single agent force globally).",
+    "Private life insurers (HDFC Life, ICICI Pru, Max, SBI Life, etc.): ~10 lakh combined.",
+    "General insurers (ICICI Lombard, Bajaj Allianz, etc.) agents: ~3 lakh.",
+    "Health insurance specialists + independent advisors: ~2 lakh.",
+    "Plus PoS (Point of Sale) agents licensed for simpler products: ~3 lakh additional.",
+    "Total active agents: ~28-30 lakh; total licensed (incl. dormant): ~40 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total active agents: ~28-30 lakh; total licensed (incl. dormant): ~40 lakh."
+  }
+}

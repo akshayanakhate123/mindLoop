@@ -1,0 +1,71 @@
+{
+  "questionId": "marketing-43",
+  "domain": "marketing",
+  "question": "Estimate the YouTube ad view-to-website-visit conversion rate.",
+  "idealClarificationQuestions": [
+    "Skippable in-stream YouTube ads with link to website? Yes.",
+    "Indian audience? Yes.",
+    "View = ad viewed for at least 30 seconds (skippable counted view)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "View → click → land."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Ad views (counted): 100,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "View-to-click rate (on YouTube ad CTA): ~0.4-0.8% (varies by creative)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net view-to-website-visit: ~0.3-0.7%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Take midpoint: ~0.5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Ad views (counted)",
+      "value": "100,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "View-to-click rate (on YouTube ad CTA)",
+      "value": "~0.4-0.8% (varies by creative).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Click-to-website-load",
+      "value": "~85% (rest abandoned during loading or device-related issues).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net view-to-website-visit",
+      "value": "~0.3-0.7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take midpoint",
+      "value": "~0.5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Take midpoint: ~0.5%."
+  }
+}

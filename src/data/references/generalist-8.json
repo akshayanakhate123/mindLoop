@@ -1,0 +1,75 @@
+{
+  "questionId": "generalist-8",
+  "domain": "generalist",
+  "question": "Estimate the number of unique mobile phone users in India.",
+  "idealClarificationQuestions": [
+    "Unique people (not SIM cards) using a mobile phone? Yes — unique users.",
+    "Both feature phones + smartphones? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total population minus those who don't use any phone (children, elderly, very poor)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Adults who don't use any phone (elderly without family-shared use, very poor without access): ~5% of adults = ~60M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Unique mobile users: 1,450M - 200M - 60M = ~1,190M, but adjusting for shared use the unique person-with-access ~1.1B."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.1 billion unique mobile users."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Children under 8 (no phone of their own)",
+      "value": "~14% = ~200M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Adults who share phones (1 phone for 2 people in poor households)",
+      "value": "adjustment ~50M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique mobile users",
+      "value": "1,450M - 200M - 60M = ~1,190M, but adjusting for shared use the unique person-with-access ~1.1B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.1 billion unique mobile users.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Children under 8 (no phone of their own): ~14% = ~200M.",
+    "Adults who don't use any phone (elderly without family-shared use, very poor without access): ~5% of adults = ~60M.",
+    "Unique mobile users: 1,450M - 200M - 60M = ~1,190M, but adjusting for shared use the unique person-with-access ~1.1B.",
+    "Round: ~1.1 billion unique mobile users."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1.1 billion unique mobile users."
+  }
+}

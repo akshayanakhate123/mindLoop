@@ -1,0 +1,89 @@
+{
+  "questionId": "generalist-50",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of bottled cold drinks (soft drinks + juices + flavored milk) in India.",
+  "idealClarificationQuestions": [
+    "Carbonated soft drinks + packaged juice + flavored milk + energy drinks? All.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes.",
+    "Bottle/can/tetrapak units + total litres? Both."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Market size / unit volume."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian soft drinks market (carbonated): ~₹35,000 Cr (FY26); avg ₹40/litre = 8.7 billion litres/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Energy drinks: ~₹3,000 Cr; ~200 million litres."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Bottle equivalents (avg 250 ml): ~10.8 crore bottles/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These test your awareness of India's physical infrastructure: petrol pumps, ATMs, hospitals, roads, towers. Most have authoritative published data (MoRTH, RBI, etc.) — your job is to back into the right magnitude using a logical chain when you don't remember the exact figure."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian soft drinks market (carbonated)",
+      "value": "~₹35,000 Cr (FY26); avg ₹40/litre = 8.7 billion litres/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Packaged juice market (Real, Tropicana, Paper Boat)",
+      "value": "~₹6,000 Cr; avg ₹100/L = 600 million litres.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Flavored milk + dairy beverages (Amul Kool, NESTLÉ)",
+      "value": "~₹4,000 Cr; ~400 million litres.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Energy drinks",
+      "value": "~₹3,000 Cr; ~200 million litres.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~9.9 billion litres/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~27 million litres/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bottle equivalents (avg 250 ml)",
+      "value": "~10.8 crore bottles/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian soft drinks market (carbonated): ~₹35,000 Cr (FY26); avg ₹40/litre = 8.7 billion litres/year.",
+    "Packaged juice market (Real, Tropicana, Paper Boat): ~₹6,000 Cr; avg ₹100/L = 600 million litres.",
+    "Flavored milk + dairy beverages (Amul Kool, NESTLÉ): ~₹4,000 Cr; ~400 million litres.",
+    "Energy drinks: ~₹3,000 Cr; ~200 million litres.",
+    "Total: ~9.9 billion litres/year.",
+    "Daily: ~27 million litres/day.",
+    "Bottle equivalents (avg 250 ml): ~10.8 crore bottles/day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "3. Infrastructure / Utility"
+  }
+}

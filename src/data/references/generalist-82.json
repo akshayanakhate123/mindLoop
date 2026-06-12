@@ -1,0 +1,81 @@
+{
+  "questionId": "generalist-82",
+  "domain": "generalist",
+  "question": "Estimate the WhatsApp messages sent during India-Pakistan cricket match (T20 World Cup or Asia Cup).",
+  "idealClarificationQuestions": [
+    "Match window (4-5 hours) only? Yes.",
+    "From India only? Yes.",
+    "Includes images, voice notes, status updates? Messages (text + media); status separately.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "MAU × hyper-engagement multiplier."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "WhatsApp India MAU: ~600M; DAU active during match: ~500M+."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Match window (5 hours) × normal multiplier 1x = ~20 messages/user."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Match window messages per user: ~80-100."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~40-50 billion messages during 5-hour match window."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "WhatsApp India MAU",
+      "value": "~600M; DAU active during match: ~500M+.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average normal-hour message volume per active user",
+      "value": "~3-5 messages/hour.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "India-Pakistan match excitement multiplier",
+      "value": "~4-5x (group chats explode on every wicket/six).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Match window messages per user",
+      "value": "~80-100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "500M × 90 = 45 billion messages.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~40-50 billion messages during 5-hour match window.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "WhatsApp India MAU: ~600M; DAU active during match: ~500M+.",
+    "Match window (5 hours) × normal multiplier 1x = ~20 messages/user.",
+    "Total: 500M × 90 = 45 billion messages.",
+    "Round: ~40-50 billion messages during 5-hour match window."
+  ],
+  "finalAnswerRange": {
+    "low": "40",
+    "high": "50",
+    "ideal": "~40-50 billion messages during 5-hour match window."
+  }
+}

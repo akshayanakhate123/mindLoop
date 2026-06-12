@@ -1,0 +1,68 @@
+{
+  "questionId": "generalist-86",
+  "domain": "generalist",
+  "question": "Estimate the number of cars sold during the festive season (Sept-Nov) in India.",
+  "idealClarificationQuestions": [
+    "Passenger cars + SUVs? Yes — passenger vehicles.",
+    "Festive season window: Sept (Onam, Ganesh Chaturthi) to Nov (Diwali, Dhanteras)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual sales × festive share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian PV sales FY26: ~42 lakh units."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Festive season share of annual sales: ~40-45% (3 months bunching seasonal demand)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Festive season sales: 42L × 0.42 = ~17.6L ≈ ~18 lakh units in 3 months."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Single biggest day (Dhanteras): ~30,000-40,000 deliveries on a single day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian PV sales FY26",
+      "value": "~42 lakh units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Festive season share of annual sales",
+      "value": "~40-45% (3 months bunching seasonal demand).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Festive season sales",
+      "value": "42L × 0.42 = ~17.6L ≈ ~18 lakh units in 3 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Single biggest day (Dhanteras)",
+      "value": "~30,000-40,000 deliveries on a single day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian PV sales FY26: ~42 lakh units.",
+    "Festive season sales: 42L × 0.42 = ~17.6L ≈ ~18 lakh units in 3 months."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Single biggest day (Dhanteras): ~30,000-40,000 deliveries on a single day."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "questionId": "marketing-30",
+  "domain": "marketing",
+  "question": "Estimate the email-to-purchase conversion rate for an Indian e-commerce brand.",
+  "idealClarificationQuestions": [
+    "Email campaign sent to customer base; how many ultimately purchase? Yes.",
+    "Time window: 7 days post-send? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Email funnel: send → deliver → open → click → buy."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Delivered: ~88% = 88,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Clicked: 12-15% of opens = ~2,300 clicks."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net send-to-purchase: ~0.1% of sent."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Click-to-purchase: ~3-5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Sent",
+      "value": "1,00,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Delivered",
+      "value": "~88% = 88,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Opened",
+      "value": "20% of delivered = 17,600.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Clicked",
+      "value": "12-15% of opens = ~2,300 clicks.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Purchased (of clickers)",
+      "value": "~3-5% = ~85-115 orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net send-to-purchase",
+      "value": "~0.1% of sent.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open-to-purchase",
+      "value": "~0.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Click-to-purchase",
+      "value": "~3-5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Delivered: ~88% = 88,000.",
+    "Opened: 20% of delivered = 17,600.",
+    "Clicked: 12-15% of opens = ~2,300 clicks.",
+    "Purchased (of clickers): ~3-5% = ~85-115 orders."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Click-to-purchase: ~3-5%."
+  }
+}

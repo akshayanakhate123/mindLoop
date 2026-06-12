@@ -1,0 +1,64 @@
+{
+  "questionId": "product-88",
+  "domain": "product",
+  "question": "Estimate the customer service tickets per day for Amazon India during festive sale (Great Indian Festival).",
+  "idealClarificationQuestions": [
+    "Daily tickets across phone, chat, email, in-app? Yes — total.",
+    "During festive sale period (Sept-Oct, peak ~10 days)? Yes.",
+    "Pan-India consumer? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily order volume × support contact rate × festive uplift."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon India peak festive daily orders: ~10-12M (vs ~3-4M normal day)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Customer support contact rate during festive (returns, delays, defective issues spike): ~5-7% of orders = ~600K-800K tickets."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus pre-purchase queries (offer questions, EMI, delivery dates): ~10% of unique buyers ~5M shoppers/day = ~500K queries."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total daily tickets: ~1-1.3 million."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Amazon India peak festive daily orders",
+      "value": "~10-12M (vs ~3-4M normal day).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus pre-purchase queries (offer questions, EMI, delivery dates)",
+      "value": "~10% of unique buyers ~5M shoppers/day = ~500K queries.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily tickets",
+      "value": "~1-1.3 million.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Customer support contact rate during festive (returns, delays, defective issues spike): ~5-7% of orders = ~600K-800K tickets.",
+    "Plus pre-purchase queries (offer questions, EMI, delivery dates): ~10% of unique buyers ~5M shoppers/day = ~500K queries.",
+    "Total daily tickets: ~1-1.3 million."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total daily tickets: ~1-1.3 million."
+  }
+}

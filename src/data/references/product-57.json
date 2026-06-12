@@ -1,0 +1,80 @@
+{
+  "questionId": "product-57",
+  "domain": "product",
+  "question": "Estimate the adoption of voice assistants in Indian vernacular language markets (Hindi, Tamil, Telugu).",
+  "idealClarificationQuestions": [
+    "Voice assistant = Google Assistant, Alexa, Siri, Bixby? All of them.",
+    "Vernacular = users who interact in non-English (primarily Hindi or regional language)? Yes.",
+    "Metric: any voice query in past month? Yes (MAU).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total smartphone vernacular users → voice-feature awareness → frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian smartphone users primarily comfortable in vernacular: ~500M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Used voice (any query) in past month: ~30% of aware = ~90M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total monthly voice assistant users in vernacular: ~90M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Languages distribution: Hindi ~50%, Tamil/Telugu/Bengali/Marathi ~35%, others ~15%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian smartphone users primarily comfortable in vernacular",
+      "value": "~500M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, aware that voice assistant exists on their phone",
+      "value": "~60% = 300M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Used voice (any query) in past month",
+      "value": "~30% of aware = ~90M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which, regular users (multiple uses per week)",
+      "value": "~30% = 27M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly voice assistant users in vernacular",
+      "value": "~90M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Languages distribution",
+      "value": "Hindi ~50%, Tamil/Telugu/Bengali/Marathi ~35%, others ~15%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, aware that voice assistant exists on their phone: ~60% = 300M.",
+    "Used voice (any query) in past month: ~30% of aware = ~90M.",
+    "Of which, regular users (multiple uses per week): ~30% = 27M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Languages distribution: Hindi ~50%, Tamil/Telugu/Bengali/Marathi ~35%, others ~15%."
+  }
+}

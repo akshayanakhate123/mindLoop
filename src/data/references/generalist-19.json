@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-19",
+  "domain": "generalist",
+  "question": "Estimate the number of women in the formal/informal workforce in India.",
+  "idealClarificationQuestions": [
+    "Female labor force participation includes formal salaried + informal/self-employed + agricultural? All.",
+    "Year 2026? Yes.",
+    "Per PLFS definition (in past 365 days)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Female working-age population × female LFPR (labor force participation rate)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India female population: ~700M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Female LFPR (PLFS 2023-24): ~37% (rising from ~25% in 2017 — significant increase)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Informal services / domestic work / micro-business: ~50M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~16 crore women in workforce; only ~1.3 crore in formal salaried jobs."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India female population",
+      "value": "~700M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Working-age females (15-59)",
+      "value": "~440M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Female LFPR (PLFS 2023-24)",
+      "value": "~37% (rising from ~25% in 2017 — significant increase).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Female workforce",
+      "value": "440M × 0.37 = ~163M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Agriculture (often unpaid family work)",
+      "value": "~100M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Informal services / domestic work / micro-business",
+      "value": "~50M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Formal salaried",
+      "value": "~13M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~16 crore women in workforce; only ~1.3 crore in formal salaried jobs.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Female workforce: 440M × 0.37 = ~163M.",
+    "Round: ~16 crore women in workforce; only ~1.3 crore in formal salaried jobs."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~16 crore women in workforce; only ~1.3 crore in formal salaried jobs."
+  }
+}

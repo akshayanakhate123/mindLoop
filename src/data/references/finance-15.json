@@ -1,0 +1,93 @@
+{
+  "questionId": "finance-15",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Cult.fit (Cure.fit) parent company.",
+  "idealClarificationQuestions": [
+    "Curefit Healthcare Pvt Ltd total revenue: gyms + digital + nutrition? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Multi-channel revenue stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Cult.fit gym/center memberships: ~700+ centers across India."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average membership fee: ~₹15,000-20,000/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus Eat.fit (nutrition delivery, reduced post-2022): ~₹100 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total revenue: ~₹2,100-2,300 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Cult.fit gym/center memberships",
+      "value": "~700+ centers across India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active members",
+      "value": "~10-12 lakh paying members.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average membership fee",
+      "value": "~₹15,000-20,000/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Center revenue",
+      "value": "~₹1,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus digital (Cult Live, app subscriptions)",
+      "value": "~₹100-150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Eat.fit (nutrition delivery, reduced post-2022)",
+      "value": "~₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus equipment + Mind.fit + others",
+      "value": "~₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹2,100-2,300 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Cult.fit gym/center memberships: ~700+ centers across India.",
+    "Active members: ~10-12 lakh paying members.",
+    "Average membership fee: ~₹15,000-20,000/year.",
+    "Center revenue: ~₹1,800 Cr.",
+    "Plus digital (Cult Live, app subscriptions): ~₹100-150 Cr.",
+    "Plus Eat.fit (nutrition delivery, reduced post-2022): ~₹100 Cr.",
+    "Plus equipment + Mind.fit + others: ~₹100 Cr.",
+    "Total revenue: ~₹2,100-2,300 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total revenue: ~₹2,100-2,300 Cr."
+  }
+}

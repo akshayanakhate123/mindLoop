@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-81",
+  "domain": "generalist",
+  "question": "Estimate the number of crackers (firecrackers) burst in Delhi NCR on Diwali night.",
+  "idealClarificationQuestions": [
+    "Despite court bans, account for actual ground reality? Yes — realistic.",
+    "Diwali night (5-6 hours peak)? Yes.",
+    "Delhi NCR (32M population)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Households × cracker spend × packets per HH."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Delhi NCR households: ~7M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average cracker spend per bursting HH: ~₹500-1,000 (lower than past due to bans, ₹500 mid-estimate)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average cracker pack price: ~₹50; pieces per pack ~50."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~80-100 crore individual cracker pieces burst in Delhi NCR on Diwali."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Delhi NCR households",
+      "value": "~7M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, bursting crackers (despite bans)",
+      "value": "~50% = 3.5M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average cracker spend per bursting HH",
+      "value": "~₹500-1,000 (lower than past due to bans, ₹500 mid-estimate).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cracker spend",
+      "value": "~₹2,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average cracker pack price",
+      "value": "~₹50; pieces per pack ~50.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of cracker pieces burst",
+      "value": "3.5M HH × 5 packs × 50 pieces = ~87.5 crore individual pieces.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~80-100 crore individual cracker pieces burst in Delhi NCR on Diwali.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, bursting crackers (despite bans): ~50% = 3.5M HH.",
+    "Average cracker spend per bursting HH: ~₹500-1,000 (lower than past due to bans, ₹500 mid-estimate).",
+    "Total cracker spend: ~₹2,000 Cr.",
+    "Average cracker pack price: ~₹50; pieces per pack ~50.",
+    "Number of cracker pieces burst: 3.5M HH × 5 packs × 50 pieces = ~87.5 crore individual pieces.",
+    "Round: ~80-100 crore individual cracker pieces burst in Delhi NCR on Diwali."
+  ],
+  "finalAnswerRange": {
+    "low": "80",
+    "high": "100",
+    "ideal": "~80-100 crore individual cracker pieces burst in Delhi NCR on Diwali."
+  }
+}

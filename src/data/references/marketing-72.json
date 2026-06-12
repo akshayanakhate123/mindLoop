@@ -1,0 +1,80 @@
+{
+  "questionId": "marketing-72",
+  "domain": "marketing",
+  "question": "Estimate the consumer segment for premium streaming subscriptions (₹500+/month, Netflix-Hotstar premium, Apple TV+, premium music).",
+  "idealClarificationQuestions": [
+    "Households paying ₹500+/month for streaming (single or stacked subscriptions)? Yes.",
+    "All categories combined: video + music + audiobooks premium? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Affluent HH × premium streaming penetration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian affluent HH (income ₹15L+): ~12M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Plus upper-middle (₹8-15L income): ~25M HH, of which ~15% pay premium tier = 3.75M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total premium streaming subscribers (HH or individual): ~10-11M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1 crore Indian premium streaming households/individuals."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian affluent HH (income ₹15L+)",
+      "value": "~12M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, paying ₹500+ on streaming services",
+      "value": "~40% = ~4.8M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus upper-middle (₹8-15L income)",
+      "value": "~25M HH, of which ~15% pay premium tier = 3.75M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus young single high-spenders (working in metros)",
+      "value": "~2-3M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total premium streaming subscribers (HH or individual)",
+      "value": "~10-11M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1 crore Indian premium streaming households/individuals.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian affluent HH (income ₹15L+): ~12M.",
+    "Of these, paying ₹500+ on streaming services: ~40% = ~4.8M HH.",
+    "Plus upper-middle (₹8-15L income): ~25M HH, of which ~15% pay premium tier = 3.75M.",
+    "Round: ~1 crore Indian premium streaming households/individuals."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1 crore Indian premium streaming households/individuals."
+  }
+}

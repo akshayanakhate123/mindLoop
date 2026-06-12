@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-15",
+  "domain": "sales",
+  "question": "Estimate monthly sales of small-ticket loans (personal loans, BNPL <₹50K) in a single Tier 2 city like Lucknow.",
+  "idealClarificationQuestions": [
+    "Loans <₹50K disbursed monthly (BNPL, instant personal loan, app-based credit)? Yes.",
+    "All digital fintech + bank disbursals? Yes.",
+    "Lucknow metro? Yes (~3.5M).",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Adults × digital lending penetration × monthly transaction frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Lucknow metro adult population: ~25 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average disbursals per active borrower per month: ~0.5 (some monthly, most quarterly)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average ticket size for small-ticket loan: ₹18,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.5 lakh loan disbursals / ~₹27 Cr monthly in Lucknow."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Lucknow metro adult population",
+      "value": "~25 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digital lending users / borrowers",
+      "value": "~12% = ~3 lakh active borrowers (annual users).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average disbursals per active borrower per month",
+      "value": "~0.5 (some monthly, most quarterly).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly disbursals count",
+      "value": "~1.5 lakh small-ticket loans.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ticket size for small-ticket loan",
+      "value": "₹18,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly disbursal value",
+      "value": "1.5L × ₹18K = ~₹27 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.5 lakh loan disbursals / ~₹27 Cr monthly in Lucknow.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Lucknow metro adult population: ~25 lakh.",
+    "Digital lending users / borrowers: ~12% = ~3 lakh active borrowers (annual users).",
+    "Monthly disbursals count: ~1.5 lakh small-ticket loans.",
+    "Average ticket size for small-ticket loan: ₹18,000.",
+    "Total monthly disbursal value: 1.5L × ₹18K = ~₹27 Cr.",
+    "Round: ~1.5 lakh loan disbursals / ~₹27 Cr monthly in Lucknow."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1.5 lakh loan disbursals / ~₹27 Cr monthly in Lucknow."
+  }
+}

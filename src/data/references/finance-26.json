@@ -1,0 +1,91 @@
+{
+  "questionId": "finance-26",
+  "domain": "finance",
+  "question": "Estimate the profit margins for an Indian multiplex (PVR INOX).",
+  "idealClarificationQuestions": [
+    "Net margins (PAT/Revenue) or EBITDA margins? Provide both.",
+    "Average multiplex (mature property, post-IPO PVR INOX scale)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Cost stack against revenue."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per multiplex monthly revenue (per Q78 marketing doc): ~₹5 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Rent (PVR INOX is high-rent multiplex format): ~12-15%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating cost: ~73-77% = EBITDA margin ~23-27%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: EBITDA ~22-25%; PAT ~5-7%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Per multiplex monthly revenue (per Q78 marketing doc)",
+      "value": "~₹5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Film distributor share (most variable cost)",
+      "value": "~38-42% of net box office (which is ~60% of revenue) = ~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- F&B COGS (very high gross margin ~70%)",
+      "value": "~12% of revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rent (PVR INOX is high-rent multiplex format)",
+      "value": "~12-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Employee cost",
+      "value": "~9-10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Utilities + maintenance",
+      "value": "~6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating cost",
+      "value": "~73-77% = EBITDA margin ~23-27%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per multiplex monthly revenue (per Q78 marketing doc): ~₹5 Cr.",
+    "- Film distributor share (most variable cost): ~38-42% of net box office (which is ~60% of revenue) = ~25%.",
+    "- Utilities + maintenance: ~6%.",
+    "Total operating cost: ~73-77% = EBITDA margin ~23-27%.",
+    "Less interest + tax: ~7%."
+  ],
+  "finalAnswerRange": {
+    "low": "22",
+    "high": "25",
+    "ideal": "EBITDA ~22-25%; PAT ~5-7%."
+  }
+}

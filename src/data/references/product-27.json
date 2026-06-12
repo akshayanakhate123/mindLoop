@@ -1,0 +1,67 @@
+{
+  "questionId": "product-27",
+  "domain": "product",
+  "question": "Estimate the daily active users (DAU) of a major meditation app in India (e.g., Calm or Headspace or local Wysa).",
+  "idealClarificationQuestions": [
+    "Pick the leading app with India focus or international leader? Use a leading meditation/mental-wellness app like Wysa or Calm.",
+    "DAU defined as opened the app or completed a session? Opened the app at least once.",
+    "Indian users only? Yes.",
+    "Latest year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total mental wellness app market → leader's market share → MAU → MAU-to-DAU stickiness ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian smartphone users open to wellness apps (urban, college+ educated, age 18-45): ~80M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "MAU (active in last 30 days): ~25-30% of installed = ~3M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "DAU/MAU ratio for meditation apps (low — episodic use, not daily habit): ~10-15%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "DAU = 750K × 12% ≈ 90K-100K."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Of these, ever installed a meditation/wellness app",
+      "value": "~12% = ~10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "MAU (active in last 30 days)",
+      "value": "~25-30% of installed = ~3M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "App leader (e.g., Wysa or Calm with India focus) market share",
+      "value": "~25% = ~750K MAU.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian smartphone users open to wellness apps (urban, college+ educated, age 18-45): ~80M.",
+    "Of these, ever installed a meditation/wellness app: ~12% = ~10M.",
+    "MAU (active in last 30 days): ~25-30% of installed = ~3M.",
+    "App leader (e.g., Wysa or Calm with India focus) market share: ~25% = ~750K MAU.",
+    "DAU = 750K × 12% ≈ 90K-100K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "DAU = 750K × 12% ≈ 90K-100K."
+  }
+}

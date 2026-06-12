@@ -1,0 +1,76 @@
+{
+  "questionId": "marketing-69",
+  "domain": "marketing",
+  "question": "Estimate the size of the digital-native (mobile-first) consumer segment in Tier 3 + 4 India.",
+  "idealClarificationQuestions": [
+    "Consumers in Tier 3 + 4 cities/towns who primarily transact via mobile apps (e-commerce, payments, OTT)? Yes.",
+    "Active monthly users? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Tier 3/4 population × smartphone × app-active."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier 3 + 4 + small town population: ~350M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, app-active (used any non-WhatsApp app monthly): ~75% = ~135M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of these, conducting at least one e-commerce / OTT / lending / investment transaction monthly: ~70M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7 crore (70 million) digital-native transacting consumers in Tier 3/4."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tier 3 + 4 + small town population",
+      "value": "~350M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone owners",
+      "value": "~75% of adults = ~180M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, app-active (used any non-WhatsApp app monthly)",
+      "value": "~75% = ~135M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "App-active for transactional purposes (UPI + e-commerce + OTT etc.)",
+      "value": "~110M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7 crore (70 million) digital-native transacting consumers in Tier 3/4.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Tier 3 + 4 + small town population: ~350M.",
+    "Smartphone owners: ~75% of adults = ~180M.",
+    "Of these, app-active (used any non-WhatsApp app monthly): ~75% = ~135M.",
+    "App-active for transactional purposes (UPI + e-commerce + OTT etc.): ~110M.",
+    "Round: ~7 crore (70 million) digital-native transacting consumers in Tier 3/4."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~7 crore (70 million) digital-native transacting consumers in Tier 3/4."
+  }
+}

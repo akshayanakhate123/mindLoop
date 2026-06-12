@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-30",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for a top Indian QSR (Domino's India / Burger King India).",
+  "idealClarificationQuestions": [
+    "Standalone India operations of leading QSR chain? Yes (Jubilant FoodWorks scale).",
+    "EBITDA margin (pre-Ind AS 116 adjustments for lease accounting consistency)? Provide both.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard QSR cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Cost stack (% of revenue):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Rent (post Ind AS 116 capitalized): ~10% if expensed, ~0% post-116."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Other operating: ~8-10%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT margin: ~6-9%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Food cost (raw materials)",
+      "value": "~22-26%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff cost (delivery, kitchen, manager)",
+      "value": "~17-20%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rent (post Ind AS 116 capitalized)",
+      "value": "~10% if expensed, ~0% post-116.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Utilities + delivery fuel",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing",
+      "value": "~5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Royalty (to master franchisor like Domino's PNG)",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~8-10%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Utilities + delivery fuel: ~6-8%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT margin: ~6-9%."
+  }
+}

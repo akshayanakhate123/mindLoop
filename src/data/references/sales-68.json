@@ -1,0 +1,90 @@
+{
+  "questionId": "sales-68",
+  "domain": "sales",
+  "question": "Estimate the conversion rate for telecom recharge upsells (postpaid plan upgrade calls).",
+  "idealClarificationQuestions": [
+    "Telco-initiated outbound call to existing postpaid customer pitching upgrade plan? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Outbound upsell funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Outbound calls placed: 1,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Listened to pitch for >2 min: ~60% = 300."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Successful billing migration (no second thoughts): ~85% = ~19."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "If we measure calls-answered-to-upgrade: ~3.8%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Outbound calls placed",
+      "value": "1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Customer answered the call",
+      "value": "~50% = 500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Listened to pitch for >2 min",
+      "value": "~60% = 300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Considered the upgrade offer",
+      "value": "~25% = 75.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Accepted the upgrade then",
+      "value": "~30% = 22.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Successful billing migration (no second thoughts)",
+      "value": "~85% = ~19.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net calls-to-upgrade",
+      "value": "~1.9%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If we measure calls-answered-to-upgrade",
+      "value": "~3.8%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Customer answered the call: ~50% = 500.",
+    "Listened to pitch for >2 min: ~60% = 300.",
+    "Considered the upgrade offer: ~25% = 75.",
+    "Accepted the upgrade then: ~30% = 22.",
+    "Successful billing migration (no second thoughts): ~85% = ~19."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "If we measure calls-answered-to-upgrade: ~3.8%."
+  }
+}

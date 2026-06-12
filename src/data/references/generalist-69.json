@@ -1,0 +1,70 @@
+{
+  "questionId": "generalist-69",
+  "domain": "generalist",
+  "question": "Estimate the number of broadband (wired + fixed wireless) connections in India.",
+  "idealClarificationQuestions": [
+    "Fixed broadband connections (wired fiber + DSL + fixed wireless)? Yes.",
+    "Excludes mobile broadband subscribers? Yes — fixed only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "TRAI broadband data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TRAI fixed broadband subscriber base (FY26): ~5 crore (rapid growth from 3.5 crore in FY24 due to Jio AirFiber, Airtel Xstream Fiber push)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Wired fiber/DSL: ~4 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Fixed wireless (Jio AirFiber, Airtel 5G FWA): ~1 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~5 crore fixed broadband connections."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TRAI fixed broadband subscriber base (FY26)",
+      "value": "~5 crore (rapid growth from 3.5 crore in FY24 due to Jio AirFiber, Airtel Xstream Fiber push).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Wired fiber/DSL",
+      "value": "~4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Fixed wireless (Jio AirFiber, Airtel 5G FWA)",
+      "value": "~1 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~5 crore fixed broadband connections.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TRAI fixed broadband subscriber base (FY26): ~5 crore (rapid growth from 3.5 crore in FY24 due to Jio AirFiber, Airtel Xstream Fiber push).",
+    "- Wired fiber/DSL: ~4 crore.",
+    "- Fixed wireless (Jio AirFiber, Airtel 5G FWA): ~1 crore.",
+    "Round: ~5 crore fixed broadband connections."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~5 crore fixed broadband connections."
+  }
+}

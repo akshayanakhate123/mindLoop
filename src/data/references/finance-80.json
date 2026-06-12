@@ -1,0 +1,94 @@
+{
+  "questionId": "finance-80",
+  "domain": "finance",
+  "question": "Estimate the operating cost structure of Indian Railways (per-passenger-km).",
+  "idealClarificationQuestions": [
+    "Cost per passenger-km for Indian Railways? Yes.",
+    "Includes both operating costs + apportioned overhead? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total cost / total passenger-km."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Railways total passenger-km annually: ~1,200 billion (1.2 trillion)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average fare collected (subsidized): ~₹0.55/pkm."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Fuel + traction energy: ~25%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Pension liabilities: ~10%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Railways total passenger-km annually",
+      "value": "~1,200 billion (1.2 trillion).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total passenger services operating cost",
+      "value": "~₹1.4-1.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cost per pkm",
+      "value": "₹1.5 lakh Cr / 1.2 trillion km = ~₹1.20/pkm.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average fare collected (subsidized)",
+      "value": "~₹0.55/pkm.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Subsidy per pkm",
+      "value": "~₹0.65 (very heavy subsidy on passenger; cross-subsidized by freight).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Fuel + traction energy",
+      "value": "~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff",
+      "value": "~40%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance + capital depreciation",
+      "value": "~20%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian Railways total passenger-km annually: ~1,200 billion (1.2 trillion).",
+    "Total passenger services operating cost: ~₹1.4-1.5 lakh Cr.",
+    "Cost per pkm: ₹1.5 lakh Cr / 1.2 trillion km = ~₹1.20/pkm.",
+    "Average fare collected (subsidized): ~₹0.55/pkm.",
+    "Subsidy per pkm: ~₹0.65 (very heavy subsidy on passenger; cross-subsidized by freight).",
+    "Composition of ₹1.20 cost/pkm:",
+    "- Fuel + traction energy: ~25%.",
+    "- Maintenance + capital depreciation: ~20%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Other: ~5%."
+  }
+}

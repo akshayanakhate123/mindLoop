@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-17",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Zomato (parent: Eternal Limited) for FY26.",
+  "idealClarificationQuestions": [
+    "All segments: food delivery + Hyperpure + Blinkit + Zomato District + going-out + brands? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment-wise revenue stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Food delivery: GMV ~₹38,000 Cr; take rate ~22% → ~₹8,400 Cr revenue."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Hyperpure (B2B restaurant supply): ~₹3,200 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Other (brands, advertising): ~₹200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹17,000-19,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Food delivery",
+      "value": "GMV ~₹38,000 Cr; take rate ~22% → ~₹8,400 Cr revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Blinkit (quick commerce)",
+      "value": "GMV ~₹35,000 Cr (high growth); take rate ~16% → ~₹5,500 Cr revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hyperpure (B2B restaurant supply)",
+      "value": "~₹3,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Zomato District (going-out / events post-Paytm acquisition)",
+      "value": "~₹700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other (brands, advertising)",
+      "value": "~₹200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹18,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹17,000-19,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Food delivery: GMV ~₹38,000 Cr; take rate ~22% → ~₹8,400 Cr revenue.",
+    "Blinkit (quick commerce): GMV ~₹35,000 Cr (high growth); take rate ~16% → ~₹5,500 Cr revenue.",
+    "Hyperpure (B2B restaurant supply): ~₹3,200 Cr.",
+    "Zomato District (going-out / events post-Paytm acquisition): ~₹700 Cr.",
+    "Other (brands, advertising): ~₹200 Cr.",
+    "Total revenue: ~₹18,000 Cr.",
+    "Round: ~₹17,000-19,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "17,000",
+    "high": "19,000",
+    "ideal": "~₹17,000-19,000 Cr."
+  }
+}

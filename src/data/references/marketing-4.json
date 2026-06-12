@@ -1,0 +1,76 @@
+{
+  "questionId": "marketing-4",
+  "domain": "marketing",
+  "question": "Estimate the TV reach (cumulative) of a 30-day prime-time TVC campaign on Hindi GEC channels.",
+  "idealClarificationQuestions": [
+    "Hindi GEC = Star Plus, Colors, Sony, Zee TV, &TV — primarily? Yes — top 4-5 Hindi GEC channels.",
+    "Prime time = 7 PM-11 PM? Yes.",
+    "Campaign = ~1,500-2,000 GRPs over 30 days? Use 1,800 GRPs.",
+    "Reach to households or individuals? Individuals."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "GRP = Reach × Frequency. Solve for reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "BARC-defined Hindi GEC TG (Target Group) universe: Hindi-speaking states + urban Hindi viewers = ~50 crore TV individuals."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Typical reach build at 1,800 GRPs prime-time GEC: ~70-75% of TG (1+ reach)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Effective reach (3+, the marketing-relevant cutoff): ~50-55% of TG = ~25-27 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Frequency: 1,800 / 36 ≈ 5 (average individual sees the ad 5 times)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "BARC-defined Hindi GEC TG (Target Group) universe",
+      "value": "Hindi-speaking states + urban Hindi viewers = ~50 crore TV individuals.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Typical reach build at 1,800 GRPs prime-time GEC",
+      "value": "~70-75% of TG (1+ reach).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "1+ Reach",
+      "value": "50 cr × 0.72 = ~36 crore individuals reached at least once.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Effective reach (3+, the marketing-relevant cutoff)",
+      "value": "~50-55% of TG = ~25-27 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Frequency",
+      "value": "1,800 / 36 ≈ 5 (average individual sees the ad 5 times).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "BARC-defined Hindi GEC TG (Target Group) universe: Hindi-speaking states + urban Hindi viewers = ~50 crore TV individuals.",
+    "Typical reach build at 1,800 GRPs prime-time GEC: ~70-75% of TG (1+ reach).",
+    "1+ Reach: 50 cr × 0.72 = ~36 crore individuals reached at least once.",
+    "Effective reach (3+, the marketing-relevant cutoff): ~50-55% of TG = ~25-27 crore."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Frequency: 1,800 / 36 ≈ 5 (average individual sees the ad 5 times)."
+  }
+}

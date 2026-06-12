@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-1",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of BookMyShow in India.",
+  "idealClarificationQuestions": [
+    "All verticals: movie ticketing + live events + sports + theatre? Yes.",
+    "Net revenue (commission income) or GMV (ticket value)? Provide both, primary = net revenue.",
+    "FY26? Yes.",
+    "Includes BookMyShow Stream + non-ticketing revenue? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "GMV across categories × take rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Movie ticketing GMV: ~12 crore tickets/year sold via BMS × avg ₹250 = ~₹3,000 Cr GMV."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total GMV: ~₹8,500 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus on-platform advertising (banners, sponsored slots): ~₹150 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total net revenue: ~₹1,000-1,100 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Movie ticketing GMV",
+      "value": "~12 crore tickets/year sold via BMS × avg ₹250 = ~₹3,000 Cr GMV.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Live events ticketing (concerts, comedy, IPL, music)",
+      "value": "~3-4 crore tickets × avg ₹1,500 = ~₹5,000 Cr GMV (Coldplay, Ed Sheeran, IPL pumped this up).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sports + theatre + smaller events",
+      "value": "~₹500 Cr GMV.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total GMV",
+      "value": "~₹8,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take rate (convenience fee + ad revenue + brand activation)",
+      "value": "~8-12% blended.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net revenue",
+      "value": "₹8,500 × 10% = ~₹850 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus on-platform advertising (banners, sponsored slots)",
+      "value": "~₹150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus enterprise/B2B (Showcase + ticketing tech licensing)",
+      "value": "~₹50 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Movie ticketing GMV: ~12 crore tickets/year sold via BMS × avg ₹250 = ~₹3,000 Cr GMV.",
+    "Live events ticketing (concerts, comedy, IPL, music): ~3-4 crore tickets × avg ₹1,500 = ~₹5,000 Cr GMV (Coldplay, Ed Sheeran, IPL pumped this up).",
+    "Sports + theatre + smaller events: ~₹500 Cr GMV.",
+    "Total GMV: ~₹8,500 Cr.",
+    "Take rate (convenience fee + ad revenue + brand activation): ~8-12% blended.",
+    "Net revenue: ₹8,500 × 10% = ~₹850 Cr.",
+    "Plus on-platform advertising (banners, sponsored slots): ~₹150 Cr.",
+    "Plus enterprise/B2B (Showcase + ticketing tech licensing): ~₹50 Cr.",
+    "Total net revenue: ~₹1,000-1,100 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total net revenue: ~₹1,000-1,100 Cr."
+  }
+}

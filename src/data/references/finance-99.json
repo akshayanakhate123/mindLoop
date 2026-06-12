@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-99",
+  "domain": "finance",
+  "question": "Estimate the cost structure of Indian Premier League (per franchise / team annual).",
+  "idealClarificationQuestions": [
+    "Per-team annual operating cost? Yes.",
+    "Excludes franchise fee amortization (separate)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "IPL team cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per team annual cost stack:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Franchise fee paid to BCCI (annual): ~₹8-15 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Stadium licensing fees for home games + match-day costs: ~₹15 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "EBITDA per team: ~₹450-550 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Player salaries (cap ₹100 Cr by BCCI rule)",
+      "value": "~₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Support staff (coaches, physiotherapist, analyst, masseur, manager)",
+      "value": "~₹25-30 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Travel + accommodation + training camp",
+      "value": "~₹30-40 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Franchise fee paid to BCCI (annual)",
+      "value": "~₹8-15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + brand activations (independent of BCCI)",
+      "value": "~₹20-30 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Player auctions + scouting + analytics",
+      "value": "~₹5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Front office + management + ops staff",
+      "value": "~₹10 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Stadium licensing fees for home games + match-day costs",
+      "value": "~₹15 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Player salaries (cap ₹100 Cr by BCCI rule): ~₹100 Cr.",
+    "- Support staff (coaches, physiotherapist, analyst, masseur, manager): ~₹25-30 Cr.",
+    "- Travel + accommodation + training camp: ~₹30-40 Cr.",
+    "- Franchise fee paid to BCCI (annual): ~₹8-15 Cr.",
+    "- Marketing + brand activations (independent of BCCI): ~₹20-30 Cr.",
+    "- Player auctions + scouting + analytics: ~₹5 Cr.",
+    "- Front office + management + ops staff: ~₹10 Cr.",
+    "- Stadium licensing fees for home games + match-day costs: ~₹15 Cr.",
+    "Total annual operating cost per team: ~₹220-260 Cr.",
+    "Per the revenue side (per Q45 of profitability section): revenue ~₹700-800 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "EBITDA per team: ~₹450-550 Cr."
+  }
+}

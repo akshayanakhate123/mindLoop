@@ -1,0 +1,84 @@
+{
+  "questionId": "marketing-42",
+  "domain": "marketing",
+  "question": "Estimate the lead-to-customer conversion rate for an Indian insurance digital aggregator (Policybazaar, Acko).",
+  "idealClarificationQuestions": [
+    "Lead = filled enquiry form for a quote? Yes.",
+    "Customer = bought a policy? Yes.",
+    "Time window: 30 days from lead? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Lead → contacted → quote shared → policy bought."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Leads (form fills) → telecaller contacts: ~85%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Quote shared → customer evaluates: ~95%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Successful policy issuance (post payment + verification): ~85% of committed."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7-10% lead-to-customer for insurance aggregators."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Leads (form fills) → telecaller contacts",
+      "value": "~85%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Successful contact → understand needs",
+      "value": "~70%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Quote shared → customer evaluates",
+      "value": "~95%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Customer commits to a policy",
+      "value": "~12-18%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Successful policy issuance (post payment + verification)",
+      "value": "~85% of committed.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net lead-to-customer",
+      "value": "0.85 × 0.70 × 0.95 × 0.15 × 0.85 = ~7-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7-10% lead-to-customer for insurance aggregators.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Successful policy issuance (post payment + verification): ~85% of committed.",
+    "Net lead-to-customer: 0.85 × 0.70 × 0.95 × 0.15 × 0.85 = ~7-8%."
+  ],
+  "finalAnswerRange": {
+    "low": "7",
+    "high": "10",
+    "ideal": "~7-10% lead-to-customer for insurance aggregators."
+  }
+}

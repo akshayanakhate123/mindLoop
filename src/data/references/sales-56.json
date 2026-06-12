@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-56",
+  "domain": "sales",
+  "question": "Estimate the conversions for an Indian study-abroad consultancy from initial inquiry to enrolled student.",
+  "idealClarificationQuestions": [
+    "Edu consultancies (Yocket, Leverage Edu, IDP Education, Career Counselor, GREedge etc.)? Yes.",
+    "Inquiry = filled form / WhatsApp / called office? Yes.",
+    "Conversion = enrolled into a foreign university? Yes.",
+    "Time horizon: 12-18 months from inquiry? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Long sales cycle funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Inquiries: 1,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Decided to pursue (commits to consultancy services): ~50% = 297."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Gets at least 1 admit (varies by profile + target tier): ~75% = 148."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~12% conversion."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Inquiries",
+      "value": "1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Counsellor consultation booked",
+      "value": "~70% = 700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Counselling held (2-3 sessions)",
+      "value": "~85% = 595.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Decided to pursue (commits to consultancy services)",
+      "value": "~50% = 297.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pays first consultancy fee",
+      "value": "~70% = 208.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Applies to universities (typically 5-8 apps per student)",
+      "value": "~95% of those who paid = 198.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gets at least 1 admit (varies by profile + target tier)",
+      "value": "~75% = 148.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Accepts admit + flies abroad",
+      "value": "~80% = 118.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Counsellor consultation booked: ~70% = 700.",
+    "Counselling held (2-3 sessions): ~85% = 595.",
+    "Decided to pursue (commits to consultancy services): ~50% = 297.",
+    "Pays first consultancy fee: ~70% = 208.",
+    "Applies to universities (typically 5-8 apps per student): ~95% of those who paid = 198.",
+    "Gets at least 1 admit (varies by profile + target tier): ~75% = 148.",
+    "Accepts admit + flies abroad: ~80% = 118."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~12% conversion."
+  }
+}

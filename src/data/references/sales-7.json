@@ -1,0 +1,96 @@
+{
+  "questionId": "sales-7",
+  "domain": "sales",
+  "question": "Estimate annual two-wheeler sales potential in a typical state — say Rajasthan.",
+  "idealClarificationQuestions": [
+    "Total 2W sales: motorcycles + scooters + mopeds + EV 2W? All.",
+    "Annual, Rajasthan state? Yes (~7.5 crore population).",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "State population × per-capita 2W sales × state-specific tilt."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian annual 2W sales FY26: ~190 lakh units (19M)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Rajasthan 2W sales share: ~6.5% of national = 19M × 0.065 = ~12.3 lakh units/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- TVS: ~14% = 1.7L."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- EV (Ola, Ather, TVS iQube): ~7% = 85K."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian annual 2W sales FY26",
+      "value": "~190 lakh units (19M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rajasthan population share",
+      "value": "~5.7% of India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rajasthan 2W ownership index",
+      "value": "slightly above average (rural + Tier 2 dominant, 2W preferred over cars).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rajasthan 2W sales share",
+      "value": "~6.5% of national = 19M × 0.065 = ~12.3 lakh units/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly average",
+      "value": "~1 lakh units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Hero MotoCorp (commuter dominance in N/NW India)",
+      "value": "~36% = 4.4L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Honda 2W",
+      "value": "~24% = 3L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- TVS",
+      "value": "~14% = 1.7L.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian annual 2W sales FY26: ~190 lakh units (19M).",
+    "Rajasthan 2W ownership index: slightly above average (rural + Tier 2 dominant, 2W preferred over cars).",
+    "Rajasthan 2W sales share: ~6.5% of national = 19M × 0.065 = ~12.3 lakh units/year.",
+    "Monthly average: ~1 lakh units.",
+    "- Hero MotoCorp (commuter dominance in N/NW India): ~36% = 4.4L.",
+    "- Honda 2W: ~24% = 3L.",
+    "- TVS: ~14% = 1.7L.",
+    "- Bajaj: ~12% = 1.5L.",
+    "- Royal Enfield (Rajasthan is RE-strong): ~5% = 60K.",
+    "- EV (Ola, Ather, TVS iQube): ~7% = 85K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Others: ~2%."
+  }
+}

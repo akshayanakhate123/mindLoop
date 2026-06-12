@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-78",
+  "domain": "finance",
+  "question": "Estimate the cost structure of an airline flying Mumbai-Delhi (single one-way flight).",
+  "idealClarificationQuestions": [
+    "Single 180-seat A320 flight Mumbai-Delhi? Yes.",
+    "All-in operating cost per flight? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-flight cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Block time Mumbai-Delhi: ~2.25 hours."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Crew (2 pilots + 4 cabin crew + allocated): ~₹70K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Other (insurance, ground handling, IT): ~₹40K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Per-flight contribution: depends on yield; needs ~75-80% load to break even."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Block time Mumbai-Delhi",
+      "value": "~2.25 hours.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Aircraft lease (allocated per flight)",
+      "value": "~₹2.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Crew (2 pilots + 4 cabin crew + allocated)",
+      "value": "~₹70K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance (allocated per flight cycle)",
+      "value": "~₹1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Airport fees (landing + parking + nav charges both ends)",
+      "value": "~₹2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Catering + onboard services",
+      "value": "~₹20K (LCC) to ₹70K (FSC).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- GDS + distribution + commission",
+      "value": "~₹50K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other (insurance, ground handling, IT)",
+      "value": "~₹40K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- ATF (Aviation Turbine Fuel) at ~₹95/L × ~5,500 litres = ~₹5.2 lakh.",
+    "- Aircraft lease (allocated per flight): ~₹2.5 lakh.",
+    "- Crew (2 pilots + 4 cabin crew + allocated): ~₹70K.",
+    "- Maintenance (allocated per flight cycle): ~₹1.5 lakh.",
+    "- Airport fees (landing + parking + nav charges both ends): ~₹2 lakh.",
+    "- Catering + onboard services: ~₹20K (LCC) to ₹70K (FSC).",
+    "- GDS + distribution + commission: ~₹50K.",
+    "- Other (insurance, ground handling, IT): ~₹40K.",
+    "Total per flight cost (LCC like IndiGo): ~₹13 lakh.",
+    "FSC equivalent (Air India): ~₹14.5 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Per-flight contribution: depends on yield; needs ~75-80% load to break even."
+  }
+}

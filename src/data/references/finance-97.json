@@ -1,0 +1,91 @@
+{
+  "questionId": "finance-97",
+  "domain": "finance",
+  "question": "Estimate the per-flight crew cost for an international long-haul flight (e.g., Mumbai-London on Air India).",
+  "idealClarificationQuestions": [
+    "Single Mumbai-London 9-hour flight, B777 / B787 (Air India)? Yes.",
+    "Total crew cost (pilots + cabin) per flight? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Crew composition × hourly cost."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Crew composition Mumbai-London long-haul:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Crew cost per flight:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Cabin crew (avg ₹8-12 lakh/yr fully loaded; ~₹2K/hr): 13 × 9 × ₹2K = ₹2.3 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round trip with rest period: ~₹38-45 lakh."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Pilots",
+      "value": "4 (2 captain + 2 first officer; double crew for >9 hour flight).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cabin crew",
+      "value": "~13 (1 senior + 12 others for 300+ seat 777).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- First officer (₹2 cr/yr = ~₹33K/hr)",
+      "value": "2 × 9 × ₹33K = ₹6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cabin crew (avg ₹8-12 lakh/yr fully loaded; ~₹2K/hr)",
+      "value": "13 × 9 × ₹2K = ₹2.3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Plus allowances (overseas layover, per diem)",
+      "value": "~₹2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total crew cost per one-way long-haul flight",
+      "value": "~₹22 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round trip with rest period",
+      "value": "~₹38-45 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Crew composition Mumbai-London long-haul:",
+    "- Pilots: 4 (2 captain + 2 first officer; double crew for >9 hour flight).",
+    "- Cabin crew: ~13 (1 senior + 12 others for 300+ seat 777).",
+    "Crew cost per flight:",
+    "- Captain hourly cost (avg salary ₹4 cr/year, 600 flight hrs/yr = ~₹65K/hr): 2 × 9 × ₹65K = ₹11.7 lakh.",
+    "- First officer (₹2 cr/yr = ~₹33K/hr): 2 × 9 × ₹33K = ₹6 lakh.",
+    "- Cabin crew (avg ₹8-12 lakh/yr fully loaded; ~₹2K/hr): 13 × 9 × ₹2K = ₹2.3 lakh.",
+    "- Plus allowances (overseas layover, per diem): ~₹2 lakh.",
+    "Total crew cost per one-way long-haul flight: ~₹22 lakh.",
+    "Round trip with rest period: ~₹38-45 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round trip with rest period: ~₹38-45 lakh."
+  }
+}

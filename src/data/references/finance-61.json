@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-61",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian wedding economy by 2030.",
+  "idealClarificationQuestions": [
+    "Total annual wedding industry size? Yes.",
+    "By 2030? Yes.",
+    "Includes all categories: venue, jewellery, clothes, catering, photography, music? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Wedding count × spend per wedding (segmented)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual weddings by 2030: ~11 million (steady)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Premium (₹50L-3 Cr): ~5 lakh × ₹1.2 Cr = ₹6 lakh Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Budget (<₹5L): ~55 lakh × ₹3L = ₹1.65 lakh Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹16-18 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual weddings by 2030",
+      "value": "~11 million (steady).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Ultra-luxury (>₹3 Cr)",
+      "value": "~30,000 weddings × ₹6 Cr = ₹1.8 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Premium (₹50L-3 Cr)",
+      "value": "~5 lakh × ₹1.2 Cr = ₹6 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-premium (₹15-50L)",
+      "value": "~14 lakh × ₹30L = ₹4.2 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid (₹5-15L)",
+      "value": "~35 lakh × ₹9L = ₹3.2 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Budget (<₹5L)",
+      "value": "~55 lakh × ₹3L = ₹1.65 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹16-17 lakh Cr ($200B) by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹16-18 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual weddings by 2030: ~11 million (steady).",
+    "Per-wedding spend (rising with affluence + premiumization):",
+    "- Ultra-luxury (>₹3 Cr): ~30,000 weddings × ₹6 Cr = ₹1.8 lakh Cr.",
+    "- Premium (₹50L-3 Cr): ~5 lakh × ₹1.2 Cr = ₹6 lakh Cr.",
+    "- Mid-premium (₹15-50L): ~14 lakh × ₹30L = ₹4.2 lakh Cr.",
+    "- Mid (₹5-15L): ~35 lakh × ₹9L = ₹3.2 lakh Cr.",
+    "- Budget (<₹5L): ~55 lakh × ₹3L = ₹1.65 lakh Cr.",
+    "Total: ~₹16-17 lakh Cr ($200B) by 2030.",
+    "vs ~₹10-11 lakh Cr today.",
+    "Round: ~₹16-18 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "16",
+    "high": "18",
+    "ideal": "~₹16-18 lakh Cr."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "questionId": "product-31",
+  "domain": "product",
+  "question": "Estimate the average time spent on YouTube per day by an Indian user (active viewer).",
+  "idealClarificationQuestions": [
+    "Active user definition: opens YouTube at least once a day? Yes.",
+    "Includes mobile app + connected TV + desktop browser? Yes.",
+    "Average across all Indian active users (not power users)? Yes.",
+    "Time horizon: 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: total Indian YouTube watch hours / total daily users."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian YouTube DAU: ~480M (Google publicly mentions 460M+ YouTube India users)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Indian content/audience profile: heavy on long-form (films, vlogs), moderate on Shorts."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Mid-estimate: ~55 minutes/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Distribution: ~35 min long-form + ~20 min Shorts."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian YouTube DAU",
+      "value": "~480M (Google publicly mentions 460M+ YouTube India users).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average daily time spent (Comscore, similar trackers)",
+      "value": "~50-65 minutes/day per active user.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Mid-estimate",
+      "value": "~55 minutes/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Distribution",
+      "value": "~35 min long-form + ~20 min Shorts.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian YouTube DAU: ~480M (Google publicly mentions 460M+ YouTube India users).",
+    "Distribution: ~35 min long-form + ~20 min Shorts."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Distribution: ~35 min long-form + ~20 min Shorts."
+  }
+}

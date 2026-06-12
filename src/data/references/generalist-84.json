@@ -1,0 +1,96 @@
+{
+  "questionId": "generalist-84",
+  "domain": "generalist",
+  "question": "Estimate the gift purchases during Raksha Bandhan in India.",
+  "idealClarificationQuestions": [
+    "Total spending on gifts + sweets + rakhis? Yes — total Raksha Bandhan spend.",
+    "Both retail + online? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "HH × per-HH Raksha Bandhan spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Hindu + Sikh + Jain HH celebrating Raksha Bandhan: ~25 crore HH."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Affluent (15%): ₹2,500 = 1.9 cr × ₹2,500 = ₹4,750 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Subtotal HH: ~₹10,850 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹12,000-14,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Hindu + Sikh + Jain HH celebrating Raksha Bandhan",
+      "value": "~25 crore HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, actually exchanging gifts (not just rakhi)",
+      "value": "~50% = 12.5 crore HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Affluent (15%)",
+      "value": "₹2,500 = 1.9 cr × ₹2,500 = ₹4,750 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Middle class (50%)",
+      "value": "₹800 = 6.25 cr × ₹800 = ₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Lower middle (35%)",
+      "value": "₹250 = 4.4 cr × ₹250 = ₹1,100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Subtotal HH",
+      "value": "~₹10,850 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus corporate gifting + e-commerce uplift",
+      "value": "~₹2,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹12,000-14,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Hindu + Sikh + Jain HH celebrating Raksha Bandhan: ~25 crore HH.",
+    "Of these, actually exchanging gifts (not just rakhi): ~50% = 12.5 crore HH.",
+    "Average gift + rakhi + sweets spend per celebrating HH:",
+    "- Affluent (15%): ₹2,500 = 1.9 cr × ₹2,500 = ₹4,750 Cr.",
+    "- Middle class (50%): ₹800 = 6.25 cr × ₹800 = ₹5,000 Cr.",
+    "- Lower middle (35%): ₹250 = 4.4 cr × ₹250 = ₹1,100 Cr.",
+    "Subtotal HH: ~₹10,850 Cr.",
+    "Plus corporate gifting + e-commerce uplift: ~₹2,000 Cr.",
+    "Total: ~₹12,000-14,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹12,000-14,000 Cr."
+  }
+}

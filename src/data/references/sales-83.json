@@ -1,0 +1,81 @@
+{
+  "questionId": "sales-83",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for marketing automation tools in India.",
+  "idealClarificationQuestions": [
+    "Marketing automation: email + push + SMS + in-app + WhatsApp + journey orchestration (MoEngage, Clevertap, Webengage, Netcore)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "MAU-driven ARPU × customer count."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian companies using marketing automation: ~15,000 (mostly B2C)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total: 15K × ₹17.5L = ~₹2,500 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus smaller SMB tier (Mailchimp India, Sendinblue, Pepipost): ~₹200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹3,000-3,500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian companies using marketing automation",
+      "value": "~15,000 (mostly B2C).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU",
+      "value": "~₹15-20 lakh/year (varies by MAU tier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "15K × ₹17.5L = ~₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus smaller SMB tier (Mailchimp India, Sendinblue, Pepipost)",
+      "value": "~₹200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹3,400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹3,000-3,500 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average ARPU: ~₹15-20 lakh/year (varies by MAU tier).",
+    "Total: 15K × ₹17.5L = ~₹2,500 Cr.",
+    "Plus enterprise (Salesforce Marketing Cloud, Oracle Eloqua, Adobe Marketo): ~₹700 Cr.",
+    "Plus smaller SMB tier (Mailchimp India, Sendinblue, Pepipost): ~₹200 Cr.",
+    "Total: ~₹3,400 Cr.",
+    "Round: ~₹3,000-3,500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "3,000",
+    "high": "3,500",
+    "ideal": "~₹3,000-3,500 Cr."
+  }
+}

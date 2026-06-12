@@ -1,0 +1,71 @@
+{
+  "questionId": "generalist-29",
+  "domain": "generalist",
+  "question": "Estimate the annual consumption of mobile data (in GB) in India.",
+  "idealClarificationQuestions": [
+    "Total mobile data consumed per year, all users combined? Yes.",
+    "All telcos: Jio + Airtel + Vi + BSNL? Yes.",
+    "4G + 5G + 2G/3G remaining? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Active subscribers × per-user monthly data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mobile broadband subscribers (4G + 5G): ~85 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average data consumption per user per month: ~28-32 GB (rising; 5G push + video)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly total: 85 crore × 30 GB = ~2,550 crore GB = ~25.5 exabytes/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual: ~300+ exabytes/year (~3 × 10^20 bytes)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mobile broadband subscribers (4G + 5G)",
+      "value": "~85 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average data consumption per user per month",
+      "value": "~28-32 GB (rising; 5G push + video).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly total",
+      "value": "85 crore × 30 GB = ~2,550 crore GB = ~25.5 exabytes/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual",
+      "value": "~300+ exabytes/year (~3 × 10^20 bytes).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Mobile broadband subscribers (4G + 5G): ~85 crore.",
+    "Average data consumption per user per month: ~28-32 GB (rising; 5G push + video).",
+    "Monthly total: 85 crore × 30 GB = ~2,550 crore GB = ~25.5 exabytes/month.",
+    "Annual: ~300+ exabytes/year (~3 × 10^20 bytes)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual: ~300+ exabytes/year (~3 × 10^20 bytes)."
+  }
+}

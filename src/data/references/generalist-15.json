@@ -1,0 +1,80 @@
+{
+  "questionId": "generalist-15",
+  "domain": "generalist",
+  "question": "How many newspapers (copies, all editions combined) are sold in India daily?",
+  "idealClarificationQuestions": [
+    "Print copies sold/distributed daily? Yes.",
+    "All languages including English, Hindi, regional? All.",
+    "Includes free subscription distributions? No — paid + circulating only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "From major publishers' circulation data + small/local papers."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top Hindi dailies: Dainik Bhaskar (~5.5M), Dainik Jagran (~5.5M), Hindustan (~5M), Amar Ujala (~3M), Punjab Kesari (~2M), Rajasthan Patrika (~2M) = ~23M Hindi."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Top regional: Malayala Manorama (~2M), Eenadu (~1.5M), Mathrubhumi (~1M), Daily Thanthi (~2M), Sakal, Loksatta, ABP, Sambad, etc. = ~15-20M regional."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total daily print circulation: ~55-65M copies."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: declining ~5-7%/year due to digital shift; pre-COVID was ~70M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Top Hindi dailies",
+      "value": "Dainik Bhaskar (~5.5M), Dainik Jagran (~5.5M), Hindustan (~5M), Amar Ujala (~3M), Punjab Kesari (~2M), Rajasthan Patrika (~2M) = ~23M Hindi.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Top English",
+      "value": "Times of India (~3M), Hindustan Times (~1.4M), Indian Express (~0.6M), The Hindu (~1.5M), DC, etc. = ~7-8M English.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Top regional",
+      "value": "Malayala Manorama (~2M), Eenadu (~1.5M), Mathrubhumi (~1M), Daily Thanthi (~2M), Sakal, Loksatta, ABP, Sambad, etc. = ~15-20M regional.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other smaller papers",
+      "value": "~10-15M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily print circulation",
+      "value": "~55-65M copies.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "declining ~5-7%/year due to digital shift; pre-COVID was ~70M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Top Hindi dailies: Dainik Bhaskar (~5.5M), Dainik Jagran (~5.5M), Hindustan (~5M), Amar Ujala (~3M), Punjab Kesari (~2M), Rajasthan Patrika (~2M) = ~23M Hindi.",
+    "Top English: Times of India (~3M), Hindustan Times (~1.4M), Indian Express (~0.6M), The Hindu (~1.5M), DC, etc. = ~7-8M English.",
+    "Top regional: Malayala Manorama (~2M), Eenadu (~1.5M), Mathrubhumi (~1M), Daily Thanthi (~2M), Sakal, Loksatta, ABP, Sambad, etc. = ~15-20M regional."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: declining ~5-7%/year due to digital shift; pre-COVID was ~70M."
+  }
+}

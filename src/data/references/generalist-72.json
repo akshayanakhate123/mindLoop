@@ -1,0 +1,83 @@
+{
+  "questionId": "generalist-72",
+  "domain": "generalist",
+  "question": "Estimate the number of toilets/public sanitation units in Mumbai (community + public + commercial).",
+  "idealClarificationQuestions": [
+    "Public + community toilets (shared) + paid toilets in stations + mall washrooms? Yes — all non-private.",
+    "Greater Mumbai? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Slum population × community toilet seats + commercial spaces × washroom counts."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai population: ~22M; slum population: ~9M (~40%)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Actual operational seats (Sulabh + BMC + private): ~1.2-1.5 lakh seats (chronic shortage)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus public toilets at railway stations, malls, offices: ~5,000-7,000 facilities."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total non-private sanitation facilities: ~15,000-20,000 in Greater Mumbai."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai population",
+      "value": "~22M; slum population: ~9M (~40%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Slum community toilets at recommended ratio (1 seat per 35 users)",
+      "value": "9M / 35 = ~2.5 lakh seats.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Actual operational seats (Sulabh + BMC + private)",
+      "value": "~1.2-1.5 lakh seats (chronic shortage).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of physical toilet structures",
+      "value": "~10,000-12,000 community toilet blocks (each with 10-15 seats).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus public toilets at railway stations, malls, offices",
+      "value": "~5,000-7,000 facilities.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus pay-and-use (Sulabh, others)",
+      "value": "~1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total non-private sanitation facilities",
+      "value": "~15,000-20,000 in Greater Mumbai.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Slum community toilets at recommended ratio (1 seat per 35 users): 9M / 35 = ~2.5 lakh seats.",
+    "Actual operational seats (Sulabh + BMC + private): ~1.2-1.5 lakh seats (chronic shortage)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total non-private sanitation facilities: ~15,000-20,000 in Greater Mumbai."
+  }
+}

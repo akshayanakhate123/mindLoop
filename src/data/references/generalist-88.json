@@ -1,0 +1,66 @@
+{
+  "questionId": "generalist-88",
+  "domain": "generalist",
+  "question": "Estimate the total domestic tourism trips during summer vacation season (May-June).",
+  "idealClarificationQuestions": [
+    "Domestic leisure tourism trips (overnight stay; not daily commute)? Yes.",
+    "May-June 2026? Yes.",
+    "Includes hill stations, family travel, religious tourism? All.",
+    "Per-person trips (each individual counted as 1 trip)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual domestic tourism × seasonal share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual domestic tourist visits in India: ~250 crore (Ministry of Tourism — counts each visit; one person can take multiple)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, May-June peak summer season: ~20% = ~50 crore visits."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of these, leisure/holiday travel (excluding business + religious commute): ~50% = 25 crore leisure visits."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~25-30 crore domestic summer leisure tourism trips."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual domestic tourist visits in India",
+      "value": "~250 crore (Ministry of Tourism — counts each visit; one person can take multiple).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, May-June peak summer season",
+      "value": "~20% = ~50 crore visits.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~25-30 crore domestic summer leisure tourism trips.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual domestic tourist visits in India: ~250 crore (Ministry of Tourism — counts each visit; one person can take multiple).",
+    "Of these, May-June peak summer season: ~20% = ~50 crore visits.",
+    "Of these, leisure/holiday travel (excluding business + religious commute): ~50% = 25 crore leisure visits.",
+    "Round: ~25-30 crore domestic summer leisure tourism trips."
+  ],
+  "finalAnswerRange": {
+    "low": "25",
+    "high": "30",
+    "ideal": "~25-30 crore domestic summer leisure tourism trips."
+  }
+}

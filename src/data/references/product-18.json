@@ -1,0 +1,75 @@
+{
+  "questionId": "product-18",
+  "domain": "product",
+  "question": "Estimate the number of premium/paying subscribers on dating apps (Tinder + Bumble + Hinge + others) in India.",
+  "idealClarificationQuestions": [
+    "Paying subscribers only? Yes.",
+    "All major dating apps combined? Yes (excludes matrimony like Shaadi, Jeevansathi).",
+    "Active subscriber (paid in last 30 days) or cumulative? Active.",
+    "Geography: India only? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total dating app users India → free-to-paid conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Single, urban, smartphone-enabled adults aged 22-35: ~80M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, men:women ratio ~75:25 = 7.5M men, 2.5M women."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Paying users: 7.5M × 0.12 + 2.5M × 0.03 = 900K + 75K = ~975K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round to ~1M paying users."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Single, urban, smartphone-enabled adults aged 22-35",
+      "value": "~80M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, dating app users (any app, last 90 days)",
+      "value": "~12% = ~10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, men",
+      "value": "women ratio ~75:25 = 7.5M men, 2.5M women.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Conversion to paid",
+      "value": "men ~12% (high — pay-to-match dynamics), women ~3% (mostly free).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paying users",
+      "value": "7.5M × 0.12 + 2.5M × 0.03 = 900K + 75K = ~975K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, dating app users (any app, last 90 days): ~12% = ~10M.",
+    "Of these, men:women ratio ~75:25 = 7.5M men, 2.5M women.",
+    "Paying users: 7.5M × 0.12 + 2.5M × 0.03 = 900K + 75K = ~975K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round to ~1M paying users."
+  }
+}

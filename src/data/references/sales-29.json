@@ -1,0 +1,86 @@
+{
+  "questionId": "sales-29",
+  "domain": "sales",
+  "question": "Estimate the number of HUL stockists / distributors needed for pan-India coverage.",
+  "idealClarificationQuestions": [
+    "Stockists / RS (Redistribution Stockists) — HUL's distributor layer? Yes.",
+    "Total pan-India? Yes.",
+    "All HUL portfolio (Lifebuoy, Surf Excel, Dove, Lux, Pepsodent, Brooke Bond, Knorr, etc.)? Yes — across portfolio.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Outlets to cover / stockist effective coverage."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian retail outlets HUL targets: ~90 lakh (kiranas + modern trade + chemists + cosmetic stores)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Stockists needed: 90L / 850 = ~10,500-11,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus rural distributors via Project Shakti (woman entrepreneurs): ~1.5 lakh shakti ammas in rural villages."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~14,000 stockists."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian retail outlets HUL targets",
+      "value": "~90 lakh (kiranas + modern trade + chemists + cosmetic stores).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg outlets per HUL stockist",
+      "value": "~750-1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Stockists needed",
+      "value": "90L / 850 = ~10,500-11,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus sub-stockists in remote / Tier 4 areas",
+      "value": "~3,000-4,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus rural distributors via Project Shakti (woman entrepreneurs)",
+      "value": "~1.5 lakh shakti ammas in rural villages.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total formal distribution network",
+      "value": "~14,000-15,000 stockists + 1.5 lakh shakti partners.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~14,000 stockists.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total Indian retail outlets HUL targets: ~90 lakh (kiranas + modern trade + chemists + cosmetic stores).",
+    "Stockists needed: 90L / 850 = ~10,500-11,000.",
+    "Plus rural distributors via Project Shakti (woman entrepreneurs): ~1.5 lakh shakti ammas in rural villages.",
+    "Total formal distribution network: ~14,000-15,000 stockists + 1.5 lakh shakti partners."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~14,000 stockists."
+  }
+}

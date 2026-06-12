@@ -1,0 +1,68 @@
+{
+  "questionId": "sales-48",
+  "domain": "sales",
+  "question": "Estimate the number of pharmacies needed to serve a new township of 1 lakh population.",
+  "idealClarificationQuestions": [
+    "Greenfield township with 1 lakh residents (e.g., a new Tier 1 sub-city)? Yes.",
+    "Pharmacy density target? Per benchmarks.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard pharmacy density."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian pharmacy density: ~1 per 1,800-2,000 people."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "For 1 lakh township: 1,00,000 / 1,700 = ~58 pharmacies."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- 4-5 mid-size standalone chemists."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~50-60 pharmacies for a 1 lakh population township."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian pharmacy density",
+      "value": "~1 per 1,800-2,000 people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban premium",
+      "value": "~1 per 1,500-1,800 people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For 1 lakh township",
+      "value": "1,00,000 / 1,700 = ~58 pharmacies.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~50-60 pharmacies for a 1 lakh population township.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "For 1 lakh township: 1,00,000 / 1,700 = ~58 pharmacies.",
+    "Round: ~50-60 pharmacies for a 1 lakh population township."
+  ],
+  "finalAnswerRange": {
+    "low": "50",
+    "high": "60",
+    "ideal": "~50-60 pharmacies for a 1 lakh population township."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "questionId": "generalist-18",
+  "domain": "generalist",
+  "question": "Estimate the number of senior citizens (60+) in India.",
+  "idealClarificationQuestions": [
+    "Defined as 60+ as per NPCS / National Policy for Senior Citizens? Yes.",
+    "Year 2026 estimate? Yes.",
+    "Both rural + urban combined? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × age cohort share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "60+ population in 2026: ~1.45B × 0.105 = ~152M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- 80+: ~17M (oldest-old segment)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~15 crore senior citizens in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Senior citizen (60+) share",
+      "value": "~10.5% (rising — was 8.6% in 2011, projected 13.1% by 2030).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "60+ population in 2026",
+      "value": "~1.45B × 0.105 = ~152M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 60-70",
+      "value": "~95M (mostly active, semi-employed).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 70-80",
+      "value": "~40M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 80+",
+      "value": "~17M (oldest-old segment).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~15 crore senior citizens in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Senior citizen (60+) share: ~10.5% (rising — was 8.6% in 2011, projected 13.1% by 2030).",
+    "60+ population in 2026: ~1.45B × 0.105 = ~152M.",
+    "- 80+: ~17M (oldest-old segment).",
+    "Round: ~15 crore senior citizens in India."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~15 crore senior citizens in India."
+  }
+}

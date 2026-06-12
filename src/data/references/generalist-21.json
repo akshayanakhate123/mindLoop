@@ -1,0 +1,91 @@
+{
+  "questionId": "generalist-21",
+  "domain": "generalist",
+  "question": "Estimate the number of pet dogs in India.",
+  "idealClarificationQuestions": [
+    "Pet dogs (owned, household-kept) excluding strays? Yes.",
+    "Year 2026? Yes.",
+    "Both pedigree + Indian breeds + indies? All household-kept dogs."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Households × pet ownership rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households: ~310M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Urban+T2 pet HH: 120M × 0.10 = 12M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Avg dogs per pet HH: ~1.2 (some have 2)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~2.5 crore pet dogs in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households",
+      "value": "~310M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, urban + Tier 2 with disposable income for pets",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, having a pet dog",
+      "value": "~10% urban + 4% rural-blended.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban+T2 pet HH",
+      "value": "120M × 0.10 = 12M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural pet HH (mostly rural-bred indies for guarding)",
+      "value": "190M × 0.04 = 7.6M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total pet dog households",
+      "value": "~20M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg dogs per pet HH",
+      "value": "~1.2 (some have 2).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total pet dogs",
+      "value": "~24M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, urban + Tier 2 with disposable income for pets: ~120M.",
+    "Of these, having a pet dog: ~10% urban + 4% rural-blended.",
+    "Urban+T2 pet HH: 120M × 0.10 = 12M.",
+    "Rural pet HH (mostly rural-bred indies for guarding): 190M × 0.04 = 7.6M.",
+    "Round: ~2.5 crore pet dogs in India."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~2.5 crore pet dogs in India."
+  }
+}

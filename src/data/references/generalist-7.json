@@ -1,0 +1,74 @@
+{
+  "questionId": "generalist-7",
+  "domain": "generalist",
+  "question": "Estimate the number of cattle (cows + buffaloes) in India.",
+  "idealClarificationQuestions": [
+    "Domesticated cattle for milk + draft? Yes.",
+    "Excluding wild bovines (gaur)? Yes.",
+    "Year 2026 estimate based on most recent livestock census? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from livestock census + extrapolation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "20th Livestock Census (2019): ~535M total livestock; cattle ~193M, buffaloes ~110M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Combined cattle + buffalo: ~303M in 2019."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "By 2026 (7 years later): ~310-320M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~31-32 crore cattle + buffaloes."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "20th Livestock Census (2019)",
+      "value": "~535M total livestock; cattle ~193M, buffaloes ~110M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Combined cattle + buffalo",
+      "value": "~303M in 2019.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual change",
+      "value": "cattle stock ~stable to +0.5% (buffaloes declining slightly due to mechanization).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2026 (7 years later)",
+      "value": "~310-320M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~31-32 crore cattle + buffaloes.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Combined cattle + buffalo: ~303M in 2019.",
+    "Annual change: cattle stock ~stable to +0.5% (buffaloes declining slightly due to mechanization).",
+    "Round: ~31-32 crore cattle + buffaloes."
+  ],
+  "finalAnswerRange": {
+    "low": "31",
+    "high": "32",
+    "ideal": "~31-32 crore cattle + buffaloes."
+  }
+}

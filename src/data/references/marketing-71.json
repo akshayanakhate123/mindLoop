@@ -1,0 +1,95 @@
+{
+  "questionId": "marketing-71",
+  "domain": "marketing",
+  "question": "Estimate the size of the wedding-spending consumer segment (premium weddings >₹50 lakh).",
+  "idealClarificationQuestions": [
+    "Annual weddings with total spend above ₹50 lakh? Yes.",
+    "Includes venue + jewellery + clothes + catering + photography? Yes — total wedding spend.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total weddings × premium spend share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual Indian weddings: ~10-12 million."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Premium (₹50L-2Cr): ~3 lakh weddings."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Budget (<₹5L): ~70 lakh weddings."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Combined annual spend in this segment: 3.25L × avg ₹1.2 Cr = ~₹3.9 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual Indian weddings",
+      "value": "~10-12 million.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Ultra-luxury (>₹2 Cr)",
+      "value": "~25,000 weddings (HNI category).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Premium (₹50L-2Cr)",
+      "value": "~3 lakh weddings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-premium (₹15-50L)",
+      "value": "~10 lakh weddings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid (₹5-15L)",
+      "value": "~30 lakh weddings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Budget (<₹5L)",
+      "value": "~70 lakh weddings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Premium segment (₹50L+)",
+      "value": "~3.25 lakh weddings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Combined annual spend in this segment",
+      "value": "3.25L × avg ₹1.2 Cr = ~₹3.9 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual Indian weddings: ~10-12 million.",
+    "- Ultra-luxury (>₹2 Cr): ~25,000 weddings (HNI category).",
+    "- Premium (₹50L-2Cr): ~3 lakh weddings.",
+    "- Mid-premium (₹15-50L): ~10 lakh weddings.",
+    "- Mid (₹5-15L): ~30 lakh weddings.",
+    "- Budget (<₹5L): ~70 lakh weddings.",
+    "Premium segment (₹50L+): ~3.25 lakh weddings.",
+    "Combined annual spend in this segment: 3.25L × avg ₹1.2 Cr = ~₹3.9 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Combined annual spend in this segment: 3.25L × avg ₹1.2 Cr = ~₹3.9 lakh Cr."
+  }
+}

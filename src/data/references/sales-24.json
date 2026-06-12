@@ -1,0 +1,82 @@
+{
+  "questionId": "sales-24",
+  "domain": "sales",
+  "question": "Estimate monthly mobile data pack recharges in a Tier 3 city like Aligarh (~12 lakh population).",
+  "idealClarificationQuestions": [
+    "All recharges across telcos (Jio + Airtel + Vi + BSNL)? Yes.",
+    "Both prepaid + postpaid? Prepaid mainly (Tier 3 prepaid-dominant).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Active subscribers × recharge frequency × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Aligarh adult population: ~8 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average ARPU Tier 3 (lower than national ~₹220): ~₹160."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Number of recharges (some users multi-recharge, some long-validity): ~9 lakh recharges/month (avg 1.3 per user)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average recharge ticket: ~₹125."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Aligarh adult population",
+      "value": "~8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active mobile subscribers (prepaid + postpaid)",
+      "value": "~7 lakh (close to 1:1 in Tier 3).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU Tier 3 (lower than national ~₹220)",
+      "value": "~₹160.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly recharge value",
+      "value": "7L × ₹160 = ~₹11.2 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of recharges (some users multi-recharge, some long-validity)",
+      "value": "~9 lakh recharges/month (avg 1.3 per user).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average recharge ticket",
+      "value": "~₹125.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Aligarh adult population: ~8 lakh.",
+    "Active mobile subscribers (prepaid + postpaid): ~7 lakh (close to 1:1 in Tier 3).",
+    "Average ARPU Tier 3 (lower than national ~₹220): ~₹160.",
+    "Monthly recharge value: 7L × ₹160 = ~₹11.2 Cr.",
+    "Number of recharges (some users multi-recharge, some long-validity): ~9 lakh recharges/month (avg 1.3 per user).",
+    "Average recharge ticket: ~₹125."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average recharge ticket: ~₹125."
+  }
+}

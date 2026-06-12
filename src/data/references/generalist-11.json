@@ -1,0 +1,80 @@
+{
+  "questionId": "generalist-11",
+  "domain": "generalist",
+  "question": "How many doctors (MBBS+) are practicing in India?",
+  "idealClarificationQuestions": [
+    "Active practicing only (not retired/non-practicing)? Yes.",
+    "MBBS + post-graduate + super-specialist? Yes.",
+    "Allopathic only (excludes AYUSH)? Allopathic; flag AYUSH separately.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Cumulative MBBS produced × active practitioner share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "MBBS seats annually in India: ~1.06 lakh (post 2024 increases)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, active in India (not migrated, retired, deceased): ~75% = ~1.3M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus AYUSH (BAMS, BHMS, BUMS) registered: ~800K, of which active ~600K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total allopathic active: ~1.3M; combined with AYUSH: ~1.9M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "MBBS seats annually in India",
+      "value": "~1.06 lakh (post 2024 increases).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cumulative MBBS produced over last 40 years",
+      "value": "~1.6-1.8M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, active in India (not migrated, retired, deceased)",
+      "value": "~75% = ~1.3M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus PG/super-specialists subset",
+      "value": "about 30% have PG = 400K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus AYUSH (BAMS, BHMS, BUMS) registered",
+      "value": "~800K, of which active ~600K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total allopathic active",
+      "value": "~1.3M; combined with AYUSH: ~1.9M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "MBBS seats annually in India: ~1.06 lakh (post 2024 increases).",
+    "Of these, active in India (not migrated, retired, deceased): ~75% = ~1.3M.",
+    "Plus PG/super-specialists subset: about 30% have PG = 400K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total allopathic active: ~1.3M; combined with AYUSH: ~1.9M."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "questionId": "generalist-32",
+  "domain": "generalist",
+  "question": "How many kilograms of rice are consumed in India daily?",
+  "idealClarificationQuestions": [
+    "All rice forms (raw + parboiled + flattened/poha + flour)? Primarily as rice grain.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita rice consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Rice-eating share (vs wheat-only northern belt): ~65% primarily rice eaters; rest mixed."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual consumption: 1.45B × 60 = ~87 million tonnes/year."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily: ~87 MT / 365 = ~238,000 tonnes/day = ~2.4 lakh tonnes."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rice-eating share (vs wheat-only northern belt)",
+      "value": "~65% primarily rice eaters; rest mixed.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita rice consumption (national)",
+      "value": "~60 kg/year (south/east higher at 90+ kg; north ~30 kg).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual consumption",
+      "value": "1.45B × 60 = ~87 million tonnes/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~87 MT / 365 = ~238,000 tonnes/day = ~2.4 lakh tonnes.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per-capita rice consumption (national): ~60 kg/year (south/east higher at 90+ kg; north ~30 kg).",
+    "Annual consumption: 1.45B × 60 = ~87 million tonnes/year.",
+    "Daily: ~87 MT / 365 = ~238,000 tonnes/day = ~2.4 lakh tonnes."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily: ~87 MT / 365 = ~238,000 tonnes/day = ~2.4 lakh tonnes."
+  }
+}

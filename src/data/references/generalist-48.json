@@ -1,0 +1,82 @@
+{
+  "questionId": "generalist-48",
+  "domain": "generalist",
+  "question": "Estimate the daily fish (marine + inland) consumption in India.",
+  "idealClarificationQuestions": [
+    "Fresh + frozen + dried fish? All forms.",
+    "Domestic consumption only (excluding exports)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Production + imports - exports = consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian fish production FY26: ~17-18 MT (8 MT marine + 10 MT inland aquaculture)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Imports: ~0.2 MT."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Per-capita: ~11 kg/year (low compared to coastal countries' 25-30 kg)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: ~70% of Indians don't eat fish (vegetarians or non-fish-eating non-vegetarians)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian fish production FY26",
+      "value": "~17-18 MT (8 MT marine + 10 MT inland aquaculture).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Exports",
+      "value": "~1.7 MT (frozen shrimp dominant).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Imports",
+      "value": "~0.2 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domestic consumption",
+      "value": "~16 MT/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita",
+      "value": "~11 kg/year (low compared to coastal countries' 25-30 kg).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~44,000 tonnes/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "~70% of Indians don't eat fish (vegetarians or non-fish-eating non-vegetarians).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian fish production FY26: ~17-18 MT (8 MT marine + 10 MT inland aquaculture)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: ~70% of Indians don't eat fish (vegetarians or non-fish-eating non-vegetarians)."
+  }
+}

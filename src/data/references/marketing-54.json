@@ -1,0 +1,85 @@
+{
+  "questionId": "marketing-54",
+  "domain": "marketing",
+  "question": "Estimate the number of Indian millennials (born 1981-1996) likely to invest in mutual funds.",
+  "idealClarificationQuestions": [
+    "Active investors (have at least one MF SIP or lump sum in past year)? Yes.",
+    "Millennials currently aged 30-45? Yes (2026 ages).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Millennial population × investing penetration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian millennials (age 30-45 in 2026): ~330M total population."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, employed/earning: ~120M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of these, currently invest in MFs (SIP or lump sum): ~25-30% = 22-25M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Growth: from ~10M in 2020 to 22-25M in 2026 reflects financial inclusion gains."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian millennials (age 30-45 in 2026)",
+      "value": "~330M total population.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban + Tier 2 millennials (digital + banking access)",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, employed/earning",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Investment-aware millennials (some financial literacy)",
+      "value": "~70% = 84M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, currently invest in MFs (SIP or lump sum)",
+      "value": "~25-30% = 22-25M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~22-25 million Indian millennials investing in mutual funds.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Growth",
+      "value": "from ~10M in 2020 to 22-25M in 2026 reflects financial inclusion gains.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban + Tier 2 millennials (digital + banking access): ~150M.",
+    "Investment-aware millennials (some financial literacy): ~70% = 84M.",
+    "Of these, currently invest in MFs (SIP or lump sum): ~25-30% = 22-25M.",
+    "Round: ~22-25 million Indian millennials investing in mutual funds."
+  ],
+  "finalAnswerRange": {
+    "low": "22",
+    "high": "25",
+    "ideal": "~22-25 million Indian millennials investing in mutual funds."
+  }
+}

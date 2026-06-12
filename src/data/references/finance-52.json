@@ -1,0 +1,93 @@
+{
+  "questionId": "finance-52",
+  "domain": "finance",
+  "question": "How big can the quick commerce industry become in India by 2030?",
+  "idealClarificationQuestions": [
+    "Total quick commerce GMV across all players? Yes.",
+    "By 2030? Yes.",
+    "Categories: grocery + impulse + non-grocery (electronics, beauty, fashion)? All."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Addressable population × penetration × order frequency × AOV."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Quick commerce addressable cities by 2030: ~80-100 cities (currently 25-30)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active quick commerce users (any frequency): ~12-15 crore by 2030."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average order value (mature, with non-grocery upselling): ~₹500."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹3-3.5 lakh Cr GMV potential by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Quick commerce addressable cities by 2030",
+      "value": "~80-100 cities (currently 25-30).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Population in serviceable cities",
+      "value": "~30 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone-enabled adults",
+      "value": "~22 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active quick commerce users (any frequency)",
+      "value": "~12-15 crore by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average orders per active user per year",
+      "value": "~50 (vs ~25 now).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual orders",
+      "value": "13 cr × 50 = ~65 crore orders/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average order value (mature, with non-grocery upselling)",
+      "value": "~₹500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual GMV",
+      "value": "65 cr × ₹500 = ~₹3.25 lakh Cr (~$40B).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Population in serviceable cities: ~30 crore.",
+    "Smartphone-enabled adults: ~22 crore.",
+    "Active quick commerce users (any frequency): ~12-15 crore by 2030.",
+    "Annual orders: 13 cr × 50 = ~65 crore orders/year.",
+    "Average order value (mature, with non-grocery upselling): ~₹500.",
+    "Annual GMV: 65 cr × ₹500 = ~₹3.25 lakh Cr (~$40B).",
+    "Round: ~₹3-3.5 lakh Cr GMV potential by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "3",
+    "high": "3.5",
+    "ideal": "~₹3-3.5 lakh Cr GMV potential by 2030."
+  }
+}

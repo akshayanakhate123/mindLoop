@@ -1,0 +1,94 @@
+{
+  "questionId": "generalist-14",
+  "domain": "generalist",
+  "question": "Estimate the number of registered vehicles in India.",
+  "idealClarificationQuestions": [
+    "Cumulative registered (including non-operational)? Cumulative registered, but separate operational subset.",
+    "All categories: 2W, 3W, cars, buses, trucks, tractors? All.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across categories from MoRTH / Vahan data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "2W registered (cumulative): ~25 crore (operational ~15-16 crore)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Commercial vehicles (trucks, buses, LCVs): ~1.5 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Other (trailers, construction): ~50 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total operational: ~26-27 crore."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "2W registered (cumulative)",
+      "value": "~25 crore (operational ~15-16 crore).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cars + SUVs registered",
+      "value": "~6.5 crore (operational ~5 crore).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Commercial vehicles (trucks, buses, LCVs)",
+      "value": "~1.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "3W (autos, e-rickshaws)",
+      "value": "~1.2 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tractors",
+      "value": "~90 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other (trailers, construction)",
+      "value": "~50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total registered cumulative",
+      "value": "~36 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operational",
+      "value": "~26-27 crore.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "2W registered (cumulative): ~25 crore (operational ~15-16 crore).",
+    "Cars + SUVs registered: ~6.5 crore (operational ~5 crore).",
+    "Commercial vehicles (trucks, buses, LCVs): ~1.5 crore.",
+    "3W (autos, e-rickshaws): ~1.2 crore.",
+    "Tractors: ~90 lakh.",
+    "Other (trailers, construction): ~50 lakh.",
+    "Total registered cumulative: ~36 crore.",
+    "Total operational: ~26-27 crore."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total operational: ~26-27 crore."
+  }
+}

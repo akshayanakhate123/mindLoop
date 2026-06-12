@@ -1,0 +1,89 @@
+{
+  "questionId": "product-13",
+  "domain": "product",
+  "question": "Estimate the annual market size of online travel booking (OTA) in India.",
+  "idealClarificationQuestions": [
+    "Bookings GMV or net revenue? GMV.",
+    "Include only domestic or also outbound international? Both, originating from India.",
+    "Include hotels, flights, trains (IRCTC), buses, holiday packages? All categories.",
+    "Time horizon: FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up by category: flights + hotels + trains + buses + packages."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Domestic flight passengers India FY26: ~170M (15% YoY growth from 153M in FY24); avg ticket ~₹5,500. Online booking share: ~85%. Online flight GMV: 170M × 5,500 × 0.85 = ~₹80,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Hotels: ~150M room-nights booked online (domestic + international); avg ₹2,500/night = ₹37,500 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Bus tickets (RedBus etc.): ~250M tickets online; avg ₹500 = ₹12,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: 80,000 + 96,000 + 37,500 + 21,000 + 12,500 + 15,000 = ~₹2,62,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Domestic flight passengers India FY26",
+      "value": "~170M (15% YoY growth from 153M in FY24); avg ticket ~₹5,500. Online booking share: ~85%. Online flight GMV: 170M × 5,500 × 0.85 = ~₹80,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "International flights from India",
+      "value": "~30M passengers; avg ₹40,000; online share ~80%. International GMV: ~₹96,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hotels",
+      "value": "~150M room-nights booked online (domestic + international); avg ₹2,500/night = ₹37,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Train (IRCTC) bookings",
+      "value": "~85% of train tickets booked online; ~600M tickets/year; avg fare ₹350 = ~₹21,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bus tickets (RedBus etc.)",
+      "value": "~250M tickets online; avg ₹500 = ₹12,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Holiday packages (MMT, Yatra, Thomas Cook online)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "80,000 + 96,000 + 37,500 + 21,000 + 12,500 + 15,000 = ~₹2,62,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Domestic flight passengers India FY26: ~170M (15% YoY growth from 153M in FY24); avg ticket ~₹5,500. Online booking share: ~85%. Online flight GMV: 170M × 5,500 × 0.85 = ~₹80,000 Cr.",
+    "International flights from India: ~30M passengers; avg ₹40,000; online share ~80%. International GMV: ~₹96,000 Cr.",
+    "Hotels: ~150M room-nights booked online (domestic + international); avg ₹2,500/night = ₹37,500 Cr.",
+    "Train (IRCTC) bookings: ~85% of train tickets booked online; ~600M tickets/year; avg fare ₹350 = ~₹21,000 Cr.",
+    "Bus tickets (RedBus etc.): ~250M tickets online; avg ₹500 = ₹12,500 Cr.",
+    "Holiday packages (MMT, Yatra, Thomas Cook online): ~₹15,000 Cr.",
+    "Total: 80,000 + 96,000 + 37,500 + 21,000 + 12,500 + 15,000 = ~₹2,62,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: 80,000 + 96,000 + 37,500 + 21,000 + 12,500 + 15,000 = ~₹2,62,000 Cr."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "questionId": "product-20",
+  "domain": "product",
+  "question": "Estimate the annual market for second-hand smartphone sales (refurbished + used) in India.",
+  "idealClarificationQuestions": [
+    "Both organized (Cashify, Yaantra, OLX) and unorganized? Yes — total category.",
+    "Refurbished by brands (Apple Certified, Samsung) included? Yes.",
+    "B2B (mobile recycling for parts) excluded? Yes — only consumer resale.",
+    "Time: FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: total smartphone units sold/replaced annually → resale rate → average resale value."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Smartphone replacement cycle in India: ~30-36 months."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual upgrades/replacements: ~250M devices."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average resale value: ~₹4,500 (older models, mid-tier)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Organized share: ~₹8,000-9,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Smartphone replacement cycle in India",
+      "value": "~30-36 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total smartphone-using base",
+      "value": "~800M devices.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual upgrades/replacements",
+      "value": "~250M devices.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, devices that get resold (rather than retained/discarded)",
+      "value": "~30% = 75M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of the 75M, organized resale share",
+      "value": "~25% = ~19M (rest unorganized — local dealer, OLX, family).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average resale value",
+      "value": "~₹4,500 (older models, mid-tier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total resale market value",
+      "value": "75M × ₹4,500 = ₹33,750 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Organized share",
+      "value": "~₹8,000-9,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, devices that get resold (rather than retained/discarded): ~30% = 75M.",
+    "Of the 75M, organized resale share: ~25% = ~19M (rest unorganized — local dealer, OLX, family).",
+    "Average resale value: ~₹4,500 (older models, mid-tier).",
+    "Total resale market value: 75M × ₹4,500 = ₹33,750 Cr.",
+    "Organized share: ~₹8,000-9,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Organized share: ~₹8,000-9,000 Cr."
+  }
+}

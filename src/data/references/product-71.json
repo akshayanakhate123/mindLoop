@@ -1,0 +1,63 @@
+{
+  "questionId": "product-71",
+  "domain": "product",
+  "question": "Estimate the adoption of UPI in international markets via NRIs / Indian expats by 2028.",
+  "idealClarificationQuestions": [
+    "NRIs/Indians abroad using UPI for cross-border or India-side transactions via international UPI rollout (Singapore, UAE, France, UK, etc.)? Yes.",
+    "Active monthly users? Yes.",
+    "By 2028? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total Indian diaspora → smartphone-enabled → countries where UPI is live → adoption ramp."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian diaspora globally: ~32M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "In countries where UPI is live for cross-border (Singapore, UAE, France, Sri Lanka, Bhutan, Mauritius, Nepal, Thailand): ~14M NRIs in these countries."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Drivers to 2028: Saudi Arabia, US, UK rollouts; integration with Apple Pay/Google Wallet abroad; remittance use case."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "By 2028: 20-25% of NRIs in UPI-enabled countries adopting = ~3-4M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian diaspora globally",
+      "value": "~32M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, currently using UPI for international transactions",
+      "value": "~5-7% = ~700K-1M (early days, 2026).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2028",
+      "value": "20-25% of NRIs in UPI-enabled countries adopting = ~3-4M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, currently using UPI for international transactions: ~5-7% = ~700K-1M (early days, 2026).",
+    "By 2028: 20-25% of NRIs in UPI-enabled countries adopting = ~3-4M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "By 2028: 20-25% of NRIs in UPI-enabled countries adopting = ~3-4M."
+  }
+}

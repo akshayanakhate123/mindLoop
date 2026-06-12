@@ -1,0 +1,86 @@
+{
+  "questionId": "finance-57",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian Premium electric car market by 2030.",
+  "idealClarificationQuestions": [
+    "Premium EV cars (>₹40 lakh) annual sales by 2030? Yes.",
+    "Both luxury (BMW, Mercedes, Audi, Tesla) and Indian premium (Mahindra Thar EV, Tata Avinya, BMW X1 EV)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Luxury car market × EV penetration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Luxury car market (₹40L+) India 2030: ~85,000 units/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Luxury EV unit sales 2030: ~30,000-35,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual market value: 32,000 × ₹65L = ~₹21,000 Cr (~$2.5B)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹24,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Luxury car market (₹40L+) India 2030",
+      "value": "~85,000 units/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EV penetration in luxury segment by 2030",
+      "value": "~35-40% (premium buyers more sustainability-conscious + drive less so longer charging tolerable).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Luxury EV unit sales 2030",
+      "value": "~30,000-35,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average selling price",
+      "value": "~₹65 lakh blended.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual market value",
+      "value": "32,000 × ₹65L = ~₹21,000 Cr (~$2.5B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus aftermarket + service",
+      "value": "~₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹24,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Luxury car market (₹40L+) India 2030: ~85,000 units/year.",
+    "EV penetration in luxury segment by 2030: ~35-40% (premium buyers more sustainability-conscious + drive less so longer charging tolerable).",
+    "Average selling price: ~₹65 lakh blended.",
+    "Annual market value: 32,000 × ₹65L = ~₹21,000 Cr (~$2.5B).",
+    "Plus aftermarket + service: ~₹3,000 Cr.",
+    "Total: ~₹24,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹24,000 Cr."
+  }
+}

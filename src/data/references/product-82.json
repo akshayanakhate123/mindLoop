@@ -1,0 +1,60 @@
+{
+  "questionId": "product-82",
+  "domain": "product",
+  "question": "Estimate the cab fleet size Ola/Uber/inDrive needs combined to serve Mumbai.",
+  "idealClarificationQuestions": [
+    "All driver-partners (active monthly)? Yes.",
+    "Cab + auto + bike? Cab + auto only.",
+    "Mumbai metro? Yes (~22M).",
+    "Average month? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total ride volume / driver productivity."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai monthly ride bookings (calculated similar to Q10, Bengaluru-equivalent ~70-80M): assume 70M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active driver per partner average ~10-12 rides/day = ~250-300/month."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Considering driver overlap (many register on 2-3 platforms), unique active drivers: ~180-200K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of which auto: 60% = 110K; cab: 40% = 75K."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Active drivers needed for 70M rides",
+      "value": "70M / 275 = ~255K active driver-partners across all 3 platforms.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which auto",
+      "value": "60% = 110K; cab: 40% = 75K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Active driver per partner average ~10-12 rides/day = ~250-300/month.",
+    "Active drivers needed for 70M rides: 70M / 275 = ~255K active driver-partners across all 3 platforms.",
+    "Of which auto: 60% = 110K; cab: 40% = 75K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of which auto: 60% = 110K; cab: 40% = 75K."
+  }
+}

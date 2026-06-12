@@ -1,0 +1,72 @@
+{
+  "questionId": "generalist-49",
+  "domain": "generalist",
+  "question": "Estimate the daily salt consumption in India.",
+  "idealClarificationQuestions": [
+    "Edible iodized salt for direct use + processed food + industrial? Provide edible only.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita salt consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "WHO recommends 5g/day; Indian average is ~10-11g/day (high — major hypertension driver)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Daily salt consumption (food): 1.45B × 10g = ~14,500 tonnes/day = 14.5 million kg."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus industrial salt (chemicals, leather): India total salt production ~30 MT, consumption ~25 MT."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round edible: ~14,500 tonnes/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily salt consumption (food)",
+      "value": "1.45B × 10g = ~14,500 tonnes/day = 14.5 million kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual",
+      "value": "~5.3 MT/year for direct edible use.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus industrial salt (chemicals, leather)",
+      "value": "India total salt production ~30 MT, consumption ~25 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round edible",
+      "value": "~14,500 tonnes/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily salt consumption (food): 1.45B × 10g = ~14,500 tonnes/day = 14.5 million kg."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round edible: ~14,500 tonnes/day."
+  }
+}

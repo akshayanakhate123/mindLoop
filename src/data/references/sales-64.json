@@ -1,0 +1,90 @@
+{
+  "questionId": "sales-64",
+  "domain": "sales",
+  "question": "Estimate the conversion from Diwali festive ad exposure to actual brand purchase.",
+  "idealClarificationQuestions": [
+    "Brand TVC + digital + outdoor blitz reaching the consumer during Diwali? Yes.",
+    "Conversion = purchase the brand product within 30 days? Yes.",
+    "Mid-tier FMCG / consumer durables? Use consumer durables.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Brand campaign impact."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Festive campaign reach: 10 crore unique consumers."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Brand consideration (would consider buying): ~25% of aware = 1 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net brand-attributed purchase share of these (against competition): ~25% = ~75,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Per ₹100 Cr campaign cost, this is ~75,000 customers = ~₹13,000 CPA for incremental sales."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Festive campaign reach",
+      "value": "10 crore unique consumers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand awareness lift (people who saw + recall brand name)",
+      "value": "~40% = 4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand consideration (would consider buying)",
+      "value": "~25% of aware = 1 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Product enquiry / store visit",
+      "value": "~10% of considerers = 10 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Actual purchase (any brand from category, not necessarily this brand)",
+      "value": "~30% = 3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net brand-attributed purchase share of these (against competition)",
+      "value": "~25% = ~75,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net campaign-reach-to-brand-purchase",
+      "value": "75K / 10 cr = 0.075%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Festive campaign reach: 10 crore unique consumers.",
+    "Brand awareness lift (people who saw + recall brand name): ~40% = 4 crore.",
+    "Brand consideration (would consider buying): ~25% of aware = 1 crore.",
+    "Product enquiry / store visit: ~10% of considerers = 10 lakh.",
+    "Actual purchase (any brand from category, not necessarily this brand): ~30% = 3 lakh.",
+    "Net brand-attributed purchase share of these (against competition): ~25% = ~75,000.",
+    "Net campaign-reach-to-brand-purchase: 75K / 10 cr = 0.075%.",
+    "Per ₹100 Cr campaign cost, this is ~75,000 customers = ~₹13,000 CPA for incremental sales."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Per ₹100 Cr campaign cost, this is ~75,000 customers = ~₹13,000 CPA for incremental sales."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "questionId": "generalist-70",
+  "domain": "generalist",
+  "question": "Estimate the number of solar rooftop installations in India.",
+  "idealClarificationQuestions": [
+    "Residential + commercial + industrial rooftop PV? Yes — total.",
+    "Cumulative installations? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "MNRE installed capacity / average system size."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total solar capacity in India (FY26): ~110 GW."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average commercial: ~50-200 kW."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Residential (~50% of rooftop = 9 GW @ 4 kW avg): ~22.5 lakh installations."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PM Surya Ghar target: 1 crore households by 2027 — currently ~25-30 lakh."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total solar capacity in India (FY26)",
+      "value": "~110 GW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which rooftop solar",
+      "value": "~17-18 GW (rising fast with PM Surya Ghar Yojana).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average residential rooftop system",
+      "value": "~3-5 kW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average commercial",
+      "value": "~50-200 kW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average industrial",
+      "value": "~500 kW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Residential (~50% of rooftop = 9 GW @ 4 kW avg)",
+      "value": "~22.5 lakh installations.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Commercial + industrial (~50% = 9 GW @ 100 kW avg)",
+      "value": "~90,000 installations.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~23-24 lakh installations.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Residential (~50% of rooftop = 9 GW @ 4 kW avg): ~22.5 lakh installations.",
+    "- Commercial + industrial (~50% = 9 GW @ 100 kW avg): ~90,000 installations.",
+    "Total: ~23-24 lakh installations.",
+    "PM Surya Ghar target: 1 crore households by 2027 — currently ~25-30 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PM Surya Ghar target: 1 crore households by 2027 — currently ~25-30 lakh."
+  }
+}

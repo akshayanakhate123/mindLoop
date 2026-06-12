@@ -1,0 +1,74 @@
+{
+  "questionId": "marketing-55",
+  "domain": "marketing",
+  "question": "Estimate the size of the high-end electric car buyer segment in India (cars priced ₹40 lakh+).",
+  "idealClarificationQuestions": [
+    "Annual buyers of EVs above ₹40 lakh? Yes.",
+    "BYD, Mercedes EQ, BMW iX, Audi e-tron, Tesla (when launched)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Luxury car buyer × EV adoption %."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India luxury car sales (₹40L+) FY26: ~55,000 units/year (BMW, Mercedes, Audi, Volvo, Jaguar etc.)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "EV penetration in luxury segment (rising fast): ~15-18% (FY26)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus very early Tesla pre-bookings (when official launch): adds ~1,500 if launched."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~10,000-12,000 buyers per year of ₹40L+ EVs in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India luxury car sales (₹40L+) FY26",
+      "value": "~55,000 units/year (BMW, Mercedes, Audi, Volvo, Jaguar etc.).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EV penetration in luxury segment (rising fast)",
+      "value": "~15-18% (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Luxury EV buyers",
+      "value": "55K × 17% = ~9,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus very early Tesla pre-bookings (when official launch)",
+      "value": "adds ~1,500 if launched.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~10,000-12,000 buyers per year of ₹40L+ EVs in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India luxury car sales (₹40L+) FY26: ~55,000 units/year (BMW, Mercedes, Audi, Volvo, Jaguar etc.).",
+    "Luxury EV buyers: 55K × 17% = ~9,500.",
+    "Round: ~10,000-12,000 buyers per year of ₹40L+ EVs in India."
+  ],
+  "finalAnswerRange": {
+    "low": "10,000",
+    "high": "12,000",
+    "ideal": "~10,000-12,000 buyers per year of ₹40L+ EVs in India."
+  }
+}

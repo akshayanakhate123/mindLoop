@@ -1,0 +1,96 @@
+{
+  "questionId": "marketing-78",
+  "domain": "marketing",
+  "question": "Estimate the monthly revenue of a multiplex (single PVR INOX) in Mumbai.",
+  "idealClarificationQuestions": [
+    "Single multiplex (8-10 screens) in a prime Mumbai mall? Yes.",
+    "Total revenue: ticket + F&B + advertising? Yes.",
+    "Average month (not festive blockbuster month)? Average.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Capacity × occupancy × pricing + F&B uplift."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Screens: 8; seats per screen: ~250; shows per day: ~5."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average occupancy: ~30% (multiplexes are 25-40% on weekdays, 60-75% weekends; weighted ~30%)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "F&B revenue (1.4x of ticket for premium multiplexes): ₹1.5-2 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual: ~₹60-65 Cr per multiplex."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Screens",
+      "value": "8; seats per screen: ~250; shows per day: ~5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily seat capacity",
+      "value": "8 × 250 × 5 = 10,000 seats/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly seats",
+      "value": "10,000 × 30 = 3 lakh seats/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average occupancy",
+      "value": "~30% (multiplexes are 25-40% on weekdays, 60-75% weekends; weighted ~30%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly footfall",
+      "value": "3L × 0.30 = ~90,000 tickets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ticket price Mumbai multiplex",
+      "value": "~₹350.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ticket revenue",
+      "value": "90K × ₹350 = ₹3.15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "F&B revenue (1.4x of ticket for premium multiplexes)",
+      "value": "₹1.5-2 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily seat capacity: 8 × 250 × 5 = 10,000 seats/day.",
+    "Monthly seats: 10,000 × 30 = 3 lakh seats/month.",
+    "Monthly footfall: 3L × 0.30 = ~90,000 tickets.",
+    "Average ticket price Mumbai multiplex: ~₹350.",
+    "Ticket revenue: 90K × ₹350 = ₹3.15 Cr.",
+    "F&B revenue (1.4x of ticket for premium multiplexes): ₹1.5-2 Cr.",
+    "Advertising / sponsorship (pre-show + on-screen): ₹20-30 lakh.",
+    "Total monthly revenue: ~₹5-5.5 Cr.",
+    "Annual: ~₹60-65 Cr per multiplex."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual: ~₹60-65 Cr per multiplex."
+  }
+}

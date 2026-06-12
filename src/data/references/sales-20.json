@@ -1,0 +1,97 @@
+{
+  "questionId": "sales-20",
+  "domain": "sales",
+  "question": "Estimate the monthly sales of premium notebooks/stationery (Classmate, Camlin, Faber-Castell) in a school-heavy city like Pune.",
+  "idealClarificationQuestions": [
+    "Notebooks + writing instruments + accessories? Yes — branded stationery.",
+    "Both school + college + corporate stationery? Yes.",
+    "Pune metro? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Student + working population × stationery spend per month."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Pune students K-12 + college + diploma: ~25 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average monthly branded stationery spend per buyer: ~₹65 (notebooks, pens, refills, accessories)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Cello/Linc: ~₹3 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Peak month June (academic year start): ~3x average."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Pune students K-12 + college + diploma",
+      "value": "~25 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Working professionals (need office stationery)",
+      "value": "~30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of total, branded stationery buyers",
+      "value": "~70% = ~38 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average monthly branded stationery spend per buyer",
+      "value": "~₹65 (notebooks, pens, refills, accessories).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pune monthly branded stationery market",
+      "value": "38L × ₹65 = ~₹25 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ITC Classmate",
+      "value": "~₹8 Cr (32%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Camlin/Kokuyo",
+      "value": "~₹4 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cello/Linc",
+      "value": "~₹3 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Pune students K-12 + college + diploma: ~25 lakh.",
+    "Working professionals (need office stationery): ~30 lakh.",
+    "Of total, branded stationery buyers: ~70% = ~38 lakh.",
+    "Average monthly branded stationery spend per buyer: ~₹65 (notebooks, pens, refills, accessories).",
+    "Pune monthly branded stationery market: 38L × ₹65 = ~₹25 Cr.",
+    "- ITC Classmate: ~₹8 Cr (32%).",
+    "- Camlin/Kokuyo: ~₹4 Cr.",
+    "- Cello/Linc: ~₹3 Cr.",
+    "- Faber-Castell + other premium: ~₹5 Cr.",
+    "- Other: ~₹5 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Peak month June (academic year start): ~3x average."
+  }
+}

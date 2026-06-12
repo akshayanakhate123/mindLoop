@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-78",
+  "domain": "sales",
+  "question": "Estimate the market size for CRM tools among Indian startups.",
+  "idealClarificationQuestions": [
+    "Startups in India funded + bootstrapped using CRM (Salesforce, HubSpot, Zoho CRM, Freshsales, LeadSquared)? Yes.",
+    "Annual ARR? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Startups × adoption × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian startups (DPIIT-recognized + non-recognized active): ~1.5 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, using paid CRM: ~50% = 60,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Self-serve / SMB tier: ~35% = 21,000 startups @ ~₹20K/year = ₹42 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹800-900 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian startups (DPIIT-recognized + non-recognized active)",
+      "value": "~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, with revenue/sales operations (not pure pre-revenue)",
+      "value": "~80% = 1.2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, using paid CRM",
+      "value": "~50% = 60,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, big-paying enterprise CRM (Salesforce / HubSpot Pro)",
+      "value": "~15% = 9,000 startups @ ~₹6L/year = ₹540 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Mid-tier (Zoho CRM, Freshsales, Pipedrive)",
+      "value": "~50% = 30,000 startups @ ~₹80K/year = ₹240 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Self-serve / SMB tier",
+      "value": "~35% = 21,000 startups @ ~₹20K/year = ₹42 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total CRM TAM for Indian startups",
+      "value": "~₹820 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹800-900 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total Indian startups (DPIIT-recognized + non-recognized active): ~1.5 lakh.",
+    "Of these, with revenue/sales operations (not pure pre-revenue): ~80% = 1.2 lakh.",
+    "Of these, using paid CRM: ~50% = 60,000.",
+    "Of these, big-paying enterprise CRM (Salesforce / HubSpot Pro): ~15% = 9,000 startups @ ~₹6L/year = ₹540 Cr.",
+    "Mid-tier (Zoho CRM, Freshsales, Pipedrive): ~50% = 30,000 startups @ ~₹80K/year = ₹240 Cr.",
+    "Self-serve / SMB tier: ~35% = 21,000 startups @ ~₹20K/year = ₹42 Cr.",
+    "Total CRM TAM for Indian startups: ~₹820 Cr/year.",
+    "Round: ~₹800-900 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "800",
+    "high": "900",
+    "ideal": "~₹800-900 Cr."
+  }
+}

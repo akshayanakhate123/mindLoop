@@ -1,0 +1,80 @@
+{
+  "questionId": "marketing-49",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate from a first-time visitor to repeat purchase for an Indian D2C brand.",
+  "idealClarificationQuestions": [
+    "Within 90 days of first purchase? Yes.",
+    "D2C brand (Mamaearth, BoAt, Sugar, Plum)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "First purchase → satisfaction → repeat trigger → repeat."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "First-time customers: 1,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Receive remarketing email/WhatsApp/push from brand: ~95%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Visit website again: ~25-30%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~15-20% repeat purchase rate within 90 days for healthy D2C."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "First-time customers",
+      "value": "1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, satisfied (no return/complaint)",
+      "value": "~80%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Receive remarketing email/WhatsApp/push from brand",
+      "value": "~95%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open at least one remarketing message",
+      "value": "~60%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Visit website again",
+      "value": "~25-30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Make a 2nd purchase within 90 days",
+      "value": "~15-20% of all first-timers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~15-20% repeat purchase rate within 90 days for healthy D2C.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "15",
+    "high": "20",
+    "ideal": "~15-20% repeat purchase rate within 90 days for healthy D2C."
+  }
+}

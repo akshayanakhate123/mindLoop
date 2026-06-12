@@ -1,0 +1,88 @@
+{
+  "questionId": "product-24",
+  "domain": "product",
+  "question": "Estimate the annual market for online matrimony services in India.",
+  "idealClarificationQuestions": [
+    "Paid memberships only or include premium add-ons (assisted services, profile boosts)? Both.",
+    "Include all platforms: Shaadi.com, BharatMatrimony, Jeevansathi, regional? Yes.",
+    "B2C only (consumer-paid)? Yes.",
+    "Time: FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: marriageable population → online matrimony adopters → paying conversion → ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India marriageable population (singles 22-35): ~150M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active users on matrimony apps: ~15M (browsing)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual revenue: 3.75M × ₹3,500 = ₹1,300 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹1,500-1,700 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India marriageable population (singles 22-35)",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active users on matrimony apps",
+      "value": "~15M (browsing).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paying users (premium + assisted)",
+      "value": "~3.5-4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU",
+      "value": "~₹3,500/year (₹1,500 basic to ₹50,000 assisted).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual revenue",
+      "value": "3.75M × ₹3,500 = ₹1,300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus diaspora premium + advertising",
+      "value": "~₹200-300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹1,500-1,700 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, digitally accessible + culturally inclined to use matrimony (urban + Tier 2 + diaspora): ~50M.",
+    "Paying users (premium + assisted): ~3.5-4M.",
+    "Average ARPU: ~₹3,500/year (₹1,500 basic to ₹50,000 assisted).",
+    "Annual revenue: 3.75M × ₹3,500 = ₹1,300 Cr.",
+    "Plus diaspora premium + advertising: ~₹200-300 Cr.",
+    "Total: ~₹1,500-1,700 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹1,500-1,700 Cr."
+  }
+}

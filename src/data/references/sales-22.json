@@ -1,0 +1,90 @@
+{
+  "questionId": "sales-22",
+  "domain": "sales",
+  "question": "Estimate monthly toy sales (organized + unorganized) in Chennai metro.",
+  "idealClarificationQuestions": [
+    "All toys: traditional + electronic + soft toys + board games? Yes.",
+    "Organized retail + online + unorganized? Yes — total.",
+    "Chennai metro? Yes (~12M).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Children × toy spend × monthly distribution."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Chennai metro children (0-14 yrs): ~25% of population = ~30 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual toy spend in Chennai: 30L × ₹2,500 = ~₹750 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Organized retail (Hamleys, Toys-R-Us, large format): ~25% = ₹15 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Unorganized (small toy shops, fancy stores): ~50% = ₹32 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Chennai metro children (0-14 yrs)",
+      "value": "~25% of population = ~30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual toy spend in Chennai",
+      "value": "30L × ₹2,500 = ~₹750 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly average",
+      "value": "~₹62 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "heavy festive concentration — Diwali, Christmas, birthdays drive ~40% of annual sales in Oct-Dec = monthly during festive ~₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Organized retail (Hamleys, Toys-R-Us, large format)",
+      "value": "~25% = ₹15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Online (Amazon, Flipkart, FirstCry)",
+      "value": "~25% = ₹15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Unorganized (small toy shops, fancy stores)",
+      "value": "~50% = ₹32 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Chennai metro children (0-14 yrs): ~25% of population = ~30 lakh.",
+    "Annual toy spend per child (avg, range ₹500 budget to ₹15,000 affluent): ~₹2,500.",
+    "Annual toy spend in Chennai: 30L × ₹2,500 = ~₹750 Cr.",
+    "Monthly average: ~₹62 Cr.",
+    "Note: heavy festive concentration — Diwali, Christmas, birthdays drive ~40% of annual sales in Oct-Dec = monthly during festive ~₹100 Cr.",
+    "- Organized retail (Hamleys, Toys-R-Us, large format): ~25% = ₹15 Cr.",
+    "- Online (Amazon, Flipkart, FirstCry): ~25% = ₹15 Cr.",
+    "- Unorganized (small toy shops, fancy stores): ~50% = ₹32 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Unorganized (small toy shops, fancy stores): ~50% = ₹32 Cr."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "questionId": "product-56",
+  "domain": "product",
+  "question": "Estimate the adoption of smart home devices (Alexa, Google Home, smart bulbs/plugs) in Indian metro households over the next 3 years.",
+  "idealClarificationQuestions": [
+    "Any smart home device (voice speaker OR smart bulb OR plug OR camera)? Yes — at least one.",
+    "Metro households (top 8 cities, ~30M households)? Yes.",
+    "Currently and projected 2029? Both.",
+    "Per-household basis? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: addressable households → tech-aware affluent segment → diffusion model."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Metro households (top 8 cities): ~30M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Current adoption (at least one smart home device, 2026): ~25% of tech-aware = ~1.8M households."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual adoption growth: ~25% (slowing from 40% earlier)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "2029 penetration: ~12% of metro HH."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Metro households (top 8 cities)",
+      "value": "~30M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Affluent + upper middle class (income ₹15L+)",
+      "value": "~35% = ~10.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tech-aware subset",
+      "value": "~70% = 7.4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Current adoption (at least one smart home device, 2026)",
+      "value": "~25% of tech-aware = ~1.8M households.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Penetration of metro HH today",
+      "value": "1.8M / 30M = ~6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual adoption growth",
+      "value": "~25% (slowing from 40% earlier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "2029 adopter households",
+      "value": "1.8M × 1.25^3 = 1.8M × 1.95 ≈ 3.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "2029 penetration",
+      "value": "~12% of metro HH.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Affluent + upper middle class (income ₹15L+): ~35% = ~10.5M.",
+    "Tech-aware subset: ~70% = 7.4M.",
+    "Current adoption (at least one smart home device, 2026): ~25% of tech-aware = ~1.8M households.",
+    "Penetration of metro HH today: 1.8M / 30M = ~6%.",
+    "2029 adopter households: 1.8M × 1.25^3 = 1.8M × 1.95 ≈ 3.5M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "2029 penetration: ~12% of metro HH."
+  }
+}

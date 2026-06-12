@@ -1,0 +1,92 @@
+{
+  "questionId": "product-17",
+  "domain": "product",
+  "question": "Estimate Amazon India's annual GMV from grocery (Amazon Fresh + Pantry).",
+  "idealClarificationQuestions": [
+    "GMV (gross merchandise value) or net revenue? GMV.",
+    "Include only first-party Amazon Fresh + Pantry / exclude marketplace seller groceries? Mostly first-party for grocery.",
+    "Time period: FY26? Yes.",
+    "Geography pan-India where Amazon Fresh is live? Yes (~50 cities)."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: Amazon Prime + Fresh users → frequency × AOV."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon India Prime members: ~30-35M households."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total active grocery shoppers: ~11M households."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "AOV grocery (basket ~₹800): ₹800."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual: ~₹30,000-32,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Amazon India Prime members",
+      "value": "~30-35M households.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Fresh-active Prime members (used grocery in last quarter)",
+      "value": "~25% = ~8M households.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus non-Prime grocery shoppers",
+      "value": "~3M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total active grocery shoppers",
+      "value": "~11M households.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Order frequency",
+      "value": "~3 orders/month (compete with quick commerce).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly orders",
+      "value": "11M × 3 = 33M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AOV grocery (basket ~₹800)",
+      "value": "₹800.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly GMV",
+      "value": "33M × ₹800 = ₹2,640 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Fresh-active Prime members (used grocery in last quarter): ~25% = ~8M households.",
+    "Monthly orders: 11M × 3 = 33M.",
+    "AOV grocery (basket ~₹800): ₹800.",
+    "Monthly GMV: 33M × ₹800 = ₹2,640 Cr.",
+    "Annual: ~₹30,000-32,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual: ~₹30,000-32,000 Cr."
+  }
+}

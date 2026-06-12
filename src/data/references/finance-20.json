@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-20",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a top Indian EdTech (PhysicsWallah).",
+  "idealClarificationQuestions": [
+    "PhysicsWallah Private Limited (PW) total revenue: online + offline (Vidyapeeth + Skills + Pathshala)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment revenue stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "PW Online (live + recorded JEE/NEET courses): ~₹1,200 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "PW Skills (upskilling courses for working adults): ~₹400 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus international (PW USA, Indonesia experiments): ~₹100 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹4,200 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "PW Online (live + recorded JEE/NEET courses)",
+      "value": "~₹1,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PW Vidyapeeth (offline coaching centers, 150+ centers)",
+      "value": "~₹2,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PW Skills (upskilling courses for working adults)",
+      "value": "~₹400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus books, books, board exams, foundation",
+      "value": "~₹300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus international (PW USA, Indonesia experiments)",
+      "value": "~₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹4,000-4,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹4,200 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "PW Online (live + recorded JEE/NEET courses): ~₹1,200 Cr.",
+    "PW Vidyapeeth (offline coaching centers, 150+ centers): ~₹2,200 Cr.",
+    "PW Skills (upskilling courses for working adults): ~₹400 Cr.",
+    "Plus books, books, board exams, foundation: ~₹300 Cr.",
+    "Plus international (PW USA, Indonesia experiments): ~₹100 Cr.",
+    "Total: ~₹4,000-4,500 Cr.",
+    "Round: ~₹4,200 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹4,200 Cr."
+  }
+}

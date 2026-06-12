@@ -1,0 +1,75 @@
+{
+  "questionId": "product-37",
+  "domain": "product",
+  "question": "Estimate the average e-commerce orders placed per urban Indian household per month.",
+  "idealClarificationQuestions": [
+    "Active urban household (placed at least 1 order in past 90 days)? Yes.",
+    "Includes Amazon + Flipkart + Myntra + Meesho + Nykaa + AJIO etc.? Yes.",
+    "Excludes food delivery, quick commerce, OTA, edtech? Yes — physical goods only.",
+    "Tier 1 + 2 urban? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total physical-goods e-commerce orders India / active urban shopping households."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total annual e-commerce orders in India (physical goods): ~5.5B (Amazon ~1.3B, Flipkart ~1.5B, Meesho ~1.5B, others ~1.2B)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Urban share of orders: ~70% = ~3.85B."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual orders per HH: 3.85B ÷ 70M = ~55."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Monthly: ~4.5-5 orders per active urban household."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total annual e-commerce orders in India (physical goods)",
+      "value": "~5.5B (Amazon ~1.3B, Flipkart ~1.5B, Meesho ~1.5B, others ~1.2B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban share of orders",
+      "value": "~70% = ~3.85B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active urban e-commerce households (Tier 1+2)",
+      "value": "~70M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual orders per HH",
+      "value": "3.85B ÷ 70M = ~55.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~4.5-5 orders per active urban household.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban share of orders: ~70% = ~3.85B.",
+    "Active urban e-commerce households (Tier 1+2): ~70M.",
+    "Annual orders per HH: 3.85B ÷ 70M = ~55."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Monthly: ~4.5-5 orders per active urban household."
+  }
+}

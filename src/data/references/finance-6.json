@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-6",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Indigo Airlines (InterGlobe Aviation).",
+  "idealClarificationQuestions": [
+    "Total revenue: passenger + ancillary + cargo? Yes.",
+    "Indian + international ops (Indigo flies international too)? Yes — total airline.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Passengers × average ticket + ancillary."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indigo annual passengers FY26: ~120 million (60% domestic India market share of ~170M domestic + ~25M international)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Passenger revenue: 120M × ₹5,200 = ~₹62,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Cargo: ~₹1,800 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total revenue: ~₹70,000-72,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indigo annual passengers FY26",
+      "value": "~120 million (60% domestic India market share of ~170M domestic + ~25M international).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ticket revenue per passenger",
+      "value": "~₹5,200 (blended domestic + international short-haul).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Passenger revenue",
+      "value": "120M × ₹5,200 = ~₹62,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ancillary revenue (baggage, seat selection, food, lounge)",
+      "value": "~10-12% = ~₹7,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cargo",
+      "value": "~₹1,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus other (loyalty, frequent flyer monetization)",
+      "value": "~₹500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹70,000-72,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indigo annual passengers FY26: ~120 million (60% domestic India market share of ~170M domestic + ~25M international).",
+    "Average ticket revenue per passenger: ~₹5,200 (blended domestic + international short-haul).",
+    "Passenger revenue: 120M × ₹5,200 = ~₹62,000 Cr.",
+    "Ancillary revenue (baggage, seat selection, food, lounge): ~10-12% = ~₹7,000 Cr.",
+    "Cargo: ~₹1,800 Cr.",
+    "Plus other (loyalty, frequent flyer monetization): ~₹500 Cr.",
+    "Total revenue: ~₹70,000-72,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total revenue: ~₹70,000-72,000 Cr."
+  }
+}

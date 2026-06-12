@@ -1,0 +1,73 @@
+{
+  "questionId": "generalist-12",
+  "domain": "generalist",
+  "question": "Estimate the number of LPG cooking gas connections in India.",
+  "idealClarificationQuestions": [
+    "Domestic household connections active? Yes — household connections.",
+    "PMUY (Ujjwala) + non-PMUY all combined? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total households × LPG penetration rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households: ~310M (1.45B / avg 4.7 persons/HH)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "LPG penetration: ~99% (govt push via Ujjwala has been very successful)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "But each household sometimes has 2 connections (urban): adjustment ~330M total active connections."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~32-33 crore LPG connections."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households",
+      "value": "~310M (1.45B / avg 4.7 persons/HH).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "LPG penetration",
+      "value": "~99% (govt push via Ujjwala has been very successful).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active LPG connections",
+      "value": "~305M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But each household sometimes has 2 connections (urban)",
+      "value": "adjustment ~330M total active connections.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~32-33 crore LPG connections.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Round: ~32-33 crore LPG connections."
+  ],
+  "finalAnswerRange": {
+    "low": "32",
+    "high": "33",
+    "ideal": "~32-33 crore LPG connections."
+  }
+}

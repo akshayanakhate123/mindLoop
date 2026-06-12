@@ -1,0 +1,70 @@
+{
+  "questionId": "finance-9",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a top Indian SaaS company (Zoho).",
+  "idealClarificationQuestions": [
+    "Zoho Corporation total revenue (global, India-headquartered)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Customer count × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Zoho global customers: ~10 crore+ users across products."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Paying business customers: ~7-8 lakh (a mix of SMB, mid-market, enterprise)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Revenue: ~₹5,000-6,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Zoho is bootstrapped and stays low-key; FY24 reported ₹4,000 Cr; FY26 with 25-30% growth ~₹6,500-7,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Zoho global customers",
+      "value": "~10 crore+ users across products.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paying business customers",
+      "value": "~7-8 lakh (a mix of SMB, mid-market, enterprise).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU per paying customer",
+      "value": "~₹65,000-80,000/year (mix of $5/month SMB to enterprise contracts).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Revenue",
+      "value": "~₹5,000-6,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Zoho global customers: ~10 crore+ users across products.",
+    "Paying business customers: ~7-8 lakh (a mix of SMB, mid-market, enterprise).",
+    "Average ARPU per paying customer: ~₹65,000-80,000/year (mix of $5/month SMB to enterprise contracts).",
+    "Revenue: ~₹5,000-6,000 Cr.",
+    "Zoho is bootstrapped and stays low-key; FY24 reported ₹4,000 Cr; FY26 with 25-30% growth ~₹6,500-7,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Zoho is bootstrapped and stays low-key; FY24 reported ₹4,000 Cr; FY26 with 25-30% growth ~₹6,500-7,000 Cr."
+  }
+}

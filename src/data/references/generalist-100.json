@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-100",
+  "domain": "generalist",
+  "question": "Estimate the number of Indians who attended Republic Day (Jan 26) parades / events nationally.",
+  "idealClarificationQuestions": [
+    "Physical attendance at parades + flag hoisting + cultural events nationally? Yes.",
+    "Government + school + community events all combined? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across event categories."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Schools: ~15 lakh schools, each with ~250 students avg attending flag hoisting = ~37 crore students attending school-based events."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Government / civic offices: ~50 lakh employees attending."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "State capital RD events: 28 states × ~50K attendees each = ~14 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total physical attendance pan-India: ~22-25 crore Indians at some Republic Day event."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Schools",
+      "value": "~15 lakh schools, each with ~250 students avg attending flag hoisting = ~37 crore students attending school-based events.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, actually attending (allowing for absentees on holiday)",
+      "value": "~50% = ~18 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Government / civic offices",
+      "value": "~50 lakh employees attending.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Public Republic Day parade Delhi (Kartavya Path)",
+      "value": "~1 lakh ticketed + ~10 lakh public watching live nearby.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "State capital RD events",
+      "value": "28 states × ~50K attendees each = ~14 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Local government / RWA / panchayat flag hoisting",
+      "value": "~5 lakh events × 100 people = ~5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total physical attendance pan-India",
+      "value": "~22-25 crore Indians at some Republic Day event.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Schools: ~15 lakh schools, each with ~250 students avg attending flag hoisting = ~37 crore students attending school-based events.",
+    "Of these, actually attending (allowing for absentees on holiday): ~50% = ~18 crore.",
+    "Government / civic offices: ~50 lakh employees attending.",
+    "Public Republic Day parade Delhi (Kartavya Path): ~1 lakh ticketed + ~10 lakh public watching live nearby.",
+    "State capital RD events: 28 states × ~50K attendees each = ~14 lakh.",
+    "Local government / RWA / panchayat flag hoisting: ~5 lakh events × 100 people = ~5 crore.",
+    "Total physical attendance pan-India: ~22-25 crore Indians at some Republic Day event."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total physical attendance pan-India: ~22-25 crore Indians at some Republic Day event."
+  }
+}

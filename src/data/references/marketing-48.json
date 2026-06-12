@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-48",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate for a referral program at an Indian fintech (e.g., refer a friend at PhonePe / CRED / Groww).",
+  "idealClarificationQuestions": [
+    "Existing user shares referral with friend → friend signs up + transacts? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sharer-to-completion funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Referrals shared by existing users: 1,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Friend installs app: ~30% of clicks (smartphone-already-friend dynamics) = 150."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Friend transacts (qualifying for referral reward): ~50-60% = 30-36."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "If you measure 'friend opens link' to 'friend transacts': ~7-8%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Referrals shared by existing users",
+      "value": "1,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Referrals delivered (link clicked / code shared)",
+      "value": "~50%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Friend installs app",
+      "value": "~30% of clicks (smartphone-already-friend dynamics) = 150.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Friend activates / completes KYC",
+      "value": "~40% = 60.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Friend transacts (qualifying for referral reward)",
+      "value": "~50-60% = 30-36.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net referral-share-to-qualified-conversion",
+      "value": "~3-3.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If you measure 'friend opens link' to 'friend transacts'",
+      "value": "~7-8%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Friend installs app: ~30% of clicks (smartphone-already-friend dynamics) = 150.",
+    "Friend activates / completes KYC: ~40% = 60.",
+    "Friend transacts (qualifying for referral reward): ~50-60% = 30-36."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "If you measure 'friend opens link' to 'friend transacts': ~7-8%."
+  }
+}

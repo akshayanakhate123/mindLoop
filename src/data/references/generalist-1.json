@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-1",
+  "domain": "generalist",
+  "question": "How many cups of chai are consumed in India daily?",
+  "idealClarificationQuestions": [
+    "Cup defined as a standard 100-150 ml serving (kulhad, paper cup, glass)? Yes — average ~120 ml.",
+    "Both home-brewed and tapri/cafe chai counted? Yes — total consumption.",
+    "Black tea + milk tea + green tea / herbal tea? Primarily milk tea (chai); exclude herbal/green which is ~5% of total tea consumption.",
+    "Pan-India average day, not festival? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: segment population into chai-drinkers vs non-drinkers, then layer cups/day by segment, average across population."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population (2026): ~1.45 billion."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Segment by intake:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Light (1 cup/day — young, kids, occasional drinkers): ~25% = 305M @ 1 cup/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~3.5 billion cups of chai per day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population (2026)",
+      "value": "~1.45 billion.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Moderate (2-3 cups/day — most middle-class adults)",
+      "value": "~45% = 555M @ 2.5 cups/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Light (1 cup/day — young, kids, occasional drinkers)",
+      "value": "~25% = 305M @ 1 cup/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily cups",
+      "value": "370M×5 + 555M×2.5 + 305M×1 = 1,850M + 1,388M + 305M = ~3,540M cups.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~3.5 billion cups of chai per day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India population (2026): ~1.45 billion.",
+    "Tea-drinking population (excludes infants <2, exclusive coffee drinkers, tea-averse): ~85% = ~1.23 billion.",
+    "- Heavy drinkers (4+ cups/day — laborers, offices with pantry, chai-frequent households): ~30% = 370M @ 5 cups/day.",
+    "- Moderate (2-3 cups/day — most middle-class adults): ~45% = 555M @ 2.5 cups/day.",
+    "- Light (1 cup/day — young, kids, occasional drinkers): ~25% = 305M @ 1 cup/day.",
+    "Total daily cups: 370M×5 + 555M×2.5 + 305M×1 = 1,850M + 1,388M + 305M = ~3,540M cups.",
+    "Round: ~3.5 billion cups of chai per day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~3.5 billion cups of chai per day."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": "generalist-99",
+  "domain": "generalist",
+  "question": "Estimate the number of Indians who watched the Ram Mandir Pran Pratishtha ceremony (Jan 22, 2024) live.",
+  "idealClarificationQuestions": [
+    "Live viewers across TV + OTT + YouTube + DD News + radio (all platforms)? Yes.",
+    "India only? Yes.",
+    "Single 4-hour ceremony window? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Event significance + multi-platform reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "BARC India estimated TV reach for Pran Pratishtha live coverage: ~14 crore (live + same-day repeat)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Radio (AIR + private FM): not measurable but reach ~3-5 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total unique cumulative reach: ~20-25 crore Indians."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Concurrent peak (the actual prana pratishtha moment, ~12:30 PM): ~10-12 crore concurrent."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "BARC India estimated TV reach for Pran Pratishtha live coverage",
+      "value": "~14 crore (live + same-day repeat).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OTT + YouTube live",
+      "value": "~5-7 crore (DD News YouTube alone had massive viewership).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Radio (AIR + private FM)",
+      "value": "not measurable but reach ~3-5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Public viewing (LED screens in cities, temples, communities)",
+      "value": "~2-3 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total unique cumulative reach",
+      "value": "~20-25 crore Indians.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Concurrent peak (the actual prana pratishtha moment, ~12",
+      "value": "30 PM): ~10-12 crore concurrent.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "BARC India estimated TV reach for Pran Pratishtha live coverage: ~14 crore (live + same-day repeat).",
+    "OTT + YouTube live: ~5-7 crore (DD News YouTube alone had massive viewership).",
+    "Radio (AIR + private FM): not measurable but reach ~3-5 crore.",
+    "Public viewing (LED screens in cities, temples, communities): ~2-3 crore.",
+    "Total unique cumulative reach: ~20-25 crore Indians.",
+    "Concurrent peak (the actual prana pratishtha moment, ~12:30 PM): ~10-12 crore concurrent."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Concurrent peak (the actual prana pratishtha moment, ~12:30 PM): ~10-12 crore concurrent."
+  }
+}

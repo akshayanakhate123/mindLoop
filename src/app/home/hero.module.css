@@ -1,0 +1,278 @@
+/* ── Hero container ──────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #F8F5FF 0%, #F3EEFF 50%, #F8FDFB 100%);
+  border: 1px solid #E9E2FF;
+  box-shadow: 0 10px 40px rgba(124, 58, 237, 0.08);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* ── Background decorations ─────────────────────────────────────────────── */
+.glow1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.07) 0%, transparent 70%);
+  top: -120px;
+  right: 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow2 {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+  bottom: -60px;
+  right: 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow3 {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
+  top: -90px;
+  left: 35%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dotGrid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(124, 58, 237, 0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Left section ────────────────────────────────────────────────────────── */
+.left {
+  flex: 0 0 40%;
+  max-width: 40%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.greeting {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.greetName {
+  color: #7C3AED;
+}
+
+.greetSub {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 4px 0 12px;
+  font-weight: 400;
+}
+
+.headline {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+
+.accent {
+  color: #7C3AED;
+}
+
+.desc {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 340px;
+}
+
+/* ── Right section ───────────────────────────────────────────────────────── */
+.right {
+  flex: 0 0 55%;
+  max-width: 55%;
+  position: relative;
+  height: 200px;
+  z-index: 1;
+}
+
+/* SVG spans the full right container — coordinates are in 0-500 x 0-200 space */
+.pathSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* ── Milestone shared styles ─────────────────────────────────────────────── */
+.milestone {
+  position: absolute;
+  width: 100px;
+  margin-left: -50px; /* center horizontally on the anchor x position */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+  outline: none;
+}
+
+.milestone:focus-visible .msCircle {
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.4);
+}
+
+/* Positions — each milestone's left is the SVG x% and top offsets the circle
+   so that the circle center aligns with the SVG path:
+   M1: left=12%, top=78px  → circle center y = 78+36 = 114
+   M2: left=46%, top=38px  → circle center y = 38+36 = 74
+   M3: left=80%, top=0px   → circle center y = 0+36  = 36 */
+.ms1 { left: 12%; top: 78px; }
+.ms2 { left: 46%; top: 38px; }
+.ms3 { left: 80%; top: 0px;  }
+
+/* ── Milestone circle ────────────────────────────────────────────────────── */
+.msCircle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s;
+}
+
+.milestone:hover .msCircle {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Badge (step number) ─────────────────────────────────────────────────── */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Milestone text ──────────────────────────────────────────────────────── */
+.msTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 8px 0 2px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.msSub {
+  font-size: 0.72rem;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* ── Tablet: stack vertically ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .left {
+    flex: unset;
+    max-width: 100%;
+  }
+
+  .right {
+    flex: unset;
+    max-width: 100%;
+    width: 100%;
+    height: 180px;
+  }
+
+  .ms1 { left: 10%; top: 68px; }
+  .ms2 { left: 46%; top: 32px; }
+  .ms3 { left: 82%; top: 0px; }
+}
+
+/* ── Mobile: hide SVG path, show milestones in a horizontal row ──────────── */
+@media (max-width: 520px) {
+  .hero {
+    padding: 20px 16px;
+    gap: 1.25rem;
+  }
+
+  .pathSvg {
+    display: none;
+  }
+
+  .right {
+    height: auto;
+  }
+
+  .milestone {
+    position: static;
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .ms1, .ms2, .ms3 {
+    left: unset;
+    top: unset;
+  }
+
+  /* On mobile, the .right becomes a flex row */
+  .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .msCircle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .headline {
+    font-size: 1.4rem;
+  }
+}

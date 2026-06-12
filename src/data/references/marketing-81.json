@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-81",
+  "domain": "marketing",
+  "question": "Estimate the annual ad revenue of Indian print media industry.",
+  "idealClarificationQuestions": [
+    "Total ad revenue across all newspapers + magazines? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industry size data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian M&E industry size FY26: ~₹2.5 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Newspapers (Hindi + English + regional): ~₹24,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Ad revenue: ~60-65% = ~₹17,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹17,000 Cr Indian print ad revenue annually."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian M&E industry size FY26",
+      "value": "~₹2.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Print sub-segment",
+      "value": "~₹26,000-28,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Newspapers (Hindi + English + regional)",
+      "value": "~₹24,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Magazines",
+      "value": "~₹3,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Ad revenue",
+      "value": "~60-65% = ~₹17,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Circulation revenue",
+      "value": "~35-40% = ~₹10,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹17,000 Cr Indian print ad revenue annually.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian M&E industry size FY26: ~₹2.5 lakh Cr.",
+    "Print sub-segment: ~₹26,000-28,000 Cr.",
+    "- Newspapers (Hindi + English + regional): ~₹24,000 Cr.",
+    "- Magazines: ~₹3,500 Cr.",
+    "- Ad revenue: ~60-65% = ~₹17,000 Cr.",
+    "- Circulation revenue: ~35-40% = ~₹10,000 Cr.",
+    "Round: ~₹17,000 Cr Indian print ad revenue annually."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹17,000 Cr Indian print ad revenue annually."
+  }
+}

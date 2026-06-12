@@ -1,0 +1,81 @@
+{
+  "questionId": "product-21",
+  "domain": "product",
+  "question": "Estimate the annual revenue from in-app purchases in mobile games in India.",
+  "idealClarificationQuestions": [
+    "IAP only — exclude ad revenue, subscriptions to gaming services? Yes.",
+    "BGMI + Free Fire + Clash + indie games combined? Yes — all mobile.",
+    "Time: FY26? Yes.",
+    "Include only Indian players (paying in INR)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: gamer base × paying conversion × ARPPU (avg revenue per paying user)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mobile gamers in India (any game, monthly): ~500M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Conversion rate to paying (low — Indian users are price-sensitive): ~4-5% = 11M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual IAP revenue: 11M × ₹800 = ₹8,800 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: BGMI, Free Fire, eFootball capture ~70% of this; rest distributed."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mobile gamers in India (any game, monthly)",
+      "value": "~500M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, casual + mid-core gamers who play games with IAP options",
+      "value": "~250M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Conversion rate to paying (low — Indian users are price-sensitive)",
+      "value": "~4-5% = 11M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "ARPPU (annual)",
+      "value": "~₹800 (range ₹50 single skin to ₹10,000 whales; long tail is small).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual IAP revenue",
+      "value": "11M × ₹800 = ₹8,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "BGMI, Free Fire, eFootball capture ~70% of this; rest distributed.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, casual + mid-core gamers who play games with IAP options: ~250M.",
+    "Conversion rate to paying (low — Indian users are price-sensitive): ~4-5% = 11M.",
+    "ARPPU (annual): ~₹800 (range ₹50 single skin to ₹10,000 whales; long tail is small).",
+    "Annual IAP revenue: 11M × ₹800 = ₹8,800 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: BGMI, Free Fire, eFootball capture ~70% of this; rest distributed."
+  }
+}

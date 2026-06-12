@@ -1,0 +1,90 @@
+{
+  "questionId": "generalist-10",
+  "domain": "generalist",
+  "question": "Estimate the number of barbers/salons in India.",
+  "idealClarificationQuestions": [
+    "Both organized salons (Lakme, Naturals, VLCC) + unorganized neighborhood barbers? Yes — total.",
+    "Hairdressers + beauty parlors + standalone barbers? All.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population / haircuts per year per barber."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian male population (gets regular haircuts): ~735M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Avg salon visits per female (in this segment): ~6-8/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Number of barber-equivalents: 8.8B / 9,000 = ~1M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~6-7 lakh salons/barber shops + ~10-12 lakh barber/stylist professionals."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian male population (gets regular haircuts)",
+      "value": "~735M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg haircuts per male per year",
+      "value": "~10-12 (urban higher, rural lower; weighted ~10).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indian female population (uses parlors / hair services regularly)",
+      "value": "~30% of females ~210M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg salon visits per female (in this segment)",
+      "value": "~6-8/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual haircut/salon visits",
+      "value": "735M × 10 + 210M × 7 = 7.35B + 1.47B = ~8.8B visits.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per barber productivity",
+      "value": "~30 customers/day × 300 days = 9,000/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of barber-equivalents",
+      "value": "8.8B / 9,000 = ~1M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~6-7 lakh salons/barber shops + ~10-12 lakh barber/stylist professionals.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total annual haircut/salon visits: 735M × 10 + 210M × 7 = 7.35B + 1.47B = ~8.8B visits.",
+    "Per barber productivity: ~30 customers/day × 300 days = 9,000/year.",
+    "Number of barber-equivalents: 8.8B / 9,000 = ~1M.",
+    "Round: ~6-7 lakh salons/barber shops + ~10-12 lakh barber/stylist professionals."
+  ],
+  "finalAnswerRange": {
+    "low": "6",
+    "high": "7",
+    "ideal": "~6-7 lakh salons/barber shops + ~10-12 lakh barber/stylist professionals."
+  }
+}

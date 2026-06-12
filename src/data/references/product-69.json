@@ -1,0 +1,64 @@
+{
+  "questionId": "product-69",
+  "domain": "product",
+  "question": "Estimate the adoption of D2C beauty brands (Nykaa-marketplace's homegrown + standalone like Sugar, Plum, Mamaearth, Minimalist) in India by 2027.",
+  "idealClarificationQuestions": [
+    "Customers buying directly from D2C brand sites or via Nykaa/Amazon? Both — total D2C brand consumer base.",
+    "Active buyer (purchased in past 6 months)? Yes.",
+    "By 2027? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total female + male beauty-buying population → D2C share of category."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian online beauty buyers in 2026: ~80M (Nykaa MAU is ~40M; Amazon + Flipkart beauty is ~50M; overlap considered)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, buying D2C brands (not just legacy L'Oreal/HUL): ~35-40% = 30M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "By 2027 with continued D2C marketing dominance + launch fatigue (some legacy big-brand resurgence): D2C buyer base grows ~25% = ~37-40M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~38-42M Indians buy from D2C beauty brands by 2027."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian online beauty buyers in 2026",
+      "value": "~80M (Nykaa MAU is ~40M; Amazon + Flipkart beauty is ~50M; overlap considered).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, buying D2C brands (not just legacy L'Oreal/HUL)",
+      "value": "~35-40% = 30M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~38-42M Indians buy from D2C beauty brands by 2027.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian online beauty buyers in 2026: ~80M (Nykaa MAU is ~40M; Amazon + Flipkart beauty is ~50M; overlap considered).",
+    "Of these, buying D2C brands (not just legacy L'Oreal/HUL): ~35-40% = 30M.",
+    "By 2027 with continued D2C marketing dominance + launch fatigue (some legacy big-brand resurgence): D2C buyer base grows ~25% = ~37-40M."
+  ],
+  "finalAnswerRange": {
+    "low": "38",
+    "high": "42",
+    "ideal": "~38-42M Indians buy from D2C beauty brands by 2027."
+  }
+}

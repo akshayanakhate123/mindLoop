@@ -1,0 +1,87 @@
+{
+  "questionId": "marketing-98",
+  "domain": "marketing",
+  "question": "Estimate the annual revenue of an Indian online aggregator listing fee model (Justdial / Sulekha-style).",
+  "idealClarificationQuestions": [
+    "Total revenue of Justdial-class business listing aggregator? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Listed businesses × paid conversion × annual ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Justdial actual business listings: ~3 crore (free)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average ARPU for premium listing: ~₹15,000-20,000/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus AI features and chat enablement: ~₹50 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1,200-1,500 Cr for Justdial-class business."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Justdial actual business listings",
+      "value": "~3 crore (free).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paid premium listings",
+      "value": "~7-8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU for premium listing",
+      "value": "~₹15,000-20,000/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus enterprise / banner ads",
+      "value": "~₹150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus AI features and chat enablement",
+      "value": "~₹50 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "7.5L × ₹17,500 + ₹200 Cr = ₹1,310 Cr + 200 Cr = ~₹1,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1,200-1,500 Cr for Justdial-class business.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Justdial actual business listings: ~3 crore (free).",
+    "Paid premium listings: ~7-8 lakh.",
+    "Average ARPU for premium listing: ~₹15,000-20,000/year.",
+    "Plus enterprise / banner ads: ~₹150 Cr.",
+    "Plus AI features and chat enablement: ~₹50 Cr.",
+    "Total revenue: 7.5L × ₹17,500 + ₹200 Cr = ₹1,310 Cr + 200 Cr = ~₹1,500 Cr.",
+    "Round: ~₹1,200-1,500 Cr for Justdial-class business."
+  ],
+  "finalAnswerRange": {
+    "low": "1,200",
+    "high": "1,500",
+    "ideal": "~₹1,200-1,500 Cr for Justdial-class business."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "questionId": "finance-71",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian space-tech opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Total space industry revenue (govt + private)? Yes.",
+    "By 2030? Yes.",
+    "Launch services + satellites + downstream (geo-imagery, IoT)? All."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Government + private space ecosystem."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "ISRO budget + revenue (commercial via NSIL): ~₹25,000 Cr by 2030."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Satellite manufacturing (Indian-built for global + Indian buyers): ~₹15,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Defence space + Vyommitra-like programs: ~₹6,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹70,000-80,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "ISRO budget + revenue (commercial via NSIL)",
+      "value": "~₹25,000 Cr by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Private space launch (Skyroot, Agnikul, Pixxel, Bellatrix)",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Satellite manufacturing (Indian-built for global + Indian buyers)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Defence space + Vyommitra-like programs",
+      "value": "~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹74,000 Cr (~$9B) Indian space industry by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹70,000-80,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "ISRO budget + revenue (commercial via NSIL): ~₹25,000 Cr by 2030.",
+    "Private space launch (Skyroot, Agnikul, Pixxel, Bellatrix): ~₹8,000 Cr.",
+    "Satellite manufacturing (Indian-built for global + Indian buyers): ~₹15,000 Cr.",
+    "Downstream services (Earth observation imagery, IoT comms, agri-intelligence): ~₹20,000 Cr.",
+    "Defence space + Vyommitra-like programs: ~₹6,000 Cr.",
+    "Total: ~₹74,000 Cr (~$9B) Indian space industry by 2030.",
+    "Round: ~₹70,000-80,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "70,000",
+    "high": "80,000",
+    "ideal": "~₹70,000-80,000 Cr."
+  }
+}

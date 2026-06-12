@@ -1,0 +1,89 @@
+{
+  "questionId": "marketing-66",
+  "domain": "marketing",
+  "question": "Estimate the size of the Indian Muslim consumer market (specific products + halal certified).",
+  "idealClarificationQuestions": [
+    "Total Muslim consumer market in India? Yes.",
+    "Halal-specific + Eid-driven + Islamic banking/finance? Provide breakdown.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Muslim population × purchasing power × halal-specific share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Muslim population: ~21 crore (~14.5%)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Halal-specific segments:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Islamic-compliant banking/finance (Shariah MF, Halal investments): ~₹8,000 Cr AUM."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Rest is general consumer spend."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Muslim population",
+      "value": "~21 crore (~14.5%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Muslim consumer market in India",
+      "value": "21 cr × ₹50,000 = ~₹10.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Halal-certified meat + processed food",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Eid/Ramadan festive retail spike",
+      "value": "~₹35,000 Cr seasonal.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Islamic-compliant banking/finance (Shariah MF, Halal investments)",
+      "value": "~₹8,000 Cr AUM.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Modest fashion + religious products",
+      "value": "~₹12,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total halal/Islamic-specific market",
+      "value": "~₹70,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian Muslim population: ~21 crore (~14.5%).",
+    "Average per-capita consumer spend (slightly lower than national average due to socioeconomic distribution): ~₹50,000/year.",
+    "Total Muslim consumer market in India: 21 cr × ₹50,000 = ~₹10.5 lakh Cr.",
+    "- Halal-certified meat + processed food: ~₹15,000 Cr.",
+    "- Eid/Ramadan festive retail spike: ~₹35,000 Cr seasonal.",
+    "- Islamic-compliant banking/finance (Shariah MF, Halal investments): ~₹8,000 Cr AUM.",
+    "- Modest fashion + religious products: ~₹12,000 Cr.",
+    "Total halal/Islamic-specific market: ~₹70,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total halal/Islamic-specific market: ~₹70,000 Cr."
+  }
+}

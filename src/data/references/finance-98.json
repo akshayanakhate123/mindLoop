@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-98",
+  "domain": "finance",
+  "question": "Estimate the cost of operating a Tier 2 city Indian mall.",
+  "idealClarificationQuestions": [
+    "Mid-sized mall (~5 lakh sqft) in Tier 2 city (Indore / Coimbatore / Lucknow)? Yes.",
+    "Annual operating cost (excludes financing costs)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Mall opex stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier 2 mall annual operating cost stack:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Insurance + facility management: ~₹2 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Revenue: ₹4-5 Cr/month rental × 12 = ~₹50-60 Cr/year."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Operating margin (after CAM is recovered from tenants): ~₹40-50 Cr operating profit."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Property tax",
+      "value": "~₹3-4 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Insurance + facility management",
+      "value": "~₹2 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + events + promotions",
+      "value": "~₹3-4 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Office + admin staff",
+      "value": "~₹2 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating cost",
+      "value": "~₹30-37 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Revenue",
+      "value": "₹4-5 Cr/month rental × 12 = ~₹50-60 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus revenue share, parking, ad income",
+      "value": "~₹15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹65-75 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Common Area Maintenance (CAM) — utilities, housekeeping, security, AC: ~₹20-25 Cr/year (~5L sqft × ₹40-50/sqft/month × 12).",
+    "- Property tax: ~₹3-4 Cr.",
+    "- Insurance + facility management: ~₹2 Cr.",
+    "- Marketing + events + promotions: ~₹3-4 Cr.",
+    "- Office + admin staff: ~₹2 Cr.",
+    "Total operating cost: ~₹30-37 Cr/year.",
+    "Revenue: ₹4-5 Cr/month rental × 12 = ~₹50-60 Cr/year.",
+    "Plus revenue share, parking, ad income: ~₹15 Cr.",
+    "Total revenue: ~₹65-75 Cr.",
+    "Operating margin (after CAM is recovered from tenants): ~₹40-50 Cr operating profit."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Operating margin (after CAM is recovered from tenants): ~₹40-50 Cr operating profit."
+  }
+}

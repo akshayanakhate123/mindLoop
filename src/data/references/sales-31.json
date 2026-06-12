@@ -1,0 +1,65 @@
+{
+  "questionId": "sales-31",
+  "domain": "sales",
+  "question": "How many ATMs does SBI operate in India?",
+  "idealClarificationQuestions": [
+    "State Bank of India total ATM network? Yes.",
+    "Includes cash recyclers? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct disclosure."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "SBI is the largest ATM operator in India."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- On-site ATMs (at branches): ~22,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus ~13,000 deposit-and-cash recyclers (counted separately)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~62,000 ATMs."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "SBI ATM count (FY26)",
+      "value": "~62,000 ATMs (declining trend from peak of 65,000 in 2018 due to UPI displacement).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- On-site ATMs (at branches)",
+      "value": "~22,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Off-site ATMs (standalone)",
+      "value": "~40,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~62,000 ATMs.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~62,000 ATMs."
+  }
+}

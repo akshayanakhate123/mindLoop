@@ -1,0 +1,79 @@
+{
+  "questionId": "product-50",
+  "domain": "product",
+  "question": "Estimate the average shopping app sessions per Indian user per day.",
+  "idealClarificationQuestions": [
+    "Shopping apps: Amazon + Flipkart + Myntra + Meesho + Nykaa etc.? Yes — across all.",
+    "Per active shopper (used a shopping app in past 7 days)? Yes.",
+    "Sessions = each app open? Yes.",
+    "Average day, 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: typical engagement pattern (browsing + transactional sessions)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian active shoppers (any e-commerce app weekly): ~150M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, average sessions per day (across all shopping apps): ~2-3 (Amazon morning + Myntra evening type pattern)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "If asked across ALL shoppers (including weekly-only), average drops to ~1.5/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test product strategy thinking: how a category will diffuse over 3–5 years. Build an adoption curve (S-curve), identify drivers and headwinds, and tie growth to a TAM estimate. Be conservative — most categories grow slower than the hype."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian active shoppers (any e-commerce app weekly)",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, daily browsers (window-shopping habit)",
+      "value": "~60% = ~90M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, average sessions per day (across all shopping apps)",
+      "value": "~2-3 (Amazon morning + Myntra evening type pattern).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Heavy users (Meesho/Flipkart browsers, ~20% of active)",
+      "value": "~5 sessions/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted average",
+      "value": "~3 sessions per day per active shopper.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "These questions test product strategy thinking",
+      "value": "how a category will diffuse over 3–5 years. Build an adoption curve (S-curve), identify drivers and headwinds, and tie growth to a TAM estimate. Be conservative — most categories grow slower than the hype.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, daily browsers (window-shopping habit): ~60% = ~90M.",
+    "Of these, average sessions per day (across all shopping apps): ~2-3 (Amazon morning + Myntra evening type pattern)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "These questions test product strategy thinking: how a category will diffuse over 3–5 years. Build an adoption curve (S-curve), identify drivers and headwinds, and tie growth to a TAM estimate. Be conservative — most categories grow slower than the hype."
+  }
+}

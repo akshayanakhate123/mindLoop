@@ -1,0 +1,82 @@
+{
+  "questionId": "marketing-99",
+  "domain": "marketing",
+  "question": "Estimate the annual marketing spend of HUL (Hindustan Unilever) in India.",
+  "idealClarificationQuestions": [
+    "Total advertising + promotion + marketing budget? Yes.",
+    "Year 2026? Yes.",
+    "All categories combined? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Revenue × A&P ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "HUL India annual revenue (FY26 est.): ~₹62,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total A&P: ₹62,000 × 11% = ~₹6,800 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Trade promotions (modern trade + general trade incentives): ~₹1,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹6,500-7,000 Cr HUL India annual marketing spend."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "HUL India annual revenue (FY26 est.)",
+      "value": "~₹62,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total A&P",
+      "value": "₹62,000 × 11% = ~₹6,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mass media advertising (TV + Digital + Print)",
+      "value": "~₹4,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Trade promotions (modern trade + general trade incentives)",
+      "value": "~₹1,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- In-store promotion, BTL, brand activations",
+      "value": "~₹800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹6,500-7,000 Cr HUL India annual marketing spend.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "HUL India annual revenue (FY26 est.): ~₹62,000 Cr.",
+    "Total A&P: ₹62,000 × 11% = ~₹6,800 Cr.",
+    "- Mass media advertising (TV + Digital + Print): ~₹4,500 Cr.",
+    "- Trade promotions (modern trade + general trade incentives): ~₹1,500 Cr.",
+    "- In-store promotion, BTL, brand activations: ~₹800 Cr.",
+    "Round: ~₹6,500-7,000 Cr HUL India annual marketing spend."
+  ],
+  "finalAnswerRange": {
+    "low": "6,500",
+    "high": "7,000",
+    "ideal": "~₹6,500-7,000 Cr HUL India annual marketing spend."
+  }
+}

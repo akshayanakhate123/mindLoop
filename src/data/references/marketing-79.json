@@ -1,0 +1,95 @@
+{
+  "questionId": "marketing-79",
+  "domain": "marketing",
+  "question": "Estimate the annual revenue of a successful YouTube creator in India with 5M subscribers.",
+  "idealClarificationQuestions": [
+    "Mid-tier creator (5M subs, ~50M views/month) in lifestyle/tech/finance category? Yes.",
+    "All revenue sources: AdSense + brand deals + own products + memberships? Yes.",
+    "Year 2026 annual revenue? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Multiple revenue streams."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Monthly views: ~50M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "AdSense monthly: 50M × ₹150 / 1000 = ₹75 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Own products / courses / merchandise: ~₹2-3 Cr (varies hugely)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹15-17 Cr for a 5M-subscriber Indian YouTuber in lifestyle/tech."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Monthly views",
+      "value": "~50M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "YouTube AdSense RPM for India (per 1,000 views)",
+      "value": "~₹120-180 (varies by niche; finance highest, vlogs lower).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AdSense monthly",
+      "value": "50M × ₹150 / 1000 = ₹75 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual AdSense",
+      "value": "~₹9 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand deals / sponsored integrations (~3-5/month at ₹3-15 lakh each)",
+      "value": "~₹3-5 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Own products / courses / merchandise",
+      "value": "~₹2-3 Cr (varies hugely).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Channel memberships + Super Chats",
+      "value": "~₹50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual revenue",
+      "value": "~₹14-18 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "YouTube AdSense RPM for India (per 1,000 views): ~₹120-180 (varies by niche; finance highest, vlogs lower).",
+    "Take RPM = ₹150.",
+    "AdSense monthly: 50M × ₹150 / 1000 = ₹75 lakh.",
+    "Annual AdSense: ~₹9 Cr.",
+    "Brand deals / sponsored integrations (~3-5/month at ₹3-15 lakh each): ~₹3-5 Cr/year.",
+    "Own products / courses / merchandise: ~₹2-3 Cr (varies hugely).",
+    "Channel memberships + Super Chats: ~₹50 lakh.",
+    "Total annual revenue: ~₹14-18 Cr.",
+    "Round: ~₹15-17 Cr for a 5M-subscriber Indian YouTuber in lifestyle/tech."
+  ],
+  "finalAnswerRange": {
+    "low": "15",
+    "high": "17",
+    "ideal": "~₹15-17 Cr for a 5M-subscriber Indian YouTuber in lifestyle/tech."
+  }
+}

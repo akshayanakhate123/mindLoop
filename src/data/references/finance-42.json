@@ -1,0 +1,93 @@
+{
+  "questionId": "finance-42",
+  "domain": "finance",
+  "question": "Estimate the profitability of a 4-star hotel in a Tier 2 city.",
+  "idealClarificationQuestions": [
+    "100-150 room standalone or branded 4-star hotel in Tier 2 (Indore/Coimbatore/Lucknow)? Yes.",
+    "Mature property (post-3 years)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Hotel P&L: rooms + F&B + banquet."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Rooms: ~120; ARR ₹4,500; occupancy 65%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total revenue: ~₹23-27 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Maintenance + supplies: ~6-7%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT: ~5-10% (after depreciation on real estate)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Rooms",
+      "value": "~120; ARR ₹4,500; occupancy 65%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Room revenue annual",
+      "value": "120 × ₹4,500 × 0.65 × 365 = ~₹12.8 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus F&B (restaurants + room service)",
+      "value": "~₹6-8 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus banquet + weddings + events",
+      "value": "~₹4-6 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹23-27 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- F&B COGS",
+      "value": "~30-35% of F&B revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff (main cost in hotels)",
+      "value": "~28-32% of total revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Utilities (power-heavy)",
+      "value": "~10-12%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Rooms: ~120; ARR ₹4,500; occupancy 65%.",
+    "Room revenue annual: 120 × ₹4,500 × 0.65 × 365 = ~₹12.8 Cr.",
+    "Plus F&B (restaurants + room service): ~₹6-8 Cr.",
+    "Plus banquet + weddings + events: ~₹4-6 Cr.",
+    "Total revenue: ~₹23-27 Cr.",
+    "- Maintenance + supplies: ~6-7%.",
+    "- Marketing + commissions to OTAs: ~6-8%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT: ~5-10% (after depreciation on real estate)."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "generalist-93",
+  "domain": "generalist",
+  "question": "Estimate the data consumption spike on New Year's Eve in India (vs normal day).",
+  "idealClarificationQuestions": [
+    "Mobile data consumption pan-India? Yes.",
+    "31st Dec evening + 1st Jan first hour? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Normal data + spike from video calls + WhatsApp media + OTT streaming."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India daily mobile data consumption: ~85-90 crore GB/day."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- WhatsApp media (greetings videos, photos): ~2x normal."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Combined data spike on NYE: ~30-40% above normal day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Spike: ~30-35 crore GB extra."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India daily mobile data consumption",
+      "value": "~85-90 crore GB/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Video calls (massive)",
+      "value": "~3-4x normal.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- WhatsApp media (greetings videos, photos)",
+      "value": "~2x normal.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- OTT streaming (year-end specials, parties)",
+      "value": "~1.5x normal.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Live streaming / Reels uploads",
+      "value": "~3x normal.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Combined data spike on NYE",
+      "value": "~30-40% above normal day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "NYE consumption",
+      "value": "~115-125 crore GB.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Spike",
+      "value": "~30-35 crore GB extra.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India daily mobile data consumption: ~85-90 crore GB/day.",
+    "NYE consumption: ~115-125 crore GB.",
+    "Spike: ~30-35 crore GB extra."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Spike: ~30-35 crore GB extra."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "questionId": "product-65",
+  "domain": "product",
+  "question": "Estimate the number of Indians using AI for tax filing (chatbots, auto-fill ITR apps) by 2027.",
+  "idealClarificationQuestions": [
+    "Self-filing taxpayers using AI-assisted tools (TaxBuddy AI, ClearTax AI bot, etc.)? Yes.",
+    "Or AI-only filing (no human CA)? AI-assisted.",
+    "By 2027 (next year)? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total individual taxpayers → those who self-file → AI tool penetration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian individual taxpayers (filing ITR): ~80M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, self-filing (vs CA-filing): ~40% = 32M (rising due to ClearTax, Tax2Win)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Drivers to 2027: ClearTax/Quicko AI launches, Income Tax portal AI helper rollout, ChatGPT used informally for tax queries."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Projected 2027 AI-assisted tax filers: ~15-18M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian individual taxpayers (filing ITR)",
+      "value": "~80M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, self-filing (vs CA-filing)",
+      "value": "~40% = 32M (rising due to ClearTax, Tax2Win).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 2027 AI-assisted tax filers",
+      "value": "~15-18M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, self-filing (vs CA-filing): ~40% = 32M (rising due to ClearTax, Tax2Win).",
+    "Of self-filers, using app/portal with AI assistance (auto-fill, chatbot help): ~25-30% in 2026 = ~9M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Projected 2027 AI-assisted tax filers: ~15-18M."
+  }
+}

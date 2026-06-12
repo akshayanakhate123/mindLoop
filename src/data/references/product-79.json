@@ -1,0 +1,77 @@
+{
+  "questionId": "product-79",
+  "domain": "product",
+  "question": "Estimate the dark store count Zepto needs in Bengaluru to serve 10-min delivery citywide.",
+  "idealClarificationQuestions": [
+    "Coverage: Bengaluru metro (~14M population)? Yes.",
+    "Delivery promise: 10 minutes? Yes.",
+    "Dark store catchment radius for 10-min: ~1.5-2 km? Yes.",
+    "Current Zepto coverage or full citywide? Full citywide."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bengaluru area / dark store catchment area = number needed; cross-check with order volume per store viability."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Bengaluru metropolitan area: ~750 sq km (urban + suburban)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Theoretical dark stores for full coverage: 750 / 10 = ~75 stores."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Each store needs minimum order density to be viable: ~1,000-1,500 orders/day. Bengaluru Zepto orders ~250K/day (assuming 25% market share of ~1M Bengaluru quick commerce). 250K / 45 stores = ~5,500 orders/store/day — well above viability."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: Zepto needs ~40-50 dark stores in Bengaluru for full 10-min coverage."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Bengaluru metropolitan area",
+      "value": "~750 sq km (urban + suburban).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Each dark store catchment (1.8 km radius circle)",
+      "value": "π × 1.8^2 ≈ 10 sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Theoretical dark stores for full coverage",
+      "value": "750 / 10 = ~75 stores.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Each store needs minimum order density to be viable",
+      "value": "~1,000-1,500 orders/day. Bengaluru Zepto orders ~250K/day (assuming 25% market share of ~1M Bengaluru quick commerce). 250K / 45 stores = ~5,500 orders/store/day — well above viability.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "Zepto needs ~40-50 dark stores in Bengaluru for full 10-min coverage.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Bengaluru metropolitan area: ~750 sq km (urban + suburban).",
+    "Each dark store catchment (1.8 km radius circle): π × 1.8^2 ≈ 10 sq km.",
+    "Theoretical dark stores for full coverage: 750 / 10 = ~75 stores.",
+    "But quick commerce concentrates in ~60% of city (high-density residential + commercial); ~450 sq km serviceable = ~45 stores at full coverage.",
+    "Each store needs minimum order density to be viable: ~1,000-1,500 orders/day. Bengaluru Zepto orders ~250K/day (assuming 25% market share of ~1M Bengaluru quick commerce). 250K / 45 stores = ~5,500 orders/store/day — well above viability."
+  ],
+  "finalAnswerRange": {
+    "low": "40",
+    "high": "50",
+    "ideal": "Zepto needs ~40-50 dark stores in Bengaluru for full 10-min coverage."
+  }
+}

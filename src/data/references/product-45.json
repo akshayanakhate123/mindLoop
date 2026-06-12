@@ -1,0 +1,79 @@
+{
+  "questionId": "product-45",
+  "domain": "product",
+  "question": "Estimate the daily Swiggy orders during a major cricket match (e.g., IPL final, India-Pakistan).",
+  "idealClarificationQuestions": [
+    "Total orders during match-day in India? Yes.",
+    "All categories: Food + Instamart + Genie? Food + Instamart.",
+    "On match day (24 hours) or just during match window (~4 hours)? 24 hours.",
+    "vs an average non-match day? Yes — note multiplier."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Take Swiggy's average daily orders, apply match-day uplift multiplier driven by group viewing + order spike during innings break."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Swiggy average daily food orders FY26: ~2.5M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Match-day food orders: ~5-6M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total Swiggy orders match day: ~7-8M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: 7-8 million orders on a major cricket match day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Swiggy average daily food orders FY26",
+      "value": "~2.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Match-day uplift in food delivery",
+      "value": "2-2.5x (peer households order during innings break, snacks/dinner all delivered during match window).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Match-day food orders",
+      "value": "~5-6M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Instamart match-day uplift (chips, beverages, ice cream)",
+      "value": "~1.8x normal day. Instamart normal ~1.2M = ~2.2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Swiggy orders match day",
+      "value": "~7-8M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "7-8 million orders on a major cricket match day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Plus Instamart match-day uplift (chips, beverages, ice cream): ~1.8x normal day. Instamart normal ~1.2M = ~2.2M.",
+    "Round: 7-8 million orders on a major cricket match day."
+  ],
+  "finalAnswerRange": {
+    "low": "7",
+    "high": "8",
+    "ideal": "7-8 million orders on a major cricket match day."
+  }
+}

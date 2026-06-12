@@ -1,0 +1,82 @@
+{
+  "questionId": "marketing-91",
+  "domain": "marketing",
+  "question": "Estimate the GMV per customer per year on Amazon India for a Prime member.",
+  "idealClarificationQuestions": [
+    "GMV (gross merchandise value) per Prime member per year? Yes.",
+    "All categories (e-commerce + Fresh + electronics + apparel)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total Prime GMV / total Prime members."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon India total GMV: ~₹2.7 lakh Cr (FY26)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Amazon Prime India members: ~3-3.5 crore HH."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Avg orders per Prime member per year: ~25."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹60,000-65,000 annual GMV per Amazon India Prime member household."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Amazon India total GMV",
+      "value": "~₹2.7 lakh Cr (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Amazon Prime India members",
+      "value": "~3-3.5 crore HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "GMV per Prime member household",
+      "value": "₹2 lakh Cr / 3.25 cr = ~₹61,500/year/HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg orders per Prime member per year",
+      "value": "~25.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg order value",
+      "value": "~₹2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹60,000-65,000 annual GMV per Amazon India Prime member household.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Amazon India total GMV: ~₹2.7 lakh Cr (FY26).",
+    "Of this, Prime members drive ~70-75% of GMV = ₹2 lakh Cr.",
+    "Amazon Prime India members: ~3-3.5 crore HH.",
+    "GMV per Prime member household: ₹2 lakh Cr / 3.25 cr = ~₹61,500/year/HH.",
+    "Avg order value: ~₹2,500.",
+    "Round: ~₹60,000-65,000 annual GMV per Amazon India Prime member household."
+  ],
+  "finalAnswerRange": {
+    "low": "60,000",
+    "high": "65,000",
+    "ideal": "~₹60,000-65,000 annual GMV per Amazon India Prime member household."
+  }
+}

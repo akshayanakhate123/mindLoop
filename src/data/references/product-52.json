@@ -1,0 +1,82 @@
+{
+  "questionId": "product-52",
+  "domain": "product",
+  "question": "Estimate how many college students in India would pay for LinkedIn Premium.",
+  "idealClarificationQuestions": [
+    "Currently or at TAM (full addressable)? Both — give now and TAM.",
+    "Premium tiers: Career, Business, Sales? Career (most relevant for students).",
+    "Defined as paying out-of-pocket (not enterprise license)? Yes.",
+    "College students = currently enrolled in undergrad/postgrad/professional degree? Yes (~40M)."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Funnel: total students → LinkedIn users in this segment → premium-aware → price-acceptance."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total college-going students in India: ~40M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, in placement-relevant final years (Engineering, MBA, BBA, CA, CS, top arts): ~40% = 4.4M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Willing to pay ~₹1,500-1,800/month: ~3-5% (price is steep for students; most use free trials only): 3.5% = ~75K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Today's reality: ~50-80K paying students in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total college-going students in India",
+      "value": "~40M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, on LinkedIn (active profile)",
+      "value": "~25-30% = ~11M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Aware of LinkedIn Premium and aspirational",
+      "value": "~50% = 2.2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Willing to pay ~₹1,500-1,800/month",
+      "value": "~3-5% (price is steep for students; most use free trials only): 3.5% = ~75K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM if pricing dropped to ~₹500/month student-tier",
+      "value": "could go to ~300-400K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Today's reality",
+      "value": "~50-80K paying students in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, on LinkedIn (active profile): ~25-30% = ~11M.",
+    "Of these, in placement-relevant final years (Engineering, MBA, BBA, CA, CS, top arts): ~40% = 4.4M.",
+    "Aware of LinkedIn Premium and aspirational: ~50% = 2.2M.",
+    "Willing to pay ~₹1,500-1,800/month: ~3-5% (price is steep for students; most use free trials only): 3.5% = ~75K.",
+    "TAM if pricing dropped to ~₹500/month student-tier: could go to ~300-400K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Today's reality: ~50-80K paying students in India."
+  }
+}

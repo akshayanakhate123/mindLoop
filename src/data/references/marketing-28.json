@@ -1,0 +1,86 @@
+{
+  "questionId": "marketing-28",
+  "domain": "marketing",
+  "question": "How many people who see a Zomato push notification actually order?",
+  "idealClarificationQuestions": [
+    "Push notification with offer / restaurant recommendation? Yes.",
+    "Of all users notification-delivered, what % convert to an order in next 24 hours? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Push delivery → seen → tap → order funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Notifications sent to active users: 1 crore (sample base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Seen (lock screen / pulled down): ~65% of delivered = 49 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of tappers, ordered within 24 hours: ~25-35% = 70K-1.3 lakh orders."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of notification-seen → order: ~1.5-2.5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Notifications sent to active users",
+      "value": "1 crore (sample base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Delivered (push enabled, app open-able)",
+      "value": "~75% = 75 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Seen (lock screen / pulled down)",
+      "value": "~65% of delivered = 49 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tapped (clicked through to app)",
+      "value": "~3-5% of delivered = 2.5-3.7 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of tappers, ordered within 24 hours",
+      "value": "~25-35% = 70K-1.3 lakh orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net conversion of notification-delivered → order",
+      "value": "~1-1.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of notification-seen → order",
+      "value": "~1.5-2.5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Notifications sent to active users: 1 crore (sample base).",
+    "Delivered (push enabled, app open-able): ~75% = 75 lakh.",
+    "Seen (lock screen / pulled down): ~65% of delivered = 49 lakh.",
+    "Tapped (clicked through to app): ~3-5% of delivered = 2.5-3.7 lakh.",
+    "Of tappers, ordered within 24 hours: ~25-35% = 70K-1.3 lakh orders."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of notification-seen → order: ~1.5-2.5%."
+  }
+}

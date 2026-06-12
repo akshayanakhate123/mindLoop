@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-75",
+  "domain": "sales",
+  "question": "Estimate the conversion rate from in-store retail customer to credit card sign-up at point-of-sale.",
+  "idealClarificationQuestions": [
+    "Shopper in a department store offered a co-branded credit card at checkout? Yes.",
+    "Conversion = card application filled + approved? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "POS conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Shoppers approached at POS: 1,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Fill application + submit: ~60% = 45."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net POS-shopper-to-active-card-customer: ~1.7-2%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test ability to size enterprise / SMB opportunities. The playbook: addressable account count × adoption × ARPU. Distinguish current revenue, TAM, and SAM clearly. Always sanity-check against operator disclosures (Zoho, Freshworks, Tally, Razorpay, etc.) and industry reports (NASSCOM, IDC, Gartner India)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Shoppers approached at POS",
+      "value": "1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Listen to pitch (not dismiss immediately)",
+      "value": "~30% = 300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Consider applying",
+      "value": "~25% = 75.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Fill application + submit",
+      "value": "~60% = 45.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Approved by issuing bank (instant decision)",
+      "value": "~50% = 22-23.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Card activated + used",
+      "value": "~75% within 30 days = 17.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net POS-shopper-to-active-card-customer",
+      "value": "~1.7-2%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~2%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Listen to pitch (not dismiss immediately): ~30% = 300.",
+    "Consider applying: ~25% = 75.",
+    "Fill application + submit: ~60% = 45.",
+    "Approved by issuing bank (instant decision): ~50% = 22-23.",
+    "Card activated + used: ~75% within 30 days = 17.",
+    "These questions test ability to size enterprise / SMB opportunities. The playbook: addressable account count × adoption × ARPU. Distinguish current revenue, TAM, and SAM clearly. Always sanity-check against operator disclosures (Zoho, Freshworks, Tally, Razorpay, etc.) and industry reports (NASSCOM, IDC, Gartner India)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~2%."
+  }
+}

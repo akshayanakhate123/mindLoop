@@ -1,0 +1,82 @@
+{
+  "questionId": "generalist-98",
+  "domain": "generalist",
+  "question": "Estimate the number of Indians who travel for Eid (UP, Bihar, Bengal — homes-village migration).",
+  "idealClarificationQuestions": [
+    "Eid-ul-Fitr (post-Ramzan) week travel? Yes.",
+    "Inter-city/inter-state migration of urban Muslims back to ancestral homes? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Indian Muslim population × urban share × home-travel rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Muslim population: ~21 crore (~14.5% of India)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, with strong rural ancestral ties (UP, Bihar, Bengal, AP, MP): ~5-6 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus international Muslim Indians returning: small, ~5 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~2-2.5 crore Indians travel for Eid migration."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Muslim population",
+      "value": "~21 crore (~14.5% of India).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban Muslim population",
+      "value": "~7-8 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, with strong rural ancestral ties (UP, Bihar, Bengal, AP, MP)",
+      "value": "~5-6 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, who travel to home village/town for Eid",
+      "value": "~30-40% = ~2-2.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus international Muslim Indians returning",
+      "value": "small, ~5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~2-2.5 crore Indians travel for Eid migration.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian Muslim population: ~21 crore (~14.5% of India).",
+    "Urban Muslim population: ~7-8 crore.",
+    "Of these, with strong rural ancestral ties (UP, Bihar, Bengal, AP, MP): ~5-6 crore.",
+    "Of these, who travel to home village/town for Eid: ~30-40% = ~2-2.5 crore.",
+    "Plus international Muslim Indians returning: small, ~5 lakh.",
+    "Round: ~2-2.5 crore Indians travel for Eid migration."
+  ],
+  "finalAnswerRange": {
+    "low": "2",
+    "high": "2.5",
+    "ideal": "~2-2.5 crore Indians travel for Eid migration."
+  }
+}

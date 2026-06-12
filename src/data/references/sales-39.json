@@ -1,0 +1,69 @@
+{
+  "questionId": "sales-39",
+  "domain": "sales",
+  "question": "Estimate the number of CSC (Common Service Center) outlets in rural India.",
+  "idealClarificationQuestions": [
+    "CSC = government's digital service delivery outlets (Aadhaar enrollment, banking, bill payment, e-Mitra style services)? Yes.",
+    "Rural / semi-urban CSCs? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from CSC SPV data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "CSC e-Governance Services India Ltd (SPV under MeitY) data:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Total CSCs operational: ~5.5 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Urban CSCs (ward / mohalla level): ~70,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~5.5 lakh CSCs total; ~4.8 lakh rural."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Total CSCs operational",
+      "value": "~5.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rural CSCs (panchayat / village level)",
+      "value": "~4.8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Urban CSCs (ward / mohalla level)",
+      "value": "~70,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~5.5 lakh CSCs total; ~4.8 lakh rural.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Total CSCs operational: ~5.5 lakh.",
+    "- Rural CSCs (panchayat / village level): ~4.8 lakh.",
+    "Round: ~5.5 lakh CSCs total; ~4.8 lakh rural."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~5.5 lakh CSCs total; ~4.8 lakh rural."
+  }
+}

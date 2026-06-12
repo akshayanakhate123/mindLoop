@@ -1,0 +1,89 @@
+{
+  "questionId": "generalist-60",
+  "domain": "generalist",
+  "question": "How many hospitals (including small clinics + nursing homes) are there in India?",
+  "idealClarificationQuestions": [
+    "Definition: any healthcare facility with at least 1 bed? Yes — all bedded facilities.",
+    "Government + private + non-profit + nursing homes? All.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum of govt + private + nursing homes."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Government healthcare facilities:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- District + sub-divisional hospitals: ~3,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Mid-size (30-100 beds): ~30,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Combined: ~1 lakh bedded hospitals + ~6 lakh clinics/dispensaries."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Sub-centres",
+      "value": "~1.6 lakh (no beds).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- PHCs",
+      "value": "~30,000 (limited beds).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- CHCs (Community Health Centres)",
+      "value": "~6,000 (~30 beds each).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- District + sub-divisional hospitals",
+      "value": "~3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Medical college hospitals",
+      "value": "~700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total bedded govt",
+      "value": "~10,000 substantive facilities.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Large hospitals (>100 beds)",
+      "value": "~10,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-size (30-100 beds)",
+      "value": "~30,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Sub-centres: ~1.6 lakh (no beds).",
+    "- District + sub-divisional hospitals: ~3,000.",
+    "Combined: ~1 lakh bedded hospitals + ~6 lakh clinics/dispensaries."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Combined: ~1 lakh bedded hospitals + ~6 lakh clinics/dispensaries."
+  }
+}

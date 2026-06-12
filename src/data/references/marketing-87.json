@@ -1,0 +1,81 @@
+{
+  "questionId": "marketing-87",
+  "domain": "marketing",
+  "question": "Estimate the annual revenue of Decathlon India.",
+  "idealClarificationQuestions": [
+    "Standalone Indian operations revenue? Yes.",
+    "All revenue: physical stores + online + own brands + 3rd party? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Store count × per-store revenue + online."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Decathlon India stores: ~125 large-format stores (FY26)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total physical: 125 × ₹37 Cr = ~₹4,600 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total: ~₹5,200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹5,000-5,500 Cr annual Decathlon India revenue."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Decathlon India stores",
+      "value": "~125 large-format stores (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per-store annual revenue",
+      "value": "~₹35-40 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total physical",
+      "value": "125 × ₹37 Cr = ~₹4,600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Online (Decathlon website + Amazon presence)",
+      "value": "~₹600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹5,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹5,000-5,500 Cr annual Decathlon India revenue.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average per-store annual revenue: ~₹35-40 Cr.",
+    "Total physical: 125 × ₹37 Cr = ~₹4,600 Cr.",
+    "Online (Decathlon website + Amazon presence): ~₹600 Cr.",
+    "Total: ~₹5,200 Cr.",
+    "Round: ~₹5,000-5,500 Cr annual Decathlon India revenue."
+  ],
+  "finalAnswerRange": {
+    "low": "5,000",
+    "high": "5,500",
+    "ideal": "~₹5,000-5,500 Cr annual Decathlon India revenue."
+  }
+}

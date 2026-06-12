@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-10",
+  "domain": "sales",
+  "question": "Estimate monthly sales of premium chocolates (₹100+ bar) in Mumbai.",
+  "idealClarificationQuestions": [
+    "Premium chocolate (Lindt, Ferrero Rocher, Cadbury Silk Bubbly+, Toblerone, Hershey premium)? Yes.",
+    "Both online + offline retail? Yes.",
+    "Mumbai metro? Yes (~22M).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Affluent HH × consumption × frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai HH ₹15L+ income: ~3-3.5 lakh (top affluent + UHNI)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total premium chocolate buying HHs: ~8 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus gifting (Diwali / Valentine's spikes): ~30% extra annualized."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Tonnage: ₹24 Cr / ₹1,200/kg blended (₹120/100g) = ~20 tonnes/month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai HH ₹15L+ income",
+      "value": "~3-3.5 lakh (top affluent + UHNI).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus mid-affluent occasionally buying premium chocolate",
+      "value": "~5 lakh HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total premium chocolate buying HHs",
+      "value": "~8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average premium chocolate purchase per HH per month",
+      "value": "~2 bars/boxes at ₹150 avg = ₹300/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus gifting (Diwali / Valentine's spikes)",
+      "value": "~30% extra annualized.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly premium chocolate value",
+      "value": "8L × ₹300 = ~₹24 Cr (₹300 Cr/year).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tonnage",
+      "value": "₹24 Cr / ₹1,200/kg blended (₹120/100g) = ~20 tonnes/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Mumbai HH ₹15L+ income: ~3-3.5 lakh (top affluent + UHNI).",
+    "Plus mid-affluent occasionally buying premium chocolate: ~5 lakh HH.",
+    "Total premium chocolate buying HHs: ~8 lakh.",
+    "Average premium chocolate purchase per HH per month: ~2 bars/boxes at ₹150 avg = ₹300/month.",
+    "Monthly premium chocolate value: 8L × ₹300 = ~₹24 Cr (₹300 Cr/year).",
+    "Tonnage: ₹24 Cr / ₹1,200/kg blended (₹120/100g) = ~20 tonnes/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Tonnage: ₹24 Cr / ₹1,200/kg blended (₹120/100g) = ~20 tonnes/month."
+  }
+}

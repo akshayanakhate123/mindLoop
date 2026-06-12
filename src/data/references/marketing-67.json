@@ -1,0 +1,94 @@
+{
+  "questionId": "marketing-67",
+  "domain": "marketing",
+  "question": "Estimate the size of the Indian fitness-enthusiast segment (gym + sportswear + supplements).",
+  "idealClarificationQuestions": [
+    "Active gym-goers + fitness enthusiasts (regular workouts 3+ times/week)? Yes.",
+    "Annual consumer market on fitness category? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Active fitness population × annual spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian gym members + sports/fitness regulars: ~25-30M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Gym membership: ~₹12,000-30,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total annual spend per active enthusiast: ~₹30,000-50,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹50,000 Cr Indian fitness + sportswear + supplements market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian gym members + sports/fitness regulars",
+      "value": "~25-30M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, premium category (paying for fitness gear, supplements)",
+      "value": "~10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Gym membership",
+      "value": "~₹12,000-30,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Sportswear (Nike, Adidas, Decathlon, Puma)",
+      "value": "~₹8,000-15,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Supplements (MuscleBlaze, Optimum Nutrition, MyProtein)",
+      "value": "~₹6,000-15,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual spend per active enthusiast",
+      "value": "~₹30,000-50,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Market size",
+      "value": "10M × ₹35,000 = ~₹35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹50,000 Cr Indian fitness + sportswear + supplements market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian gym members + sports/fitness regulars: ~25-30M.",
+    "- Gym membership: ~₹12,000-30,000.",
+    "- Sportswear (Nike, Adidas, Decathlon, Puma): ~₹8,000-15,000.",
+    "- Supplements (MuscleBlaze, Optimum Nutrition, MyProtein): ~₹6,000-15,000.",
+    "Total annual spend per active enthusiast: ~₹30,000-50,000.",
+    "Market size: 10M × ₹35,000 = ~₹35,000 Cr.",
+    "Plus casual fitness apparel buyers (not enthusiasts but spend on athleisure): ~₹15,000 Cr.",
+    "Total: ~₹50,000 Cr Indian fitness + sportswear + supplements market."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹50,000 Cr Indian fitness + sportswear + supplements market."
+  }
+}

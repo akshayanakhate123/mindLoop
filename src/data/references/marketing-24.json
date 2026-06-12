@@ -1,0 +1,84 @@
+{
+  "questionId": "marketing-24",
+  "domain": "marketing",
+  "question": "Estimate the reach of a LinkedIn sponsored ad campaign for a B2B SaaS product targeting Indian CXOs.",
+  "idealClarificationQuestions": [
+    "Targeting: CXO + senior decision-makers (VP+) at India HQ companies? Yes.",
+    "Budget: ₹10 lakh over 2 weeks? Yes.",
+    "Format: Sponsored content + InMail? Both.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "TAM × CPM × frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian CXO/senior decision-maker LinkedIn TAM: ~12 lakh (CEO, VP, CTO, CFO, Head of-, Director levels in 25K+ companies)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Take CPM = ₹500."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Frequency 3-4 → unique reach from sponsored content ~4-5 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Penetration of TAM: ~40% of TAM saturated."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian CXO/senior decision-maker LinkedIn TAM",
+      "value": "~12 lakh (CEO, VP, CTO, CFO, Head of-, Director levels in 25K+ companies).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "LinkedIn CPM for CXO targeting in India",
+      "value": "~₹400-600 (premium audience, very expensive).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sponsored content impressions at ₹8L",
+      "value": "8L / 500 × 1,000 = 16 lakh impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "InMail at ₹2L",
+      "value": "~5,000 messages sent.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus 5K InMail recipients (highly likely unique)",
+      "value": "~5 lakh total unique CXO reach.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Penetration of TAM",
+      "value": "~40% of TAM saturated.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian CXO/senior decision-maker LinkedIn TAM: ~12 lakh (CEO, VP, CTO, CFO, Head of-, Director levels in 25K+ companies).",
+    "LinkedIn CPM for CXO targeting in India: ~₹400-600 (premium audience, very expensive).",
+    "Take CPM = ₹500.",
+    "Sponsored content impressions at ₹8L: 8L / 500 × 1,000 = 16 lakh impressions.",
+    "InMail at ₹2L: ~5,000 messages sent.",
+    "Frequency 3-4 → unique reach from sponsored content ~4-5 lakh.",
+    "Plus 5K InMail recipients (highly likely unique): ~5 lakh total unique CXO reach."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Penetration of TAM: ~40% of TAM saturated."
+  }
+}

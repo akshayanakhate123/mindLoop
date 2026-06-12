@@ -1,0 +1,86 @@
+{
+  "questionId": "product-67",
+  "domain": "product",
+  "question": "Estimate the adoption of online therapy / mental health services in urban India post-2024.",
+  "idealClarificationQuestions": [
+    "Online video / chat therapy via apps (YourDost, MindPeers, Amaha, Wysa)? Yes.",
+    "Active monthly users? Yes.",
+    "Urban India (Tier 1 + 2)? Yes.",
+    "Currently 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: urban population → mental-health-aware subset → online vs offline split → app adoption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Urban India population (Tier 1 + 2): ~280M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Mental health aware / open to therapy: ~15% = 24M (rising post-COVID, but stigma still present)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of these, used online/app-based therapy: ~30% = 1.8M (rest prefer offline psychiatrists)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.5-2M urban Indians use online therapy/mental health apps monthly."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Urban India population (Tier 1 + 2)",
+      "value": "~280M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Adults 18-50 in this population",
+      "value": "~160M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Mental health aware / open to therapy",
+      "value": "~15% = 24M (rising post-COVID, but stigma still present).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, considered/tried any kind of therapy",
+      "value": "~25% = 6M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, used online/app-based therapy",
+      "value": "~30% = 1.8M (rest prefer offline psychiatrists).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active monthly users on therapy apps",
+      "value": "~1.5-2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.5-2M urban Indians use online therapy/mental health apps monthly.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban India population (Tier 1 + 2): ~280M.",
+    "Mental health aware / open to therapy: ~15% = 24M (rising post-COVID, but stigma still present).",
+    "Of these, considered/tried any kind of therapy: ~25% = 6M.",
+    "Of these, used online/app-based therapy: ~30% = 1.8M (rest prefer offline psychiatrists)."
+  ],
+  "finalAnswerRange": {
+    "low": "1.5",
+    "high": "2",
+    "ideal": "~1.5-2M urban Indians use online therapy/mental health apps monthly."
+  }
+}

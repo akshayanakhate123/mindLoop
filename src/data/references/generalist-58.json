@@ -1,0 +1,78 @@
+{
+  "questionId": "generalist-58",
+  "domain": "generalist",
+  "question": "Estimate the number of operational airports in India.",
+  "idealClarificationQuestions": [
+    "Commercial passenger airports (scheduled flights)? Yes.",
+    "Includes regional UDAN airports? Yes.",
+    "Excludes military/defence-only airports? Yes — civilian only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from AAI/MoCA data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India operational civilian airports: ~150 (operational with scheduled flights)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Major domestic: ~50."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus heliports: ~30 (for chopper services)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~150 commercial airports + ~30 heliports."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India operational civilian airports",
+      "value": "~150 (operational with scheduled flights).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- International",
+      "value": "~30 (notable include DEL, BOM, BLR, MAA, HYD, CCU, COK, AMD, etc.).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Major domestic",
+      "value": "~50.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regional (UDAN, smaller)",
+      "value": "~70.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus heliports",
+      "value": "~30 (for chopper services).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~150 commercial airports + ~30 heliports.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Round: ~150 commercial airports + ~30 heliports."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~150 commercial airports + ~30 heliports."
+  }
+}

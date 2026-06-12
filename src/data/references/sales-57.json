@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-57",
+  "domain": "sales",
+  "question": "Estimate the funnel from car showroom test drives to actual purchase.",
+  "idealClarificationQuestions": [
+    "Test drives at authorized car dealership (Maruti / Hyundai / Tata)? Yes.",
+    "Purchase = booking with token? Yes.",
+    "Time window: 30 days from test drive? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Showroom funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Test drives in a month at a typical dealership: ~200."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Second visit or detailed comparison: ~45% = 90."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Final purchase (within 60 days post booking): ~85% = 45."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~25% test drive conversion to final purchase."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Test drives in a month at a typical dealership",
+      "value": "~200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, took home brochure + made follow-up commitment",
+      "value": "~70% = 140.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Second visit or detailed comparison",
+      "value": "~45% = 90.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Quoted final price + discount negotiation",
+      "value": "~50% = 70.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Token booking",
+      "value": "~30% = ~50-55.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Final purchase (within 60 days post booking)",
+      "value": "~85% = 45.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net test-drive-to-purchase",
+      "value": "~22-25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~25% test drive conversion to final purchase.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, took home brochure + made follow-up commitment: ~70% = 140.",
+    "Second visit or detailed comparison: ~45% = 90.",
+    "Quoted final price + discount negotiation: ~50% = 70.",
+    "Token booking: ~30% = ~50-55.",
+    "Final purchase (within 60 days post booking): ~85% = 45."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~25% test drive conversion to final purchase."
+  }
+}

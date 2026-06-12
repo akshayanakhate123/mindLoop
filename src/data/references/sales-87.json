@@ -1,0 +1,87 @@
+{
+  "questionId": "sales-87",
+  "domain": "sales",
+  "question": "Estimate the B2B sales potential for legaltech (contract management, e-signatures, compliance) in India.",
+  "idealClarificationQuestions": [
+    "Legal technology: contract lifecycle (CLM), e-signatures (DocuSign, SignDesk, Leegality), compliance automation? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Enterprise + SMB adoption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian enterprises + SMBs adopting legaltech: ~50,000 actively."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- CLM (Spotdraft, Razorpay's CLM, Icertis): ~₹450 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- LegalDocs / contract templates (Vakilsearch): ~₹250 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1,500-1,800 Cr Indian legaltech B2B market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian enterprises + SMBs adopting legaltech",
+      "value": "~50,000 actively.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- E-signature (DocuSign, Leegality, SignDesk, Adobe Sign)",
+      "value": "~₹600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- CLM (Spotdraft, Razorpay's CLM, Icertis)",
+      "value": "~₹450 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Compliance + governance (LexisNexis, Provakil, NearLaw)",
+      "value": "~₹400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- LegalDocs / contract templates (Vakilsearch)",
+      "value": "~₹250 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹1,700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1,500-1,800 Cr Indian legaltech B2B market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian enterprises + SMBs adopting legaltech: ~50,000 actively.",
+    "- E-signature (DocuSign, Leegality, SignDesk, Adobe Sign): ~₹600 Cr.",
+    "- CLM (Spotdraft, Razorpay's CLM, Icertis): ~₹450 Cr.",
+    "- Compliance + governance (LexisNexis, Provakil, NearLaw): ~₹400 Cr.",
+    "- LegalDocs / contract templates (Vakilsearch): ~₹250 Cr.",
+    "Total: ~₹1,700 Cr.",
+    "Round: ~₹1,500-1,800 Cr Indian legaltech B2B market."
+  ],
+  "finalAnswerRange": {
+    "low": "1,500",
+    "high": "1,800",
+    "ideal": "~₹1,500-1,800 Cr Indian legaltech B2B market."
+  }
+}

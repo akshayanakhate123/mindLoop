@@ -1,0 +1,74 @@
+{
+  "questionId": "sales-11",
+  "domain": "sales",
+  "question": "Estimate monthly sales of 5-star refrigerators in a Tier 1 city like Pune.",
+  "idealClarificationQuestions": [
+    "5-star BEE-rated refrigerators (premium energy-efficient segment)? Yes.",
+    "Pune metro? Yes (~7M).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual refrigerator sales × 5-star share × city contribution."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian refrigerator sales FY26: ~120 lakh units/year (12M)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "5-star BEE rated share (growing due to mandates + electricity savings): ~28-30% = ~35 lakh units/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly Pune 5-star: ~7,000 units/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "By brand: LG ~22%, Samsung ~20%, Whirlpool ~15%, Haier ~12%, Bosch/Siemens premium ~8%, others 23%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian refrigerator sales FY26",
+      "value": "~120 lakh units/year (12M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "5-star BEE rated share (growing due to mandates + electricity savings)",
+      "value": "~28-30% = ~35 lakh units/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pune share of national refrigerator demand",
+      "value": "~2.5% = ~85K units/year of 5-star.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly Pune 5-star",
+      "value": "~7,000 units/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By brand",
+      "value": "LG ~22%, Samsung ~20%, Whirlpool ~15%, Haier ~12%, Bosch/Siemens premium ~8%, others 23%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian refrigerator sales FY26: ~120 lakh units/year (12M).",
+    "5-star BEE rated share (growing due to mandates + electricity savings): ~28-30% = ~35 lakh units/year.",
+    "Pune share of national refrigerator demand: ~2.5% = ~85K units/year of 5-star."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "By brand: LG ~22%, Samsung ~20%, Whirlpool ~15%, Haier ~12%, Bosch/Siemens premium ~8%, others 23%."
+  }
+}

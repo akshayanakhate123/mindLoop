@@ -1,0 +1,78 @@
+{
+  "questionId": "generalist-57",
+  "domain": "generalist",
+  "question": "Estimate the total length of national highways in India.",
+  "idealClarificationQuestions": [
+    "National Highways only (not state highways or rural roads)? Yes — NH only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from MoRTH/NHAI data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India's National Highway network has expanded rapidly under Bharatmala/PM Gati Shakti."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- 4-lane or more: ~50,000 km."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Single-lane (under upgrade): ~16,000 km."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus all road network: ~63 lakh km."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Length",
+      "value": "~1.46 lakh km (FY26 estimate; was 1.32 lakh km in FY22).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 4-lane or more",
+      "value": "~50,000 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 2-lane",
+      "value": "~80,000 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Single-lane (under upgrade)",
+      "value": "~16,000 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus state highways",
+      "value": "~1.8 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus all road network",
+      "value": "~63 lakh km.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Length: ~1.46 lakh km (FY26 estimate; was 1.32 lakh km in FY22).",
+    "Plus state highways: ~1.8 lakh km.",
+    "Plus all road network: ~63 lakh km."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus all road network: ~63 lakh km."
+  }
+}

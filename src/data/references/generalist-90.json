@@ -1,0 +1,77 @@
+{
+  "questionId": "generalist-90",
+  "domain": "generalist",
+  "question": "Estimate the number of Indians who go shopping on Black Friday / Big Billion Days kickoff day.",
+  "idealClarificationQuestions": [
+    "Online shoppers placing at least 1 order on the kickoff day? Yes.",
+    "Across all platforms (Amazon, Flipkart, Myntra, Meesho, Nykaa)? Yes.",
+    "Year 2026? Yes.",
+    "Includes app browsers without buying? Buyers only."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Festive sale daily order volume / orders per buyer."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Big Billion Days / GIF kickoff day total orders pan-India: ~1.5-2 crore orders (across all platforms combined)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average orders per buyer on kickoff day: ~1.4 (one main + one impulse)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus app sessions without purchase (high traffic): ~6-8 crore unique app browsers."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.2-1.5 crore unique shoppers + ~7 crore browsers on kickoff day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Big Billion Days / GIF kickoff day total orders pan-India",
+      "value": "~1.5-2 crore orders (across all platforms combined).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average orders per buyer on kickoff day",
+      "value": "~1.4 (one main + one impulse).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique shoppers",
+      "value": "~1.1-1.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus app sessions without purchase (high traffic)",
+      "value": "~6-8 crore unique app browsers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.2-1.5 crore unique shoppers + ~7 crore browsers on kickoff day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Big Billion Days / GIF kickoff day total orders pan-India: ~1.5-2 crore orders (across all platforms combined).",
+    "Average orders per buyer on kickoff day: ~1.4 (one main + one impulse).",
+    "Unique shoppers: ~1.1-1.5 crore.",
+    "Plus app sessions without purchase (high traffic): ~6-8 crore unique app browsers.",
+    "Round: ~1.2-1.5 crore unique shoppers + ~7 crore browsers on kickoff day."
+  ],
+  "finalAnswerRange": {
+    "low": "1.2",
+    "high": "1.5",
+    "ideal": "~1.2-1.5 crore unique shoppers + ~7 crore browsers on kickoff day."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "questionId": "finance-86",
+  "domain": "finance",
+  "question": "Estimate the cost of setting up a 5-screen multiplex in India.",
+  "idealClarificationQuestions": [
+    "Greenfield 5-screen multiplex in a Tier 1 mall? Yes.",
+    "All-in capex (fit-out + equipment + furniture)? Yes.",
+    "Excludes land/rent? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-screen capex."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per-screen capex breakdown (~₹4-5 Cr):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Lighting + electrical + automation: ~₹25 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Per-screen capex: ~₹4-5 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total setup: ~₹23-28 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Projection equipment (4K laser projector + screen + sound)",
+      "value": "~₹1.5-2 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Seating (~200 seats per screen × ₹8-12K/seat)",
+      "value": "~₹20 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- HVAC + acoustic treatment",
+      "value": "~₹35 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Lighting + electrical + automation",
+      "value": "~₹25 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Interior + carpet + decor",
+      "value": "~₹30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Toilets + lobbies + common areas allocated",
+      "value": "~₹40 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- F&B counter + kitchen + storage",
+      "value": "~₹50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-screen capex",
+      "value": "~₹4-5 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per-screen capex breakdown (~₹4-5 Cr):",
+    "- Projection equipment (4K laser projector + screen + sound): ~₹1.5-2 Cr.",
+    "- Seating (~200 seats per screen × ₹8-12K/seat): ~₹20 lakh.",
+    "- HVAC + acoustic treatment: ~₹35 lakh.",
+    "- Lighting + electrical + automation: ~₹25 lakh.",
+    "- Interior + carpet + decor: ~₹30 lakh.",
+    "- Toilets + lobbies + common areas allocated: ~₹40 lakh.",
+    "- F&B counter + kitchen + storage: ~₹50 lakh.",
+    "Per-screen capex: ~₹4-5 Cr.",
+    "For 5-screen multiplex: ~₹20-25 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total setup: ~₹23-28 Cr."
+  }
+}

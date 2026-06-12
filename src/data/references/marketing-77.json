@@ -1,0 +1,97 @@
+{
+  "questionId": "marketing-77",
+  "domain": "marketing",
+  "question": "How much revenue can a new fitness app generate in Year 1 in India?",
+  "idealClarificationQuestions": [
+    "New app launching with ₹25 cr marketing budget? Yes.",
+    "Category: Cure.fit / HealthifyMe clone — workout + nutrition + tracking? Yes.",
+    "Year 1 revenue projection? Yes.",
+    "Year 2026 launch? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Acquisition → conversion → ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Marketing spend: ₹25 cr; avg CAC for fitness app: ~₹250 (paid acquisition)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, paying users (basic ₹500/mo or premium ₹2,000/mo): ~5-7% = 15K-21K paid users."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus content commerce / in-app purchases: ~₹2 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: Year 1 will be loss-making (₹25 cr spend vs ₹15-18 cr revenue)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Marketing spend",
+      "value": "₹25 cr; avg CAC for fitness app: ~₹250 (paid acquisition).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Users acquired",
+      "value": "25 cr / 250 = ~10 lakh installs.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, MAU at 6 months",
+      "value": "~30% = 3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, paying users (basic ₹500/mo or premium ₹2,000/mo)",
+      "value": "~5-7% = 15K-21K paid users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU",
+      "value": "~₹800/month or ₹9,600/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Year 1 paid subscriber revenue",
+      "value": "18K × ₹6,000 (avg time as paid = 7-8 months) = ~₹11 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus content commerce / in-app purchases",
+      "value": "~₹2 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus brand sponsorships / advertising",
+      "value": "~₹3 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Marketing spend: ₹25 cr; avg CAC for fitness app: ~₹250 (paid acquisition).",
+    "Users acquired: 25 cr / 250 = ~10 lakh installs.",
+    "Of these, MAU at 6 months: ~30% = 3 lakh.",
+    "Of these, paying users (basic ₹500/mo or premium ₹2,000/mo): ~5-7% = 15K-21K paid users.",
+    "Average ARPU: ~₹800/month or ₹9,600/year.",
+    "Year 1 paid subscriber revenue: 18K × ₹6,000 (avg time as paid = 7-8 months) = ~₹11 Cr.",
+    "Plus content commerce / in-app purchases: ~₹2 Cr.",
+    "Plus brand sponsorships / advertising: ~₹3 Cr.",
+    "Total Year 1: ~₹15-18 Cr revenue.",
+    "Note: Year 1 will be loss-making (₹25 cr spend vs ₹15-18 cr revenue)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: Year 1 will be loss-making (₹25 cr spend vs ₹15-18 cr revenue)."
+  }
+}

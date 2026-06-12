@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-96",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for trade-finance and SME lending platforms in India.",
+  "idealClarificationQuestions": [
+    "Digital trade-finance + SME working capital loans + invoice discounting? Yes.",
+    "Annual disbursement value? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "MSME lending TAM."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian MSMEs: ~6.3 crore registered."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual working capital + trade finance need: ~₹35 lakh Cr (MSME segment)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Players: Lendingkart, Kinara Capital, Indifi, KredX, Cashfree, RazorpayX, Credit Saison India."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Combined digital MSME lending: ~₹3-4 lakh Cr annual disbursement opportunity."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian MSMEs",
+      "value": "~6.3 crore registered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, with formal credit access",
+      "value": "~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual working capital + trade finance need",
+      "value": "~₹35 lakh Cr (MSME segment).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently met",
+      "value": "~₹15 lakh Cr through formal banking; ~₹20 lakh Cr gap.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digital MSME lending opportunity (filling part of the gap)",
+      "value": "~₹2-3 lakh Cr/year by FY26.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TReDS (Bills discounting)",
+      "value": "~₹2 lakh Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Combined digital MSME lending",
+      "value": "~₹3-4 lakh Cr annual disbursement opportunity.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian MSMEs: ~6.3 crore registered.",
+    "Annual working capital + trade finance need: ~₹35 lakh Cr (MSME segment).",
+    "Currently met: ~₹15 lakh Cr through formal banking; ~₹20 lakh Cr gap.",
+    "Digital MSME lending opportunity (filling part of the gap): ~₹2-3 lakh Cr/year by FY26.",
+    "Players: Lendingkart, Kinara Capital, Indifi, KredX, Cashfree, RazorpayX, Credit Saison India.",
+    "TReDS (Bills discounting): ~₹2 lakh Cr/year.",
+    "Combined digital MSME lending: ~₹3-4 lakh Cr annual disbursement opportunity."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Combined digital MSME lending: ~₹3-4 lakh Cr annual disbursement opportunity."
+  }
+}

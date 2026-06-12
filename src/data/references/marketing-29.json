@@ -1,0 +1,76 @@
+{
+  "questionId": "marketing-29",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate for an Amazon India product detail page (PDP) for an electronics item.",
+  "idealClarificationQuestions": [
+    "PDP visitor → adds to cart → places order? Yes.",
+    "Category: smartphones / electronics? Yes.",
+    "Average product (not flash sale)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard e-commerce CR by category."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon India electronics PDP traffic sources: paid ads (low intent), organic search (high intent), category browse (medium)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Cart-to-order rate: ~50-60% (high for committed shopping)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Top-performing (Apple, Samsung flagships with strong intent): 12-15%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average: ~5-6% PDP conversion."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "PDP-to-cart-add rate",
+      "value": "~10-12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cart-to-order rate",
+      "value": "~50-60% (high for committed shopping).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net PDP-to-purchase",
+      "value": "~5-7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Top-performing (Apple, Samsung flagships with strong intent)",
+      "value": "12-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Long tail (less popular SKUs)",
+      "value": "1-3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average",
+      "value": "~5-6% PDP conversion.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average: ~5-6% PDP conversion."
+  }
+}

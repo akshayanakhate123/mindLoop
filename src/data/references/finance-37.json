@@ -1,0 +1,90 @@
+{
+  "questionId": "finance-37",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for an Indian e-commerce platform like Meesho.",
+  "idealClarificationQuestions": [
+    "Meesho core marketplace EBITDA margin? Yes.",
+    "FY26 (Meesho turned EBITDA positive in FY24)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Marketplace economics."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Cost stack (% of revenue):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Tech + product + employee: ~8-12%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~65-80%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT: still near break-even or slight loss."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Logistics (delivery cost subsidy + RTO + reverse logistics)",
+      "value": "~35-40% (Meesho's biggest cost; flat-rate shipping incl.).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + customer acquisition",
+      "value": "~15-20% (down from 40%+ at peak burn).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech + product + employee",
+      "value": "~8-12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Payment gateway + payouts",
+      "value": "~2-3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Support + ops",
+      "value": "~5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~65-80%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net EBITDA margin",
+      "value": "~1-5% (recently EBITDA positive after years of losses).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Logistics (delivery cost subsidy + RTO + reverse logistics): ~35-40% (Meesho's biggest cost; flat-rate shipping incl.).",
+    "- Marketing + customer acquisition: ~15-20% (down from 40%+ at peak burn).",
+    "- Tech + product + employee: ~8-12%.",
+    "- Payment gateway + payouts: ~2-3%.",
+    "- Support + ops: ~5%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net EBITDA margin: ~1-5% (recently EBITDA positive after years of losses)."
+  }
+}

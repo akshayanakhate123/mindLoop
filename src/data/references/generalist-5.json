@@ -1,0 +1,94 @@
+{
+  "questionId": "generalist-5",
+  "domain": "generalist",
+  "question": "Estimate the number of school-going children in India.",
+  "idealClarificationQuestions": [
+    "Pre-primary (KG) + primary + secondary + senior secondary? Yes — Class KG to 12.",
+    "Both formal schools + madrasas + alternative schools? All.",
+    "Currently enrolled (not absentees)? Enrolled.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × school-age cohort × enrollment rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Pre-primary (3-5 yrs): ~75M; enrollment ~70% = 52M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Secondary (14-15): ~50M; enrollment ~80% = 40M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total enrolled: 52 + 110 + 63 + 40 + 41 = ~306M children."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Children in school-age band (3-18 years)",
+      "value": "~28% = ~405M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Pre-primary (3-5 yrs)",
+      "value": "~75M; enrollment ~70% = 52M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Primary (6-10)",
+      "value": "~115M; enrollment ~95% = 110M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Upper primary (11-13)",
+      "value": "~70M; enrollment ~90% = 63M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Secondary (14-15)",
+      "value": "~50M; enrollment ~80% = 40M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior secondary (16-18)",
+      "value": "~75M; enrollment ~55% = 41M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total enrolled",
+      "value": "52 + 110 + 63 + 40 + 41 = ~306M children.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Children in school-age band (3-18 years): ~28% = ~405M.",
+    "- Pre-primary (3-5 yrs): ~75M; enrollment ~70% = 52M.",
+    "- Primary (6-10): ~115M; enrollment ~95% = 110M.",
+    "- Upper primary (11-13): ~70M; enrollment ~90% = 63M.",
+    "- Secondary (14-15): ~50M; enrollment ~80% = 40M.",
+    "- Senior secondary (16-18): ~75M; enrollment ~55% = 41M.",
+    "Total enrolled: 52 + 110 + 63 + 40 + 41 = ~306M children."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total enrolled: 52 + 110 + 63 + 40 + 41 = ~306M children."
+  }
+}

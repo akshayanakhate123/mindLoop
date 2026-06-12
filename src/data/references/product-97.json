@@ -1,0 +1,92 @@
+{
+  "questionId": "product-97",
+  "domain": "product",
+  "question": "Estimate the GPUs (compute) required to run a national AI service like 'India ChatGPT' (Bhashini-scale) for 100M users.",
+  "idealClarificationQuestions": [
+    "100M MAU using a generative AI service like a national LLM? Yes.",
+    "Average usage: a few queries/day per active user? Assume 5 queries per day per active user.",
+    "GPU count for inference (training separate)? Inference.",
+    "Today's hardware (H100-equivalent)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total token volume per day / per-GPU throughput."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "100M MAU; daily active fraction ~40% = 40M DAU."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total daily tokens generated: 100B tokens."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "But peak hour load is ~3-4x average: need ~75-100 GPUs for peak."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~500-1,000 H100-class GPUs for inference."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Queries per DAU",
+      "value": "5; total daily queries: 200M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average tokens generated per query",
+      "value": "~500 tokens.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily tokens generated",
+      "value": "100B tokens.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per H100 GPU throughput for ~70B model inference",
+      "value": "~50K tokens/sec sustained = ~4.3B tokens/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "GPUs needed at 100% utilization",
+      "value": "100B / 4.3B = ~24 GPUs.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But peak hour load is ~3-4x average",
+      "value": "need ~75-100 GPUs for peak.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus redundancy + multi-region failover (3x)",
+      "value": "~300 GPUs.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If model is larger (200B+ India multilingual model)",
+      "value": "3x more = ~900-1,000 GPUs.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "100M MAU; daily active fraction ~40% = 40M DAU.",
+    "Per H100 GPU throughput for ~70B model inference: ~50K tokens/sec sustained = ~4.3B tokens/day.",
+    "GPUs needed at 100% utilization: 100B / 4.3B = ~24 GPUs.",
+    "Plus redundancy + multi-region failover (3x): ~300 GPUs.",
+    "If model is larger (200B+ India multilingual model): 3x more = ~900-1,000 GPUs."
+  ],
+  "finalAnswerRange": {
+    "low": "500",
+    "high": "1,000",
+    "ideal": "~500-1,000 H100-class GPUs for inference."
+  }
+}

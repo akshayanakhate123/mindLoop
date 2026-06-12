@@ -1,0 +1,74 @@
+{
+  "questionId": "product-46",
+  "domain": "product",
+  "question": "Estimate the average number of reviews left per Amazon India shopper per year.",
+  "idealClarificationQuestions": [
+    "Active Amazon India shopper (placed at least 1 order)? Yes.",
+    "Reviews on products (text + ratings)? Both — but a star rating without text counts.",
+    "Per shopper per year? Yes.",
+    "2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: orders per shopper × review-rate per order."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Average orders per active Amazon shopper per year: ~25 (Prime users) or ~10 (non-Prime)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Weighted: 30M Prime × 25 + 50M non-Prime × 10 = 750M + 500M = 1.25B orders / 80M shoppers = ~16 orders/shopper."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Reviews per shopper per year: 16 × 0.07 = ~1.1."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1-1.5 reviews per Amazon shopper per year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average orders per active Amazon shopper per year",
+      "value": "~25 (Prime users) or ~10 (non-Prime).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted",
+      "value": "30M Prime × 25 + 50M non-Prime × 10 = 750M + 500M = 1.25B orders / 80M shoppers = ~16 orders/shopper.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, % that get any review",
+      "value": "~6-8% (most users don't rate; reminders push it up).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reviews per shopper per year",
+      "value": "16 × 0.07 = ~1.1.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1-1.5 reviews per Amazon shopper per year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Weighted: 30M Prime × 25 + 50M non-Prime × 10 = 750M + 500M = 1.25B orders / 80M shoppers = ~16 orders/shopper.",
+    "Reviews per shopper per year: 16 × 0.07 = ~1.1."
+  ],
+  "finalAnswerRange": {
+    "low": "1",
+    "high": "1.5",
+    "ideal": "~1-1.5 reviews per Amazon shopper per year."
+  }
+}

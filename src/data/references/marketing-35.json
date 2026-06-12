@@ -1,0 +1,82 @@
+{
+  "questionId": "marketing-35",
+  "domain": "marketing",
+  "question": "Estimate the OTP-to-conversion drop-off in a fintech KYC funnel.",
+  "idealClarificationQuestions": [
+    "User entering phone → OTP verification → KYC complete? Yes.",
+    "Indian fintech (mutual fund / broking / lending) signup? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Calculate",
+      "description": "Phone number entered: 100% (start)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "PAN entered: ~85% of OTP-verified."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Bank account linking: ~85%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~25-30% of users who start phone-OTP entry complete full KYC."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Phone number entered",
+      "value": "100% (start).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OTP requested",
+      "value": "100% (auto).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OTP entered correctly",
+      "value": "~70-75% (15-20% drop due to delivery delays, wrong number, abandonment).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PAN entered",
+      "value": "~85% of OTP-verified.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PAN verified by NSDL",
+      "value": "~95% (rest are typos).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Aadhaar verification (e-KYC OTP or DigiLocker)",
+      "value": "~75-80% completion.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bank account linking",
+      "value": "~85%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Selfie / video KYC",
+      "value": "~65-75% (where applicable; this is a major drop-off).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Net signup-to-KYC-complete: 0.75 × 0.85 × 0.95 × 0.78 × 0.85 × 0.70 = ~28%."
+  ],
+  "finalAnswerRange": {
+    "low": "25",
+    "high": "30",
+    "ideal": "~25-30% of users who start phone-OTP entry complete full KYC."
+  }
+}

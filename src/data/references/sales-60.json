@@ -1,0 +1,85 @@
+{
+  "questionId": "sales-60",
+  "domain": "sales",
+  "question": "Estimate the conversion rate for online classifieds (OLX) for used items.",
+  "idealClarificationQuestions": [
+    "OLX seller listings → actual transaction completed? Yes.",
+    "Mid-value items (₹2,000-50,000 — phones, furniture, appliances)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Listing → contact → meet → transaction."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Listings on OLX (monthly): 100 items."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, serious negotiations: ~50% = 30."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Successful transaction (cash or UPI): ~50% = 9."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average time-to-sale: 18-25 days."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Listings on OLX (monthly)",
+      "value": "100 items.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Contacted by potential buyer (calls / chats)",
+      "value": "60% = 60 listings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, serious negotiations",
+      "value": "~50% = 30.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Meeting / inspection scheduled",
+      "value": "~60% = 18.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Successful transaction (cash or UPI)",
+      "value": "~50% = 9.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net listing-to-sale",
+      "value": "~9%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average time-to-sale",
+      "value": "18-25 days.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Contacted by potential buyer (calls / chats): 60% = 60 listings.",
+    "Of these, serious negotiations: ~50% = 30.",
+    "Meeting / inspection scheduled: ~60% = 18.",
+    "Successful transaction (cash or UPI): ~50% = 9."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average time-to-sale: 18-25 days."
+  }
+}

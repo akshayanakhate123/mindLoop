@@ -1,0 +1,82 @@
+{
+  "questionId": "generalist-71",
+  "domain": "generalist",
+  "question": "Estimate the number of police stations (thanas) in India.",
+  "idealClarificationQuestions": [
+    "All civil police stations (regular + traffic + women + cyber + railway)? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from MHA data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "BPRD reports total police stations in India: ~17,000-17,500."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Traffic police stations: ~700."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Cybercrime stations: ~500 (rapidly increasing)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~17,500 police stations across India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "BPRD reports total police stations in India",
+      "value": "~17,000-17,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regular law-and-order police stations",
+      "value": "~15,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Traffic police stations",
+      "value": "~700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Women's police stations",
+      "value": "~700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cybercrime stations",
+      "value": "~500 (rapidly increasing).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Railway + special",
+      "value": "~600.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~17,500 police stations across India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Railway + special: ~600."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~17,500 police stations across India."
+  }
+}

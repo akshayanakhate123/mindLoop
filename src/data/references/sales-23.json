@@ -1,0 +1,78 @@
+{
+  "questionId": "sales-23",
+  "domain": "sales",
+  "question": "Estimate monthly demand for tractors in Punjab (agriculture-heavy state).",
+  "idealClarificationQuestions": [
+    "Annual tractor sales in Punjab? Monthly average.",
+    "All HP ratings + brands? Yes (Mahindra, Sonalika, Escorts-Kubota, John Deere, Massey).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Punjab share of national tractor demand."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian tractor sales FY26: ~10 lakh units (recovery from FY24 slowdown)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Punjab annual tractor sales: ~55,000 units."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Seasonal peaks (kharif + rabi seasons May-Jun, Oct-Nov): ~7,000-8,000 units/month at peak; lean months ~3,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Brand mix Punjab: Sonalika (Punjab-HQ) ~22%, Mahindra ~28%, Escorts ~15%, John Deere ~12%, Massey/Kubota/New Holland ~23%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian tractor sales FY26",
+      "value": "~10 lakh units (recovery from FY24 slowdown).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Punjab share of national tractor demand",
+      "value": "~5-6% (high mechanization but small state).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Punjab annual tractor sales",
+      "value": "~55,000 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly average",
+      "value": "~4,500-5,000 units/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Seasonal peaks (kharif + rabi seasons May-Jun, Oct-Nov)",
+      "value": "~7,000-8,000 units/month at peak; lean months ~3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand mix Punjab",
+      "value": "Sonalika (Punjab-HQ) ~22%, Mahindra ~28%, Escorts ~15%, John Deere ~12%, Massey/Kubota/New Holland ~23%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian tractor sales FY26: ~10 lakh units (recovery from FY24 slowdown).",
+    "Seasonal peaks (kharif + rabi seasons May-Jun, Oct-Nov): ~7,000-8,000 units/month at peak; lean months ~3,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Brand mix Punjab: Sonalika (Punjab-HQ) ~22%, Mahindra ~28%, Escorts ~15%, John Deere ~12%, Massey/Kubota/New Holland ~23%."
+  }
+}

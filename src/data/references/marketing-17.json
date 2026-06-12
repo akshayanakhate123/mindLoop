@@ -1,0 +1,94 @@
+{
+  "questionId": "marketing-17",
+  "domain": "marketing",
+  "question": "Estimate the cumulative reach of a 7-day digital campaign on Hotstar/JioCinema for a movie launch.",
+  "idealClarificationQuestions": [
+    "Streaming platform pre-roll + mid-roll + masthead + display ads for movie promo? Yes.",
+    "7-day flighting before release? Yes.",
+    "Major movie (Pathaan/Animal/Jawan-class budget)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Budget / CPM = impressions; multiplied across formats."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Movie marketing budget on JioHotstar/JioCinema for major release: ~₹2-3 crore on this platform alone."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total impressions: ₹2.5 cr / ₹120 × 1,000 = 2.1 crore impressions over 7 days."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total impressions: ~4-5 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Unique reach: ~1.2-1.5 crore unique JioCinema/Hotstar users."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Movie marketing budget on JioHotstar/JioCinema for major release",
+      "value": "~₹2-3 crore on this platform alone.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "JioCinema/Hotstar CPM for movie ads",
+      "value": "~₹100-150 (premium content).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total impressions",
+      "value": "₹2.5 cr / ₹120 × 1,000 = 2.1 crore impressions over 7 days.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus masthead takeover (1-2 days)",
+      "value": "adds 1-1.5 crore impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus organic platform exposure (banners, recommendations)",
+      "value": "1 crore additional.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total impressions",
+      "value": "~4-5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Frequency",
+      "value": "~3-4.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach",
+      "value": "~1.2-1.5 crore unique JioCinema/Hotstar users.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Movie marketing budget on JioHotstar/JioCinema for major release: ~₹2-3 crore on this platform alone.",
+    "JioCinema/Hotstar CPM for movie ads: ~₹100-150 (premium content).",
+    "Total impressions: ₹2.5 cr / ₹120 × 1,000 = 2.1 crore impressions over 7 days.",
+    "Plus masthead takeover (1-2 days): adds 1-1.5 crore impressions.",
+    "Plus organic platform exposure (banners, recommendations): 1 crore additional.",
+    "Total impressions: ~4-5 crore.",
+    "Unique reach: ~1.2-1.5 crore unique JioCinema/Hotstar users."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Unique reach: ~1.2-1.5 crore unique JioCinema/Hotstar users."
+  }
+}

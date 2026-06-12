@@ -1,0 +1,90 @@
+{
+  "questionId": "product-78",
+  "domain": "product",
+  "question": "Estimate the number of customer support agents needed for a large Indian fintech app (e.g., PhonePe / Paytm).",
+  "idealClarificationQuestions": [
+    "Active user base assumed: ~250M MAU? Yes.",
+    "All channels: voice, chat, email? Yes.",
+    "Outsourced + in-house? Yes (total).",
+    "Average support ticket volume per user per month? Industry knowledge."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Tickets per month / agent productivity = headcount needed."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Monthly support contact rate (transactions × failure rate × user-reach-out rate): ~1-1.5% of MAU contact support per month = 2.5-3.75M tickets/month."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average resolution time: 8-10 mins per ticket (mix of FAQ chatbot deflected, simple chat, escalated voice)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Agents needed (24×7 coverage with 3 shifts): 100K daily / 40 tickets = ~2,500 active agents per shift × 3 shifts = ~7,500 agents."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~9,000-10,000 support agents."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "MAU",
+      "value": "~250M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily tickets",
+      "value": "~100-125K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average resolution time",
+      "value": "8-10 mins per ticket (mix of FAQ chatbot deflected, simple chat, escalated voice).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Productive agent-hours/day",
+      "value": "~6 hours (after breaks, idle).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tickets per agent per day",
+      "value": "6 × 60 / 9 = ~40 tickets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Agents needed (24×7 coverage with 3 shifts)",
+      "value": "100K daily / 40 tickets = ~2,500 active agents per shift × 3 shifts = ~7,500 agents.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus L2/specialized for fraud/escalations",
+      "value": "~1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~9,000-10,000 support agents.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Monthly support contact rate (transactions × failure rate × user-reach-out rate): ~1-1.5% of MAU contact support per month = 2.5-3.75M tickets/month.",
+    "Tickets per agent per day: 6 × 60 / 9 = ~40 tickets.",
+    "Agents needed (24×7 coverage with 3 shifts): 100K daily / 40 tickets = ~2,500 active agents per shift × 3 shifts = ~7,500 agents."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~9,000-10,000 support agents."
+  }
+}

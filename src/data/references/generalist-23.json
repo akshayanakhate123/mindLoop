@@ -1,0 +1,75 @@
+{
+  "questionId": "generalist-23",
+  "domain": "generalist",
+  "question": "How many post offices are there in India?",
+  "idealClarificationQuestions": [
+    "All post offices including branch + sub + head + extra-departmental? All.",
+    "Operational only? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from India Post data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India has the world's largest postal network."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Branch post offices (rural): ~1.3 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Head post offices (district HQ): ~810."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.55 lakh post offices."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total post offices",
+      "value": "~1.55 lakh (mostly stable, slight decline).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Branch post offices (rural)",
+      "value": "~1.3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Sub post offices (urban + town)",
+      "value": "~24,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Head post offices (district HQ)",
+      "value": "~810.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.55 lakh post offices.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total post offices: ~1.55 lakh (mostly stable, slight decline).",
+    "- Branch post offices (rural): ~1.3 lakh.",
+    "- Sub post offices (urban + town): ~24,000.",
+    "Round: ~1.55 lakh post offices."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1.55 lakh post offices."
+  }
+}

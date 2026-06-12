@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-95",
+  "domain": "marketing",
+  "question": "Estimate the customer acquisition cost (CAC) for an Indian D2C apparel brand.",
+  "idealClarificationQuestions": [
+    "Cost per first-time customer (placed first order) blended across channels? Yes.",
+    "Indian D2C apparel (Bewakoof, Souled Store, FableStreet, Andamen, etc.)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Marketing spend / new customers."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per Q31: 1% impression-to-purchase, 1.5% click-to-purchase."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "CAC: ₹7,500 / 15 = ₹500."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "AOV for D2C apparel: ~₹1,200-1,500."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "First-order break-even is tight; profitability needs repeat."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Per Q31",
+      "value": "1% impression-to-purchase, 1.5% click-to-purchase.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "CAC",
+      "value": "₹7,500 / 15 = ₹500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus brand spend (organic content, influencer)",
+      "value": "adds ~₹200 spread CAC.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total blended CAC",
+      "value": "~₹650-800.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AOV for D2C apparel",
+      "value": "~₹1,200-1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gross margin",
+      "value": "~55% = ~₹700 contribution.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Meta CPM ~₹70-80 → 1 lakh impressions costs ~₹7,500.",
+    "1 lakh impressions → 1,000 clicks (1% CTR) → 15 purchases (1.5%).",
+    "CAC: ₹7,500 / 15 = ₹500.",
+    "Plus brand spend (organic content, influencer): adds ~₹200 spread CAC.",
+    "Total blended CAC: ~₹650-800.",
+    "AOV for D2C apparel: ~₹1,200-1,500.",
+    "Gross margin: ~55% = ~₹700 contribution."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Gross margin: ~55% = ~₹700 contribution."
+  }
+}

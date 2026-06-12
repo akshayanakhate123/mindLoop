@@ -1,0 +1,91 @@
+{
+  "questionId": "marketing-45",
+  "domain": "marketing",
+  "question": "Estimate the post-call (telesales) conversion rate for a financial services product in India.",
+  "idealClarificationQuestions": [
+    "Outbound telesales call to a warm lead? Yes.",
+    "Product: personal loan / credit card / insurance? Mid-funnel financial product.",
+    "Conversion = closed sale on the call OR scheduled to close in next 7 days? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard telesales funnel for financial products."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Calls dialled (raw): 1,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Engaged conversations (>2 min): ~60% of connected = 210."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net dial-to-close: ~1.5-2%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Engaged-to-close: ~8-10%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Calls dialled (raw)",
+      "value": "1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Calls connected (picked up by lead)",
+      "value": "~30-40% = 350.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engaged conversations (>2 min)",
+      "value": "~60% of connected = 210.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Interest expressed (hot lead)",
+      "value": "~30% = 63.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Successfully closed within 7 days",
+      "value": "~25-30% = ~17.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net dial-to-close",
+      "value": "~1.5-2%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Connect-to-close",
+      "value": "~5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engaged-to-close",
+      "value": "~8-10%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Calls connected (picked up by lead): ~30-40% = 350.",
+    "Engaged conversations (>2 min): ~60% of connected = 210.",
+    "Interest expressed (hot lead): ~30% = 63.",
+    "Successfully closed within 7 days: ~25-30% = ~17."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Engaged-to-close: ~8-10%."
+  }
+}

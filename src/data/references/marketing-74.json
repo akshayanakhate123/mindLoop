@@ -1,0 +1,77 @@
+{
+  "questionId": "marketing-74",
+  "domain": "marketing",
+  "question": "Estimate the size of the Indian Diaspora-marketing addressable segment (urban Indians with abroad-relevant intent — visa, study abroad, travel, remittances).",
+  "idealClarificationQuestions": [
+    "Urban Indians actively planning or transacting on abroad-relevant services? Yes.",
+    "Categories: study abroad, work visas, foreign tourism, remittance senders/receivers, dual citizenship buyers? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Funnel by category."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indians annually applying for foreign student visas: ~14 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Indians actively planning to migrate / work abroad (visa applications): ~1 crore individuals over 5-year horizon = ~20 lakh actively in pipeline."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total unique addressable segment for diaspora-marketing services (study abroad, visa, forex, foreign property, dual citizenship advisory): ~4-5 crore individuals."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual market: ₹50,000-60,000 Cr (visa fees, forex margins, study abroad commissions, advisory)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indians annually applying for foreign student visas",
+      "value": "~14 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indians annually traveling abroad (international tourism outbound)",
+      "value": "~3.5 crore trips (~2 crore unique).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indians actively planning to migrate / work abroad (visa applications)",
+      "value": "~1 crore individuals over 5-year horizon = ~20 lakh actively in pipeline.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indians receiving inward remittances or sending",
+      "value": "~5-7 crore connected to NRIs.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual market",
+      "value": "₹50,000-60,000 Cr (visa fees, forex margins, study abroad commissions, advisory).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indians annually applying for foreign student visas: ~14 lakh.",
+    "Indians annually traveling abroad (international tourism outbound): ~3.5 crore trips (~2 crore unique).",
+    "Indians actively planning to migrate / work abroad (visa applications): ~1 crore individuals over 5-year horizon = ~20 lakh actively in pipeline.",
+    "Indians receiving inward remittances or sending: ~5-7 crore connected to NRIs.",
+    "Total unique addressable segment for diaspora-marketing services (study abroad, visa, forex, foreign property, dual citizenship advisory): ~4-5 crore individuals.",
+    "Annual market: ₹50,000-60,000 Cr (visa fees, forex margins, study abroad commissions, advisory)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual market: ₹50,000-60,000 Cr (visa fees, forex margins, study abroad commissions, advisory)."
+  }
+}

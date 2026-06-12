@@ -1,0 +1,79 @@
+{
+  "questionId": "product-81",
+  "domain": "product",
+  "question": "Estimate the data centers needed in India to host all major cloud + OTT + e-commerce services for next 3 years.",
+  "idealClarificationQuestions": [
+    "Hyperscale + colocation data centers? Yes.",
+    "Total India-hosted compute capacity? Yes — DC capacity in MW.",
+    "By 2029? Yes.",
+    "Includes AWS, Azure, GCP, NTT, CtrlS, Yotta, AdaniConneX? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Drivers: data localization mandates + AI workloads + OTT/e-commerce growth."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India DC capacity 2026: ~1,400 MW (Mumbai + Chennai + Hyderabad lead)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Demand growth: ~25-30% CAGR."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "If average DC is ~50 MW (mid-large): ~56 DCs needed at saturation."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: India will need ~2,500-3,000 MW of DC capacity (~80-100 large data centers) by 2029."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India DC capacity 2026",
+      "value": "~1,400 MW (Mumbai + Chennai + Hyderabad lead).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Demand growth",
+      "value": "~25-30% CAGR.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "2029 capacity",
+      "value": "1,400 × 1.27^3 ≈ 1,400 × 2 = ~2,800 MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If average DC is ~50 MW (mid-large)",
+      "value": "~56 DCs needed at saturation.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Counting smaller DCs and edge sites",
+      "value": "~80-100 large DCs across major Indian metros.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "India will need ~2,500-3,000 MW of DC capacity (~80-100 large data centers) by 2029.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India DC capacity 2026: ~1,400 MW (Mumbai + Chennai + Hyderabad lead).",
+    "2029 capacity: 1,400 × 1.27^3 ≈ 1,400 × 2 = ~2,800 MW."
+  ],
+  "finalAnswerRange": {
+    "low": "2,500",
+    "high": "3,000",
+    "ideal": "India will need ~2,500-3,000 MW of DC capacity (~80-100 large data centers) by 2029."
+  }
+}

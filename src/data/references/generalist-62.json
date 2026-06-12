@@ -1,0 +1,76 @@
+{
+  "questionId": "generalist-62",
+  "domain": "generalist",
+  "question": "Estimate the number of road accidents per year in India.",
+  "idealClarificationQuestions": [
+    "Total accidents (fatal + injury + property damage reported to police)? Yes.",
+    "Annual count, latest year? FY25/FY26.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from MoRTH Road Accidents data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "MoRTH Road Accidents in India report (latest 2023): ~4.6 lakh accidents/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Grievous injury: ~1.5 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Trend: rising slightly YoY due to vehicle growth."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "FY26 estimate: ~4.7-4.8 lakh accidents."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "MoRTH Road Accidents in India report (latest 2023)",
+      "value": "~4.6 lakh accidents/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Fatal",
+      "value": "~1.7 lakh accidents (causing ~1.7-1.8 lakh deaths).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Grievous injury",
+      "value": "~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Minor",
+      "value": "~1.4 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "FY26 estimate",
+      "value": "~4.7-4.8 lakh accidents.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "MoRTH Road Accidents in India report (latest 2023): ~4.6 lakh accidents/year.",
+    "- Fatal: ~1.7 lakh accidents (causing ~1.7-1.8 lakh deaths).",
+    "- Grievous injury: ~1.5 lakh.",
+    "- Minor: ~1.4 lakh.",
+    "FY26 estimate: ~4.7-4.8 lakh accidents."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "FY26 estimate: ~4.7-4.8 lakh accidents."
+  }
+}

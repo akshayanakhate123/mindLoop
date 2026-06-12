@@ -1,0 +1,678 @@
+/* ── Page ───────────────────────────────────────────────────────────────────── */
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 3rem;
+  gap: 1.25rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ── Shared section title ───────────────────────────────────────────────────── */
+.sectionTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+/* ── S1: Hero card ──────────────────────────────────────────────────────────── */
+.heroCard {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 1rem 1.5rem;
+  align-items: start;
+}
+
+.heroLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+}
+
+.avatarCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #F59E0B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.25rem;
+}
+
+.heroName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--foreground);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.heroTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #16A34A;
+  margin: 0;
+}
+
+.heroQuote {
+  font-size: 0.82rem;
+  color: #555;
+  margin: 0.15rem 0 0;
+  font-style: italic;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.quoteGlyph {
+  font-size: 1.1rem;
+  color: #9CA3AF;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: -2px;
+}
+
+/* Right: top % */
+.heroRight {
+  text-align: right;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.topPct {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #16A34A;
+  margin: 0 0 0.15rem;
+  line-height: 1;
+}
+
+.topArrow {
+  font-size: 1.4rem;
+}
+
+.topSub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0 0 0.6rem;
+}
+
+.progressTrack {
+  width: 180px;
+  height: 8px;
+  background: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.progressFill {
+  height: 100%;
+  background: #22C55E;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.progressPct {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0.3rem 0 0;
+  text-align: right;
+}
+
+/* Chips row — spans full width */
+.heroChips {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.chipAmber {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #D97706;
+}
+
+.chipGreen {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #16A34A;
+}
+
+/* ── S2: Account details ────────────────────────────────────────────────────── */
+.accountCard {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.accountHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.editBtn {
+  background: none;
+  border: none;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  transition: color 0.15s;
+}
+.editBtn:hover { color: var(--foreground); }
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fieldCell {
+  padding: 1rem 1.1rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fieldCell:nth-child(3n) { border-right: none; }
+.fieldCell:nth-child(4),
+.fieldCell:nth-child(5),
+.fieldCell:nth-child(6) { border-bottom: none; }
+
+.fieldLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.fieldIcon { font-size: 0.75rem; }
+
+.fieldValue {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.fieldInput {
+  border: none;
+  outline: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--foreground);
+  background: transparent;
+  font-family: inherit;
+  padding: 0;
+  width: 100%;
+}
+
+.fieldSelect {
+  border: none;
+  outline: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--foreground);
+  background: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.connectedBadge {
+  background: #DCFCE7;
+  color: #15803D;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.showBtn {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.showBtn:hover { color: var(--foreground); }
+
+.apiNote {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0.875rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ── S3: Mid row ────────────────────────────────────────────────────────────── */
+.midRow {
+  display: grid;
+  grid-template-columns: 58fr 40fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+/* Activity card */
+.activityCard {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.activityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activityHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.infoIcon {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  width: 16px;
+  height: 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  font-style: normal;
+}
+
+.periodPill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--foreground);
+  background: #F3F4F6;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  cursor: default;
+}
+
+/* Heatmap */
+.heatmapContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow-x: auto;
+}
+
+.heatmapMonthRow {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 2px;
+}
+
+.dayLabelSpacer {
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.heatmapMonthCell {
+  width: 12px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.monthLabel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.heatmapRow {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.dayLabel {
+  width: 28px;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 4px;
+  font-weight: 500;
+}
+
+.heatCell {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.heatEmpty  { background: #E5E7EB; }
+.heatActive { background: #22C55E; }
+.heatFuture { background: transparent; }
+
+.consistencyRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.consistencyCheck {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #DCFCE7;
+  color: #16A34A;
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.consistencyText {
+  font-size: 0.82rem;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.consistencyGreen { color: #16A34A; }
+
+.consistencySub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Thinking profile card */
+.thinkingCard {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.thinkingHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.thinkingIconCircle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #EDE9FE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.traitList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.traitRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.traitDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.traitDotGreen { background: #22C55E; }
+.traitDotAmber { background: #F59E0B; }
+
+.traitName {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0 0 0.1rem;
+}
+
+.traitDesc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.insightsLink {
+  background: none;
+  border: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  text-align: left;
+  transition: color 0.15s;
+}
+.insightsLink:hover { color: var(--navy); }
+
+/* ── S4: Achievements ───────────────────────────────────────────────────────── */
+.achievementsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.achievementsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.viewAllBtn {
+  background: none;
+  border: none;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  transition: color 0.15s;
+}
+.viewAllBtn:hover { color: var(--foreground); }
+
+.achievementsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.achieveCard {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.achieveLocked { opacity: 0.5; filter: grayscale(0.4); }
+
+.achieveIcon { font-size: 1.3rem; margin: 0 0 0.2rem; }
+
+.achieveTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.achieveDesc {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.achieveBar {
+  height: 4px;
+  border-radius: 2px;
+  width: calc(100% + 2rem);
+  margin: 0 -1rem -1rem;
+}
+
+.achieveBarAmber  { background: #F59E0B; }
+.achieveBarBlue   { background: #3B82F6; }
+.achieveBarGreen  { background: #22C55E; }
+.achieveBarPurple { background: #8B5CF6; }
+
+/* ── S5: Footer CTA ─────────────────────────────────────────────────────────── */
+.footerCard {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.footerHeading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0 0 0.25rem;
+}
+
+.footerSub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+.saveBtn {
+  width: 100%;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.saveBtn:hover { background: #2a3a5c; }
+
+.logoutBtn {
+  width: 100%;
+  background: white;
+  color: #EF4444;
+  border: 2px solid #EF4444;
+  border-radius: 8px;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.logoutBtn:hover { background: #FEF2F2; }

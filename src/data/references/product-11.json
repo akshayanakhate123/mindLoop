@@ -1,0 +1,86 @@
+{
+  "questionId": "product-11",
+  "domain": "product",
+  "question": "Estimate the market size for online K-12 education (paid courses + tutoring + test prep apps) in India.",
+  "idealClarificationQuestions": [
+    "Paid only — exclude free YouTube content? Yes.",
+    "Include test prep (JEE/NEET/UPSC for school-age students)? Yes for JEE/NEET (school age); exclude UPSC adult prep.",
+    "Categories: live classes, recorded courses, doubt apps, tutoring marketplaces? All.",
+    "After EdTech bust — current TAM realized? FY26 realized market."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: K-12 student population → those willing to pay for online supplementary education → annual spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "K-12 students in India: ~265M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Already taking some paid coaching offline: ~40-50M (concentrated in classes 8-12)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total market: 28M × ₹8,000 = ₹22,400 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹25,000-26,000 Cr (~$3B)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "K-12 students in India",
+      "value": "~265M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, in private schools or aspirational families",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Already taking some paid coaching offline",
+      "value": "~40-50M (concentrated in classes 8-12).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Willing to pay for online supplementary at current price-points",
+      "value": "~25-30M (post-bust, more selective parents).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual spend",
+      "value": "~₹8,000 (range: ₹2,000 doubt apps to ₹40,000 BYJU'S/Vedantu/PW comprehensive).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total market",
+      "value": "28M × ₹8,000 = ₹22,400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹25,000-26,000 Cr (~$3B).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average annual spend: ~₹8,000 (range: ₹2,000 doubt apps to ₹40,000 BYJU'S/Vedantu/PW comprehensive).",
+    "Total market: 28M × ₹8,000 = ₹22,400 Cr.",
+    "Plus offline-online hybrid (PW Vidyapeeth, Aakash digital, Allen Digital): ~₹3,000-4,000 Cr extra.",
+    "Total: ~₹25,000-26,000 Cr (~$3B)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹25,000-26,000 Cr (~$3B)."
+  }
+}

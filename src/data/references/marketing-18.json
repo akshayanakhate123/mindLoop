@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-18",
+  "domain": "marketing",
+  "question": "Estimate the reach of a regional newspaper insert (advertising flyer dropped inside the paper) in Pune.",
+  "idealClarificationQuestions": [
+    "Insert distribution with 3 leading Marathi/English papers in Pune? Yes (Sakal + ToI + Loksatta).",
+    "Single-day drop? Yes.",
+    "Pune metro? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Combined circulation × readers per copy × insert-noticing rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Sakal Pune circulation: ~6 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Loksatta + others: ~1 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Inserts seen by primary subscriber: ~95% notice = 8 lakh notices."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~12-15 lakh unique people see the insert in Pune."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Sakal Pune circulation",
+      "value": "~6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "ToI Pune",
+      "value": "~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Loksatta + others",
+      "value": "~1 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Combined",
+      "value": "~8.5 lakh copies.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Inserts seen by primary subscriber",
+      "value": "~95% notice = 8 lakh notices.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~12-15 lakh unique people see the insert in Pune.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Sakal Pune circulation: ~6 lakh.",
+    "ToI Pune: ~1.5 lakh.",
+    "Loksatta + others: ~1 lakh.",
+    "Combined: ~8.5 lakh copies.",
+    "Inserts seen by primary subscriber: ~95% notice = 8 lakh notices.",
+    "Plus secondary readers in HH (avg 3 readers/copy) but inserts often disposed before second reader: ~50% of total readership = combined reach ~15 lakh.",
+    "Round: ~12-15 lakh unique people see the insert in Pune."
+  ],
+  "finalAnswerRange": {
+    "low": "12",
+    "high": "15",
+    "ideal": "~12-15 lakh unique people see the insert in Pune."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "questionId": "generalist-37",
+  "domain": "generalist",
+  "question": "Estimate the annual consumption of biscuits in India (by tonnage).",
+  "idealClarificationQuestions": [
+    "Biscuits + cookies + cream biscuits + glucose biscuits? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes.",
+    "Both organized (Parle, Britannia, ITC, Cadbury, Pillsbury) + unorganized? All."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-capita biscuit consumption × population."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Biscuit-consuming population: ~1.3B (very wide adoption)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total annual consumption: ~4 million tonnes (MT)/year."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~40 lakh tonnes biscuits per year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Biscuit-consuming population",
+      "value": "~1.3B (very wide adoption).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita consumption",
+      "value": "~3 kg/year (India is the world's largest biscuit market by volume).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual consumption",
+      "value": "~4 million tonnes (MT)/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~40 lakh tonnes biscuits per year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total annual consumption: ~4 million tonnes (MT)/year.",
+    "Round: ~40 lakh tonnes biscuits per year."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~40 lakh tonnes biscuits per year."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-80",
+  "domain": "generalist",
+  "question": "Estimate the gold purchases on Akshaya Tritiya day in India.",
+  "idealClarificationQuestions": [
+    "Single day Akshaya Tritiya in April/May? Yes.",
+    "Physical gold (jewellery + coins + bars) + digital gold? All.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industry uplift on a typical day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian gold consumption FY26: ~700-800 tonnes/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Akshaya Tritiya uplift: ~10-12x average day (one of biggest gold buying days)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "At ~₹95,000/10g (2026 price): 20 tonnes × ₹95,000/10g = 20,000,000 g × ₹9,500/g = ₹19,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total Akshaya Tritiya gold: ~₹20,000-22,000 Cr in one day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian gold consumption FY26",
+      "value": "~700-800 tonnes/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average daily gold purchase",
+      "value": "~2 tonnes/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Akshaya Tritiya uplift",
+      "value": "~10-12x average day (one of biggest gold buying days).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Akshaya Tritiya gold sales",
+      "value": "~20-25 tonnes in one day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "At ~₹95,000/10g (2026 price)",
+      "value": "20 tonnes × ₹95,000/10g = 20,000,000 g × ₹9,500/g = ₹19,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Akshaya Tritiya gold",
+      "value": "~₹20,000-22,000 Cr in one day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "At ~₹95,000/10g (2026 price): 20 tonnes × ₹95,000/10g = 20,000,000 g × ₹9,500/g = ₹19,000 Cr.",
+    "Total Akshaya Tritiya gold: ~₹20,000-22,000 Cr in one day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total Akshaya Tritiya gold: ~₹20,000-22,000 Cr in one day."
+  }
+}

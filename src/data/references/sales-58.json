@@ -1,0 +1,90 @@
+{
+  "questionId": "sales-58",
+  "domain": "sales",
+  "question": "Estimate the conversion rate for a B2B SaaS demo-to-customer in India.",
+  "idealClarificationQuestions": [
+    "Mid-market Indian B2B SaaS demo (Freshworks / Razorpay / Zoho equivalent)? Yes.",
+    "Demo = scheduled product demonstration with sales rep? Yes.",
+    "Conversion = becomes paying customer? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Demo-to-customer funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Demos held: 100."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "POCs that go well (product fit): ~60% = 30."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net demo-to-customer: ~12%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "For enterprise sales-led: ~15-25%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Demos held",
+      "value": "100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Demos that progress to proof-of-concept / trial",
+      "value": "~50%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "POCs that go well (product fit)",
+      "value": "~60% = 30.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Move to commercial / pricing discussion",
+      "value": "~80% = 24.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Convert to paying customer",
+      "value": "~50% = ~12.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net demo-to-customer",
+      "value": "~12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For self-serve SaaS (Zoho / Freshworks free trial → paid)",
+      "value": "~5-10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For enterprise sales-led",
+      "value": "~15-25%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "POCs that go well (product fit): ~60% = 30.",
+    "Move to commercial / pricing discussion: ~80% = 24.",
+    "Convert to paying customer: ~50% = ~12."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "For enterprise sales-led: ~15-25%."
+  }
+}

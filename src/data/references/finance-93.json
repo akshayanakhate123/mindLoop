@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-93",
+  "domain": "finance",
+  "question": "Estimate the cost of producing a 30-second Hindi TV commercial.",
+  "idealClarificationQuestions": [
+    "Top-tier TVC production (HUL / ITC / Pepsi level)? Yes.",
+    "End-to-end production cost (excluding airtime)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Production stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Production cost stack:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Cast + crew (non-celebrity): ₹25-50 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Agency fees: ₹40-80 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹2-3 Cr for non-celeb TVC; ~₹4-8 Cr with celebrity."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Celebrity endorsement fee (if A-lister features)",
+      "value": "₹1.5-5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Director's fee",
+      "value": "₹25-50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Production house fee",
+      "value": "₹40-80 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cast + crew (non-celebrity)",
+      "value": "₹25-50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Set + location + props",
+      "value": "₹30-60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Equipment + technical (cameras, lights, sound)",
+      "value": "₹20-30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Post-production (editing, VFX, sound mixing, color)",
+      "value": "₹35-60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Music + licensing",
+      "value": "₹15-30 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Celebrity endorsement fee (if A-lister features): ₹1.5-5 Cr.",
+    "- Director's fee: ₹25-50 lakh.",
+    "- Production house fee: ₹40-80 lakh.",
+    "- Cast + crew (non-celebrity): ₹25-50 lakh.",
+    "- Set + location + props: ₹30-60 lakh.",
+    "- Equipment + technical (cameras, lights, sound): ₹20-30 lakh.",
+    "- Post-production (editing, VFX, sound mixing, color): ₹35-60 lakh.",
+    "- Music + licensing: ₹15-30 lakh.",
+    "- Agency fees: ₹40-80 lakh.",
+    "Total without celebrity: ~₹2.5-4 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "2",
+    "high": "3",
+    "ideal": "~₹2-3 Cr for non-celeb TVC; ~₹4-8 Cr with celebrity."
+  }
+}

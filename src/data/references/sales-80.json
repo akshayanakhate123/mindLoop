@@ -1,0 +1,89 @@
+{
+  "questionId": "sales-80",
+  "domain": "sales",
+  "question": "Estimate the market size for fleet management software for Indian logistics + transport companies.",
+  "idealClarificationQuestions": [
+    "Fleet management software: GPS tracking + driver behavior + fuel monitoring + maintenance? Yes.",
+    "Indian B2B logistics + transportation companies? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Fleet × adoption × per-vehicle cost."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian commercial vehicles operational: ~1.5 crore (trucks + buses + LCVs)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, currently using fleet management software: ~25-30% = ~7-8 lakh vehicles."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "TAM (all organized fleets adopting): ~₹1,000-1,200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total category: ~₹1,500-1,800 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian commercial vehicles operational",
+      "value": "~1.5 crore (trucks + buses + LCVs).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Vehicles in organized fleets (>50 vehicles per fleet)",
+      "value": "~25-30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, currently using fleet management software",
+      "value": "~25-30% = ~7-8 lakh vehicles.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU per vehicle per year",
+      "value": "~₹3,000-5,000 (GPS device + monthly tracking + analytics).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Current market",
+      "value": "7.5L vehicles × ₹4,000 = ~₹300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM (all organized fleets adopting)",
+      "value": "~₹1,000-1,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total category",
+      "value": "~₹1,500-1,800 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian commercial vehicles operational: ~1.5 crore (trucks + buses + LCVs).",
+    "Vehicles in organized fleets (>50 vehicles per fleet): ~25-30 lakh.",
+    "Of these, currently using fleet management software: ~25-30% = ~7-8 lakh vehicles.",
+    "Average ARPU per vehicle per year: ~₹3,000-5,000 (GPS device + monthly tracking + analytics).",
+    "Current market: 7.5L vehicles × ₹4,000 = ~₹300 Cr.",
+    "TAM (all organized fleets adopting): ~₹1,000-1,200 Cr.",
+    "Including aftermarket GPS hardware (Logsmate, Mahindra Onroadz, RouteMobile, Locus): ~₹500-700 Cr.",
+    "Total category: ~₹1,500-1,800 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total category: ~₹1,500-1,800 Cr."
+  }
+}

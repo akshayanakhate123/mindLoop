@@ -1,0 +1,95 @@
+{
+  "questionId": "marketing-88",
+  "domain": "marketing",
+  "question": "Estimate the value of celebrity endorsement fees for top Indian celebrities (Shah Rukh Khan / Virat Kohli class).",
+  "idealClarificationQuestions": [
+    "Annual endorsement fees per top celeb? Yes.",
+    "All brands combined? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-deal pricing × deals per year."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top tier celebs (SRK, Kohli, Deepika, Ranveer) per brand deal: ₹15-50 Cr/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Examples (publicly reported):"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Deepika Padukone: ~₹100-130 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹150-300 Cr annual endorsement income for top-tier celebs."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Top tier celebs (SRK, Kohli, Deepika, Ranveer) per brand deal",
+      "value": "₹15-50 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of brand deals per top celeb",
+      "value": "~10-25 per year (Kohli has 25+).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual endorsement income",
+      "value": "₹150-400 Cr per top celebrity.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Virat Kohli",
+      "value": "~₹250-300 Cr endorsements/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Shah Rukh Khan",
+      "value": "~₹150-200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Deepika Padukone",
+      "value": "~₹100-130 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Ranveer Singh",
+      "value": "~₹150-180 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- MS Dhoni",
+      "value": "~₹100-130 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Top tier celebs (SRK, Kohli, Deepika, Ranveer) per brand deal: ₹15-50 Cr/year.",
+    "Number of brand deals per top celeb: ~10-25 per year (Kohli has 25+).",
+    "Average annual endorsement income: ₹150-400 Cr per top celebrity.",
+    "- Virat Kohli: ~₹250-300 Cr endorsements/year.",
+    "- Shah Rukh Khan: ~₹150-200 Cr.",
+    "- Deepika Padukone: ~₹100-130 Cr.",
+    "- Ranveer Singh: ~₹150-180 Cr.",
+    "- MS Dhoni: ~₹100-130 Cr.",
+    "Round: ~₹150-300 Cr annual endorsement income for top-tier celebs."
+  ],
+  "finalAnswerRange": {
+    "low": "150",
+    "high": "300",
+    "ideal": "~₹150-300 Cr annual endorsement income for top-tier celebs."
+  }
+}

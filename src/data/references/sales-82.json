@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-82",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for cybersecurity products in India.",
+  "idealClarificationQuestions": [
+    "Total cybersecurity products + services (firewalls, endpoint, network, identity, threat intel)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Indian cybersec spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian cybersecurity market FY26: ~₹35,000-40,000 Cr (~$4-4.5B)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Endpoint security (CrowdStrike, SentinelOne, McAfee, Trellix): ~₹8,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Application security (Veracode, Checkmarx, Acunetix): ~₹2,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹37,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian cybersecurity market FY26",
+      "value": "~₹35,000-40,000 Cr (~$4-4.5B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Network security (firewalls, IDS/IPS — Cisco, Palo Alto, Fortinet)",
+      "value": "~₹10,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Endpoint security (CrowdStrike, SentinelOne, McAfee, Trellix)",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Identity + access (Okta, Microsoft Entra)",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cloud security (Wiz, Lacework, Prisma Cloud)",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Application security (Veracode, Checkmarx, Acunetix)",
+      "value": "~₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹37,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian cybersecurity market FY26: ~₹35,000-40,000 Cr (~$4-4.5B).",
+    "- Network security (firewalls, IDS/IPS — Cisco, Palo Alto, Fortinet): ~₹10,000 Cr.",
+    "- Endpoint security (CrowdStrike, SentinelOne, McAfee, Trellix): ~₹8,000 Cr.",
+    "- Identity + access (Okta, Microsoft Entra): ~₹5,000 Cr.",
+    "- Cloud security (Wiz, Lacework, Prisma Cloud): ~₹4,000 Cr.",
+    "- Application security (Veracode, Checkmarx, Acunetix): ~₹2,500 Cr.",
+    "- Managed services + consulting + audit (Big 4 + TCS Cyber + Quick Heal): ~₹7,000 Cr.",
+    "Total: ~₹37,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹37,000 Cr."
+  }
+}

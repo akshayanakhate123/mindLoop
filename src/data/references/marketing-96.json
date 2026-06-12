@@ -1,0 +1,87 @@
+{
+  "questionId": "marketing-96",
+  "domain": "marketing",
+  "question": "Estimate the revenue impact of a 1% improvement in conversion rate for an Amazon India seller.",
+  "idealClarificationQuestions": [
+    "Mid-tier Amazon seller doing ~₹50 Cr annual GMV? Yes.",
+    "Improvement from current ~5% PDP conversion to 6%? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Linear lift in revenue from conversion improvement."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Current state: traffic 1,000 PDP visits = 50 orders (5%) = ₹50K revenue (at AOV ₹1,000)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "After 1% absolute improvement to 6%: 60 orders out of 1,000 = ₹60K = +20% revenue."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Revenue uplift: ~₹10 Cr per year."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "True revenue impact: ~₹12-15 Cr from a 1pp CR improvement."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Current state",
+      "value": "traffic 1,000 PDP visits = 50 orders (5%) = ₹50K revenue (at AOV ₹1,000).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual",
+      "value": "₹50 Cr revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "After 1% absolute improvement to 6%",
+      "value": "60 orders out of 1,000 = ₹60K = +20% revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "New revenue",
+      "value": "₹60 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Revenue uplift",
+      "value": "~₹10 Cr per year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus impact on Amazon search ranking (higher CR boosts visibility)",
+      "value": "additional traffic 10-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "True revenue impact",
+      "value": "~₹12-15 Cr from a 1pp CR improvement.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Current state: traffic 1,000 PDP visits = 50 orders (5%) = ₹50K revenue (at AOV ₹1,000).",
+    "Annual: ₹50 Cr revenue.",
+    "After 1% absolute improvement to 6%: 60 orders out of 1,000 = ₹60K = +20% revenue.",
+    "New revenue: ₹60 Cr.",
+    "Revenue uplift: ~₹10 Cr per year.",
+    "True revenue impact: ~₹12-15 Cr from a 1pp CR improvement."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "True revenue impact: ~₹12-15 Cr from a 1pp CR improvement."
+  }
+}

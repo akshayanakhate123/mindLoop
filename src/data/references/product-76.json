@@ -1,0 +1,81 @@
+{
+  "questionId": "product-76",
+  "domain": "product",
+  "question": "How many delivery partners does Swiggy need in Pune for its food delivery operations?",
+  "idealClarificationQuestions": [
+    "Active partners (delivered at least 1 order in past week)? Yes.",
+    "Pune metro / PMC + PCMC area? Yes (~7M population).",
+    "Captive + gig contractors? All Swiggy-affiliated delivery partners.",
+    "Average day, not festival peak? Average."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily orders → delivery time per order → partner working hours → partners needed."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Pune food delivery monthly orders (Swiggy alone, ~50% market share of ~9M monthly): ~4.5M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Peak hours (lunch + dinner) absorb ~70% = 105K orders in ~6 peak hours."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "But not all partners work full peak: average partner does ~6-8 deliveries per day. Daily 150K orders ÷ 7 = ~21K partner-shifts/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~25,000-30,000 active Swiggy delivery partners in Pune."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Daily Swiggy orders Pune",
+      "value": "~150K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average orders per delivery partner per peak hour",
+      "value": "~3 (each order takes ~25-30 mins door-to-door).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Peak-hour fleet needed",
+      "value": "105K orders ÷ 6 hours ÷ 3 orders/partner = ~5,800 partners on-shift simultaneously.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But not all partners work full peak",
+      "value": "average partner does ~6-8 deliveries per day. Daily 150K orders ÷ 7 = ~21K partner-shifts/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If average partner works 5 days/week",
+      "value": "21K shifts × 7/5 = ~30K active weekly partners.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~25,000-30,000 active Swiggy delivery partners in Pune.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Peak hours (lunch + dinner) absorb ~70% = 105K orders in ~6 peak hours.",
+    "Peak-hour fleet needed: 105K orders ÷ 6 hours ÷ 3 orders/partner = ~5,800 partners on-shift simultaneously.",
+    "But not all partners work full peak: average partner does ~6-8 deliveries per day. Daily 150K orders ÷ 7 = ~21K partner-shifts/day.",
+    "If average partner works 5 days/week: 21K shifts × 7/5 = ~30K active weekly partners."
+  ],
+  "finalAnswerRange": {
+    "low": "25,000",
+    "high": "30,000",
+    "ideal": "~25,000-30,000 active Swiggy delivery partners in Pune."
+  }
+}

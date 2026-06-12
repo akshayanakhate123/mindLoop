@@ -1,0 +1,76 @@
+{
+  "questionId": "sales-47",
+  "domain": "sales",
+  "question": "Estimate the number of independent paint dealers (small/medium) in a state like Karnataka.",
+  "idealClarificationQuestions": [
+    "Paint dealers — retailers selling Asian Paints, Berger, Kansai Nerolac, Akzo Nobel, Indigo etc.? Yes.",
+    "Karnataka state? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "State paint demand / per-dealer turnover."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Karnataka population: ~7 crore; ~9% of India."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of this, retailed through dealers (not direct contractor / project sales): ~70% = ₹5,250 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Dealers needed: ₹5,250 Cr / ₹70 lakh = ~7,500 dealers."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7,000-8,000 paint dealers in Karnataka."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Karnataka population",
+      "value": "~7 crore; ~9% of India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "India total paint market FY26",
+      "value": "~₹85,000 Cr; Karnataka ~₹7,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-dealer annual turnover",
+      "value": "avg ₹70 lakh (small dealers ₹25L, medium ₹1.5 Cr, large ₹4 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Dealers needed",
+      "value": "₹5,250 Cr / ₹70 lakh = ~7,500 dealers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7,000-8,000 paint dealers in Karnataka.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Karnataka population: ~7 crore; ~9% of India.",
+    "India total paint market FY26: ~₹85,000 Cr; Karnataka ~₹7,500 Cr.",
+    "Of this, retailed through dealers (not direct contractor / project sales): ~70% = ₹5,250 Cr.",
+    "Per-dealer annual turnover: avg ₹70 lakh (small dealers ₹25L, medium ₹1.5 Cr, large ₹4 Cr).",
+    "Dealers needed: ₹5,250 Cr / ₹70 lakh = ~7,500 dealers."
+  ],
+  "finalAnswerRange": {
+    "low": "7,000",
+    "high": "8,000",
+    "ideal": "~7,000-8,000 paint dealers in Karnataka."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "questionId": "generalist-17",
+  "domain": "generalist",
+  "question": "How many credit card holders are there in India?",
+  "idealClarificationQuestions": [
+    "Active credit card holders (have at least one active card)? Yes — unique people.",
+    "Active card = not blocked, used at least once in past 6 months? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total active credit cards × adjustment for multi-card holders."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "RBI data shows ~10.5-11 crore credit cards in circulation (mid-2025); growing ~12-15% YoY."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "By 2026: ~12 crore active credit cards."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Unique credit card holders: 12 crore / 1.6 = ~7.5 crore unique people."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7.5 crore unique credit card holders in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "By 2026",
+      "value": "~12 crore active credit cards.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average cards per active holder",
+      "value": "~1.6 (many premium customers have 2-3, basic have 1).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique credit card holders",
+      "value": "12 crore / 1.6 = ~7.5 crore unique people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7.5 crore unique credit card holders in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "RBI data shows ~10.5-11 crore credit cards in circulation (mid-2025); growing ~12-15% YoY.",
+    "By 2026: ~12 crore active credit cards.",
+    "Unique credit card holders: 12 crore / 1.6 = ~7.5 crore unique people.",
+    "Round: ~7.5 crore unique credit card holders in India."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~7.5 crore unique credit card holders in India."
+  }
+}

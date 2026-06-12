@@ -1,0 +1,67 @@
+{
+  "questionId": "marketing-41",
+  "domain": "marketing",
+  "question": "Estimate the OOH (hoarding) impression-to-store-visit conversion rate.",
+  "idealClarificationQuestions": [
+    "Hoarding promoting a retail store / branded category? Yes.",
+    "OOH impressions to in-store walk-in attribution (notoriously hard)? Yes — best estimate.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industry estimates with high variance."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "OOH impressions are notoriously hard to attribute, but mobile location data + lift studies suggest:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Active 'store visit because of hoarding' attribution: ~0.05-0.1% of impressions."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~0.05-0.1% OOH impression-to-walk-in for branded campaigns."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "For directional / wayfinding signage: 0.2-0.5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Top-of-mind brand awareness lift",
+      "value": "~6-10% of viewers shift opinion/awareness.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Active 'store visit because of hoarding' attribution",
+      "value": "~0.05-0.1% of impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~0.05-0.1% OOH impression-to-walk-in for branded campaigns.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For directional / wayfinding signage",
+      "value": "0.2-0.5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "OOH impressions are notoriously hard to attribute, but mobile location data + lift studies suggest:"
+  ],
+  "finalAnswerRange": {
+    "low": "0.05",
+    "high": "0.1",
+    "ideal": "~0.05-0.1% OOH impression-to-walk-in for branded campaigns."
+  }
+}

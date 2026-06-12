@@ -1,0 +1,96 @@
+{
+  "questionId": "marketing-3",
+  "domain": "marketing",
+  "question": "Estimate impressions for a beauty brand campaign on YouTube India with a ₹2 Cr budget.",
+  "idealClarificationQuestions": [
+    "All YouTube ad formats: skippable in-stream + non-skippable + bumper + Shorts + Discovery? Mix all.",
+    "Audience: women 18-40 in metros + Tier 2 (beauty buyer profile)? Yes.",
+    "Optimization: maximize impressions or video views? Impressions.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Budget / CPM = impressions, segmented by ad format."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Average CPM on YouTube India for beauty/female-skewed audience: ~₹40-50 (lower than Instagram for video views; higher for premium skippable)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Skippable in-stream (TrueView): ~50% = 2.2 crore (~70% are skipped before 5 sec)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Discovery (search): ~5% = 22 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~4.4 crore impressions; ~1.6 crore unique women reached."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average CPM on YouTube India for beauty/female-skewed audience",
+      "value": "~₹40-50 (lower than Instagram for video views; higher for premium skippable).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Format-weighted blended CPM",
+      "value": "~₹45.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Skippable in-stream (TrueView)",
+      "value": "~50% = 2.2 crore (~70% are skipped before 5 sec).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bumper (6-sec non-skip)",
+      "value": "~25% = 1.1 crore (full views).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Shorts ads",
+      "value": "~20% = 88 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Discovery (search)",
+      "value": "~5% = 22 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach (frequency 2-3)",
+      "value": "~1.5-1.8 crore unique women.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~4.4 crore impressions; ~1.6 crore unique women reached.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average CPM on YouTube India for beauty/female-skewed audience: ~₹40-50 (lower than Instagram for video views; higher for premium skippable).",
+    "Format-weighted blended CPM: ~₹45.",
+    "Total impressions at ₹2 Cr / ₹45 × 1,000 = 4.4 crore impressions.",
+    "- Skippable in-stream (TrueView): ~50% = 2.2 crore (~70% are skipped before 5 sec).",
+    "- Bumper (6-sec non-skip): ~25% = 1.1 crore (full views).",
+    "- Shorts ads: ~20% = 88 lakh.",
+    "- Discovery (search): ~5% = 22 lakh.",
+    "Unique reach (frequency 2-3): ~1.5-1.8 crore unique women.",
+    "Round: ~4.4 crore impressions; ~1.6 crore unique women reached."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~4.4 crore impressions; ~1.6 crore unique women reached."
+  }
+}

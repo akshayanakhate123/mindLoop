@@ -1,0 +1,78 @@
+{
+  "questionId": "marketing-50",
+  "domain": "marketing",
+  "question": "Estimate the social ad to in-store walk-in conversion (omnichannel attribution) for a fashion brand.",
+  "idealClarificationQuestions": [
+    "Brand with both online ads and physical stores (e.g., Zudio, Westside, Reliance Trends)? Yes.",
+    "Online ad impression → walk into a physical store within 14 days? Yes.",
+    "Year 2026? Yes — measured via location data lift studies."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Ad-to-walk-in lift via location data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Ad impressions: 1,00,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, broad target match (people in catchment area): ~60% = 60K relevant."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of walk-ins, conversion to purchase: ~30-40%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test your ability to size a customer segment using clean, MECE segmentation. The playbook: total population → addressable (income/age/access) → aware → considering → active customers. Each layer has a defensible filter. End with an annual market value × ARPU."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Ad impressions",
+      "value": "1,00,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "View-through (saw ad in past 14 days)",
+      "value": "100% (counted impression).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, broad target match (people in catchment area)",
+      "value": "~60% = 60K relevant.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Walked into a brand store (lift over control group)",
+      "value": "~0.3-0.5% (per Meta/Google location lift studies in India).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net ad-impression-to-store-visit",
+      "value": "~0.3-0.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of walk-ins, conversion to purchase",
+      "value": "~30-40%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, broad target match (people in catchment area): ~60% = 60K relevant.",
+    "These questions test your ability to size a customer segment using clean, MECE segmentation. The playbook: total population → addressable (income/age/access) → aware → considering → active customers. Each layer has a defensible filter. End with an annual market value × ARPU."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "3. Customer Segmentation"
+  }
+}

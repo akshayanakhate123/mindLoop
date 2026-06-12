@@ -1,0 +1,74 @@
+{
+  "questionId": "product-58",
+  "domain": "product",
+  "question": "Estimate ONDC (Open Network for Digital Commerce) adoption among small kirana stores in India.",
+  "idealClarificationQuestions": [
+    "Active sellers transacting on ONDC in past month? Yes (active sellers).",
+    "Kirana stores defined as small retail (<₹40L revenue)? Yes.",
+    "Year 2026 reality? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total kirana stores → onboarded to any digital platform → ONDC-active."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian kirana stores: ~12-13M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Already digitally enabled (UPI accept + WhatsApp ordering): ~5-6M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Active monthly sellers (transacted): ~30-40% of onboarded = ~80K-120K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~100K active kirana sellers on ONDC."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian kirana stores",
+      "value": "~12-13M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Already digitally enabled (UPI accept + WhatsApp ordering)",
+      "value": "~5-6M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, onboarded to ONDC seller network",
+      "value": "~3-5% (slow uptake; aggregator-led onboarding via Magicpin, Mystore, Pincode): ~250K-300K cumulative onboarded.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active monthly sellers (transacted)",
+      "value": "~30-40% of onboarded = ~80K-120K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~100K active kirana sellers on ONDC.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Already digitally enabled (UPI accept + WhatsApp ordering): ~5-6M.",
+    "Active monthly sellers (transacted): ~30-40% of onboarded = ~80K-120K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~100K active kirana sellers on ONDC."
+  }
+}

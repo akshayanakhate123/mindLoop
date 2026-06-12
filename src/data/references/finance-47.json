@@ -1,0 +1,90 @@
+{
+  "questionId": "finance-47",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for an Indian quick-commerce company (Blinkit).",
+  "idealClarificationQuestions": [
+    "Standalone Blinkit business unit within Eternal? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Quick commerce unit economics."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Revenue: 100% (~₹5,500 Cr per Q17)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Dark store opex (rent + staff): ~6-8%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~100-110%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Current FY26: ~-3% to +1% EBITDA blended."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100% (~₹5,500 Cr per Q17).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS / inventory cost (grocery thin margins)",
+      "value": "~75-78%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Delivery partner payouts",
+      "value": "~12-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Dark store opex (rent + staff)",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + customer acquisition",
+      "value": "~5-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech + central support",
+      "value": "~2-3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~100-110%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "-10% to 0% (still loss-making at GMV level; turned slightly EBITDA-positive in mature cities like Delhi in late 2024).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Revenue: 100% (~₹5,500 Cr per Q17).",
+    "- Dark store opex (rent + staff): ~6-8%.",
+    "- Marketing + customer acquisition: ~5-8%.",
+    "- Tech + central support: ~2-3%.",
+    "Current FY26: ~-3% to +1% EBITDA blended."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Current FY26: ~-3% to +1% EBITDA blended."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "questionId": "marketing-59",
+  "domain": "marketing",
+  "question": "Estimate the size of the gaming-PC / high-end PC gamer segment in India.",
+  "idealClarificationQuestions": [
+    "PC gamers with rigs valued ₹1L+ (high-end gaming setups)? Yes.",
+    "Active gamers (play 5+ hours/week)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total PC gamer base × high-end share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian PC gamers (all): ~12-15M (mostly cafe gamers, casual)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "High-end gaming PC owners (₹1L+ rig): ~5-7% of personal gaming PCs = ~200K-250K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus 'aspiring' segment buying mid-high rigs (₹70K-₹1L): ~400K additional."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual high-end PC + accessory spend: ~₹150-200K per active enthusiast."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian PC gamers (all)",
+      "value": "~12-15M (mostly cafe gamers, casual).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Personal PC owners gaming regularly",
+      "value": "~3-4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "High-end gaming PC owners (₹1L+ rig)",
+      "value": "~5-7% of personal gaming PCs = ~200K-250K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus streamers / professional gamers with high-end rigs",
+      "value": "~5K-10K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus 'aspiring' segment buying mid-high rigs (₹70K-₹1L)",
+      "value": "~400K additional.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~2-3 lakh true high-end PC gamers in India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual high-end PC + accessory spend",
+      "value": "~₹150-200K per active enthusiast.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "High-end gaming PC owners (₹1L+ rig): ~5-7% of personal gaming PCs = ~200K-250K.",
+    "Plus 'aspiring' segment buying mid-high rigs (₹70K-₹1L): ~400K additional.",
+    "Round: ~2-3 lakh true high-end PC gamers in India.",
+    "Annual high-end PC + accessory spend: ~₹150-200K per active enthusiast."
+  ],
+  "finalAnswerRange": {
+    "low": "2",
+    "high": "3",
+    "ideal": "~2-3 lakh true high-end PC gamers in India."
+  }
+}

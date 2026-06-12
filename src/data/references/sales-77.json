@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-77",
+  "domain": "sales",
+  "question": "How many restaurants in India can use POS software?",
+  "idealClarificationQuestions": [
+    "Restaurants needing/using POS (Point of Sale) system: order management + billing + inventory + analytics? Yes.",
+    "Addressable: dine-in restaurants (excludes home kitchens, fast-food single-vendors)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total restaurants × POS-adoptable share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian restaurants (with seating + structure): ~25-30 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, with revenue >₹15L/year (POS economic threshold): ~6-7 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual ARPU for restaurant POS: ~₹15,000-25,000 (basic) to ~₹2L (advanced with inventory + KOT)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "TAM market: 7L × ₹40K = ~₹2,800 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian restaurants (with seating + structure)",
+      "value": "~25-30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, formal/organized restaurants (not roadside stalls)",
+      "value": "~12 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, with revenue >₹15L/year (POS economic threshold)",
+      "value": "~6-7 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently using any POS / billing software",
+      "value": "~40% = ~2.6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM for restaurant POS software",
+      "value": "~6-7 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual ARPU for restaurant POS",
+      "value": "~₹15,000-25,000 (basic) to ~₹2L (advanced with inventory + KOT).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Blended ARPU",
+      "value": "~₹40,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM market",
+      "value": "7L × ₹40K = ~₹2,800 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total Indian restaurants (with seating + structure): ~25-30 lakh.",
+    "Of these, formal/organized restaurants (not roadside stalls): ~12 lakh.",
+    "Of these, with revenue >₹15L/year (POS economic threshold): ~6-7 lakh.",
+    "Currently using any POS / billing software: ~40% = ~2.6 lakh.",
+    "TAM for restaurant POS software: ~6-7 lakh.",
+    "Annual ARPU for restaurant POS: ~₹15,000-25,000 (basic) to ~₹2L (advanced with inventory + KOT).",
+    "Blended ARPU: ~₹40,000.",
+    "TAM market: 7L × ₹40K = ~₹2,800 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "TAM market: 7L × ₹40K = ~₹2,800 Cr."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "questionId": "product-48",
+  "domain": "product",
+  "question": "Estimate the photos uploaded to Google Photos daily from India.",
+  "idealClarificationQuestions": [
+    "Photos auto-backed-up + manually uploaded? Yes — total uploads.",
+    "From Indian users (geo-located devices)? Yes.",
+    "Includes screenshots and WhatsApp media auto-saved? Yes — anything that flows into Photos.",
+    "Average day 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: Indian Google Photos users × photos taken per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian smartphone users: ~800M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of which on Android: ~95% = ~760M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average new photos/screenshots per active user per day: ~12-15 (camera shots + screenshots + WhatsApp media)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily uploads from India: 450M × 13 = ~5.85 billion photos."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian smartphone users",
+      "value": "~800M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which on Android",
+      "value": "~95% = ~760M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active Google Photos users (auto-backup enabled)",
+      "value": "~60% of Android = ~450M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average new photos/screenshots per active user per day",
+      "value": "~12-15 (camera shots + screenshots + WhatsApp media).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily uploads from India",
+      "value": "450M × 13 = ~5.85 billion photos.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of which on Android: ~95% = ~760M.",
+    "Active Google Photos users (auto-backup enabled): ~60% of Android = ~450M.",
+    "Average new photos/screenshots per active user per day: ~12-15 (camera shots + screenshots + WhatsApp media).",
+    "Daily uploads from India: 450M × 13 = ~5.85 billion photos."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily uploads from India: 450M × 13 = ~5.85 billion photos."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-86",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for accounting software for Indian SMBs.",
+  "idealClarificationQuestions": [
+    "Accounting + GST + tax filing software for SMBs (Tally, Zoho Books, ClearTax, QuickBooks)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "SMB count × adoption × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian SMBs needing accounting software (registered + GST-filing): ~1.2 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Zoho Books / SaaS competitors: ~₹15K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Tally: ~₹3,500 Cr (industry leader by huge margin)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Other Indian regional + open source: ~₹2,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian SMBs needing accounting software (registered + GST-filing)",
+      "value": "~1.2 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, paying for software",
+      "value": "~50% = ~60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tally license + AMC",
+      "value": "~₹15K-25K avg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Zoho Books / SaaS competitors",
+      "value": "~₹15K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ClearTax / Quicko (GST + ITR)",
+      "value": "~₹5K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Blended ARPU",
+      "value": "~₹15,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total market",
+      "value": "60L × ₹15K = ~₹9,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tally",
+      "value": "~₹3,500 Cr (industry leader by huge margin).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian SMBs needing accounting software (registered + GST-filing): ~1.2 crore.",
+    "Of these, paying for software: ~50% = ~60 lakh.",
+    "- Tally license + AMC: ~₹15K-25K avg.",
+    "- Zoho Books / SaaS competitors: ~₹15K.",
+    "- ClearTax / Quicko (GST + ITR): ~₹5K.",
+    "Blended ARPU: ~₹15,000.",
+    "Total market: 60L × ₹15K = ~₹9,000 Cr.",
+    "- Tally: ~₹3,500 Cr (industry leader by huge margin).",
+    "- Zoho Books: ~₹500 Cr.",
+    "- ClearTax / Quicko / Tax2Win: ~₹400 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Other Indian regional + open source: ~₹2,000 Cr."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-32",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for a typical Indian D2C brand (e.g., Mamaearth, Sugar).",
+  "idealClarificationQuestions": [
+    "D2C beauty/personal care brand at ₹500-2000 Cr scale? Yes.",
+    "Post-marketing-spend EBITDA? Yes — true operating EBITDA.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "D2C cost stack with high marketing spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "COGS: ~30-35% (D2C beauty has high gross margins 65-70%)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Logistics + warehousing: ~6-8%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~85-95%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~5-15% EBITDA, ~2-8% PAT."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "COGS",
+      "value": "~30-35% (D2C beauty has high gross margins 65-70%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Marketing + advertising",
+      "value": "~22-30% (D2C burn cash on customer acquisition).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Channel commissions (Amazon, Nykaa, modern trade)",
+      "value": "~12-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Logistics + warehousing",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Employee cost",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other operating",
+      "value": "~5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~85-95%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Marketing + advertising: ~22-30% (D2C burn cash on customer acquisition).",
+    "Logistics + warehousing: ~6-8%."
+  ],
+  "finalAnswerRange": {
+    "low": "5",
+    "high": "15",
+    "ideal": "~5-15% EBITDA, ~2-8% PAT."
+  }
+}

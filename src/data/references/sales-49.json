@@ -1,0 +1,83 @@
+{
+  "questionId": "sales-49",
+  "domain": "sales",
+  "question": "Estimate the number of retail outlets ITC needs for full nationwide distribution of its FMCG portfolio.",
+  "idealClarificationQuestions": [
+    "ITC FMCG portfolio: Bingo, Sunfeast, Aashirvaad, Fiama, Vivel, Engage, Mangaldeep, Yippee etc.? Yes — excludes cigarettes.",
+    "Total outlets across portfolio? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Outlets touched per FY."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "ITC FMCG (Other than Cigarettes) targets:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Bingo + Sunfeast biscuits + Yippee noodles: kirana + modern trade = ~25 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Combined ITC's FMCG distribution reaches ~70 lakh+ unique outlets pan-India (with overlap across portfolio)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~70-75 lakh outlets for full ITC FMCG distribution."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Aashirvaad atta + ghee",
+      "value": "needs grocery + premium store distribution = ~30 lakh outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bingo + Sunfeast biscuits + Yippee noodles",
+      "value": "kirana + modern trade = ~25 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Personal care (Fiama, Vivel, Engage, Charmis)",
+      "value": "~20 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Premium personal care + specialty",
+      "value": "~5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Including cigarettes (separate channel — Pan, Tobacco, etc.)",
+      "value": "~75 lakh unique + non-cigarette outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~70-75 lakh outlets for full ITC FMCG distribution.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Aashirvaad atta + ghee: needs grocery + premium store distribution = ~30 lakh outlets.",
+    "- Bingo + Sunfeast biscuits + Yippee noodles: kirana + modern trade = ~25 lakh.",
+    "- Personal care (Fiama, Vivel, Engage, Charmis): ~20 lakh.",
+    "- Premium personal care + specialty: ~5 lakh.",
+    "Combined ITC's FMCG distribution reaches ~70 lakh+ unique outlets pan-India (with overlap across portfolio).",
+    "Including cigarettes (separate channel — Pan, Tobacco, etc.): ~75 lakh unique + non-cigarette outlets.",
+    "Round: ~70-75 lakh outlets for full ITC FMCG distribution."
+  ],
+  "finalAnswerRange": {
+    "low": "70",
+    "high": "75",
+    "ideal": "~70-75 lakh outlets for full ITC FMCG distribution."
+  }
+}

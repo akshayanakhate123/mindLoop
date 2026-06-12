@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-4",
+  "domain": "sales",
+  "question": "Estimate monthly soft drink sales (Coca-Cola + Pepsi + Thums Up etc.) in a Tier 1 city like Hyderabad.",
+  "idealClarificationQuestions": [
+    "Carbonated soft drinks (CSDs) only? Yes — exclude juice, water.",
+    "All formats: PET bottles + cans + fountain drinks at QSRs? Yes.",
+    "Greater Hyderabad? Yes (~12M population).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita CSD × city premium."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Hyderabad population: ~12M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly: ~9 million litres."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- PepsiCo (Pepsi, 7Up, Mountain Dew, Mirinda): ~40% = ₹18 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~9 million litres / ~₹45 Cr monthly Hyderabad CSD market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Hyderabad population",
+      "value": "~12M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita CSD consumption India avg",
+      "value": "~6 L/year. Hyderabad (warm + Tier 1): ~9 L/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual Hyderabad CSD consumption",
+      "value": "12M × 9 L = ~108 million litres/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~9 million litres.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value",
+      "value": "avg ₹50/L blended (250ml ₹15 to 2L ₹100): ₹45 Cr/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Coca-Cola brands (Coke, Thums Up, Sprite, Limca)",
+      "value": "~52% market share = ₹23 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- PepsiCo (Pepsi, 7Up, Mountain Dew, Mirinda)",
+      "value": "~40% = ₹18 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Local + others (Campa, Bovonto, regional)",
+      "value": "~8% = ₹4 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per-capita CSD consumption India avg: ~6 L/year. Hyderabad (warm + Tier 1): ~9 L/year.",
+    "Annual Hyderabad CSD consumption: 12M × 9 L = ~108 million litres/year.",
+    "Monthly: ~9 million litres.",
+    "Value: avg ₹50/L blended (250ml ₹15 to 2L ₹100): ₹45 Cr/month.",
+    "- Coca-Cola brands (Coke, Thums Up, Sprite, Limca): ~52% market share = ₹23 Cr.",
+    "- PepsiCo (Pepsi, 7Up, Mountain Dew, Mirinda): ~40% = ₹18 Cr.",
+    "- Local + others (Campa, Bovonto, regional): ~8% = ₹4 Cr.",
+    "Round: ~9 million litres / ~₹45 Cr monthly Hyderabad CSD market."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~9 million litres / ~₹45 Cr monthly Hyderabad CSD market."
+  }
+}

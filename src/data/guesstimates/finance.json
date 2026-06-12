@@ -1,0 +1,802 @@
+[
+  {
+    "id": "finance-1",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of BookMyShow in India.",
+    "hint": "GMV across categories × take rate.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-2",
+    "domain": "finance",
+    "question": "Estimate the monthly revenue of a Starbucks outlet in Mumbai.",
+    "hint": "Daily customers × AOV × days.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-3",
+    "domain": "finance",
+    "question": "Estimate the annual revenue from FASTag toll collection in India.",
+    "hint": "Vehicles tolled per day × avg toll × days.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-4",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of MakeMyTrip (Indian operations).",
+    "hint": "Gross bookings × take rate.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-5",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of OYO (India operations).",
+    "hint": "GBV × take rate.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-6",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Indigo Airlines (InterGlobe Aviation).",
+    "hint": "Passengers × average ticket + ancillary.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-7",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a top mutual fund AMC (e.g., HDFC AMC or SBI MF).",
+    "hint": "AUM × management fee rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-8",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Reliance Jio (Telecom only, ex-platforms).",
+    "hint": "ARPU × subscriber base.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-9",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a top Indian SaaS company (Zoho).",
+    "hint": "Customer count × ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-10",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a top Indian D2C unicorn (e.g., Mamaearth / Honasa).",
+    "hint": "GMV × revenue recognition.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-11",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of an EV cab fleet operator (BluSmart).",
+    "hint": "Daily rides × avg fare × days.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-12",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a leading Indian fintech (Paytm).",
+    "hint": "Segment-wise stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-13",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Phoenix Mills (mall operator, top Indian shopping mall company).",
+    "hint": "Mall portfolio × rental per sqft × occupancy.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-14",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a top Indian private bank (e.g., HDFC Bank, ICICI Bank).",
+    "hint": "Loan book × NIM + non-interest income.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-15",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Cult.fit (Cure.fit) parent company.",
+    "hint": "Multi-channel revenue stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-16",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Bharti Airtel India (telecom only).",
+    "hint": "ARPU × subscriber × services mix.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-17",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Zomato (parent: Eternal Limited) for FY26.",
+    "hint": "Segment-wise revenue stack.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-18",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Swiggy.",
+    "hint": "Segment revenue stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-19",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Asian Paints India.",
+    "hint": "Volume × pricing × segment mix.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-20",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a top Indian EdTech (PhysicsWallah).",
+    "hint": "Segment revenue stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-21",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a major Indian e-commerce 3PL (Delhivery).",
+    "hint": "Shipment volume × avg rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-22",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a leading Indian QSR chain (Jubilant FoodWorks — Domino's India).",
+    "hint": "Store count × per-store revenue.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-23",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Tata Consultancy Services (TCS) — global operations.",
+    "hint": "Headcount × billing rate; alternatively revenue-per-employee benchmark.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-24",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of Lenskart (Indian operations).",
+    "hint": "Store + online channel mix.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-25",
+    "domain": "finance",
+    "question": "Estimate the annual revenue of a leading Indian InsurTech (PB Fintech — Policybazaar).",
+    "hint": "Premium booked × commission rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-26",
+    "domain": "finance",
+    "question": "Estimate the profit margins for an Indian multiplex (PVR INOX).",
+    "hint": "Cost stack against revenue.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-27",
+    "domain": "finance",
+    "question": "Would a cloud kitchen in Bengaluru be profitable? Estimate unit economics.",
+    "hint": "Revenue × order volume against cost stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-28",
+    "domain": "finance",
+    "question": "Estimate the profitability (EBITDA margin) of EV charging stations in India.",
+    "hint": "Revenue per kWh × utilization vs cost.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-29",
+    "domain": "finance",
+    "question": "Estimate the profitability of an Amazon India seller (3P) doing ₹5 Cr annual GMV.",
+    "hint": "Revenue stack against costs.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-30",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for a top Indian QSR (Domino's India / Burger King India).",
+    "hint": "Standard QSR cost stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-31",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for IndiGo Airlines.",
+    "hint": "Airline cost stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-32",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for a typical Indian D2C brand (e.g., Mamaearth, Sugar).",
+    "hint": "D2C cost stack with high marketing spend.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-33",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for Reliance Jio Telecom.",
+    "hint": "Telecom cost stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-34",
+    "domain": "finance",
+    "question": "Estimate the profitability of a Tata Starbucks outlet in Mumbai (unit-level).",
+    "hint": "Single-store cost stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-35",
+    "domain": "finance",
+    "question": "Estimate the profitability of Indian Railways (operating ratio).",
+    "hint": "Direct from Railway Board financials.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-36",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for HDFC Asset Management Company.",
+    "hint": "AMC revenue minus operating costs.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-37",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for an Indian e-commerce platform like Meesho.",
+    "hint": "Marketplace economics.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-38",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for a leading Indian luxury retail brand (Titan Watches segment).",
+    "hint": "Premium retail cost stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-39",
+    "domain": "finance",
+    "question": "Estimate the profitability of a Reliance Retail store (Reliance Smart / Reliance Fresh).",
+    "hint": "Grocery retail thin margins.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-40",
+    "domain": "finance",
+    "question": "Estimate the profitability of a fintech lending app in India (e.g., a personal loan platform).",
+    "hint": "NIM + fee minus NPA + opex.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-41",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for an Indian SaaS company at scale (Freshworks / Zoho).",
+    "hint": "SaaS margin structure.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-42",
+    "domain": "finance",
+    "question": "Estimate the profitability of a 4-star hotel in a Tier 2 city.",
+    "hint": "Hotel P&L: rooms + F&B + banquet.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-43",
+    "domain": "finance",
+    "question": "Estimate the profitability of an Indian metro line (e.g., Delhi Metro Phase 4).",
+    "hint": "Fare revenue × ridership vs operating cost.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-44",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for a leading FMCG company (Hindustan Unilever).",
+    "hint": "FMCG cost stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-45",
+    "domain": "finance",
+    "question": "Estimate the profitability of Indian Premier League (per team).",
+    "hint": "Per-team revenue minus costs.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-46",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for an Indian premium hospital chain (Apollo, Fortis, Max).",
+    "hint": "Hospital P&L.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-47",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for an Indian quick-commerce company (Blinkit).",
+    "hint": "Quick commerce unit economics.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-48",
+    "domain": "finance",
+    "question": "Estimate the profitability (gross + net margin) of Indian agriculture (per farmer).",
+    "hint": "Per-acre revenue minus per-acre cost.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-49",
+    "domain": "finance",
+    "question": "Estimate the EBITDA margin for an Indian airline operating LCC vs FSC.",
+    "hint": "Comparative cost structure.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-50",
+    "domain": "finance",
+    "question": "Estimate the contribution margin per ticket for IRCTC (online + ticket reservation revenue).",
+    "hint": "Per-transaction unit economics.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-51",
+    "domain": "finance",
+    "question": "Estimate the potential size of India's health-tech market by 2030.",
+    "hint": "Bottom-up: sub-segment-wise TAM.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-52",
+    "domain": "finance",
+    "question": "How big can the quick commerce industry become in India by 2030?",
+    "hint": "Addressable population × penetration × order frequency × AOV.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-53",
+    "domain": "finance",
+    "question": "Estimate the investment opportunity (annual TAM) for solar rooftop installations in India.",
+    "hint": "Capacity addition × cost per kW.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-54",
+    "domain": "finance",
+    "question": "Estimate the AUM of Indian mutual fund industry by 2030.",
+    "hint": "Growth from current base + investor base expansion.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-55",
+    "domain": "finance",
+    "question": "Estimate the potential market size for Indian electric two-wheeler manufacturing by 2030.",
+    "hint": "Total 2W market × EV penetration × ASP.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-56",
+    "domain": "finance",
+    "question": "Estimate the size of India's AI services + AI-as-a-service opportunity by 2030.",
+    "hint": "Sector-wise AI spending.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-57",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian Premium electric car market by 2030.",
+    "hint": "Luxury car market × EV penetration.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-58",
+    "domain": "finance",
+    "question": "Estimate the market size for Indian e-pharmacy by 2030.",
+    "hint": "Total pharma retail × digital penetration.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-59",
+    "domain": "finance",
+    "question": "Estimate the size of India's listed-equity investor universe (demat accounts) by 2030.",
+    "hint": "Current base + growth.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-60",
+    "domain": "finance",
+    "question": "Estimate the market size for the Indian gig economy (delivery + ride-hailing + freelancers) by 2030.",
+    "hint": "Workforce projection + ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-61",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian wedding economy by 2030.",
+    "hint": "Wedding count × spend per wedding (segmented).",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-62",
+    "domain": "finance",
+    "question": "Estimate the market opportunity for Indian online education (formal degree + upskilling) by 2030.",
+    "hint": "Segment-wise market.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-63",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian SaaS export opportunity by 2030.",
+    "hint": "Top players + ecosystem trajectory.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-64",
+    "domain": "finance",
+    "question": "Estimate the EV battery manufacturing market opportunity in India by 2030.",
+    "hint": "Capacity × ASP × utilization.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-65",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian fintech opportunity by 2030.",
+    "hint": "Sub-segment stack.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-66",
+    "domain": "finance",
+    "question": "Estimate the warehouse / logistics real estate opportunity in India by 2030.",
+    "hint": "Stock projection × rental.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-67",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian semiconductor manufacturing opportunity (post-PLI scheme) by 2030.",
+    "hint": "Build-out under SemiconIndia.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-68",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian green hydrogen opportunity by 2030.",
+    "hint": "Target capacity × price × utilization.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-69",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian senior care opportunity (silver economy) by 2030.",
+    "hint": "Senior population × segment-wise spend.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-70",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian D2C industry opportunity by 2030.",
+    "hint": "Category-wise D2C TAM.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-71",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian space-tech opportunity by 2030.",
+    "hint": "Government + private space ecosystem.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-72",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian agri-tech opportunity by 2030.",
+    "hint": "Farmer base × digital adoption × ARPU.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-73",
+    "domain": "finance",
+    "question": "Estimate the size of India's drone industry opportunity by 2030.",
+    "hint": "Build-out across segments.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-74",
+    "domain": "finance",
+    "question": "Estimate the size of the Indian gaming + esports industry by 2030.",
+    "hint": "Segment stack.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-75",
+    "domain": "finance",
+    "question": "Estimate the total Indian startup / VC funding opportunity (annual deployment) by 2030.",
+    "hint": "Trajectory from current.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-76",
+    "domain": "finance",
+    "question": "Estimate the operating cost of running a Delhi Metro line annually.",
+    "hint": "Major cost head stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-77",
+    "domain": "finance",
+    "question": "How much does it cost to run IPL broadcasting and production?",
+    "hint": "Per-match × matches.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-78",
+    "domain": "finance",
+    "question": "Estimate the cost structure of an airline flying Mumbai-Delhi (single one-way flight).",
+    "hint": "Per-flight cost stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-79",
+    "domain": "finance",
+    "question": "Estimate the cost of building a 1 GW solar power plant in India.",
+    "hint": "Per-MW capex.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-80",
+    "domain": "finance",
+    "question": "Estimate the operating cost structure of Indian Railways (per-passenger-km).",
+    "hint": "Total cost / total passenger-km.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-81",
+    "domain": "finance",
+    "question": "Estimate the cost of running a Swiggy food delivery operation per order.",
+    "hint": "Bottom-up unit economics.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-82",
+    "domain": "finance",
+    "question": "Estimate the cost of running a hospital ICU bed per day in India.",
+    "hint": "Direct + indirect cost allocation.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-83",
+    "domain": "finance",
+    "question": "Estimate the per-km cost of building a 4-lane National Highway in India.",
+    "hint": "MoRTH benchmark.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-84",
+    "domain": "finance",
+    "question": "Estimate the cost to acquire a customer (CAC) for a major Indian e-commerce platform (Amazon / Flipkart).",
+    "hint": "Marketing spend / new customers acquired.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-85",
+    "domain": "finance",
+    "question": "Estimate the cost of setting up a quick commerce dark store.",
+    "hint": "Per-store capex stack.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-86",
+    "domain": "finance",
+    "question": "Estimate the cost of setting up a 5-screen multiplex in India.",
+    "hint": "Per-screen capex.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-87",
+    "domain": "finance",
+    "question": "Estimate the cost of a Bollywood blockbuster movie production (e.g., Pathaan / Jawan tier).",
+    "hint": "Cost head stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-88",
+    "domain": "finance",
+    "question": "Estimate the cost of running a 24x7 fintech customer support center in India.",
+    "hint": "Headcount + tech + facility.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-89",
+    "domain": "finance",
+    "question": "Estimate the cost of running a 5G base station / cell tower per year in India.",
+    "hint": "Per-site opex stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-90",
+    "domain": "finance",
+    "question": "Estimate the cost of acquiring a new bank account customer in India.",
+    "hint": "All-in CAC stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-91",
+    "domain": "finance",
+    "question": "Estimate the cost structure of an EV cab ride in India.",
+    "hint": "Per-km cost stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-92",
+    "domain": "finance",
+    "question": "Estimate the cost of running an Indian college campus (per student annual).",
+    "hint": "Total cost / total students.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-93",
+    "domain": "finance",
+    "question": "Estimate the cost of producing a 30-second Hindi TV commercial.",
+    "hint": "Production stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-94",
+    "domain": "finance",
+    "question": "Estimate the cost of inventory holding for a quick commerce dark store.",
+    "hint": "Holding cost components.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-95",
+    "domain": "finance",
+    "question": "Estimate the cost of running an OTT platform in India (Jio Hotstar / Netflix India level).",
+    "hint": "Content + tech + opex stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-96",
+    "domain": "finance",
+    "question": "Estimate the cost of providing free public Wi-Fi at Indian railway stations.",
+    "hint": "Per-station cost × stations.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-97",
+    "domain": "finance",
+    "question": "Estimate the per-flight crew cost for an international long-haul flight (e.g., Mumbai-London on Air India).",
+    "hint": "Crew composition × hourly cost.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-98",
+    "domain": "finance",
+    "question": "Estimate the cost of operating a Tier 2 city Indian mall.",
+    "hint": "Mall opex stack.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-99",
+    "domain": "finance",
+    "question": "Estimate the cost structure of Indian Premier League (per franchise / team annual).",
+    "hint": "IPL team cost stack.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "finance-100",
+    "domain": "finance",
+    "question": "Estimate the cost of running a Tier 1 city Indian metro station per year (single station O&M).",
+    "hint": "Per-station cost stack.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  }
+]

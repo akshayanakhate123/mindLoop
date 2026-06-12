@@ -1,0 +1,70 @@
+{
+  "questionId": "finance-35",
+  "domain": "finance",
+  "question": "Estimate the profitability of Indian Railways (operating ratio).",
+  "idealClarificationQuestions": [
+    "Operating ratio = operating cost / operating revenue (lower is better)? Yes.",
+    "Excludes pensions if measuring true ops; includes if measuring economic profitability? Provide both.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from Railway Board financials."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Railways operating revenue FY26: ~₹2.6-2.7 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Operating ratio (ex-pension): ~95-97%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net surplus (post all costs incl pensions): near break-even."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Operating ratio 95-97% means ₹95-97 spent for every ₹100 earned — thin operational profitability."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Railways operating revenue FY26",
+      "value": "~₹2.6-2.7 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Operating expense",
+      "value": "~₹2.5 lakh Cr (excluding pensions).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Operating ratio (ex-pension)",
+      "value": "~95-97%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Including pensions (massive — ₹70K+ Cr/year)",
+      "value": "operating ratio ~99-100%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian Railways operating revenue FY26: ~₹2.6-2.7 lakh Cr.",
+    "Operating expense: ~₹2.5 lakh Cr (excluding pensions).",
+    "Including pensions (massive — ₹70K+ Cr/year): operating ratio ~99-100%.",
+    "Operating ratio 95-97% means ₹95-97 spent for every ₹100 earned — thin operational profitability."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Operating ratio 95-97% means ₹95-97 spent for every ₹100 earned — thin operational profitability."
+  }
+}

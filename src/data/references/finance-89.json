@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-89",
+  "domain": "finance",
+  "question": "Estimate the cost of running a 5G base station / cell tower per year in India.",
+  "idealClarificationQuestions": [
+    "Single 5G radio site annual operating cost? Yes.",
+    "Excludes spectrum amortization? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-site opex stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per cell tower (with 5G NR equipment) annual cost:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Backhaul (fiber lease or microwave): ~₹1 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Allocated central NOC + ops staff: ~₹35K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Equipment depreciation: ~₹2 lakh/year (₹15-20L radio depreciated over 7-8 years)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Tower lease (if leased from Indus, ATC, Summit Digitel)",
+      "value": "~₹3.5-4 lakh/year per tenant.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Power (electricity for radio + cooling + backup)",
+      "value": "~₹1.2-1.8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Backhaul (fiber lease or microwave)",
+      "value": "~₹1 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance + spares",
+      "value": "~₹40K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Security + monitoring",
+      "value": "~₹25K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Allocated central NOC + ops staff",
+      "value": "~₹35K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per tower per operator",
+      "value": "~₹7-8 lakh/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Across all 3 operators (Jio + Airtel + Vi), if tower is shared",
+      "value": "~₹3 lakh in shared costs + ~₹4-5 lakh in tenant-specific = ~₹7-8L per tenant.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Tower lease (if leased from Indus, ATC, Summit Digitel): ~₹3.5-4 lakh/year per tenant.",
+    "- Power (electricity for radio + cooling + backup): ~₹1.2-1.8 lakh.",
+    "- Backhaul (fiber lease or microwave): ~₹1 lakh.",
+    "- Maintenance + spares: ~₹40K.",
+    "- Security + monitoring: ~₹25K.",
+    "- Allocated central NOC + ops staff: ~₹35K.",
+    "Total per tower per operator: ~₹7-8 lakh/year.",
+    "Across all 3 operators (Jio + Airtel + Vi), if tower is shared: ~₹3 lakh in shared costs + ~₹4-5 lakh in tenant-specific = ~₹7-8L per tenant.",
+    "Equipment depreciation: ~₹2 lakh/year (₹15-20L radio depreciated over 7-8 years)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Equipment depreciation: ~₹2 lakh/year (₹15-20L radio depreciated over 7-8 years)."
+  }
+}

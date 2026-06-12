@@ -1,0 +1,78 @@
+{
+  "questionId": "product-54",
+  "domain": "product",
+  "question": "Estimate EV adoption rate (% of new vehicle sales) in India by 2030.",
+  "idealClarificationQuestions": [
+    "Across all segments: 2W + 3W + cars + buses + trucks? Yes — segmented.",
+    "Adoption = % of new vehicle sales (not stock)? Yes.",
+    "Year 2030 specifically? Yes.",
+    "Realistic vs aspirational policy target? Realistic."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment-by-segment forecasting using current trajectory + policy/infra constraints."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "2W (currently ~7% EV in 2026): trajectory to ~25-30% by 2030 (driven by FAME, state subsidies, fleet electrification, total cost of ownership advantage)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Passenger cars (currently ~3% EV in 2026): ~15-18% by 2030 (Tata, Mahindra, MG, Maruti pushing aggressively; charging infra still constraint)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Trucks: <5% by 2030 (heavy-duty EV tech and infra not ready)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Weighted average across new vehicle sales (2W is ~75% of unit volume): ~2W weight: 25-30% × 0.75 + cars 16% × 0.10 + 3W 60% × 0.05 + buses 18% × 0.005 + trucks 4% × 0.10 ≈ 22-25%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "2W (currently ~7% EV in 2026)",
+      "value": "trajectory to ~25-30% by 2030 (driven by FAME, state subsidies, fleet electrification, total cost of ownership advantage).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "3W (autos, freight)",
+      "value": "currently ~25% EV in 2026 (e-rickshaws huge); ~55-65% by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Passenger cars (currently ~3% EV in 2026)",
+      "value": "~15-18% by 2030 (Tata, Mahindra, MG, Maruti pushing aggressively; charging infra still constraint).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Buses (PSU electrification)",
+      "value": "~15-20% by 2030 (CESL tenders).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Trucks",
+      "value": "<5% by 2030 (heavy-duty EV tech and infra not ready).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted average across new vehicle sales (2W is ~75% of unit volume)",
+      "value": "~2W weight: 25-30% × 0.75 + cars 16% × 0.10 + 3W 60% × 0.05 + buses 18% × 0.005 + trucks 4% × 0.10 ≈ 22-25%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Weighted average across new vehicle sales (2W is ~75% of unit volume): ~2W weight: 25-30% × 0.75 + cars 16% × 0.10 + 3W 60% × 0.05 + buses 18% × 0.005 + trucks 4% × 0.10 ≈ 22-25%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Weighted average across new vehicle sales (2W is ~75% of unit volume): ~2W weight: 25-30% × 0.75 + cars 16% × 0.10 + 3W 60% × 0.05 + buses 18% × 0.005 + trucks 4% × 0.10 ≈ 22-25%."
+  }
+}

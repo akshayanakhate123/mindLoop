@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-24",
+  "domain": "generalist",
+  "question": "Estimate the number of Indians living in rented housing.",
+  "idealClarificationQuestions": [
+    "Households living in rented homes (not owned)? Yes — household level.",
+    "Both formal rent + informal arrangements (chawls, paying guest)? All.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total HH × rental tenure share, segmented urban/rural."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households: ~310M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Rural HH: ~200M; rented share rural: ~5% = 10M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "People in rented housing (avg 3.8 people/HH): ~163M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~15-16 crore Indians live in rented housing."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households",
+      "value": "~310M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban HH",
+      "value": "~110M; rented share urban: ~30% (Census 2011 was 28%; rising in metros) = 33M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural HH",
+      "value": "~200M; rented share rural: ~5% = 10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total rented HH",
+      "value": "~43M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "People in rented housing (avg 3.8 people/HH)",
+      "value": "~163M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~15-16 crore Indians live in rented housing.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban HH: ~110M; rented share urban: ~30% (Census 2011 was 28%; rising in metros) = 33M.",
+    "Rural HH: ~200M; rented share rural: ~5% = 10M.",
+    "Round: ~15-16 crore Indians live in rented housing."
+  ],
+  "finalAnswerRange": {
+    "low": "15",
+    "high": "16",
+    "ideal": "~15-16 crore Indians live in rented housing."
+  }
+}

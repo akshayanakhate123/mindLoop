@@ -1,0 +1,67 @@
+{
+  "questionId": "product-41",
+  "domain": "product",
+  "question": "Estimate the daily active sellers on Meesho.",
+  "idealClarificationQuestions": [
+    "Sellers who shipped or listed/edited a product in past 24 hours? Listed/edited or processed an order.",
+    "Both individual resellers and SMB suppliers? Yes — both.",
+    "Latest year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total registered sellers → MAU → DAU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Meesho registered sellers (cumulative): ~2-2.5M (as per Inc42, FY24-25 data)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active monthly sellers (received orders): ~700K-1M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily active sellers (DAU): ~30-35% of MAU = ~250K-350K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~300K daily active sellers."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Meesho registered sellers (cumulative)",
+      "value": "~2-2.5M (as per Inc42, FY24-25 data).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active monthly sellers (received orders)",
+      "value": "~700K-1M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily active sellers (DAU)",
+      "value": "~30-35% of MAU = ~250K-350K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~300K daily active sellers.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily active sellers (DAU): ~30-35% of MAU = ~250K-350K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~300K daily active sellers."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "questionId": "product-28",
+  "domain": "product",
+  "question": "How many Indians book movie tickets online every Friday?",
+  "idealClarificationQuestions": [
+    "Friday tickets booked across BookMyShow + Paytm Insider + cinema chain apps? Yes — all online channels.",
+    "Tickets for shows on Friday (Friday-show tickets) regardless of booking date? Use that.",
+    "Average Friday or big-release Friday? Average Friday.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: weekly cinema admission volume → Friday share → online booking share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual cinema admissions in India: ~900M-1B tickets (post-COVID recovery; multiplexes + single screens)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Friday share (a release day, ~1.4x average day): ~3.7M tickets sold for Friday shows."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Online tickets sold for Friday shows: 3.7M × 0.58 = ~2.1M tickets."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Distinct users (avg 2 tickets per booking): ~1.05M unique users."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual cinema admissions in India",
+      "value": "~900M-1B tickets (post-COVID recovery; multiplexes + single screens).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily admissions average",
+      "value": "~2.5-2.7M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Friday share (a release day, ~1.4x average day)",
+      "value": "~3.7M tickets sold for Friday shows.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Online booking share",
+      "value": "~75% in metros, ~40% in Tier 2/3; weighted ~55-60%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Online tickets sold for Friday shows",
+      "value": "3.7M × 0.58 = ~2.1M tickets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Distinct users (avg 2 tickets per booking)",
+      "value": "~1.05M unique users.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual cinema admissions in India: ~900M-1B tickets (post-COVID recovery; multiplexes + single screens).",
+    "Online tickets sold for Friday shows: 3.7M × 0.58 = ~2.1M tickets."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Distinct users (avg 2 tickets per booking): ~1.05M unique users."
+  }
+}

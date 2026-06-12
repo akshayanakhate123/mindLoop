@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-66",
+  "domain": "sales",
+  "question": "Estimate the funnel for a recruiter / staffing agency placing candidates.",
+  "idealClarificationQuestions": [
+    "Recruitment agency funnel: candidate-applied → placed-in-job? Yes.",
+    "Mid-tier roles (₹8L-25L CTC)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Staffing funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Candidate applications received (per role): 200."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Client interview sharable shortlist: ~40% = 19."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Offer extended: ~50% = 3-4."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "On agency-side: ~100 candidates worked actively for 1 placement; ~80-100 hours of effort."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Candidate applications received (per role)",
+      "value": "200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Resume screening pass",
+      "value": "~30% = 60.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Recruiter screening call",
+      "value": "~80% of screened-in = 48.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Client interview sharable shortlist",
+      "value": "~40% = 19.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Client phone screen + 1st round",
+      "value": "~75% = ~14.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Final round interviews",
+      "value": "~50% = 7.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Offer extended",
+      "value": "~50% = 3-4.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Offer accepted + joined",
+      "value": "~70% = 2-3.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Resume screening pass: ~30% = 60.",
+    "Recruiter screening call: ~80% of screened-in = 48.",
+    "Client interview sharable shortlist: ~40% = 19.",
+    "Client phone screen + 1st round: ~75% = ~14.",
+    "Final round interviews: ~50% = 7.",
+    "Offer extended: ~50% = 3-4.",
+    "Offer accepted + joined: ~70% = 2-3."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "On agency-side: ~100 candidates worked actively for 1 placement; ~80-100 hours of effort."
+  }
+}

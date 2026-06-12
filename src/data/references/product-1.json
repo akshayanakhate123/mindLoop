@@ -1,0 +1,82 @@
+{
+  "questionId": "product-1",
+  "domain": "product",
+  "question": "How many people in India use UPI daily?",
+  "idealClarificationQuestions": [
+    "Daily Active Users (transacted at least once today) vs daily logged-in users? Assume DAU = transacted at least once.",
+    "Counting P2P + P2M + bill payments + UPI Lite + AutoPay mandates? Yes, all UPI rails included.",
+    "Average weekday or specific spike day (salary day, festival)? Assume average weekday.",
+    "Geography: Pan-India including rural? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down. Start from internet/smartphone users → bank account holders → registered UPI users → segment by usage frequency to derive daily actives."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population (2026): ~1.45 billion."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Smartphone users: ~800M (55% penetration)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Registered UPI users (transact at least monthly): ~420M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily active UPI users = 147M + 50M + 21M + 2M ≈ 220M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population (2026)",
+      "value": "~1.45 billion.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Adult population (18+)",
+      "value": "~1.05 billion.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone users",
+      "value": "~800M (55% penetration).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Adults with both smartphone + bank account",
+      "value": "~600M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Registered UPI users (transact at least monthly)",
+      "value": "~420M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Segment by usage frequency",
+      "value": "Heavy daily users (multiple txns/day) ~35% = 147M; Medium (3-4 txns/week) ~30% = 126M, of which ~40% transact on a given day = 50M; Light (1-2 txns/week) ~25% = 105M, of which ~20% on a given day = 21M; Occasional ~10% = 42M, of which ~5% = 2M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India population (2026): ~1.45 billion.",
+    "Adult population (18+): ~1.05 billion.",
+    "Adults with both smartphone + bank account: ~600M.",
+    "Segment by usage frequency: Heavy daily users (multiple txns/day) ~35% = 147M; Medium (3-4 txns/week) ~30% = 126M, of which ~40% transact on a given day = 50M; Light (1-2 txns/week) ~25% = 105M, of which ~20% on a given day = 21M; Occasional ~10% = 42M, of which ~5% = 2M.",
+    "Daily active UPI users = 147M + 50M + 21M + 2M ≈ 220M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily active UPI users = 147M + 50M + 21M + 2M ≈ 220M."
+  }
+}

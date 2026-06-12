@@ -1,0 +1,82 @@
+{
+  "questionId": "sales-67",
+  "domain": "sales",
+  "question": "Estimate the conversion rate from a TV shopping channel (HomeShop18 / NaaptolMax) ad-impressionn to purchase.",
+  "idealClarificationQuestions": [
+    "TV shopping channel ad exposure → call placed → product purchased? Yes.",
+    "TV viewers who saw the product offer? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "TV shopping conversion benchmarks."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Average TV shopping channel reach (specific product slot): ~10 lakh viewers."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, called helpline number: ~1% = 2,000 callers."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of placed orders, COD non-refusal (successful delivery + payment): ~70% (high RTO in TV shopping) = ~500-560 net successful purchases."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net ad-impression-to-successful-purchase: 500 / 10 lakh = 0.05%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average TV shopping channel reach (specific product slot)",
+      "value": "~10 lakh viewers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engaged viewers (watched >30 sec of the product pitch)",
+      "value": "~20% = 2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, called helpline number",
+      "value": "~1% = 2,000 callers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of callers, completed transaction (incl. follow-up calls)",
+      "value": "~30-40% = 700-800 orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of placed orders, COD non-refusal (successful delivery + payment)",
+      "value": "~70% (high RTO in TV shopping) = ~500-560 net successful purchases.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net ad-impression-to-successful-purchase",
+      "value": "500 / 10 lakh = 0.05%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average TV shopping channel reach (specific product slot): ~10 lakh viewers.",
+    "Engaged viewers (watched >30 sec of the product pitch): ~20% = 2 lakh.",
+    "Of these, called helpline number: ~1% = 2,000 callers.",
+    "Of callers, completed transaction (incl. follow-up calls): ~30-40% = 700-800 orders.",
+    "Of placed orders, COD non-refusal (successful delivery + payment): ~70% (high RTO in TV shopping) = ~500-560 net successful purchases.",
+    "Net ad-impression-to-successful-purchase: 500 / 10 lakh = 0.05%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net ad-impression-to-successful-purchase: 500 / 10 lakh = 0.05%."
+  }
+}

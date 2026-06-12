@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-56",
+  "domain": "finance",
+  "question": "Estimate the size of India's AI services + AI-as-a-service opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Indian companies providing AI services + Indian-developed AI products? Yes — Indian market for AI deployed by Indian companies.",
+    "By 2030? Yes.",
+    "Generative AI + traditional ML + AI infrastructure? All."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sector-wise AI spending."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian enterprise IT spend 2030: ~₹6 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Indian enterprise AI spend: ~₹1 lakh Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus AI infrastructure (GPU rentals, data center AI capacity): ~₹30,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total Indian AI market opportunity: ~₹2 lakh Cr (~$24B) by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian enterprise IT spend 2030",
+      "value": "~₹6 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AI/ML allocation as % of IT spend",
+      "value": "~15-20% by 2030 (currently 5-8%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indian enterprise AI spend",
+      "value": "~₹1 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus consumer AI products (chatbots, AI assistants, AI-powered apps)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus AI infrastructure (GPU rentals, data center AI capacity)",
+      "value": "~₹30,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Indian IT services exporting AI (TCS, Infy, Wipro AI revenue)",
+      "value": "~₹50,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian AI market opportunity",
+      "value": "~₹2 lakh Cr (~$24B) by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian enterprise IT spend 2030: ~₹6 lakh Cr.",
+    "Indian enterprise AI spend: ~₹1 lakh Cr.",
+    "Plus consumer AI products (chatbots, AI assistants, AI-powered apps): ~₹15,000 Cr.",
+    "Plus AI infrastructure (GPU rentals, data center AI capacity): ~₹30,000 Cr.",
+    "Plus Indian IT services exporting AI (TCS, Infy, Wipro AI revenue): ~₹50,000 Cr.",
+    "Total Indian AI market opportunity: ~₹2 lakh Cr (~$24B) by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total Indian AI market opportunity: ~₹2 lakh Cr (~$24B) by 2030."
+  }
+}

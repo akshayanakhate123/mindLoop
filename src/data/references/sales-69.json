@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-69",
+  "domain": "sales",
+  "question": "Estimate the conversion from financial advisor seminar leads.",
+  "idealClarificationQuestions": [
+    "Financial advisor / wealth manager hosting a free seminar/webinar to attract HNI prospects? Yes.",
+    "Conversion = HNI signs up as client with min AUM? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Seminar-to-client funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Seminar attendees: 100."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Booked 1-on-1 consultation: ~25% = 15."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Signed up as client: ~30% = ~2 clients."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Each client AUM: ₹50 lakh-2 cr average."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Seminar attendees",
+      "value": "100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engaged listeners (asked questions / stayed full duration)",
+      "value": "~60% = 60.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Booked 1-on-1 consultation",
+      "value": "~25% = 15.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Attended consultation",
+      "value": "~80% = 12.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Decided to evaluate further",
+      "value": "~50% = 6.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Signed up as client",
+      "value": "~30% = ~2 clients.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net seminar-attendee-to-client",
+      "value": "~2%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Each client AUM",
+      "value": "₹50 lakh-2 cr average.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Engaged listeners (asked questions / stayed full duration): ~60% = 60.",
+    "Booked 1-on-1 consultation: ~25% = 15.",
+    "Attended consultation: ~80% = 12.",
+    "Decided to evaluate further: ~50% = 6.",
+    "Signed up as client: ~30% = ~2 clients.",
+    "Each client AUM: ₹50 lakh-2 cr average."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Each client AUM: ₹50 lakh-2 cr average."
+  }
+}

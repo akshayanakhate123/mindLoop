@@ -1,0 +1,75 @@
+{
+  "questionId": "finance-67",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian semiconductor manufacturing opportunity (post-PLI scheme) by 2030.",
+  "idealClarificationQuestions": [
+    "Indian-produced semiconductor industry revenue by 2030? Yes.",
+    "Includes fabs (Tata, Vedanta) + ATMP + design? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Build-out under SemiconIndia."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian semiconductor consumption 2030: ~$110B (~₹9 lakh Cr)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Tata + Micron + others Fab + ATMP capacity by 2030: ~$15-20B annual revenue capacity (if scheduled fabs come online)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total Indian semiconductor industry revenue 2030: ~$25-30B (~₹2-2.5 lakh Cr)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹2-2.5 lakh Cr if PLI execution stays on schedule."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian semiconductor consumption 2030",
+      "value": "~$110B (~₹9 lakh Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indian-produced share by 2030",
+      "value": "still small initially (~10-15%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tata + Micron + others Fab + ATMP capacity by 2030",
+      "value": "~$15-20B annual revenue capacity (if scheduled fabs come online).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian semiconductor industry revenue 2030",
+      "value": "~$25-30B (~₹2-2.5 lakh Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹2-2.5 lakh Cr if PLI execution stays on schedule.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian semiconductor consumption 2030: ~$110B (~₹9 lakh Cr).",
+    "Tata + Micron + others Fab + ATMP capacity by 2030: ~$15-20B annual revenue capacity (if scheduled fabs come online).",
+    "Plus chip design (Qualcomm India, Intel, Marvell, AMD, NVIDIA India, Indian startups): ~$8-10B revenue.",
+    "Total Indian semiconductor industry revenue 2030: ~$25-30B (~₹2-2.5 lakh Cr).",
+    "Round: ~₹2-2.5 lakh Cr if PLI execution stays on schedule."
+  ],
+  "finalAnswerRange": {
+    "low": "2",
+    "high": "2.5",
+    "ideal": "~₹2-2.5 lakh Cr if PLI execution stays on schedule."
+  }
+}

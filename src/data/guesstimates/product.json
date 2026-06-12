@@ -1,0 +1,802 @@
+[
+  {
+    "id": "product-1",
+    "domain": "product",
+    "question": "How many people in India use UPI daily?",
+    "hint": "Top-down. Start from internet/smartphone users → bank account holders → registered UPI users → segment by usage frequency to derive daily actives.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-2",
+    "domain": "product",
+    "question": "Estimate the annual food delivery market size (GMV) in Mumbai.",
+    "hint": "Bottom-up: Mumbai population → food delivery users → segment users by frequency → monthly orders → AOV → annual GMV.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-3",
+    "domain": "product",
+    "question": "How many EV two-wheeler scooters will be sold in India next year (2027)?",
+    "hint": "Top-down growth model: total 2W market size → current EV penetration → projected next-year penetration based on YoY growth trajectory and policy push (FAME, state subsidies).",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-4",
+    "domain": "product",
+    "question": "Estimate monthly orders for Zomato in Bengaluru.",
+    "hint": "Same as Mumbai food delivery, but adjust for Bengaluru's demographics (higher tech-employed population, higher ordering frequency) and apply Zomato share.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-5",
+    "domain": "product",
+    "question": "Estimate the TAM (Total Addressable Market) for online doctor consultations in India.",
+    "hint": "Top-down: addressable population × consultation frequency × average revenue per consult.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-6",
+    "domain": "product",
+    "question": "Estimate the annual revenue of OTT/video streaming platforms in India.",
+    "hint": "Two-arm calculation: subscription revenue (paying users × ARPU) + ad revenue (active users × ad load × CPM equivalent).",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-7",
+    "domain": "product",
+    "question": "How many paying subscribers does Spotify have in India?",
+    "hint": "Top-down: total music streaming users in India → Spotify market share → free vs paid conversion ratio.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-8",
+    "domain": "product",
+    "question": "Estimate the annual e-commerce GMV from Tier-2 cities in India.",
+    "hint": "Bottom-up: Tier-2 population → online shoppers → orders/year → AOV.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-9",
+    "domain": "product",
+    "question": "Estimate the daily orders on quick commerce apps (Blinkit + Zepto + Instamart + BBNow combined) in India.",
+    "hint": "Bottom-up: covered city population → addressable smartphone users → quick commerce adopters → order frequency.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-10",
+    "domain": "product",
+    "question": "Estimate annual ride bookings on Ola + Uber + Rapido in Delhi NCR.",
+    "hint": "Bottom-up: user base × ride frequency. Segment by office-goer vs occasional vs auto/bike-taxi short-trip user.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-11",
+    "domain": "product",
+    "question": "Estimate the market size for online K-12 education (paid courses + tutoring + test prep apps) in India.",
+    "hint": "Bottom-up: K-12 student population → those willing to pay for online supplementary education → annual spend.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-12",
+    "domain": "product",
+    "question": "Estimate monthly transaction volume (₹) on PhonePe.",
+    "hint": "Top-down: total UPI TPV in India × PhonePe market share.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-13",
+    "domain": "product",
+    "question": "Estimate the annual market size of online travel booking (OTA) in India.",
+    "hint": "Bottom-up by category: flights + hotels + trains + buses + packages.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-14",
+    "domain": "product",
+    "question": "Estimate the number of small businesses (kirana + small retailers) using digital payment apps (UPI QR / soundbox) in India.",
+    "hint": "Top-down: total small merchants in India → digitization penetration (urban vs rural split).",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-15",
+    "domain": "product",
+    "question": "Estimate the TAM for fitness apps (workout + nutrition + wearable-linked) in urban India.",
+    "hint": "Bottom-up: urban affluent → fitness-conscious segment → willing to pay × ARPU.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-16",
+    "domain": "product",
+    "question": "Estimate the market size of cloud kitchens / dark kitchens in Bengaluru.",
+    "hint": "Calculate Bengaluru online food delivery GMV → cloud kitchen share of orders → annualize.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-17",
+    "domain": "product",
+    "question": "Estimate Amazon India's annual GMV from grocery (Amazon Fresh + Pantry).",
+    "hint": "Bottom-up: Amazon Prime + Fresh users → frequency × AOV.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-18",
+    "domain": "product",
+    "question": "Estimate the number of premium/paying subscribers on dating apps (Tinder + Bumble + Hinge + others) in India.",
+    "hint": "Top-down: total dating app users India → free-to-paid conversion.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-19",
+    "domain": "product",
+    "question": "Estimate the market size of online gaming (excluding fantasy sports) in India.",
+    "hint": "Bottom-up by sub-segment: casual mobile + RMG (rummy/poker) + esports + console/PC.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-20",
+    "domain": "product",
+    "question": "Estimate the annual market for second-hand smartphone sales (refurbished + used) in India.",
+    "hint": "Bottom-up: total smartphone units sold/replaced annually → resale rate → average resale value.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-21",
+    "domain": "product",
+    "question": "Estimate the annual revenue from in-app purchases in mobile games in India.",
+    "hint": "Bottom-up: gamer base × paying conversion × ARPPU (avg revenue per paying user).",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-22",
+    "domain": "product",
+    "question": "Estimate the market size for online insurance (health + term + motor + others) in India.",
+    "hint": "Top-down: total Indian insurance premium → digital channel share by category.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-23",
+    "domain": "product",
+    "question": "Estimate the TAM for personal finance management (PFM) and investment apps (Groww, Zerodha, INDmoney, Jar etc.) in India.",
+    "hint": "Top-down: addressable savings/investment population → average investable surplus → revenue rate (take rate).",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-24",
+    "domain": "product",
+    "question": "Estimate the annual market for online matrimony services in India.",
+    "hint": "Bottom-up: marriageable population → online matrimony adopters → paying conversion → ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-25",
+    "domain": "product",
+    "question": "Estimate the daily food delivery orders pan-India (Swiggy + Zomato + Magicpin combined).",
+    "hint": "Bottom-up: addressable population → frequency segmented → annual orders → daily.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-26",
+    "domain": "product",
+    "question": "How many times does an average urban Indian household order groceries online per month?",
+    "hint": "Segment online grocery shoppers by behavior pattern (top-up vs full-week vs occasional impulse) and weight by share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-27",
+    "domain": "product",
+    "question": "Estimate the daily active users (DAU) of a major meditation app in India (e.g., Calm or Headspace or local Wysa).",
+    "hint": "Top-down: total mental wellness app market → leader's market share → MAU → MAU-to-DAU stickiness ratio.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-28",
+    "domain": "product",
+    "question": "How many Indians book movie tickets online every Friday?",
+    "hint": "Bottom-up: weekly cinema admission volume → Friday share → online booking share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-29",
+    "domain": "product",
+    "question": "Estimate the number of WhatsApp messages sent in India during Diwali (24-hour peak).",
+    "hint": "Top-down: WhatsApp Indian users × peak-day multiplier × messages per user on a normal day.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-30",
+    "domain": "product",
+    "question": "Estimate the daily Instagram reels watched per Indian user (active reels viewer).",
+    "hint": "Bottom-up: average user time on reels per day × average reel length watched.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-31",
+    "domain": "product",
+    "question": "Estimate the average time spent on YouTube per day by an Indian user (active viewer).",
+    "hint": "Bottom-up: total Indian YouTube watch hours / total daily users.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-32",
+    "domain": "product",
+    "question": "Estimate the number of swipes on dating apps (Bumble + Tinder + Hinge) per day in India.",
+    "hint": "Daily active dating app users × swipes per session × sessions per day.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-33",
+    "domain": "product",
+    "question": "Estimate the average UPI transactions per Indian user per week.",
+    "hint": "Top-down: total weekly UPI transactions / active UPI users.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-34",
+    "domain": "product",
+    "question": "Estimate the daily Google searches originating from India.",
+    "hint": "Bottom-up: Indian internet users × searches per user per day.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-35",
+    "domain": "product",
+    "question": "Estimate the songs streamed daily on Spotify India.",
+    "hint": "DAU × songs per session × sessions per day.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-36",
+    "domain": "product",
+    "question": "Estimate the number of LinkedIn posts per day from India.",
+    "hint": "Indian LinkedIn users × % who post × posting frequency.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-37",
+    "domain": "product",
+    "question": "Estimate the average e-commerce orders placed per urban Indian household per month.",
+    "hint": "Top-down: total physical-goods e-commerce orders India / active urban shopping households.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-38",
+    "domain": "product",
+    "question": "Estimate the daily food delivery orders per young professional (22-30) in metros.",
+    "hint": "Segment users by intensity, weight by share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-39",
+    "domain": "product",
+    "question": "Estimate the cab/auto rides booked per office-going professional in metros per week.",
+    "hint": "Segment by commute pattern (drives own vehicle, takes metro/bus, takes cabs daily).",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-40",
+    "domain": "product",
+    "question": "Estimate the number of Zoom (or equivalent video conferencing) meetings hosted per day from India.",
+    "hint": "Segment by use case: corporate meetings + edtech classes + personal calls.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-41",
+    "domain": "product",
+    "question": "Estimate the daily active sellers on Meesho.",
+    "hint": "Top-down: total registered sellers → MAU → DAU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-42",
+    "domain": "product",
+    "question": "Estimate the tweets (X posts) per day from India.",
+    "hint": "Indian X (Twitter) MAU × % who tweet × average tweets per active poster.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-43",
+    "domain": "product",
+    "question": "Estimate the average Netflix viewing hours per Indian subscriber per month.",
+    "hint": "Bottom-up: typical viewing pattern for Indian subscribers.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-44",
+    "domain": "product",
+    "question": "Estimate the resumes uploaded per day on Naukri.com.",
+    "hint": "Bottom-up: India's annual job-changers + freshers using Naukri.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-45",
+    "domain": "product",
+    "question": "Estimate the daily Swiggy orders during a major cricket match (e.g., IPL final, India-Pakistan).",
+    "hint": "Take Swiggy's average daily orders, apply match-day uplift multiplier driven by group viewing + order spike during innings break.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-46",
+    "domain": "product",
+    "question": "Estimate the average number of reviews left per Amazon India shopper per year.",
+    "hint": "Top-down: orders per shopper × review-rate per order.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-47",
+    "domain": "product",
+    "question": "Estimate the daily ride cancellations on Uber India (cancellations by either rider or driver).",
+    "hint": "Daily Uber rides × cancellation rate (well-documented industry pain point in India).",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-48",
+    "domain": "product",
+    "question": "Estimate the photos uploaded to Google Photos daily from India.",
+    "hint": "Bottom-up: Indian Google Photos users × photos taken per day.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-49",
+    "domain": "product",
+    "question": "Estimate the average podcast listening time per Indian active listener per week.",
+    "hint": "Indian active podcast listener base × hours/week typical.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-50",
+    "domain": "product",
+    "question": "Estimate the average shopping app sessions per Indian user per day.",
+    "hint": "Top-down: typical engagement pattern (browsing + transactional sessions).",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-51",
+    "domain": "product",
+    "question": "How would you estimate the adoption of smartwatches in Tier-2 cities of India over the next 3 years?",
+    "hint": "Bottom-up adoption funnel: addressable population → smartphone owners → fitness-aware → affordability fit → diffusion curve over 3 years.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-52",
+    "domain": "product",
+    "question": "Estimate how many college students in India would pay for LinkedIn Premium.",
+    "hint": "Funnel: total students → LinkedIn users in this segment → premium-aware → price-acceptance.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-53",
+    "domain": "product",
+    "question": "Estimate how many Indians may adopt AI healthcare assistants (apps that triage / answer health queries) in 5 years.",
+    "hint": "Top-down: addressable population (smartphone, internet, healthcare-conscious) × adoption curve over 5 years.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-54",
+    "domain": "product",
+    "question": "Estimate EV adoption rate (% of new vehicle sales) in India by 2030.",
+    "hint": "Segment-by-segment forecasting using current trajectory + policy/infra constraints.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-55",
+    "domain": "product",
+    "question": "Estimate ChatGPT (and similar AI) adoption among Indian college students in 2026.",
+    "hint": "Funnel: total students → smartphone-enabled → AI-aware → MAU.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-56",
+    "domain": "product",
+    "question": "Estimate the adoption of smart home devices (Alexa, Google Home, smart bulbs/plugs) in Indian metro households over the next 3 years.",
+    "hint": "Bottom-up: addressable households → tech-aware affluent segment → diffusion model.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-57",
+    "domain": "product",
+    "question": "Estimate the adoption of voice assistants in Indian vernacular language markets (Hindi, Tamil, Telugu).",
+    "hint": "Total smartphone vernacular users → voice-feature awareness → frequency.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-58",
+    "domain": "product",
+    "question": "Estimate ONDC (Open Network for Digital Commerce) adoption among small kirana stores in India.",
+    "hint": "Top-down: total kirana stores → onboarded to any digital platform → ONDC-active.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-59",
+    "domain": "product",
+    "question": "Estimate the adoption of UPI Lite (offline small-value payments without PIN) in next 2 years.",
+    "hint": "TAM: existing UPI users → those who do small-value transactions where UPI Lite saves friction → adoption ramp.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-60",
+    "domain": "product",
+    "question": "Estimate adoption of EdTech (digital learning) in Indian government schools.",
+    "hint": "Top-down: total govt school students → digital infrastructure penetration in schools.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-61",
+    "domain": "product",
+    "question": "Estimate Tier-3 city/town adoption of paid OTT subscriptions over next 3 years.",
+    "hint": "Bottom-up: smartphone-enabled households → smart TV / streaming-stick adoption → willingness to pay.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-62",
+    "domain": "product",
+    "question": "Estimate the adoption of EV in last-mile delivery (Swiggy/Zomato/Amazon/Flipkart fleets) by 2028.",
+    "hint": "Total last-mile fleet today × EV share trajectory.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-63",
+    "domain": "product",
+    "question": "Estimate how many Indians may switch to digital-only neobanks (Jupiter, Fi, Niyo, Slice) by 2028.",
+    "hint": "Top-down: addressable affluent + young digital natives → adoption forecast.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-64",
+    "domain": "product",
+    "question": "Estimate WhatsApp Pay adoption among small merchants in India by 2028.",
+    "hint": "Total small merchants → WhatsApp business app users → WhatsApp Pay accept conversion.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-65",
+    "domain": "product",
+    "question": "Estimate the number of Indians using AI for tax filing (chatbots, auto-fill ITR apps) by 2027.",
+    "hint": "Total individual taxpayers → those who self-file → AI tool penetration.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-66",
+    "domain": "product",
+    "question": "Estimate the adoption of fitness wearables among Indians 40+ over the next 3 years.",
+    "hint": "Total 40+ urban affluent → health-conscious subset → adoption curve.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-67",
+    "domain": "product",
+    "question": "Estimate the adoption of online therapy / mental health services in urban India post-2024.",
+    "hint": "Top-down: urban population → mental-health-aware subset → online vs offline split → app adoption.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-68",
+    "domain": "product",
+    "question": "Estimate the adoption of co-working spaces in Tier 2 cities by 2028.",
+    "hint": "Bottom-up: Tier 2 white-collar workforce → flex-space appetite → operator capacity build-out.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-69",
+    "domain": "product",
+    "question": "Estimate the adoption of D2C beauty brands (Nykaa-marketplace's homegrown + standalone like Sugar, Plum, Mamaearth, Minimalist) in India by 2027.",
+    "hint": "Total female + male beauty-buying population → D2C share of category.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-70",
+    "domain": "product",
+    "question": "Estimate SaaS adoption (vertical SaaS + horizontal CRM/HR/Accounting) among Indian SMBs by 2028.",
+    "hint": "Total SMBs → digital-aware subset → paying SaaS adopters.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-71",
+    "domain": "product",
+    "question": "Estimate the adoption of UPI in international markets via NRIs / Indian expats by 2028.",
+    "hint": "Total Indian diaspora → smartphone-enabled → countries where UPI is live → adoption ramp.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-72",
+    "domain": "product",
+    "question": "Estimate the adoption of AI tutors in IIT-JEE / NEET prep among aspirants by 2027.",
+    "hint": "Total aspirants × digital learning adoption × AI tool penetration.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-73",
+    "domain": "product",
+    "question": "Estimate the adoption of plant-based meat alternatives (Beyond Meat, Imagine Meats, GoodDot, Wakao) in metro India over next 3 years.",
+    "hint": "Total metro non-veg consumers → flexitarian + health-conscious subset → plant-based trial → repeat.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-74",
+    "domain": "product",
+    "question": "Estimate the adoption of Made-in-India payment apps (BHIM, Paytm UPI, NPCI's own) over Google Pay/PhonePe in coming years.",
+    "hint": "Track current shares + regulatory and policy push for Made-in-India.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-75",
+    "domain": "product",
+    "question": "Estimate the adoption of vernacular content apps (ShareChat, Moj, Josh, Roposo, Chingari) in India by 2028.",
+    "hint": "Total Indian short-video users → Hindi/regional preference subset → vernacular app adoption.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-76",
+    "domain": "product",
+    "question": "How many delivery partners does Swiggy need in Pune for its food delivery operations?",
+    "hint": "Daily orders → delivery time per order → partner working hours → partners needed.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-77",
+    "domain": "product",
+    "question": "Estimate the server load (peak concurrent users) during IPL final ticket booking on BookMyShow.",
+    "hint": "Stadium capacity → demand multiplier → user/ticket ratio → spike concentration.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-78",
+    "domain": "product",
+    "question": "Estimate the number of customer support agents needed for a large Indian fintech app (e.g., PhonePe / Paytm).",
+    "hint": "Tickets per month / agent productivity = headcount needed.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-79",
+    "domain": "product",
+    "question": "Estimate the dark store count Zepto needs in Bengaluru to serve 10-min delivery citywide.",
+    "hint": "Bengaluru area / dark store catchment area = number needed; cross-check with order volume per store viability.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-80",
+    "domain": "product",
+    "question": "Estimate the number of cell towers Jio needs to cover India.",
+    "hint": "Population × tower density per user OR area × tower density per sq km.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-81",
+    "domain": "product",
+    "question": "Estimate the data centers needed in India to host all major cloud + OTT + e-commerce services for next 3 years.",
+    "hint": "Drivers: data localization mandates + AI workloads + OTT/e-commerce growth.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-82",
+    "domain": "product",
+    "question": "Estimate the cab fleet size Ola/Uber/inDrive needs combined to serve Mumbai.",
+    "hint": "Total ride volume / driver productivity.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-83",
+    "domain": "product",
+    "question": "Estimate the bandwidth required for India's IPL streaming peak (multiple OTTs combined).",
+    "hint": "Concurrent viewers × per-stream bitrate.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-84",
+    "domain": "product",
+    "question": "Estimate the warehouses Flipkart needs across India.",
+    "hint": "Daily order volume / warehouse throughput; coverage area / warehouse catchment.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-85",
+    "domain": "product",
+    "question": "Estimate the EV charging stations India needs by 2030 to support EV adoption.",
+    "hint": "Total EVs on road by 2030 / EVs per charger ratio.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-86",
+    "domain": "product",
+    "question": "Estimate the call volume on a typical Indian fintech IVR during salary day (last working day of month).",
+    "hint": "Average daily support contact rate × salary-day uplift × voice channel share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-87",
+    "domain": "product",
+    "question": "Estimate the warehouse staff needed for Blinkit dark store operations in Delhi NCR.",
+    "hint": "Number of stores × staff per store.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-88",
+    "domain": "product",
+    "question": "Estimate the customer service tickets per day for Amazon India during festive sale (Great Indian Festival).",
+    "hint": "Daily order volume × support contact rate × festive uplift.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-89",
+    "domain": "product",
+    "question": "Estimate the staff/agents needed for an EdTech company running 1L+ live online classes per day.",
+    "hint": "Daily classes / classes per instructor + support staff ratio.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-90",
+    "domain": "product",
+    "question": "Estimate the hospital beds India needs to add over next 5 years to meet healthcare demand.",
+    "hint": "Population × bed-per-1000 target − current bed availability.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-91",
+    "domain": "product",
+    "question": "Estimate the fleet of buses BluSmart needs to operate as an EV ride-hailing leader in Delhi NCR + Bengaluru + Mumbai.",
+    "hint": "Daily ride volume target / car productivity.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-92",
+    "domain": "product",
+    "question": "Estimate the IT infrastructure needed for IRCTC during Tatkal booking peak.",
+    "hint": "Demand at peak Tatkal moment.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-93",
+    "domain": "product",
+    "question": "Estimate the bank branches a digital-first new bank (e.g., a hypothetical neobank getting full bank license) would need for India.",
+    "hint": "RBI norms + customer-per-branch ratio.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-94",
+    "domain": "product",
+    "question": "Estimate the number of doctors that need to be on Practo / Apollo247 to serve daily online consultation demand.",
+    "hint": "Daily consultation demand / consultations per doctor per day.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-95",
+    "domain": "product",
+    "question": "Estimate the bandwidth a 5G telco needs to provision in Mumbai per square km.",
+    "hint": "Users per sq km × peak per-user usage.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-96",
+    "domain": "product",
+    "question": "Estimate the warehouse picking robots / automation Flipkart needs to scale to 5B annual orders by 2030.",
+    "hint": "Scale current warehouse productivity and back into automation needed.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-97",
+    "domain": "product",
+    "question": "Estimate the GPUs (compute) required to run a national AI service like 'India ChatGPT' (Bhashini-scale) for 100M users.",
+    "hint": "Total token volume per day / per-GPU throughput.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-98",
+    "domain": "product",
+    "question": "Estimate the customer support staff and content moderators needed for an Indian social media app at 200M MAU scale.",
+    "hint": "Industry ratios for moderators per MAU + CS staff.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-99",
+    "domain": "product",
+    "question": "Estimate the EV battery factory capacity India needs by 2030.",
+    "hint": "EV stock 2030 × battery size + grid storage demand.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "product-100",
+    "domain": "product",
+    "question": "Estimate the engineering team size required to build and run a Tier-1 fintech app (PhonePe / Paytm scale) in India.",
+    "hint": "Decompose by domain: payments core, lending, investments, mutual funds, distribution products, growth, infra, security, support.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  }
+]

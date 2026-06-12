@@ -1,0 +1,69 @@
+{
+  "questionId": "generalist-91",
+  "domain": "generalist",
+  "question": "Estimate the number of weddings on a single most-auspicious 'muhurta' day in India.",
+  "idealClarificationQuestions": [
+    "Single most-auspicious day (Vivah muhurta in November or December)? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual weddings concentrated in muhurta days."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual Indian weddings: ~10-12M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Number of major muhurta days in this period: ~12-15 days (panchang)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Distribution gets concentrated on one prime tithi like Devuthani Ekadashi or post-eclipse muhurta."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~3-5 lakh weddings on single most-auspicious day in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual Indian weddings",
+      "value": "~10-12M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, in Nov-Dec muhurta cluster",
+      "value": "~30-35% = ~3.5-4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of major muhurta days in this period",
+      "value": "~12-15 days (panchang).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~3-5 lakh weddings on single most-auspicious day in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, in Nov-Dec muhurta cluster: ~30-35% = ~3.5-4M.",
+    "Top 3 most-auspicious days concentrate ~40% of muhurta-cluster weddings: 1.5M / 3 = ~5 lakh weddings on a single peak muhurta day.",
+    "Round: ~3-5 lakh weddings on single most-auspicious day in India."
+  ],
+  "finalAnswerRange": {
+    "low": "3",
+    "high": "5",
+    "ideal": "~3-5 lakh weddings on single most-auspicious day in India."
+  }
+}

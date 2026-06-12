@@ -1,0 +1,93 @@
+{
+  "questionId": "finance-55",
+  "domain": "finance",
+  "question": "Estimate the potential market size for Indian electric two-wheeler manufacturing by 2030.",
+  "idealClarificationQuestions": [
+    "Annual sales market in 2030? Yes.",
+    "Includes domestic + export? Domestic primary, with export call-out.",
+    "Value (revenue) and units? Both."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total 2W market × EV penetration × ASP."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian 2W market 2030: ~25 million units."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "EV 2W annual unit sales: ~6.5-7.5 million."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus battery + accessories aftermarket: ~₹15,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total opportunity: ~₹1.2 lakh Cr by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian 2W market 2030",
+      "value": "~25 million units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EV penetration in 2W",
+      "value": "~25-30% by 2030 (vs ~7-8% in 2026).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EV 2W annual unit sales",
+      "value": "~6.5-7.5 million.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average selling price",
+      "value": "~₹1.1-1.3 lakh (premium models higher, mass-market entry-level low).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual EV 2W revenue market",
+      "value": "7 million × ₹1.2L = ~₹85,000 Cr ~$10B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus battery + accessories aftermarket",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus exports (India aspires to be global EV 2W hub)",
+      "value": "~₹20,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total opportunity",
+      "value": "~₹1.2 lakh Cr by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total Indian 2W market 2030: ~25 million units.",
+    "EV 2W annual unit sales: ~6.5-7.5 million.",
+    "Average selling price: ~₹1.1-1.3 lakh (premium models higher, mass-market entry-level low).",
+    "Annual EV 2W revenue market: 7 million × ₹1.2L = ~₹85,000 Cr ~$10B.",
+    "Plus battery + accessories aftermarket: ~₹15,000 Cr.",
+    "Plus exports (India aspires to be global EV 2W hub): ~₹20,000 Cr.",
+    "Total opportunity: ~₹1.2 lakh Cr by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total opportunity: ~₹1.2 lakh Cr by 2030."
+  }
+}

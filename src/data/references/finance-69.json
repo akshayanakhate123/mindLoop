@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-69",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian senior care opportunity (silver economy) by 2030.",
+  "idealClarificationQuestions": [
+    "All senior-care related markets: assisted living + senior healthcare + senior leisure + senior products? Yes.",
+    "By 2030? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Senior population × segment-wise spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian seniors (60+) by 2030: ~19 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Senior nutrition + supplements: ~₹15,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Senior tech (apps, devices, KhyaalApp, Goodfellows): ~₹3,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total silver economy: ~₹2.4-2.5 lakh Cr by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian seniors (60+) by 2030",
+      "value": "~19 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior healthcare (specialized geriatric services, chronic care)",
+      "value": "~₹1.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior nutrition + supplements",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior assisted living + premium retirement homes",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior leisure + travel",
+      "value": "~₹12,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Senior tech (apps, devices, KhyaalApp, Goodfellows)",
+      "value": "~₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total silver economy",
+      "value": "~₹2.4-2.5 lakh Cr by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian seniors (60+) by 2030: ~19 crore.",
+    "- Senior healthcare (specialized geriatric services, chronic care): ~₹1.5 lakh Cr.",
+    "- Senior nutrition + supplements: ~₹15,000 Cr.",
+    "- Senior assisted living + premium retirement homes: ~₹8,000 Cr.",
+    "- Senior leisure + travel: ~₹12,000 Cr.",
+    "- Senior tech (apps, devices, KhyaalApp, Goodfellows): ~₹3,000 Cr.",
+    "- Senior financial products (annuity, reverse mortgage, health insurance): ~₹50,000 Cr (premium booked).",
+    "Total silver economy: ~₹2.4-2.5 lakh Cr by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total silver economy: ~₹2.4-2.5 lakh Cr by 2030."
+  }
+}

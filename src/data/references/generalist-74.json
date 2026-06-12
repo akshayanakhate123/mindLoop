@@ -1,0 +1,93 @@
+{
+  "questionId": "generalist-74",
+  "domain": "generalist",
+  "question": "Estimate the number of warehouses (logistics + e-commerce + cold storage) in India.",
+  "idealClarificationQuestions": [
+    "Organized warehousing (>20K sqft) + cold storage + container freight? Yes.",
+    "Excludes small godowns? Excluded.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total warehousing capacity / avg warehouse size."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian organized warehousing stock (FY26): ~430-450 million sqft (Grade A + B)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Plus mid-tier warehouses (50K-2L sqft): ~10,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total organized warehousing facilities: ~21,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~21K organized + ~50K unorganized = ~70K warehouses."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian organized warehousing stock (FY26)",
+      "value": "~430-450 million sqft (Grade A + B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average warehouse size (organized)",
+      "value": "~2 lakh sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of organized warehouses",
+      "value": "450M / 2L = ~2,250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus mid-tier warehouses (50K-2L sqft)",
+      "value": "~10,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus cold storage facilities",
+      "value": "~8,500 (mostly potato + onion + dairy).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Container Freight Stations + ICDs",
+      "value": "~250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total organized warehousing facilities",
+      "value": "~21,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus unorganized small godowns",
+      "value": "~50,000+.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian organized warehousing stock (FY26): ~430-450 million sqft (Grade A + B).",
+    "Average warehouse size (organized): ~2 lakh sqft.",
+    "Number of organized warehouses: 450M / 2L = ~2,250.",
+    "Plus cold storage facilities: ~8,500 (mostly potato + onion + dairy).",
+    "Plus Container Freight Stations + ICDs: ~250.",
+    "Plus unorganized small godowns: ~50,000+.",
+    "Round: ~21K organized + ~50K unorganized = ~70K warehouses."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~21K organized + ~50K unorganized = ~70K warehouses."
+  }
+}

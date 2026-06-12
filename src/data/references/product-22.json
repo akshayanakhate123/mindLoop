@@ -1,0 +1,84 @@
+{
+  "questionId": "product-22",
+  "domain": "product",
+  "question": "Estimate the market size for online insurance (health + term + motor + others) in India.",
+  "idealClarificationQuestions": [
+    "Premium booked online or net new policies? Annual premium booked online.",
+    "Include both pure online (Policybazaar, Acko, Digit) and traditional insurer's online channel (HDFC ERGO online)? Yes.",
+    "Time horizon: FY26? Yes.",
+    "Renewals included? Yes — total online premium."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total Indian insurance premium → digital channel share by category."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian insurance premium FY26 (life + non-life): ~₹14 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Health insurance premium: ~₹1 lakh Cr; online share ~25-30% = ₹28,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Other (travel, home, cyber, gadget): ~₹15,000 Cr; online share ~50% = ₹7,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round to ~₹1.1-1.2 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian insurance premium FY26 (life + non-life)",
+      "value": "~₹14 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Life insurance premium",
+      "value": "~₹9 lakh Cr; online share ~5-7% = ₹50,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Health insurance premium",
+      "value": "~₹1 lakh Cr; online share ~25-30% = ₹28,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Motor insurance premium",
+      "value": "~₹85,000 Cr; online share ~35-40% = ₹32,000 Cr (renewal-heavy, easy online).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other (travel, home, cyber, gadget)",
+      "value": "~₹15,000 Cr; online share ~50% = ₹7,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total online insurance premium",
+      "value": "~₹1,17,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total Indian insurance premium FY26 (life + non-life): ~₹14 lakh Cr.",
+    "Life insurance premium: ~₹9 lakh Cr; online share ~5-7% = ₹50,000 Cr.",
+    "Health insurance premium: ~₹1 lakh Cr; online share ~25-30% = ₹28,000 Cr.",
+    "Motor insurance premium: ~₹85,000 Cr; online share ~35-40% = ₹32,000 Cr (renewal-heavy, easy online).",
+    "Other (travel, home, cyber, gadget): ~₹15,000 Cr; online share ~50% = ₹7,500 Cr.",
+    "Total online insurance premium: ~₹1,17,000 Cr.",
+    "Round to ~₹1.1-1.2 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round to ~₹1.1-1.2 lakh Cr."
+  }
+}

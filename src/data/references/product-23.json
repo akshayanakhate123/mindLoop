@@ -1,0 +1,84 @@
+{
+  "questionId": "product-23",
+  "domain": "product",
+  "question": "Estimate the TAM for personal finance management (PFM) and investment apps (Groww, Zerodha, INDmoney, Jar etc.) in India.",
+  "idealClarificationQuestions": [
+    "Define TAM as total revenue these apps could earn at saturation? Yes.",
+    "Brokerage + AMC commissions + platform fees + lending revenue + subscription? Aggregate revenue across PFM stacks.",
+    "Time horizon: 5-year forward? Yes.",
+    "Include only retail/individual users? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: addressable savings/investment population → average investable surplus → revenue rate (take rate)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households with savings discipline + ₹10K+ monthly surplus: ~120M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average annual investable surplus per user (entry-tier to affluent): ~₹50,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "TAM revenue: ₹4 lakh Cr × 1.2% = ~₹4,800 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total TAM: ~₹9,000-10,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households with savings discipline + ₹10K+ monthly surplus",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, smartphone-enabled and willing to invest digitally",
+      "value": "~80M (TAM users).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual investable surplus per user (entry-tier to affluent)",
+      "value": "~₹50,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual investable flow",
+      "value": "80M × ₹50,000 = ₹4 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM revenue",
+      "value": "₹4 lakh Cr × 1.2% = ~₹4,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total TAM",
+      "value": "~₹9,000-10,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian households with savings discipline + ₹10K+ monthly surplus: ~120M.",
+    "Average annual investable surplus per user (entry-tier to affluent): ~₹50,000.",
+    "Total annual investable flow: 80M × ₹50,000 = ₹4 lakh Cr.",
+    "Take rate (broking ₹20/order, MF trail commissions, lending revenue, premium subs blend): ~1.0-1.5%.",
+    "TAM revenue: ₹4 lakh Cr × 1.2% = ~₹4,800 Cr.",
+    "Add cumulative AUM-based trail (₹15 lakh Cr AUM × 0.3%) = ₹4,500 Cr.",
+    "Total TAM: ~₹9,000-10,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total TAM: ~₹9,000-10,000 Cr."
+  }
+}

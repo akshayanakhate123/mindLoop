@@ -1,0 +1,81 @@
+{
+  "questionId": "generalist-45",
+  "domain": "generalist",
+  "question": "Estimate the annual consumption of plastic in India (in tonnes).",
+  "idealClarificationQuestions": [
+    "Total plastic consumption (packaging + durables + industrial)? Yes — all forms.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-capita consumption + segment breakdown."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India per-capita plastic consumption: ~14 kg/year (rising — was 11 kg in 2019; vs global 35 kg)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Packaging (single-use + flexible + rigid): ~45% = 9 MT."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Automotive + electronics + others: ~30% = 6 MT."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~20 million tonnes plastic consumption annually."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India per-capita plastic consumption",
+      "value": "~14 kg/year (rising — was 11 kg in 2019; vs global 35 kg).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "1.45B × 14 = ~20 MT/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Packaging (single-use + flexible + rigid)",
+      "value": "~45% = 9 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Construction (pipes, fittings)",
+      "value": "~25% = 5 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Automotive + electronics + others",
+      "value": "~30% = 6 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~20 million tonnes plastic consumption annually.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total: 1.45B × 14 = ~20 MT/year.",
+    "- Packaging (single-use + flexible + rigid): ~45% = 9 MT.",
+    "- Construction (pipes, fittings): ~25% = 5 MT.",
+    "- Automotive + electronics + others: ~30% = 6 MT.",
+    "Round: ~20 million tonnes plastic consumption annually."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~20 million tonnes plastic consumption annually."
+  }
+}

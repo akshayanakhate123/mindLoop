@@ -1,0 +1,82 @@
+{
+  "questionId": "marketing-68",
+  "domain": "marketing",
+  "question": "Estimate the Indian audiophile / premium audio product buyer segment (₹15,000+ headphones / speakers).",
+  "idealClarificationQuestions": [
+    "Premium audio = headphones + speakers + soundbars priced ₹15K+? Yes.",
+    "Annual buyer count? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Affluent + tech-aware × audio enthusiast share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian premium tech buyers (annually buy any ₹15K+ tech): ~3-4 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual audiophile buyers (purchased premium audio in last 12 months): ~12-15 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Market value: 14L × ₹35,000 = ~₹4,900 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~12-15 lakh annual premium audio buyers; ₹4,500-5,500 Cr market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian premium tech buyers (annually buy any ₹15K+ tech)",
+      "value": "~3-4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, interested in audio specifically",
+      "value": "~10-12% = 35-50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual audiophile buyers (purchased premium audio in last 12 months)",
+      "value": "~12-15 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average spend per audiophile purchase",
+      "value": "~₹35,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Market value",
+      "value": "14L × ₹35,000 = ~₹4,900 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~12-15 lakh annual premium audio buyers; ₹4,500-5,500 Cr market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian premium tech buyers (annually buy any ₹15K+ tech): ~3-4 crore.",
+    "Of these, interested in audio specifically: ~10-12% = 35-50 lakh.",
+    "Annual audiophile buyers (purchased premium audio in last 12 months): ~12-15 lakh.",
+    "Average spend per audiophile purchase: ~₹35,000.",
+    "Market value: 14L × ₹35,000 = ~₹4,900 Cr.",
+    "Round: ~12-15 lakh annual premium audio buyers; ₹4,500-5,500 Cr market."
+  ],
+  "finalAnswerRange": {
+    "low": "12",
+    "high": "15",
+    "ideal": "~12-15 lakh annual premium audio buyers; ₹4,500-5,500 Cr market."
+  }
+}

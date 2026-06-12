@@ -1,0 +1,82 @@
+{
+  "questionId": "finance-3",
+  "domain": "finance",
+  "question": "Estimate the annual revenue from FASTag toll collection in India.",
+  "idealClarificationQuestions": [
+    "Total FASTag toll collection across all toll plazas? Yes.",
+    "NHAI tolls + state toll roads + private (concession) operators? All FASTag-enabled.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Vehicles tolled per day × avg toll × days."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total daily FASTag transactions (NPCI data): ~1.1-1.2 crore transactions/day (FY26)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Take ₹130 average."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual collection: ~₹55,000-60,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: this is gross toll collected; not all goes to NHAI — concessionaires (private operators) keep ~70% of their plaza collections."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total daily FASTag transactions (NPCI data)",
+      "value": "~1.1-1.2 crore transactions/day (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average toll per transaction (blended cars + commercial vehicles)",
+      "value": "~₹120-140 (commercial vehicles pay 2-7x cars).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily collection",
+      "value": "1.15 crore × ₹130 = ~₹150 Cr/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual collection",
+      "value": "~₹55,000-60,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹55,000 Cr annual FASTag toll collection in India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "this is gross toll collected; not all goes to NHAI — concessionaires (private operators) keep ~70% of their plaza collections.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total daily FASTag transactions (NPCI data): ~1.1-1.2 crore transactions/day (FY26).",
+    "Average toll per transaction (blended cars + commercial vehicles): ~₹120-140 (commercial vehicles pay 2-7x cars).",
+    "Take ₹130 average.",
+    "Daily collection: 1.15 crore × ₹130 = ~₹150 Cr/day.",
+    "Annual collection: ~₹55,000-60,000 Cr.",
+    "Round: ~₹55,000 Cr annual FASTag toll collection in India."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹55,000 Cr annual FASTag toll collection in India."
+  }
+}

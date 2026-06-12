@@ -1,0 +1,77 @@
+{
+  "questionId": "marketing-94",
+  "domain": "marketing",
+  "question": "Estimate the value of an Instagram reel post by a top Indian celebrity (10M+ followers).",
+  "idealClarificationQuestions": [
+    "Sponsored reel post fees? Yes.",
+    "Celebrity with 10M+ Instagram followers (Bollywood/cricket A-list)? Yes.",
+    "Single sponsored reel? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Influencer marketing rates for top tier."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top tier celebrity (10M+) sponsored reel pricing:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Cricket stars (Kohli, Sharma, Pant): ~₹35-60 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~₹40-80 lakh per sponsored Instagram reel for top Indian celebrities."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Engagement: typically 5-10M views, 200-500K likes."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Established Bollywood A-listers (Deepika, Alia, Ranveer)",
+      "value": "~₹50-80 lakh per sponsored reel.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cricket stars (Kohli, Sharma, Pant)",
+      "value": "~₹35-60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid Bollywood (5-10M followers)",
+      "value": "~₹20-35 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹40-80 lakh per sponsored Instagram reel for top Indian celebrities.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engagement",
+      "value": "typically 5-10M views, 200-500K likes.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Top tier celebrity (10M+) sponsored reel pricing:",
+    "- Established Bollywood A-listers (Deepika, Alia, Ranveer): ~₹50-80 lakh per sponsored reel.",
+    "- Cricket stars (Kohli, Sharma, Pant): ~₹35-60 lakh.",
+    "- Mid Bollywood (5-10M followers): ~₹20-35 lakh.",
+    "Round: ~₹40-80 lakh per sponsored Instagram reel for top Indian celebrities."
+  ],
+  "finalAnswerRange": {
+    "low": "40",
+    "high": "80",
+    "ideal": "~₹40-80 lakh per sponsored Instagram reel for top Indian celebrities."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "questionId": "generalist-35",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of bread (pav, sliced loaf, buns) in India.",
+  "idealClarificationQuestions": [
+    "All baked bread products: pav, sliced bread, kulcha, bun, sandwich loaves? Yes.",
+    "Pan-India? Yes.",
+    "Average day? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × bread-eating share × consumption per eater."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Bread-eating population in India (regular consumers): ~25-30% = ~360-430M (skewed to urban + Maharashtra/Goa pav, South India sandwich, North urban breakfast)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Avg consumption: ~3 slices/day or 1 pav/day = ~70g/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Equivalent loaves (~400g): ~26 million loaves/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus pav (Mumbai-Maharashtra): ~3-4 crore pav/day in Maharashtra alone."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Bread-eating population in India (regular consumers)",
+      "value": "~25-30% = ~360-430M (skewed to urban + Maharashtra/Goa pav, South India sandwich, North urban breakfast).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, daily eaters (loaf or pav)",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg consumption",
+      "value": "~3 slices/day or 1 pav/day = ~70g/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily bread",
+      "value": "150M × 70g = ~10,500 tonnes/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Equivalent loaves (~400g)",
+      "value": "~26 million loaves/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus pav (Mumbai-Maharashtra)",
+      "value": "~3-4 crore pav/day in Maharashtra alone.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Bread-eating population in India (regular consumers): ~25-30% = ~360-430M (skewed to urban + Maharashtra/Goa pav, South India sandwich, North urban breakfast).",
+    "Avg consumption: ~3 slices/day or 1 pav/day = ~70g/day.",
+    "Daily bread: 150M × 70g = ~10,500 tonnes/day.",
+    "Equivalent loaves (~400g): ~26 million loaves/day.",
+    "Plus pav (Mumbai-Maharashtra): ~3-4 crore pav/day in Maharashtra alone."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus pav (Mumbai-Maharashtra): ~3-4 crore pav/day in Maharashtra alone."
+  }
+}

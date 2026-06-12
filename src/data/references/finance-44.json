@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-44",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for a leading FMCG company (Hindustan Unilever).",
+  "idealClarificationQuestions": [
+    "HUL India standalone EBITDA margin? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "FMCG cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Revenue: 100% (~₹62,000 Cr)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Trade marketing + distributor margin: ~12%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~78-82%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT margin: ~16-18%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100% (~₹62,000 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS (raw materials, packaging)",
+      "value": "~50-52%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + A&P",
+      "value": "~10-11%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Trade marketing + distributor margin",
+      "value": "~12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Employee cost",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~5-6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~78-82%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "~22-24%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Revenue: 100% (~₹62,000 Cr).",
+    "- Marketing + A&P: ~10-11%.",
+    "- Trade marketing + distributor margin: ~12%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT margin: ~16-18%."
+  }
+}

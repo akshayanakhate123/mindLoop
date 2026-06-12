@@ -1,0 +1,541 @@
+/* ── Page ───────────────────────────────────────────────────────────────────── */
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 2.5rem;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+}
+
+/* ── Empty state ────────────────────────────────────────────────────────────── */
+.emptyState {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-top: 2rem;
+}
+
+.emptyIcon { font-size: 3.5rem; margin-bottom: 1.25rem; }
+.emptyState h1 { font-size: 1.6rem; font-weight: 800; color: var(--foreground); margin-bottom: 0.5rem; }
+.emptyState p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+
+.ctaButton {
+  padding: 0.875rem 2rem;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.ctaButton:hover { background: #2a3a5c; }
+
+/* ── Page header ────────────────────────────────────────────────────────────── */
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pageTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--foreground);
+  letter-spacing: -0.5px;
+  margin: 0 0 0.25rem;
+  line-height: 1.2;
+}
+
+.pageSubtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.dateRangePill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.82rem;
+  color: var(--foreground);
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  margin-top: 0.25rem;
+  transition: background 0.15s;
+  user-select: none;
+}
+.dateRangePill:hover { background: #F7F3EC; }
+
+.dateRangeText { font-weight: 600; }
+
+.rangeDropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  z-index: 100;
+  min-width: 148px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.rangeDropdownItem {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.55rem 1rem;
+  font-size: 0.82rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.rangeDropdownItem:hover { background: #F7F3EC; }
+.rangeDropdownItemActive {
+  background: #EEF2FF;
+  color: #4A6CF7;
+  font-weight: 700;
+}
+
+/* ── Section 1: Top stats row ───────────────────────────────────────────────── */
+.topRow {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Readiness card */
+.readinessCard {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem 1rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.readinessTitle {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+  text-align: center;
+}
+
+.gaugeSvg { width: 100%; max-width: 160px; }
+
+.gaugeNum {
+  font-size: 20px;
+  font-weight: 800;
+  fill: var(--foreground);
+  font-family: inherit;
+}
+
+.readinessLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gaugeGood { color: #16A34A; }
+.gaugeOk   { color: #D97706; }
+.gaugeBad  { color: #DC2626; }
+
+/* Stat cards */
+.statCard {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.statLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--foreground);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.statSub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Section 2: Improvement banner ─────────────────────────────────────────── */
+.banner {
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.bannerGreen { background: #F0FAF4; border: 1px solid #BBF7D0; }
+.bannerRed   { background: #FEF2F2; border: 1px solid #FECACA; }
+
+.bannerIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.bannerIconGreen { background: #DCFCE7; }
+.bannerIconRed   { background: #FEE2E2; }
+
+.bannerText {
+  font-size: 1rem;
+  color: var(--foreground);
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.bannerHighlight    { color: #16A34A; font-weight: 800; }
+.bannerHighlightRed { color: #DC2626; font-weight: 800; }
+
+/* ── Section 3: Trend charts ────────────────────────────────────────────────── */
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.chartCard {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+}
+
+.chartHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.875rem;
+}
+
+.chartIconCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.chartIconRed  { background: #FEE2E2; }
+.chartIconBlue { background: #DBEAFE; }
+
+.chartTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.lineSvg { width: 100%; display: block; }
+
+.axisLabel {
+  font-size: 9px;
+  fill: #9CA3AF;
+  font-family: inherit;
+}
+
+.dotLabel {
+  font-size: 9px;
+  font-weight: 700;
+  fill: #4B5563;
+  font-family: inherit;
+}
+
+.noData {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 2rem 0;
+}
+
+/* ── Section 4: Type analysis ───────────────────────────────────────────────── */
+.typeRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.typeCard {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.typeCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.typeIconCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.typeIconGreen { background: #DCFCE7; }
+.typeIconAmber { background: #FEF3C7; }
+
+.typeCardTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.typeNameRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.typeNameGreen { font-size: 0.95rem; font-weight: 700; color: #16A34A; }
+.typeNameAmber { font-size: 0.95rem; font-weight: 700; color: #D97706; }
+
+.typeAvgPill {
+  background: #F3F4F6;
+  border-radius: 8px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4B5563;
+  white-space: nowrap;
+}
+
+.typeBar {
+  height: 6px;
+  background: #F3F4F6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.typeBarFillGreen { height: 100%; background: #22C55E; border-radius: 3px; transition: width 0.6s ease; }
+.typeBarFillAmber { height: 100%; background: #F59E0B; border-radius: 3px; transition: width 0.6s ease; }
+
+.typeDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.typeExampleBtn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.45rem 0.875rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, border-color 0.15s;
+  align-self: flex-start;
+}
+.typeExampleBtn:hover { background: #F7F3EC; border-color: #D0C8B8; }
+
+/* Donut chart for type */
+.typeDonutRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.typeDonutWrap {
+  flex-shrink: 0;
+}
+
+.typeDonut {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeDonutHole {
+  width: 54px;
+  height: 54px;
+  background: white;
+  border-radius: 50%;
+}
+
+.typeLegend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legendName {
+  flex: 1;
+  color: #4B5563;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.legendPct {
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+/* ── Section 5: Insights for you ───────────────────────────────────────────── */
+.insightsRow {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.3fr 1.3fr;
+  gap: 1rem;
+}
+
+.insightsAnchor {
+  background: #F3F0FF;
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+  border: 1px solid #DDD6FE;
+}
+
+.insightsAnchorIcon {
+  width: 44px;
+  height: 44px;
+  background: #EDE9FE;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.insightsAnchorLabel {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #5B21B6;
+  margin: 0;
+}
+
+.insightCard {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.insightIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.insightIconAmber { background: #FEF3C7; }
+.insightIconBlue  { background: #DBEAFE; }
+.insightIconGreen { background: #DCFCE7; }
+
+.insightTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.insightDesc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

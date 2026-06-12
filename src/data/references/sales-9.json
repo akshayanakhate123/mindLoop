@@ -1,0 +1,76 @@
+{
+  "questionId": "sales-9",
+  "domain": "sales",
+  "question": "Estimate monthly air conditioner (AC) sales in Delhi NCR during peak summer.",
+  "idealClarificationQuestions": [
+    "Residential split AC + window AC (excludes commercial)? Yes.",
+    "Peak summer month (April-June)? Yes.",
+    "Delhi NCR (~32M)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total annual AC sales × peak season concentration × NCR share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian AC market FY26: ~120 lakh units/year (12M)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Peak summer (Apr-Jun) concentration: ~50% of annual sales = ~60 lakh units in 3 months."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly peak: ~2.4 lakh AC units in NCR (single peak month — May)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "By brand: Voltas ~16%, Daikin ~15%, LG ~12%, Samsung ~10%, Lloyd ~8%, Hitachi ~6%, Carrier ~5%, Blue Star/Haier/Whirlpool ~28%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian AC market FY26",
+      "value": "~120 lakh units/year (12M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Peak summer (Apr-Jun) concentration",
+      "value": "~50% of annual sales = ~60 lakh units in 3 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Delhi NCR share of national AC market (hottest large metro)",
+      "value": "~12% = 60L × 12% = ~7.2 lakh units in 3 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly peak",
+      "value": "~2.4 lakh AC units in NCR (single peak month — May).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By brand",
+      "value": "Voltas ~16%, Daikin ~15%, LG ~12%, Samsung ~10%, Lloyd ~8%, Hitachi ~6%, Carrier ~5%, Blue Star/Haier/Whirlpool ~28%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian AC market FY26: ~120 lakh units/year (12M).",
+    "Peak summer (Apr-Jun) concentration: ~50% of annual sales = ~60 lakh units in 3 months.",
+    "Delhi NCR share of national AC market (hottest large metro): ~12% = 60L × 12% = ~7.2 lakh units in 3 months.",
+    "Monthly peak: ~2.4 lakh AC units in NCR (single peak month — May)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "By brand: Voltas ~16%, Daikin ~15%, LG ~12%, Samsung ~10%, Lloyd ~8%, Hitachi ~6%, Carrier ~5%, Blue Star/Haier/Whirlpool ~28%."
+  }
+}

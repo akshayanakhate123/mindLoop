@@ -1,0 +1,68 @@
+{
+  "questionId": "product-60",
+  "domain": "product",
+  "question": "Estimate adoption of EdTech (digital learning) in Indian government schools.",
+  "idealClarificationQuestions": [
+    "Government school students using digital tools (smart boards, learning apps issued by school)? Yes.",
+    "Currently (2026)? Yes.",
+    "Defined as: school provides device/access, not personal smartphone use? School-provided.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total govt school students → digital infrastructure penetration in schools."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total students in Indian government schools: ~150M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Students in such schools: ~37M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Add students using DIKSHA / state-level apps for self-learning at home (with personal access): ~30M (overlap with above ~10M; net new ~20M)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~35-40M government school students using digital learning tools in some form."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total students in Indian government schools",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Students in such schools",
+      "value": "~37M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, students actively using EdTech tools at least weekly",
+      "value": "~50% = ~18M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~35-40M government school students using digital learning tools in some form.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, students actively using EdTech tools at least weekly: ~50% = ~18M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~35-40M government school students using digital learning tools in some form."
+  }
+}

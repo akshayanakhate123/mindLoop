@@ -1,0 +1,72 @@
+{
+  "questionId": "marketing-92",
+  "domain": "marketing",
+  "question": "Estimate the annual ad revenue of YouTube from India.",
+  "idealClarificationQuestions": [
+    "Indian advertisers' spend on YouTube ads? Yes.",
+    "Year 2026? Yes.",
+    "Excludes YouTube Premium revenue? Yes — only ads."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total Indian digital ad market × YouTube share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian digital ad spend FY26: ~₹65,000-70,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "YouTube share of video ads: ~70% = ~₹12,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~₹12,000-13,000 Cr YouTube India ad revenue."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Estimate covers AdSense paid to creators + Google's gross share."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian digital ad spend FY26",
+      "value": "~₹65,000-70,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of this, video ads (long-form + Shorts + display)",
+      "value": "~25% = ~₹17,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "YouTube share of video ads",
+      "value": "~70% = ~₹12,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹12,000-13,000 Cr YouTube India ad revenue.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian digital ad spend FY26: ~₹65,000-70,000 Cr.",
+    "Of this, video ads (long-form + Shorts + display): ~25% = ~₹17,000 Cr.",
+    "YouTube share of video ads: ~70% = ~₹12,000 Cr.",
+    "Plus Search/display + Shopping (Google ecosystem): allocated separately.",
+    "Round: ~₹12,000-13,000 Cr YouTube India ad revenue.",
+    "Estimate covers AdSense paid to creators + Google's gross share."
+  ],
+  "finalAnswerRange": {
+    "low": "12,000",
+    "high": "13,000",
+    "ideal": "~₹12,000-13,000 Cr YouTube India ad revenue."
+  }
+}

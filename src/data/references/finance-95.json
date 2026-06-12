@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-95",
+  "domain": "finance",
+  "question": "Estimate the cost of running an OTT platform in India (Jio Hotstar / Netflix India level).",
+  "idealClarificationQuestions": [
+    "Total annual operating cost for major Indian OTT? Yes.",
+    "Includes content + tech + marketing? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Content + tech + opex stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Major OTT platform annual cost stack:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Tech infrastructure (CDN, cloud, encoding, app dev): ₹600-900 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total annual cost: ~₹9,500-15,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Result: thin profitability or loss until subscriber + ad scale grows."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Content acquisition (sports rights, originals, syndication)",
+      "value": "₹6,000-10,000 Cr (e.g., IPL rights ₹6,500 Cr/year).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Original content production",
+      "value": "₹1,500-2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech infrastructure (CDN, cloud, encoding, app dev)",
+      "value": "₹600-900 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + promotion",
+      "value": "₹800-1,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Employee cost",
+      "value": "₹500-700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Customer support + other ops",
+      "value": "₹200-300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual cost",
+      "value": "~₹9,500-15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For JioHotstar (post-merger, owns IPL + ICC rights + Disney library)",
+      "value": "~₹14-16K Cr cost.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Content acquisition (sports rights, originals, syndication): ₹6,000-10,000 Cr (e.g., IPL rights ₹6,500 Cr/year).",
+    "- Original content production: ₹1,500-2,500 Cr.",
+    "- Tech infrastructure (CDN, cloud, encoding, app dev): ₹600-900 Cr.",
+    "- Marketing + promotion: ₹800-1,200 Cr.",
+    "- Employee cost: ₹500-700 Cr.",
+    "- Customer support + other ops: ₹200-300 Cr.",
+    "Total annual cost: ~₹9,500-15,000 Cr.",
+    "For JioHotstar (post-merger, owns IPL + ICC rights + Disney library): ~₹14-16K Cr cost.",
+    "Revenue side: subscription + ads ~₹13-15K Cr.",
+    "Result: thin profitability or loss until subscriber + ad scale grows."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Revenue side: subscription + ads ~₹13-15K Cr."
+  }
+}

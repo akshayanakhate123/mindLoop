@@ -1,0 +1,87 @@
+{
+  "questionId": "product-55",
+  "domain": "product",
+  "question": "Estimate ChatGPT (and similar AI) adoption among Indian college students in 2026.",
+  "idealClarificationQuestions": [
+    "Used for any purpose (study, code, content) in past 30 days? Yes — MAU.",
+    "Includes ChatGPT + Gemini + Claude + Indian alternatives (Krutrim)? Yes — any AI chat tool.",
+    "Indian college students (40M base)? Yes.",
+    "Free + paid? Both."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Funnel: total students → smartphone-enabled → AI-aware → MAU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total college students in India: ~40M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "AI-aware (have heard of and tried ChatGPT-like tools): ~80% = 30M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Heavy users (multiple times/week): ~50% of MAU = 10M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Paying student users: ~500K-800K."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total college students in India",
+      "value": "~40M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone + internet enabled (vast majority)",
+      "value": "~95% = 38M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AI-aware (have heard of and tried ChatGPT-like tools)",
+      "value": "~80% = 30M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "MAU (used in past 30 days)",
+      "value": "~65-70% of aware = ~20M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Heavy users (multiple times/week)",
+      "value": "~50% of MAU = 10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which paying",
+      "value": "~3-5% (₹2,000/month is steep for students; many share family Plus accounts).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paying student users",
+      "value": "~500K-800K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Smartphone + internet enabled (vast majority): ~95% = 38M.",
+    "AI-aware (have heard of and tried ChatGPT-like tools): ~80% = 30M.",
+    "MAU (used in past 30 days): ~65-70% of aware = ~20M.",
+    "Heavy users (multiple times/week): ~50% of MAU = 10M.",
+    "Of which paying: ~3-5% (₹2,000/month is steep for students; many share family Plus accounts)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Paying student users: ~500K-800K."
+  }
+}

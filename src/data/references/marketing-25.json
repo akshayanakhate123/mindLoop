@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-25",
+  "domain": "marketing",
+  "question": "Estimate the reach of a multi-channel campaign for a product launch combining TV, digital, OOH, and PR.",
+  "idealClarificationQuestions": [
+    "Total reach across all channels (deduped) for a major product launch (e.g., new smartphone, new car)? Yes.",
+    "Budget: ~₹50 cr media spend over 6 weeks? Yes.",
+    "Pan-India target? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum reach by channel; deduplicate via overlap multiplier."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TV reach (₹25 cr media → ~3,500 GRPs): 1+ reach ~80 crore Indians (TV watchers)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "PR + earned media (₹2 cr): ~5-10 crore reached via news, articles."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Effective reach (3+ contacts): ~50 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions probe your ability to think in funnels: how prospects move from impression → action → customer. The key is knowing realistic step-by-step conversion rates by channel and category. Compound the drops and end with a sanity check against industry benchmarks."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TV reach (₹25 cr media → ~3,500 GRPs)",
+      "value": "1+ reach ~80 crore Indians (TV watchers).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digital reach (₹15 cr → Meta + YouTube + display)",
+      "value": "~30 crore unique.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OOH reach (₹6 cr → 50 prime hoardings + airport + metro)",
+      "value": "~15 crore unique person-impressions; ~5 crore unique people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PR + earned media (₹2 cr)",
+      "value": "~5-10 crore reached via news, articles.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Print (₹2 cr → top 3 metros, 3 days full page)",
+      "value": "~5 crore unique readers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sum (with overlap)",
+      "value": "de-duped via simple correlation analysis: total unique = ~85-90 crore individuals reached.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Effective reach (3+ contacts)",
+      "value": "~50 crore.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TV reach (₹25 cr media → ~3,500 GRPs): 1+ reach ~80 crore Indians (TV watchers).",
+    "Digital reach (₹15 cr → Meta + YouTube + display): ~30 crore unique.",
+    "OOH reach (₹6 cr → 50 prime hoardings + airport + metro): ~15 crore unique person-impressions; ~5 crore unique people.",
+    "PR + earned media (₹2 cr): ~5-10 crore reached via news, articles.",
+    "Print (₹2 cr → top 3 metros, 3 days full page): ~5 crore unique readers.",
+    "Sum (with overlap): de-duped via simple correlation analysis: total unique = ~85-90 crore individuals reached.",
+    "Effective reach (3+ contacts): ~50 crore."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "2. Conversion Funnel Estimation"
+  }
+}

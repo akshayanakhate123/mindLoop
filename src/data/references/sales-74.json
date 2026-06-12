@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-74",
+  "domain": "sales",
+  "question": "Estimate the conversion from car insurance renewal reminder SMS / WhatsApp to actual renewal.",
+  "idealClarificationQuestions": [
+    "Existing customer auto insurance renewal SMS / WhatsApp from insurer? Yes.",
+    "Conversion = paid renewal premium? Yes.",
+    "Renewal-due window: 30 days before expiry? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Renewal reminder funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Renewal reminders sent: 1,000 customers."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Took action (clicked link / called insurer): ~25% = 166."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net same-insurer renewal: ~12%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Same-insurer retention rate: ~50-65% (Indian motor insurance has high churn)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Renewal reminders sent",
+      "value": "1,000 customers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Delivered",
+      "value": "~95% = 950.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Opened / seen",
+      "value": "~70% = 665 (insurance reminder has good read rate).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Took action (clicked link / called insurer)",
+      "value": "~25% = 166.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Renewed with same insurer",
+      "value": "~70% = 116.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Renewed with competitor (after price comparison)",
+      "value": "~15% = 25 (lost to competitor).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net same-insurer renewal",
+      "value": "~12%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total renewal (incl. switchers)",
+      "value": "70% of all customers renew their policy somewhere.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Delivered: ~95% = 950.",
+    "Opened / seen: ~70% = 665 (insurance reminder has good read rate).",
+    "Took action (clicked link / called insurer): ~25% = 166.",
+    "Renewed with same insurer: ~70% = 116.",
+    "Renewed with competitor (after price comparison): ~15% = 25 (lost to competitor)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Same-insurer retention rate: ~50-65% (Indian motor insurance has high churn)."
+  }
+}

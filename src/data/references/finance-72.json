@@ -1,0 +1,94 @@
+{
+  "questionId": "finance-72",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian agri-tech opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Total agri-tech market (digital marketplaces, precision farming, agri-fintech, supply chain)? Yes.",
+    "By 2030? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Farmer base × digital adoption × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian farmers: ~12 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Agri-fintech (Samunnati, Jai Kisan): ~₹40,000 Cr loan disbursements."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Output marketplace (Ninjacart, WayCool, Otipy): ~₹35,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹1.25 lakh Cr (~$15B) Indian agri-tech market by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian farmers",
+      "value": "~12 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digitally-enabled / app-using farmers by 2030",
+      "value": "~5-6 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Agri input marketplace (DeHaat, BigHaat, AgroStar)",
+      "value": "~₹35,000 Cr GMV.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Agri-fintech (Samunnati, Jai Kisan)",
+      "value": "~₹40,000 Cr loan disbursements.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Farm machinery rental (FieldDay, FarmEasy)",
+      "value": "~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Precision farming (Cropin, AgNext, Fasal)",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Output marketplace (Ninjacart, WayCool, Otipy)",
+      "value": "~₹35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Insurance / advisory",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian farmers: ~12 crore.",
+    "Digitally-enabled / app-using farmers by 2030: ~5-6 crore.",
+    "- Agri input marketplace (DeHaat, BigHaat, AgroStar): ~₹35,000 Cr GMV.",
+    "- Agri-fintech (Samunnati, Jai Kisan): ~₹40,000 Cr loan disbursements.",
+    "- Farm machinery rental (FieldDay, FarmEasy): ~₹6,000 Cr.",
+    "- Precision farming (Cropin, AgNext, Fasal): ~₹4,000 Cr.",
+    "- Output marketplace (Ninjacart, WayCool, Otipy): ~₹35,000 Cr.",
+    "- Insurance / advisory: ~₹5,000 Cr.",
+    "Total: ~₹1.25 lakh Cr (~$15B) Indian agri-tech market by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹1.25 lakh Cr (~$15B) Indian agri-tech market by 2030."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-85",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for AI tools (LLMs, AI APIs, AI agents) in Indian enterprise.",
+  "idealClarificationQuestions": [
+    "Indian enterprise spend on Generative AI APIs + GPT-style services + AI vendor platforms (OpenAI, Anthropic, Google, Microsoft Copilot)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Enterprise AI adoption + spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian enterprises (top 5,000 by revenue) actively deploying GenAI: ~50% = 2,500 enterprises."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Mid-large enterprises (₹100-1,000 Cr revenue): 2,000 × ₹30L/year = ₹600 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus Microsoft Copilot, Google Workspace AI seats sold to India: ~₹500-700 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Including IT services attribution: ~₹7,000-8,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian enterprises (top 5,000 by revenue) actively deploying GenAI",
+      "value": "~50% = 2,500 enterprises.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Large enterprises (NIFTY-500)",
+      "value": "500 × avg ₹2 Cr/year = ₹1,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-large enterprises (₹100-1,000 Cr revenue)",
+      "value": "2,000 × ₹30L/year = ₹600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- SMBs experimenting",
+      "value": "5,000 × ₹3L = ₹150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Microsoft Copilot, Google Workspace AI seats sold to India",
+      "value": "~₹500-700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian enterprise AI spend (pure AI, excl. IT services overlay)",
+      "value": "~₹2,000-2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Including IT services attribution",
+      "value": "~₹7,000-8,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian enterprises (top 5,000 by revenue) actively deploying GenAI: ~50% = 2,500 enterprises.",
+    "- Large enterprises (NIFTY-500): 500 × avg ₹2 Cr/year = ₹1,000 Cr.",
+    "- Mid-large enterprises (₹100-1,000 Cr revenue): 2,000 × ₹30L/year = ₹600 Cr.",
+    "- SMBs experimenting: 5,000 × ₹3L = ₹150 Cr.",
+    "Plus Indian IT services adding AI overlay (TCS, Infosys, Wipro AI revenue): ~₹3,000-5,000 Cr (going to global clients but tracked separately).",
+    "Plus Microsoft Copilot, Google Workspace AI seats sold to India: ~₹500-700 Cr.",
+    "Total Indian enterprise AI spend (pure AI, excl. IT services overlay): ~₹2,000-2,500 Cr.",
+    "Including IT services attribution: ~₹7,000-8,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Including IT services attribution: ~₹7,000-8,000 Cr."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-36",
+  "domain": "generalist",
+  "question": "Estimate the daily petrol + diesel consumption in India (in litres).",
+  "idealClarificationQuestions": [
+    "Combined retail + commercial fuel sale? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual sales / 365."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India petrol consumption FY26: ~42 MT/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Convert to litres: petrol ~1.36 L/kg; diesel ~1.18 L/kg."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Diesel: 92 MT × 1,180 L/T = 10,856 crore litres/year = ~29.7 crore litres/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~45 crore litres/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India petrol consumption FY26",
+      "value": "~42 MT/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "India diesel consumption FY26",
+      "value": "~92 MT/year (much larger — trucks, buses, commercial).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Convert to litres",
+      "value": "petrol ~1.36 L/kg; diesel ~1.18 L/kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Petrol",
+      "value": "42 MT × 1,360 L/T = 5,712 crore litres/year = ~15.6 crore litres/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Diesel",
+      "value": "92 MT × 1,180 L/T = 10,856 crore litres/year = ~29.7 crore litres/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~45 crore litres/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Petrol: 42 MT × 1,360 L/T = 5,712 crore litres/year = ~15.6 crore litres/day.",
+    "Diesel: 92 MT × 1,180 L/T = 10,856 crore litres/year = ~29.7 crore litres/day.",
+    "Total: ~45 crore litres/day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~45 crore litres/day."
+  }
+}

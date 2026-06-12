@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-62",
+  "domain": "sales",
+  "question": "Estimate the conversion from app store browse to MAU for a new e-commerce app.",
+  "idealClarificationQuestions": [
+    "User sees app store listing → installs → becomes monthly active user? Yes.",
+    "New e-commerce app launching (e.g., a new fashion D2C launching standalone app)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Funnel from listing to MAU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Play Store listing impressions: 1,00,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "First open + browse: ~80% = 6,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net listing impression-to-MAU: 900 / 1L = 0.9%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1% listing-to-MAU; ~10-12% install-to-MAU."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Play Store listing impressions",
+      "value": "1,00,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Listing visits (clicked into store page)",
+      "value": "~30% = 30,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Installed",
+      "value": "~25% of visitors = 7,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "First open + browse",
+      "value": "~80% = 6,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sign-up completed",
+      "value": "~30% = 1,800.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Used app at least 2x in next 30 days = MAU",
+      "value": "~50% = 900.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net listing impression-to-MAU",
+      "value": "900 / 1L = 0.9%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Install-to-MAU",
+      "value": "12%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Listing visits (clicked into store page): ~30% = 30,000.",
+    "Installed: ~25% of visitors = 7,500.",
+    "First open + browse: ~80% = 6,000.",
+    "Sign-up completed: ~30% = 1,800.",
+    "Used app at least 2x in next 30 days = MAU: ~50% = 900.",
+    "Net listing impression-to-MAU: 900 / 1L = 0.9%."
+  ],
+  "finalAnswerRange": {
+    "low": "10",
+    "high": "12",
+    "ideal": "~1% listing-to-MAU; ~10-12% install-to-MAU."
+  }
+}

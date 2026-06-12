@@ -1,0 +1,79 @@
+{
+  "questionId": "finance-63",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian SaaS export opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Indian-headquartered SaaS companies exporting to global markets? Yes.",
+    "Revenue by 2030? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top players + ecosystem trajectory."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian SaaS export revenue FY26: ~$13B (~₹1.1 lakh Cr)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Growth rate: ~25-30% CAGR."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "NASSCOM target: $50B by 2030 (aggressive); realistic $35-45B."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Indian SaaS as % of global SaaS market by 2030: ~7-8%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian SaaS export revenue FY26",
+      "value": "~$13B (~₹1.1 lakh Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Major players",
+      "value": "Zoho (~$1.5B), Freshworks ($700M), Postman ($300M), Hasura, Atlan, Browserstack, ChargeBee, Mindtickle, Razorpay (cross-border).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Growth rate",
+      "value": "~25-30% CAGR.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2030 (4 years out)",
+      "value": "$13B × 1.27^4 = $35-40B = ~₹3.0-3.4 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "NASSCOM target",
+      "value": "$50B by 2030 (aggressive); realistic $35-45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indian SaaS as % of global SaaS market by 2030",
+      "value": "~7-8%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian SaaS export revenue FY26: ~$13B (~₹1.1 lakh Cr).",
+    "Major players: Zoho (~$1.5B), Freshworks ($700M), Postman ($300M), Hasura, Atlan, Browserstack, ChargeBee, Mindtickle, Razorpay (cross-border).",
+    "By 2030 (4 years out): $13B × 1.27^4 = $35-40B = ~₹3.0-3.4 lakh Cr.",
+    "NASSCOM target: $50B by 2030 (aggressive); realistic $35-45B."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Indian SaaS as % of global SaaS market by 2030: ~7-8%."
+  }
+}

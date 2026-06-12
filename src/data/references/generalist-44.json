@@ -1,0 +1,76 @@
+{
+  "questionId": "generalist-44",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of tea (loose + tea bags) in India.",
+  "idealClarificationQuestions": [
+    "Tea leaves consumed (not cups of chai brewed)? Yes — tea tonnage.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Production - exports = domestic consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian tea production: ~1,400 million kg/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Exports: ~250 million kg/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Domestic consumption: ~1,175 million kg/year = ~1.18 MT."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily: ~3.2 million kg/day = ~32 lakh kg = 3,200 tonnes/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian tea production",
+      "value": "~1,400 million kg/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Exports",
+      "value": "~250 million kg/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Imports",
+      "value": "~25 million kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domestic consumption",
+      "value": "~1,175 million kg/year = ~1.18 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~3.2 million kg/day = ~32 lakh kg = 3,200 tonnes/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian tea production: ~1,400 million kg/year.",
+    "Exports: ~250 million kg/year.",
+    "Imports: ~25 million kg.",
+    "Domestic consumption: ~1,175 million kg/year = ~1.18 MT.",
+    "Daily: ~3.2 million kg/day = ~32 lakh kg = 3,200 tonnes/day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily: ~3.2 million kg/day = ~32 lakh kg = 3,200 tonnes/day."
+  }
+}

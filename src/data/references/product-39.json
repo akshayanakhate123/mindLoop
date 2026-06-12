@@ -1,0 +1,76 @@
+{
+  "questionId": "product-39",
+  "domain": "product",
+  "question": "Estimate the cab/auto rides booked per office-going professional in metros per week.",
+  "idealClarificationQuestions": [
+    "App-based rides (Ola/Uber/Rapido) only? Yes.",
+    "Office goers in Tier 1 metros? Yes.",
+    "Average across all such professionals (not just regular cab users)? Yes.",
+    "Weekly average? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment by commute pattern (drives own vehicle, takes metro/bus, takes cabs daily)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total office-going professionals in Tier 1 metros: ~25M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Own vehicle (car/bike): 50% = 12.5M; ~1-2 cab rides/week (occasional)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Cab/auto regular: 20% = 5M; ~10 rides/week (commute + work meetings)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Weighted: 0.5×1.5 + 0.3×2.5 + 0.2×10 = 0.75 + 0.75 + 2 = 3.5 rides/week."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total office-going professionals in Tier 1 metros",
+      "value": "~25M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Own vehicle (car/bike)",
+      "value": "50% = 12.5M; ~1-2 cab rides/week (occasional).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Public transit (metro/bus)",
+      "value": "30% = 7.5M; ~2-3 cab rides/week (last-mile + rains).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cab/auto regular",
+      "value": "20% = 5M; ~10 rides/week (commute + work meetings).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted",
+      "value": "0.5×1.5 + 0.3×2.5 + 0.2×10 = 0.75 + 0.75 + 2 = 3.5 rides/week.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Own vehicle (car/bike): 50% = 12.5M; ~1-2 cab rides/week (occasional).",
+    "- Public transit (metro/bus): 30% = 7.5M; ~2-3 cab rides/week (last-mile + rains).",
+    "- Cab/auto regular: 20% = 5M; ~10 rides/week (commute + work meetings).",
+    "Weighted: 0.5×1.5 + 0.3×2.5 + 0.2×10 = 0.75 + 0.75 + 2 = 3.5 rides/week."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Weighted: 0.5×1.5 + 0.3×2.5 + 0.2×10 = 0.75 + 0.75 + 2 = 3.5 rides/week."
+  }
+}

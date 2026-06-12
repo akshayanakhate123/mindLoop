@@ -1,0 +1,84 @@
+{
+  "questionId": "product-89",
+  "domain": "product",
+  "question": "Estimate the staff/agents needed for an EdTech company running 1L+ live online classes per day.",
+  "idealClarificationQuestions": [
+    "Live tutoring company (e.g., PhysicsWallah, BYJU'S Live, Vedantu)? Yes.",
+    "Both teachers + supporting ops staff (TA, doubt solvers, content)? Yes — total instructional staff.",
+    "1 lakh class sessions per day (industry-leader scale)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily classes / classes per instructor + support staff ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Daily classes: 1,00,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Live teachers needed: 1L / 4 = 25,000 active teaching slots/day. Considering teacher rotation across 5 weekdays = ~20K-22K teachers on payroll."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus content creators / curriculum / production: ~3,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~37,000-40,000 instructional and support staff."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Daily classes",
+      "value": "1,00,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average teacher delivers",
+      "value": "~3-5 live classes/day (with prep + recording overlap).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Live teachers needed",
+      "value": "1L / 4 = 25,000 active teaching slots/day. Considering teacher rotation across 5 weekdays = ~20K-22K teachers on payroll.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus TAs / doubt solvers / chat moderators",
+      "value": "~1 TA per 2 classes = 12,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus content creators / curriculum / production",
+      "value": "~3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus tech support / class ops",
+      "value": "~1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~37,000-40,000 instructional and support staff.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average teacher delivers: ~3-5 live classes/day (with prep + recording overlap).",
+    "Live teachers needed: 1L / 4 = 25,000 active teaching slots/day. Considering teacher rotation across 5 weekdays = ~20K-22K teachers on payroll.",
+    "Plus TAs / doubt solvers / chat moderators: ~1 TA per 2 classes = 12,500."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~37,000-40,000 instructional and support staff."
+  }
+}

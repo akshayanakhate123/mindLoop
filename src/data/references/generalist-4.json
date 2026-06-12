@@ -1,0 +1,74 @@
+{
+  "questionId": "generalist-4",
+  "domain": "generalist",
+  "question": "Estimate the number of domestic flight passenger trips taken annually in India.",
+  "idealClarificationQuestions": [
+    "Passenger trips (one passenger boarding one flight = one trip), not unique passengers? Yes.",
+    "Domestic only (within India)? Yes.",
+    "Year 2026? Yes.",
+    "All Indian airlines (IndiGo, Air India, Akasa, SpiceJet, Vistara legacy, regional)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up by route or top-down via airport throughput."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total operational airports in India: ~150 (with regular commercial scheduled service)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Top 6 airports (DEL, BOM, BLR, HYD, MAA, CCU) handle ~60% of domestic traffic."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Approximate domestic passengers across all airports: ~170-180M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual domestic trips: ~170-180M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total operational airports in India",
+      "value": "~150 (with regular commercial scheduled service).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Major airports (top 25)",
+      "value": "handle ~85% of traffic.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Approximate domestic passengers across all airports",
+      "value": "~170-180M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "this counts each passenger boarding once; round trip = 2 trips.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual domestic trips",
+      "value": "~170-180M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "DEL alone handles ~70M passengers/year (domestic+international); ~50M domestic.",
+    "Note: this counts each passenger boarding once; round trip = 2 trips."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual domestic trips: ~170-180M."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "questionId": "product-29",
+  "domain": "product",
+  "question": "Estimate the number of WhatsApp messages sent in India during Diwali (24-hour peak).",
+  "idealClarificationQuestions": [
+    "Define 'Diwali day': the actual Diwali date 24-hour window? Yes.",
+    "Include text + image + voice notes + status updates? All message types except status updates (separate).",
+    "Sent by Indian users only (not received globally)? Sent from India.",
+    "Both 1:1 and group messages counted? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: WhatsApp Indian users × peak-day multiplier × messages per user on a normal day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "WhatsApp India MAU: ~600M; DAU: ~480M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average messages sent per active user per day (normal): ~30-40 (text + media + voice)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Diwali messages per active user: ~120 (mid-estimate)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round to ~70-75 billion."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "WhatsApp India MAU",
+      "value": "~600M; DAU: ~480M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Diwali activates near-100% of MAU",
+      "value": "~600M unique senders that day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average messages sent per active user per day (normal)",
+      "value": "~30-40 (text + media + voice).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Diwali multiplier (greetings, festive forwards, family group floods)",
+      "value": "~3-4x.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Diwali messages per active user",
+      "value": "~120 (mid-estimate).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total messages sent in 24 hours",
+      "value": "600M × 120 = 72 billion messages.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average messages sent per active user per day (normal): ~30-40 (text + media + voice).",
+    "Total messages sent in 24 hours: 600M × 120 = 72 billion messages.",
+    "Round to ~70-75 billion."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Round to ~70-75 billion."
+  }
+}

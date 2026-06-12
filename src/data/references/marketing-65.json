@@ -1,0 +1,79 @@
+{
+  "questionId": "marketing-65",
+  "domain": "marketing",
+  "question": "Estimate the size of the Indian Gen Z consumer segment (born 1997-2012).",
+  "idealClarificationQuestions": [
+    "Gen Z population in India in 2026 (age 14-29)? Yes.",
+    "Both spending-capable (employed) and influencing-spend (students)? Yes.",
+    "Annual consumer market driven by Gen Z? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × earning/spending share × spend per individual."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Gen Z India in 2026 (age 14-29): ~380M (~26% of population)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, students with family-financed discretionary: ~150M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average annual personal spend (across employed + student categories): ~₹35,000 blended."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus indirect influence on family purchase decisions (cars, brands, where to eat): ~2x of direct spend = ₹15-20 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Gen Z India in 2026 (age 14-29)",
+      "value": "~380M (~26% of population).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, self-earning (employed)",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, students with family-financed discretionary",
+      "value": "~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Gen Z with consumer purchasing influence",
+      "value": "~270M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual personal spend (across employed + student categories)",
+      "value": "~₹35,000 blended.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Gen Z direct consumer market",
+      "value": "270M × ₹35K = ~₹9.5 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average annual personal spend (across employed + student categories): ~₹35,000 blended.",
+    "Total Gen Z direct consumer market: 270M × ₹35K = ~₹9.5 lakh Cr.",
+    "Plus indirect influence on family purchase decisions (cars, brands, where to eat): ~2x of direct spend = ₹15-20 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus indirect influence on family purchase decisions (cars, brands, where to eat): ~2x of direct spend = ₹15-20 lakh Cr."
+  }
+}

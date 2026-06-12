@@ -1,0 +1,62 @@
+{
+  "questionId": "marketing-16",
+  "domain": "marketing",
+  "question": "Estimate the YouTube views of a viral Indian ad commercial in its first month.",
+  "idealClarificationQuestions": [
+    "Viral defined as a top-performing campaign (e.g., a Tata/Surf Excel/Cadbury hero film)? Yes.",
+    "First-month organic + paid views? Both.",
+    "Pan-India audience? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Paid push for first 7 days + organic virality decay model."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Initial paid promotion (skippable + bumper YouTube ads): ₹2-3 cr × 4-week campaign = ~30-50 lakh paid views."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Organic discovery from algorithmic recommendations and shares (if content is genuinely viral): 3-5x paid = 1.5-2.5 crore organic views."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total first-month views: ~3-4 crore views for a genuinely viral ad."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Top performers (Cadbury Diwali, Surf Excel #DaagAchcheHain, Tata Tea Jaago Re) hit 5-10 crore in first month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Initial paid promotion (skippable + bumper YouTube ads)",
+      "value": "₹2-3 cr × 4-week campaign = ~30-50 lakh paid views.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total first-month views",
+      "value": "~3-4 crore views for a genuinely viral ad.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Initial paid promotion (skippable + bumper YouTube ads): ₹2-3 cr × 4-week campaign = ~30-50 lakh paid views.",
+    "Organic discovery from algorithmic recommendations and shares (if content is genuinely viral): 3-5x paid = 1.5-2.5 crore organic views.",
+    "Plus shares/embeds on Twitter, WhatsApp Status, Instagram Reels reposts: ~50-80 lakh additional organic on YouTube.",
+    "Total first-month views: ~3-4 crore views for a genuinely viral ad.",
+    "Top performers (Cadbury Diwali, Surf Excel #DaagAchcheHain, Tata Tea Jaago Re) hit 5-10 crore in first month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Top performers (Cadbury Diwali, Surf Excel #DaagAchcheHain, Tata Tea Jaago Re) hit 5-10 crore in first month."
+  }
+}

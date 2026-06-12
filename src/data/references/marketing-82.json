@@ -1,0 +1,87 @@
+{
+  "questionId": "marketing-82",
+  "domain": "marketing",
+  "question": "Estimate the average revenue per app install (LTV) for a fintech app in India.",
+  "idealClarificationQuestions": [
+    "Lifetime value of an average install (across all users, including the 90% that don't convert)? Yes.",
+    "Fintech app — investment platform like Groww? Yes.",
+    "Year 2026 perspective? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Revenue per paying user × paying conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per Q26 analysis: ~1.5% of installs become paying users."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "LTV per paying user: ~₹2,500."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total LTV per install: ~₹50-55."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Unit economics: positive but thin."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Per Q26 analysis",
+      "value": "~1.5% of installs become paying users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU per paying user per year",
+      "value": "~₹800-1,200 (broking fees, premium subscriptions).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average tenure as paying user",
+      "value": "~2.5 years.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "LTV per paying user",
+      "value": "~₹2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "LTV per install (blended)",
+      "value": "1.5% × ₹2,500 = ~₹37.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total LTV per install",
+      "value": "~₹50-55.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Industry CAC",
+      "value": "~₹40-60 for fintech.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average ARPU per paying user per year: ~₹800-1,200 (broking fees, premium subscriptions).",
+    "LTV per paying user: ~₹2,500.",
+    "LTV per install (blended): 1.5% × ₹2,500 = ~₹37.",
+    "Plus non-paying users' value (network effects, referrals, free user advertising): ~₹15.",
+    "Total LTV per install: ~₹50-55.",
+    "Industry CAC: ~₹40-60 for fintech."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Industry CAC: ~₹40-60 for fintech."
+  }
+}

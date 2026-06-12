@@ -1,0 +1,76 @@
+{
+  "questionId": "generalist-79",
+  "domain": "generalist",
+  "question": "Estimate the IPL final TV + OTT viewership in India.",
+  "idealClarificationQuestions": [
+    "Total unique viewers across TV (Star Sports / Sony) + OTT (JioHotstar / JioCinema) and other platforms? Yes.",
+    "IPL final 2026? Yes — assume similar to 2025.",
+    "India only? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Cumulative reach (someone who watched 1+ minute) vs concurrent peak."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TV reach (BARC India ratings): ~30-35 crore (cumulative reach for IPL final)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "OTT reach (JioCinema/JioHotstar): ~25 crore unique viewers (deduped)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total unique cumulative reach: ~45-50 crore unique viewers."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Concurrent peak (single moment, finals last over): ~9-10 crore concurrent (4 crore TV + 6 crore OTT)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TV reach (BARC India ratings)",
+      "value": "~30-35 crore (cumulative reach for IPL final).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OTT reach (JioCinema/JioHotstar)",
+      "value": "~25 crore unique viewers (deduped).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Overlap (watched both TV and OTT)",
+      "value": "~10 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total unique cumulative reach",
+      "value": "~45-50 crore unique viewers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Concurrent peak (single moment, finals last over)",
+      "value": "~9-10 crore concurrent (4 crore TV + 6 crore OTT).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TV reach (BARC India ratings): ~30-35 crore (cumulative reach for IPL final).",
+    "OTT reach (JioCinema/JioHotstar): ~25 crore unique viewers (deduped).",
+    "Overlap (watched both TV and OTT): ~10 crore.",
+    "Total unique cumulative reach: ~45-50 crore unique viewers.",
+    "Concurrent peak (single moment, finals last over): ~9-10 crore concurrent (4 crore TV + 6 crore OTT)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Concurrent peak (single moment, finals last over): ~9-10 crore concurrent (4 crore TV + 6 crore OTT)."
+  }
+}

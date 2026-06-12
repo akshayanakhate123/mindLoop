@@ -1,0 +1,78 @@
+{
+  "questionId": "generalist-85",
+  "domain": "generalist",
+  "question": "Estimate the number of attendees at Maha Kumbh Mela (every 12 years; recent in Prayagraj 2025).",
+  "idealClarificationQuestions": [
+    "Total visitor footfall (cumulative, not unique)? Cumulative footfall over the entire Mela (~50 days).",
+    "Major snan days included? Yes.",
+    "Year 2025 Maha Kumbh? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily footfall × duration with snan-day spikes."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Maha Kumbh 2025 in Prayagraj duration: ~45 days."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Cumulative calculation:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Total: ~100 crore footfall."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Government reported figures for Maha Kumbh 2025: 60+ crore visitor-trips."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Maha Kumbh 2025 in Prayagraj duration",
+      "value": "~45 days.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average daily footfall (regular days)",
+      "value": "~1-2 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Major snan days (Mauni Amavasya, Makar Sankranti, etc.)",
+      "value": "~6-8 days, with footfall ~5-10 crore each.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Total",
+      "value": "~100 crore footfall.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Government reported figures for Maha Kumbh 2025",
+      "value": "60+ crore visitor-trips.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average daily footfall (regular days): ~1-2 crore.",
+    "Major snan days (Mauni Amavasya, Makar Sankranti, etc.): ~6-8 days, with footfall ~5-10 crore each.",
+    "- 6 major snan days × ~7 crore = 42 crore.",
+    "- 39 regular days × ~1.5 crore = 58 crore.",
+    "- Total: ~100 crore footfall.",
+    "- Many people attend multiple times (multiple visits) — unique pilgrims ~30-40 crore.",
+    "Government reported figures for Maha Kumbh 2025: 60+ crore visitor-trips."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Government reported figures for Maha Kumbh 2025: 60+ crore visitor-trips."
+  }
+}

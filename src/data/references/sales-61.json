@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-61",
+  "domain": "sales",
+  "question": "Estimate the conversion rate for solar rooftop sales (residential).",
+  "idealClarificationQuestions": [
+    "Indian household solar inquiry → installation? Yes.",
+    "Time window: 90 days from inquiry? Yes.",
+    "Year 2026 (post PM Surya Ghar Yojana boost)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Solar funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Inquiries (form fills / phone): 1,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Site visit completed (right roof, ownership confirmed): ~85% = 510."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Customer commits / signs agreement: ~25-30% = ~100."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net inquiry-to-installation: ~8.5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Inquiries (form fills / phone)",
+      "value": "1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Site visit by sales engineer scheduled",
+      "value": "~60% = 600.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Site visit completed (right roof, ownership confirmed)",
+      "value": "~85% = 510.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Detailed quote shared",
+      "value": "~95% = 484.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Subsidy + financing options explored",
+      "value": "~80% = 387.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Customer commits / signs agreement",
+      "value": "~25-30% = ~100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Installation completed (within 60-90 days)",
+      "value": "~85% = ~85.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net inquiry-to-installation",
+      "value": "~8.5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Site visit by sales engineer scheduled: ~60% = 600.",
+    "Site visit completed (right roof, ownership confirmed): ~85% = 510.",
+    "Detailed quote shared: ~95% = 484.",
+    "Subsidy + financing options explored: ~80% = 387.",
+    "Customer commits / signs agreement: ~25-30% = ~100.",
+    "Installation completed (within 60-90 days): ~85% = ~85."
+  ],
+  "finalAnswerRange": {
+    "low": "8",
+    "high": "10",
+    "ideal": "~8-10%."
+  }
+}

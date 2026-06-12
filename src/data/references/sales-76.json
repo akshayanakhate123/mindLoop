@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-76",
+  "domain": "sales",
+  "question": "Estimate the SaaS sales opportunity among Indian SMEs.",
+  "idealClarificationQuestions": [
+    "SME definition: 10-500 employees? Yes.",
+    "Total addressable revenue for SaaS vendors (any category) from Indian SMEs? Yes.",
+    "Annual revenue, FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "SME count × SaaS spend per SME."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian formal SMEs (10-500 employees): ~5 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average annual SaaS spend per paying SME: ~₹4-8 lakh (mix of small ₹50K to large ₹40L)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "TAM (if all 3.5L digitally-aware SMEs paid): 3.5L × ₹6L = ~₹21,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus micro-business + freelancer SaaS (Vyapar, Khatabook, ProfitBooks): ~₹5,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian formal SMEs (10-500 employees)",
+      "value": "~5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digitally-aware / SaaS-receptive",
+      "value": "~70% = 3.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently paying for any SaaS",
+      "value": "~40% = 1.4 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual SaaS spend per paying SME",
+      "value": "~₹4-8 lakh (mix of small ₹50K to large ₹40L).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Current SaaS revenue from Indian SMEs",
+      "value": "1.4L × ₹6L = ~₹8,400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM (if all 3.5L digitally-aware SMEs paid)",
+      "value": "3.5L × ₹6L = ~₹21,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2030 SAM (~70-80% digital + GST/e-invoicing mandates + AI tools)",
+      "value": "~₹35,000-40,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus micro-business + freelancer SaaS (Vyapar, Khatabook, ProfitBooks)",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian formal SMEs (10-500 employees): ~5 lakh.",
+    "Digitally-aware / SaaS-receptive: ~70% = 3.5 lakh.",
+    "Currently paying for any SaaS: ~40% = 1.4 lakh.",
+    "Average annual SaaS spend per paying SME: ~₹4-8 lakh (mix of small ₹50K to large ₹40L).",
+    "Take blended ₹6L average.",
+    "Current SaaS revenue from Indian SMEs: 1.4L × ₹6L = ~₹8,400 Cr.",
+    "TAM (if all 3.5L digitally-aware SMEs paid): 3.5L × ₹6L = ~₹21,000 Cr.",
+    "By 2030 SAM (~70-80% digital + GST/e-invoicing mandates + AI tools): ~₹35,000-40,000 Cr.",
+    "Plus micro-business + freelancer SaaS (Vyapar, Khatabook, ProfitBooks): ~₹5,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus micro-business + freelancer SaaS (Vyapar, Khatabook, ProfitBooks): ~₹5,000 Cr."
+  }
+}

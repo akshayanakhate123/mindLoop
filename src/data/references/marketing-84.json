@@ -1,0 +1,90 @@
+{
+  "questionId": "marketing-84",
+  "domain": "marketing",
+  "question": "Estimate the revenue of a successful Indian D2C food brand (e.g., Yoga Bar, Slurrp Farm, Wholefoods-tier).",
+  "idealClarificationQuestions": [
+    "Mid-stage D2C food brand at scale (5-7 years old)? Yes.",
+    "Categories: healthy snacks, breakfast cereals, kids food? Yes.",
+    "Year 2026 revenue? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Successful D2C food brand revenue benchmarks."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "- Direct site: ~25% of revenue."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Modern trade (BB, Nature's Basket): ~25%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Typical successful D2C food brand 5 years in: ₹150-300 Cr revenue."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹150-250 Cr revenue for a successful D2C food brand."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Direct site",
+      "value": "~25% of revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Quick commerce (Blinkit/Zepto/Instamart)",
+      "value": "~30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Modern trade (BB, Nature's Basket)",
+      "value": "~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- General trade (kiranas)",
+      "value": "~10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Amazon + Flipkart",
+      "value": "~10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Typical successful D2C food brand 5 years in",
+      "value": "₹150-300 Cr revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Yoga Bar (now ITC owned)",
+      "value": "₹250-300 Cr; Slurrp Farm: ₹50-80 Cr; The Whole Truth: ₹80-100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹150-250 Cr revenue for a successful D2C food brand.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Amazon + Flipkart: ~10%.",
+    "Typical successful D2C food brand 5 years in: ₹150-300 Cr revenue.",
+    "Yoga Bar (now ITC owned): ₹250-300 Cr; Slurrp Farm: ₹50-80 Cr; The Whole Truth: ₹80-100 Cr.",
+    "Round: ~₹150-250 Cr revenue for a successful D2C food brand."
+  ],
+  "finalAnswerRange": {
+    "low": "150",
+    "high": "250",
+    "ideal": "~₹150-250 Cr revenue for a successful D2C food brand."
+  }
+}

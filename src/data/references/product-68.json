@@ -1,0 +1,68 @@
+{
+  "questionId": "product-68",
+  "domain": "product",
+  "question": "Estimate the adoption of co-working spaces in Tier 2 cities by 2028.",
+  "idealClarificationQuestions": [
+    "Active members at co-working operators (WeWork, Smartworks, 91springboard, Awfis, IndiQube) in Tier 2 cities? Yes.",
+    "Tier 2 = ~100 cities? Yes — focus on cities like Indore, Jaipur, Coimbatore, Kochi, Vizag, Lucknow.",
+    "Total seat capacity used or members? Members (people).",
+    "By 2028? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: Tier 2 white-collar workforce → flex-space appetite → operator capacity build-out."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier 2 white-collar / IT-services / SMB workforce: ~30M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, employed in firms small enough to use coworking (vs own office): ~20% = 6M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Drivers to 2028: GCC (Global Capability Centers) expansion to Tier 2 (Coimbatore, Kochi), startup ecosystem maturation."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Projected 2028 seats: ~400-500K members in Tier 2."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tier 2 white-collar / IT-services / SMB workforce",
+      "value": "~30M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently (2026) using co-working in Tier 2",
+      "value": "~150K-200K seats (Awfis, IndiQube growing here).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Drivers to 2028",
+      "value": "GCC (Global Capability Centers) expansion to Tier 2 (Coimbatore, Kochi), startup ecosystem maturation.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 2028 seats",
+      "value": "~400-500K members in Tier 2.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, employed in firms small enough to use coworking (vs own office): ~20% = 6M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Projected 2028 seats: ~400-500K members in Tier 2."
+  }
+}

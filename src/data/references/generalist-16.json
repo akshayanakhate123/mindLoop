@@ -1,0 +1,77 @@
+{
+  "questionId": "generalist-16",
+  "domain": "generalist",
+  "question": "Estimate the number of farmers in India.",
+  "idealClarificationQuestions": [
+    "Self-employed in agriculture (cultivators) + agricultural laborers? Both — total agricultural workforce.",
+    "Or only landowning farmers? Provide both — clarify.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "From census + workforce surveys."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India total workforce: ~520M (estimated from ~36% of population)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total agricultural workers: ~220M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Agricultural laborers (work on others' farms): ~100M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~12 crore landowning farmers + ~10 crore agricultural laborers = ~22 crore in agriculture."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India total workforce",
+      "value": "~520M (estimated from ~36% of population).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Agriculture's share of workforce",
+      "value": "~42-44% (declining gradually).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total agricultural workers",
+      "value": "~220M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, cultivators (own/lease land)",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Agricultural laborers (work on others' farms)",
+      "value": "~100M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~12 crore landowning farmers + ~10 crore agricultural laborers = ~22 crore in agriculture.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Round: ~12 crore landowning farmers + ~10 crore agricultural laborers = ~22 crore in agriculture."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~12 crore landowning farmers + ~10 crore agricultural laborers = ~22 crore in agriculture."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-23",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Tata Consultancy Services (TCS) — global operations.",
+  "idealClarificationQuestions": [
+    "TCS total global revenue (India HQ but global delivery)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Headcount × billing rate; alternatively revenue-per-employee benchmark."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TCS total headcount FY26: ~6 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Alternate: by client segment."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Manufacturing + auto: ~10% = ₹25K Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹2.4-2.5 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TCS total headcount FY26",
+      "value": "~6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average revenue per employee (billing rates × utilization)",
+      "value": "~₹40 lakh/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "6L × ₹40L = ~₹2.4 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- BFSI (largest)",
+      "value": "~30% = ₹75K Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Retail + CPG",
+      "value": "~16% = ₹40K Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Communications + media + tech",
+      "value": "~17% = ₹42K Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Manufacturing + auto",
+      "value": "~10% = ₹25K Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Life sciences + healthcare",
+      "value": "~10% = ₹25K Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TCS total headcount FY26: ~6 lakh.",
+    "Average revenue per employee (billing rates × utilization): ~₹40 lakh/year.",
+    "Total revenue: 6L × ₹40L = ~₹2.4 lakh Cr.",
+    "- BFSI (largest): ~30% = ₹75K Cr.",
+    "- Retail + CPG: ~16% = ₹40K Cr.",
+    "- Communications + media + tech: ~17% = ₹42K Cr.",
+    "- Manufacturing + auto: ~10% = ₹25K Cr.",
+    "- Life sciences + healthcare: ~10% = ₹25K Cr.",
+    "- Others: ~17% = ₹42K Cr.",
+    "Total: ~₹2.4-2.5 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹2.4-2.5 lakh Cr."
+  }
+}

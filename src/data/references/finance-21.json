@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-21",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a major Indian e-commerce 3PL (Delhivery).",
+  "idealClarificationQuestions": [
+    "Delhivery total revenue (logistics + supply chain)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Shipment volume × avg rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Delhivery shipments FY26: ~120 crore parcels (express delivery)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Express delivery revenue: 120 cr × ₹75 = ~₹9,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus truckload + part-truckload services: ~₹1,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹13,000-14,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Delhivery shipments FY26",
+      "value": "~120 crore parcels (express delivery).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per-shipment realization",
+      "value": "~₹70-80.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Express delivery revenue",
+      "value": "120 cr × ₹75 = ~₹9,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus supply chain services (warehousing for brands)",
+      "value": "~₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus truckload + part-truckload services",
+      "value": "~₹1,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus tech licensing + cross-border",
+      "value": "~₹500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹13,000-14,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Delhivery shipments FY26: ~120 crore parcels (express delivery).",
+    "Average per-shipment realization: ~₹70-80.",
+    "Express delivery revenue: 120 cr × ₹75 = ~₹9,000 Cr.",
+    "Plus supply chain services (warehousing for brands): ~₹2,500 Cr.",
+    "Plus truckload + part-truckload services: ~₹1,500 Cr.",
+    "Plus tech licensing + cross-border: ~₹500 Cr.",
+    "Total: ~₹13,000-14,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹13,000-14,000 Cr."
+  }
+}

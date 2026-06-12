@@ -1,0 +1,74 @@
+{
+  "questionId": "generalist-46",
+  "domain": "generalist",
+  "question": "Estimate the daily detergent (laundry) consumption in India.",
+  "idealClarificationQuestions": [
+    "Bar + powder + liquid forms? All.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita detergent consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian detergent market: ~₹45,000 Cr (FY26)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Avg price across forms: ~₹100-110/kg blended."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily: ~11,500 tonnes/day = 11.5 million kg."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Per-capita: ~3 kg/year (low vs global 8 kg)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian detergent market",
+      "value": "~₹45,000 Cr (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg price across forms",
+      "value": "~₹100-110/kg blended.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total volume",
+      "value": "~4.2 MT/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~11,500 tonnes/day = 11.5 million kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita",
+      "value": "~3 kg/year (low vs global 8 kg).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian detergent market: ~₹45,000 Cr (FY26).",
+    "Avg price across forms: ~₹100-110/kg blended.",
+    "Daily: ~11,500 tonnes/day = 11.5 million kg."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Per-capita: ~3 kg/year (low vs global 8 kg)."
+  }
+}

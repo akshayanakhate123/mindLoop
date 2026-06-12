@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-83",
+  "domain": "finance",
+  "question": "Estimate the per-km cost of building a 4-lane National Highway in India.",
+  "idealClarificationQuestions": [
+    "Construction cost only (excluding land acquisition)? Yes — civil construction.",
+    "4-lane greenfield highway (NHAI standard)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "MoRTH benchmark."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "4-lane highway construction cost: ~₹18-25 crore per km (depending on terrain)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Hilly: ₹35-50 cr/km."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Toll plazas + signage + utilities: ~10%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total all-in (incl. land) for plain-terrain 4-lane: ~₹22-30 cr/km."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "4-lane highway construction cost",
+      "value": "~₹18-25 crore per km (depending on terrain).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Plain terrain",
+      "value": "₹15-18 cr/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rolling/undulating",
+      "value": "₹20-23 cr/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Hilly",
+      "value": "₹35-50 cr/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Earthwork + drainage",
+      "value": "~30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Pavement (bituminous)",
+      "value": "~35%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bridges + culverts",
+      "value": "~15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Toll plazas + signage + utilities",
+      "value": "~10%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "4-lane highway construction cost: ~₹18-25 crore per km (depending on terrain).",
+    "- Plain terrain: ₹15-18 cr/km.",
+    "- Rolling/undulating: ₹20-23 cr/km.",
+    "- Hilly: ₹35-50 cr/km.",
+    "- Earthwork + drainage: ~30%.",
+    "- Bridges + culverts: ~15%.",
+    "- Toll plazas + signage + utilities: ~10%.",
+    "- Project management + contingency: ~10%.",
+    "Plus land acquisition (separate): ~₹3-15 cr/km (highly variable by location).",
+    "Total all-in (incl. land) for plain-terrain 4-lane: ~₹22-30 cr/km."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total all-in (incl. land) for plain-terrain 4-lane: ~₹22-30 cr/km."
+  }
+}

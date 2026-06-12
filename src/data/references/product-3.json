@@ -1,0 +1,73 @@
+{
+  "questionId": "product-3",
+  "domain": "product",
+  "question": "How many EV two-wheeler scooters will be sold in India next year (2027)?",
+  "idealClarificationQuestions": [
+    "Only registered EV scooters (vehicle registrations) or include unregistered low-speed (<25 kmph) vehicles? Assume registered only.",
+    "Personal use only or include B2B (delivery fleets)? Include both.",
+    "Geography: pan-India including all states? Yes.",
+    "Are we projecting market growth over current year? Yes — taking FY27 forward."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down growth model: total 2W market size → current EV penetration → projected next-year penetration based on YoY growth trajectory and policy push (FAME, state subsidies)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total 2W sales in India FY26 (estimate): ~20M units (recovery from FY24 trough of 17.5M)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual growth rate of EV 2W: ~35-40% YoY (driven by Ola Electric, TVS iQube, Bajaj Chetak, Ather, plus B2B fleets like Zypp, Yulu, Swiggy/Zomato delivery)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Projected EV penetration FY27: ~10-12% → 2.1M to 2.5M units."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Take midpoint: ~2.2M EV 2W units in FY27."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total 2W sales in India FY26 (estimate)",
+      "value": "~20M units (recovery from FY24 trough of 17.5M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Current EV 2W penetration in 2W sales",
+      "value": "~7-8% in 2026 = ~1.4-1.6M units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual growth rate of EV 2W",
+      "value": "~35-40% YoY (driven by Ola Electric, TVS iQube, Bajaj Chetak, Ather, plus B2B fleets like Zypp, Yulu, Swiggy/Zomato delivery).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected EV penetration FY27",
+      "value": "~10-12% → 2.1M to 2.5M units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take midpoint",
+      "value": "~2.2M EV 2W units in FY27.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Current EV 2W penetration in 2W sales: ~7-8% in 2026 = ~1.4-1.6M units."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Take midpoint: ~2.2M EV 2W units in FY27."
+  }
+}

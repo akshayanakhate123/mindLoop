@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-65",
+  "domain": "sales",
+  "question": "Estimate the conversion rate from event-marketing / trade fair leads.",
+  "idealClarificationQuestions": [
+    "B2B trade fair (e.g., Auto Expo, CII Manufacturing Show, ELECRAMA)? Yes.",
+    "Leads = visitor business card / form fill at booth? Yes.",
+    "Conversion = closed deal in next 12 months? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "B2B event-lead funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Event-collected leads: 500 (typical large booth at a major Indian B2B fair)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Vendors / job-seekers / not real prospects: ~25% = 125."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Move to commercial: ~40% = 29."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net event-lead-to-deal: ~1.5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Event-collected leads",
+      "value": "500 (typical large booth at a major Indian B2B fair).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Qualified (decision-maker + need + budget timeline)",
+      "value": "~25% = 125.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Information-seekers (curious, no budget)",
+      "value": "~50% = 250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Vendors / job-seekers / not real prospects",
+      "value": "~25% = 125.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of 125 qualified, post-event follow-up by sales",
+      "value": "~95% = 120 actively pursued.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, demo / detailed discussion",
+      "value": "~60% = 72.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Move to commercial",
+      "value": "~40% = 29.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Close in 12 months",
+      "value": "~25% = 7-8 deals.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Qualified (decision-maker + need + budget timeline): ~25% = 125.",
+    "- Information-seekers (curious, no budget): ~50% = 250.",
+    "- Vendors / job-seekers / not real prospects: ~25% = 125.",
+    "Of 125 qualified, post-event follow-up by sales: ~95% = 120 actively pursued.",
+    "Of these, demo / detailed discussion: ~60% = 72.",
+    "Move to commercial: ~40% = 29.",
+    "Close in 12 months: ~25% = 7-8 deals."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net event-lead-to-deal: ~1.5%."
+  }
+}

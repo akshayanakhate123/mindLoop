@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-51",
+  "domain": "finance",
+  "question": "Estimate the potential size of India's health-tech market by 2030.",
+  "idealClarificationQuestions": [
+    "Health-tech = digital health (telemedicine + e-pharmacy + diagnostics-tech + insurance-tech + hospital SaaS + wellness)? Yes.",
+    "Total market size by 2030? Yes.",
+    "GMV / revenue / TAM perspective? TAM (total addressable revenue at saturation)."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: sub-segment-wise TAM."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Sub-segment TAM by 2030:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Online diagnostics + at-home tests: ~₹25,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Mental health + wellness apps: ~₹8,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Current 2026: ~₹35,000-40,000 Cr realized."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Online doctor consultations + telemedicine",
+      "value": "~₹20,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- E-pharmacy (Tata 1mg, PharmEasy, Apollo 24x7)",
+      "value": "~₹50,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Online diagnostics + at-home tests",
+      "value": "~₹25,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Health insurance-tech (Acko, Plum, Onsurity)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Wearables + remote monitoring",
+      "value": "~₹10,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Hospital information systems (SaaS)",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mental health + wellness apps",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- AI in healthcare / clinical decision support",
+      "value": "~₹6,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Online doctor consultations + telemedicine: ~₹20,000 Cr.",
+    "- E-pharmacy (Tata 1mg, PharmEasy, Apollo 24x7): ~₹50,000 Cr.",
+    "- Online diagnostics + at-home tests: ~₹25,000 Cr.",
+    "- Health insurance-tech (Acko, Plum, Onsurity): ~₹15,000 Cr.",
+    "- Wearables + remote monitoring: ~₹10,000 Cr.",
+    "- Hospital information systems (SaaS): ~₹5,000 Cr.",
+    "- Mental health + wellness apps: ~₹8,000 Cr.",
+    "- AI in healthcare / clinical decision support: ~₹6,000 Cr.",
+    "Total addressable: ~₹1,40,000 Cr (~$17B) by 2030.",
+    "Current 2026: ~₹35,000-40,000 Cr realized."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Current 2026: ~₹35,000-40,000 Cr realized."
+  }
+}

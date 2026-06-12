@@ -1,0 +1,91 @@
+{
+  "questionId": "sales-50",
+  "domain": "sales",
+  "question": "Estimate the number of distributors required for a new D2C brand to launch into Tier 2 modern trade pan-India.",
+  "idealClarificationQuestions": [
+    "D2C brand newly transitioning to offline modern trade — like Mamaearth in 2020, BoAt etc.? Yes.",
+    "Tier 2 + Tier 3 cities (~150 cities)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "City coverage + distributor catchment."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier 2 + Tier 3 city count for organized retail coverage: ~150."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Distributors needed for Tier 2/3 MT: 12,000 / 90 = ~135 distributors."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total for D2C to scale Tier 2/3 to both MT + GT: ~1,300-1,500 distributors."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test funnel-thinking: how prospects move from lead → engagement → qualification → close. The playbook: state typical decay rate at each stage and multiply through. Know category benchmarks: insurance ~5% lead-to-customer, real estate ~2%, B2B SaaS ~12% demo-to-close."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tier 2 + Tier 3 city count for organized retail coverage",
+      "value": "~150.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average outlets per D2C distributor",
+      "value": "80-100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Distributors needed for Tier 2/3 MT",
+      "value": "12,000 / 90 = ~135 distributors.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus general trade (kiranas with modern aspirations)",
+      "value": "~3 lakh, requires deeper network.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Per distributor coverage in GT",
+      "value": "200-300 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Additional distributors for GT",
+      "value": "3,00,000 / 250 = ~1,200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total for D2C to scale Tier 2/3 to both MT + GT",
+      "value": "~1,300-1,500 distributors.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Realistic phased approach",
+      "value": "D2C brands typically start with 50-100 modern trade distributors, then expand.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Tier 2 + Tier 3 city count for organized retail coverage: ~150.",
+    "Distributors needed for Tier 2/3 MT: 12,000 / 90 = ~135 distributors.",
+    "Plus general trade (kiranas with modern aspirations): ~3 lakh, requires deeper network.",
+    "- Additional distributors for GT: 3,00,000 / 250 = ~1,200.",
+    "Total for D2C to scale Tier 2/3 to both MT + GT: ~1,300-1,500 distributors."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "These questions test funnel-thinking: how prospects move from lead → engagement → qualification → close. The playbook: state typical decay rate at each stage and multiply through. Know category benchmarks: insurance ~5% lead-to-customer, real estate ~2%, B2B SaaS ~12% demo-to-close."
+  }
+}

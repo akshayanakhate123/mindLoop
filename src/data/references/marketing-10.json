@@ -1,0 +1,93 @@
+{
+  "questionId": "marketing-10",
+  "domain": "marketing",
+  "question": "Estimate the campaign reach of a cinema ad (in-theatre slide + video) running in 800 multiplex screens for 2 weeks.",
+  "idealClarificationQuestions": [
+    "Cinema ad = pre-feature 30-second video shown to all moviegoers? Yes.",
+    "800 screens across PVR, INOX, Cinepolis = ~30% of multiplex screens? Yes.",
+    "2 weeks duration? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Footfall per screen × screens × campaign duration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Average occupancy per screen show: ~50% × 200 seats = 100 people."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Footfall per screen per day: ~450 people."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "But repeat moviegoers (people watching multiple movies in 2 weeks): ~20% = 10 lakh duplicates."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~40 lakh unique Indians reached via 2-week cinema campaign."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average occupancy per screen show",
+      "value": "~50% × 200 seats = 100 people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Shows per screen per day",
+      "value": "~4-5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Footfall per screen per day",
+      "value": "~450 people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily footfall across 800 screens",
+      "value": "800 × 450 = 3.6 lakh people/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Over 14 days",
+      "value": "~50 lakh footfalls.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But repeat moviegoers (people watching multiple movies in 2 weeks)",
+      "value": "~20% = 10 lakh duplicates.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach",
+      "value": "~40 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~40 lakh unique Indians reached via 2-week cinema campaign.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average occupancy per screen show: ~50% × 200 seats = 100 people.",
+    "Total daily footfall across 800 screens: 800 × 450 = 3.6 lakh people/day.",
+    "Over 14 days: ~50 lakh footfalls.",
+    "But repeat moviegoers (people watching multiple movies in 2 weeks): ~20% = 10 lakh duplicates.",
+    "Unique reach: ~40 lakh.",
+    "Round: ~40 lakh unique Indians reached via 2-week cinema campaign."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~40 lakh unique Indians reached via 2-week cinema campaign."
+  }
+}

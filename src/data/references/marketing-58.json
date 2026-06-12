@@ -1,0 +1,78 @@
+{
+  "questionId": "marketing-58",
+  "domain": "marketing",
+  "question": "Estimate the LGBTQ+ consumer market size in Indian metros.",
+  "idealClarificationQuestions": [
+    "Out / openly LGBTQ+ adults in metros who are addressable by brands? Yes.",
+    "Annual consumer spending potential? Yes.",
+    "Metros (top 8) only? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × LGBTQ+ share × out / addressable share × disposable income."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Metro adult population: ~80M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, out/openly identified (post-Section 377 decriminalization + younger generations): ~30% = ~2M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average annual consumer disposable spend: ~₹4-6 lakh per individual."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "But LGBTQ+-targeted brand spend (Pride campaigns, allyship marketing) is much smaller: ~₹500-1,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Metro adult population",
+      "value": "~80M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "LGBTQ+ share of population (research estimates)",
+      "value": "~7-10% = 6-8M individuals.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, in disposable income bracket (urban metro skews affluent)",
+      "value": "~70% = ~1.4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual consumer disposable spend",
+      "value": "~₹4-6 lakh per individual.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total addressable LGBTQ+ market (metro, out)",
+      "value": "~1.4M × ₹5L = ₹70,000 Cr in addressable consumer wallet.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "LGBTQ+ share of population (research estimates): ~7-10% = 6-8M individuals.",
+    "Of these, out/openly identified (post-Section 377 decriminalization + younger generations): ~30% = ~2M.",
+    "Of these, in disposable income bracket (urban metro skews affluent): ~70% = ~1.4M.",
+    "Average annual consumer disposable spend: ~₹4-6 lakh per individual.",
+    "Total addressable LGBTQ+ market (metro, out): ~1.4M × ₹5L = ₹70,000 Cr in addressable consumer wallet.",
+    "But LGBTQ+-targeted brand spend (Pride campaigns, allyship marketing) is much smaller: ~₹500-1,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "But LGBTQ+-targeted brand spend (Pride campaigns, allyship marketing) is much smaller: ~₹500-1,000 Cr."
+  }
+}

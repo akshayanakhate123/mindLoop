@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-91",
+  "domain": "finance",
+  "question": "Estimate the cost structure of an EV cab ride in India.",
+  "idealClarificationQuestions": [
+    "Average EV cab ride (Ola / BluSmart / Uber Green)? Yes.",
+    "Per-km cost breakdown? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-km cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "EV cab per-km cost (Tata Tigor EV / MG ZS EV typical):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Insurance + RTO + permit: ₹0.5/km."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total cost per km: ₹11-13."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Customer fare typically ₹17-22/km — platform margin thin."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Electricity (charging cost)",
+      "value": "₹1.5-2/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Driver salary (allocated, if salaried like BluSmart)",
+      "value": "₹4-5/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Vehicle depreciation (₹15 lakh car over 5 yrs × 300 km/day)",
+      "value": "₹2.7/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Insurance + RTO + permit",
+      "value": "₹0.5/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tire + battery degradation",
+      "value": "₹0.8/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Platform tech + acquisition cost amortized",
+      "value": "₹1.5/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance + cleaning",
+      "value": "₹0.4/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cost per km",
+      "value": "₹11-13.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Electricity (charging cost): ₹1.5-2/km.",
+    "- Driver salary (allocated, if salaried like BluSmart): ₹4-5/km.",
+    "- Vehicle depreciation (₹15 lakh car over 5 yrs × 300 km/day): ₹2.7/km.",
+    "- Insurance + RTO + permit: ₹0.5/km.",
+    "- Tire + battery degradation: ₹0.8/km.",
+    "- Platform tech + acquisition cost amortized: ₹1.5/km.",
+    "- Maintenance + cleaning: ₹0.4/km.",
+    "Total cost per km: ₹11-13.",
+    "vs ICE cab: ~₹14-16/km.",
+    "EV advantage: ~₹3-4/km lower operating cost."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Customer fare typically ₹17-22/km — platform margin thin."
+  }
+}

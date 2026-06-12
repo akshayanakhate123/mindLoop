@@ -1,0 +1,97 @@
+{
+  "questionId": "sales-3",
+  "domain": "sales",
+  "question": "Estimate paint demand in a growing urban locality (Whitefield in Bengaluru — 50,000 households).",
+  "idealClarificationQuestions": [
+    "Decorative paints only (excludes industrial)? Yes.",
+    "Annual demand in volume + value? Yes.",
+    "Includes new construction + repaint? Both.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "New construction + repaint cycle frequency × paint per household."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Whitefield households: 50,000 (high-rise apartments + villa enclaves + new construction zones)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Paint required per unit:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Full repaint: 7,500 × 55 = 4,12,500 L."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Monthly: ~₹2 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Whitefield households",
+      "value": "50,000 (high-rise apartments + villa enclaves + new construction zones).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- New construction completion",
+      "value": "~5% per year = 2,500 new units/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Full repaint (every 5-7 years)",
+      "value": "~15% per year = 7,500 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Partial / touch-up (every 1-2 years)",
+      "value": "~40% = 20,000 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- New construction (full painting)",
+      "value": "~75-100 L per 2BHK = ~85L average.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Full repaint",
+      "value": "~50-60L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Touch-up",
+      "value": "~10-15L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- New",
+      "value": "2,500 × 85 = 2,12,500 L.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Whitefield households: 50,000 (high-rise apartments + villa enclaves + new construction zones).",
+    "- New construction completion: ~5% per year = 2,500 new units/year.",
+    "- Full repaint (every 5-7 years): ~15% per year = 7,500 units.",
+    "- Partial / touch-up (every 1-2 years): ~40% = 20,000 units.",
+    "- New construction (full painting): ~75-100 L per 2BHK = ~85L average.",
+    "- New: 2,500 × 85 = 2,12,500 L.",
+    "- Full repaint: 7,500 × 55 = 4,12,500 L.",
+    "- Touch-up: 20,000 × 12 = 2,40,000 L.",
+    "Total: ~8.65 lakh litres/year.",
+    "Value at avg ₹260/L (decorative blended): ~₹22-23 Cr/year."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Monthly: ~₹2 Cr."
+  }
+}

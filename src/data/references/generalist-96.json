@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-96",
+  "domain": "generalist",
+  "question": "Estimate the consumption of mangoes during peak summer (May-June) in India.",
+  "idealClarificationQuestions": [
+    "Total fresh mango consumption during peak season? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual production × seasonal share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian annual mango production: ~21-22 MT (world's largest producer; ~50% of global)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Domestic consumption: ~21 MT/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Per-capita peak season: 14 MT / 1.45B = ~10 kg/person over 2 months."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily during peak: ~25 lakh tonnes / 60 days = ~2.4 lakh tonnes/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian annual mango production",
+      "value": "~21-22 MT (world's largest producer; ~50% of global).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which exports",
+      "value": "~70K tonnes (very small share).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domestic consumption",
+      "value": "~21 MT/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which May-June peak",
+      "value": "~70% = ~14-15 MT in 2 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita peak season",
+      "value": "14 MT / 1.45B = ~10 kg/person over 2 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily during peak",
+      "value": "~25 lakh tonnes / 60 days = ~2.4 lakh tonnes/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of which May-June peak: ~70% = ~14-15 MT in 2 months.",
+    "Per-capita peak season: 14 MT / 1.45B = ~10 kg/person over 2 months.",
+    "Daily during peak: ~25 lakh tonnes / 60 days = ~2.4 lakh tonnes/day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily during peak: ~25 lakh tonnes / 60 days = ~2.4 lakh tonnes/day."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "questionId": "product-91",
+  "domain": "product",
+  "question": "Estimate the fleet of buses BluSmart needs to operate as an EV ride-hailing leader in Delhi NCR + Bengaluru + Mumbai.",
+  "idealClarificationQuestions": [
+    "Cars (not buses) — assume the question means cars/cabs? Use cars, since BluSmart is cab fleet.",
+    "Active fleet across these 3 cities? Yes.",
+    "Currently (2026)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily ride volume target / car productivity."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "BluSmart aspirational ride share in EV cab segment: ~10% of premium cab market in 3 cities."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "BluSmart current share: ~2% = ~100K rides/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Cars needed: 100K / 12 = ~8,300."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "BluSmart actual fleet (2026): ~8K-9K cars (publicly disclosed)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "BluSmart aspirational ride share in EV cab segment",
+      "value": "~10% of premium cab market in 3 cities.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cab + premium auto in Delhi NCR + Bengaluru + Mumbai daily rides",
+      "value": "~5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "BluSmart current share",
+      "value": "~2% = ~100K rides/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per car productivity (driver-less driver, 2-3 shift rotation)",
+      "value": "~12 rides/day per car.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cars needed",
+      "value": "100K / 12 = ~8,300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "BluSmart actual fleet (2026)",
+      "value": "~8K-9K cars (publicly disclosed).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Cab + premium auto in Delhi NCR + Bengaluru + Mumbai daily rides: ~5M.",
+    "BluSmart current share: ~2% = ~100K rides/day.",
+    "Cars needed: 100K / 12 = ~8,300."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "BluSmart actual fleet (2026): ~8K-9K cars (publicly disclosed)."
+  }
+}

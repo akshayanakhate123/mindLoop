@@ -1,0 +1,74 @@
+{
+  "questionId": "marketing-8",
+  "domain": "marketing",
+  "question": "Estimate the reach of a regional Tamil-language influencer campaign with 20 mid-tier influencers (100K-1M followers each).",
+  "idealClarificationQuestions": [
+    "Sponsored posts/reels on Instagram + YouTube? Yes — both.",
+    "Mid-tier Tamil influencers (food, fashion, tech, lifestyle mix)? Yes.",
+    "Total unique reach (deduped across influencers)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum of follower bases × engagement reach × deduplication."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "20 influencers × avg 400K followers each = 80 lakh combined follower base (but heavy overlap among Tamil audiences)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "If 2 posts per influencer over campaign: 48 lakh impressions."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total cross-platform impressions: ~55 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~25-30 lakh unique Tamil-speaking users reached."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "If 2 posts per influencer over campaign",
+      "value": "48 lakh impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus YouTube integrations (longer-form reach)",
+      "value": "adds ~5-7 lakh views.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cross-platform impressions",
+      "value": "~55 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~25-30 lakh unique Tamil-speaking users reached.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "20 influencers × avg 400K followers each = 80 lakh combined follower base (but heavy overlap among Tamil audiences).",
+    "Of these, average reach per sponsored post (Instagram organic reach ~25-35% of followers): ~30% = 24 lakh impressions per round.",
+    "If 2 posts per influencer over campaign: 48 lakh impressions.",
+    "Plus YouTube integrations (longer-form reach): adds ~5-7 lakh views.",
+    "Total cross-platform impressions: ~55 lakh.",
+    "Unique audience deduplication (Tamil-speaking IG/YT user base is small ~2 crore active; influencer overlap is high): unique reach ~25-30 lakh.",
+    "Round: ~25-30 lakh unique Tamil-speaking users reached."
+  ],
+  "finalAnswerRange": {
+    "low": "25",
+    "high": "30",
+    "ideal": "~25-30 lakh unique Tamil-speaking users reached."
+  }
+}

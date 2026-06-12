@@ -1,0 +1,60 @@
+{
+  "questionId": "finance-49",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for an Indian airline operating LCC vs FSC.",
+  "idealClarificationQuestions": [
+    "LCC = IndiGo, SpiceJet (low-cost); FSC = Air India, Vistara (full-service)? Yes.",
+    "Comparative EBITDA? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Comparative cost structure."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "LCC (IndiGo type):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Lower crew cost per seat."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Higher crew cost (premium training)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Gap: LCC 8-10pp higher EBITDA margin than FSC structurally."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- EBITDA margin",
+      "value": "~20-25% (steady-state, normal fuel).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- EBITDA margin",
+      "value": "~10-15% (Air India targeting 15% by FY27).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gap",
+      "value": "LCC 8-10pp higher EBITDA margin than FSC structurally.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Gap: LCC 8-10pp higher EBITDA margin than FSC structurally."
+  }
+}

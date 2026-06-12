@@ -1,0 +1,83 @@
+{
+  "questionId": "generalist-3",
+  "domain": "generalist",
+  "question": "How many weddings happen in India every year?",
+  "idealClarificationQuestions": [
+    "Hindu + Muslim + Christian + Sikh + civil registrations + customary? All — total weddings.",
+    "Annual count? Yes.",
+    "First marriages + remarriages? Both.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "From population: marriageable population × marriage rate per year."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, marriageable (unmarried, family-supporting): ~60% = ~192M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "But each wedding involves 1 woman = ~7.2M weddings per year."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~10-12 million Indian weddings annually."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Population in prime marriage cohort (women 21-30, men 23-32)",
+      "value": "~22% of population = ~320M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, marriageable (unmarried, family-supporting)",
+      "value": "~60% = ~192M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Marriage rate per year",
+      "value": "~7-7.5% of marriageable adults marry in any year (typical Indian sociology).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Marriages per year (women side)",
+      "value": "192M × 0.5 (women only) × 0.075 = 7.2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~10-12 million Indian weddings annually.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Population in prime marriage cohort (women 21-30, men 23-32): ~22% of population = ~320M.",
+    "Of these, marriageable (unmarried, family-supporting): ~60% = ~192M.",
+    "Marriages per year (women side): 192M × 0.5 (women only) × 0.075 = 7.2M.",
+    "But each wedding involves 1 woman = ~7.2M weddings per year.",
+    "Add ~5% remarriages (widow/divorce) = ~7.5M total.",
+    "Round: ~10-12 million Indian weddings annually."
+  ],
+  "finalAnswerRange": {
+    "low": "10",
+    "high": "12",
+    "ideal": "~10-12 million Indian weddings annually."
+  }
+}

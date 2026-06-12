@@ -1,0 +1,94 @@
+{
+  "questionId": "finance-76",
+  "domain": "finance",
+  "question": "Estimate the operating cost of running a Delhi Metro line annually.",
+  "idealClarificationQuestions": [
+    "Single metro line (e.g., Yellow Line or Blue Line) annual O&M cost? Yes.",
+    "Excludes capital cost / debt servicing (those are separate)? Yes — operating only.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Major cost head stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Single line characteristics: ~50 km, ~40 stations, ~300 train trips/day."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Maintenance (rolling stock, signaling, track): ~₹110 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Other (insurance, R&M of buildings, contingency): ~₹35 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹600 Cr annual operating cost per Delhi Metro line."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Single line characteristics",
+      "value": "~50 km, ~40 stations, ~300 train trips/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Power (electricity for trains)",
+      "value": "~₹220 Cr/year (single biggest cost; 35-40% of O&M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff (operations + station + maintenance ~3,500 people)",
+      "value": "~₹160 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance (rolling stock, signaling, track)",
+      "value": "~₹110 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cleaning + housekeeping + security",
+      "value": "~₹50 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- IT systems + AFC (Automated Fare Collection)",
+      "value": "~₹15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other (insurance, R&M of buildings, contingency)",
+      "value": "~₹35 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating cost per line per year",
+      "value": "~₹590-620 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Power (electricity for trains): ~₹220 Cr/year (single biggest cost; 35-40% of O&M).",
+    "- Staff (operations + station + maintenance ~3,500 people): ~₹160 Cr.",
+    "- Maintenance (rolling stock, signaling, track): ~₹110 Cr.",
+    "- Cleaning + housekeeping + security: ~₹50 Cr.",
+    "- IT systems + AFC (Automated Fare Collection): ~₹15 Cr.",
+    "- Other (insurance, R&M of buildings, contingency): ~₹35 Cr.",
+    "Total operating cost per line per year: ~₹590-620 Cr.",
+    "Round: ~₹600 Cr annual operating cost per Delhi Metro line."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹600 Cr annual operating cost per Delhi Metro line."
+  }
+}

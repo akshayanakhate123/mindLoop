@@ -1,0 +1,802 @@
+[
+  {
+    "id": "generalist-1",
+    "domain": "generalist",
+    "question": "How many cups of chai are consumed in India daily?",
+    "hint": "Bottom-up: segment population into chai-drinkers vs non-drinkers, then layer cups/day by segment, average across population.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-2",
+    "domain": "generalist",
+    "question": "Estimate the number of elevators in Mumbai.",
+    "hint": "Segment by building type → buildings of each type → elevators per building.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-3",
+    "domain": "generalist",
+    "question": "How many weddings happen in India every year?",
+    "hint": "From population: marriageable population × marriage rate per year.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-4",
+    "domain": "generalist",
+    "question": "Estimate the number of domestic flight passenger trips taken annually in India.",
+    "hint": "Bottom-up by route or top-down via airport throughput.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-5",
+    "domain": "generalist",
+    "question": "Estimate the number of school-going children in India.",
+    "hint": "Population × school-age cohort × enrollment rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-6",
+    "domain": "generalist",
+    "question": "Estimate the number of two-wheelers on Indian roads.",
+    "hint": "From cumulative sales × average vehicle life × scrappage.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-7",
+    "domain": "generalist",
+    "question": "Estimate the number of cattle (cows + buffaloes) in India.",
+    "hint": "Direct from livestock census + extrapolation.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-8",
+    "domain": "generalist",
+    "question": "Estimate the number of unique mobile phone users in India.",
+    "hint": "Total population minus those who don't use any phone (children, elderly, very poor).",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-9",
+    "domain": "generalist",
+    "question": "How many books are sold in India annually (physical books + e-books)?",
+    "hint": "Bottom-up: school textbooks + trade books + religious + competitive exam books.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-10",
+    "domain": "generalist",
+    "question": "Estimate the number of barbers/salons in India.",
+    "hint": "Population / haircuts per year per barber.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-11",
+    "domain": "generalist",
+    "question": "How many doctors (MBBS+) are practicing in India?",
+    "hint": "Cumulative MBBS produced × active practitioner share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-12",
+    "domain": "generalist",
+    "question": "Estimate the number of LPG cooking gas connections in India.",
+    "hint": "Total households × LPG penetration rate.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-13",
+    "domain": "generalist",
+    "question": "How many ATMs are there in India?",
+    "hint": "Direct estimate from RBI data + extrapolation.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-14",
+    "domain": "generalist",
+    "question": "Estimate the number of registered vehicles in India.",
+    "hint": "Sum across categories from MoRTH / Vahan data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-15",
+    "domain": "generalist",
+    "question": "How many newspapers (copies, all editions combined) are sold in India daily?",
+    "hint": "From major publishers' circulation data + small/local papers.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-16",
+    "domain": "generalist",
+    "question": "Estimate the number of farmers in India.",
+    "hint": "From census + workforce surveys.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-17",
+    "domain": "generalist",
+    "question": "How many credit card holders are there in India?",
+    "hint": "Total active credit cards × adjustment for multi-card holders.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-18",
+    "domain": "generalist",
+    "question": "Estimate the number of senior citizens (60+) in India.",
+    "hint": "Population × age cohort share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-19",
+    "domain": "generalist",
+    "question": "Estimate the number of women in the formal/informal workforce in India.",
+    "hint": "Female working-age population × female LFPR (labor force participation rate).",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-20",
+    "domain": "generalist",
+    "question": "How many MBA graduates does India produce annually?",
+    "hint": "Sum across institution categories × intake × completion rate.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-21",
+    "domain": "generalist",
+    "question": "Estimate the number of pet dogs in India.",
+    "hint": "Households × pet ownership rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-22",
+    "domain": "generalist",
+    "question": "Estimate the number of people who travel by Indian Railways daily.",
+    "hint": "Annual passengers / 365.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-23",
+    "domain": "generalist",
+    "question": "How many post offices are there in India?",
+    "hint": "Direct from India Post data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-24",
+    "domain": "generalist",
+    "question": "Estimate the number of Indians living in rented housing.",
+    "hint": "Total HH × rental tenure share, segmented urban/rural.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-25",
+    "domain": "generalist",
+    "question": "Estimate the number of people who own a smartphone in India.",
+    "hint": "Smartphones in operation × people per device.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-26",
+    "domain": "generalist",
+    "question": "Estimate the annual toothpaste consumption in India (by tube count and tonnage).",
+    "hint": "Population × penetration × usage frequency × tube life.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-27",
+    "domain": "generalist",
+    "question": "How many litres of milk are consumed in Delhi daily?",
+    "hint": "Population × per-capita milk consumption × Delhi-specific premium.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-28",
+    "domain": "generalist",
+    "question": "Estimate the number of samosas sold at Indian railway stations every day.",
+    "hint": "Number of stations × avg samosa sales per station per day.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-29",
+    "domain": "generalist",
+    "question": "Estimate the annual consumption of mobile data (in GB) in India.",
+    "hint": "Active subscribers × per-user monthly data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-30",
+    "domain": "generalist",
+    "question": "Estimate the annual consumption of cooking oil in India.",
+    "hint": "Population × per-capita oil consumption.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-31",
+    "domain": "generalist",
+    "question": "Estimate the annual consumption of cement in India.",
+    "hint": "Direct from production data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-32",
+    "domain": "generalist",
+    "question": "How many kilograms of rice are consumed in India daily?",
+    "hint": "Population × per-capita rice consumption.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-33",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of bottled water (packaged drinking water) in India.",
+    "hint": "Market size / unit volume.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-34",
+    "domain": "generalist",
+    "question": "Estimate the daily soap consumption in India (number of bars + bottles).",
+    "hint": "Population × usage rate × bar/bottle life.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-35",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of bread (pav, sliced loaf, buns) in India.",
+    "hint": "Population × bread-eating share × consumption per eater.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-36",
+    "domain": "generalist",
+    "question": "Estimate the daily petrol + diesel consumption in India (in litres).",
+    "hint": "Annual sales / 365.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-37",
+    "domain": "generalist",
+    "question": "Estimate the annual consumption of biscuits in India (by tonnage).",
+    "hint": "Per-capita biscuit consumption × population.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-38",
+    "domain": "generalist",
+    "question": "Estimate the daily electricity consumption in India (in million units / GWh).",
+    "hint": "Annual generation / 365.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-39",
+    "domain": "generalist",
+    "question": "Estimate the annual sugar consumption in India (in tonnes).",
+    "hint": "Production - exports + imports = consumption.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-40",
+    "domain": "generalist",
+    "question": "How many cigarettes are smoked in India daily?",
+    "hint": "Smoking population × cigarettes per smoker per day.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-41",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of eggs in India.",
+    "hint": "Population × per-capita egg consumption.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-42",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of paper (newsprint + writing + packaging) in India.",
+    "hint": "Annual consumption / 365.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-43",
+    "domain": "generalist",
+    "question": "Estimate the daily LPG cylinder consumption in India.",
+    "hint": "Total connections × refill frequency.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-44",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of tea (loose + tea bags) in India.",
+    "hint": "Production - exports = domestic consumption.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-45",
+    "domain": "generalist",
+    "question": "Estimate the annual consumption of plastic in India (in tonnes).",
+    "hint": "Per-capita consumption + segment breakdown.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-46",
+    "domain": "generalist",
+    "question": "Estimate the daily detergent (laundry) consumption in India.",
+    "hint": "Population × per-capita detergent consumption.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-47",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of pulses (dal) in India.",
+    "hint": "Production + imports = consumption.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-48",
+    "domain": "generalist",
+    "question": "Estimate the daily fish (marine + inland) consumption in India.",
+    "hint": "Production + imports - exports = consumption.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-49",
+    "domain": "generalist",
+    "question": "Estimate the daily salt consumption in India.",
+    "hint": "Population × per-capita salt consumption.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-50",
+    "domain": "generalist",
+    "question": "Estimate the daily consumption of bottled cold drinks (soft drinks + juices + flavored milk) in India.",
+    "hint": "Market size / unit volume.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-51",
+    "domain": "generalist",
+    "question": "How many petrol pumps are there in India?",
+    "hint": "Sum across major OMCs based on public disclosures + extrapolation.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-52",
+    "domain": "generalist",
+    "question": "Estimate the total ATMs in Maharashtra.",
+    "hint": "All-India ATMs × Maharashtra share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-53",
+    "domain": "generalist",
+    "question": "How many streetlights exist in Mumbai?",
+    "hint": "Road length × streetlight density.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-54",
+    "domain": "generalist",
+    "question": "Estimate the number of railway stations in India.",
+    "hint": "Direct from Railway Board data + count.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-55",
+    "domain": "generalist",
+    "question": "Estimate the number of mobile cell towers in India (across all telcos).",
+    "hint": "TRAI BTS data + tower companies disclosures.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-56",
+    "domain": "generalist",
+    "question": "How many bank branches are there in India?",
+    "hint": "RBI data on branch network.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-57",
+    "domain": "generalist",
+    "question": "Estimate the total length of national highways in India.",
+    "hint": "Direct from MoRTH/NHAI data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-58",
+    "domain": "generalist",
+    "question": "Estimate the number of operational airports in India.",
+    "hint": "Direct from AAI/MoCA data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-59",
+    "domain": "generalist",
+    "question": "Estimate the total length of metro rail networks across all Indian cities.",
+    "hint": "Sum across operational metros.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-60",
+    "domain": "generalist",
+    "question": "How many hospitals (including small clinics + nursing homes) are there in India?",
+    "hint": "Sum of govt + private + nursing homes.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-61",
+    "domain": "generalist",
+    "question": "Estimate the number of schools (all categories) in India.",
+    "hint": "Direct from UDISE + extrapolation.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-62",
+    "domain": "generalist",
+    "question": "Estimate the number of road accidents per year in India.",
+    "hint": "Direct from MoRTH Road Accidents data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-63",
+    "domain": "generalist",
+    "question": "Estimate the total length of railway tracks in India.",
+    "hint": "Direct from IR data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-64",
+    "domain": "generalist",
+    "question": "Estimate the number of shopping malls in India.",
+    "hint": "Real estate market data.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-65",
+    "domain": "generalist",
+    "question": "Estimate the total length of all Indian roads (NH + SH + rural + city).",
+    "hint": "Sum across categories.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-66",
+    "domain": "generalist",
+    "question": "Estimate the number of insurance agents in India.",
+    "hint": "Sum across insurer disclosures + IRDAI data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-67",
+    "domain": "generalist",
+    "question": "Estimate the number of police personnel in India.",
+    "hint": "Sum from MHA reports.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-68",
+    "domain": "generalist",
+    "question": "Estimate the number of registered companies in India.",
+    "hint": "Direct from MCA21 portal data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-69",
+    "domain": "generalist",
+    "question": "Estimate the number of broadband (wired + fixed wireless) connections in India.",
+    "hint": "TRAI broadband data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-70",
+    "domain": "generalist",
+    "question": "Estimate the number of solar rooftop installations in India.",
+    "hint": "MNRE installed capacity / average system size.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-71",
+    "domain": "generalist",
+    "question": "Estimate the number of police stations (thanas) in India.",
+    "hint": "Direct from MHA data.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-72",
+    "domain": "generalist",
+    "question": "Estimate the number of toilets/public sanitation units in Mumbai (community + public + commercial).",
+    "hint": "Slum population × community toilet seats + commercial spaces × washroom counts.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-73",
+    "domain": "generalist",
+    "question": "Estimate the number of buses (public transport + private) in India.",
+    "hint": "Sum across categories.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-74",
+    "domain": "generalist",
+    "question": "Estimate the number of warehouses (logistics + e-commerce + cold storage) in India.",
+    "hint": "Total warehousing capacity / avg warehouse size.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-75",
+    "domain": "generalist",
+    "question": "Estimate the number of EV charging points operational in India.",
+    "hint": "Direct from MoP / OMC / charge point operator data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-76",
+    "domain": "generalist",
+    "question": "Estimate the sales of sweets (mithai) during Diwali in India.",
+    "hint": "Population × HH × per-HH Diwali sweet spend.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-77",
+    "domain": "generalist",
+    "question": "How many people travel during the Holi weekend (across all transport modes) in India?",
+    "hint": "Bottom-up by mode.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-78",
+    "domain": "generalist",
+    "question": "Estimate the total flower demand during India's wedding season (Nov-Feb).",
+    "hint": "Number of weddings in season × flower per wedding.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-79",
+    "domain": "generalist",
+    "question": "Estimate the IPL final TV + OTT viewership in India.",
+    "hint": "Cumulative reach (someone who watched 1+ minute) vs concurrent peak.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-80",
+    "domain": "generalist",
+    "question": "Estimate the gold purchases on Akshaya Tritiya day in India.",
+    "hint": "Industry uplift on a typical day.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-81",
+    "domain": "generalist",
+    "question": "Estimate the number of crackers (firecrackers) burst in Delhi NCR on Diwali night.",
+    "hint": "Households × cracker spend × packets per HH.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-82",
+    "domain": "generalist",
+    "question": "Estimate the WhatsApp messages sent during India-Pakistan cricket match (T20 World Cup or Asia Cup).",
+    "hint": "MAU × hyper-engagement multiplier.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-83",
+    "domain": "generalist",
+    "question": "Estimate the number of Indians who travel for Char Dham Yatra annually.",
+    "hint": "Direct from Uttarakhand tourism data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-84",
+    "domain": "generalist",
+    "question": "Estimate the gift purchases during Raksha Bandhan in India.",
+    "hint": "HH × per-HH Raksha Bandhan spend.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-85",
+    "domain": "generalist",
+    "question": "Estimate the number of attendees at Maha Kumbh Mela (every 12 years; recent in Prayagraj 2025).",
+    "hint": "Daily footfall × duration with snan-day spikes.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-86",
+    "domain": "generalist",
+    "question": "Estimate the number of cars sold during the festive season (Sept-Nov) in India.",
+    "hint": "Annual sales × festive share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-87",
+    "domain": "generalist",
+    "question": "Estimate the additional electricity demand spike during India-Pakistan cricket match prime time.",
+    "hint": "Marginal viewing-related load: TVs on, lights on, AC running.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-88",
+    "domain": "generalist",
+    "question": "Estimate the total domestic tourism trips during summer vacation season (May-June).",
+    "hint": "Annual domestic tourism × seasonal share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-89",
+    "domain": "generalist",
+    "question": "Estimate the spike in food delivery orders on rainy days in Mumbai.",
+    "hint": "Demand uplift behavior on rainy days.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-90",
+    "domain": "generalist",
+    "question": "Estimate the number of Indians who go shopping on Black Friday / Big Billion Days kickoff day.",
+    "hint": "Festive sale daily order volume / orders per buyer.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-91",
+    "domain": "generalist",
+    "question": "Estimate the number of weddings on a single most-auspicious 'muhurta' day in India.",
+    "hint": "Annual weddings concentrated in muhurta days.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-92",
+    "domain": "generalist",
+    "question": "Estimate the e-commerce GMV during 5-day Amazon Great Indian Festival.",
+    "hint": "Annual GMV × festive share × daily concentration.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-93",
+    "domain": "generalist",
+    "question": "Estimate the data consumption spike on New Year's Eve in India (vs normal day).",
+    "hint": "Normal data + spike from video calls + WhatsApp media + OTT streaming.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-94",
+    "domain": "generalist",
+    "question": "Estimate the additional milk demand during Holi (festival of colors but also bhang + thandai + sweets).",
+    "hint": "Normal demand × Holi uplift driven by sweets, gujiya, thandai, bhang.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-95",
+    "domain": "generalist",
+    "question": "Estimate the number of pilgrims at Tirupati (Tirumala Venkateswara temple) per year.",
+    "hint": "Direct from TTD (Tirumala Tirupati Devasthanams) data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-96",
+    "domain": "generalist",
+    "question": "Estimate the consumption of mangoes during peak summer (May-June) in India.",
+    "hint": "Annual production × seasonal share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-97",
+    "domain": "generalist",
+    "question": "Estimate the fireworks (cracker industry) revenue during Diwali.",
+    "hint": "Annual cracker market × Diwali share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-98",
+    "domain": "generalist",
+    "question": "Estimate the number of Indians who travel for Eid (UP, Bihar, Bengal — homes-village migration).",
+    "hint": "Indian Muslim population × urban share × home-travel rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-99",
+    "domain": "generalist",
+    "question": "Estimate the number of Indians who watched the Ram Mandir Pran Pratishtha ceremony (Jan 22, 2024) live.",
+    "hint": "Event significance + multi-platform reach.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "generalist-100",
+    "domain": "generalist",
+    "question": "Estimate the number of Indians who attended Republic Day (Jan 26) parades / events nationally.",
+    "hint": "Sum across event categories.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  }
+]

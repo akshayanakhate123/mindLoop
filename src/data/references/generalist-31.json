@@ -1,0 +1,73 @@
+{
+  "questionId": "generalist-31",
+  "domain": "generalist",
+  "question": "Estimate the annual consumption of cement in India.",
+  "idealClarificationQuestions": [
+    "Total cement (OPC + PPC + PSC) consumed in construction? Yes.",
+    "Both private + public infrastructure? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from production data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India is the world's 2nd largest cement producer."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Capacity utilization: ~70-75%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Consumption distribution: Housing/individual ~60%; Commercial ~15%; Infrastructure (roads, metros) ~25%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~44 crore tonnes (440 MT) cement annual consumption."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual cement production capacity",
+      "value": "~600 MT (mid-2026).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Capacity utilization",
+      "value": "~70-75%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual consumption (= roughly production minus exports)",
+      "value": "~440 MT/year (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Consumption distribution",
+      "value": "Housing/individual ~60%; Commercial ~15%; Infrastructure (roads, metros) ~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~44 crore tonnes (440 MT) cement annual consumption.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual consumption (= roughly production minus exports): ~440 MT/year (FY26).",
+    "Round: ~44 crore tonnes (440 MT) cement annual consumption."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~44 crore tonnes (440 MT) cement annual consumption."
+  }
+}

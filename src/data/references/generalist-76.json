@@ -1,0 +1,89 @@
+{
+  "questionId": "generalist-76",
+  "domain": "generalist",
+  "question": "Estimate the sales of sweets (mithai) during Diwali in India.",
+  "idealClarificationQuestions": [
+    "5-day Diwali window (Dhanteras to Bhai Dooj)? Yes.",
+    "Both organized (Haldiram, Bikanervala, Bikaji) + unorganized halwais? All.",
+    "Includes home-made (gifted)? Exclude home-made; commercial sales only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × HH × per-HH Diwali sweet spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households: ~310M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Affluent (top 15%): ₹3,000 = 38M HH × ₹3,000 = ₹11,400 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Subtotal HH consumption: ₹30,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹38,000-40,000 Cr in 5 days."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households",
+      "value": "~310M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Affluent (top 15%)",
+      "value": "₹3,000 = 38M HH × ₹3,000 = ₹11,400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Middle class (50%)",
+      "value": "₹1,200 = 125M × ₹1,200 = ₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Lower middle + below (35%)",
+      "value": "₹400 = 87M × ₹400 = ₹3,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Subtotal HH consumption",
+      "value": "₹30,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus corporate gifting (companies sending sweets to clients/employees)",
+      "value": "~₹8,000-10,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹38,000-40,000 Cr in 5 days.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Households celebrating Diwali (Hindus, Sikhs, Jains, Buddhists, many Indians broadly): ~80% = 250M HH.",
+    "- Affluent (top 15%): ₹3,000 = 38M HH × ₹3,000 = ₹11,400 Cr.",
+    "- Middle class (50%): ₹1,200 = 125M × ₹1,200 = ₹15,000 Cr.",
+    "- Lower middle + below (35%): ₹400 = 87M × ₹400 = ₹3,500 Cr.",
+    "Subtotal HH consumption: ₹30,000 Cr.",
+    "Plus corporate gifting (companies sending sweets to clients/employees): ~₹8,000-10,000 Cr.",
+    "Total: ~₹38,000-40,000 Cr in 5 days."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹38,000-40,000 Cr in 5 days."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "sales-99",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for testing / inspection / certification (TIC) services in India.",
+  "idealClarificationQuestions": [
+    "Quality assurance + product testing + certification services (TUV, SGS, Bureau Veritas, Intertek)? Yes.",
+    "Includes ISO certifications + food testing + safety certification? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industries × TIC spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Sectors needing TIC services: manufacturing, food, pharma, automotive, electronics, construction, energy."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Food + agri: ~₹5,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Construction + infrastructure: ~₹5,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Major players: SGS India, Bureau Veritas India, TUV Rheinland, TUV India, Intertek, Eurofins, BSI India, plus government bodies (BIS, FSSAI testing labs)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian TIC market FY26",
+      "value": "~₹35,000-40,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Manufacturing (industrial + auto + electronics)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Food + agri",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Pharma + medical devices",
+      "value": "~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Energy + utilities",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Construction + infrastructure",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Consumer goods + textiles",
+      "value": "~₹4,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian TIC market FY26: ~₹35,000-40,000 Cr.",
+    "- Manufacturing (industrial + auto + electronics): ~₹15,000 Cr.",
+    "- Food + agri: ~₹5,000 Cr.",
+    "- Pharma + medical devices: ~₹6,000 Cr.",
+    "- Energy + utilities: ~₹4,000 Cr.",
+    "- Construction + infrastructure: ~₹5,000 Cr.",
+    "- Consumer goods + textiles: ~₹4,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Consumer goods + textiles: ~₹4,000 Cr."
+  }
+}

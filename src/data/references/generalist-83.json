@@ -1,0 +1,96 @@
+{
+  "questionId": "generalist-83",
+  "domain": "generalist",
+  "question": "Estimate the number of Indians who travel for Char Dham Yatra annually.",
+  "idealClarificationQuestions": [
+    "Char Dham = Yamunotri, Gangotri, Kedarnath, Badrinath (Uttarakhand)? Yes (the smaller Char Dham; not the all-India one).",
+    "Annual pilgrim count (May-Nov season)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from Uttarakhand tourism data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Char Dham Yatra Uttarakhand pilgrim numbers grew sharply post-2022:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- 2024: ~48 lakh (weather + landslide impact)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Badrinath: ~16-18 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Hemkund Sahib (often clubbed): ~3 lakh."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- 2022",
+      "value": "~46 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 2023",
+      "value": "~56 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 2024",
+      "value": "~48 lakh (weather + landslide impact).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 2025 (estimate)",
+      "value": "~55 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- 2026 (estimate)",
+      "value": "~60 lakh with improved infrastructure.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Kedarnath",
+      "value": "~18-20 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Badrinath",
+      "value": "~16-18 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Gangotri",
+      "value": "~10-12 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- 2022: ~46 lakh.",
+    "- 2023: ~56 lakh.",
+    "- 2024: ~48 lakh (weather + landslide impact).",
+    "- 2025 (estimate): ~55 lakh.",
+    "- 2026 (estimate): ~60 lakh with improved infrastructure.",
+    "- Kedarnath: ~18-20 lakh.",
+    "- Badrinath: ~16-18 lakh.",
+    "- Gangotri: ~10-12 lakh.",
+    "- Yamunotri: ~7-9 lakh.",
+    "- Hemkund Sahib (often clubbed): ~3 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Hemkund Sahib (often clubbed): ~3 lakh."
+  }
+}

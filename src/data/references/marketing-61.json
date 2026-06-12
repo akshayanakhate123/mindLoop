@@ -1,0 +1,78 @@
+{
+  "questionId": "marketing-61",
+  "domain": "marketing",
+  "question": "Estimate the size of the NRI (Non-Resident Indian) consumer market for India-origin products and services.",
+  "idealClarificationQuestions": [
+    "NRIs globally (32M) buying Indian brands, products, services? Yes.",
+    "Annual spend on Indian-origin goods + services + remittances? Provide categories.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "NRI population × per-capita India-origin spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total NRIs/Indian diaspora: ~32M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Indian groceries + spices in foreign supermarkets (Patak, Tilda, MTR): ~$5B = ₹40,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Indian Bollywood movies in international theaters: ~$200M = ₹1,700 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total NRI-driven Indian economic activity (ex-remittance pure transfer): ~₹125,000 Cr / $15B annually."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total NRIs/Indian diaspora",
+      "value": "~32M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Remittances back to India",
+      "value": "~$125B/year (~₹10.5 lakh Cr) — World Bank #1 recipient.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Indian-language OTT subscriptions (Hotstar US, Sun NXT Global)",
+      "value": "~$300M = ₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Indian Bollywood movies in international theaters",
+      "value": "~$200M = ₹1,700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tourism to India",
+      "value": "~$8B inbound = ₹65,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Remittances back to India: ~$125B/year (~₹10.5 lakh Cr) — World Bank #1 recipient.",
+    "- Indian groceries + spices in foreign supermarkets (Patak, Tilda, MTR): ~$5B = ₹40,000 Cr.",
+    "- Indian-language OTT subscriptions (Hotstar US, Sun NXT Global): ~$300M = ₹2,500 Cr.",
+    "- Indian fashion/jewellery (Tanishq, Manyavar online + Indian boutiques abroad): ~$2B = ₹17,000 Cr.",
+    "- Indian Bollywood movies in international theaters: ~$200M = ₹1,700 Cr.",
+    "- Tourism to India: ~$8B inbound = ₹65,000 Cr.",
+    "Total NRI-driven Indian economic activity (ex-remittance pure transfer): ~₹125,000 Cr / $15B annually."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total NRI-driven Indian economic activity (ex-remittance pure transfer): ~₹125,000 Cr / $15B annually."
+  }
+}

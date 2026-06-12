@@ -1,0 +1,86 @@
+{
+  "questionId": "product-73",
+  "domain": "product",
+  "question": "Estimate the adoption of plant-based meat alternatives (Beyond Meat, Imagine Meats, GoodDot, Wakao) in metro India over next 3 years.",
+  "idealClarificationQuestions": [
+    "Active monthly buyers (purchased in past month)? Yes.",
+    "Metro India (top 8 cities)? Yes.",
+    "Both retail (BB, Zepto, Blinkit) and HoReCa (restaurants serving)? Both.",
+    "By 2029? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total metro non-veg consumers → flexitarian + health-conscious subset → plant-based trial → repeat."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Metro adult non-veg consumers: ~80M (~60% of metro adults are non-veg)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, tried plant-based meat at least once: ~20% in 2026 = 2M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Drivers to 2029: price drops (currently 2-3x meat), variety, restaurant penetration (BurgerKing, McDonald's veg options)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1M monthly buyers in metros by 2029."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Metro adult non-veg consumers",
+      "value": "~80M (~60% of metro adults are non-veg).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Health-conscious / climate-aware / animal welfare aware subset",
+      "value": "~10-12% = 9-10M (TAM).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, tried plant-based meat at least once",
+      "value": "~20% in 2026 = 2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently buying monthly",
+      "value": "~10% of triers = 200K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Drivers to 2029",
+      "value": "price drops (currently 2-3x meat), variety, restaurant penetration (BurgerKing, McDonald's veg options).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 2029 monthly buyers",
+      "value": "~10-12% of TAM = ~1-1.2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1M monthly buyers in metros by 2029.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Health-conscious / climate-aware / animal welfare aware subset: ~10-12% = 9-10M (TAM).",
+    "Of these, tried plant-based meat at least once: ~20% in 2026 = 2M.",
+    "Currently buying monthly: ~10% of triers = 200K.",
+    "Projected 2029 monthly buyers: ~10-12% of TAM = ~1-1.2M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1M monthly buyers in metros by 2029."
+  }
+}

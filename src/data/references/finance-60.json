@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-60",
+  "domain": "finance",
+  "question": "Estimate the market size for the Indian gig economy (delivery + ride-hailing + freelancers) by 2030.",
+  "idealClarificationQuestions": [
+    "Total gig workers + their earnings? Yes.",
+    "By 2030? Yes.",
+    "Platform-based gig workers (Zomato, Swiggy, Uber, Urban Company, Upwork, etc.)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Workforce projection + ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian gig workers 2030:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Online freelancers (Upwork, Fiverr, Indian platforms): ~40 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Drivers: ~₹2.5-3 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Platform GMV through gig workers (services delivered): ~₹14 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Delivery (food, grocery, e-commerce)",
+      "value": "~1.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Ride-hailing drivers",
+      "value": "~50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Urban services (Urban Company, Housejoy)",
+      "value": "~30 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Online freelancers (Upwork, Fiverr, Indian platforms)",
+      "value": "~40 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total gig workers",
+      "value": "~2.7-3 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Delivery (full-time)",
+      "value": "~₹2-2.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Drivers",
+      "value": "~₹2.5-3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Urban services",
+      "value": "~₹2-3 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Delivery (food, grocery, e-commerce): ~1.5 crore.",
+    "- Ride-hailing drivers: ~50 lakh.",
+    "- Urban services (Urban Company, Housejoy): ~30 lakh.",
+    "- Online freelancers (Upwork, Fiverr, Indian platforms): ~40 lakh.",
+    "Total gig workers: ~2.7-3 crore.",
+    "- Delivery (full-time): ~₹2-2.5 lakh.",
+    "- Drivers: ~₹2.5-3 lakh.",
+    "- Urban services: ~₹2-3 lakh.",
+    "- Freelancers: ~₹4-6 lakh.",
+    "Total gig economy earnings: ~₹6.5 lakh Cr ($80B) by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Platform GMV through gig workers (services delivered): ~₹14 lakh Cr."
+  }
+}

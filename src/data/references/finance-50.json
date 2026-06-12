@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-50",
+  "domain": "finance",
+  "question": "Estimate the contribution margin per ticket for IRCTC (online + ticket reservation revenue).",
+  "idealClarificationQuestions": [
+    "Per-ticket service charge collected by IRCTC? Yes.",
+    "Net contribution after operating costs? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-transaction unit economics."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "IRCTC charges service fee per ticket:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per-ticket cost to IRCTC:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "IRCTC ticketing volume: ~50 crore tickets/year online."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test your ability to size a category opportunity (TAM) by 2030. The playbook: addressable population × adoption × ARPU/spend, projected forward with realistic CAGR. Distinguish TAM, SAM, and SOM clearly. Always sanity check against industry reports (RedSeer, BCG, Bain)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Non-AC tickets (online)",
+      "value": "₹15/passenger.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- AC tickets (online)",
+      "value": "₹30/passenger.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average blended service fee",
+      "value": "~₹22.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Payment gateway",
+      "value": "₹1-2.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Server/tech allocated",
+      "value": "₹1.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Support allocated",
+      "value": "₹1.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net contribution per ticket",
+      "value": "~₹17-19 (most of service fee is profit).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "IRCTC ticketing volume",
+      "value": "~50 crore tickets/year online.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Non-AC tickets (online): ₹15/passenger.",
+    "- AC tickets (online): ₹30/passenger.",
+    "Average blended service fee: ~₹22.",
+    "Plus convenience fee + payment gateway fee passed through: nil net.",
+    "- Payment gateway: ₹1-2.",
+    "- Server/tech allocated: ₹1.",
+    "- Support allocated: ₹1.",
+    "Net contribution per ticket: ~₹17-19 (most of service fee is profit).",
+    "IRCTC ticketing volume: ~50 crore tickets/year online.",
+    "Total contribution: 50 cr × ₹18 = ~₹900 Cr from ticketing alone."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "These questions test your ability to size a category opportunity (TAM) by 2030. The playbook: addressable population × adoption × ARPU/spend, projected forward with realistic CAGR. Distinguish TAM, SAM, and SOM clearly. Always sanity check against industry reports (RedSeer, BCG, Bain)."
+  }
+}

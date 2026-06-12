@@ -1,0 +1,74 @@
+{
+  "questionId": "product-47",
+  "domain": "product",
+  "question": "Estimate the daily ride cancellations on Uber India (cancellations by either rider or driver).",
+  "idealClarificationQuestions": [
+    "Total cancellations per day in India? Yes.",
+    "Both rider-initiated and driver-initiated? Yes — total.",
+    "Average day in 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily Uber rides × cancellation rate (well-documented industry pain point in India)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Uber India daily completed rides: ~2.5M (Uber India does ~900M-1B rides/year)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total daily ride bookings (including cancelled): cancellations in India are notoriously high — ~25-30% cancellation rate (driver: ~70% of cancellations, rider ~30%)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily cancellations: 3.33M - 2.5M = ~0.83M = ~800K-900K cancellations per day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~800,000-1 million cancellations daily."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Uber India daily completed rides",
+      "value": "~2.5M (Uber India does ~900M-1B rides/year).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily ride bookings (including cancelled)",
+      "value": "cancellations in India are notoriously high — ~25-30% cancellation rate (driver: ~70% of cancellations, rider ~30%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total bookings",
+      "value": "2.5M ÷ 0.75 = ~3.33M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily cancellations",
+      "value": "3.33M - 2.5M = ~0.83M = ~800K-900K cancellations per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~800,000-1 million cancellations daily.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total bookings: 2.5M ÷ 0.75 = ~3.33M.",
+    "Daily cancellations: 3.33M - 2.5M = ~0.83M = ~800K-900K cancellations per day.",
+    "Round: ~800,000-1 million cancellations daily."
+  ],
+  "finalAnswerRange": {
+    "low": "800,000",
+    "high": "1",
+    "ideal": "~800,000-1 million cancellations daily."
+  }
+}

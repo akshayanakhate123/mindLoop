@@ -1,0 +1,85 @@
+{
+  "questionId": "generalist-30",
+  "domain": "generalist",
+  "question": "Estimate the annual consumption of cooking oil in India.",
+  "idealClarificationQuestions": [
+    "Edible oils: palm, soy, mustard, sunflower, groundnut, rice bran etc.? All edible oils.",
+    "Tonnage and rupee value? Both.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita oil consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total consumption: 1.45B × 22 = ~32 million tonnes (MT)/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Domestic (mustard, groundnut, soy, rice bran): ~16-17 MT."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Market value: 32 MT × ₹140,000/T = ~₹4.5 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita edible oil consumption",
+      "value": "~22-23 kg/year (rising — was 19 kg in 2018).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total consumption",
+      "value": "1.45B × 22 = ~32 million tonnes (MT)/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Imported (palm + soy + sunflower)",
+      "value": "~15-16 MT (~50% — India is world's largest importer).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Domestic (mustard, groundnut, soy, rice bran)",
+      "value": "~16-17 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average price",
+      "value": "~₹140/kg (blended).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Market value",
+      "value": "32 MT × ₹140,000/T = ~₹4.5 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total consumption: 1.45B × 22 = ~32 million tonnes (MT)/year.",
+    "- Imported (palm + soy + sunflower): ~15-16 MT (~50% — India is world's largest importer).",
+    "Average price: ~₹140/kg (blended).",
+    "Market value: 32 MT × ₹140,000/T = ~₹4.5 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Market value: 32 MT × ₹140,000/T = ~₹4.5 lakh Cr."
+  }
+}

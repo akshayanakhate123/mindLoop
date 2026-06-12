@@ -1,0 +1,94 @@
+{
+  "questionId": "finance-65",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian fintech opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Total fintech market revenue (payments + lending + investments + insurance + neobanks)? Yes.",
+    "By 2030? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sub-segment stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Digital payments revenue (PG + UPI infrastructure + bills): ~₹30,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "InsurTech (Policybazaar, Acko, Plum, Onsurity): ~₹15,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Other (RegTech, fraud, KYC): ~₹5,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "vs ~₹95,000 Cr today."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Digital payments revenue (PG + UPI infrastructure + bills)",
+      "value": "~₹30,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digital lending (new originations × fees + interest income)",
+      "value": "~₹1.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Wealth-tech / investments (Groww, Zerodha, MF distribution)",
+      "value": "~₹35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "InsurTech (Policybazaar, Acko, Plum, Onsurity)",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Neobanks + embedded finance",
+      "value": "~₹12,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Crypto + Web3 (uncertain)",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Other (RegTech, fraud, KYC)",
+      "value": "~₹5,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹2.6 lakh Cr (~$32B) Indian fintech revenue by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Digital payments revenue (PG + UPI infrastructure + bills): ~₹30,000 Cr.",
+    "Digital lending (new originations × fees + interest income): ~₹1.5 lakh Cr.",
+    "Wealth-tech / investments (Groww, Zerodha, MF distribution): ~₹35,000 Cr.",
+    "InsurTech (Policybazaar, Acko, Plum, Onsurity): ~₹15,000 Cr.",
+    "Neobanks + embedded finance: ~₹12,000 Cr.",
+    "Crypto + Web3 (uncertain): ~₹8,000 Cr.",
+    "Other (RegTech, fraud, KYC): ~₹5,000 Cr.",
+    "Total: ~₹2.6 lakh Cr (~$32B) Indian fintech revenue by 2030.",
+    "vs ~₹95,000 Cr today."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "vs ~₹95,000 Cr today."
+  }
+}

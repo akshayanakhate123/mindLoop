@@ -1,0 +1,89 @@
+{
+  "questionId": "marketing-80",
+  "domain": "marketing",
+  "question": "Estimate the annual revenue of an Indian D2C beauty brand with ₹150 Cr GMV.",
+  "idealClarificationQuestions": [
+    "Revenue (recognized, after discounts and returns)? Yes.",
+    "Brand with ₹150 Cr GMV (mid-tier D2C like Plum / Sugar)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "GMV to revenue translation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Returns + cancellations: ~12-15% of GMV = ~₹20 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Marketplace fees + commissions (if selling via Amazon, Flipkart, Nykaa): D2C brands at this scale often have 50% direct site + 50% marketplace."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Direct site: ~₹65 Cr fully recognized."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹110-120 Cr recognized revenue from ₹150 Cr GMV."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "GMV",
+      "value": "₹150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Returns + cancellations",
+      "value": "~12-15% of GMV = ~₹20 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net GMV",
+      "value": "~₹130 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "On marketplace",
+      "value": "marketplace takes 18-25% commission → net to brand ~75% × 65 Cr = ~₹49 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Direct site",
+      "value": "~₹65 Cr fully recognized.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Recognized revenue",
+      "value": "49 + 65 = ~₹114 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹110-120 Cr recognized revenue from ₹150 Cr GMV.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "GMV: ₹150 Cr.",
+    "Returns + cancellations: ~12-15% of GMV = ~₹20 Cr.",
+    "Net GMV: ~₹130 Cr.",
+    "Marketplace fees + commissions (if selling via Amazon, Flipkart, Nykaa): D2C brands at this scale often have 50% direct site + 50% marketplace.",
+    "On marketplace: marketplace takes 18-25% commission → net to brand ~75% × 65 Cr = ~₹49 Cr.",
+    "Direct site: ~₹65 Cr fully recognized.",
+    "Recognized revenue: 49 + 65 = ~₹114 Cr.",
+    "Round: ~₹110-120 Cr recognized revenue from ₹150 Cr GMV."
+  ],
+  "finalAnswerRange": {
+    "low": "110",
+    "high": "120",
+    "ideal": "~₹110-120 Cr recognized revenue from ₹150 Cr GMV."
+  }
+}

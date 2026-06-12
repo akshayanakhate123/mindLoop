@@ -1,0 +1,89 @@
+{
+  "questionId": "sales-17",
+  "domain": "sales",
+  "question": "Estimate monthly demand for diesel pumps at a single highway petrol station on NH-48.",
+  "idealClarificationQuestions": [
+    "Single typical petrol station (Indian Oil / BPCL / HPCL) on NH-48 (Delhi-Mumbai highway)? Yes.",
+    "Monthly diesel + petrol fuel dispensed? Provide split.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Vehicles passing × refuel rate × volume per refuel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "NH-48 daily traffic (passing the station): ~30,000 vehicles/day (commercial + private mix)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- 900 trucks/buses × avg 80L per fill = 72,000 L/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- 510 petrol cars × avg 30L = ~15,300 L/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Value: ₹95/L diesel × 22L + ₹105/L petrol × 4.6L = ~₹26 Cr/month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "NH-48 daily traffic (passing the station)",
+      "value": "~30,000 vehicles/day (commercial + private mix).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which fuel up at this station (vs go ahead or behind)",
+      "value": "~5% = 1,500/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Mix",
+      "value": "~60% trucks/buses (diesel, large fills), 40% cars (mostly petrol, smaller fills).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Total diesel",
+      "value": "~74,000 L/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "Diesel ~22 lakh L; Petrol ~4.6 lakh L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~27 lakh L/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value",
+      "value": "₹95/L diesel × 22L + ₹105/L petrol × 4.6L = ~₹26 Cr/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "NH-48 daily traffic (passing the station): ~30,000 vehicles/day (commercial + private mix).",
+    "Of which fuel up at this station (vs go ahead or behind): ~5% = 1,500/day.",
+    "- 900 trucks/buses × avg 80L per fill = 72,000 L/day.",
+    "- Plus diesel cars (~15% of car traffic = 90 × 25L = 2,250 L).",
+    "- 510 petrol cars × avg 30L = ~15,300 L/day.",
+    "Monthly: Diesel ~22 lakh L; Petrol ~4.6 lakh L.",
+    "Total: ~27 lakh L/month.",
+    "Value: ₹95/L diesel × 22L + ₹105/L petrol × 4.6L = ~₹26 Cr/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Value: ₹95/L diesel × 22L + ₹105/L petrol × 4.6L = ~₹26 Cr/month."
+  }
+}

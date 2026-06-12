@@ -1,0 +1,74 @@
+{
+  "questionId": "product-14",
+  "domain": "product",
+  "question": "Estimate the number of small businesses (kirana + small retailers) using digital payment apps (UPI QR / soundbox) in India.",
+  "idealClarificationQuestions": [
+    "Definition of 'small business': individual merchants with annual revenue under ₹40 lakh? Yes.",
+    "Active acceptance (received at least 1 UPI payment in past 30 days)? Yes.",
+    "Include hawkers/street vendors with personal QRs? Yes.",
+    "Latest year? 2026."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total small merchants in India → digitization penetration (urban vs rural split)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total small retailers/merchants in India: ~70M (kiranas, vegetable vendors, paan shops, autos, salons, etc.)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Urban small merchants: ~30M; Rural: ~40M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Rural UPI acceptance penetration: ~30-35% = 13M (growing fast since 2024 with Bhim/PhonePe rural push, soundbox affordability)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total active small-business UPI acceptors: ~35-36M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total small retailers/merchants in India",
+      "value": "~70M (kiranas, vegetable vendors, paan shops, autos, salons, etc.).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban small merchants",
+      "value": "~30M; Rural: ~40M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban UPI acceptance penetration",
+      "value": "~75% = 22.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural UPI acceptance penetration",
+      "value": "~30-35% = 13M (growing fast since 2024 with Bhim/PhonePe rural push, soundbox affordability).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total active small-business UPI acceptors",
+      "value": "~35-36M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban UPI acceptance penetration: ~75% = 22.5M.",
+    "Rural UPI acceptance penetration: ~30-35% = 13M (growing fast since 2024 with Bhim/PhonePe rural push, soundbox affordability)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total active small-business UPI acceptors: ~35-36M."
+  }
+}

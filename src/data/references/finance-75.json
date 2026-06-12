@@ -1,0 +1,93 @@
+{
+  "questionId": "finance-75",
+  "domain": "finance",
+  "question": "Estimate the total Indian startup / VC funding opportunity (annual deployment) by 2030.",
+  "idealClarificationQuestions": [
+    "Annual VC + PE + growth equity deployed into Indian startups by 2030? Yes.",
+    "Both early-stage and growth-stage? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Trajectory from current."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "FY24 VC deployment: ~$15-18B (down from $40B peak in 2021)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Stage split (2030):"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total cumulative deployment FY26-FY30: ~$200B."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test your understanding of cost composition for various businesses. The playbook: identify major cost heads as % of revenue (or per unit) — labor, energy, raw material, real estate, capital, marketing, tech. Then sense check against operating ratios or per-unit benchmarks from industry data."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "FY24 VC deployment",
+      "value": "~$15-18B (down from $40B peak in 2021).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "FY25 recovering",
+      "value": "~$20-22B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "FY26 expected",
+      "value": "~$25-28B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2030",
+      "value": "~$45-55B annual deployment (3x recovery + growth).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Seed + Series A",
+      "value": "~25% = $12B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Series B-D",
+      "value": "~40% = $20B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Growth + PE",
+      "value": "~35% = $18B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cumulative deployment FY26-FY30",
+      "value": "~$200B.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "FY24 VC deployment: ~$15-18B (down from $40B peak in 2021).",
+    "FY25 recovering: ~$20-22B.",
+    "FY26 expected: ~$25-28B.",
+    "By 2030: ~$45-55B annual deployment (3x recovery + growth).",
+    "- Seed + Series A: ~25% = $12B.",
+    "- Series B-D: ~40% = $20B.",
+    "- Growth + PE: ~35% = $18B.",
+    "Total cumulative deployment FY26-FY30: ~$200B."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "These questions test your understanding of cost composition for various businesses. The playbook: identify major cost heads as % of revenue (or per unit) — labor, energy, raw material, real estate, capital, marketing, tech. Then sense check against operating ratios or per-unit benchmarks from industry data."
+  }
+}

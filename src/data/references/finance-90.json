@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-90",
+  "domain": "finance",
+  "question": "Estimate the cost of acquiring a new bank account customer in India.",
+  "idealClarificationQuestions": [
+    "Private bank acquiring new SA / CA customer? Yes.",
+    "Includes onboarding + KYC + activation + early-stage servicing? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "All-in CAC stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Cost stack per new bank account customer:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- KYC processing (e-KYC + physical + document verification): ~₹150."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Allocated marketing + brand: ~₹300."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "For BSBDA (zero balance) accounts: ~₹200-400."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Branch acquisition (RM / direct sales rep commission)",
+      "value": "~₹500-1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Digital acquisition (Meta + Google ads)",
+      "value": "~₹400-800.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- KYC processing (e-KYC + physical + document verification)",
+      "value": "~₹150.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Welcome kit + debit card issuance",
+      "value": "~₹250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- First 90-day servicing cost",
+      "value": "~₹150.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Allocated marketing + brand",
+      "value": "~₹300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Blended new customer CAC",
+      "value": "~₹1,800-2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For HNI / NRI accounts",
+      "value": "~₹8,000-15,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Branch acquisition (RM / direct sales rep commission): ~₹500-1,500.",
+    "- Digital acquisition (Meta + Google ads): ~₹400-800.",
+    "- KYC processing (e-KYC + physical + document verification): ~₹150.",
+    "- Welcome kit + debit card issuance: ~₹250.",
+    "- First 90-day servicing cost: ~₹150.",
+    "- Allocated marketing + brand: ~₹300.",
+    "Blended new customer CAC: ~₹1,800-2,500.",
+    "For HNI / NRI accounts: ~₹8,000-15,000.",
+    "For BSBDA (zero balance) accounts: ~₹200-400."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "For BSBDA (zero balance) accounts: ~₹200-400."
+  }
+}

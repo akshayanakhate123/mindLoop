@@ -1,0 +1,68 @@
+{
+  "questionId": "product-63",
+  "domain": "product",
+  "question": "Estimate how many Indians may switch to digital-only neobanks (Jupiter, Fi, Niyo, Slice) by 2028.",
+  "idealClarificationQuestions": [
+    "Neobank as primary or secondary account? Account opened and used at least once a month.",
+    "Including credit-cum-savings (Slice, Uni)? Include savings/PPI; exclude pure credit cards.",
+    "By end of 2028 (2 years out)? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: addressable affluent + young digital natives → adoption forecast."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian young professionals + students with bank account, age 18-35: ~200M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active monthly neobank users today: ~12-15M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Headwinds: pure neobanks cannot hold deposits; reliance on partner banks creates trust issues."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "2028 adoption: ~30-40M active monthly users (~2-3x growth)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian young professionals + students with bank account, age 18-35",
+      "value": "~200M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently using a neobank product (savings or wallet)",
+      "value": "~25-30M (Jupiter, Fi, Niyo combined ~30-35M cumulative; active ~50%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active monthly neobank users today",
+      "value": "~12-15M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "2028 adoption",
+      "value": "~30-40M active monthly users (~2-3x growth).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian young professionals + students with bank account, age 18-35: ~200M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "2028 adoption: ~30-40M active monthly users (~2-3x growth)."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "questionId": "product-19",
+  "domain": "product",
+  "question": "Estimate the market size of online gaming (excluding fantasy sports) in India.",
+  "idealClarificationQuestions": [
+    "Real-money gaming (rummy, poker) included? Include rummy/poker (legal in most states pre-2023 ban) but flag uncertainty post-GST/regulation.",
+    "Casual mobile gaming (in-app purchases + ads) included? Yes.",
+    "Esports/console gaming included? Esports yes; console + PC small.",
+    "FY26 reality post-28% GST? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up by sub-segment: casual mobile + RMG (rummy/poker) + esports + console/PC."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Casual mobile gaming: 500M players (Free Fire, BGMI, Ludo King); paying ~5% = 25M; ARPU ~₹400/yr; revenue: ₹10,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "RMG (rummy/poker, post-GST ban on online RMG with stakes lower-than-prize): heavily contracted; ~₹4,000-5,000 Cr (down from ₹15,000 Cr peak)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Console + PC (Steam, PS5 sales digital): ~₹1,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹16,000-18,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Casual mobile gaming",
+      "value": "500M players (Free Fire, BGMI, Ludo King); paying ~5% = 25M; ARPU ~₹400/yr; revenue: ₹10,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Esports/streaming/tournaments",
+      "value": "~₹500-700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Console + PC (Steam, PS5 sales digital)",
+      "value": "~₹1,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹16,000-18,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Casual mobile gaming: 500M players (Free Fire, BGMI, Ludo King); paying ~5% = 25M; ARPU ~₹400/yr; revenue: ₹10,000 Cr.",
+    "RMG (rummy/poker, post-GST ban on online RMG with stakes lower-than-prize): heavily contracted; ~₹4,000-5,000 Cr (down from ₹15,000 Cr peak).",
+    "Esports/streaming/tournaments: ~₹500-700 Cr.",
+    "Console + PC (Steam, PS5 sales digital): ~₹1,500 Cr.",
+    "Total: ~₹16,000-18,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹16,000-18,000 Cr."
+  }
+}

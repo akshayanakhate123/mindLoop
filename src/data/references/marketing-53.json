@@ -1,0 +1,77 @@
+{
+  "questionId": "marketing-53",
+  "domain": "marketing",
+  "question": "Estimate the market size for vegan food (plant-based) in Indian metro cities.",
+  "idealClarificationQuestions": [
+    "Active vegan + flexitarian consumers buying plant-based products? Yes.",
+    "Metro cities (top 8)? Yes.",
+    "Annual spend? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × adoption rate × annual spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top 8 metros adults: ~80M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, regularly buying plant-based products (oat milk, plant meat, vegan butter, etc.): ~12-15% = ~1.7M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Market size: 1.7M × ₹7,000 = ~₹1,200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Branded vegan/plant-based market specifically: ~₹1,000-1,500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Top 8 metros adults",
+      "value": "~80M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Health-conscious / wellness-aware subset",
+      "value": "~15-20% = 13M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual spend on plant-based premium products",
+      "value": "~₹6,000-8,000 per buyer.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Market size",
+      "value": "1.7M × ₹7,000 = ~₹1,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Branded vegan/plant-based market specifically",
+      "value": "~₹1,000-1,500 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Health-conscious / wellness-aware subset: ~15-20% = 13M.",
+    "Of these, regularly buying plant-based products (oat milk, plant meat, vegan butter, etc.): ~12-15% = ~1.7M.",
+    "Average annual spend on plant-based premium products: ~₹6,000-8,000 per buyer.",
+    "Market size: 1.7M × ₹7,000 = ~₹1,200 Cr.",
+    "Branded vegan/plant-based market specifically: ~₹1,000-1,500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Branded vegan/plant-based market specifically: ~₹1,000-1,500 Cr."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-19",
+  "domain": "marketing",
+  "question": "Estimate the reach of a Spotify audio ad campaign in India.",
+  "idealClarificationQuestions": [
+    "Spotify Free tier listeners (where audio ads play)? Yes — only free tier.",
+    "Budget: ₹15 lakh over 4 weeks? Yes.",
+    "All India English + Bollywood + regional listeners? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Budget / CPM = impressions; impressions / frequency = reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Spotify India free-tier listeners: ~52 million MAU (out of 57M; 4-5M paid)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total ad impressions: ₹15L / ₹50 × 1,000 = 30 lakh impressions."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Unique reach: 30 lakh / 4.5 = ~6.5-7 lakh unique listeners."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7 lakh unique listeners."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Spotify India free-tier listeners",
+      "value": "~52 million MAU (out of 57M; 4-5M paid).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Audio ad CPM on Spotify India",
+      "value": "~₹40-60.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total ad impressions",
+      "value": "₹15L / ₹50 × 1,000 = 30 lakh impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average frequency for audio ads (heavy users hear repeats)",
+      "value": "~4-5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach",
+      "value": "30 lakh / 4.5 = ~6.5-7 lakh unique listeners.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7 lakh unique listeners.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Spotify India free-tier listeners: ~52 million MAU (out of 57M; 4-5M paid).",
+    "Audio ad CPM on Spotify India: ~₹40-60.",
+    "Take CPM = ₹50.",
+    "Total ad impressions: ₹15L / ₹50 × 1,000 = 30 lakh impressions.",
+    "Unique reach: 30 lakh / 4.5 = ~6.5-7 lakh unique listeners.",
+    "Round: ~7 lakh unique listeners."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~7 lakh unique listeners."
+  }
+}

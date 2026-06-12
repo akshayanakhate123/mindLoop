@@ -1,0 +1,86 @@
+{
+  "questionId": "product-8",
+  "domain": "product",
+  "question": "Estimate the annual e-commerce GMV from Tier-2 cities in India.",
+  "idealClarificationQuestions": [
+    "Online physical-goods e-commerce (Amazon/Flipkart/Meesho/Myntra/AJIO etc.); excluding food delivery, OTA, edtech? Yes — physical goods only.",
+    "Definition of Tier 2: cities with 1-10 lakh population? Use commonly accepted Tier 2 definition (~100 cities, ~200M population).",
+    "Include both metro-shipped orders to Tier-2 customers and Tier-2 origin sellers? Customer-side GMV (where buyer lives).",
+    "Time period: FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: Tier-2 population → online shoppers → orders/year → AOV."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier-2 city population in India: ~200M (including ~100 cities like Lucknow, Indore, Coimbatore, Vizag)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Online shoppers (placed at least 1 order/year): ~50% of internet users = ~75M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total annual orders: 75M × 12 = 900M orders."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual GMV: 900M × ₹650 = ₹58,500 Cr (~$7B)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tier-2 city population in India",
+      "value": "~200M (including ~100 cities like Lucknow, Indore, Coimbatore, Vizag).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Internet users in Tier 2",
+      "value": "~150M (75% penetration).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Online shoppers (placed at least 1 order/year)",
+      "value": "~50% of internet users = ~75M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Order frequency",
+      "value": "Tier-2 average ~12 orders/year (vs Tier 1 ~25; growing fast due to Meesho, COD, vernacular UI).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual orders",
+      "value": "75M × 12 = 900M orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AOV in Tier 2",
+      "value": "~₹650 (lower than Tier 1's ₹900 — more value/fashion/home, less premium electronics).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual GMV",
+      "value": "900M × ₹650 = ₹58,500 Cr (~$7B).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Online shoppers (placed at least 1 order/year): ~50% of internet users = ~75M.",
+    "Total annual orders: 75M × 12 = 900M orders.",
+    "AOV in Tier 2: ~₹650 (lower than Tier 1's ₹900 — more value/fashion/home, less premium electronics).",
+    "Annual GMV: 900M × ₹650 = ₹58,500 Cr (~$7B)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual GMV: 900M × ₹650 = ₹58,500 Cr (~$7B)."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "questionId": "marketing-73",
+  "domain": "marketing",
+  "question": "Estimate the size of the home-cook / cooking enthusiast consumer segment in India.",
+  "idealClarificationQuestions": [
+    "Indians who cook at home regularly + buy cooking gear/ingredients (small appliances, premium ingredients, cooking content)? Yes.",
+    "Active enthusiast (vs casual cook): purchases gourmet ingredients or cooking equipment in past 6 months? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Homemaker + working women + male cooks × enthusiast share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian households actively cooking at home: ~270M HH."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average annual gourmet/enthusiast spend per HH: ~₹8,000-12,000 (premium oils, spices, branded ingredients, induction cooktops, mixers, gadgets, cookbooks)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus cooking content market (YouTube cooking creators, OTT cooking shows, MasterChef): ~₹2,000 Cr ecosystem."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total ecosystem: ~₹30,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian households actively cooking at home",
+      "value": "~270M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, enthusiast (premium ingredients + appliances + content)",
+      "value": "~10% = ~27M HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual gourmet/enthusiast spend per HH",
+      "value": "~₹8,000-12,000 (premium oils, spices, branded ingredients, induction cooktops, mixers, gadgets, cookbooks).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total market",
+      "value": "27M × ₹10,000 = ~₹27,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total ecosystem",
+      "value": "~₹30,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, enthusiast (premium ingredients + appliances + content): ~10% = ~27M HH.",
+    "Average annual gourmet/enthusiast spend per HH: ~₹8,000-12,000 (premium oils, spices, branded ingredients, induction cooktops, mixers, gadgets, cookbooks).",
+    "Total market: 27M × ₹10,000 = ~₹27,000 Cr.",
+    "Plus cooking content market (YouTube cooking creators, OTT cooking shows, MasterChef): ~₹2,000 Cr ecosystem.",
+    "Total ecosystem: ~₹30,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total ecosystem: ~₹30,000 Cr."
+  }
+}

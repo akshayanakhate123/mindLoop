@@ -1,0 +1,68 @@
+{
+  "questionId": "generalist-25",
+  "domain": "generalist",
+  "question": "Estimate the number of people who own a smartphone in India.",
+  "idealClarificationQuestions": [
+    "Owners (have a smartphone in their personal use, even if shared family device)? Yes.",
+    "Active operational smartphones in personal use? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Smartphones in operation × people per device."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Operational smartphones in India (active devices): ~800M units."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Unique users with personal access to a smartphone: ~750M-800M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~80 crore smartphone owners in India."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These probe daily usage and total demand: tea, milk, toothpaste, fuel, rice. The trick is per-capita consumption × population, with a sanity check from import/export/production data. Avoid double-counting between household and bulk/industrial channels."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Operational smartphones in India (active devices)",
+      "value": "~800M units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique users with personal access to a smartphone",
+      "value": "~750M-800M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Penetration of total population",
+      "value": "~52-55%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~80 crore smartphone owners in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Round: ~80 crore smartphone owners in India.",
+    "These probe daily usage and total demand: tea, milk, toothpaste, fuel, rice. The trick is per-capita consumption × population, with a sanity check from import/export/production data. Avoid double-counting between household and bulk/industrial channels."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~80 crore smartphone owners in India."
+  }
+}

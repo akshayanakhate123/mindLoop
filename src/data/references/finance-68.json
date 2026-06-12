@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-68",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian green hydrogen opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Green hydrogen production capacity + market value by 2030? Yes.",
+    "Per National Green Hydrogen Mission targets? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Target capacity × price × utilization."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "National Green Hydrogen Mission target: 5 MMT (million tonnes) annual production by 2030."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Production value: 5,000,000 tonnes × 1000 kg × $3.75 = $18.75B = ~₹1.6 lakh Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus exports: ~30% of production = ~$5B."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Reality check: hitting 5 MMT by 2030 is aggressive; realistic 2-3 MMT = ₹70K-1.2 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "National Green Hydrogen Mission target",
+      "value": "5 MMT (million tonnes) annual production by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average price",
+      "value": "~$3.5-4/kg by 2030 (declining from $5+).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Production value",
+      "value": "5,000,000 tonnes × 1000 kg × $3.75 = $18.75B = ~₹1.6 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus electrolyzer manufacturing + supporting infra",
+      "value": "~₹40,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus exports",
+      "value": "~30% of production = ~$5B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total green hydrogen ecosystem",
+      "value": "~₹2 lakh Cr opportunity by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reality check",
+      "value": "hitting 5 MMT by 2030 is aggressive; realistic 2-3 MMT = ₹70K-1.2 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "National Green Hydrogen Mission target: 5 MMT (million tonnes) annual production by 2030.",
+    "Average price: ~$3.5-4/kg by 2030 (declining from $5+).",
+    "Production value: 5,000,000 tonnes × 1000 kg × $3.75 = $18.75B = ~₹1.6 lakh Cr.",
+    "Plus electrolyzer manufacturing + supporting infra: ~₹40,000 Cr.",
+    "Plus exports: ~30% of production = ~$5B.",
+    "Total green hydrogen ecosystem: ~₹2 lakh Cr opportunity by 2030.",
+    "Reality check: hitting 5 MMT by 2030 is aggressive; realistic 2-3 MMT = ₹70K-1.2 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Reality check: hitting 5 MMT by 2030 is aggressive; realistic 2-3 MMT = ₹70K-1.2 lakh Cr."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-29",
+  "domain": "finance",
+  "question": "Estimate the profitability of an Amazon India seller (3P) doing ₹5 Cr annual GMV.",
+  "idealClarificationQuestions": [
+    "Third-party (3P) seller — buys inventory + sells on Amazon marketplace? Yes.",
+    "Category: mid-margin electronics or home goods? Mid-margin (~25% gross margin).",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Revenue stack against costs."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Revenue (GMV): ₹5 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Fulfillment fee (FBA storage + pick-pack-ship): ~8% = ₹40 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total cost: ~₹5.4 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Best in class: ~5-8% PAT at scale; many lose money."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue (GMV)",
+      "value": "₹5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS (inventory at 75% of price)",
+      "value": "~₹3.75 Cr = 75%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Amazon commission",
+      "value": "~12% = ₹60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Fulfillment fee (FBA storage + pick-pack-ship)",
+      "value": "~8% = ₹40 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Closing fee + advertising (PPC)",
+      "value": "~7% = ₹35 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff + warehouse + ops overhead",
+      "value": "~3% = ₹15 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cost",
+      "value": "~₹5.4 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net loss",
+      "value": "~₹40 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Revenue (GMV): ₹5 Cr.",
+    "- COGS (inventory at 75% of price): ~₹3.75 Cr = 75%.",
+    "- Amazon commission: ~12% = ₹60 lakh.",
+    "- Fulfillment fee (FBA storage + pick-pack-ship): ~8% = ₹40 lakh.",
+    "- Closing fee + advertising (PPC): ~7% = ₹35 lakh.",
+    "- Returns + RTO losses (RTO ~12% in fashion, 4-5% in electronics, taking 6%): ~3% revenue impact = ₹15 lakh.",
+    "- Staff + warehouse + ops overhead: ~3% = ₹15 lakh.",
+    "Total cost: ~₹5.4 Cr.",
+    "Net loss: ~₹40 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Best in class: ~5-8% PAT at scale; many lose money."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "questionId": "generalist-28",
+  "domain": "generalist",
+  "question": "Estimate the number of samosas sold at Indian railway stations every day.",
+  "idealClarificationQuestions": [
+    "All railway stations across India? Yes.",
+    "Samosa specifically (excluding kachori, vada pav, dhokla)? Yes — samosa only.",
+    "All vendors: IRCTC catering + platform stalls + vendor walks? Yes.",
+    "Average day, year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Number of stations × avg samosa sales per station per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Railways operational stations: ~7,300."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Mega stations (Howrah, NDLS, CSMT, etc.): ~50; ~3,000 samosas/day each = 150K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Small stations with vending: ~2,200; ~50/day = 110K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~700,000 samosas/day at and around railways."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Railways operational stations",
+      "value": "~7,300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, with food vending",
+      "value": "~3,500 (smaller halts have minimal vending).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mega stations (Howrah, NDLS, CSMT, etc.)",
+      "value": "~50; ~3,000 samosas/day each = 150K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Major junction stations",
+      "value": "~250; ~800/day = 200K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-size stations",
+      "value": "~1,000; ~200/day = 200K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Small stations with vending",
+      "value": "~2,200; ~50/day = 110K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "150 + 200 + 200 + 110 = ~660,000 samosas per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Add in-train pantry car samosas",
+      "value": "~200 trains × ~150 samosas = 30K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Mega stations (Howrah, NDLS, CSMT, etc.): ~50; ~3,000 samosas/day each = 150K.",
+    "- Major junction stations: ~250; ~800/day = 200K.",
+    "- Mid-size stations: ~1,000; ~200/day = 200K.",
+    "- Small stations with vending: ~2,200; ~50/day = 110K.",
+    "Total: 150 + 200 + 200 + 110 = ~660,000 samosas per day.",
+    "Add in-train pantry car samosas: ~200 trains × ~150 samosas = 30K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~700,000 samosas/day at and around railways."
+  }
+}

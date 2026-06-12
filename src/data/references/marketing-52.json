@@ -1,0 +1,78 @@
+{
+  "questionId": "marketing-52",
+  "domain": "marketing",
+  "question": "How many Indians would buy luxury sneakers above ₹10,000?",
+  "idealClarificationQuestions": [
+    "Annual buyers (purchased at least one pair >₹10K in past 12 months)? Yes.",
+    "Luxury sneakers = Nike premium, Adidas Originals, Yeezy, Onitsuka Tiger, New Balance, Veja, designer? Yes.",
+    "Authentic only (not first-copy/replica)? Authentic.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Affluent urban funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Urban India affluent population (HH income ₹15L+): ~12M HH or ~25M individuals."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, fashion-conscious / sneaker-aware: ~40% = 5M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~8-10 lakh annual buyers of ₹10K+ authentic luxury sneakers in India."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average buyer spends on ~1.5 pairs/year = ~12-15 lakh annual pairs sold."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Urban India affluent population (HH income ₹15L+)",
+      "value": "~12M HH or ~25M individuals.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, in age 18-40 (sneaker-buying cohort)",
+      "value": "~50% = 12.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, fashion-conscious / sneaker-aware",
+      "value": "~40% = 5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, who actually buy luxury sneakers in any year",
+      "value": "~15-20% = 800K-1M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~8-10 lakh annual buyers of ₹10K+ authentic luxury sneakers in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban India affluent population (HH income ₹15L+): ~12M HH or ~25M individuals.",
+    "Of these, in age 18-40 (sneaker-buying cohort): ~50% = 12.5M.",
+    "Of these, fashion-conscious / sneaker-aware: ~40% = 5M.",
+    "Of these, who actually buy luxury sneakers in any year: ~15-20% = 800K-1M.",
+    "Round: ~8-10 lakh annual buyers of ₹10K+ authentic luxury sneakers in India.",
+    "Average buyer spends on ~1.5 pairs/year = ~12-15 lakh annual pairs sold."
+  ],
+  "finalAnswerRange": {
+    "low": "8",
+    "high": "10",
+    "ideal": "~8-10 lakh annual buyers of ₹10K+ authentic luxury sneakers in India."
+  }
+}

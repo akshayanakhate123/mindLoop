@@ -1,0 +1,80 @@
+{
+  "questionId": "product-90",
+  "domain": "product",
+  "question": "Estimate the hospital beds India needs to add over next 5 years to meet healthcare demand.",
+  "idealClarificationQuestions": [
+    "Public + private hospital beds? Yes — total.",
+    "By 2031? Yes.",
+    "WHO recommendation reference: 3 beds per 1,000 population? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × bed-per-1000 target − current bed availability."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population 2031: ~1.5B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "India current bed count (public + private): ~1.9-2M (1.3 per 1,000)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Realistic addition over 5 years: ~600K-800K beds (~120-160K/year — current pace ~100K/year)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: India will not fully close the gap to 3/1,000 in 5 years; infrastructure constraints."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population 2031",
+      "value": "~1.5B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "WHO recommendation",
+      "value": "3 beds per 1,000 = 4.5M beds total target.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "India current bed count (public + private)",
+      "value": "~1.9-2M (1.3 per 1,000).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gap",
+      "value": "4.5M - 2M = 2.5M beds to add.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Realistic addition over 5 years",
+      "value": "~600K-800K beds (~120-160K/year — current pace ~100K/year).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "India will not fully close the gap to 3/1,000 in 5 years; infrastructure constraints.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "WHO recommendation: 3 beds per 1,000 = 4.5M beds total target.",
+    "India current bed count (public + private): ~1.9-2M (1.3 per 1,000).",
+    "Gap: 4.5M - 2M = 2.5M beds to add.",
+    "By 2031, India will have ~2.6-2.8M beds = 1.7-1.9 per 1,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: India will not fully close the gap to 3/1,000 in 5 years; infrastructure constraints."
+  }
+}

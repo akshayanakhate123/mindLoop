@@ -1,0 +1,74 @@
+{
+  "questionId": "product-32",
+  "domain": "product",
+  "question": "Estimate the number of swipes on dating apps (Bumble + Tinder + Hinge) per day in India.",
+  "idealClarificationQuestions": [
+    "Sum of all swipes (right + left) across all platforms? Yes.",
+    "India users only? Yes.",
+    "Active swipers (DAU)? Yes.",
+    "Average day, not Valentine's Day? Average."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily active dating app users × swipes per session × sessions per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total dating app MAU India: ~10M (Tinder ~5M, Bumble ~2M, Hinge ~1M, others ~2M)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "DAU/MAU ratio for dating apps: ~30-35% = ~3.5M DAU."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Swipes per session: ~50 (most users go through stacks of 30-100 in a session)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily swipes: 3.5M × 2 × 50 = 350M swipes."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total dating app MAU India",
+      "value": "~10M (Tinder ~5M, Bumble ~2M, Hinge ~1M, others ~2M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "DAU/MAU ratio for dating apps",
+      "value": "~30-35% = ~3.5M DAU.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sessions per DAU",
+      "value": "~2 sessions/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Swipes per session",
+      "value": "~50 (most users go through stacks of 30-100 in a session).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily swipes",
+      "value": "3.5M × 2 × 50 = 350M swipes.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "DAU/MAU ratio for dating apps: ~30-35% = ~3.5M DAU.",
+    "Daily swipes: 3.5M × 2 × 50 = 350M swipes."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily swipes: 3.5M × 2 × 50 = 350M swipes."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "questionId": "product-51",
+  "domain": "product",
+  "question": "How would you estimate the adoption of smartwatches in Tier-2 cities of India over the next 3 years?",
+  "idealClarificationQuestions": [
+    "Smartwatch = both basic fitness bands and full smartwatches (Boat, Noise, Apple, Samsung)? Both — but flag separately if asked.",
+    "Tier 2 cities defined as ~100 cities with 1-10 lakh population? Yes (~200M total population).",
+    "Adoption metric: device ownership? Yes (households or individuals?). Per individual.",
+    "Time horizon: 3 years from now (2029)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up adoption funnel: addressable population → smartphone owners → fitness-aware → affordability fit → diffusion curve over 3 years."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier 2 population: ~200M; adults 18-50: ~110M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Fitness-conscious or 'tech-aware' subset: ~25-30% = ~22M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "3-year adoption curve: smartwatch market shrinking after 2024 peak in India (Boat decline, Apple slow-growing); but Tier 2 still in growth phase. Realistic CAGR: ~25-30%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Penetration of Tier 2 adults in 2029: 6.5M / 110M = ~6%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tier 2 population",
+      "value": "~200M; adults 18-50: ~110M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone owners in this segment",
+      "value": "~80M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Fitness-conscious or 'tech-aware' subset",
+      "value": "~25-30% = ~22M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Affordability fit at sub-₹3,000 price points (Boat/Noise drove this)",
+      "value": "~70% = ~15M as TAM.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Current Tier-2 smartwatch ownership penetration (2026)",
+      "value": "~15-18% = ~3M owners.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "3-year adoption curve",
+      "value": "smartwatch market shrinking after 2024 peak in India (Boat decline, Apple slow-growing); but Tier 2 still in growth phase. Realistic CAGR: ~25-30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "2029 owners",
+      "value": "3M × 1.30^3 ≈ 3M × 2.2 = ~6.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Penetration of Tier 2 adults in 2029",
+      "value": "6.5M / 110M = ~6%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Fitness-conscious or 'tech-aware' subset: ~25-30% = ~22M.",
+    "Affordability fit at sub-₹3,000 price points (Boat/Noise drove this): ~70% = ~15M as TAM.",
+    "Current Tier-2 smartwatch ownership penetration (2026): ~15-18% = ~3M owners.",
+    "2029 owners: 3M × 1.30^3 ≈ 3M × 2.2 = ~6.5M.",
+    "Penetration of Tier 2 adults in 2029: 6.5M / 110M = ~6%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Penetration of Tier 2 adults in 2029: 6.5M / 110M = ~6%."
+  }
+}

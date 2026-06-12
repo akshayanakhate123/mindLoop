@@ -1,0 +1,87 @@
+{
+  "questionId": "generalist-59",
+  "domain": "generalist",
+  "question": "Estimate the total length of metro rail networks across all Indian cities.",
+  "idealClarificationQuestions": [
+    "Operational metro lines only (not under-construction)? Yes — operational only.",
+    "All cities with metros? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across operational metros."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Major operational metros (2026):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Kolkata Metro: ~60 km (after Sealdah-Esplanade extension)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Kochi, Lucknow, Nagpur, Pune, Jaipur, Ahmedabad, Noida, Gurgaon: ~120 km combined."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~900 km of metro across India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Delhi Metro",
+      "value": "~395 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bengaluru (Namma Metro)",
+      "value": "~75 km (rising fast with Phase 2).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Kolkata Metro",
+      "value": "~60 km (after Sealdah-Esplanade extension).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Hyderabad",
+      "value": "~70 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Chennai",
+      "value": "~55 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mumbai (Lines 1, 2, 3, 7 + monorail)",
+      "value": "~80 km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Kochi, Lucknow, Nagpur, Pune, Jaipur, Ahmedabad, Noida, Gurgaon",
+      "value": "~120 km combined.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Smaller (Kanpur, Agra, Patna under expansion)",
+      "value": "~30 km.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Mumbai (Lines 1, 2, 3, 7 + monorail): ~80 km."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~900 km of metro across India."
+  }
+}

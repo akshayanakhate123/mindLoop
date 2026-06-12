@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-33",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for Reliance Jio Telecom.",
+  "idealClarificationQuestions": [
+    "Telecom-only EBITDA (excluding Reliance Retail and others)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Telecom cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "- Network operating cost (towers, spectrum, fiber lease): ~28-32%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Spectrum amortization (heavy capex): ~6-8%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "EBITDA margin: ~52-55% (telecom is asset-heavy but margin-rich at scale)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Less interest + tax: PAT margin ~15-18%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Network operating cost (towers, spectrum, fiber lease)",
+      "value": "~28-32%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Employee cost",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- SG&A",
+      "value": "~4-5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Spectrum amortization (heavy capex)",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Interconnect + roaming",
+      "value": "~3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating (pre-EBITDA)",
+      "value": "~46-50%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "~52-55% (telecom is asset-heavy but margin-rich at scale).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Interconnect + roaming: ~3%.",
+    "Less interest + tax: PAT margin ~15-18%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Less interest + tax: PAT margin ~15-18%."
+  }
+}

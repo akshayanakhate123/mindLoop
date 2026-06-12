@@ -1,0 +1,76 @@
+{
+  "questionId": "marketing-23",
+  "domain": "marketing",
+  "question": "Estimate the reach of a Swiggy/Zomato 'mega sale' day campaign across Indian tier-1 cities.",
+  "idealClarificationQuestions": [
+    "App-based + email + push + paid social combined? Yes.",
+    "1-day mega sale (e.g., Swiggy Maha Saturday, Zomato Sunday Special)? Yes.",
+    "Tier 1 cities (top 8)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Multi-channel: app users + paid social + earned (organic)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top 8 cities Swiggy/Zomato MAU: ~3 crore each = ~5 crore unique (some overlap)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Push + email + in-app banner reach: ~80% of MAU = ~4 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total mega-sale day reach in Tier 1 cities: ~5-6 crore unique food delivery app users see the campaign."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of these, actually order on the day: ~25-30% = ~1.5 crore orders peak (vs ~50 lakh normal day in T1)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Top 8 cities Swiggy/Zomato MAU",
+      "value": "~3 crore each = ~5 crore unique (some overlap).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Push + email + in-app banner reach",
+      "value": "~80% of MAU = ~4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paid social ads (Meta + YouTube + push)",
+      "value": "~2-3 crore additional unique exposure.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total mega-sale day reach in Tier 1 cities",
+      "value": "~5-6 crore unique food delivery app users see the campaign.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, actually order on the day",
+      "value": "~25-30% = ~1.5 crore orders peak (vs ~50 lakh normal day in T1).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Top 8 cities Swiggy/Zomato MAU: ~3 crore each = ~5 crore unique (some overlap).",
+    "Push + email + in-app banner reach: ~80% of MAU = ~4 crore.",
+    "Paid social ads (Meta + YouTube + push): ~2-3 crore additional unique exposure.",
+    "Total mega-sale day reach in Tier 1 cities: ~5-6 crore unique food delivery app users see the campaign.",
+    "Of these, actually order on the day: ~25-30% = ~1.5 crore orders peak (vs ~50 lakh normal day in T1)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of these, actually order on the day: ~25-30% = ~1.5 crore orders peak (vs ~50 lakh normal day in T1)."
+  }
+}

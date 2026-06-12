@@ -1,0 +1,74 @@
+{
+  "questionId": "marketing-1",
+  "domain": "marketing",
+  "question": "Estimate the reach of an Instagram campaign targeting Indian college students with a ₹50 lakh budget.",
+  "idealClarificationQuestions": [
+    "Reach = unique users who see the ad at least once (vs impressions which can be repeated)? Yes — unique users.",
+    "Format: Reels-heavy or feed/stories mix? Assume blended (Meta auto-placements).",
+    "Targeting: 18-24 age, college-going, Tier 1+2 cities? Yes.",
+    "Bid type: reach optimization (CPM-based)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Budget / CPM × 1000 = impressions; impressions × frequency-cap-adjusted reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian college student Instagram users (18-24, urban + Tier 2): ~80M MAU."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total impressions: ₹50,00,000 / ₹80 × 1,000 = 6.25 crore impressions."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Unique reach: 6.25 cr / 3.5 = ~1.8 crore unique users."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.7-1.9 crore unique college students reached."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian college student Instagram users (18-24, urban + Tier 2)",
+      "value": "~80M MAU.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total impressions",
+      "value": "₹50,00,000 / ₹80 × 1,000 = 6.25 crore impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach",
+      "value": "6.25 cr / 3.5 = ~1.8 crore unique users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.7-1.9 crore unique college students reached.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian college student Instagram users (18-24, urban + Tier 2): ~80M MAU.",
+    "Average CPM (Cost Per Mille) for Indian college student targeting on Meta in 2026: ~₹70-90 (rising due to ad load saturation; was ₹40-50 in 2022).",
+    "Take CPM = ₹80.",
+    "Total impressions: ₹50,00,000 / ₹80 × 1,000 = 6.25 crore impressions.",
+    "Unique reach: 6.25 cr / 3.5 = ~1.8 crore unique users.",
+    "But this can't exceed addressable TAM (80M college students). 1.8 crore is ~22% of TAM — feasible.",
+    "Round: ~1.7-1.9 crore unique college students reached."
+  ],
+  "finalAnswerRange": {
+    "low": "1.7",
+    "high": "1.9",
+    "ideal": "~1.7-1.9 crore unique college students reached."
+  }
+}

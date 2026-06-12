@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-46",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for an Indian premium hospital chain (Apollo, Fortis, Max).",
+  "idealClarificationQuestions": [
+    "Hospital operations (excluding pharmacy and other diversified businesses)? Yes.",
+    "Tertiary-care multi-specialty hospital? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Hospital P&L."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "- Consumables (medicines, surgical materials): ~22-25%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Power, maintenance, supplies: ~6-8%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~75-80%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT margin: ~8-12%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Consumables (medicines, surgical materials)",
+      "value": "~22-25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Salaries (doctors fixed + consultants on revenue-share)",
+      "value": "~32-38%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Power, maintenance, supplies",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Insurance commissions",
+      "value": "~4-5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~75-80%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "~18-24% (Apollo FY25 ~22%).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Salaries (doctors fixed + consultants on revenue-share): ~32-38%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT margin: ~8-12%."
+  }
+}

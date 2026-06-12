@@ -1,0 +1,96 @@
+{
+  "questionId": "sales-25",
+  "domain": "sales",
+  "question": "Estimate monthly demand for premium watches (₹50K+) in a Tier 1 city like Hyderabad.",
+  "idealClarificationQuestions": [
+    "Premium watches ₹50K+ (Tag Heuer, Tissot premium, Omega entry, Rolex, Cartier)? Yes.",
+    "Retail + grey market? Organized retail.",
+    "Hyderabad metro? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Affluent population × annual premium watch buyers × monthly distribution."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian luxury watch market: ₹6,500-7,000 Cr/year (per Marketing Q63)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly: ~₹37-40 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- ₹3L+ (Rolex, Cartier, etc.): ~15% = 500 units."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test understanding of how products reach end consumers. The playbook: total outlets to be served ÷ outlets per distributor = distributor count needed. Know typical coverage ratios — FMCG distributor covers 600-1,000 outlets; D2C 80-100 modern trade; LIC agent covers 1,500-2,000 customers."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian luxury watch market",
+      "value": "₹6,500-7,000 Cr/year (per Marketing Q63).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hyderabad share of national luxury watch market",
+      "value": "~6-7% (large HNI base, IT tech wealth).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual Hyderabad premium watch market",
+      "value": "~₹450 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~₹37-40 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of units",
+      "value": "avg ₹1.2L = ~3,000-3,500 units/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ₹50K-1L tier (Tissot, Tag Heuer entry)",
+      "value": "~50% = 1,500-1,800 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ₹1-3L (Tag premium, Omega)",
+      "value": "~35% = 1,100 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ₹3L+ (Rolex, Cartier, etc.)",
+      "value": "~15% = 500 units.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian luxury watch market: ₹6,500-7,000 Cr/year (per Marketing Q63).",
+    "Annual Hyderabad premium watch market: ~₹450 Cr.",
+    "Monthly: ~₹37-40 Cr.",
+    "Number of units: avg ₹1.2L = ~3,000-3,500 units/month.",
+    "- ₹50K-1L tier (Tissot, Tag Heuer entry): ~50% = 1,500-1,800 units.",
+    "- ₹1-3L (Tag premium, Omega): ~35% = 1,100 units.",
+    "- ₹3L+ (Rolex, Cartier, etc.): ~15% = 500 units.",
+    "Round: ~3,000-3,500 premium watches / ₹37-40 Cr monthly in Hyderabad.",
+    "These questions test understanding of how products reach end consumers. The playbook: total outlets to be served ÷ outlets per distributor = distributor count needed. Know typical coverage ratios — FMCG distributor covers 600-1,000 outlets; D2C 80-100 modern trade; LIC agent covers 1,500-2,000 customers."
+  ],
+  "finalAnswerRange": {
+    "low": "3,000",
+    "high": "3,500",
+    "ideal": "~3,000-3,500 premium watches / ₹37-40 Cr monthly in Hyderabad."
+  }
+}

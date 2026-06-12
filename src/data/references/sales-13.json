@@ -1,0 +1,83 @@
+{
+  "questionId": "sales-13",
+  "domain": "sales",
+  "question": "Estimate monthly LCD/LED light bulb sales in a UP district (Gorakhpur ~45 lakh).",
+  "idealClarificationQuestions": [
+    "All LED bulbs + tube lights (excludes CFL/incandescent which are legacy)? Yes.",
+    "Both branded + unbranded (huge unorganized market)? Yes.",
+    "Gorakhpur district (rural-heavy UP)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × annual bulb-buying rate × replacement cycle."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian LED bulb annual market: ~80 crore units/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Gorakhpur district 45 lakh × 6 = ~2.7 crore units/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Branded (Philips, Wipro, Bajaj, Crompton, Havells, Surya): ~40% = ~9 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Value: avg ₹40 per unit blended = ~₹9 Cr/month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian LED bulb annual market",
+      "value": "~80 crore units/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita LED bulb purchases",
+      "value": "~6/year on average (incl. tube lights, fancy lights).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~22-23 lakh units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Branded (Philips, Wipro, Bajaj, Crompton, Havells, Surya)",
+      "value": "~40% = ~9 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Unbranded / regional",
+      "value": "~60% = ~13-14 lakh (huge unorganized market in UP).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value",
+      "value": "avg ₹40 per unit blended = ~₹9 Cr/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian LED bulb annual market: ~80 crore units/year.",
+    "Gorakhpur district 45 lakh × 6 = ~2.7 crore units/year.",
+    "Monthly: ~22-23 lakh units.",
+    "- Branded (Philips, Wipro, Bajaj, Crompton, Havells, Surya): ~40% = ~9 lakh.",
+    "- Unbranded / regional: ~60% = ~13-14 lakh (huge unorganized market in UP).",
+    "Value: avg ₹40 per unit blended = ~₹9 Cr/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Value: avg ₹40 per unit blended = ~₹9 Cr/month."
+  }
+}

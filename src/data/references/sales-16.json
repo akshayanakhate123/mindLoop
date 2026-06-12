@@ -1,0 +1,75 @@
+{
+  "questionId": "sales-16",
+  "domain": "sales",
+  "question": "Estimate the monthly fresh fruit sales in Crawford Market, Mumbai.",
+  "idealClarificationQuestions": [
+    "Wholesale fruit market (largest in Mumbai)? Yes.",
+    "Daily / monthly fresh fruit throughput? Monthly.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Mumbai fruit consumption × Crawford share of wholesale."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai population: ~22M; per-capita fruit consumption: ~35 kg/year (urban higher)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly Mumbai fruit consumption: ~64,000 tonnes."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Crawford Market + APMC Vashi (major Mumbai wholesale fruit markets combined): ~60% of wholesale = ~28,800 tonnes/month at Crawford+Vashi."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Value: avg ₹70/kg blended = ~₹60 Cr/month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai population",
+      "value": "~22M; per-capita fruit consumption: ~35 kg/year (urban higher).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual Mumbai fruit consumption",
+      "value": "22M × 35 kg = ~770 million kg = 7.7 lakh tonnes/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly Mumbai fruit consumption",
+      "value": "~64,000 tonnes.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Crawford Market alone (a smaller share, mostly retail-feeding)",
+      "value": "~25-30% of that = ~8,000-9,000 tonnes/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value",
+      "value": "avg ₹70/kg blended = ~₹60 Cr/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual Mumbai fruit consumption: 22M × 35 kg = ~770 million kg = 7.7 lakh tonnes/year.",
+    "Crawford Market + APMC Vashi (major Mumbai wholesale fruit markets combined): ~60% of wholesale = ~28,800 tonnes/month at Crawford+Vashi.",
+    "Crawford Market alone (a smaller share, mostly retail-feeding): ~25-30% of that = ~8,000-9,000 tonnes/month.",
+    "Value: avg ₹70/kg blended = ~₹60 Cr/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Value: avg ₹70/kg blended = ~₹60 Cr/month."
+  }
+}

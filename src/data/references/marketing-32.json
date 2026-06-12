@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-32",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate from organic Instagram followers to website visitors for a D2C brand.",
+  "idealClarificationQuestions": [
+    "Brand has 5 lakh Instagram followers? Yes.",
+    "Conversion = clicked through link in bio / story link → website? Yes.",
+    "Monthly basis? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Followers → see content → engage → click out."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Followers: 5 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Engagement rate (like/comment/save): ~3-5% on average post = ~6K engagements per post."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Bio link clicks per month: ~3-5K (varies by activity)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Conversion of followers-to-monthly-website-visitors: 10K / 5L = ~2-3%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Followers",
+      "value": "5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engagement rate (like/comment/save)",
+      "value": "~3-5% on average post = ~6K engagements per post.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Story views per story",
+      "value": "~10-15% of followers = 60-75K views.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Link click rate from stories (when story has link)",
+      "value": "~2-3% of viewers = 1.5-2K clicks per story.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bio link clicks per month",
+      "value": "~3-5K (varies by activity).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly website traffic from organic Instagram",
+      "value": "~10-15K unique visitors.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Conversion of followers-to-monthly-website-visitors",
+      "value": "10K / 5L = ~2-3%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Followers: 5 lakh.",
+    "Of these, see at least one post per week (organic reach has dropped severely): ~25-35% = 1.5 lakh.",
+    "Engagement rate (like/comment/save): ~3-5% on average post = ~6K engagements per post.",
+    "Story views per story: ~10-15% of followers = 60-75K views.",
+    "Link click rate from stories (when story has link): ~2-3% of viewers = 1.5-2K clicks per story.",
+    "Conversion of followers-to-monthly-website-visitors: 10K / 5L = ~2-3%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Conversion of followers-to-monthly-website-visitors: 10K / 5L = ~2-3%."
+  }
+}

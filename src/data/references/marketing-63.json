@@ -1,0 +1,84 @@
+{
+  "questionId": "marketing-63",
+  "domain": "marketing",
+  "question": "Estimate the customer segment for luxury wristwatches (₹50,000+) in India.",
+  "idealClarificationQuestions": [
+    "Annual buyers of wristwatches above ₹50,000 (Rolex, Omega, Tag Heuer, Cartier, Tissot premium, etc.)? Yes.",
+    "Both Indian retail + grey market + online? Yes (organized primarily).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "HNI + UHNI buyer count × purchase frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian HNI individuals (₹5 Cr+ net worth): ~3.5 lakh (per Knight Frank Wealth Report)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Add upper-middle affluent likely to buy occasional luxury watch (₹50K-1L): ~5 lakh more."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average buyer purchases 1.2 watches/year → ~5-5.5 lakh units sold."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~4-5 lakh annual buyers; ~₹6,000-7,000 Cr market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian HNI individuals (₹5 Cr+ net worth)",
+      "value": "~3.5 lakh (per Knight Frank Wealth Report).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ultra-HNI (₹20 Cr+)",
+      "value": "~30,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total addressable",
+      "value": "~8-9 lakh individuals.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active luxury watch buyers (purchased any in past year)",
+      "value": "~50% = ~4-4.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Market value",
+      "value": "5.5 lakh × ₹1.2L avg = ~₹6,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~4-5 lakh annual buyers; ~₹6,000-7,000 Cr market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian HNI individuals (₹5 Cr+ net worth): ~3.5 lakh (per Knight Frank Wealth Report).",
+    "Ultra-HNI (₹20 Cr+): ~30,000.",
+    "Add upper-middle affluent likely to buy occasional luxury watch (₹50K-1L): ~5 lakh more.",
+    "Total addressable: ~8-9 lakh individuals.",
+    "Active luxury watch buyers (purchased any in past year): ~50% = ~4-4.5 lakh.",
+    "Average buyer purchases 1.2 watches/year → ~5-5.5 lakh units sold.",
+    "Market value: 5.5 lakh × ₹1.2L avg = ~₹6,500 Cr.",
+    "Round: ~4-5 lakh annual buyers; ~₹6,000-7,000 Cr market."
+  ],
+  "finalAnswerRange": {
+    "low": "4",
+    "high": "5",
+    "ideal": "~4-5 lakh annual buyers; ~₹6,000-7,000 Cr market."
+  }
+}

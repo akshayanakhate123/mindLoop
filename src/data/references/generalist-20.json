@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-20",
+  "domain": "generalist",
+  "question": "How many MBA graduates does India produce annually?",
+  "idealClarificationQuestions": [
+    "MBA + PGDM combined? Yes.",
+    "All approved institutions (AICTE-approved + IIMs + autonomous)? Yes.",
+    "Annual fresh graduates? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across institution categories × intake × completion rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "AICTE-approved MBA/PGDM seats: ~3.7 lakh annually (recent data)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Plus autonomous/private without AICTE (XLRI, ISB, S.P. Jain global): ~3,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total intake: ~5.2 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~4-4.5 lakh MBA graduates per year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "AICTE-approved MBA/PGDM seats",
+      "value": "~3.7 lakh annually (recent data).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus IIMs (20+ IIMs)",
+      "value": "~6,000 seats.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus autonomous/private without AICTE (XLRI, ISB, S.P. Jain global)",
+      "value": "~3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus state university MBA (general MBA at colleges)",
+      "value": "~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total intake",
+      "value": "~5.2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Completion rate",
+      "value": "~85% (some dropouts) = ~4.4 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~4-4.5 lakh MBA graduates per year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "AICTE-approved MBA/PGDM seats: ~3.7 lakh annually (recent data).",
+    "Plus IIMs (20+ IIMs): ~6,000 seats.",
+    "Plus state university MBA (general MBA at colleges): ~1.5 lakh.",
+    "Total intake: ~5.2 lakh.",
+    "Completion rate: ~85% (some dropouts) = ~4.4 lakh.",
+    "Round: ~4-4.5 lakh MBA graduates per year."
+  ],
+  "finalAnswerRange": {
+    "low": "4",
+    "high": "4.5",
+    "ideal": "~4-4.5 lakh MBA graduates per year."
+  }
+}

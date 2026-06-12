@@ -1,0 +1,75 @@
+{
+  "questionId": "sales-44",
+  "domain": "sales",
+  "question": "Estimate the number of Swiggy + Zomato delivery partners pan-India.",
+  "idealClarificationQuestions": [
+    "Active delivery partners across both platforms (Swiggy + Zomato food + Instamart + Blinkit)? Yes.",
+    "Active monthly (delivered at least 5 orders in past month)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily orders / partner productivity."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Combined daily orders Swiggy + Zomato + Blinkit + Instamart: ~10 million orders/day."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Daily active partners needed: 100L / 13 = ~7-8 lakh active per day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~10-12 lakh unique delivery partners active monthly across Swiggy + Zomato ecosystem."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: significant overlap — many drivers work both platforms."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Combined daily orders Swiggy + Zomato + Blinkit + Instamart",
+      "value": "~10 million orders/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average orders per delivery partner per day",
+      "value": "~12-15 (peak hours).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily active partners needed",
+      "value": "100L / 13 = ~7-8 lakh active per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Considering shift work + leave + multi-platform overlap",
+      "value": "total unique active partners (any platform any week): ~10-12 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~10-12 lakh unique delivery partners active monthly across Swiggy + Zomato ecosystem.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Combined daily orders Swiggy + Zomato + Blinkit + Instamart: ~10 million orders/day.",
+    "Daily active partners needed: 100L / 13 = ~7-8 lakh active per day.",
+    "Considering shift work + leave + multi-platform overlap: total unique active partners (any platform any week): ~10-12 lakh.",
+    "Round: ~10-12 lakh unique delivery partners active monthly across Swiggy + Zomato ecosystem."
+  ],
+  "finalAnswerRange": {
+    "low": "10",
+    "high": "12",
+    "ideal": "~10-12 lakh unique delivery partners active monthly across Swiggy + Zomato ecosystem."
+  }
+}

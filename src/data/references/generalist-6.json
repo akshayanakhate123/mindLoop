@@ -1,0 +1,69 @@
+{
+  "questionId": "generalist-6",
+  "domain": "generalist",
+  "question": "Estimate the number of two-wheelers on Indian roads.",
+  "idealClarificationQuestions": [
+    "Cumulative on-road stock (registered + active)? Active operational only.",
+    "Includes scooters + motorcycles + mopeds? Yes — all 2W.",
+    "Year 2026? Yes.",
+    "Both petrol + EV? Both."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "From cumulative sales × average vehicle life × scrappage."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual 2W sales in India: ~17-20M units (recovered post-COVID)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Cumulative stock = sum of last 12 years sales × survival rate."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus pre-12-year vintage still running (~10M)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of which EV: ~3-4M cumulative."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual 2W sales in India",
+      "value": "~17-20M units (recovered post-COVID).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average 2W life",
+      "value": "~12 years (with scrappage policies, falling).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operational 2W stock",
+      "value": "~150-160M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which EV",
+      "value": "~3-4M cumulative.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Cumulative stock = sum of last 12 years sales × survival rate.",
+    "Approx average ~16M sales/year × 12 years × 0.75 survival = ~145M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of which EV: ~3-4M cumulative."
+  }
+}

@@ -1,0 +1,41 @@
+:root {
+  --background: #F7F3EC;
+  --primary: #F5A623;
+  --foreground: #1A1F36;
+  --secondary: #7298C7;
+  --navy: #1E2D4E;
+  --sidebar-bg: #FDFAF5;
+  --card-bg: #FFFFFF;
+  --text-muted: #8A8FA0;
+  --border: #EDE9DF;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

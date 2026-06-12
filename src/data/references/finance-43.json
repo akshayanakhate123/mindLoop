@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-43",
+  "domain": "finance",
+  "question": "Estimate the profitability of an Indian metro line (e.g., Delhi Metro Phase 4).",
+  "idealClarificationQuestions": [
+    "Operating profitability for a mature metro line? Yes.",
+    "Excludes capital cost recovery / debt servicing? Provide both perspectives.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Fare revenue × ridership vs operating cost."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "DMRC (Delhi Metro) FY26:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Plus non-fare revenue (real estate, advertising, station retail): ~₹2,500 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Including capital costs (huge debt to JICA/govt):"
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Metro is operationally profitable but capital-burdened."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Annual ridership",
+      "value": "~250 crore trips.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Average fare",
+      "value": "~₹35.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Fare revenue",
+      "value": "~₹8,750 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Plus non-fare revenue (real estate, advertising, station retail)",
+      "value": "~₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Total revenue",
+      "value": "~₹11,250 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- O&M (energy, staff, maintenance)",
+      "value": "~₹6,500-7,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Operating profit (before depreciation)",
+      "value": "~₹4,000-4,500 Cr (~35-40% EBITDA).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Depreciation + interest",
+      "value": "~₹4,500 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Annual ridership: ~250 crore trips.",
+    "- Average fare: ~₹35.",
+    "- Fare revenue: ~₹8,750 Cr.",
+    "- Plus non-fare revenue (real estate, advertising, station retail): ~₹2,500 Cr.",
+    "- Total revenue: ~₹11,250 Cr.",
+    "- O&M (energy, staff, maintenance): ~₹6,500-7,000 Cr.",
+    "- Operating profit (before depreciation): ~₹4,000-4,500 Cr (~35-40% EBITDA).",
+    "- Depreciation + interest: ~₹4,500 Cr.",
+    "- PAT: ~₹100-500 Cr (small)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- PAT: ~₹100-500 Cr (small)."
+  }
+}

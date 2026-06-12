@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-9",
+  "domain": "generalist",
+  "question": "How many books are sold in India annually (physical books + e-books)?",
+  "idealClarificationQuestions": [
+    "All categories: academic, fiction, non-fiction, religious? All.",
+    "Both English + Indian languages? All languages.",
+    "Pirated books not counted (only formal sales)? Only formal.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: school textbooks + trade books + religious + competitive exam books."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "School textbooks (NCERT + state boards + private): ~30 crore students × 6-8 books/year = ~210 crore = 2.1 billion units."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Trade fiction + non-fiction: ~80M units/year (Penguin, Westland, Rupa, regional)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Competitive exam prep (Arihant, Disha): ~100M units."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total formal sales: ~1.0-1.1 billion books per year (~50% are textbooks)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "School textbooks (NCERT + state boards + private)",
+      "value": "~30 crore students × 6-8 books/year = ~210 crore = 2.1 billion units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, NCERT/govt distributed (often free or subsidized)",
+      "value": "~70% = ~1.5B; commercial sales: ~600M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Trade fiction + non-fiction",
+      "value": "~80M units/year (Penguin, Westland, Rupa, regional).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Religious + spiritual",
+      "value": "~100M units (Gita Press alone prints 100M+ over years; annual ~30-50M).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Competitive exam prep (Arihant, Disha)",
+      "value": "~100M units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "E-books + Kindle India",
+      "value": "~50M unit-equivalents.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total formal sales",
+      "value": "~1.0-1.1 billion books per year (~50% are textbooks).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "School textbooks (NCERT + state boards + private): ~30 crore students × 6-8 books/year = ~210 crore = 2.1 billion units.",
+    "Of these, NCERT/govt distributed (often free or subsidized): ~70% = ~1.5B; commercial sales: ~600M.",
+    "Trade fiction + non-fiction: ~80M units/year (Penguin, Westland, Rupa, regional).",
+    "Religious + spiritual: ~100M units (Gita Press alone prints 100M+ over years; annual ~30-50M).",
+    "E-books + Kindle India: ~50M unit-equivalents.",
+    "Total formal sales: ~1.0-1.1 billion books per year (~50% are textbooks)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total formal sales: ~1.0-1.1 billion books per year (~50% are textbooks)."
+  }
+}

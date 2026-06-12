@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-11",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of an EV cab fleet operator (BluSmart).",
+  "idealClarificationQuestions": [
+    "BluSmart India (Delhi NCR + Bengaluru + Mumbai) revenue? Yes.",
+    "Net revenue retained (after driver-partner pass-through) or GMV? Provide both.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily rides × avg fare × days."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "BluSmart daily rides (FY26): ~150K across 3 cities."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average fare per ride (premium cab pricing, 5-12 km typical): ~₹350."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "BluSmart's model: owns fleet + employs drivers (vs Ola/Uber commission model), so retains ~85% of gross fares as revenue (passes ~15% to driver salaries + commission structures + EV charging)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1,500-1,700 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "BluSmart daily rides (FY26)",
+      "value": "~150K across 3 cities.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual rides",
+      "value": "150K × 365 = ~5.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average fare per ride (premium cab pricing, 5-12 km typical)",
+      "value": "~₹350.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual GMV",
+      "value": "5.5 cr × ₹350 = ~₹1,900 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "BluSmart's model",
+      "value": "owns fleet + employs drivers (vs Ola/Uber commission model), so retains ~85% of gross fares as revenue (passes ~15% to driver salaries + commission structures + EV charging).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net revenue",
+      "value": "~₹1,600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1,500-1,700 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual rides: 150K × 365 = ~5.5 crore.",
+    "Average fare per ride (premium cab pricing, 5-12 km typical): ~₹350.",
+    "Annual GMV: 5.5 cr × ₹350 = ~₹1,900 Cr.",
+    "BluSmart's model: owns fleet + employs drivers (vs Ola/Uber commission model), so retains ~85% of gross fares as revenue (passes ~15% to driver salaries + commission structures + EV charging).",
+    "Net revenue: ~₹1,600 Cr.",
+    "Round: ~₹1,500-1,700 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "1,500",
+    "high": "1,700",
+    "ideal": "~₹1,500-1,700 Cr."
+  }
+}

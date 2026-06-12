@@ -1,0 +1,93 @@
+{
+  "questionId": "marketing-100",
+  "domain": "marketing",
+  "question": "Estimate the revenue impact of a Bollywood A-lister releasing a movie in opening weekend (box office only).",
+  "idealClarificationQuestions": [
+    "Opening weekend domestic box office for an A-lister release (SRK / Salman / Aamir / Ranbir / Hrithik)? Yes.",
+    "Net box office (after entertainment tax / GST)? Yes.",
+    "Hindi belt + South dubbed + International revenue? Domestic Hindi belt only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Screens × opening weekend occupancy × ticket price."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "A-lister release screens: ~5,000-5,500 in Hindi belt."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Seats per show: ~150 (mix of multiplex and single screen)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Gross box office opening weekend: 90L × ₹230 = ~₹210 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Examples: Jawan opening weekend ~₹250 Cr gross; Pathaan ~₹250 Cr; Animal ~₹200 Cr; Stree 2 ~₹130 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "A-lister release screens",
+      "value": "~5,000-5,500 in Hindi belt.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Shows per screen on opening weekend (Fri+Sat+Sun)",
+      "value": "~3 days × 5 shows × 5,000 = 75,000 shows.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average occupancy (A-lister opening weekend)",
+      "value": "~75-85%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Seats per show",
+      "value": "~150 (mix of multiplex and single screen).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total seats sold",
+      "value": "75K × 150 × 0.80 = ~90 lakh tickets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ticket price (blended Hindi belt)",
+      "value": "~₹230.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gross box office opening weekend",
+      "value": "90L × ₹230 = ~₹210 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net (post-GST 18%)",
+      "value": "~₹175 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Shows per screen on opening weekend (Fri+Sat+Sun): ~3 days × 5 shows × 5,000 = 75,000 shows.",
+    "Total seats sold: 75K × 150 × 0.80 = ~90 lakh tickets.",
+    "Average ticket price (blended Hindi belt): ~₹230.",
+    "Gross box office opening weekend: 90L × ₹230 = ~₹210 Cr.",
+    "Net (post-GST 18%): ~₹175 Cr.",
+    "Examples: Jawan opening weekend ~₹250 Cr gross; Pathaan ~₹250 Cr; Animal ~₹200 Cr; Stree 2 ~₹130 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Examples: Jawan opening weekend ~₹250 Cr gross; Pathaan ~₹250 Cr; Animal ~₹200 Cr; Stree 2 ~₹130 Cr."
+  }
+}

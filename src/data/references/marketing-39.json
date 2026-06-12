@@ -1,0 +1,89 @@
+{
+  "questionId": "marketing-39",
+  "domain": "marketing",
+  "question": "Estimate the click-to-call conversion rate for a real estate ad on Google in India.",
+  "idealClarificationQuestions": [
+    "Google Search ads with call extension? Yes.",
+    "Real estate (residential apartment, mid-tier developer)? Yes.",
+    "Click → call-back form OR direct call? Both.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Click → engagement step → call."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Ad click → landing page: 100%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of form submissions, contacted by sales (callback successful): ~85%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net click-to-booking: 0.07 × 0.85 × 0.25 × 0.06 = ~0.09%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "CPC for real estate (high competition keywords): ₹100-300 → cost per lead ₹1,500-4,000."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Ad click → landing page",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Landing page → form submission OR direct call",
+      "value": "~6-8% (real estate is relatively high since intent is clear).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of form submissions, contacted by sales (callback successful)",
+      "value": "~85%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of called-back leads, scheduled site visit",
+      "value": "~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of site visits, booking",
+      "value": "~5-7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net click-to-booking",
+      "value": "0.07 × 0.85 × 0.25 × 0.06 = ~0.09%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Click-to-form-submission (lead)",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "CPC for real estate (high competition keywords)",
+      "value": "₹100-300 → cost per lead ₹1,500-4,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Net click-to-booking: 0.07 × 0.85 × 0.25 × 0.06 = ~0.09%.",
+    "CPC for real estate (high competition keywords): ₹100-300 → cost per lead ₹1,500-4,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "CPC for real estate (high competition keywords): ₹100-300 → cost per lead ₹1,500-4,000."
+  }
+}

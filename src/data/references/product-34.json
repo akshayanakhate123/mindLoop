@@ -1,0 +1,75 @@
+{
+  "questionId": "product-34",
+  "domain": "product",
+  "question": "Estimate the daily Google searches originating from India.",
+  "idealClarificationQuestions": [
+    "All search query types: web, images, mobile, voice? Yes — all.",
+    "From India (geo-located)? Yes.",
+    "Pan-India, average day? Yes.",
+    "Year: 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: Indian internet users × searches per user per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian internet DAU (any internet activity): ~750M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, Google search users (search query in past day): ~50% (others may use only WhatsApp/social) = ~375M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily searches from India: 375M × 8 = ~3 billion searches."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: 2.5-3.5 billion daily Indian Google searches."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian internet DAU (any internet activity)",
+      "value": "~750M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, Google search users (search query in past day)",
+      "value": "~50% (others may use only WhatsApp/social) = ~375M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average searches per active searcher per day",
+      "value": "~7-9.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily searches from India",
+      "value": "375M × 8 = ~3 billion searches.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "2.5-3.5 billion daily Indian Google searches.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, Google search users (search query in past day): ~50% (others may use only WhatsApp/social) = ~375M.",
+    "Daily searches from India: 375M × 8 = ~3 billion searches.",
+    "Round: 2.5-3.5 billion daily Indian Google searches."
+  ],
+  "finalAnswerRange": {
+    "low": "2.5",
+    "high": "3.5",
+    "ideal": "2.5-3.5 billion daily Indian Google searches."
+  }
+}

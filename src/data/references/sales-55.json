@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-55",
+  "domain": "sales",
+  "question": "Estimate the personal loan funnel for a digital lender (KreditBee/Slice tier) in India.",
+  "idealClarificationQuestions": [
+    "App-based personal lending? Yes.",
+    "Funnel from app install to disbursed loan? Yes.",
+    "Year 2026 — post RBI digital lending tightening? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard digital lending funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "App installs: 1,00,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Complete KYC (PAN + Aadhaar + bank): ~50% = 11,250."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Customer accepts offer + disburses: ~80% = ~2,900."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total disbursement value from 1L installs: ~₹10 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "App installs",
+      "value": "1,00,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open app within 7 days",
+      "value": "~75%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Start loan application",
+      "value": "~30% of openers = 22,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Complete KYC (PAN + Aadhaar + bank)",
+      "value": "~50% = 11,250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Eligibility check + credit bureau pull",
+      "value": "~95% complete = 10,690.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Approved by credit underwriting",
+      "value": "~30-35% of evaluated (post-2024 tightening) = ~3,600.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Customer accepts offer + disburses",
+      "value": "~80% = ~2,900.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net install-to-disbursed",
+      "value": "~2.9%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Start loan application: ~30% of openers = 22,500.",
+    "Complete KYC (PAN + Aadhaar + bank): ~50% = 11,250.",
+    "Eligibility check + credit bureau pull: ~95% complete = 10,690.",
+    "Approved by credit underwriting: ~30-35% of evaluated (post-2024 tightening) = ~3,600.",
+    "Customer accepts offer + disburses: ~80% = ~2,900.",
+    "Average ticket size: ₹35,000.",
+    "Total disbursement value from 1L installs: ~₹10 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total disbursement value from 1L installs: ~₹10 Cr."
+  }
+}

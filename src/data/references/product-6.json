@@ -1,0 +1,82 @@
+{
+  "questionId": "product-6",
+  "domain": "product",
+  "question": "Estimate the annual revenue of OTT/video streaming platforms in India.",
+  "idealClarificationQuestions": [
+    "Subscription revenue only or include ad-supported (AVOD) revenue? Both.",
+    "Include YouTube as OTT? Exclude YouTube to focus on Netflix/Prime/Hotstar/JioCinema/SonyLiv/Zee5.",
+    "Linear TV broadcasters' digital arm only or all platforms? All major OTTs.",
+    "Include sports rights and pay-per-view events? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Two-arm calculation: subscription revenue (paying users × ARPU) + ad revenue (active users × ad load × CPM equivalent)."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total OTT users in India: ~550M (any usage in past month, includes free-tier)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average ARPU (blended across cheap mobile-only ₹49 packs to premium ₹1,500/yr): ~₹600/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "AVOD users: 430M free-tier users; average annual ad revenue per user ~₹150 (high-engagement events like cricket inflate this)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total annual OTT revenue: ~₹13,500-14,000 Cr (~$1.7B)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total OTT users in India",
+      "value": "~550M (any usage in past month, includes free-tier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Paying subscribers",
+      "value": "~120M (households, not users — single subscription often shared by 4 people).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Subscription revenue",
+      "value": "120M × ₹600 = ₹7,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AVOD users",
+      "value": "430M free-tier users; average annual ad revenue per user ~₹150 (high-engagement events like cricket inflate this).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ad revenue",
+      "value": "430M × ₹150 = ₹6,450 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual OTT revenue",
+      "value": "~₹13,500-14,000 Cr (~$1.7B).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average ARPU (blended across cheap mobile-only ₹49 packs to premium ₹1,500/yr): ~₹600/year.",
+    "Subscription revenue: 120M × ₹600 = ₹7,200 Cr.",
+    "AVOD users: 430M free-tier users; average annual ad revenue per user ~₹150 (high-engagement events like cricket inflate this).",
+    "Ad revenue: 430M × ₹150 = ₹6,450 Cr.",
+    "Total annual OTT revenue: ~₹13,500-14,000 Cr (~$1.7B)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total annual OTT revenue: ~₹13,500-14,000 Cr (~$1.7B)."
+  }
+}

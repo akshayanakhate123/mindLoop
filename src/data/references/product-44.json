@@ -1,0 +1,79 @@
+{
+  "questionId": "product-44",
+  "domain": "product",
+  "question": "Estimate the resumes uploaded per day on Naukri.com.",
+  "idealClarificationQuestions": [
+    "New/updated resume uploads? Yes — fresh uploads or significant updates.",
+    "From India only? Yes.",
+    "Average weekday? Yes (job activity higher on weekdays).",
+    "2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: India's annual job-changers + freshers using Naukri."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total Indian formal-sector job changers per year: ~25M (5M IT, 8M services, 12M retail/FMCG/BFSI/manufacturing)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Add fresh graduates entering market each year: ~10M graduates, of which ~50% use Naukri = 5M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily (~250 working days for active job search): ~70K/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: 60-80K resume uploads per day on Naukri."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total Indian formal-sector job changers per year",
+      "value": "~25M (5M IT, 8M services, 12M retail/FMCG/BFSI/manufacturing).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, use Naukri (vs LinkedIn, Foundit, direct referrals)",
+      "value": "~50% = 12.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Add fresh graduates entering market each year",
+      "value": "~10M graduates, of which ~50% use Naukri = 5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual resume uploads",
+      "value": "~17.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily (~250 working days for active job search)",
+      "value": "~70K/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "60-80K resume uploads per day on Naukri.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, use Naukri (vs LinkedIn, Foundit, direct referrals): ~50% = 12.5M.",
+    "Add fresh graduates entering market each year: ~10M graduates, of which ~50% use Naukri = 5M."
+  ],
+  "finalAnswerRange": {
+    "low": "60",
+    "high": "80",
+    "ideal": "60-80K resume uploads per day on Naukri."
+  }
+}

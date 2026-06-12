@@ -1,0 +1,77 @@
+{
+  "questionId": "marketing-14",
+  "domain": "marketing",
+  "question": "Estimate the reach of an Amazon India sponsored product ad campaign for a new face cream launch.",
+  "idealClarificationQuestions": [
+    "Sponsored Products + Sponsored Brands ads on Amazon India? Yes.",
+    "Budget: ₹30 lakh over 30 days? Yes.",
+    "Category: face cream (highly contested)? Yes.",
+    "Reach = unique shoppers who saw the ad? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Budget / CPC × CTR-implied impressions."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Average CPC for 'face cream' category on Amazon India: ~₹15-25 (competitive — Olay, Pond's, Lakme bid)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Sponsored product CTR on Amazon (much higher than display): ~0.4-0.6%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average frequency on Amazon ads (shopper sees same ad in multiple search/browse sessions): ~2-3."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Unique reach: ~1-1.5 crore Indian Amazon shoppers."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average CPC for 'face cream' category on Amazon India",
+      "value": "~₹15-25 (competitive — Olay, Pond's, Lakme bid).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total clicks",
+      "value": "₹30L / ₹20 = 1.5 lakh clicks.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sponsored product CTR on Amazon (much higher than display)",
+      "value": "~0.4-0.6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total impressions implied",
+      "value": "1.5L / 0.005 = ~3 crore impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach",
+      "value": "~1-1.5 crore Indian Amazon shoppers.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average CPC for 'face cream' category on Amazon India: ~₹15-25 (competitive — Olay, Pond's, Lakme bid).",
+    "Take CPC = ₹20.",
+    "Total clicks: ₹30L / ₹20 = 1.5 lakh clicks.",
+    "Total impressions implied: 1.5L / 0.005 = ~3 crore impressions.",
+    "Unique reach: ~1-1.5 crore Indian Amazon shoppers."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Unique reach: ~1-1.5 crore Indian Amazon shoppers."
+  }
+}

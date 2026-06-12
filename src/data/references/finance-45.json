@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-45",
+  "domain": "finance",
+  "question": "Estimate the profitability of Indian Premier League (per team).",
+  "idealClarificationQuestions": [
+    "Average IPL team profitability per season? Yes.",
+    "EBITDA per team? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-team revenue minus costs."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per-team revenue:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Merchandise + licensing: ~₹15-25 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Franchise fee to BCCI: ~₹10 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹400-500 Cr EBITDA per IPL team per season."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Central broadcasting revenue share (50% of BCCI media pool)",
+      "value": "~₹500-550 Cr per team.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Title + sponsor revenue (centrally shared)",
+      "value": "~₹50 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Local sponsorships (jersey, merchandise, partners)",
+      "value": "~₹80-150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Gate receipts (home games)",
+      "value": "~₹40-60 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Merchandise + licensing",
+      "value": "~₹15-25 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Total per team revenue",
+      "value": "~₹700-800 Cr per season.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Player salaries (capped at ₹100 Cr by BCCI)",
+      "value": "~₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Support staff (coaches, doctors, analysts)",
+      "value": "~₹30 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Central broadcasting revenue share (50% of BCCI media pool): ~₹500-550 Cr per team.",
+    "- Title + sponsor revenue (centrally shared): ~₹50 Cr.",
+    "- Local sponsorships (jersey, merchandise, partners): ~₹80-150 Cr.",
+    "- Gate receipts (home games): ~₹40-60 Cr.",
+    "- Merchandise + licensing: ~₹15-25 Cr.",
+    "- Total per team revenue: ~₹700-800 Cr per season.",
+    "- Player salaries (capped at ₹100 Cr by BCCI): ~₹100 Cr.",
+    "- Support staff (coaches, doctors, analysts): ~₹30 Cr.",
+    "- Travel + accommodation + training: ~₹40 Cr.",
+    "- Franchise fee to BCCI: ~₹10 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "400",
+    "high": "500",
+    "ideal": "~₹400-500 Cr EBITDA per IPL team per season."
+  }
+}

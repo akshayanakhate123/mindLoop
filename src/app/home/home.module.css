@@ -1,0 +1,1691 @@
+/* ── Page wrapper ─────────────────────────────────────────────────────────── */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.6rem, 1.2vh, 1.25rem);
+  padding: clamp(1rem, 2.5vh, 2rem) clamp(1rem, 2.5vw, 2.5rem) clamp(0.75rem, 1.5vh, 1.5rem);
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ── Header ───────────────────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.welcomeTitle {
+  font-size: clamp(1.4rem, 2.2vw, 2.2rem);
+  font-weight: 800;
+  color: var(--foreground);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.welcomeSubtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1E2D4E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.avatarInitial {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* heroCard / heroBanner removed — replaced by HeroBanner component */
+
+/* ── Focus / Practice / Improve steps ────────────────────────────────────── */
+.stepsSection {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.stepWrapper {
+  display: contents;
+}
+
+.stepArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #D1D5DB;
+  letter-spacing: -2px;
+  font-weight: 700;
+  padding: 0 0.25rem;
+  padding-bottom: 3rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.stepCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.stepNum {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.stepDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.stepIllustration {
+  width: 100%;
+  border-radius: 14px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.stepIcon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.stepBtn {
+  width: 100%;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--foreground);
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s;
+  margin-top: 0.25rem;
+}
+.stepBtn:hover {
+  border-color: var(--primary);
+  background: #FFFBF2;
+}
+
+/* ── Daily Learning Journey ───────────────────────────────────────────────── */
+.journeySection {
+  background: #F8F6F2;
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.journeyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.journeySparkle {
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+.journeyTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--foreground);
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.journeySteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.journeyStep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.journeyNum {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.journeyIcon {
+  width: 100%;
+  height: 72px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.journeyStepTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.journeyStepDesc {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ── Stats Row ────────────────────────────────────────────────────────────── */
+.statsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Wide streak card */
+.streakCard {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: clamp(0.875rem, 1.5vh, 1.5rem) clamp(1rem, 1.5vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border: 1px solid #F0EBE0;
+}
+
+.streakCardMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.streakLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Meta chips row inside current streak card */
+.streakMetaRow {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  padding-top: 0.15rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.streakMetaChip {
+  display: inline-flex;
+  align-items: center;
+  background: #F7F3EC;
+  border: 1px solid #EDE8DD;
+  color: var(--foreground);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+.streakMetaProgress {
+  background: #FEF3E2;
+  border-color: #F5A623;
+  color: #B87914;
+}
+
+.flameCircle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #FEF3E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.streakLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.2rem;
+}
+
+.streakValue {
+  font-size: clamp(1.4rem, 2vh, 2rem);
+  font-weight: 800;
+  color: var(--foreground);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.streakSub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Weekly bars */
+.weekDots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+  padding: 0.2rem 0 0.1rem;
+}
+
+.weekDotCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 1;
+}
+
+.weekDotCircle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.weekDotFilled {
+  background: #142850;
+}
+
+.weekDotEmpty {
+  background: transparent;
+  border: 2px solid #D1C9C0;
+}
+
+.weekDotLabel {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.2px;
+}
+
+.barLabel {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Best Streak / Total Sessions cards (direct grid children of statsRow) */
+.smallCard {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: clamp(0.75rem, 1.2vh, 1.25rem) clamp(1rem, 1.2vw, 1.5rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border: 1px solid #F0EBE0;
+  flex: 1;
+}
+
+.smallCardIcon {
+  font-size: 1.4rem;
+}
+
+.smallCardLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.2rem;
+}
+
+.smallCardValue {
+  font-size: clamp(1.25rem, 1.8vh, 1.75rem);
+  font-weight: 800;
+  color: var(--foreground);
+  line-height: 1;
+}
+
+.smallCardUnit {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ── Challenge + AI Row ───────────────────────────────────────────────────── */
+.challengeRow {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Dark navy challenge card */
+.challengeCard {
+  background: var(--navy);
+  border-radius: 20px;
+  padding: clamp(1rem, 1.8vh, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.streakScrollCardDone {
+  background: #1B3A2F;
+}
+
+.setupCard {
+  background: #2C1E4A;
+}
+
+.todayBadge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 0.18rem 0.55rem;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.challengeBody {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.challengeTarget {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.challengeTitle {
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 0.15rem;
+}
+
+.challengeSubtitle {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.4;
+}
+
+/* Meta chips */
+.metaChips {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.metaChip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 0.3rem 0.55rem;
+  flex: 1;
+  min-width: 80px;
+}
+
+.metaIcon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.metaValue {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+
+.metaLabel {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* CTA button */
+.startBtn {
+  width: 100%;
+  background: white;
+  color: var(--foreground);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+}
+
+.startBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.startBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Score chips (completed state) */
+.scoreChips {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scoreChip {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+}
+
+/* Forfeit button */
+.challengeActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.challengeActions .startBtn {
+  flex: 1;
+}
+
+.forfeitBtn {
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.9rem 1.25rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.forfeitBtn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.forfeitLink {
+  background: none;
+  border: none;
+  padding: 0.25rem 0;
+  font-size: 0.75rem;
+  color: #EF9999;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  margin-top: 0.35rem;
+}
+
+.forfeitLink:hover {
+  color: #EF4444;
+  text-decoration: underline;
+}
+
+/* Setup form inside card */
+.setupForm {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.setupField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.setupLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.setupSelect {
+  padding: 0.65rem 0.875rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+.setupSelect option {
+  background: #2C1E4A;
+  color: white;
+}
+
+/* ── AI Interviewer Panel ─────────────────────────────────────────────────── */
+.aiPanel {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: clamp(1rem, 1.5vh, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border: 1px solid #F0EBE0;
+}
+
+.aiHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.aiTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.35rem;
+}
+
+.aiSubtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.aiAvatar {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.aiQuestions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.aiQuestionChip {
+  background: #F7F3EC;
+  border-radius: 10px;
+  padding: 0.65rem 0.875rem;
+  font-size: 0.82rem;
+  color: #3D4663;
+  line-height: 1.4;
+  font-weight: 500;
+  border: 1px solid #EDE8DD;
+}
+
+.askBtn {
+  background: var(--foreground);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.askBtn:hover {
+  background: #2a3050;
+}
+
+.askBtnDisabled {
+  background: #C5C8D6 !important;
+  cursor: not-allowed;
+}
+
+.askBtnDisabled:hover {
+  background: #C5C8D6 !important;
+}
+
+.askSubtext {
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  text-align: center;
+}
+
+/* ── Quote Card ───────────────────────────────────────────────────────────── */
+.quoteCard {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: clamp(0.875rem, 1.2vh, 1.5rem) clamp(1rem, 1.5vw, 2rem);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border: 1px solid #F0EBE0;
+  position: relative;
+  overflow: hidden;
+}
+
+.quoteLeft {
+  flex-shrink: 0;
+}
+
+.owlCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #FEF3E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteContent {
+  flex: 1;
+}
+
+.quoteMark {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 0.5;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.quoteText {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+.quoteAuthor {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.trendArrow {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+/* ── Setup Wizard ─────────────────────────────────────────────────────────── */
+.wizardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wizardStepIndicator {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.stepDot {
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.2);
+  transition: background 0.2s;
+}
+
+.stepDotActive {
+  background: var(--primary);
+}
+
+.stepDotDone {
+  background: rgba(255,255,255,0.5);
+}
+
+.wizardStepLabel {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.wizardStep {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.wizardQuestion {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Category options (tall cards) */
+.wizardOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wizardOption {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  background: rgba(255,255,255,0.08);
+  border: 1.5px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+  position: relative;
+  width: 100%;
+  font-family: inherit;
+}
+
+.wizardOption:hover:not(.wizardOptionDisabled) {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.wizardOptionActive {
+  border-color: var(--primary) !important;
+  background: rgba(245,166,35,0.15) !important;
+}
+
+.wizardOptionDisabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.wizardOptionEmoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.wizardOptionLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.wizardOptionDesc {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.comingSoon {
+  margin-left: auto;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.5);
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Domain pills (grid) */
+.wizardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.wizardPill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.08);
+  border: 1.5px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  font-family: inherit;
+}
+
+.wizardPill:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.wizardPillActive {
+  background: rgba(245,166,35,0.2) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+/* Duration text input */
+.wizardDayInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.wizardDayInput {
+  width: 120px;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: inherit;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.15s;
+  -moz-appearance: textfield;
+}
+
+.wizardDayInput::-webkit-outer-spin-button,
+.wizardDayInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wizardDayInput:focus {
+  border-color: var(--primary);
+}
+
+.wizardDayInput::placeholder {
+  color: rgba(255,255,255,0.3);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.wizardDayUnit {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+}
+
+.wizardDayHint {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.35);
+  margin-top: -0.25rem;
+}
+
+/* Back button */
+.wizardBack {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  text-align: left;
+  transition: color 0.15s;
+}
+
+.wizardBack:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+/* ── Difficulty tags (for reference in other parts) ─────────────────────── */
+.diffEasy { color: #1e8e3e; }
+.diffMedium { color: #f9ab00; }
+.diffHard { color: #d93025; }
+
+/* ── Responsive: collapse stats row below 900px ─────────────────────────── */
+@media (max-width: 900px) {
+  .statsRow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .streakCard {
+    grid-column: 1 / -1;
+  }
+
+  .challengeRow {
+    grid-template-columns: 1fr;
+  }
+
+  .aiQuestions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Responsive: further compress on narrow screens ─────────────────────── */
+@media (max-width: 600px) {
+  .page {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .welcomeTitle {
+    font-size: 1.25rem;
+  }
+
+  .statsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .streakCard {
+    grid-column: auto;
+  }
+
+  .aiAvatar {
+    display: none;
+  }
+
+  .aiQuestions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Horizontal streak scroll row ───────────────────────────────────────── */
+.streakScrollRow {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex-shrink: 0;
+}
+
+.streakScrollRow::-webkit-scrollbar {
+  display: none;
+}
+
+.streakScrollCard {
+  min-width: 320px;
+  flex-shrink: 0;
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.streakCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.streakDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+/* Start new streak card */
+.startNewCard {
+  background: #2C1E4A;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  min-width: 220px;
+  max-width: 280px;
+}
+
+.startNewActive {
+  min-width: 340px;
+  max-width: none;
+}
+
+.startNewIdle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  padding: 0.5rem;
+}
+
+.startNewIdle:hover {
+  opacity: 0.8;
+}
+
+.startNewPlus {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.startNewTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.startNewSub {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.4;
+}
+
+/* Quick day pills */
+.quickDays {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dayPill {
+  flex: 1;
+  padding: 0.4rem 0;
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  text-align: center;
+}
+
+.dayPill:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.dayPillActive {
+  background: rgba(245, 166, 35, 0.2) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+/* ── Completed-today card elements ──────────────────────────────────────────── */
+.completedStats {
+  display: flex;
+  align-items: stretch;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.completedStatCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.35rem 0.3rem;
+}
+
+.completedStatDivider {
+  width: 1px;
+  background: rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+
+.completedStatIcon {
+  font-size: 1.2rem;
+}
+
+.completedStatLabel {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.completedStatValue {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+
+.aiInsightBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 0.5rem 0.65rem;
+}
+
+.aiInsightIcon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  color: #A78BFA;
+}
+
+.aiInsightTitle {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.2rem;
+}
+
+.aiInsightText {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.completedProgressRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.progressDots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.progressDot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+}
+
+.progressDotFilled {
+  background: #F5A623;
+}
+
+.nextChallengeText {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
+  white-space: nowrap;
+}
+
+/* ── Champion card (completed streak, visible for 2 days) ─────────────────── */
+.championCard {
+  background: linear-gradient(160deg, #1C1400 0%, #2B1E00 100%);
+  border: 1.5px solid rgba(245,158,11,0.45) !important;
+  box-shadow: 0 4px 24px rgba(245,158,11,0.1);
+}
+
+.championCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
+}
+
+.championTrophyRing {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(245,158,11,0.15);
+  border: 1.5px solid rgba(245,158,11,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+}
+
+.championTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #FCD34D;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.championSub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+}
+
+.championExpiry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.3);
+  margin: 0;
+}
+
+/* ── Expired card (broken streak, visible for 3 days) ────────────────────── */
+.expiredCard {
+  background: linear-gradient(160deg, #1A0505 0%, #220A0A 100%);
+  border: 1.5px solid rgba(239,68,68,0.35) !important;
+}
+
+.forfeitStreakBtn {
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid rgba(239,68,68,0.55);
+  color: #EF4444;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.forfeitStreakBtn:hover {
+  background: rgba(239,68,68,0.08);
+  border-color: #EF4444;
+}
+
+/* ── Forfeit modal ───────────────────────────────────────────────────────────── */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalDialog {
+  background: white;
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.modalTitle {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--foreground);
+  margin: 0 0 0.6rem;
+}
+
+.modalBody {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.modalCancel {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.modalCancel:hover { background: #EDE9DF; }
+
+.modalConfirm {
+  background: #EF4444;
+  border: none;
+  border-radius: 9px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+.modalConfirm:hover { opacity: 0.88; }
+
+/* ── Completed Streaks section ───────────────────────────────────────────────── */
+.completedSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.completedSectionTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.completedList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.completedCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.completedCardLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.completedCardTags {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.completedBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #F0FDF4;
+  color: #15803D;
+  border: 1px solid #BBF7D0;
+  border-radius: 20px;
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.completedCardLabel {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.completedCardMeta {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.completedInsightsLink {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #142850;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+.completedInsightsLink:hover {
+  background: #F0F4FF;
+  border-color: #4A6CF7;
+  color: #4A6CF7;
+}
+
+/* ── Celebration modal ─────────────────────────────────────────────────────── */
+.celebrationOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.5rem;
+}
+
+.celebrationCard {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 2.5rem 2rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.celebrationIcon {
+  width: 56px;
+  height: 56px;
+  background: #FEF3E2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F59E0B;
+  margin-bottom: 0.25rem;
+}
+
+.celebrationTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #142850;
+  margin: 0;
+}
+
+.celebrationSub {
+  font-size: 0.95rem;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.celebrationScores {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #F8F6F1;
+  border-radius: 12px;
+  padding: 0.9rem 1.5rem;
+  margin: 0.25rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.celebrationScoreItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.celebrationScoreLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94A3B8;
+}
+
+.celebrationScoreValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #142850;
+}
+
+.celebrationScoreDivider {
+  width: 1px;
+  height: 2.5rem;
+  background: #E7E5E4;
+  flex-shrink: 0;
+}
+
+.celebrationActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.celebrationPrimary {
+  background: #142850;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.celebrationPrimary:hover { background: #1e3d6e; }
+
+.celebrationClose {
+  background: none;
+  color: #94A3B8;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.35rem;
+  transition: color 0.15s;
+}
+.celebrationClose:hover { color: #64748B; }
+
+/* ── Nudge banners (inline, dismissible) ──────────────────────────────────── */
+@keyframes nudgeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.nudgeBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: white;
+  border: 1px solid #F0EBE0;
+  border-left: 4px solid var(--primary);
+  border-radius: 12px;
+  padding: 0.875rem 1.25rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.45;
+  animation: nudgeIn 0.3s ease-out;
+}
+
+.nudgeBannerClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.nudgeBannerClose:hover { color: var(--foreground); }

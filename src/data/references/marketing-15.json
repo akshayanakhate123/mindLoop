@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-15",
+  "domain": "marketing",
+  "question": "Estimate the unique reach of a sponsored event (e.g., Filmfare or IIFA) for a brand sponsor.",
+  "idealClarificationQuestions": [
+    "Filmfare/IIFA awards: TV broadcast + OTT + social media + on-ground? Yes — total brand exposure.",
+    "Title sponsor or category sponsor? Major category sponsor (logo on stage, banners, mentions).",
+    "Year 2026 award show? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Multi-platform reach: TV + OTT + social."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TV broadcast (Sony/Colors typically): ~6-8 crore TV reach over a 3-hour broadcast."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total live + recorded TV/OTT: ~8-10 crore unique."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "PR / news coverage carrying brand mentions: ~3-5 crore additional press exposure."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Branded recall (people who associate brand with event): ~15-20% = ~1.5-2 crore retained brand impressions."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TV broadcast (Sony/Colors typically)",
+      "value": "~6-8 crore TV reach over a 3-hour broadcast.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "OTT live + replays",
+      "value": "~2-3 crore additional unique viewers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total live + recorded TV/OTT",
+      "value": "~8-10 crore unique.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Social media (clips, behind-the-scenes, viral red carpet content)",
+      "value": "~25 crore views over 1 month, ~5 crore unique.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PR / news coverage carrying brand mentions",
+      "value": "~3-5 crore additional press exposure.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total unique multi-platform reach",
+      "value": "~10-12 crore unique people.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Branded recall (people who associate brand with event)",
+      "value": "~15-20% = ~1.5-2 crore retained brand impressions.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TV broadcast (Sony/Colors typically): ~6-8 crore TV reach over a 3-hour broadcast.",
+    "OTT live + replays: ~2-3 crore additional unique viewers.",
+    "Total live + recorded TV/OTT: ~8-10 crore unique.",
+    "Social media (clips, behind-the-scenes, viral red carpet content): ~25 crore views over 1 month, ~5 crore unique.",
+    "PR / news coverage carrying brand mentions: ~3-5 crore additional press exposure.",
+    "Total unique multi-platform reach: ~10-12 crore unique people.",
+    "Branded recall (people who associate brand with event): ~15-20% = ~1.5-2 crore retained brand impressions."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Branded recall (people who associate brand with event): ~15-20% = ~1.5-2 crore retained brand impressions."
+  }
+}

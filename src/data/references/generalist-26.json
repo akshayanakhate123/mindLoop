@@ -1,0 +1,75 @@
+{
+  "questionId": "generalist-26",
+  "domain": "generalist",
+  "question": "Estimate the annual toothpaste consumption in India (by tube count and tonnage).",
+  "idealClarificationQuestions": [
+    "Total tubes sold per year? Yes — across all brands and pack sizes.",
+    "Includes both salt-based (HUL Pepsodent), herbal (Patanjali, Dabur Red), and premium (Sensodyne)? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × penetration × usage frequency × tube life."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average per-person toothpaste consumption: ~150 g/year (urban higher ~200g; rural ~100g)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average tube size: ~100 g (range: 50g travel to 200g family pack; weighted ~100g)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Tubes sold annually: 185,000,000 kg / 0.1 kg = ~1.85 billion tubes."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per-person toothpaste consumption",
+      "value": "~150 g/year (urban higher ~200g; rural ~100g).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total toothpaste consumed",
+      "value": "1.23B × 150g = ~185,000 tonnes per year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average tube size",
+      "value": "~100 g (range: 50g travel to 200g family pack; weighted ~100g).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tubes sold annually",
+      "value": "185,000,000 kg / 0.1 kg = ~1.85 billion tubes.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Toothpaste-using population (excluding kids under 3 + non-users using tooth powder/manjan): ~85% = 1.23B.",
+    "Total toothpaste consumed: 1.23B × 150g = ~185,000 tonnes per year.",
+    "Tubes sold annually: 185,000,000 kg / 0.1 kg = ~1.85 billion tubes."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Tubes sold annually: 185,000,000 kg / 0.1 kg = ~1.85 billion tubes."
+  }
+}

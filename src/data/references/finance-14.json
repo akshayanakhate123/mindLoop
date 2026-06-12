@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-14",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a top Indian private bank (e.g., HDFC Bank, ICICI Bank).",
+  "idealClarificationQuestions": [
+    "HDFC Bank consolidated (post-merger with HDFC Ltd)? Yes.",
+    "Total income: interest + fee + other? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Loan book × NIM + non-interest income."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "HDFC Bank loan book FY26: ~₹28-30 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Net Interest Income (NII): ~₹1.1 lakh Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total income (interest + fee + other): ~₹3.0-3.1 lakh Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net profit: ~₹70,000-75,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "HDFC Bank loan book FY26",
+      "value": "~₹28-30 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Interest income (yield ~9%)",
+      "value": "~₹2.6 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Interest expense (cost of funds ~5%)",
+      "value": "~₹1.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net Interest Income (NII)",
+      "value": "~₹1.1 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus fee + commission income",
+      "value": "~₹35,000-40,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus treasury / forex / other",
+      "value": "~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total income (interest + fee + other)",
+      "value": "~₹3.0-3.1 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net revenue (NII + non-interest)",
+      "value": "~₹1.6 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "HDFC Bank loan book FY26: ~₹28-30 lakh Cr.",
+    "Interest income (yield ~9%): ~₹2.6 lakh Cr.",
+    "Interest expense (cost of funds ~5%): ~₹1.5 lakh Cr.",
+    "Net Interest Income (NII): ~₹1.1 lakh Cr.",
+    "Plus fee + commission income: ~₹35,000-40,000 Cr.",
+    "Plus treasury / forex / other: ~₹15,000 Cr.",
+    "Total income (interest + fee + other): ~₹3.0-3.1 lakh Cr.",
+    "Net revenue (NII + non-interest): ~₹1.6 lakh Cr.",
+    "Net profit: ~₹70,000-75,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net profit: ~₹70,000-75,000 Cr."
+  }
+}

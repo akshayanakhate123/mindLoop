@@ -1,0 +1,85 @@
+{
+  "questionId": "product-62",
+  "domain": "product",
+  "question": "Estimate the adoption of EV in last-mile delivery (Swiggy/Zomato/Amazon/Flipkart fleets) by 2028.",
+  "idealClarificationQuestions": [
+    "% of last-mile delivery vehicles being electric (2W + 3W vans) in 2028? Yes.",
+    "Fleet partners + own fleet of e-commerce companies? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total last-mile fleet today × EV share trajectory."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total last-mile delivery vehicles in India (active): ~5-6M (food + grocery + e-commerce + courier)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "EV share today (2026): 2W ~5-7% in delivery (Zypp, Yulu, captive fleets); 3W ~25% (e-rickshaws, Mahindra Treo)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Projected 2028 EV share: 2W in delivery ~25-30%; 3W ~50-60%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total fleet 2028 (assume 6.5M): EV share = ~28%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total last-mile delivery vehicles in India (active)",
+      "value": "~5-6M (food + grocery + e-commerce + courier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which 2W",
+      "value": "~85% = 5M; 3W (cargo): ~15% = 800K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EV share today (2026)",
+      "value": "2W ~5-7% in delivery (Zypp, Yulu, captive fleets); 3W ~25% (e-rickshaws, Mahindra Treo).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Drivers to 2028",
+      "value": "aggregator commitments (Swiggy, Zomato pledged 100% EV by 2030; Amazon 10K EV target by 2025 — slipping); government PLI; Total Cost of Ownership advantage.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 2028 EV share",
+      "value": "2W in delivery ~25-30%; 3W ~50-60%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted",
+      "value": "2W (5M × 27%) + 3W (800K × 55%) = 1.35M + 440K = ~1.8M EV last-mile vehicles in 2028.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total fleet 2028 (assume 6.5M)",
+      "value": "EV share = ~28%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total last-mile delivery vehicles in India (active): ~5-6M (food + grocery + e-commerce + courier).",
+    "Of which 2W: ~85% = 5M; 3W (cargo): ~15% = 800K.",
+    "Weighted: 2W (5M × 27%) + 3W (800K × 55%) = 1.35M + 440K = ~1.8M EV last-mile vehicles in 2028.",
+    "Total fleet 2028 (assume 6.5M): EV share = ~28%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total fleet 2028 (assume 6.5M): EV share = ~28%."
+  }
+}

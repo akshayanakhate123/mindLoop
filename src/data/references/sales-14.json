@@ -1,0 +1,81 @@
+{
+  "questionId": "sales-14",
+  "domain": "sales",
+  "question": "Estimate monthly milk demand in a small town like Solapur (~12 lakh population).",
+  "idealClarificationQuestions": [
+    "Liquid milk (packaged + loose + cooperative supplied) + dairy products? Liquid + value-added separately.",
+    "Solapur city only (not district)? City, ~12 lakh.",
+    "Monthly average, year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita milk consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per-capita milk consumption in Maharashtra: ~430 ml/day; Solapur (Tier 2 affluent): ~480 ml/day."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly: ~1.73 crore L = 1.73 lakh kL."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Co-operative + branded packaged (Amul, Mother Dairy, Gokul, Warana): ~50% = ~87,000 kL."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Local dairies + private operators (loose milk, doodh-walas): ~50% = ~87,000 kL."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Per-capita milk consumption in Maharashtra",
+      "value": "~430 ml/day; Solapur (Tier 2 affluent): ~480 ml/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily milk demand Solapur city",
+      "value": "12 lakh × 480 ml = 5.76 lakh L/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~1.73 crore L = 1.73 lakh kL.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus value-added (curd, paneer, ghee, butter in milk-equivalent)",
+      "value": "~30% extra = ~2.2 lakh kL LME monthly.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Co-operative + branded packaged (Amul, Mother Dairy, Gokul, Warana)",
+      "value": "~50% = ~87,000 kL.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Local dairies + private operators (loose milk, doodh-walas)",
+      "value": "~50% = ~87,000 kL.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily milk demand Solapur city: 12 lakh × 480 ml = 5.76 lakh L/day.",
+    "Monthly: ~1.73 crore L = 1.73 lakh kL.",
+    "Plus value-added (curd, paneer, ghee, butter in milk-equivalent): ~30% extra = ~2.2 lakh kL LME monthly.",
+    "- Co-operative + branded packaged (Amul, Mother Dairy, Gokul, Warana): ~50% = ~87,000 kL.",
+    "- Local dairies + private operators (loose milk, doodh-walas): ~50% = ~87,000 kL."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Local dairies + private operators (loose milk, doodh-walas): ~50% = ~87,000 kL."
+  }
+}

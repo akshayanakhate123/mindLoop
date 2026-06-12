@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-8",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Reliance Jio (Telecom only, ex-platforms).",
+  "idealClarificationQuestions": [
+    "Telecom-only revenue (mobile data, voice, broadband)? Yes — exclude JioMart, JioCinema as separate businesses.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "ARPU × subscriber base."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Jio mobile subscribers (FY26): ~48 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual mobile revenue: 48 cr × ₹220 × 12 = ~₹1,26,700 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus enterprise/M2M/IoT/business connectivity: ~₹8,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1.45 lakh Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Jio mobile subscribers (FY26)",
+      "value": "~48 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "ARPU (FY26 — post-tariff hikes)",
+      "value": "~₹220/month (was ₹180 pre-hike).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual mobile revenue",
+      "value": "48 cr × ₹220 × 12 = ~₹1,26,700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus JioFiber + AirFiber broadband (~1.5 crore home subs at ~₹700/mo)",
+      "value": "~₹12,600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus enterprise/M2M/IoT/business connectivity",
+      "value": "~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total telecom revenue",
+      "value": "~₹1,45,000-1,50,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1.45 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Jio mobile subscribers (FY26): ~48 crore.",
+    "ARPU (FY26 — post-tariff hikes): ~₹220/month (was ₹180 pre-hike).",
+    "Annual mobile revenue: 48 cr × ₹220 × 12 = ~₹1,26,700 Cr.",
+    "Plus JioFiber + AirFiber broadband (~1.5 crore home subs at ~₹700/mo): ~₹12,600 Cr.",
+    "Plus enterprise/M2M/IoT/business connectivity: ~₹8,000 Cr.",
+    "Total telecom revenue: ~₹1,45,000-1,50,000 Cr.",
+    "Round: ~₹1.45 lakh Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹1.45 lakh Cr."
+  }
+}

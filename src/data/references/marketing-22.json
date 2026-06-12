@@ -1,0 +1,78 @@
+{
+  "questionId": "marketing-22",
+  "domain": "marketing",
+  "question": "Estimate the unique reach of an in-app push notification campaign sent to 5 crore Swiggy users.",
+  "idealClarificationQuestions": [
+    "Single push notification to entire active user base? Yes.",
+    "Active users = MAU? Yes.",
+    "Reach = users who actually saw the notification on their phone? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sent → delivered → seen → opened."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Push notification delivery rate (notifications enabled, app installed, online): ~75% = 3.75 crore delivered."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Notification 'seen' rate (lock screen / pull-down / app icon badge): ~65% of delivered = ~2.4 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Reach (delivered + seen): ~2.4 crore unique users."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Active engagement (tapped): ~15-18 lakh."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Sent",
+      "value": "5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Notification 'seen' rate (lock screen / pull-down / app icon badge)",
+      "value": "~65% of delivered = ~2.4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open rate (tapped through to app)",
+      "value": "~3-5% of delivered = ~12-19 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reach (delivered + seen)",
+      "value": "~2.4 crore unique users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active engagement (tapped)",
+      "value": "~15-18 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Sent: 5 crore.",
+    "Push notification delivery rate (notifications enabled, app installed, online): ~75% = 3.75 crore delivered.",
+    "Notification 'seen' rate (lock screen / pull-down / app icon badge): ~65% of delivered = ~2.4 crore.",
+    "Open rate (tapped through to app): ~3-5% of delivered = ~12-19 lakh.",
+    "Reach (delivered + seen): ~2.4 crore unique users.",
+    "Active engagement (tapped): ~15-18 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Active engagement (tapped): ~15-18 lakh."
+  }
+}

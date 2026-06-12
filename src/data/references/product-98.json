@@ -1,0 +1,76 @@
+{
+  "questionId": "product-98",
+  "domain": "product",
+  "question": "Estimate the customer support staff and content moderators needed for an Indian social media app at 200M MAU scale.",
+  "idealClarificationQuestions": [
+    "Combined CS + content moderation + trust & safety staff? Yes.",
+    "At 200M MAU (e.g., a hypothetical Indian Twitter/Instagram-equivalent at this scale)? Yes.",
+    "Including outsourced (BPO + Indian language moderators)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industry ratios for moderators per MAU + CS staff."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Content moderation industry ratio: Facebook globally has ~15K moderators for ~3B users = 1 moderator per 200K users."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Moderators needed for 200M MAU: 200M / 100K = ~2,000 moderators."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus customer support: ~0.005% of MAU contact CS daily = 10K daily tickets; agents needed: ~250 active across shifts = ~750 total."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~4,000 moderators + CS + T&S staff."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Content moderation industry ratio",
+      "value": "Facebook globally has ~15K moderators for ~3B users = 1 moderator per 200K users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Moderators needed for 200M MAU",
+      "value": "200M / 100K = ~2,000 moderators.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus customer support",
+      "value": "~0.005% of MAU contact CS daily = 10K daily tickets; agents needed: ~250 active across shifts = ~750 total.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus T&S, legal compliance",
+      "value": "~200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~4,000 moderators + CS + T&S staff.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Content moderation industry ratio: Facebook globally has ~15K moderators for ~3B users = 1 moderator per 200K users.",
+    "Moderators needed for 200M MAU: 200M / 100K = ~2,000 moderators.",
+    "But including all 22 Indian languages and high-volume short-video review: scale up 1.5x = ~3,000 moderators.",
+    "Plus customer support: ~0.005% of MAU contact CS daily = 10K daily tickets; agents needed: ~250 active across shifts = ~750 total.",
+    "Total: ~4,000 moderators + CS + T&S staff."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~4,000 moderators + CS + T&S staff."
+  }
+}

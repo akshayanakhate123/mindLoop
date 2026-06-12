@@ -1,0 +1,81 @@
+{
+  "questionId": "product-16",
+  "domain": "product",
+  "question": "Estimate the market size of cloud kitchens / dark kitchens in Bengaluru.",
+  "idealClarificationQuestions": [
+    "Cloud kitchen revenue (food sold via aggregators) only? Yes — exclude dine-in.",
+    "Include captive brands (Rebel, Box8, Curefoods) and aggregator-private-label (Swiggy Bistro)? Both.",
+    "Annual or monthly? Annual.",
+    "Geography: Bengaluru metro? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Calculate Bengaluru online food delivery GMV → cloud kitchen share of orders → annualize."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Bengaluru monthly online food delivery orders (calculated in Q4): ~23M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly CK orders: ~5.5M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly CK GMV: 5.5M × ₹400 = ₹220 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual: ~₹2,600 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Bengaluru monthly online food delivery orders (calculated in Q4)",
+      "value": "~23M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cloud kitchen + ghost-kitchen brand share of delivery",
+      "value": "~22-25% (Bengaluru has highest CK density due to tech demographic + Rebel HQ).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly CK orders",
+      "value": "~5.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "AOV from cloud kitchens",
+      "value": "~₹400 (slightly lower than dine-in average; attractive offers).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly CK GMV",
+      "value": "5.5M × ₹400 = ₹220 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual",
+      "value": "~₹2,600 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Cloud kitchen + ghost-kitchen brand share of delivery: ~22-25% (Bengaluru has highest CK density due to tech demographic + Rebel HQ).",
+    "AOV from cloud kitchens: ~₹400 (slightly lower than dine-in average; attractive offers).",
+    "Monthly CK GMV: 5.5M × ₹400 = ₹220 Cr.",
+    "Annual: ~₹2,600 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual: ~₹2,600 Cr."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "questionId": "generalist-53",
+  "domain": "generalist",
+  "question": "How many streetlights exist in Mumbai?",
+  "idealClarificationQuestions": [
+    "All public streetlights (BMC + Highway authority + private township)? Yes.",
+    "Greater Mumbai? Yes (BMC + Thane + Navi Mumbai roads where applicable).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Road length × streetlight density."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai (BMC) road network: ~2,000 km of roads."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "BMC area streetlights: 2,000 km × 75 = ~1.5 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total Greater Mumbai: ~3 lakh streetlights."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~3-3.5 lakh streetlights in Greater Mumbai."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai (BMC) road network",
+      "value": "~2,000 km of roads.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average streetlight spacing",
+      "value": "25-30 m on urban arterial roads = ~70-80 lights/km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "BMC area streetlights",
+      "value": "2,000 km × 75 = ~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Greater Mumbai (Thane + Navi Mumbai)",
+      "value": "roads ~2,500 km × 60 = ~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Greater Mumbai",
+      "value": "~3 lakh streetlights.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus private township + societies + alley lighting (smaller intensity)",
+      "value": "~50K extra.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~3-3.5 lakh streetlights in Greater Mumbai.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average streetlight spacing: 25-30 m on urban arterial roads = ~70-80 lights/km.",
+    "BMC area streetlights: 2,000 km × 75 = ~1.5 lakh.",
+    "Plus Greater Mumbai (Thane + Navi Mumbai): roads ~2,500 km × 60 = ~1.5 lakh.",
+    "Total Greater Mumbai: ~3 lakh streetlights.",
+    "Plus private township + societies + alley lighting (smaller intensity): ~50K extra.",
+    "Round: ~3-3.5 lakh streetlights in Greater Mumbai."
+  ],
+  "finalAnswerRange": {
+    "low": "3",
+    "high": "3.5",
+    "ideal": "~3-3.5 lakh streetlights in Greater Mumbai."
+  }
+}

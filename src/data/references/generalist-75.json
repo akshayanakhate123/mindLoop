@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-75",
+  "domain": "generalist",
+  "question": "Estimate the number of EV charging points operational in India.",
+  "idealClarificationQuestions": [
+    "Public charging only or include private home chargers? Public only.",
+    "Both AC + DC fast chargers? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from MoP / OMC / charge point operator data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Public EV charging points operational (FY26): ~30,000-35,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Tata Power: ~6,500."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Others (Magenta, Charge+Zone, Zeon): ~7,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These test your ability to handle seasonal spikes and concentrated event-driven demand. The pattern: take a normal-day baseline, multiply by a behaviorally justified uplift (festive, sports event, religious gathering), and validate against operator disclosures or news coverage."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Public EV charging points operational (FY26)",
+      "value": "~30,000-35,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- DC fast chargers",
+      "value": "~6,000-8,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- AC slow public",
+      "value": "~22,000-27,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tata Power",
+      "value": "~6,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Statiq, ChargeZone, Glida (formerly Fortum)",
+      "value": "~4,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- HPCL/IOCL/BPCL",
+      "value": "~10,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Adani, Reliance",
+      "value": "~3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Others (Magenta, Charge+Zone, Zeon)",
+      "value": "~7,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Others (Magenta, Charge+Zone, Zeon): ~7,000.",
+    "Plus private (housing societies, captive office): ~2-3 lakh additional."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "4. Event-Based Estimation"
+  }
+}

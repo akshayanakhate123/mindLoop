@@ -1,0 +1,79 @@
+{
+  "questionId": "sales-71",
+  "domain": "sales",
+  "question": "Estimate the conversion from FMCG distributor sales rep visit to retailer order.",
+  "idealClarificationQuestions": [
+    "Sales rep (medical / FMCG / paint) visiting retailer to push current portfolio? Yes.",
+    "Visit = sales rep enters retailer's store to display + order book? Yes.",
+    "Conversion = retailer places order? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Retail beat conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Daily sales rep visits in a beat: 30-40 retailers."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Retailers who placed order today (vs reorder only when stock low): ~60% on a typical day = ~18-24 orders/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net visit-to-order conversion: ~60-70% (high — most retailers have habitual ordering pattern with frequent SKU rotation)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average order value per retailer visit: ~₹15,000-25,000."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Daily sales rep visits in a beat",
+      "value": "30-40 retailers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Retailers with existing relationship",
+      "value": "~80% (familiar with brand).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Retailers who placed order today (vs reorder only when stock low)",
+      "value": "~60% on a typical day = ~18-24 orders/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of new retailer-visit conversions",
+      "value": "~20-30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net visit-to-order conversion",
+      "value": "~60-70% (high — most retailers have habitual ordering pattern with frequent SKU rotation).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average order value per retailer visit",
+      "value": "~₹15,000-25,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Retailers who placed order today (vs reorder only when stock low): ~60% on a typical day = ~18-24 orders/day.",
+    "Average order value per retailer visit: ~₹15,000-25,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average order value per retailer visit: ~₹15,000-25,000."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "questionId": "generalist-73",
+  "domain": "generalist",
+  "question": "Estimate the number of buses (public transport + private) in India.",
+  "idealClarificationQuestions": [
+    "All buses: state transport corporations (STC) + private operators + school + tour + city + intercity? Yes.",
+    "Operational buses? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across categories."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "State Transport Corporations (UPSRTC, MSRTC, KSRTC, etc.) buses: ~1.6 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Private intercity bus operators: ~3 lakh (RedBus listings + unorganized)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Tour + employee transport: ~1.5 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of which EV buses (electric): ~10,000-12,000 (rapidly growing under FAME-II)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "State Transport Corporations (UPSRTC, MSRTC, KSRTC, etc.) buses",
+      "value": "~1.6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "City public transport (BEST Mumbai, DTC Delhi, BMTC Bengaluru, etc.)",
+      "value": "~50,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Private intercity bus operators",
+      "value": "~3 lakh (RedBus listings + unorganized).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "School buses + private contract",
+      "value": "~2.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tour + employee transport",
+      "value": "~1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~10 lakh buses.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which EV buses (electric)",
+      "value": "~10,000-12,000 (rapidly growing under FAME-II).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "State Transport Corporations (UPSRTC, MSRTC, KSRTC, etc.) buses: ~1.6 lakh.",
+    "Private intercity bus operators: ~3 lakh (RedBus listings + unorganized).",
+    "School buses + private contract: ~2.5 lakh.",
+    "Tour + employee transport: ~1.5 lakh.",
+    "Total: ~10 lakh buses."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of which EV buses (electric): ~10,000-12,000 (rapidly growing under FAME-II)."
+  }
+}

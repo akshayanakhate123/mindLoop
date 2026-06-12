@@ -1,0 +1,74 @@
+{
+  "questionId": "product-25",
+  "domain": "product",
+  "question": "Estimate the daily food delivery orders pan-India (Swiggy + Zomato + Magicpin combined).",
+  "idealClarificationQuestions": [
+    "Total country-wide daily orders combined? Yes.",
+    "Average weekday or weekend? Average day across the year.",
+    "Include only food delivery (exclude Instamart, Blinkit, Hyperpure)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: addressable population → frequency segmented → annual orders → daily."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total food delivery active users in India (used in last quarter): ~120M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Monthly orders: 14M×14 + 36M×5 + 70M×1.5 = 196M + 180M + 105M = ~481M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: 15-17M daily orders pan-India."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions probe usage patterns: frequency, session length, DAU, message volume. The trap is over-estimating — most users use most apps far less than power users. Always segment heavy / medium / light and weight by share, then cross-check with operator disclosures."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total food delivery active users in India (used in last quarter)",
+      "value": "~120M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Segment",
+      "value": "Heavy 12% = 14M @ 14 orders/month; Medium 30% = 36M @ 5/month; Light 58% = 70M @ 1.5/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly orders",
+      "value": "14M×14 + 36M×5 + 70M×1.5 = 196M + 180M + 105M = ~481M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily orders",
+      "value": "~16M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "15-17M daily orders pan-India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Segment: Heavy 12% = 14M @ 14 orders/month; Medium 30% = 36M @ 5/month; Light 58% = 70M @ 1.5/month.",
+    "Monthly orders: 14M×14 + 36M×5 + 70M×1.5 = 196M + 180M + 105M = ~481M."
+  ],
+  "finalAnswerRange": {
+    "low": "15",
+    "high": "17",
+    "ideal": "15-17M daily orders pan-India."
+  }
+}

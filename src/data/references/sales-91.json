@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-91",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for video conferencing / collaboration tools in India (Zoom, Teams, Meet).",
+  "idealClarificationQuestions": [
+    "Paid enterprise video conferencing + collaboration subscriptions in India? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Knowledge workers × paid seat conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian knowledge workers (corporate + IT services + remote workers): ~5 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total Indian VC + collab market: 2 cr × ₹4,000 = ~₹8,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Zoom standalone: ~15% = ₹1,200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Slack / standalone collab: ~5% = ₹400 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian knowledge workers (corporate + IT services + remote workers)",
+      "value": "~5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per-seat annual cost (Indian-discounted)",
+      "value": "~₹4,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian VC + collab market",
+      "value": "2 cr × ₹4,000 = ~₹8,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Microsoft Teams (bundled with M365)",
+      "value": "~50% = ₹4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Google Meet (bundled with Workspace)",
+      "value": "~20% = ₹1,600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Zoom standalone",
+      "value": "~15% = ₹1,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Webex / others",
+      "value": "~10% = ₹800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Slack / standalone collab",
+      "value": "~5% = ₹400 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian knowledge workers (corporate + IT services + remote workers): ~5 crore.",
+    "Of these, on paid collaboration tools (Teams / Zoom / Meet / Slack / Webex): ~40% = 2 crore seats.",
+    "Average per-seat annual cost (Indian-discounted): ~₹4,000.",
+    "Total Indian VC + collab market: 2 cr × ₹4,000 = ~₹8,000 Cr.",
+    "- Microsoft Teams (bundled with M365): ~50% = ₹4,000 Cr.",
+    "- Google Meet (bundled with Workspace): ~20% = ₹1,600 Cr.",
+    "- Zoom standalone: ~15% = ₹1,200 Cr.",
+    "- Webex / others: ~10% = ₹800 Cr.",
+    "- Slack / standalone collab: ~5% = ₹400 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Slack / standalone collab: ~5% = ₹400 Cr."
+  }
+}

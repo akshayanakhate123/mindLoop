@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-52",
+  "domain": "sales",
+  "question": "Estimate conversions for a real-estate sales team handling 500 monthly leads.",
+  "idealClarificationQuestions": [
+    "Residential apartment sales (₹50L-1.5 Cr ticket size, mid-tier)? Yes.",
+    "Lead = inquiry on 99acres / MagicBricks / Housing.com / Sobha or Lodha website? Yes.",
+    "Conversion = booking (token amount paid)? Yes.",
+    "Time window: 60 days from lead generation? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Real estate funnel decay."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Monthly leads: 500."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Site visit scheduled (within 14 days): ~40% of contacted = 180."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Booking (paid token amount): ~15-20% of hot leads = ~10-12 bookings."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Final unit sales (post token, after legal/financing): ~85% = 8-10 actual sales."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Monthly leads",
+      "value": "500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Contacted (called back within 24-48 hrs)",
+      "value": "~90% = 450.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Site visit scheduled (within 14 days)",
+      "value": "~40% of contacted = 180.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Actual site visit happened (no-show ~30%)",
+      "value": "~70% = 126 visits.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Multiple visits / negotiation interest",
+      "value": "~50% = 63 hot leads.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Booking (paid token amount)",
+      "value": "~15-20% of hot leads = ~10-12 bookings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~10-12 bookings from 500 leads = ~2-2.5% conversion.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Final unit sales (post token, after legal/financing)",
+      "value": "~85% = 8-10 actual sales.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Contacted (called back within 24-48 hrs): ~90% = 450.",
+    "Site visit scheduled (within 14 days): ~40% of contacted = 180.",
+    "Actual site visit happened (no-show ~30%): ~70% = 126 visits.",
+    "Multiple visits / negotiation interest: ~50% = 63 hot leads.",
+    "Booking (paid token amount): ~15-20% of hot leads = ~10-12 bookings.",
+    "Round: ~10-12 bookings from 500 leads = ~2-2.5% conversion.",
+    "Final unit sales (post token, after legal/financing): ~85% = 8-10 actual sales."
+  ],
+  "finalAnswerRange": {
+    "low": "10",
+    "high": "12",
+    "ideal": "~10-12 bookings from 500 leads = ~2-2.5% conversion."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": "marketing-62",
+  "domain": "marketing",
+  "question": "Estimate the size of the senior-citizen consumer segment in India (60+) for organized retail and digital products.",
+  "idealClarificationQuestions": [
+    "Active consumer (purchases or transacts in past month)? Yes.",
+    "Both online + offline retail spending? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Senior citizen population × consumer-active share × annual spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian seniors (60+): ~15 crore (per generalist doc Q18)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, active consumers (vs dependents): ~70% = 3.5 crore."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total consumer market: 3.5 crore × ₹40,000 = ~₹1.4 lakh Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Digital-served segment is a fast-growing niche."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian seniors (60+)",
+      "value": "~15 crore (per generalist doc Q18).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban + Tier 2 seniors with financial autonomy",
+      "value": "~5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, active consumers (vs dependents)",
+      "value": "~70% = 3.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual discretionary spend per active senior consumer",
+      "value": "~₹40,000 (healthcare-heavy basket).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total consumer market",
+      "value": "3.5 crore × ₹40,000 = ~₹1.4 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Digital adopters in this cohort (use online apps for shopping/banking)",
+      "value": "~25% = 87.5 lakh seniors.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian seniors (60+): ~15 crore (per generalist doc Q18).",
+    "Urban + Tier 2 seniors with financial autonomy: ~5 crore.",
+    "Of these, active consumers (vs dependents): ~70% = 3.5 crore.",
+    "Average annual discretionary spend per active senior consumer: ~₹40,000 (healthcare-heavy basket).",
+    "Total consumer market: 3.5 crore × ₹40,000 = ~₹1.4 lakh Cr.",
+    "Digital adopters in this cohort (use online apps for shopping/banking): ~25% = 87.5 lakh seniors."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Digital adopters in this cohort (use online apps for shopping/banking): ~25% = 87.5 lakh seniors."
+  }
+}

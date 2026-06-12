@@ -1,0 +1,71 @@
+{
+  "questionId": "generalist-13",
+  "domain": "generalist",
+  "question": "How many ATMs are there in India?",
+  "idealClarificationQuestions": [
+    "Operational ATMs across all banks (PSU + private + small finance)? Yes.",
+    "Includes white-label ATMs (Hitachi, Tata, AGS)? Yes.",
+    "Includes recyclers (cash deposit machines counted as ATMs)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct estimate from RBI data + extrapolation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "RBI publishes monthly ATM count."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "FY24 ATM count: ~2.55 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "FY26 estimate: ~2.4-2.5 lakh (continued slow decline; PSUs rationalizing footprint)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of which: PSU banks ~60% = 1.5L; private ~30% = 75K; white-label ~10% = 25K."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "FY24 ATM count",
+      "value": "~2.55 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Trend",
+      "value": "declining slowly post-2018 due to UPI, peak was ~2.78 lakh in 2017-18.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "FY26 estimate",
+      "value": "~2.4-2.5 lakh (continued slow decline; PSUs rationalizing footprint).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which",
+      "value": "PSU banks ~60% = 1.5L; private ~30% = 75K; white-label ~10% = 25K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "FY24 ATM count: ~2.55 lakh.",
+    "Trend: declining slowly post-2018 due to UPI, peak was ~2.78 lakh in 2017-18.",
+    "FY26 estimate: ~2.4-2.5 lakh (continued slow decline; PSUs rationalizing footprint).",
+    "Of which: PSU banks ~60% = 1.5L; private ~30% = 75K; white-label ~10% = 25K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of which: PSU banks ~60% = 1.5L; private ~30% = 75K; white-label ~10% = 25K."
+  }
+}

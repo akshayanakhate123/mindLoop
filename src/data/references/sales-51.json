@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-51",
+  "domain": "sales",
+  "question": "Out of 10,000 insurance leads, how many become customers?",
+  "idealClarificationQuestions": [
+    "Leads = filled form / called helpline for insurance quote? Yes.",
+    "Insurance type: health / motor / life / term? Use mid-tier health insurance.",
+    "Time window: 30 days from lead generation? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard insurance lead funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total leads: 10,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Quotes shared + comparison done: ~80% of engaged = 4,080."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Successful policy issuance (post payment + medical underwriting where applicable): ~80% = ~490."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~500 customers from 10,000 leads = ~5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total leads",
+      "value": "10,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Contacted by telesales (successful first call)",
+      "value": "~85% = 8,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Engaged conversation (>5 min, understands product)",
+      "value": "~60% of contacted = 5,100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Quotes shared + comparison done",
+      "value": "~80% of engaged = 4,080.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Decision-makers showing serious interest",
+      "value": "~30% = 1,224.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Committed to purchase",
+      "value": "~50% of interested = 612.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net leads-to-customer",
+      "value": "~490 / 10,000 = ~4.9%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~500 customers from 10,000 leads = ~5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Contacted by telesales (successful first call): ~85% = 8,500.",
+    "Engaged conversation (>5 min, understands product): ~60% of contacted = 5,100.",
+    "Quotes shared + comparison done: ~80% of engaged = 4,080.",
+    "Decision-makers showing serious interest: ~30% = 1,224.",
+    "Committed to purchase: ~50% of interested = 612.",
+    "Successful policy issuance (post payment + medical underwriting where applicable): ~80% = ~490.",
+    "Net leads-to-customer: ~490 / 10,000 = ~4.9%.",
+    "Round: ~500 customers from 10,000 leads = ~5%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~500 customers from 10,000 leads = ~5%."
+  }
+}

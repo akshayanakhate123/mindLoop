@@ -1,0 +1,74 @@
+{
+  "questionId": "product-49",
+  "domain": "product",
+  "question": "Estimate the average podcast listening time per Indian active listener per week.",
+  "idealClarificationQuestions": [
+    "Podcast = audio shows on Spotify / KUKU FM / Apple Podcasts / YouTube? Audio podcasts only (exclude YouTube video).",
+    "Active listener = listened to a podcast in past 30 days? Yes.",
+    "Average across all active listeners? Yes.",
+    "2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Indian active podcast listener base × hours/week typical."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian active podcast listeners (any platform, last 30 days): ~25-30M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average podcast listening pattern: 2-3 episodes/week × 25-30 mins each = 1-1.5 hours/week."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Light users: 30 min/week."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Weighted average: ~2-2.5 hours/week per active listener."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian active podcast listeners (any platform, last 30 days)",
+      "value": "~25-30M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average podcast listening pattern",
+      "value": "2-3 episodes/week × 25-30 mins each = 1-1.5 hours/week.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Heavy users",
+      "value": "5+ hours/week (10-15% of base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Light users",
+      "value": "30 min/week.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted average",
+      "value": "~2-2.5 hours/week per active listener.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average podcast listening pattern: 2-3 episodes/week × 25-30 mins each = 1-1.5 hours/week.",
+    "Heavy users: 5+ hours/week (10-15% of base)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Weighted average: ~2-2.5 hours/week per active listener."
+  }
+}

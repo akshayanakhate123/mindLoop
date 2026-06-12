@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-8",
+  "domain": "sales",
+  "question": "Estimate monthly footwear sales (organized + branded) in a single Tier 2 city like Coimbatore.",
+  "idealClarificationQuestions": [
+    "Organized + branded footwear (Bata, Liberty, Khadims, Metro, Adidas, Nike, Puma, Reebok, Skechers, Crocs etc.)? Yes — excludes unorganized cobbler-bought.",
+    "All categories: casual + formal + sports + ethnic? Yes.",
+    "Coimbatore metro? Yes (~22 lakh).",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × annual pairs per capita × organized share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian footwear market: ~₹75,000 Cr (FY26); organized share ~50% = ₹37,500 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per-capita organized footwear: ~6 pairs/year avg (urban higher, rural lower)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly: ~12-13 lakh pairs/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Value: 6.5 lakh × ₹500 = ~₹32 Cr/month organized."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian footwear market",
+      "value": "~₹75,000 Cr (FY26); organized share ~50% = ₹37,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual pairs (organized)",
+      "value": "~80 crore pairs at avg ₹450/pair.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita organized footwear",
+      "value": "~6 pairs/year avg (urban higher, rural lower).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Coimbatore (Tier 2 prosperous textile city)",
+      "value": "~7 pairs/year per capita.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual pairs Coimbatore",
+      "value": "22 lakh × 7 = ~1.5 crore pairs/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~12-13 lakh pairs/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which organized",
+      "value": "~50% (Tier 2 organized share slightly lower) = ~6-7 lakh pairs/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value",
+      "value": "6.5 lakh × ₹500 = ~₹32 Cr/month organized.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian footwear market: ~₹75,000 Cr (FY26); organized share ~50% = ₹37,500 Cr.",
+    "Annual pairs (organized): ~80 crore pairs at avg ₹450/pair.",
+    "Annual pairs Coimbatore: 22 lakh × 7 = ~1.5 crore pairs/year.",
+    "Monthly: ~12-13 lakh pairs/month.",
+    "Of which organized: ~50% (Tier 2 organized share slightly lower) = ~6-7 lakh pairs/month.",
+    "Value: 6.5 lakh × ₹500 = ~₹32 Cr/month organized."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Value: 6.5 lakh × ₹500 = ~₹32 Cr/month organized."
+  }
+}

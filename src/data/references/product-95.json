@@ -1,0 +1,80 @@
+{
+  "questionId": "product-95",
+  "domain": "product",
+  "question": "Estimate the bandwidth a 5G telco needs to provision in Mumbai per square km.",
+  "idealClarificationQuestions": [
+    "Peak time (evening 8-11 PM)? Yes.",
+    "Both data + signaling? Just data.",
+    "Per sq km basis? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Users per sq km × peak per-user usage."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai average density: ~22M people / 600 sq km = ~37,000 people per sq km."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per-user peak hour throughput (5G era, video heavy): ~3-5 Mbps sustained."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Considering oversubscription (not all users 100% concurrent): ~50% effective = ~50 Gbps per sq km."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Telco share (3 telcos in market): each provisions ~15-20 Gbps per sq km."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai average density",
+      "value": "~22M people / 600 sq km = ~37,000 people per sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, smartphone-internet active during peak hour",
+      "value": "~70% = ~26K users/sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-user peak hour throughput (5G era, video heavy)",
+      "value": "~3-5 Mbps sustained.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per sq km peak demand",
+      "value": "26K × 4 Mbps = ~100 Gbps per sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Considering oversubscription (not all users 100% concurrent)",
+      "value": "~50% effective = ~50 Gbps per sq km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Telco share (3 telcos in market)",
+      "value": "each provisions ~15-20 Gbps per sq km.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Mumbai average density: ~22M people / 600 sq km = ~37,000 people per sq km.",
+    "Of these, smartphone-internet active during peak hour: ~70% = ~26K users/sq km.",
+    "Per sq km peak demand: 26K × 4 Mbps = ~100 Gbps per sq km.",
+    "Considering oversubscription (not all users 100% concurrent): ~50% effective = ~50 Gbps per sq km."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Telco share (3 telcos in market): each provisions ~15-20 Gbps per sq km."
+  }
+}

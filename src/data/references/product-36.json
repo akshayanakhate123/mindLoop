@@ -1,0 +1,76 @@
+{
+  "questionId": "product-36",
+  "domain": "product",
+  "question": "Estimate the number of LinkedIn posts per day from India.",
+  "idealClarificationQuestions": [
+    "Original posts (not comments/likes/reshares)? Original + reshares with new commentary.",
+    "From India (geo-located accounts)? Yes.",
+    "Average weekday? Weekday (LinkedIn activity drops on weekends).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Indian LinkedIn users × % who post × posting frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "LinkedIn India MAU: ~140M (LinkedIn India has ~135M+ members, MAU ~50%)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active posters (post at least once a month): ~5-7% of MAU = ~10M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly posts from India: 10M × 3.5 = ~35M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily posts (weekday avg): 35M ÷ 22 weekdays = ~1.6M posts/weekday."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "LinkedIn India MAU",
+      "value": "~140M (LinkedIn India has ~135M+ members, MAU ~50%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active posters (post at least once a month)",
+      "value": "~5-7% of MAU = ~10M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, average posts per month",
+      "value": "~3-4 posts.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly posts from India",
+      "value": "10M × 3.5 = ~35M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily posts (weekday avg)",
+      "value": "35M ÷ 22 weekdays = ~1.6M posts/weekday.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "LinkedIn India MAU: ~140M (LinkedIn India has ~135M+ members, MAU ~50%).",
+    "Active posters (post at least once a month): ~5-7% of MAU = ~10M.",
+    "Monthly posts from India: 10M × 3.5 = ~35M.",
+    "Daily posts (weekday avg): 35M ÷ 22 weekdays = ~1.6M posts/weekday."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily posts (weekday avg): 35M ÷ 22 weekdays = ~1.6M posts/weekday."
+  }
+}

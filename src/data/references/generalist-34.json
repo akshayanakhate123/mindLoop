@@ -1,0 +1,80 @@
+{
+  "questionId": "generalist-34",
+  "domain": "generalist",
+  "question": "Estimate the daily soap consumption in India (number of bars + bottles).",
+  "idealClarificationQuestions": [
+    "Bath/bathing soap (bars + body wash bottles)? Yes.",
+    "Excludes detergent + dishwashing soap? Yes.",
+    "Year 2026? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × usage rate × bar/bottle life."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India population: ~1.45B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average soap-bar consumption: ~10-12 bars/year per person (urban higher with body wash supplementation)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily: ~42 million bars per day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus body wash/liquid soap: ~5-6% of category by volume; ~1-2 million bottles/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India population",
+      "value": "~1.45B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Soap-using population",
+      "value": "~1.4B (near universal).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average soap-bar consumption",
+      "value": "~10-12 bars/year per person (urban higher with body wash supplementation).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual bar consumption",
+      "value": "1.4B × 11 = ~15.4 billion bars/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~42 million bars per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus body wash/liquid soap",
+      "value": "~5-6% of category by volume; ~1-2 million bottles/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual bar consumption: 1.4B × 11 = ~15.4 billion bars/year.",
+    "Daily: ~42 million bars per day.",
+    "Plus body wash/liquid soap: ~5-6% of category by volume; ~1-2 million bottles/day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus body wash/liquid soap: ~5-6% of category by volume; ~1-2 million bottles/day."
+  }
+}

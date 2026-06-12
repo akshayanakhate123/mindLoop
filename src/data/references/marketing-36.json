@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-36",
+  "domain": "marketing",
+  "question": "Estimate the trial-to-paid conversion for an Indian SaaS product (e.g., a productivity / CRM tool).",
+  "idealClarificationQuestions": [
+    "Free trial (14-day or 30-day)? 14-day.",
+    "B2B SaaS for SMB or enterprise? SMB-focused.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "SaaS funnel: signup → trial activation → engagement → conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Free trial signups: 1,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Active trial users (using product 4+ days during trial): ~30% of activated = 180."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Take 15%: 150 paid users out of 1,000 signups."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net signup-to-LTV-positive customer: ~12%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Free trial signups",
+      "value": "1,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Trial activation (logged in at least twice, set up basic features)",
+      "value": "~60% = 600.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active trial users (using product 4+ days during trial)",
+      "value": "~30% of activated = 180.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Trial-to-paid conversion (entered card details)",
+      "value": "~12-18% of trial signups for SMB SaaS.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take 15%",
+      "value": "150 paid users out of 1,000 signups.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of paid users, those who continue beyond month 1",
+      "value": "~85%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net signup-to-LTV-positive customer",
+      "value": "~12%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Trial activation (logged in at least twice, set up basic features): ~60% = 600.",
+    "Active trial users (using product 4+ days during trial): ~30% of activated = 180."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net signup-to-LTV-positive customer: ~12%."
+  }
+}

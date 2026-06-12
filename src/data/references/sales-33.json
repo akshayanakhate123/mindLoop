@@ -1,0 +1,76 @@
+{
+  "questionId": "sales-33",
+  "domain": "sales",
+  "question": "Estimate the number of mobile phone retailers (organized + unorganized) in India.",
+  "idealClarificationQuestions": [
+    "All retailers selling mobile phones (organized chains + standalone shops)? Yes.",
+    "Excluding online-only resellers? Yes — physical only.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Outlets per smartphones-sold ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian smartphone sales/year: ~16-17 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Number of retailers: ~6-8 lakh (highly fragmented)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Brand-exclusive (Mi Stores, OnePlus Experience, OPPO/Vivo authorized): ~5,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~6-7 lakh mobile phone retailers pan-India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian smartphone sales/year",
+      "value": "~16-17 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average sales per retailer per year",
+      "value": "~150-250 units (varies hugely; small shops do ~100, large multi-brand do ~5,000).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Number of retailers",
+      "value": "~6-8 lakh (highly fragmented).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Multi-brand small retailers / mobile shops",
+      "value": "~6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~6-7 lakh mobile phone retailers pan-India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian smartphone sales/year: ~16-17 crore.",
+    "Number of retailers: ~6-8 lakh (highly fragmented).",
+    "- Organized chains (Croma, Reliance Digital, Vijay Sales, Sangeetha Mobiles, Poorvika, Big C, Lot Mobiles): ~2,000.",
+    "- Multi-brand small retailers / mobile shops: ~6 lakh.",
+    "Round: ~6-7 lakh mobile phone retailers pan-India."
+  ],
+  "finalAnswerRange": {
+    "low": "6",
+    "high": "7",
+    "ideal": "~6-7 lakh mobile phone retailers pan-India."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": "finance-2",
+  "domain": "finance",
+  "question": "Estimate the monthly revenue of a Starbucks outlet in Mumbai.",
+  "idealClarificationQuestions": [
+    "Average Starbucks outlet (not flagship, not tiny kiosk)? Mid-size standard outlet.",
+    "Tata Starbucks Reserve outlets excluded (those have 3x higher AOV)? Yes — standard outlet.",
+    "All revenue: F&B + merchandise + coffee beans? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily customers × AOV × days."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai Starbucks outlet daily footfall: ~250-350 customers (varies by location; office-area higher)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average order value (AOV): ~₹450 (coffee ₹300-400 + add-on bakery ₹50-100; some 2-person tickets)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly revenue: ~₹38 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total monthly: ~₹40-45 lakh per Starbucks Mumbai outlet."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai Starbucks outlet daily footfall",
+      "value": "~250-350 customers (varies by location; office-area higher).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average order value (AOV)",
+      "value": "~₹450 (coffee ₹300-400 + add-on bakery ₹50-100; some 2-person tickets).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily revenue",
+      "value": "280 × ₹450 = ~₹1.26 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly revenue",
+      "value": "~₹38 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus packaged coffee beans + merchandise (tumblers, mugs)",
+      "value": "~5-7% extra = ~₹2-3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly",
+      "value": "~₹40-45 lakh per Starbucks Mumbai outlet.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average order value (AOV): ~₹450 (coffee ₹300-400 + add-on bakery ₹50-100; some 2-person tickets).",
+    "Daily revenue: 280 × ₹450 = ~₹1.26 lakh.",
+    "Monthly revenue: ~₹38 lakh.",
+    "Plus packaged coffee beans + merchandise (tumblers, mugs): ~5-7% extra = ~₹2-3 lakh.",
+    "Total monthly: ~₹40-45 lakh per Starbucks Mumbai outlet."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total monthly: ~₹40-45 lakh per Starbucks Mumbai outlet."
+  }
+}

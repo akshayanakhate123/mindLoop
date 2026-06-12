@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-56",
+  "domain": "generalist",
+  "question": "How many bank branches are there in India?",
+  "idealClarificationQuestions": [
+    "All commercial bank branches (PSU + private + foreign + small finance + cooperative)? Yes.",
+    "Operational branches? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "RBI data on branch network."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Commercial bank branches in India:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Foreign banks: ~750."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Cooperative banks: ~25,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus banking correspondents (BCs): ~14 lakh — separate channel."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Public sector banks",
+      "value": "~85,000 (SBI alone has ~22,500).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Private sector banks",
+      "value": "~38,000 (HDFC, ICICI, Axis, Kotak, IndusInd, etc.).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Foreign banks",
+      "value": "~750.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Small finance banks",
+      "value": "~7,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regional Rural Banks",
+      "value": "~22,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cooperative banks",
+      "value": "~25,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~1.78 lakh branches.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus banking correspondents (BCs)",
+      "value": "~14 lakh — separate channel.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total: ~1.78 lakh branches.",
+    "Plus banking correspondents (BCs): ~14 lakh — separate channel."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus banking correspondents (BCs): ~14 lakh — separate channel."
+  }
+}

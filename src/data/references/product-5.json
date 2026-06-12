@@ -1,0 +1,69 @@
+{
+  "questionId": "product-5",
+  "domain": "product",
+  "question": "Estimate the TAM (Total Addressable Market) for online doctor consultations in India.",
+  "idealClarificationQuestions": [
+    "TAM (theoretical max if 100% addressable use it) or SAM (realistic serviceable)? TAM.",
+    "Include only video/chat consults or in-app prescription/follow-ups too? Primary consult sessions only.",
+    "GP/general consult only or include specialists, mental health, dermatology? All categories.",
+    "B2C consumer market only or include B2B (insurance, corporate wellness)? B2C primary, with B2B noted separately."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: addressable population × consultation frequency × average revenue per consult."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Internet-enabled population (smartphone + comfortable with apps): ~700M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average primary care consults per person per year (online + offline): ~3-4. If even 50% shift online over time = ~1.5-2 online consults/person/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average revenue per consult: ₹250 (range: free with insurance to ₹800 specialist; weighted average)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Add follow-up pharmacy + diagnostics tied to consult (typical 2-3x consult fee in basket): ₹17,500 × 2.5 = ~₹44,000 Cr full TAM."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Internet-enabled population (smartphone + comfortable with apps)",
+      "value": "~700M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average primary care consults per person per year (online + offline)",
+      "value": "~3-4. If even 50% shift online over time = ~1.5-2 online consults/person/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average revenue per consult",
+      "value": "₹250 (range: free with insurance to ₹800 specialist; weighted average).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Internet-enabled population (smartphone + comfortable with apps): ~700M.",
+    "Of these, addressable for online doctor consults (urban + Tier 2/3 with affordability): ~400M.",
+    "Average primary care consults per person per year (online + offline): ~3-4. If even 50% shift online over time = ~1.5-2 online consults/person/year.",
+    "Annual online consults at TAM = 400M × 1.75 = 700M consults.",
+    "Average revenue per consult: ₹250 (range: free with insurance to ₹800 specialist; weighted average).",
+    "Annual TAM revenue = 700M × ₹250 = ₹17,500 Cr (~$2.1B).",
+    "Add follow-up pharmacy + diagnostics tied to consult (typical 2-3x consult fee in basket): ₹17,500 × 2.5 = ~₹44,000 Cr full TAM."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Add follow-up pharmacy + diagnostics tied to consult (typical 2-3x consult fee in basket): ₹17,500 × 2.5 = ~₹44,000 Cr full TAM."
+  }
+}

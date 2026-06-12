@@ -1,0 +1,77 @@
+{
+  "questionId": "generalist-64",
+  "domain": "generalist",
+  "question": "Estimate the number of shopping malls in India.",
+  "idealClarificationQuestions": [
+    "Operational malls with formal organized retail (multiple stores under one roof, F&B, multiplex)? Yes.",
+    "Excludes high streets / standalone retail? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Real estate market data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Operational shopping malls in India (>2 lakh sqft): ~720-750."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Tier 2 cities (Indore, Lucknow, Coimbatore, etc.): ~250 malls."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus smaller plaza-format retail (50K-2L sqft): ~1,500 (not formal malls, but mall-adjacent)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total formal malls: ~720-750."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Operational shopping malls in India (>2 lakh sqft)",
+      "value": "~720-750.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Top 8 metros",
+      "value": "~450 malls.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tier 2 cities (Indore, Lucknow, Coimbatore, etc.)",
+      "value": "~250 malls.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tier 3 cities",
+      "value": "~50.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus smaller plaza-format retail (50K-2L sqft)",
+      "value": "~1,500 (not formal malls, but mall-adjacent).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total formal malls",
+      "value": "~720-750.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Operational shopping malls in India (>2 lakh sqft): ~720-750."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total formal malls: ~720-750."
+  }
+}

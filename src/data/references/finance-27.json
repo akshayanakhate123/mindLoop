@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-27",
+  "domain": "finance",
+  "question": "Would a cloud kitchen in Bengaluru be profitable? Estimate unit economics.",
+  "idealClarificationQuestions": [
+    "Single cloud kitchen unit (one kitchen with 4-6 brand offerings)? Yes.",
+    "Located in mid-tier locality (not premium real estate)? Yes.",
+    "Mature unit (post-12 months)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Revenue × order volume against cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Daily orders: ~400 (~100/brand × 4 brands)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Food COGS (raw materials): ~28% = ₹15L."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Other overhead (marketing, software): ~5% = ₹2.7L."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Yes, profitable IF scale is achieved."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Daily orders",
+      "value": "~400 (~100/brand × 4 brands).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average order value",
+      "value": "~₹450.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily gross revenue",
+      "value": "~₹1.8 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly revenue",
+      "value": "~₹54 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Aggregator commission (Swiggy/Zomato take ~22-28%)",
+      "value": "25% = ₹13.5L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Food COGS (raw materials)",
+      "value": "~28% = ₹15L.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Rent (mid-tier locality 1,200 sqft kitchen)",
+      "value": "~₹2L = 3.7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff (kitchen + delivery handlers, 12-15 people)",
+      "value": "~₹4L = 7.4%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily orders: ~400 (~100/brand × 4 brands).",
+    "Average order value: ~₹450.",
+    "Daily gross revenue: ~₹1.8 lakh.",
+    "Monthly revenue: ~₹54 lakh.",
+    "- Aggregator commission (Swiggy/Zomato take ~22-28%): 25% = ₹13.5L.",
+    "- Food COGS (raw materials): ~28% = ₹15L.",
+    "- Rent (mid-tier locality 1,200 sqft kitchen): ~₹2L = 3.7%.",
+    "- Staff (kitchen + delivery handlers, 12-15 people): ~₹4L = 7.4%.",
+    "- Packaging: ~3% = ₹1.6L.",
+    "- Utilities + gas + delivery partner incentives: ~5% = ₹2.7L."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Less depreciation + tax: PAT ~12-15%."
+  }
+}

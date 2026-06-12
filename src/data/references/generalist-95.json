@@ -1,0 +1,53 @@
+{
+  "questionId": "generalist-95",
+  "domain": "generalist",
+  "question": "Estimate the number of pilgrims at Tirupati (Tirumala Venkateswara temple) per year.",
+  "idealClarificationQuestions": [
+    "Annual footfall? Yes.",
+    "Year 2026 estimate? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from TTD (Tirumala Tirupati Devasthanams) data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "TTD reports daily pilgrim count: ~80,000-100,000 average day; ~150,000+ on weekends and Brahmotsavam festival days."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Round: ~3-3.5 crore (30-35 million) pilgrims per year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "TTD reports daily pilgrim count",
+      "value": "~80,000-100,000 average day; ~150,000+ on weekends and Brahmotsavam festival days.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual pilgrims",
+      "value": "~3-3.5 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~3-3.5 crore (30-35 million) pilgrims per year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "TTD reports daily pilgrim count: ~80,000-100,000 average day; ~150,000+ on weekends and Brahmotsavam festival days.",
+    "Annual pilgrims: ~3-3.5 crore.",
+    "Round: ~3-3.5 crore (30-35 million) pilgrims per year."
+  ],
+  "finalAnswerRange": {
+    "low": "3",
+    "high": "3.5",
+    "ideal": "~3-3.5 crore (30-35 million) pilgrims per year."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "questionId": "marketing-33",
+  "domain": "marketing",
+  "question": "Estimate the funnel from app store impression to install for an Indian app on Google Play.",
+  "idealClarificationQuestions": [
+    "Google Play store listing impression to install? Yes.",
+    "Mid-tier consumer app (e.g., a fintech / e-commerce app)? Yes.",
+    "Organic + paid mix? Both.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard Play Store funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Play Store listing impressions: 100,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Install initiation: ~25-35% of listing visitors = 7.5-10.5K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "First-open rate: ~85-90% of installs = 5.5-8K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net listing-visit-to-install: ~25-35%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Play Store listing impressions",
+      "value": "100,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Listing visits (clicked-into store page)",
+      "value": "~30% of impressions (depends on icon, search relevance) = 30K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Install initiation",
+      "value": "~25-35% of listing visitors = 7.5-10.5K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Install completion (downloaded + installed successfully)",
+      "value": "~85% of initiated = 6.5-9K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "First-open rate",
+      "value": "~85-90% of installs = 5.5-8K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net impression-to-install",
+      "value": "~6-9%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net listing-visit-to-install",
+      "value": "~25-35%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Listing visits (clicked-into store page): ~30% of impressions (depends on icon, search relevance) = 30K.",
+    "Install initiation: ~25-35% of listing visitors = 7.5-10.5K.",
+    "Install completion (downloaded + installed successfully): ~85% of initiated = 6.5-9K.",
+    "First-open rate: ~85-90% of installs = 5.5-8K."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net listing-visit-to-install: ~25-35%."
+  }
+}

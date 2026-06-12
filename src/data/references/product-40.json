@@ -1,0 +1,77 @@
+{
+  "questionId": "product-40",
+  "domain": "product",
+  "question": "Estimate the number of Zoom (or equivalent video conferencing) meetings hosted per day from India.",
+  "idealClarificationQuestions": [
+    "Includes Zoom + Google Meet + MS Teams + Webex + Jio Meet? Yes.",
+    "Only meetings hosted from India (host's geography)? Yes.",
+    "Average weekday in 2026? Yes.",
+    "Both work + edtech + personal calls? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment by use case: corporate meetings + edtech classes + personal calls."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian knowledge workers (corporate + IT services + freelance): ~50M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, host video calls weekly: ~60% = 30M, average ~5 meetings/week = ~6M corporate hosted meetings/day (across all platforms)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Personal video calls (family, friends, casual): ~25M Indians make a video call per day, of which ~30% via apps like Zoom/Meet (rest via WhatsApp/FT) = 7.5M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total daily meetings: ~6M + 0.6M + 7.5M = ~14M meetings hosted from India per day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian knowledge workers (corporate + IT services + freelance)",
+      "value": "~50M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, host video calls weekly",
+      "value": "~60% = 30M, average ~5 meetings/week = ~6M corporate hosted meetings/day (across all platforms).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Edtech live class hosts",
+      "value": "~150K teachers/instructors with ~3-4 sessions/day = ~500K-600K meetings/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Personal video calls (family, friends, casual)",
+      "value": "~25M Indians make a video call per day, of which ~30% via apps like Zoom/Meet (rest via WhatsApp/FT) = 7.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total daily meetings",
+      "value": "~6M + 0.6M + 7.5M = ~14M meetings hosted from India per day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian knowledge workers (corporate + IT services + freelance): ~50M.",
+    "Of these, host video calls weekly: ~60% = 30M, average ~5 meetings/week = ~6M corporate hosted meetings/day (across all platforms).",
+    "Edtech live class hosts: ~150K teachers/instructors with ~3-4 sessions/day = ~500K-600K meetings/day.",
+    "Personal video calls (family, friends, casual): ~25M Indians make a video call per day, of which ~30% via apps like Zoom/Meet (rest via WhatsApp/FT) = 7.5M.",
+    "Total daily meetings: ~6M + 0.6M + 7.5M = ~14M meetings hosted from India per day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total daily meetings: ~6M + 0.6M + 7.5M = ~14M meetings hosted from India per day."
+  }
+}

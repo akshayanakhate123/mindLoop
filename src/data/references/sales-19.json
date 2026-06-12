@@ -1,0 +1,87 @@
+{
+  "questionId": "sales-19",
+  "domain": "sales",
+  "question": "Estimate monthly tile sales (vitrified + ceramic) in Gujarat — a state that's also India's tile manufacturing hub.",
+  "idealClarificationQuestions": [
+    "Both manufacturing-side + state-internal sales? Both, but focus on state consumption.",
+    "Gujarat is the largest tile manufacturing state (Morbi cluster); separate manufactured vs consumed within state? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Production vs consumption in state."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Gujarat tile manufacturing capacity (Morbi cluster): ~85% of India's tile output."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Gujarat production: ~125 crore sqm/year = ~10.4 crore sqm/month."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Gujarat state tile consumption: ~8 lakh sqm/month internally + similar inflow = ~16 lakh sqm/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Distinguish: monthly state production ₹4,500 Cr; state internal consumption ₹70-80 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Gujarat tile manufacturing capacity (Morbi cluster)",
+      "value": "~85% of India's tile output.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "India annual tile production",
+      "value": "~1,500 million sqm (~150 crore sqm).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gujarat production",
+      "value": "~125 crore sqm/year = ~10.4 crore sqm/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Within Gujarat, consumed in state",
+      "value": "only ~6-8% of state's production (rest exported within India + abroad).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gujarat state tile consumption",
+      "value": "~8 lakh sqm/month internally + similar inflow = ~16 lakh sqm/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value at avg ₹40/sqft (~₹430/sqm blended)",
+      "value": "~₹70 Cr/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Distinguish",
+      "value": "monthly state production ₹4,500 Cr; state internal consumption ₹70-80 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India annual tile production: ~1,500 million sqm (~150 crore sqm).",
+    "Gujarat production: ~125 crore sqm/year = ~10.4 crore sqm/month.",
+    "Within Gujarat, consumed in state: only ~6-8% of state's production (rest exported within India + abroad).",
+    "Gujarat state tile consumption: ~8 lakh sqm/month internally + similar inflow = ~16 lakh sqm/month.",
+    "Value at avg ₹40/sqft (~₹430/sqm blended): ~₹70 Cr/month.",
+    "Distinguish: monthly state production ₹4,500 Cr; state internal consumption ₹70-80 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Distinguish: monthly state production ₹4,500 Cr; state internal consumption ₹70-80 Cr."
+  }
+}

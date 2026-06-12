@@ -1,0 +1,77 @@
+{
+  "questionId": "generalist-54",
+  "domain": "generalist",
+  "question": "Estimate the number of railway stations in India.",
+  "idealClarificationQuestions": [
+    "All operational stations (mail, halt, junctions)? Yes.",
+    "Indian Railways network only? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from Railway Board data + count."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Railways operational stations: ~7,300-7,400."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- A category: ~400."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- C, D, E, F categories (mid + halt): ~6,200."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~7,300 stations."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Railways operational stations",
+      "value": "~7,300-7,400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- A1 (top stations)",
+      "value": "~75.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- A category",
+      "value": "~400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- B category",
+      "value": "~700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- C, D, E, F categories (mid + halt)",
+      "value": "~6,200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~7,300 stations.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- C, D, E, F categories (mid + halt): ~6,200."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~7,300 stations."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "questionId": "sales-18",
+  "domain": "sales",
+  "question": "Estimate monthly EV (electric scooter + bike) sales in Bengaluru.",
+  "idealClarificationQuestions": [
+    "Electric 2W only (excluding cars)? Yes.",
+    "All brands: Ola, Ather, TVS iQube, Bajaj Chetak, Hero Vida, Revolt etc.? Yes.",
+    "Bengaluru metro? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "City share of national EV 2W."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "National EV 2W FY26 monthly sales: ~1.4 lakh units/month (~17 lakh/year)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Bengaluru is EV-leading city (large young workforce, charging-friendly climate, Ola Electric HQ effect): ~9-11% of national EV 2W sales."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly Bengaluru EV 2W: 1.4L × 10% = ~14,000 units/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Brand mix Bengaluru: Ola ~28%, TVS iQube ~22%, Bajaj Chetak ~14%, Ather ~12% (HQ city), Hero Vida ~8%, Revolt/Ampere/others ~16%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "National EV 2W FY26 monthly sales",
+      "value": "~1.4 lakh units/month (~17 lakh/year).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly Bengaluru EV 2W",
+      "value": "1.4L × 10% = ~14,000 units/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand mix Bengaluru",
+      "value": "Ola ~28%, TVS iQube ~22%, Bajaj Chetak ~14%, Ather ~12% (HQ city), Hero Vida ~8%, Revolt/Ampere/others ~16%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "National EV 2W FY26 monthly sales: ~1.4 lakh units/month (~17 lakh/year).",
+    "Monthly Bengaluru EV 2W: 1.4L × 10% = ~14,000 units/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Brand mix Bengaluru: Ola ~28%, TVS iQube ~22%, Bajaj Chetak ~14%, Ather ~12% (HQ city), Hero Vida ~8%, Revolt/Ampere/others ~16%."
+  }
+}

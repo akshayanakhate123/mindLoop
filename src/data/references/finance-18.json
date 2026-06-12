@@ -1,0 +1,75 @@
+{
+  "questionId": "finance-18",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Swiggy.",
+  "idealClarificationQuestions": [
+    "All segments: food delivery + Instamart + Genie + Dineout? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment revenue stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Food delivery GMV: ~₹35,000 Cr × ~22% take rate = ~₹7,700 Cr revenue."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Instamart (quick commerce): GMV ~₹26,000 Cr × ~16% take rate = ~₹4,200 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total revenue: ~₹12,000-13,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹12,500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Food delivery GMV",
+      "value": "~₹35,000 Cr × ~22% take rate = ~₹7,700 Cr revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Instamart (quick commerce)",
+      "value": "GMV ~₹26,000 Cr × ~16% take rate = ~₹4,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Dineout + Genie + others",
+      "value": "~₹400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹12,000-13,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹12,500 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Food delivery GMV: ~₹35,000 Cr × ~22% take rate = ~₹7,700 Cr revenue.",
+    "Instamart (quick commerce): GMV ~₹26,000 Cr × ~16% take rate = ~₹4,200 Cr.",
+    "Dineout + Genie + others: ~₹400 Cr.",
+    "Total revenue: ~₹12,000-13,000 Cr.",
+    "Round: ~₹12,500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹12,500 Cr."
+  }
+}

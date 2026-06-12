@@ -1,0 +1,92 @@
+{
+  "questionId": "sales-73",
+  "domain": "sales",
+  "question": "Estimate the conversion from job-portal job application to hiring.",
+  "idealClarificationQuestions": [
+    "Job seeker applies via Naukri / LinkedIn / Apna / Indeed; gets hired? Yes.",
+    "All sectors blended? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Application funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Applications per role on a job portal: ~100-200."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Hiring manager interview: ~40% = 6-10."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Offer accepted + joined: ~60-80% = ~1.5."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "For commodity roles (BPO, sales rep, junior dev): 0.3-0.5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Applications per role on a job portal",
+      "value": "~100-200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Resume passes ATS / first screening",
+      "value": "~25% = 30-50.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Recruiter / HR phone screen",
+      "value": "~50% = 15-25.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hiring manager interview",
+      "value": "~40% = 6-10.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Final round",
+      "value": "~50% = 3-5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Offer extended",
+      "value": "~50% = 2.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Offer accepted + joined",
+      "value": "~60-80% = ~1.5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net application-to-hire",
+      "value": "~0.75-1.5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Resume passes ATS / first screening: ~25% = 30-50.",
+    "Recruiter / HR phone screen: ~50% = 15-25.",
+    "Hiring manager interview: ~40% = 6-10.",
+    "Final round: ~50% = 3-5.",
+    "Offer extended: ~50% = 2.",
+    "Offer accepted + joined: ~60-80% = ~1.5."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "For commodity roles (BPO, sales rep, junior dev): 0.3-0.5%."
+  }
+}

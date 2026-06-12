@@ -1,0 +1,83 @@
+{
+  "questionId": "generalist-33",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of bottled water (packaged drinking water) in India.",
+  "idealClarificationQuestions": [
+    "Sealed packaged water (PET bottles + jars + pouches)? Yes.",
+    "All formats: 200ml pouch to 20L jars? Yes.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Market size / unit volume."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian packaged drinking water market: ~₹35,000 Cr (FY26 estimate, was ₹25,000 Cr in FY24)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total volume: ~23 billion litres/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Bottle-equivalent (1L): ~6.3 crore bottles per day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Or 200 ml class bottles equivalent: ~31 crore."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian packaged drinking water market",
+      "value": "~₹35,000 Cr (FY26 estimate, was ₹25,000 Cr in FY24).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average price across formats",
+      "value": "~₹1.5/litre (jar economics drag avg low; 1L PET ~₹20).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total volume",
+      "value": "~23 billion litres/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~63 million litres = 6.3 crore litres.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bottle-equivalent (1L)",
+      "value": "~6.3 crore bottles per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Or 200 ml class bottles equivalent",
+      "value": "~31 crore.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian packaged drinking water market: ~₹35,000 Cr (FY26 estimate, was ₹25,000 Cr in FY24).",
+    "Average price across formats: ~₹1.5/litre (jar economics drag avg low; 1L PET ~₹20).",
+    "Total volume: ~23 billion litres/year.",
+    "Daily: ~63 million litres = 6.3 crore litres.",
+    "Bottle-equivalent (1L): ~6.3 crore bottles per day.",
+    "Or 200 ml class bottles equivalent: ~31 crore."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Or 200 ml class bottles equivalent: ~31 crore."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "questionId": "product-7",
+  "domain": "product",
+  "question": "How many paying subscribers does Spotify have in India?",
+  "idealClarificationQuestions": [
+    "Premium individual + Premium Family + Duo + Student plans, all included? Yes.",
+    "Free users with ads excluded? Yes — only paying.",
+    "Latest year (2026) data? Yes.",
+    "Include shared family subs as 1 or as multiple? Count by paying account holder."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total music streaming users in India → Spotify market share → free vs paid conversion ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total music streaming users in India (across Spotify, JioSaavn, Gaana, YT Music, Apple Music, Wynk): ~250M MAU."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Spotify market share in India: ~22-25% (JioSaavn leads in absolute users via Jio bundling, but Spotify leads in engagement)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Indian conversion rate to paid (very low — free tier is generous, price-sensitive market): ~6-8% (vs 45% globally)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Spotify paid subscribers in India: 57M × 7% ≈ 4M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Spotify market share in India",
+      "value": "~22-25% (JioSaavn leads in absolute users via Jio bundling, but Spotify leads in engagement).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Spotify MAU India",
+      "value": "~55-60M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Spotify paid subscribers in India",
+      "value": "57M × 7% ≈ 4M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Spotify paid subscribers in India: 57M × 7% ≈ 4M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Spotify paid subscribers in India: 57M × 7% ≈ 4M."
+  }
+}

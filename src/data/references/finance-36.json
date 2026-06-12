@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-36",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for HDFC Asset Management Company.",
+  "idealClarificationQuestions": [
+    "AMC business EBITDA margin? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "AMC revenue minus operating costs."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Revenue: 100% (per Q7, ~₹2,500-2,700 Cr)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Tech + infrastructure: ~3-5%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating cost: ~40-50% of revenue."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT margin: ~38-45%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100% (per Q7, ~₹2,500-2,700 Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Employee cost (fund managers, sales, ops)",
+      "value": "~25-30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + brand",
+      "value": "~5-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech + infrastructure",
+      "value": "~3-5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Distribution incentives (above the TER they retain)",
+      "value": "~3-5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~5-7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating cost",
+      "value": "~40-50% of revenue.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "~50-60% (AMC is one of the highest-margin financial businesses).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Revenue: 100% (per Q7, ~₹2,500-2,700 Cr).",
+    "- Marketing + brand: ~5-8%.",
+    "- Tech + infrastructure: ~3-5%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT margin: ~38-45%."
+  }
+}

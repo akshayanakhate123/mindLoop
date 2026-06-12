@@ -1,0 +1,89 @@
+{
+  "questionId": "sales-34",
+  "domain": "sales",
+  "question": "Estimate the number of auto dealers (passenger cars) in India.",
+  "idealClarificationQuestions": [
+    "Authorized car dealers (Maruti, Hyundai, Tata, Mahindra, Toyota, etc.)? Yes.",
+    "All dealers + sub-dealers + showrooms? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "OEM-wise dealer network."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Major OEM dealer networks:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Tata Motors PV: ~1,400 dealers/outlets."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Luxury (BMW, Mercedes, Audi, Volvo, Jaguar, Porsche, Lexus): ~350."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: many outlets are 'dealers' with multiple touchpoints (sales+service+spares); unique dealer entities ~6,500-7,000."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Maruti Suzuki",
+      "value": "~3,300 outlets (Arena + Nexa + commercial).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Hyundai",
+      "value": "~1,300 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tata Motors PV",
+      "value": "~1,400 dealers/outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mahindra",
+      "value": "~1,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Toyota",
+      "value": "~700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Honda",
+      "value": "~470.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Kia",
+      "value": "~700.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- MG, Skoda, Volkswagen, Renault, Nissan, Citroen",
+      "value": "~1,200 combined.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Maruti Suzuki: ~3,300 outlets (Arena + Nexa + commercial).",
+    "Total: ~10,400+ outlets across India.",
+    "Note: many outlets are 'dealers' with multiple touchpoints (sales+service+spares); unique dealer entities ~6,500-7,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Note: many outlets are 'dealers' with multiple touchpoints (sales+service+spares); unique dealer entities ~6,500-7,000."
+  }
+}

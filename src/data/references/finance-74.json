@@ -1,0 +1,88 @@
+{
+  "questionId": "finance-74",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian gaming + esports industry by 2030.",
+  "idealClarificationQuestions": [
+    "All gaming + esports + streaming revenue by 2030? Yes.",
+    "Includes RMG (real-money gaming) at current GST regime? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mobile gaming (IAP + ads): ~₹35,000 Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Console + PC gaming: ~₹6,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Game development services exports (Indian studios for global publishers): ~₹6,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹65,000-75,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mobile gaming (IAP + ads)",
+      "value": "~₹35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Real-money gaming (rummy, poker, fantasy — post-28% GST realities)",
+      "value": "~₹20,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Console + PC gaming",
+      "value": "~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Esports (tournaments, sponsorships, prize pools)",
+      "value": "~₹3,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Game streaming (YouTube Gaming, Loco, Rooter)",
+      "value": "~₹2,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹73,000 Cr (~$9B) Indian gaming + esports by 2030.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹65,000-75,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Mobile gaming (IAP + ads): ~₹35,000 Cr.",
+    "Real-money gaming (rummy, poker, fantasy — post-28% GST realities): ~₹20,000 Cr.",
+    "Console + PC gaming: ~₹6,000 Cr.",
+    "Esports (tournaments, sponsorships, prize pools): ~₹3,500 Cr.",
+    "Game streaming (YouTube Gaming, Loco, Rooter): ~₹2,500 Cr.",
+    "Game development services exports (Indian studios for global publishers): ~₹6,000 Cr.",
+    "Total: ~₹73,000 Cr (~$9B) Indian gaming + esports by 2030.",
+    "Round: ~₹65,000-75,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "65,000",
+    "high": "75,000",
+    "ideal": "~₹65,000-75,000 Cr."
+  }
+}

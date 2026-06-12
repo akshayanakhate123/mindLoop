@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-77",
+  "domain": "finance",
+  "question": "How much does it cost to run IPL broadcasting and production?",
+  "idealClarificationQuestions": [
+    "Production cost (cameras, crew, OB vans, commentary, graphics) per IPL season? Yes.",
+    "Excludes broadcasting rights fees? Yes — only production cost.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-match × matches."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "IPL matches per season: ~74 (10 teams × home-and-away + playoffs)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Production + post-production: ~₹15 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus marketing + promo + studio shows: ~₹70 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹400-500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "IPL matches per season",
+      "value": "~74 (10 teams × home-and-away + playoffs).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Crew (~150 staff per match)",
+      "value": "~₹35 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- OB van + cameras + technical",
+      "value": "~₹40 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Commentators + analysts (paid per match)",
+      "value": "~₹20 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Production + post-production",
+      "value": "~₹15 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Travel + logistics",
+      "value": "~₹10 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-match",
+      "value": "~₹1.2 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total production cost for 74 matches",
+      "value": "~₹90 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "IPL matches per season: ~74 (10 teams × home-and-away + playoffs).",
+    "- Crew (~150 staff per match): ~₹35 lakh.",
+    "- OB van + cameras + technical: ~₹40 lakh.",
+    "- Commentators + analysts (paid per match): ~₹20 lakh.",
+    "- Production + post-production: ~₹15 lakh.",
+    "- Travel + logistics: ~₹10 lakh.",
+    "Per-match: ~₹1.2 crore.",
+    "Total production cost for 74 matches: ~₹90 Cr.",
+    "Plus pre/post show production: ~₹40 Cr.",
+    "Plus marketing + promo + studio shows: ~₹70 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "400",
+    "high": "500",
+    "ideal": "~₹400-500 Cr."
+  }
+}

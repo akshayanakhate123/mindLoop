@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-85",
+  "domain": "finance",
+  "question": "Estimate the cost of setting up a quick commerce dark store.",
+  "idealClarificationQuestions": [
+    "Single dark store setup capex (one-time)? Yes.",
+    "Excludes ongoing rent + inventory + staff? Yes — one-time setup capex only.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-store capex stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Typical dark store size: ~2,500 sqft."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Refrigeration + freezers (cold + frozen sections): ~₹8-12 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total capex per dark store: ~₹30-40 lakh (excl. inventory)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "All-in launch cost per dark store: ~₹60-90 lakh."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Typical dark store size",
+      "value": "~2,500 sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Civil + interior fit-out (racks, lighting, flooring)",
+      "value": "~₹15-20 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Refrigeration + freezers (cold + frozen sections)",
+      "value": "~₹8-12 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech infrastructure (POS, cameras, network, WiFi)",
+      "value": "~₹3-4 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Inventory (initial fill)",
+      "value": "~₹15-20 lakh (working capital, not strict capex).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Furniture + ergonomics + signage",
+      "value": "~₹2-3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total capex per dark store",
+      "value": "~₹30-40 lakh (excl. inventory).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Including initial inventory fill",
+      "value": "~₹45-60 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Civil + interior fit-out (racks, lighting, flooring): ~₹15-20 lakh.",
+    "- Refrigeration + freezers (cold + frozen sections): ~₹8-12 lakh.",
+    "- Tech infrastructure (POS, cameras, network, WiFi): ~₹3-4 lakh.",
+    "- Inventory (initial fill): ~₹15-20 lakh (working capital, not strict capex).",
+    "- Furniture + ergonomics + signage: ~₹2-3 lakh.",
+    "Total capex per dark store: ~₹30-40 lakh (excl. inventory).",
+    "Including initial inventory fill: ~₹45-60 lakh.",
+    "Plus security deposit for rented space (~6-12 months rent): ~₹15-30 lakh.",
+    "All-in launch cost per dark store: ~₹60-90 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "All-in launch cost per dark store: ~₹60-90 lakh."
+  }
+}

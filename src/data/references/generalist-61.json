@@ -1,0 +1,87 @@
+{
+  "questionId": "generalist-61",
+  "domain": "generalist",
+  "question": "Estimate the number of schools (all categories) in India.",
+  "idealClarificationQuestions": [
+    "Government + aided + private + unaided? All.",
+    "All levels: pre-primary, primary, secondary, senior secondary? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct from UDISE + extrapolation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "UDISE+ reports total schools: ~14.7 lakh (FY24)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Aided: ~80,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Madrasas + others: ~30,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~15 lakh schools."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "UDISE+ reports total schools",
+      "value": "~14.7 lakh (FY24).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Government",
+      "value": "~10.2 lakh (~70%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Aided",
+      "value": "~80,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Private unaided",
+      "value": "~3.4 lakh (~23%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Madrasas + others",
+      "value": "~30,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~14.7-15 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~15 lakh schools.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "UDISE+ reports total schools: ~14.7 lakh (FY24).",
+    "- Government: ~10.2 lakh (~70%).",
+    "- Private unaided: ~3.4 lakh (~23%).",
+    "- Madrasas + others: ~30,000.",
+    "Total: ~14.7-15 lakh.",
+    "Round: ~15 lakh schools."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~15 lakh schools."
+  }
+}

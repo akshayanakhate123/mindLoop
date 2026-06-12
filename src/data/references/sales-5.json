@@ -1,0 +1,86 @@
+{
+  "questionId": "sales-5",
+  "domain": "sales",
+  "question": "Estimate monthly cement bag sales in a typical Tier 2 district (e.g., Ratnagiri, Maharashtra).",
+  "idealClarificationQuestions": [
+    "All cement brands combined (UltraTech, ACC, Ambuja, Birla, Ramco etc.)? Yes.",
+    "50 kg bag standard unit? Yes.",
+    "District-level (Ratnagiri district ~16 lakh population)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita cement consumption × monthly distribution."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India per-capita cement consumption: ~310 kg/year (per Generalist Q31 calc updated)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual cement consumption Ratnagiri: 16 lakh × 250 kg = 40 crore kg = ~4 lakh tonnes/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Bags (50 kg each): 33,000 × 1,000 / 50 = ~6.6 lakh bags/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Regional + smaller brands: ~30% = 2 lakh bags."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India per-capita cement consumption",
+      "value": "~310 kg/year (per Generalist Q31 calc updated).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ratnagiri (semi-rural coastal district) consumption",
+      "value": "slightly below average ~250 kg/year due to lower construction density.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual cement consumption Ratnagiri",
+      "value": "16 lakh × 250 kg = 40 crore kg = ~4 lakh tonnes/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~33,000 tonnes.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bags (50 kg each)",
+      "value": "33,000 × 1,000 / 50 = ~6.6 lakh bags/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Top 3 brands (UltraTech, Shree, ACC-Ambuja-Sanghi)",
+      "value": "~70% = 4.6 lakh bags.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regional + smaller brands",
+      "value": "~30% = 2 lakh bags.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual cement consumption Ratnagiri: 16 lakh × 250 kg = 40 crore kg = ~4 lakh tonnes/year.",
+    "Bags (50 kg each): 33,000 × 1,000 / 50 = ~6.6 lakh bags/month.",
+    "- Top 3 brands (UltraTech, Shree, ACC-Ambuja-Sanghi): ~70% = 4.6 lakh bags.",
+    "- Regional + smaller brands: ~30% = 2 lakh bags."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Regional + smaller brands: ~30% = 2 lakh bags."
+  }
+}

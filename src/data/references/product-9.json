@@ -1,0 +1,80 @@
+{
+  "questionId": "product-9",
+  "domain": "product",
+  "question": "Estimate the daily orders on quick commerce apps (Blinkit + Zepto + Instamart + BBNow combined) in India.",
+  "idealClarificationQuestions": [
+    "Total daily orders across all platforms? Yes.",
+    "Include only metros where 10-min delivery is available? Yes — currently top 25-30 cities only.",
+    "Average weekday or weekend (weekend higher)? Average day.",
+    "Time horizon: today (2026) or projected? Today."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: covered city population → addressable smartphone users → quick commerce adopters → order frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top 25-30 cities covered by quick commerce: ~150M population."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Quick commerce active users (ordered in past month): ~25% adoption = ~28M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly orders: 28M × 4.5 = ~125M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily orders: ~4.2M average across all platforms."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Top 25-30 cities covered by quick commerce",
+      "value": "~150M population.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Smartphone internet users in these cities",
+      "value": "~110M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Quick commerce active users (ordered in past month)",
+      "value": "~25% adoption = ~28M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, daily order intensity",
+      "value": "average ~4-5 orders/month per user (groceries + impulse buys).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly orders",
+      "value": "28M × 4.5 = ~125M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily orders",
+      "value": "~4.2M average across all platforms.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Quick commerce active users (ordered in past month): ~25% adoption = ~28M.",
+    "Of these, daily order intensity: average ~4-5 orders/month per user (groceries + impulse buys).",
+    "Monthly orders: 28M × 4.5 = ~125M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily orders: ~4.2M average across all platforms."
+  }
+}

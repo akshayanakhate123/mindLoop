@@ -1,0 +1,89 @@
+{
+  "questionId": "finance-38",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for a leading Indian luxury retail brand (Titan Watches segment).",
+  "idealClarificationQuestions": [
+    "Titan watches division (excluding jewellery, eyewear)? Yes.",
+    "EBITDA margin? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Premium retail cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Revenue: 100% (~₹3,500 Cr Watches segment for Titan)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Marketing + brand: ~5-7%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total operating: ~85-95%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "PAT margin: ~7-9%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100% (~₹3,500 Cr Watches segment for Titan).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS (watch components, assembly)",
+      "value": "~55-60%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Store operations (rent, staff)",
+      "value": "~20-22%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + brand",
+      "value": "~5-7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Logistics + distribution",
+      "value": "~3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other operating",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~85-95%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "~12-15% (watches; jewellery much lower at 8-10%).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Revenue: 100% (~₹3,500 Cr Watches segment for Titan).",
+    "- Marketing + brand: ~5-7%.",
+    "- Logistics + distribution: ~3%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "PAT margin: ~7-9%."
+  }
+}

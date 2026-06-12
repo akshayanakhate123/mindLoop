@@ -1,0 +1,80 @@
+{
+  "questionId": "generalist-42",
+  "domain": "generalist",
+  "question": "Estimate the daily consumption of paper (newsprint + writing + packaging) in India.",
+  "idealClarificationQuestions": [
+    "All paper categories: newsprint, writing/printing, packaging? All.",
+    "Pan-India? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual consumption / 365."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India paper consumption FY26: ~25-26 MT/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Writing & printing (school books, office): ~28% = 7 MT."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Specialty + others: ~11% = 3 MT."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily: ~70,000 tonnes/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India paper consumption FY26",
+      "value": "~25-26 MT/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Packaging (paperboard, cartons)",
+      "value": "~55% = 14 MT (highest, e-commerce + FMCG driven).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Writing & printing (school books, office)",
+      "value": "~28% = 7 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Newsprint",
+      "value": "~6% = 1.5 MT (declining).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Specialty + others",
+      "value": "~11% = 3 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~70,000 tonnes/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Packaging (paperboard, cartons): ~55% = 14 MT (highest, e-commerce + FMCG driven).",
+    "- Writing & printing (school books, office): ~28% = 7 MT.",
+    "- Newsprint: ~6% = 1.5 MT (declining).",
+    "- Specialty + others: ~11% = 3 MT."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily: ~70,000 tonnes/day."
+  }
+}

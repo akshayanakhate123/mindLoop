@@ -1,0 +1,89 @@
+{
+  "questionId": "finance-40",
+  "domain": "finance",
+  "question": "Estimate the profitability of a fintech lending app in India (e.g., a personal loan platform).",
+  "idealClarificationQuestions": [
+    "Personal loan / BNPL fintech (Slice, KreditBee class)? Yes.",
+    "PAT margin? Yes.",
+    "FY26 — post-RBI tightening of digital lending? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "NIM + fee minus NPA + opex."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Net Interest Margin (NIM) on disbursed loans: ~14-18% (high-yield personal loans 24-36% APR, cost of funds 11-13%)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Customer acquisition cost amortized: ~4-5%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Collections cost: ~2-3%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Many lending fintechs are loss-making after credit costs."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Net Interest Margin (NIM) on disbursed loans",
+      "value": "~14-18% (high-yield personal loans 24-36% APR, cost of funds 11-13%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Fee income (processing + late fees)",
+      "value": "~2-3% of disbursed.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total income on loan book",
+      "value": "~17-22%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Customer acquisition cost amortized",
+      "value": "~4-5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech + ops",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- NPA / credit losses (the big variable)",
+      "value": "~8-12% (high in 2024-25 due to over-leveraging).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Collections cost",
+      "value": "~2-3%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cost",
+      "value": "~17-24%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Fee income (processing + late fees): ~2-3% of disbursed.",
+    "- Tech + ops: ~3-4%.",
+    "Net margin: -2% to +5% (highly volatile based on NPA cycle)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net margin: -2% to +5% (highly volatile based on NPA cycle)."
+  }
+}

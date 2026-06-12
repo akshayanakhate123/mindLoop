@@ -1,0 +1,80 @@
+{
+  "questionId": "marketing-64",
+  "domain": "marketing",
+  "question": "Estimate the size of the working women segment in India (formal employment) and their consumer market.",
+  "idealClarificationQuestions": [
+    "Formally employed women (salaried + own business)? Yes.",
+    "Their annual consumer spending power? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Working women population × disposable income × consumer spend share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian women in formal/salaried employment: ~13M (per generalist Q19)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total addressable working women: ~38M (note: distinct from agriculture/informal labor)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Disposable income (after savings, family expenses): ~30% = ₹1-1.2L per woman."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Categories: beauty + fashion + electronics + finance + auto = bulk of this spend."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian women in formal/salaried employment",
+      "value": "~13M (per generalist Q19).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus self-employed/own-business women",
+      "value": "~25M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total addressable working women",
+      "value": "~38M (note: distinct from agriculture/informal labor).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual earnings",
+      "value": "~₹3-4 lakh (mix of corporate executives at ₹15L+ and SMB workers at ₹2L).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Disposable income (after savings, family expenses)",
+      "value": "~30% = ₹1-1.2L per woman.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total consumer market driven by working women",
+      "value": "38M × ₹1.1L = ~₹42 lakh Cr potential spend, of which actually spent on personal/discretionary: ~₹10 lakh Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average annual earnings: ~₹3-4 lakh (mix of corporate executives at ₹15L+ and SMB workers at ₹2L).",
+    "Disposable income (after savings, family expenses): ~30% = ₹1-1.2L per woman.",
+    "Total consumer market driven by working women: 38M × ₹1.1L = ~₹42 lakh Cr potential spend, of which actually spent on personal/discretionary: ~₹10 lakh Cr.",
+    "Categories: beauty + fashion + electronics + finance + auto = bulk of this spend."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total consumer market driven by working women: 38M × ₹1.1L = ~₹42 lakh Cr potential spend, of which actually spent on personal/discretionary: ~₹10 lakh Cr."
+  }
+}

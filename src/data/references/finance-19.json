@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-19",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Asian Paints India.",
+  "idealClarificationQuestions": [
+    "Total India revenue (decorative + industrial + bath fittings)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Volume × pricing × segment mix."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Asian Paints India decorative paints volume: ~14 lakh kL/year."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Actually: avg realization ~₹230/litre × ~14 lakh kL = 14 cr litres × ₹230 = ~₹32,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus bath fittings + home decor: ~₹500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total consolidated revenue: ~₹38,000-40,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Asian Paints India decorative paints volume",
+      "value": "~14 lakh kL/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average realization",
+      "value": "~₹230/kL × 1000 = ₹2.3 lakh/kL (wait — paint pricing is per L, not kL).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Actually",
+      "value": "avg realization ~₹230/litre × ~14 lakh kL = 14 cr litres × ₹230 = ~₹32,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus industrial paints",
+      "value": "~₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus bath fittings + home decor",
+      "value": "~₹500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus international subsidiaries (rolled up)",
+      "value": "~₹3,000-4,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total consolidated revenue",
+      "value": "~₹38,000-40,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Asian Paints India decorative paints volume: ~14 lakh kL/year.",
+    "Average realization: ~₹230/kL × 1000 = ₹2.3 lakh/kL (wait — paint pricing is per L, not kL).",
+    "Actually: avg realization ~₹230/litre × ~14 lakh kL = 14 cr litres × ₹230 = ~₹32,000 Cr.",
+    "Plus industrial paints: ~₹3,000 Cr.",
+    "Plus bath fittings + home decor: ~₹500 Cr.",
+    "Plus international subsidiaries (rolled up): ~₹3,000-4,000 Cr.",
+    "Total consolidated revenue: ~₹38,000-40,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total consolidated revenue: ~₹38,000-40,000 Cr."
+  }
+}

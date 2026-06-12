@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-79",
+  "domain": "finance",
+  "question": "Estimate the cost of building a 1 GW solar power plant in India.",
+  "idealClarificationQuestions": [
+    "Utility-scale solar PV plant, 1 GW (1,000 MW) capacity? Yes.",
+    "All-in capex: land + modules + inverters + transformers + transmission interconnect? Yes.",
+    "FY26 cost (modules continue to decline)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-MW capex."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per-MW capex for utility-scale solar (FY26): ~₹3.8-4.2 crore/MW."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Land + civil work: ₹0.5 cr/MW."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total per MW: ~₹4 crore."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹4,000-4,500 Cr for a 1 GW solar plant."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Per-MW capex for utility-scale solar (FY26)",
+      "value": "~₹3.8-4.2 crore/MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Solar modules (~50% of cost)",
+      "value": "₹2 cr/MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Inverters + transformers + balance of system",
+      "value": "₹1.0 cr/MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Land + civil work",
+      "value": "₹0.5 cr/MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cables + transmission interconnect",
+      "value": "₹0.3 cr/MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other (financing closure, permits, design)",
+      "value": "₹0.2 cr/MW.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per MW",
+      "value": "~₹4 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For 1 GW",
+      "value": "1,000 × ₹4 cr = ~₹4,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per-MW capex for utility-scale solar (FY26): ~₹3.8-4.2 crore/MW.",
+    "- Solar modules (~50% of cost): ₹2 cr/MW.",
+    "- Inverters + transformers + balance of system: ₹1.0 cr/MW.",
+    "- Land + civil work: ₹0.5 cr/MW.",
+    "- Cables + transmission interconnect: ₹0.3 cr/MW.",
+    "- Other (financing closure, permits, design): ₹0.2 cr/MW.",
+    "Total per MW: ~₹4 crore.",
+    "For 1 GW: 1,000 × ₹4 cr = ~₹4,000 Cr.",
+    "Round: ~₹4,000-4,500 Cr for a 1 GW solar plant."
+  ],
+  "finalAnswerRange": {
+    "low": "4,000",
+    "high": "4,500",
+    "ideal": "~₹4,000-4,500 Cr for a 1 GW solar plant."
+  }
+}

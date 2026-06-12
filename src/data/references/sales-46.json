@@ -1,0 +1,91 @@
+{
+  "questionId": "sales-46",
+  "domain": "sales",
+  "question": "Estimate the number of dental clinics in India.",
+  "idealClarificationQuestions": [
+    "All dental practices: standalone + hospital-attached + dental chains (Clove, Sabka Dentist, etc.)? Yes.",
+    "Active practitioners with dental practice? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Dentists × clinic-to-dentist ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian active dentists: ~3 lakh (per Dental Council of India)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Net unique dental clinics: ~1.7-1.8 lakh standalone + ~5,000 multi-dentist clinics."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Sabka Dentist: ~150."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.8 lakh dental clinics in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian active dentists",
+      "value": "~3 lakh (per Dental Council of India).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, with own clinic",
+      "value": "~70% = 2.1 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of clinics, multi-dentist (chains, hospital-attached)",
+      "value": "~10% with avg 3 dentists = subtract ~30K from clinic count.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net unique dental clinics",
+      "value": "~1.7-1.8 lakh standalone + ~5,000 multi-dentist clinics.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Clove Dental",
+      "value": "~510 clinics.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Sabka Dentist",
+      "value": "~150.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Apollo White Dental",
+      "value": "~50.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Other corporate",
+      "value": "~200.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian active dentists: ~3 lakh (per Dental Council of India).",
+    "Of these, with own clinic: ~70% = 2.1 lakh.",
+    "Of clinics, multi-dentist (chains, hospital-attached): ~10% with avg 3 dentists = subtract ~30K from clinic count.",
+    "Net unique dental clinics: ~1.7-1.8 lakh standalone + ~5,000 multi-dentist clinics.",
+    "Round: ~1.8 lakh dental clinics in India."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1.8 lakh dental clinics in India."
+  }
+}

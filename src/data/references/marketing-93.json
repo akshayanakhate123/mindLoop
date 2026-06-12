@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-93",
+  "domain": "marketing",
+  "question": "Estimate the average revenue per show on a successful Indian Hindi GEC TV serial.",
+  "idealClarificationQuestions": [
+    "Per episode revenue for broadcaster from advertising? Yes.",
+    "Successful prime-time Hindi GEC (Anupamaa, Yeh Rishta Kya Kehlata Hai class)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-episode advertising slot value."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Prime-time slot rate for top Hindi GEC: ~₹3-5 lakh / 10-sec."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Per-episode ad revenue (gross): 47 × ₹4L = ~₹1.9 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus product placements / branded integration: ~₹15-25 lakh per episode."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1.5-1.8 Cr per episode for a top Hindi GEC serial."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Prime-time slot rate for top Hindi GEC",
+      "value": "~₹3-5 lakh / 10-sec.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ad slots per 30-min episode",
+      "value": "7-8 min of ads = ~45-48 × 10-sec slots.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-episode ad revenue (gross)",
+      "value": "47 × ₹4L = ~₹1.9 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net to broadcaster (after agency commissions, AOR fees)",
+      "value": "~₹1.5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus product placements / branded integration",
+      "value": "~₹15-25 lakh per episode.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per episode",
+      "value": "~₹1.7-1.8 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1.5-1.8 Cr per episode for a top Hindi GEC serial.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Prime-time slot rate for top Hindi GEC: ~₹3-5 lakh / 10-sec.",
+    "Ad slots per 30-min episode: 7-8 min of ads = ~45-48 × 10-sec slots.",
+    "Per-episode ad revenue (gross): 47 × ₹4L = ~₹1.9 Cr.",
+    "Net to broadcaster (after agency commissions, AOR fees): ~₹1.5 Cr.",
+    "Plus product placements / branded integration: ~₹15-25 lakh per episode.",
+    "Total per episode: ~₹1.7-1.8 Cr.",
+    "Round: ~₹1.5-1.8 Cr per episode for a top Hindi GEC serial."
+  ],
+  "finalAnswerRange": {
+    "low": "1.5",
+    "high": "1.8",
+    "ideal": "~₹1.5-1.8 Cr per episode for a top Hindi GEC serial."
+  }
+}

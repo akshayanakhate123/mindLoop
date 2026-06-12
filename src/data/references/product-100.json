@@ -1,0 +1,90 @@
+{
+  "questionId": "product-100",
+  "domain": "product",
+  "question": "Estimate the engineering team size required to build and run a Tier-1 fintech app (PhonePe / Paytm scale) in India.",
+  "idealClarificationQuestions": [
+    "Engineering + product + design + data combined? Engineering specifically; flag others separately if relevant.",
+    "At 250M MAU + ₹13L Cr/month TPV scale (PhonePe-like)? Yes.",
+    "Currently (2026)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Decompose by domain: payments core, lending, investments, mutual funds, distribution products, growth, infra, security, support."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Payments core (UPI, PG, settlements, fraud): ~600 engineers."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Merchant tools (QR, soundbox, settlements, dashboard): ~200."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "QA + automation: ~150."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus product managers ~150, designers ~80, analysts ~150 (not counted in engineering)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Payments core (UPI, PG, settlements, fraud)",
+      "value": "~600 engineers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Investments + insurance + mutual funds (separate vertical platforms)",
+      "value": "~250 engineers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Lending (credit, EMI, KYC, BRE)",
+      "value": "~300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Merchant tools (QR, soundbox, settlements, dashboard)",
+      "value": "~200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Consumer app (frontend, growth, content, push, search)",
+      "value": "~250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Data + ML (fraud, recommendations, risk, AI)",
+      "value": "~300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Infrastructure + DevOps + security + reliability",
+      "value": "~250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "QA + automation",
+      "value": "~150.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Investments + insurance + mutual funds (separate vertical platforms): ~250 engineers.",
+    "Data + ML (fraud, recommendations, risk, AI): ~300.",
+    "Infrastructure + DevOps + security + reliability: ~250.",
+    "QA + automation: ~150."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus product managers ~150, designers ~80, analysts ~150 (not counted in engineering)."
+  }
+}

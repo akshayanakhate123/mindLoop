@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-16",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Bharti Airtel India (telecom only).",
+  "idealClarificationQuestions": [
+    "Airtel India mobile + broadband + enterprise? Yes — India ops only (Africa separate).",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "ARPU × subscriber × services mix."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Airtel India mobile subscribers FY26: ~38 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual mobile revenue: 38 cr × ₹260 × 12 = ~₹1,18,500 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus enterprise (B2B telecom, cloud, security): ~₹22,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total Airtel India revenue: ~₹1,46,000-1,50,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Airtel India mobile subscribers FY26",
+      "value": "~38 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "ARPU (Airtel slightly higher than Jio due to postpaid mix)",
+      "value": "~₹260/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual mobile revenue",
+      "value": "38 cr × ₹260 × 12 = ~₹1,18,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus broadband (Xstream Fiber + AirFiber)",
+      "value": "~30 lakh subs × ₹900/mo × 12 = ~₹3,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus enterprise (B2B telecom, cloud, security)",
+      "value": "~₹22,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus DTH (Airtel Digital TV)",
+      "value": "~₹3,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Airtel India revenue",
+      "value": "~₹1,46,000-1,50,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Airtel India mobile subscribers FY26: ~38 crore.",
+    "ARPU (Airtel slightly higher than Jio due to postpaid mix): ~₹260/month.",
+    "Annual mobile revenue: 38 cr × ₹260 × 12 = ~₹1,18,500 Cr.",
+    "Plus broadband (Xstream Fiber + AirFiber): ~30 lakh subs × ₹900/mo × 12 = ~₹3,200 Cr.",
+    "Plus enterprise (B2B telecom, cloud, security): ~₹22,000 Cr.",
+    "Plus DTH (Airtel Digital TV): ~₹3,000 Cr.",
+    "Total Airtel India revenue: ~₹1,46,000-1,50,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total Airtel India revenue: ~₹1,46,000-1,50,000 Cr."
+  }
+}

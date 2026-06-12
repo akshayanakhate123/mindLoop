@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-87",
+  "domain": "finance",
+  "question": "Estimate the cost of a Bollywood blockbuster movie production (e.g., Pathaan / Jawan tier).",
+  "idealClarificationQuestions": [
+    "Total production budget (cast + crew + VFX + sets + post + marketing)? Yes.",
+    "Star-driven blockbuster (Pathaan, Jawan, Animal class)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Cost head stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Top tier Bollywood blockbuster cost structure:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Music (composers, singers, recording): ₹10-15 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Marketing + promotion: ₹50-80 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Mega-budget Adipurush, Bramhastra: ₹400-700 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Star fees (SRK/Salman/Aamir/Hrithik level)",
+      "value": "₹100-150 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Director + other lead actors",
+      "value": "₹30-50 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- VFX (very high for action films)",
+      "value": "₹40-80 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Music (composers, singers, recording)",
+      "value": "₹10-15 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Locations + sets",
+      "value": "₹40-60 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Crew + technicians + below-line",
+      "value": "₹25-40 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Post-production (editing, sound mixing, color)",
+      "value": "₹10-20 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + promotion",
+      "value": "₹50-80 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Star fees (SRK/Salman/Aamir/Hrithik level): ₹100-150 Cr.",
+    "- Director + other lead actors: ₹30-50 Cr.",
+    "- VFX (very high for action films): ₹40-80 Cr.",
+    "- Music (composers, singers, recording): ₹10-15 Cr.",
+    "- Locations + sets: ₹40-60 Cr.",
+    "- Crew + technicians + below-line: ₹25-40 Cr.",
+    "- Post-production (editing, sound mixing, color): ₹10-20 Cr.",
+    "- Marketing + promotion: ₹50-80 Cr.",
+    "Total budget: ₹300-450 Cr for a blockbuster.",
+    "Pathaan: ~₹250 Cr; Jawan: ~₹300 Cr; Animal: ~₹100 Cr (low budget hit)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Mega-budget Adipurush, Bramhastra: ₹400-700 Cr."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "questionId": "marketing-90",
+  "domain": "marketing",
+  "question": "Estimate the annual revenue of a successful Indian SaaS startup at ARR scale (~₹100 Cr ARR).",
+  "idealClarificationQuestions": [
+    "Annual Recurring Revenue ~₹100 Cr Indian SaaS company? Yes.",
+    "Including non-recurring revenue (one-time fees, services)? Yes — total revenue.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "ARR + non-recurring."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Recognized revenue from ARR (depends on contract timing — but mostly ARR ≈ recognized for steady state)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Plus one-time setup / implementation fees (~10-15% of ARR for B2B SaaS): ~₹12 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total revenue at ₹100 Cr ARR: ~₹120-125 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Indian SaaS at this scale: Zoho ARR ₹4,000+ Cr; Freshworks ARR ~$600M (₹5,000 Cr); Postman ~$200M; Razorpay (also fintech) ~$300M+."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "ARR",
+      "value": "₹100 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus professional services / consulting attached",
+      "value": "~₹8-10 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue at ₹100 Cr ARR",
+      "value": "~₹120-125 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indian SaaS at this scale",
+      "value": "Zoho ARR ₹4,000+ Cr; Freshworks ARR ~$600M (₹5,000 Cr); Postman ~$200M; Razorpay (also fintech) ~$300M+.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "ARR: ₹100 Cr.",
+    "Plus one-time setup / implementation fees (~10-15% of ARR for B2B SaaS): ~₹12 Cr.",
+    "Plus professional services / consulting attached: ~₹8-10 Cr.",
+    "Total revenue at ₹100 Cr ARR: ~₹120-125 Cr.",
+    "Indian SaaS at this scale: Zoho ARR ₹4,000+ Cr; Freshworks ARR ~$600M (₹5,000 Cr); Postman ~$200M; Razorpay (also fintech) ~$300M+."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Indian SaaS at this scale: Zoho ARR ₹4,000+ Cr; Freshworks ARR ~$600M (₹5,000 Cr); Postman ~$200M; Razorpay (also fintech) ~$300M+."
+  }
+}

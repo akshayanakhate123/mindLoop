@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-100",
+  "domain": "finance",
+  "question": "Estimate the cost of running a Tier 1 city Indian metro station per year (single station O&M).",
+  "idealClarificationQuestions": [
+    "Single Delhi Metro station O&M cost? Yes.",
+    "Includes power for AFC + ticketing + staff + cleaning? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-station cost stack."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per-station annual cost stack:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Cleaning + housekeeping (3 shifts): ~₹60 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Allocated central overhead + insurance: ~₹50 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹6-7 Cr per Tier 1 metro station per year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Station staff (~20-25 people",
+      "value": "station controllers + customer service + AFC operators): ~₹2.5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Power (lighting, AFC, escalators, AC)",
+      "value": "~₹1.5 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cleaning + housekeeping (3 shifts)",
+      "value": "~₹60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Security (CISF/private + CCTV monitoring)",
+      "value": "~₹1.2 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance (escalators, lifts, AFC, doors)",
+      "value": "~₹80 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Allocated central overhead + insurance",
+      "value": "~₹50 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per station annual O&M",
+      "value": "~₹6-7 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For Delhi Metro (~290 stations)",
+      "value": "total station O&M = ~₹1,800-2,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Station staff (~20-25 people: station controllers + customer service + AFC operators): ~₹2.5 Cr.",
+    "- Power (lighting, AFC, escalators, AC): ~₹1.5 Cr.",
+    "- Cleaning + housekeeping (3 shifts): ~₹60 lakh.",
+    "- Security (CISF/private + CCTV monitoring): ~₹1.2 Cr.",
+    "- Maintenance (escalators, lifts, AFC, doors): ~₹80 lakh.",
+    "- Allocated central overhead + insurance: ~₹50 lakh.",
+    "Total per station annual O&M: ~₹6-7 Cr.",
+    "For Delhi Metro (~290 stations): total station O&M = ~₹1,800-2,000 Cr.",
+    "Round: ~₹6-7 Cr per Tier 1 metro station per year."
+  ],
+  "finalAnswerRange": {
+    "low": "6",
+    "high": "7",
+    "ideal": "~₹6-7 Cr per Tier 1 metro station per year."
+  }
+}

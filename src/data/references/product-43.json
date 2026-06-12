@@ -1,0 +1,63 @@
+{
+  "questionId": "product-43",
+  "domain": "product",
+  "question": "Estimate the average Netflix viewing hours per Indian subscriber per month.",
+  "idealClarificationQuestions": [
+    "Per paying subscription account or per individual viewer (account often shared)? Per subscription account.",
+    "Includes TV + mobile + tablet viewing? Yes.",
+    "Indian subscribers in 2026? Yes.",
+    "Active subscribers only (ones who watched at least once)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: typical viewing pattern for Indian subscribers."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Netflix subscribers (active): ~10M households (mobile-only and HD plans)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average household has ~3 viewers (one shared account)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average viewer watches: ~25-30 mins/day on Netflix specifically (lower than YouTube — episodic)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Per subscription account (3 viewers): ~75-90 mins/day = ~1.4 hours/day = ~42 hours/month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Netflix subscribers (active)",
+      "value": "~10M households (mobile-only and HD plans).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average viewer watches",
+      "value": "~25-30 mins/day on Netflix specifically (lower than YouTube — episodic).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per subscription account (3 viewers)",
+      "value": "~75-90 mins/day = ~1.4 hours/day = ~42 hours/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Per subscription account (3 viewers): ~75-90 mins/day = ~1.4 hours/day = ~42 hours/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Per subscription account (3 viewers): ~75-90 mins/day = ~1.4 hours/day = ~42 hours/month."
+  }
+}

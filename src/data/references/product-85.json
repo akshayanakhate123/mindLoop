@@ -1,0 +1,79 @@
+{
+  "questionId": "product-85",
+  "domain": "product",
+  "question": "Estimate the EV charging stations India needs by 2030 to support EV adoption.",
+  "idealClarificationQuestions": [
+    "Public charging stations (DC fast + AC slow) or include private home chargers? Public only.",
+    "By 2030? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total EVs on road by 2030 / EVs per charger ratio."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "EV stock by 2030 (cumulative on-road): ~30-40M EVs (mostly 2W and 3W; ~3-4M cars)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "For cars + 3W (need public charging more): ~7M needs serviceable public charging."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of which DC fast (highway, public): ~80K; AC public: ~310K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: India needs ~3.5-4 lakh public EV charging points by 2030."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "EV stock by 2030 (cumulative on-road)",
+      "value": "~30-40M EVs (mostly 2W and 3W; ~3-4M cars).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Charger-to-EV ratio benchmark",
+      "value": "1:15-20 (India target lower than global; many EV 2W charge at home).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "For cars + 3W (need public charging more)",
+      "value": "~7M needs serviceable public charging.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Public chargers needed",
+      "value": "7M / 18 = ~390K chargers.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which DC fast (highway, public)",
+      "value": "~80K; AC public: ~310K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "India needs ~3.5-4 lakh public EV charging points by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "For cars + 3W (need public charging more): ~7M needs serviceable public charging.",
+    "Public chargers needed: 7M / 18 = ~390K chargers.",
+    "Round: India needs ~3.5-4 lakh public EV charging points by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "3.5",
+    "high": "4",
+    "ideal": "India needs ~3.5-4 lakh public EV charging points by 2030."
+  }
+}

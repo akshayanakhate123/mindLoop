@@ -1,0 +1,76 @@
+{
+  "questionId": "generalist-43",
+  "domain": "generalist",
+  "question": "Estimate the daily LPG cylinder consumption in India.",
+  "idealClarificationQuestions": [
+    "Domestic cooking gas cylinders (14.2 kg) refilled per day? Yes.",
+    "Includes commercial cylinders (19 kg)? Mention separately.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total connections × refill frequency."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total domestic LPG connections: ~32 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average household refill frequency: ~7 cylinders/year (rural) to ~10 (urban) = blended 8-9 cylinders/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily: ~74 lakh refills/day = ~7.4 million cylinders refilled per day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus commercial (19 kg) cylinders: ~30-40 lakh refills/year = ~10K/day."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total domestic LPG connections",
+      "value": "~32 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average household refill frequency",
+      "value": "~7 cylinders/year (rural) to ~10 (urban) = blended 8-9 cylinders/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual cylinder refills",
+      "value": "32 crore × 8.5 = ~270 crore refills/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~74 lakh refills/day = ~7.4 million cylinders refilled per day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus commercial (19 kg) cylinders",
+      "value": "~30-40 lakh refills/year = ~10K/day.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total domestic LPG connections: ~32 crore.",
+    "Average household refill frequency: ~7 cylinders/year (rural) to ~10 (urban) = blended 8-9 cylinders/year.",
+    "Annual cylinder refills: 32 crore × 8.5 = ~270 crore refills/year.",
+    "Daily: ~74 lakh refills/day = ~7.4 million cylinders refilled per day.",
+    "Plus commercial (19 kg) cylinders: ~30-40 lakh refills/year = ~10K/day."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus commercial (19 kg) cylinders: ~30-40 lakh refills/year = ~10K/day."
+  }
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "id": "marketing-1",
+    "domain": "marketing",
+    "question": "Estimate the reach of an Instagram campaign targeting Indian college students with a ₹50 lakh budget.",
+    "hint": "Budget / CPM × 1000 = impressions; impressions × frequency-cap-adjusted reach.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-2",
+    "domain": "marketing",
+    "question": "How many people in India might click on a cricket-related ad during IPL?",
+    "hint": "IPL impressions × CTR (click-through rate).",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-3",
+    "domain": "marketing",
+    "question": "Estimate impressions for a beauty brand campaign on YouTube India with a ₹2 Cr budget.",
+    "hint": "Budget / CPM = impressions, segmented by ad format.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-4",
+    "domain": "marketing",
+    "question": "Estimate the TV reach (cumulative) of a 30-day prime-time TVC campaign on Hindi GEC channels.",
+    "hint": "GRP = Reach × Frequency. Solve for reach.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-5",
+    "domain": "marketing",
+    "question": "Estimate the unique reach of a hoarding (OOH) campaign on Mumbai's Western Express Highway.",
+    "hint": "Daily traffic × campaign duration × unique-passenger conversion.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-6",
+    "domain": "marketing",
+    "question": "Estimate the radio listenership reach of an FM ad campaign in Bengaluru.",
+    "hint": "FM listener base × campaign GRP-equivalent reach.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-7",
+    "domain": "marketing",
+    "question": "Estimate the impressions of a Google Search campaign for 'best running shoes' targeted at India.",
+    "hint": "Search volume × ad coverage × top-bidder share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-8",
+    "domain": "marketing",
+    "question": "Estimate the reach of a regional Tamil-language influencer campaign with 20 mid-tier influencers (100K-1M followers each).",
+    "hint": "Sum of follower bases × engagement reach × deduplication.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-9",
+    "domain": "marketing",
+    "question": "Estimate the reach of a print ad in Times of India (full-page colour, all India editions).",
+    "hint": "Circulation × readers per copy × ad-noticing rate.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-10",
+    "domain": "marketing",
+    "question": "Estimate the campaign reach of a cinema ad (in-theatre slide + video) running in 800 multiplex screens for 2 weeks.",
+    "hint": "Footfall per screen × screens × campaign duration.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-11",
+    "domain": "marketing",
+    "question": "Estimate the reach of a WhatsApp Business broadcast to 5 lakh customers.",
+    "hint": "Delivery rate × open rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-12",
+    "domain": "marketing",
+    "question": "Estimate the email campaign reach for an Indian D2C brand with 10 lakh email database.",
+    "hint": "Database × deliverability × open rate.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-13",
+    "domain": "marketing",
+    "question": "Estimate the unique reach of a Twitter/X campaign with ₹20 lakh budget targeting Indian working professionals.",
+    "hint": "Budget / CPM = impressions; impressions / frequency = reach.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-14",
+    "domain": "marketing",
+    "question": "Estimate the reach of an Amazon India sponsored product ad campaign for a new face cream launch.",
+    "hint": "Budget / CPC × CTR-implied impressions.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-15",
+    "domain": "marketing",
+    "question": "Estimate the unique reach of a sponsored event (e.g., Filmfare or IIFA) for a brand sponsor.",
+    "hint": "Multi-platform reach: TV + OTT + social.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-16",
+    "domain": "marketing",
+    "question": "Estimate the YouTube views of a viral Indian ad commercial in its first month.",
+    "hint": "Paid push for first 7 days + organic virality decay model.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-17",
+    "domain": "marketing",
+    "question": "Estimate the cumulative reach of a 7-day digital campaign on Hotstar/JioCinema for a movie launch.",
+    "hint": "Budget / CPM = impressions; multiplied across formats.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-18",
+    "domain": "marketing",
+    "question": "Estimate the reach of a regional newspaper insert (advertising flyer dropped inside the paper) in Pune.",
+    "hint": "Combined circulation × readers per copy × insert-noticing rate.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-19",
+    "domain": "marketing",
+    "question": "Estimate the reach of a Spotify audio ad campaign in India.",
+    "hint": "Budget / CPM = impressions; impressions / frequency = reach.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-20",
+    "domain": "marketing",
+    "question": "Estimate the brand recall reach of a celebrity-endorsed TVC featuring a top-tier star.",
+    "hint": "TV reach + digital reach + earned media (PR) reach.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-21",
+    "domain": "marketing",
+    "question": "Estimate the social media reach of a viral hashtag movement during a brand crisis or controversy.",
+    "hint": "Trending hashtag dynamics: organic mentions × follower reach × media amplification.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-22",
+    "domain": "marketing",
+    "question": "Estimate the unique reach of an in-app push notification campaign sent to 5 crore Swiggy users.",
+    "hint": "Sent → delivered → seen → opened.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-23",
+    "domain": "marketing",
+    "question": "Estimate the reach of a Swiggy/Zomato 'mega sale' day campaign across Indian tier-1 cities.",
+    "hint": "Multi-channel: app users + paid social + earned (organic).",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-24",
+    "domain": "marketing",
+    "question": "Estimate the reach of a LinkedIn sponsored ad campaign for a B2B SaaS product targeting Indian CXOs.",
+    "hint": "TAM × CPM × frequency.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-25",
+    "domain": "marketing",
+    "question": "Estimate the reach of a multi-channel campaign for a product launch combining TV, digital, OOH, and PR.",
+    "hint": "Sum reach by channel; deduplicate via overlap multiplier.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-26",
+    "domain": "marketing",
+    "question": "Out of 1 crore app installs for a fintech app in India, how many will become paying users?",
+    "hint": "Standard fintech funnel: Install → Open → Register/KYC → Activate → Transact → Pay.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-27",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate for a D2C skincare brand on its own website (visitor → purchase).",
+    "hint": "Industry benchmarks for D2C skincare CR.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-28",
+    "domain": "marketing",
+    "question": "How many people who see a Zomato push notification actually order?",
+    "hint": "Push delivery → seen → tap → order funnel.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-29",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate for an Amazon India product detail page (PDP) for an electronics item.",
+    "hint": "Standard e-commerce CR by category.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-30",
+    "domain": "marketing",
+    "question": "Estimate the email-to-purchase conversion rate for an Indian e-commerce brand.",
+    "hint": "Email funnel: send → deliver → open → click → buy.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-31",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate for a Meta (Instagram + Facebook) ad campaign for a D2C apparel brand.",
+    "hint": "Click → land → purchase funnel.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-32",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate from organic Instagram followers to website visitors for a D2C brand.",
+    "hint": "Followers → see content → engage → click out.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-33",
+    "domain": "marketing",
+    "question": "Estimate the funnel from app store impression to install for an Indian app on Google Play.",
+    "hint": "Standard Play Store funnel.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-34",
+    "domain": "marketing",
+    "question": "How many users who add a product to Flipkart cart actually complete the purchase?",
+    "hint": "Cart abandonment industry data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-35",
+    "domain": "marketing",
+    "question": "Estimate the OTP-to-conversion drop-off in a fintech KYC funnel.",
+    "hint": "Step-by-step funnel decay.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-36",
+    "domain": "marketing",
+    "question": "Estimate the trial-to-paid conversion for an Indian SaaS product (e.g., a productivity / CRM tool).",
+    "hint": "SaaS funnel: signup → trial activation → engagement → conversion.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-37",
+    "domain": "marketing",
+    "question": "Estimate the website visitor-to-lead conversion rate for a B2B IT services company in India.",
+    "hint": "B2B SaaS/services typical CRs.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-38",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate from app install to first purchase on Meesho.",
+    "hint": "App funnel for value-conscious Tier 2/3 user.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-39",
+    "domain": "marketing",
+    "question": "Estimate the click-to-call conversion rate for a real estate ad on Google in India.",
+    "hint": "Click → engagement step → call.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-40",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate from EdTech app installs to paid course enrollments (post-2024 reality, after the bust).",
+    "hint": "Updated post-bust conversion rates.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-41",
+    "domain": "marketing",
+    "question": "Estimate the OOH (hoarding) impression-to-store-visit conversion rate.",
+    "hint": "Industry estimates with high variance.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-42",
+    "domain": "marketing",
+    "question": "Estimate the lead-to-customer conversion rate for an Indian insurance digital aggregator (Policybazaar, Acko).",
+    "hint": "Lead → contacted → quote shared → policy bought.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-43",
+    "domain": "marketing",
+    "question": "Estimate the YouTube ad view-to-website-visit conversion rate.",
+    "hint": "View → click → land.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-44",
+    "domain": "marketing",
+    "question": "Estimate the abandoned-cart recovery email conversion rate for an Indian D2C brand.",
+    "hint": "Sequence open + click + purchase.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-45",
+    "domain": "marketing",
+    "question": "Estimate the post-call (telesales) conversion rate for a financial services product in India.",
+    "hint": "Standard telesales funnel for financial products.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-46",
+    "domain": "marketing",
+    "question": "Estimate the freemium-to-paid conversion rate for a streaming service in India (e.g., Spotify).",
+    "hint": "India price sensitivity vs global.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-47",
+    "domain": "marketing",
+    "question": "Estimate the direct mail (physical mailer / catalog) conversion rate for an Indian premium retail brand.",
+    "hint": "Direct mail conversion economics.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-48",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate for a referral program at an Indian fintech (e.g., refer a friend at PhonePe / CRED / Groww).",
+    "hint": "Sharer-to-completion funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-49",
+    "domain": "marketing",
+    "question": "Estimate the conversion rate from a first-time visitor to repeat purchase for an Indian D2C brand.",
+    "hint": "First purchase → satisfaction → repeat trigger → repeat.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-50",
+    "domain": "marketing",
+    "question": "Estimate the social ad to in-store walk-in conversion (omnichannel attribution) for a fashion brand.",
+    "hint": "Ad-to-walk-in lift via location data.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-51",
+    "domain": "marketing",
+    "question": "Estimate the size of premium coffee consumers in India (Starbucks/Blue Tokai/Third Wave/specialty).",
+    "hint": "Urban affluent funnel: total urban → coffee-drinkers → premium price-acceptors.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-52",
+    "domain": "marketing",
+    "question": "How many Indians would buy luxury sneakers above ₹10,000?",
+    "hint": "Affluent urban funnel.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-53",
+    "domain": "marketing",
+    "question": "Estimate the market size for vegan food (plant-based) in Indian metro cities.",
+    "hint": "Population × adoption rate × annual spend.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-54",
+    "domain": "marketing",
+    "question": "Estimate the number of Indian millennials (born 1981-1996) likely to invest in mutual funds.",
+    "hint": "Millennial population × investing penetration.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-55",
+    "domain": "marketing",
+    "question": "Estimate the size of the high-end electric car buyer segment in India (cars priced ₹40 lakh+).",
+    "hint": "Luxury car buyer × EV adoption %.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-56",
+    "domain": "marketing",
+    "question": "Estimate the addressable market size for organic / clean-label food products in urban India.",
+    "hint": "Affluent urban × organic-buying penetration × annual spend.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-57",
+    "domain": "marketing",
+    "question": "Estimate the market for premium pet food and accessories in India.",
+    "hint": "Pet households × premium share × ARPU.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-58",
+    "domain": "marketing",
+    "question": "Estimate the LGBTQ+ consumer market size in Indian metros.",
+    "hint": "Population × LGBTQ+ share × out / addressable share × disposable income.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-59",
+    "domain": "marketing",
+    "question": "Estimate the size of the gaming-PC / high-end PC gamer segment in India.",
+    "hint": "Total PC gamer base × high-end share.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-60",
+    "domain": "marketing",
+    "question": "Estimate the size of the Indian crypto investor segment (post-2024 tax + RBI cautions).",
+    "hint": "Total crypto-aware × active investor share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-61",
+    "domain": "marketing",
+    "question": "Estimate the size of the NRI (Non-Resident Indian) consumer market for India-origin products and services.",
+    "hint": "NRI population × per-capita India-origin spend.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-62",
+    "domain": "marketing",
+    "question": "Estimate the size of the senior-citizen consumer segment in India (60+) for organized retail and digital products.",
+    "hint": "Senior citizen population × consumer-active share × annual spend.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-63",
+    "domain": "marketing",
+    "question": "Estimate the customer segment for luxury wristwatches (₹50,000+) in India.",
+    "hint": "HNI + UHNI buyer count × purchase frequency.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-64",
+    "domain": "marketing",
+    "question": "Estimate the size of the working women segment in India (formal employment) and their consumer market.",
+    "hint": "Working women population × disposable income × consumer spend share.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-65",
+    "domain": "marketing",
+    "question": "Estimate the size of the Indian Gen Z consumer segment (born 1997-2012).",
+    "hint": "Population × earning/spending share × spend per individual.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-66",
+    "domain": "marketing",
+    "question": "Estimate the size of the Indian Muslim consumer market (specific products + halal certified).",
+    "hint": "Muslim population × purchasing power × halal-specific share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-67",
+    "domain": "marketing",
+    "question": "Estimate the size of the Indian fitness-enthusiast segment (gym + sportswear + supplements).",
+    "hint": "Active fitness population × annual spend.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-68",
+    "domain": "marketing",
+    "question": "Estimate the Indian audiophile / premium audio product buyer segment (₹15,000+ headphones / speakers).",
+    "hint": "Affluent + tech-aware × audio enthusiast share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-69",
+    "domain": "marketing",
+    "question": "Estimate the size of the digital-native (mobile-first) consumer segment in Tier 3 + 4 India.",
+    "hint": "Tier 3/4 population × smartphone × app-active.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-70",
+    "domain": "marketing",
+    "question": "Estimate the addressable market for premium SUV buyers in India (cars ₹20-50 lakh).",
+    "hint": "Total SUV sales × premium-segment share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-71",
+    "domain": "marketing",
+    "question": "Estimate the size of the wedding-spending consumer segment (premium weddings >₹50 lakh).",
+    "hint": "Total weddings × premium spend share.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-72",
+    "domain": "marketing",
+    "question": "Estimate the consumer segment for premium streaming subscriptions (₹500+/month, Netflix-Hotstar premium, Apple TV+, premium music).",
+    "hint": "Affluent HH × premium streaming penetration.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-73",
+    "domain": "marketing",
+    "question": "Estimate the size of the home-cook / cooking enthusiast consumer segment in India.",
+    "hint": "Homemaker + working women + male cooks × enthusiast share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-74",
+    "domain": "marketing",
+    "question": "Estimate the size of the Indian Diaspora-marketing addressable segment (urban Indians with abroad-relevant intent — visa, study abroad, travel, remittances).",
+    "hint": "Funnel by category.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-75",
+    "domain": "marketing",
+    "question": "Estimate the size of the Indian rural consumer segment for FMCG.",
+    "hint": "Rural population × per-capita FMCG spend.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-76",
+    "domain": "marketing",
+    "question": "Estimate the revenue generated by IPL sponsorship and ads in a single season.",
+    "hint": "Stack revenue layers.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-77",
+    "domain": "marketing",
+    "question": "How much revenue can a new fitness app generate in Year 1 in India?",
+    "hint": "Acquisition → conversion → ARPU.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-78",
+    "domain": "marketing",
+    "question": "Estimate the monthly revenue of a multiplex (single PVR INOX) in Mumbai.",
+    "hint": "Capacity × occupancy × pricing + F&B uplift.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-79",
+    "domain": "marketing",
+    "question": "Estimate the annual revenue of a successful YouTube creator in India with 5M subscribers.",
+    "hint": "Multiple revenue streams.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-80",
+    "domain": "marketing",
+    "question": "Estimate the annual revenue of an Indian D2C beauty brand with ₹150 Cr GMV.",
+    "hint": "GMV to revenue translation.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-81",
+    "domain": "marketing",
+    "question": "Estimate the annual ad revenue of Indian print media industry.",
+    "hint": "Industry size data.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-82",
+    "domain": "marketing",
+    "question": "Estimate the average revenue per app install (LTV) for a fintech app in India.",
+    "hint": "Revenue per paying user × paying conversion.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-83",
+    "domain": "marketing",
+    "question": "Estimate the annual advertising revenue of Meta (Facebook + Instagram + WhatsApp) from India.",
+    "hint": "Estimate from India advertiser activity.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-84",
+    "domain": "marketing",
+    "question": "Estimate the revenue of a successful Indian D2C food brand (e.g., Yoga Bar, Slurrp Farm, Wholefoods-tier).",
+    "hint": "Successful D2C food brand revenue benchmarks.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-85",
+    "domain": "marketing",
+    "question": "Estimate the cost per acquired customer (CAC) for an Indian online lending platform.",
+    "hint": "Acquisition funnel cost.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-86",
+    "domain": "marketing",
+    "question": "Estimate the brand value premium for an Indian premium hospitality brand (e.g., Oberoi, Taj, ITC).",
+    "hint": "Compare branded vs unbranded.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-87",
+    "domain": "marketing",
+    "question": "Estimate the annual revenue of Decathlon India.",
+    "hint": "Store count × per-store revenue + online.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-88",
+    "domain": "marketing",
+    "question": "Estimate the value of celebrity endorsement fees for top Indian celebrities (Shah Rukh Khan / Virat Kohli class).",
+    "hint": "Per-deal pricing × deals per year.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-89",
+    "domain": "marketing",
+    "question": "Estimate the cost per minute of TV ad airtime during IPL prime time.",
+    "hint": "Industry rate cards.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-90",
+    "domain": "marketing",
+    "question": "Estimate the annual revenue of a successful Indian SaaS startup at ARR scale (~₹100 Cr ARR).",
+    "hint": "ARR + non-recurring.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-91",
+    "domain": "marketing",
+    "question": "Estimate the GMV per customer per year on Amazon India for a Prime member.",
+    "hint": "Total Prime GMV / total Prime members.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-92",
+    "domain": "marketing",
+    "question": "Estimate the annual ad revenue of YouTube from India.",
+    "hint": "Total Indian digital ad market × YouTube share.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-93",
+    "domain": "marketing",
+    "question": "Estimate the average revenue per show on a successful Indian Hindi GEC TV serial.",
+    "hint": "Per-episode advertising slot value.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-94",
+    "domain": "marketing",
+    "question": "Estimate the value of an Instagram reel post by a top Indian celebrity (10M+ followers).",
+    "hint": "Influencer marketing rates for top tier.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-95",
+    "domain": "marketing",
+    "question": "Estimate the customer acquisition cost (CAC) for an Indian D2C apparel brand.",
+    "hint": "Marketing spend / new customers.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-96",
+    "domain": "marketing",
+    "question": "Estimate the revenue impact of a 1% improvement in conversion rate for an Amazon India seller.",
+    "hint": "Linear lift in revenue from conversion improvement.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-97",
+    "domain": "marketing",
+    "question": "Estimate the annual revenue of a single-screen movie cinema in a Tier 2 Indian city.",
+    "hint": "Capacity × occupancy × pricing.",
+    "difficulty": "Medium",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-98",
+    "domain": "marketing",
+    "question": "Estimate the annual revenue of an Indian online aggregator listing fee model (Justdial / Sulekha-style).",
+    "hint": "Listed businesses × paid conversion × annual ARPU.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-99",
+    "domain": "marketing",
+    "question": "Estimate the annual marketing spend of HUL (Hindustan Unilever) in India.",
+    "hint": "Revenue × A&P ratio.",
+    "difficulty": "Hard",
+    "category": "Guesstimate"
+  },
+  {
+    "id": "marketing-100",
+    "domain": "marketing",
+    "question": "Estimate the revenue impact of a Bollywood A-lister releasing a movie in opening weekend (box office only).",
+    "hint": "Screens × opening weekend occupancy × ticket price.",
+    "difficulty": "Easy",
+    "category": "Guesstimate"
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-92",
+  "domain": "finance",
+  "question": "Estimate the cost of running an Indian college campus (per student annual).",
+  "idealClarificationQuestions": [
+    "Private engineering college (Tier 2 quality, e.g., VIT / SRM tier)? Yes.",
+    "Per-student annual operating cost? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total cost / total students."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mid-tier private engineering college: ~15,000 students."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Infrastructure maintenance (campus, buildings, hostels): ~₹20 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Other (research, contingency, accreditation): ~₹10 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Margin: ~40-50% (private engineering is a profitable business)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mid-tier private engineering college",
+      "value": "~15,000 students.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Faculty salaries (~700 faculty × ₹8-15L average)",
+      "value": "~₹85 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Non-teaching staff (admin, lab assistants, security, housekeeping)",
+      "value": "~₹25 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Infrastructure maintenance (campus, buildings, hostels)",
+      "value": "~₹20 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Utilities (power, water, internet)",
+      "value": "~₹12 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Library + labs + equipment",
+      "value": "~₹8 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Student services (medical, transport, mess)",
+      "value": "~₹6 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing + admissions",
+      "value": "~₹10 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Faculty salaries (~700 faculty × ₹8-15L average): ~₹85 Cr.",
+    "- Non-teaching staff (admin, lab assistants, security, housekeeping): ~₹25 Cr.",
+    "- Infrastructure maintenance (campus, buildings, hostels): ~₹20 Cr.",
+    "- Utilities (power, water, internet): ~₹12 Cr.",
+    "- Library + labs + equipment: ~₹8 Cr.",
+    "- Student services (medical, transport, mess): ~₹6 Cr.",
+    "- Marketing + admissions: ~₹10 Cr.",
+    "- Other (research, contingency, accreditation): ~₹10 Cr.",
+    "Total annual operating cost: ~₹175 Cr.",
+    "Per-student annual cost: ₹175 Cr / 15,000 = ~₹1.15 lakh."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Margin: ~40-50% (private engineering is a profitable business)."
+  }
+}

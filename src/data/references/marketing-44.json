@@ -1,0 +1,85 @@
+{
+  "questionId": "marketing-44",
+  "domain": "marketing",
+  "question": "Estimate the abandoned-cart recovery email conversion rate for an Indian D2C brand.",
+  "idealClarificationQuestions": [
+    "Email sent to user who added to cart but didn't buy? Yes.",
+    "Single recovery email or sequence? Sequence of 3 (T+1hr, T+24hrs, T+72hrs).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sequence open + click + purchase."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Cart abandoners: 1,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Email 2 (T+24hr): open ~25%, CTR ~6%, conv ~2% = ~5 recovered."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total recovered: ~24 carts out of 1,000 = ~2.4%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Average: ~2-3% cart recovery via email."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Cart abandoners",
+      "value": "1,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Email 1 (T+1hr)",
+      "value": "open rate ~30%, CTR ~8%, conversion ~3% of opens = ~9 recovered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Email 2 (T+24hr)",
+      "value": "open ~25%, CTR ~6%, conv ~2% = ~5 recovered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Email 3 (T+72hr) — usually with discount",
+      "value": "open ~22%, CTR ~10%, conv ~5% = ~10 recovered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total recovered",
+      "value": "~24 carts out of 1,000 = ~2.4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Best in class (with personalization, AI-driven)",
+      "value": "up to 5-7%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average",
+      "value": "~2-3% cart recovery via email.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Email 1 (T+1hr): open rate ~30%, CTR ~8%, conversion ~3% of opens = ~9 recovered.",
+    "Email 2 (T+24hr): open ~25%, CTR ~6%, conv ~2% = ~5 recovered.",
+    "Email 3 (T+72hr) — usually with discount: open ~22%, CTR ~10%, conv ~5% = ~10 recovered.",
+    "Total recovered: ~24 carts out of 1,000 = ~2.4%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average: ~2-3% cart recovery via email."
+  }
+}

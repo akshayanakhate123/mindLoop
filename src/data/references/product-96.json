@@ -1,0 +1,78 @@
+{
+  "questionId": "product-96",
+  "domain": "product",
+  "question": "Estimate the warehouse picking robots / automation Flipkart needs to scale to 5B annual orders by 2030.",
+  "idealClarificationQuestions": [
+    "Robotic pick + put + sortation systems? Yes.",
+    "By 2030? Yes.",
+    "5B annual orders target? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Scale current warehouse productivity and back into automation needed."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Current annual orders Flipkart: ~1.5B; ~25% automated picking-stages."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Without automation, would need 3.3x manpower (currently ~25K warehouse staff → 80K)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Robotic units needed: ~1 GTP (Goods-to-Person) robot per 5K-7K orders/day capacity."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus AGVs (automated guided vehicles) and sortation robots: ~3,000-4,000 units."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Current annual orders Flipkart",
+      "value": "~1.5B; ~25% automated picking-stages.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Target 2030",
+      "value": "5B orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "With automation reaching 70% of orders robotic-assisted",
+      "value": "incremental staff need is ~50% extra = ~37K total staff.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Robotic units needed",
+      "value": "~1 GTP (Goods-to-Person) robot per 5K-7K orders/day capacity.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily orders 2030",
+      "value": "~14M; 70% automated = 9.8M; robots needed: 9.8M / 6,000 = ~1,600 GTP robots.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus AGVs (automated guided vehicles) and sortation robots",
+      "value": "~3,000-4,000 units.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "With automation reaching 70% of orders robotic-assisted: incremental staff need is ~50% extra = ~37K total staff.",
+    "Daily orders 2030: ~14M; 70% automated = 9.8M; robots needed: 9.8M / 6,000 = ~1,600 GTP robots."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus AGVs (automated guided vehicles) and sortation robots: ~3,000-4,000 units."
+  }
+}

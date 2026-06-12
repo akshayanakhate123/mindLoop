@@ -1,0 +1,79 @@
+{
+  "questionId": "product-53",
+  "domain": "product",
+  "question": "Estimate how many Indians may adopt AI healthcare assistants (apps that triage / answer health queries) in 5 years.",
+  "idealClarificationQuestions": [
+    "AI healthcare assistant: app that lets you describe symptoms and get LLM-driven guidance, prescription support? Yes.",
+    "Active monthly users 5 years out (2031)? Yes.",
+    "Includes both standalone (Practo AI, Tata Health AI) and embedded (insurance app AI bots)? Yes.",
+    "All of India or urban only? Pan-India urban + Tier 2 (rural lags)."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: addressable population (smartphone, internet, healthcare-conscious) × adoption curve over 5 years."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian smartphone users by 2031: ~1B."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, healthcare-conscious (urban + Tier 2 + middle class+): ~35% = 140M as TAM."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "MAU adoption in 2031: ~40-55M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: 40-50M monthly active users of AI healthcare assistants in India by 2031."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian smartphone users by 2031",
+      "value": "~1B.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, comfortable using AI/chat for sensitive topics",
+      "value": "~40% = 400M (assumes ChatGPT-style adoption normalizes AI by then).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, healthcare-conscious (urban + Tier 2 + middle class+)",
+      "value": "~35% = 140M as TAM.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Realistic 5-year adoption (any usage, MAU)",
+      "value": "~30-40% of TAM.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "MAU adoption in 2031",
+      "value": "~40-55M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "40-50M monthly active users of AI healthcare assistants in India by 2031.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, comfortable using AI/chat for sensitive topics: ~40% = 400M (assumes ChatGPT-style adoption normalizes AI by then).",
+    "Of these, healthcare-conscious (urban + Tier 2 + middle class+): ~35% = 140M as TAM."
+  ],
+  "finalAnswerRange": {
+    "low": "40",
+    "high": "50",
+    "ideal": "40-50M monthly active users of AI healthcare assistants in India by 2031."
+  }
+}

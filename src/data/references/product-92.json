@@ -1,0 +1,76 @@
+{
+  "questionId": "product-92",
+  "domain": "product",
+  "question": "Estimate the IT infrastructure needed for IRCTC during Tatkal booking peak.",
+  "idealClarificationQuestions": [
+    "Concurrent users at 10:00 AM Tatkal peak (most contested 60 seconds)? Yes.",
+    "Single peak day, average month? Average.",
+    "All Tatkal classes (AC + sleeper)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Demand at peak Tatkal moment."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tatkal seats released daily: ~80,000-1,00,000 across all trains pan-India."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Peak first-30-second concurrent users: ~70% of all tatkal-trying users hit at 10:00:00 = ~10 lakh concurrent."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total concurrent peak: ~12-13 lakh users."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "IRCTC must support ~1.2-1.3 million concurrent users in the first minute of Tatkal."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tatkal seats released daily",
+      "value": "~80,000-1,00,000 across all trains pan-India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Demand",
+      "value": "supply ratio: ~10-15x = ~10-15 lakh users trying simultaneously.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Peak first-30-second concurrent users",
+      "value": "~70% of all tatkal-trying users hit at 10:00:00 = ~10 lakh concurrent.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus general bookings + status checks etc. happening at same time",
+      "value": "~2-3 lakh extra.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total concurrent peak",
+      "value": "~12-13 lakh users.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Demand:supply ratio: ~10-15x = ~10-15 lakh users trying simultaneously.",
+    "Peak first-30-second concurrent users: ~70% of all tatkal-trying users hit at 10:00:00 = ~10 lakh concurrent.",
+    "Plus general bookings + status checks etc. happening at same time: ~2-3 lakh extra.",
+    "Total concurrent peak: ~12-13 lakh users.",
+    "IRCTC must support ~1.2-1.3 million concurrent users in the first minute of Tatkal."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "IRCTC must support ~1.2-1.3 million concurrent users in the first minute of Tatkal."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "questionId": "marketing-37",
+  "domain": "marketing",
+  "question": "Estimate the website visitor-to-lead conversion rate for a B2B IT services company in India.",
+  "idealClarificationQuestions": [
+    "Lead = filled contact form / requested demo / RFP? Yes.",
+    "B2B IT services (mid-tier — not Infosys/TCS, but companies like Mindtree-equivalent)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "B2B SaaS/services typical CRs."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Website monthly visitors: 50,000 (base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Visitor-to-form-submission rate: ~0.8-1.5% (B2B services)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "SQL to deal closure: ~10-15%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Visitor-to-lead (any form): ~1%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Website monthly visitors",
+      "value": "50,000 (base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Avg time on site",
+      "value": "~2-3 min (research-mode).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Visitor-to-form-submission rate",
+      "value": "~0.8-1.5% (B2B services).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of form submissions, MQL (Marketing Qualified Lead — fits ICP)",
+      "value": "~50%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "MQL to SQL",
+      "value": "~30%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "SQL to deal closure",
+      "value": "~10-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net visitor-to-customer",
+      "value": "1% × 50% × 30% × 12% = ~0.018%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Visitor-to-lead (any form)",
+      "value": "~1%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Net visitor-to-customer: 1% × 50% × 30% × 12% = ~0.018%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Visitor-to-lead (any form): ~1%."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-57",
+  "domain": "marketing",
+  "question": "Estimate the market for premium pet food and accessories in India.",
+  "idealClarificationQuestions": [
+    "Premium = ₹1,500+/kg pet food + accessories above ₹2,000? Yes.",
+    "Pan-India pet owners? Yes.",
+    "Year 2026 annual market? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Pet households × premium share × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian pet dogs: ~2.5 crore (per generalist doc Q21); pet cats ~1 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, urban + Tier 2 with disposable income for pet care: ~50% = 1.25 crore HH."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average annual premium pet spend (food + grooming + accessories + vet): ~₹15,000-25,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹7,000-8,000 Cr Indian premium pet care market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian pet dogs",
+      "value": "~2.5 crore (per generalist doc Q21); pet cats ~1 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pet households",
+      "value": "~2.5 crore total.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, urban + Tier 2 with disposable income for pet care",
+      "value": "~50% = 1.25 crore HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, spending on premium pet products",
+      "value": "~30% = ~37 lakh HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual premium pet spend (food + grooming + accessories + vet)",
+      "value": "~₹15,000-25,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Premium market",
+      "value": "37 lakh × ₹20,000 = ~₹7,400 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹7,000-8,000 Cr Indian premium pet care market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian pet dogs: ~2.5 crore (per generalist doc Q21); pet cats ~1 crore.",
+    "Pet households: ~2.5 crore total.",
+    "Of these, urban + Tier 2 with disposable income for pet care: ~50% = 1.25 crore HH.",
+    "Of these, spending on premium pet products: ~30% = ~37 lakh HH.",
+    "Average annual premium pet spend (food + grooming + accessories + vet): ~₹15,000-25,000.",
+    "Premium market: 37 lakh × ₹20,000 = ~₹7,400 Cr.",
+    "Round: ~₹7,000-8,000 Cr Indian premium pet care market."
+  ],
+  "finalAnswerRange": {
+    "low": "7,000",
+    "high": "8,000",
+    "ideal": "~₹7,000-8,000 Cr Indian premium pet care market."
+  }
+}

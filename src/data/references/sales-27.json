@@ -1,0 +1,83 @@
+{
+  "questionId": "sales-27",
+  "domain": "sales",
+  "question": "Estimate the number of distributors Coca-Cola needs in Maharashtra to serve the state effectively.",
+  "idealClarificationQuestions": [
+    "Distributors (1-tier wholesalers, take bulk product from CC and resell to retailers)? Yes.",
+    "All Coca-Cola portfolio (Coke, Thums Up, Limca, Sprite, Maaza, water, juice)? Yes.",
+    "Maharashtra state? Yes (~13 crore population).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total retail outlets to be served / outlets per distributor."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Maharashtra kiranas: ~15-16 lakh (state population ~9% × national kirana count)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Plus general trade other (paan shops, sweets, juice corners, restaurants): ~10 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Distributors needed: 26L / 700 = ~3,700 distributors."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus ~300 specialized (cold-chain frozen products like Maaza Aam Panna)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Maharashtra kiranas",
+      "value": "~15-16 lakh (state population ~9% × national kirana count).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus modern trade + HoReCa + institutional outlets",
+      "value": "~25,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total outlets to serve",
+      "value": "~25-27 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average outlets per Coca-Cola distributor",
+      "value": "~600-800 retail outlets covered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Distributors needed",
+      "value": "26L / 700 = ~3,700 distributors.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But CC categorizes",
+      "value": "~200 super-distributors / WCEDS (warehouse-cum-distribution centers) at top + ~3,500 second-tier route distributors.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Maharashtra kiranas: ~15-16 lakh (state population ~9% × national kirana count).",
+    "Plus modern trade + HoReCa + institutional outlets: ~25,000.",
+    "Plus general trade other (paan shops, sweets, juice corners, restaurants): ~10 lakh.",
+    "Total outlets to serve: ~25-27 lakh.",
+    "Distributors needed: 26L / 700 = ~3,700 distributors.",
+    "But CC categorizes: ~200 super-distributors / WCEDS (warehouse-cum-distribution centers) at top + ~3,500 second-tier route distributors."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus ~300 specialized (cold-chain frozen products like Maaza Aam Panna)."
+  }
+}

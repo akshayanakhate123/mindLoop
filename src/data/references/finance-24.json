@@ -1,0 +1,86 @@
+{
+  "questionId": "finance-24",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Lenskart (Indian operations).",
+  "idealClarificationQuestions": [
+    "Lenskart India revenue: online + offline stores + premium brands (Owndays acquired)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Store + online channel mix."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Lenskart India stores: ~2,200."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Store revenue: ~₹2,640 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus Owndays (Japanese premium brand, Indian + international ops): ~₹600 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total India: ~₹4,500-5,000 Cr; global ~₹5,500-6,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Lenskart India stores",
+      "value": "~2,200.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per-store revenue",
+      "value": "~₹1.2 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Store revenue",
+      "value": "~₹2,640 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Online revenue",
+      "value": "~₹2,000 Cr (40% of business is online).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus Owndays (Japanese premium brand, Indian + international ops)",
+      "value": "~₹600 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus international (Lenskart Middle East, SEA)",
+      "value": "~₹700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total India",
+      "value": "~₹4,500-5,000 Cr; global ~₹5,500-6,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Average per-store revenue: ~₹1.2 Cr/year.",
+    "Store revenue: ~₹2,640 Cr.",
+    "Online revenue: ~₹2,000 Cr (40% of business is online).",
+    "Plus Owndays (Japanese premium brand, Indian + international ops): ~₹600 Cr.",
+    "Plus international (Lenskart Middle East, SEA): ~₹700 Cr.",
+    "Total India: ~₹4,500-5,000 Cr; global ~₹5,500-6,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total India: ~₹4,500-5,000 Cr; global ~₹5,500-6,000 Cr."
+  }
+}

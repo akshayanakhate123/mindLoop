@@ -1,0 +1,74 @@
+{
+  "questionId": "product-86",
+  "domain": "product",
+  "question": "Estimate the call volume on a typical Indian fintech IVR during salary day (last working day of month).",
+  "idealClarificationQuestions": [
+    "Major fintech (e.g., PhonePe / GPay / Paytm) with 250M MAU? Yes.",
+    "Salary day = month-end peak with rent, transfer, EMI rush? Yes.",
+    "Voice calls into IVR + agent? Yes.",
+    "Peak hour or full-day volume? Both — flag peak hour."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Average daily support contact rate × salary-day uplift × voice channel share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Average daily support contacts (calculated in Q78): ~100K."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Salary day total contacts: ~170K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Salary day calls: ~85K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Peak hour (10am-12pm — start of day, customer panic on transfers): ~25-30% concentrated = ~22K-25K calls in 1 peak hour."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average daily support contacts (calculated in Q78)",
+      "value": "~100K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Salary day total contacts",
+      "value": "~170K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Voice (IVR + agent) channel share",
+      "value": "~50% (rest chat/email).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Salary day calls",
+      "value": "~85K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Peak hour (10am-12pm — start of day, customer panic on transfers)",
+      "value": "~25-30% concentrated = ~22K-25K calls in 1 peak hour.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Voice (IVR + agent) channel share: ~50% (rest chat/email).",
+    "Peak hour (10am-12pm — start of day, customer panic on transfers): ~25-30% concentrated = ~22K-25K calls in 1 peak hour."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Peak hour (10am-12pm — start of day, customer panic on transfers): ~25-30% concentrated = ~22K-25K calls in 1 peak hour."
+  }
+}

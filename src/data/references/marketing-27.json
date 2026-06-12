@@ -1,0 +1,79 @@
+{
+  "questionId": "marketing-27",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate for a D2C skincare brand on its own website (visitor → purchase).",
+  "idealClarificationQuestions": [
+    "Conversion = unique visitor placing at least one order? Yes.",
+    "Brand: mid-tier D2C skincare (Mamaearth, Plum, Minimalist, Sugar)? Yes.",
+    "Source mix: paid + organic + social + email? All sources blended.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industry benchmarks for D2C skincare CR."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian D2C beauty website conversion rates (mid-funnel + bottom-funnel mixed):"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Organic search (high intent): ~3-4%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Returning visitors (any channel): ~5-6%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "First-time visitor conversion: ~1.2%; repeat visitor: ~5%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Paid traffic (Meta/Google ads, low-intent)",
+      "value": "~1.0-1.5%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Organic search (high intent)",
+      "value": "~3-4%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Email + WhatsApp existing customers",
+      "value": "~6-8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Returning visitors (any channel)",
+      "value": "~5-6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Blended average",
+      "value": "~2-2.5% (paid traffic dominates volume).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "First-time visitor conversion",
+      "value": "~1.2%; repeat visitor: ~5%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian D2C beauty website conversion rates (mid-funnel + bottom-funnel mixed):",
+    "- Email + WhatsApp existing customers: ~6-8%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "First-time visitor conversion: ~1.2%; repeat visitor: ~5%."
+  }
+}

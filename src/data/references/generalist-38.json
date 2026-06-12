@@ -1,0 +1,79 @@
+{
+  "questionId": "generalist-38",
+  "domain": "generalist",
+  "question": "Estimate the daily electricity consumption in India (in million units / GWh).",
+  "idealClarificationQuestions": [
+    "Total electricity consumed = generated minus transmission losses, all sectors? Yes.",
+    "Pan-India? Yes.",
+    "Average day, FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual generation / 365."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India annual electricity generation FY26: ~1,750-1,800 BU (billion units) or TWh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Industry: ~40%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Agriculture: ~17%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Commercial + others: ~18%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India annual electricity generation FY26",
+      "value": "~1,750-1,800 BU (billion units) or TWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily generation",
+      "value": "~4.8-4.9 BU/day = ~4,800-4,900 GWh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Industry",
+      "value": "~40%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Domestic households",
+      "value": "~25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Agriculture",
+      "value": "~17%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Commercial + others",
+      "value": "~18%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India annual electricity generation FY26: ~1,750-1,800 BU (billion units) or TWh.",
+    "Daily generation: ~4.8-4.9 BU/day = ~4,800-4,900 GWh.",
+    "- Commercial + others: ~18%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Commercial + others: ~18%."
+  }
+}

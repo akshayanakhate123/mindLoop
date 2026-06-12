@@ -1,0 +1,81 @@
+{
+  "questionId": "sales-38",
+  "domain": "sales",
+  "question": "Estimate the number of e-commerce delivery agents (last-mile) needed for pan-India coverage.",
+  "idealClarificationQuestions": [
+    "Last-mile delivery workforce across all e-commerce (Amazon, Flipkart, Meesho, Myntra) and courier partners (Delhivery, Ecom Express, Shadowfax, Xpressbees)? Yes.",
+    "Active agents? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily orders / agent productivity."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Daily e-commerce orders pan-India (physical goods): ~5.5 crore orders/365 = ~1.5 crore daily."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Daily agents needed (delivery workforce active that day): 1.5 cr / 25 = ~6 lakh agents."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Including pick-up + sortation + Hub-to-spoke workers: total e-commerce logistics workforce: ~15-18 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~9-10 lakh active last-mile delivery agents."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Daily e-commerce orders pan-India (physical goods)",
+      "value": "~5.5 crore orders/365 = ~1.5 crore daily.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average orders per agent per day",
+      "value": "~20-30 (varies by city density; metros higher, Tier 2/3 lower).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily agents needed (delivery workforce active that day)",
+      "value": "1.5 cr / 25 = ~6 lakh agents.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Considering shift work + leave + churn (employed pool > daily active)",
+      "value": "~9-10 lakh total.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Including pick-up + sortation + Hub-to-spoke workers",
+      "value": "total e-commerce logistics workforce: ~15-18 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~9-10 lakh active last-mile delivery agents.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Daily e-commerce orders pan-India (physical goods): ~5.5 crore orders/365 = ~1.5 crore daily.",
+    "Daily agents needed (delivery workforce active that day): 1.5 cr / 25 = ~6 lakh agents.",
+    "Considering shift work + leave + churn (employed pool > daily active): ~9-10 lakh total.",
+    "Including pick-up + sortation + Hub-to-spoke workers: total e-commerce logistics workforce: ~15-18 lakh.",
+    "Round: ~9-10 lakh active last-mile delivery agents."
+  ],
+  "finalAnswerRange": {
+    "low": "9",
+    "high": "10",
+    "ideal": "~9-10 lakh active last-mile delivery agents."
+  }
+}

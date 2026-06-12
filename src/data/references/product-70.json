@@ -1,0 +1,75 @@
+{
+  "questionId": "product-70",
+  "domain": "product",
+  "question": "Estimate SaaS adoption (vertical SaaS + horizontal CRM/HR/Accounting) among Indian SMBs by 2028.",
+  "idealClarificationQuestions": [
+    "SMBs = businesses with 10-500 employees? Yes (~5M businesses in India).",
+    "Active paying SaaS customers? Yes — paid subscription.",
+    "By 2028? Yes.",
+    "Includes Zoho, Tally, Razorpay, Khatabook, Vyapar, etc.? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total SMBs → digital-aware subset → paying SaaS adopters."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian SMBs (10-500 employees, formal): ~5M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, paying for at least one SaaS today (2026): ~40% = 1.4M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "By 2028: ~60-65% of digitally-aware SMBs paying for SaaS = ~2.2-2.3M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus micro-businesses adopting basic Vyapar/Khatabook style apps: ~5-7M (lower ARPU)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian SMBs (10-500 employees, formal)",
+      "value": "~5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, digitally aware (use any computer/cloud tool)",
+      "value": "~70% = 3.5M (excluding micro-businesses).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, paying for at least one SaaS today (2026)",
+      "value": "~40% = 1.4M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2028",
+      "value": "~60-65% of digitally-aware SMBs paying for SaaS = ~2.2-2.3M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus micro-businesses adopting basic Vyapar/Khatabook style apps",
+      "value": "~5-7M (lower ARPU).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, digitally aware (use any computer/cloud tool): ~70% = 3.5M (excluding micro-businesses).",
+    "Of these, paying for at least one SaaS today (2026): ~40% = 1.4M.",
+    "By 2028: ~60-65% of digitally-aware SMBs paying for SaaS = ~2.2-2.3M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus micro-businesses adopting basic Vyapar/Khatabook style apps: ~5-7M (lower ARPU)."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-26",
+  "domain": "marketing",
+  "question": "Out of 1 crore app installs for a fintech app in India, how many will become paying users?",
+  "idealClarificationQuestions": [
+    "Paying user = made at least one paid transaction (subscription, premium feature, fee-bearing)? Yes.",
+    "Time horizon: in first 90 days post-install? Yes — 90-day window.",
+    "Fintech app type: investments/broking (Groww, Zerodha) or payments (PhonePe, Paytm)? Use mid-broking app reference (closer to Groww/Zerodha).",
+    "Installs include uninstalls? Net active installs after Day 7 cleanup."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Standard fintech funnel: Install → Open → Register/KYC → Activate → Transact → Pay."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Installs: 1,00,00,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Sign-up / start KYC: ~50% of openers = 35 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Activate (first transaction or first deposit): ~40% of KYC-completed = 7.6 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.5 lakh paying users from 1 crore installs (~1.5% conversion)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Installs",
+      "value": "1,00,00,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "App open within 7 days",
+      "value": "~70% = 70 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Sign-up / start KYC",
+      "value": "~50% of openers = 35 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Complete KYC (PAN + Aadhaar verification — fintech is heavy here)",
+      "value": "~55% of starters = 19 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Activate (first transaction or first deposit)",
+      "value": "~40% of KYC-completed = 7.6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Become paying users (broking fees, subscription, premium)",
+      "value": "~20% of activated = 1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.5 lakh paying users from 1 crore installs (~1.5% conversion).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "App open within 7 days: ~70% = 70 lakh.",
+    "Sign-up / start KYC: ~50% of openers = 35 lakh.",
+    "Complete KYC (PAN + Aadhaar verification — fintech is heavy here): ~55% of starters = 19 lakh.",
+    "Activate (first transaction or first deposit): ~40% of KYC-completed = 7.6 lakh.",
+    "Become paying users (broking fees, subscription, premium): ~20% of activated = 1.5 lakh.",
+    "Round: ~1.5 lakh paying users from 1 crore installs (~1.5% conversion)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1.5 lakh paying users from 1 crore installs (~1.5% conversion)."
+  }
+}

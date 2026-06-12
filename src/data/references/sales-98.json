@@ -1,0 +1,94 @@
+{
+  "questionId": "sales-98",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for staffing / contract workforce solutions in India.",
+  "idealClarificationQuestions": [
+    "Indian B2B staffing market (Teamlease, Quess Corp, ManpowerGroup, Adecco India, Randstad, etc.)? Yes.",
+    "Includes IT staffing + GSS (general staffing services)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Workforce × pricing."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian formal staffing workforce: ~80 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- General staffing (retail, BFSI, manufacturing, telecom): ~60 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Of which organized companies' share: ~30% = ~₹1.1 lakh Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹3.5 lakh Cr Indian staffing market; ~₹1.1 lakh Cr organized."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian formal staffing workforce",
+      "value": "~80 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- IT staffing",
+      "value": "~20 lakh contractors deployed via staffing companies.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- General staffing (retail, BFSI, manufacturing, telecom)",
+      "value": "~60 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-deployed-person annual revenue to staffing co",
+      "value": "~₹4-5 lakh (IT higher, GSS lower).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total staffing market",
+      "value": "80L × ₹4.5L = ~₹3.6 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which organized companies' share",
+      "value": "~30% = ~₹1.1 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unorganized (small contractors + thekedars)",
+      "value": "~₹2.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹3.5 lakh Cr Indian staffing market; ~₹1.1 lakh Cr organized.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian formal staffing workforce: ~80 lakh.",
+    "- IT staffing: ~20 lakh contractors deployed via staffing companies.",
+    "- General staffing (retail, BFSI, manufacturing, telecom): ~60 lakh.",
+    "Per-deployed-person annual revenue to staffing co: ~₹4-5 lakh (IT higher, GSS lower).",
+    "Total staffing market: 80L × ₹4.5L = ~₹3.6 lakh Cr.",
+    "Of which organized companies' share: ~30% = ~₹1.1 lakh Cr.",
+    "Unorganized (small contractors + thekedars): ~₹2.5 lakh Cr.",
+    "Round: ~₹3.5 lakh Cr Indian staffing market; ~₹1.1 lakh Cr organized."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹3.5 lakh Cr Indian staffing market; ~₹1.1 lakh Cr organized."
+  }
+}

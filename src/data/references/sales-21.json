@@ -1,0 +1,89 @@
+{
+  "questionId": "sales-21",
+  "domain": "sales",
+  "question": "Estimate monthly sales of premium liquor (Scotch + premium IMFL >₹2000/bottle) in Goa.",
+  "idealClarificationQuestions": [
+    "Premium imported scotch + premium Indian-made foreign liquor (IMFL)? Yes.",
+    "Bars + retail outlets in Goa? Yes — total state sales.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population + tourist × premium consumption rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Goa permanent population: ~15 lakh adults (legal drinking age)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, premium liquor consumers (>₹2K bottles): ~25% (Goa skews premium because tourism + low taxes)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly premium liquor market Goa: 5L × ₹2,500 = ~₹125 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Tonnage equivalent: ~₹125 Cr / avg ₹3,500/bottle × 0.7L = ~25,000 cases (15-bottle equiv)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Goa permanent population",
+      "value": "~15 lakh adults (legal drinking age).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total relevant drinking population (monthly)",
+      "value": "15L permanent + 5.2L tourist drinkers = ~20 lakh adults.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, premium liquor consumers (>₹2K bottles)",
+      "value": "~25% (Goa skews premium because tourism + low taxes).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Premium drinkers",
+      "value": "~5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average premium liquor spend per active premium drinker per month",
+      "value": "~₹2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly premium liquor market Goa",
+      "value": "5L × ₹2,500 = ~₹125 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tonnage equivalent",
+      "value": "~₹125 Cr / avg ₹3,500/bottle × 0.7L = ~25,000 cases (15-bottle equiv).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Goa permanent population: ~15 lakh adults (legal drinking age).",
+    "Plus tourists (Goa has ~80 lakh tourists/year, ~6.5 lakh/month on average; ~80% in 22-50 age drinkers).",
+    "Total relevant drinking population (monthly): 15L permanent + 5.2L tourist drinkers = ~20 lakh adults.",
+    "Of these, premium liquor consumers (>₹2K bottles): ~25% (Goa skews premium because tourism + low taxes).",
+    "Premium drinkers: ~5 lakh.",
+    "Average premium liquor spend per active premium drinker per month: ~₹2,500.",
+    "Monthly premium liquor market Goa: 5L × ₹2,500 = ~₹125 Cr.",
+    "Tonnage equivalent: ~₹125 Cr / avg ₹3,500/bottle × 0.7L = ~25,000 cases (15-bottle equiv)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Tonnage equivalent: ~₹125 Cr / avg ₹3,500/bottle × 0.7L = ~25,000 cases (15-bottle equiv)."
+  }
+}

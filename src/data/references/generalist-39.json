@@ -1,0 +1,83 @@
+{
+  "questionId": "generalist-39",
+  "domain": "generalist",
+  "question": "Estimate the annual sugar consumption in India (in tonnes).",
+  "idealClarificationQuestions": [
+    "Direct household + industrial use (HoReCa, beverages, sweets)? Yes — total domestic.",
+    "Refined sugar only or include khandsari/jaggery? Refined sugar (excl. jaggery).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Production - exports + imports = consumption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian sugar production FY26: ~32-34 MT (depending on monsoon, sugar season)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Imports: ~0.5 MT."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Direct household: ~40% = 11-12 MT."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Per-capita: ~20 kg/year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian sugar production FY26",
+      "value": "~32-34 MT (depending on monsoon, sugar season).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Exports",
+      "value": "2-4 MT (varies with govt policy).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Imports",
+      "value": "~0.5 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Domestic consumption",
+      "value": "~28-30 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Direct household",
+      "value": "~40% = 11-12 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bulk/industrial (beverages, sweets, bakery, pharma)",
+      "value": "~60% = 17-18 MT.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita",
+      "value": "~20 kg/year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Direct household: ~40% = 11-12 MT.",
+    "- Bulk/industrial (beverages, sweets, bakery, pharma): ~60% = 17-18 MT."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Per-capita: ~20 kg/year."
+  }
+}

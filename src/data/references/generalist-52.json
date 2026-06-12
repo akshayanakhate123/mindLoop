@@ -1,0 +1,69 @@
+{
+  "questionId": "generalist-52",
+  "domain": "generalist",
+  "question": "Estimate the total ATMs in Maharashtra.",
+  "idealClarificationQuestions": [
+    "All bank ATMs + white-label ATMs? Yes.",
+    "Operational only? Yes.",
+    "Maharashtra state, year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "All-India ATMs × Maharashtra share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "All India ATMs: ~2.4-2.5 lakh (per Q13 in this doc)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Maharashtra share of national banking footprint: ~12-13% (largest state by GDP, 2nd by population)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Maharashtra ATMs: ~2.5L × 0.125 = ~31,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Distribution: Mumbai + Pune ~14,000; rest of state ~17,000."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "All India ATMs",
+      "value": "~2.4-2.5 lakh (per Q13 in this doc).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Maharashtra share of national banking footprint",
+      "value": "~12-13% (largest state by GDP, 2nd by population).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Maharashtra ATMs",
+      "value": "~2.5L × 0.125 = ~31,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Distribution",
+      "value": "Mumbai + Pune ~14,000; rest of state ~17,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "All India ATMs: ~2.4-2.5 lakh (per Q13 in this doc).",
+    "Maharashtra ATMs: ~2.5L × 0.125 = ~31,000.",
+    "Distribution: Mumbai + Pune ~14,000; rest of state ~17,000."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Distribution: Mumbai + Pune ~14,000; rest of state ~17,000."
+  }
+}

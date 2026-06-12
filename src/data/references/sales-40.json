@@ -1,0 +1,85 @@
+{
+  "questionId": "sales-40",
+  "domain": "sales",
+  "question": "Estimate the number of jewellery showrooms (organized) in India (Tanishq + Malabar + Kalyan + Joyalukkas + Senco etc.).",
+  "idealClarificationQuestions": [
+    "Organized chain jewellers only? Yes.",
+    "All branded jewellery brands (national + regional chains)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum of major chain footprints."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tanishq (Titan): ~500 stores."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Reliance Jewels: ~120."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Bhima Jewellery: ~50."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~2,800-3,000 organized jewellery showrooms in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tanishq (Titan)",
+      "value": "~500 stores.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Malabar Gold & Diamonds",
+      "value": "~360.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Kalyan Jewellers",
+      "value": "~250.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Joyalukkas",
+      "value": "~165.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reliance Jewels",
+      "value": "~120.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PC Chandra Jewellers",
+      "value": "~140.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Senco Gold",
+      "value": "~170.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Tribhovandas Bhimji Zaveri (TBZ)",
+      "value": "~40.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~3,000."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "questionId": "marketing-7",
+  "domain": "marketing",
+  "question": "Estimate the impressions of a Google Search campaign for 'best running shoes' targeted at India.",
+  "idealClarificationQuestions": [
+    "Search ads (top of SERP) for the keyword cluster around 'running shoes'? Yes.",
+    "Daily impressions for a top advertiser bidding at top-of-page? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Search volume × ad coverage × top-bidder share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India monthly search volume for 'running shoes' + close variants ('running shoes for men', 'best Nike running shoes' etc.): ~25 lakh searches/month."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Search results show 3-4 ads at top; impression share for #1 advertiser: ~60% of commercial searches = 12 lakh impressions/month."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Daily clicks at top spot: ~3,500-4,000."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Daily budget needed: ~₹70K-90K for top position."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Of these, queries with commercial intent (shopping/research)",
+      "value": "~80% = 20 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Search results show 3-4 ads at top; impression share for #1 advertiser",
+      "value": "~60% of commercial searches = 12 lakh impressions/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~40,000 impressions.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average CTR for top ad in shopping queries",
+      "value": "~7-9% (very high).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily clicks at top spot",
+      "value": "~3,500-4,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average CPC for this keyword cluster",
+      "value": "~₹15-25.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily budget needed",
+      "value": "~₹70K-90K for top position.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India monthly search volume for 'running shoes' + close variants ('running shoes for men', 'best Nike running shoes' etc.): ~25 lakh searches/month.",
+    "Of these, queries with commercial intent (shopping/research): ~80% = 20 lakh.",
+    "Search results show 3-4 ads at top; impression share for #1 advertiser: ~60% of commercial searches = 12 lakh impressions/month.",
+    "Average CPC for this keyword cluster: ~₹15-25.",
+    "Daily budget needed: ~₹70K-90K for top position."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Daily budget needed: ~₹70K-90K for top position."
+  }
+}

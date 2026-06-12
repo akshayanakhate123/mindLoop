@@ -1,0 +1,80 @@
+{
+  "questionId": "product-61",
+  "domain": "product",
+  "question": "Estimate Tier-3 city/town adoption of paid OTT subscriptions over next 3 years.",
+  "idealClarificationQuestions": [
+    "Tier 3 cities + small towns (~5,000 with population 50K-500K, total ~240M people)? Yes.",
+    "Paid OTT (any single subscription, including JioCinema after monetization)? Yes.",
+    "Subscriber households or individuals? Households.",
+    "3-year horizon (2029)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: smartphone-enabled households → smart TV / streaming-stick adoption → willingness to pay."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Tier 3 town population: ~240M; households ~55M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Households with at least one smart TV / Firestick / streaming device: ~10M (today, growing)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Drivers for next 3 years: smart TV affordability (₹15K Mi/Realme), Jio/Airtel telco bundles, vernacular content (Mahabharat, regional cinema OTT)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Projected 2029: ~28-32% of Tier 3 HH paying for at least one OTT = ~16-18M HH."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Tier 3 town population",
+      "value": "~240M; households ~55M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Households with broadband or 4G/5G phone capable",
+      "value": "~40M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Households with at least one smart TV / Firestick / streaming device",
+      "value": "~10M (today, growing).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently paying for any OTT (mostly mobile-only ₹49 packs)",
+      "value": "~6-7M = 12-13% of HH.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Drivers for next 3 years",
+      "value": "smart TV affordability (₹15K Mi/Realme), Jio/Airtel telco bundles, vernacular content (Mahabharat, regional cinema OTT).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 2029",
+      "value": "~28-32% of Tier 3 HH paying for at least one OTT = ~16-18M HH.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Currently paying for any OTT (mostly mobile-only ₹49 packs): ~6-7M = 12-13% of HH.",
+    "Drivers for next 3 years: smart TV affordability (₹15K Mi/Realme), Jio/Airtel telco bundles, vernacular content (Mahabharat, regional cinema OTT).",
+    "Projected 2029: ~28-32% of Tier 3 HH paying for at least one OTT = ~16-18M HH."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Projected 2029: ~28-32% of Tier 3 HH paying for at least one OTT = ~16-18M HH."
+  }
+}

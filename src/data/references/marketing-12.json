@@ -1,0 +1,88 @@
+{
+  "questionId": "marketing-12",
+  "domain": "marketing",
+  "question": "Estimate the email campaign reach for an Indian D2C brand with 10 lakh email database.",
+  "idealClarificationQuestions": [
+    "Single email campaign send? Yes.",
+    "10 lakh customer database (acquired over 2-3 years; mix of active + dormant)? Yes.",
+    "Reach = delivered + opened? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Database × deliverability × open rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Deliverability (after spam filters, dead addresses): ~85-90% = ~8.7 lakh delivered."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Open rate at 20%: 8.7L × 20% = ~1.75 lakh opens."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Conversions (click → purchase): ~2-3% of clicks = ~500-750 orders."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~1.75 lakh emails actually opened/seen out of 10 lakh sent."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Sent",
+      "value": "10 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Deliverability (after spam filters, dead addresses)",
+      "value": "~85-90% = ~8.7 lakh delivered.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indian email open rates (D2C/e-commerce avg)",
+      "value": "~18-22%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open rate at 20%",
+      "value": "8.7L × 20% = ~1.75 lakh opens.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "CTR (of opens that click any link)",
+      "value": "~10-15% = ~20-25K clicks.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Conversions (click → purchase)",
+      "value": "~2-3% of clicks = ~500-750 orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~1.75 lakh emails actually opened/seen out of 10 lakh sent.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Sent: 10 lakh.",
+    "Deliverability (after spam filters, dead addresses): ~85-90% = ~8.7 lakh delivered.",
+    "Open rate at 20%: 8.7L × 20% = ~1.75 lakh opens.",
+    "CTR (of opens that click any link): ~10-15% = ~20-25K clicks.",
+    "Conversions (click → purchase): ~2-3% of clicks = ~500-750 orders.",
+    "Round: ~1.75 lakh emails actually opened/seen out of 10 lakh sent."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~1.75 lakh emails actually opened/seen out of 10 lakh sent."
+  }
+}

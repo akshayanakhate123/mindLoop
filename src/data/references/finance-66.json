@@ -1,0 +1,93 @@
+{
+  "questionId": "finance-66",
+  "domain": "finance",
+  "question": "Estimate the warehouse / logistics real estate opportunity in India by 2030.",
+  "idealClarificationQuestions": [
+    "Total Grade A + B warehouse stock by 2030? Yes.",
+    "Annual leasing value? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Stock projection × rental."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Current Grade A+B warehouse stock FY26: ~450 million sqft."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "By FY30: 450 + (60 × 4) = ~690 million sqft."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Annual new leasing: ~60M sqft × ₹250 = ~₹15,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total annual warehouse REIT/investment opportunity: ₹25,000-30,000 Cr/year."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Current Grade A+B warehouse stock FY26",
+      "value": "~450 million sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual addition",
+      "value": "50-70 million sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By FY30",
+      "value": "450 + (60 × 4) = ~690 million sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual rental",
+      "value": "~₹250/sqft (rising with quality demand).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual leasing market",
+      "value": "690M × ₹250 = ~₹1.7 lakh Cr in operational value.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual new leasing",
+      "value": "~60M sqft × ₹250 = ~₹15,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus capex (constructing new warehouses)",
+      "value": "~50M sqft × ₹2,500/sqft = ₹12,500 Cr/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total annual warehouse REIT/investment opportunity",
+      "value": "₹25,000-30,000 Cr/year.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Current Grade A+B warehouse stock FY26: ~450 million sqft.",
+    "Annual addition: 50-70 million sqft.",
+    "By FY30: 450 + (60 × 4) = ~690 million sqft.",
+    "Average annual rental: ~₹250/sqft (rising with quality demand).",
+    "Annual leasing market: 690M × ₹250 = ~₹1.7 lakh Cr in operational value.",
+    "Annual new leasing: ~60M sqft × ₹250 = ~₹15,000 Cr.",
+    "Plus capex (constructing new warehouses): ~50M sqft × ₹2,500/sqft = ₹12,500 Cr/year.",
+    "Total annual warehouse REIT/investment opportunity: ₹25,000-30,000 Cr/year."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total annual warehouse REIT/investment opportunity: ₹25,000-30,000 Cr/year."
+  }
+}

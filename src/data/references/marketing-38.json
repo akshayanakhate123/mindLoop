@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-38",
+  "domain": "marketing",
+  "question": "Estimate the conversion rate from app install to first purchase on Meesho.",
+  "idealClarificationQuestions": [
+    "Install to first paid order? Yes.",
+    "Time window: 30 days post-install? Yes.",
+    "Tier 2/3 user dominant? Yes (Meesho's core).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "App funnel for value-conscious Tier 2/3 user."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Install: 100% (1,00,000 base)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Browse products: ~70%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Order successful (not COD-rejected, not returned): ~90% × 85% (Meesho has high return rate) = ~77% net."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Better than typical e-commerce due to value/price focus and reseller-driven push."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Install",
+      "value": "100% (1,00,000 base).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Open app within Day 1",
+      "value": "~80%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Browse products",
+      "value": "~70%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Add to cart",
+      "value": "~20%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Place first order",
+      "value": "~12-15%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Order successful (not COD-rejected, not returned)",
+      "value": "~90% × 85% (Meesho has high return rate) = ~77% net.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net successful first-purchase rate",
+      "value": "~10-12%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Order successful (not COD-rejected, not returned): ~90% × 85% (Meesho has high return rate) = ~77% net."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net successful first-purchase rate: ~10-12%."
+  }
+}

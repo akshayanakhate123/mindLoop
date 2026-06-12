@@ -1,0 +1,71 @@
+{
+  "questionId": "product-12",
+  "domain": "product",
+  "question": "Estimate monthly transaction volume (₹) on PhonePe.",
+  "idealClarificationQuestions": [
+    "Total Payment Volume across UPI + bills + recharges + wallet? Yes — TPV.",
+    "Include merchant payments (P2M) and P2P? Both.",
+    "Include investments (mutual funds, gold) routed via PhonePe? Exclude — payment TPV only.",
+    "Latest month? Average month in 2026."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total UPI TPV in India × PhonePe market share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total UPI TPV in India (monthly avg 2026): ~₹24-25 lakh Cr (vs ₹20 lakh Cr in early 2024 — ~25% YoY growth)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "PhonePe UPI market share by value: ~48-50% (Google Pay ~36%, others ~14%)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Add non-UPI flows (bills, recharges, gift cards, ATM withdrawal via UPI): ~10% extra = ~₹1.2 lakh Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total monthly TPV: ~₹13 lakh Cr (~$155B/month)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total UPI TPV in India (monthly avg 2026)",
+      "value": "~₹24-25 lakh Cr (vs ₹20 lakh Cr in early 2024 — ~25% YoY growth).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "PhonePe UPI market share by value",
+      "value": "~48-50% (Google Pay ~36%, others ~14%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly UPI TPV PhonePe",
+      "value": "₹24.5L Cr × 0.49 = ~₹12 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly TPV",
+      "value": "~₹13 lakh Cr (~$155B/month).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total UPI TPV in India (monthly avg 2026): ~₹24-25 lakh Cr (vs ₹20 lakh Cr in early 2024 — ~25% YoY growth).",
+    "Monthly UPI TPV PhonePe: ₹24.5L Cr × 0.49 = ~₹12 lakh Cr.",
+    "Add non-UPI flows (bills, recharges, gift cards, ATM withdrawal via UPI): ~10% extra = ~₹1.2 lakh Cr.",
+    "Total monthly TPV: ~₹13 lakh Cr (~$155B/month)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total monthly TPV: ~₹13 lakh Cr (~$155B/month)."
+  }
+}

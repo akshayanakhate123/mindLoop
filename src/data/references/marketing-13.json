@@ -1,0 +1,77 @@
+{
+  "questionId": "marketing-13",
+  "domain": "marketing",
+  "question": "Estimate the unique reach of a Twitter/X campaign with ₹20 lakh budget targeting Indian working professionals.",
+  "idealClarificationQuestions": [
+    "X (Twitter) Promoted ads in India targeting professionals 25-45? Yes.",
+    "Format: Promoted Tweets (text + image/video)? Yes.",
+    "Year 2026 — given X's lower scale in India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Budget / CPM = impressions; impressions / frequency = reach."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "X India MAU: ~2.5 crore; daily users ~70 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "X CPM in India for professional targeting: ~₹100-150 (higher than Meta due to small inventory)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Average frequency for brand campaign: ~3-4."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "But TAM cap (1.5 crore professionals) — saturation possible: realistic reach ~40 lakh unique."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "X India MAU",
+      "value": "~2.5 crore; daily users ~70 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "X CPM in India for professional targeting",
+      "value": "~₹100-150 (higher than Meta due to small inventory).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average frequency for brand campaign",
+      "value": "~3-4.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Unique reach",
+      "value": "1.6 cr / 3.5 = ~46 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "But TAM cap (1.5 crore professionals) — saturation possible",
+      "value": "realistic reach ~40 lakh unique.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "X India MAU: ~2.5 crore; daily users ~70 lakh.",
+    "Indian professional segment on X (knowledge workers, business news consumers): ~1.5 crore.",
+    "X CPM in India for professional targeting: ~₹100-150 (higher than Meta due to small inventory).",
+    "₹20 lakh / ₹125 × 1,000 = 1.6 crore impressions.",
+    "Unique reach: 1.6 cr / 3.5 = ~46 lakh.",
+    "But TAM cap (1.5 crore professionals) — saturation possible: realistic reach ~40 lakh unique."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "But TAM cap (1.5 crore professionals) — saturation possible: realistic reach ~40 lakh unique."
+  }
+}

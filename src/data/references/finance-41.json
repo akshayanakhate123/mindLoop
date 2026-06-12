@@ -1,0 +1,86 @@
+{
+  "questionId": "finance-41",
+  "domain": "finance",
+  "question": "Estimate the EBITDA margin for an Indian SaaS company at scale (Freshworks / Zoho).",
+  "idealClarificationQuestions": [
+    "Indian SaaS at ₹5,000+ Cr ARR scale? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "SaaS margin structure."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "- COGS (hosting, support — gross margin 75-82%): ~20-25%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Sales + marketing: ~30-40% (high for growth-stage; ~15-20% for mature like Zoho)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "EBITDA margin: 0-25% (Zoho mature ~25-30%; Freshworks growth-stage 5-10%)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~10-25% EBITDA, ~5-20% PAT."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Revenue",
+      "value": "100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COGS (hosting, support — gross margin 75-82%)",
+      "value": "~20-25%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- R&D / engineering",
+      "value": "~22-28%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Sales + marketing",
+      "value": "~30-40% (high for growth-stage; ~15-20% for mature like Zoho).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- G&A",
+      "value": "~6-10%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total operating",
+      "value": "~80-100%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "EBITDA margin",
+      "value": "0-25% (Zoho mature ~25-30%; Freshworks growth-stage 5-10%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~10-25% EBITDA, ~5-20% PAT.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Sales + marketing: ~30-40% (high for growth-stage; ~15-20% for mature like Zoho)."
+  ],
+  "finalAnswerRange": {
+    "low": "10",
+    "high": "25",
+    "ideal": "~10-25% EBITDA, ~5-20% PAT."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-81",
+  "domain": "finance",
+  "question": "Estimate the cost of running a Swiggy food delivery operation per order.",
+  "idealClarificationQuestions": [
+    "All-in cost per food delivery order for Swiggy? Yes.",
+    "Excludes restaurant payout (pass-through)? Yes — Swiggy's own cost.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up unit economics."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Per food delivery order, Swiggy's cost stack:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Customer support allocation: ~₹2."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Packaging support to restaurants: ~₹1."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Per-order contribution margin: ~+5 to +20 (thin)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Delivery partner payout",
+      "value": "~₹50-65 per order.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Payment gateway fees (1.5% of order)",
+      "value": "~₹6.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Customer support allocation",
+      "value": "~₹2.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Promo / discount on order (waiver, free delivery)",
+      "value": "~₹15-25.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Tech + product allocation",
+      "value": "~₹4.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Marketing acquisition cost amortized",
+      "value": "~₹15-20.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Packaging support to restaurants",
+      "value": "~₹1.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per-order cost",
+      "value": "~₹95-120.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Delivery partner payout: ~₹50-65 per order.",
+    "- Payment gateway fees (1.5% of order): ~₹6.",
+    "- Customer support allocation: ~₹2.",
+    "- Promo / discount on order (waiver, free delivery): ~₹15-25.",
+    "- Tech + product allocation: ~₹4.",
+    "- Marketing acquisition cost amortized: ~₹15-20.",
+    "- Packaging support to restaurants: ~₹1.",
+    "Total per-order cost: ~₹95-120.",
+    "Revenue per order (commission + delivery fee + ads): ~₹110-130.",
+    "Per-order contribution margin: ~+5 to +20 (thin)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Per-order contribution margin: ~+5 to +20 (thin)."
+  }
+}

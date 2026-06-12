@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-2",
+  "domain": "sales",
+  "question": "How many smartphones can be sold in Indore in a month?",
+  "idealClarificationQuestions": [
+    "All price tiers: budget + mid + premium? Yes — total.",
+    "New device sales only (excl. refurbished)? Yes.",
+    "Average month, FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "City population × annual smartphone sales rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian smartphone sales FY26: ~16-17 crore units/year (post 2024 recovery)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual smartphone sales Indore: 24 lakh × 0.12 = ~2.9 lakh units."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Mid-tier (₹15K-30K): ~30% = 7,200 units."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~22,000-25,000 smartphones/month in Indore."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian smartphone sales FY26",
+      "value": "~16-17 crore units/year (post 2024 recovery).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita smartphone sales rate",
+      "value": "~11-12 per 100 people per year (replacement-driven; ~30-month cycle).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Indore population",
+      "value": "~24 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual smartphone sales Indore",
+      "value": "24 lakh × 0.12 = ~2.9 lakh units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~24,000 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Budget (<₹15K)",
+      "value": "~50% = 12,000 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Mid-tier (₹15K-30K)",
+      "value": "~30% = 7,200 units.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Upper mid (₹30K-50K)",
+      "value": "~12% = 2,900 units.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian smartphone sales FY26: ~16-17 crore units/year (post 2024 recovery).",
+    "Indore population: ~24 lakh.",
+    "Annual smartphone sales Indore: 24 lakh × 0.12 = ~2.9 lakh units.",
+    "- Budget (<₹15K): ~50% = 12,000 units.",
+    "- Mid-tier (₹15K-30K): ~30% = 7,200 units.",
+    "- Upper mid (₹30K-50K): ~12% = 2,900 units.",
+    "- Premium (>₹50K, Apple, Samsung S, OnePlus flagship): ~8% = 1,900 units."
+  ],
+  "finalAnswerRange": {
+    "low": "22,000",
+    "high": "25,000",
+    "ideal": "~22,000-25,000 smartphones/month in Indore."
+  }
+}

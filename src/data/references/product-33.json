@@ -1,0 +1,54 @@
+{
+  "questionId": "product-33",
+  "domain": "product",
+  "question": "Estimate the average UPI transactions per Indian user per week.",
+  "idealClarificationQuestions": [
+    "Per active monthly UPI user (not all Indians)? Active monthly.",
+    "All transaction types: P2P, P2M, bills, recharges? Yes.",
+    "Average week, not festive? Average.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down: total weekly UPI transactions / active UPI users."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "NPCI: ~17B UPI transactions/month in 2026 = ~4.25B/week."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average per user per week: 4.25B ÷ 420M = ~10 transactions per active user per week."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "NPCI",
+      "value": "~17B UPI transactions/month in 2026 = ~4.25B/week.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Active UPI users (monthly)",
+      "value": "~420M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average per user per week",
+      "value": "4.25B ÷ 420M = ~10 transactions per active user per week.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "NPCI: ~17B UPI transactions/month in 2026 = ~4.25B/week.",
+    "Average per user per week: 4.25B ÷ 420M = ~10 transactions per active user per week."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Average per user per week: 4.25B ÷ 420M = ~10 transactions per active user per week."
+  }
+}

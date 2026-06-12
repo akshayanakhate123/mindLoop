@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-1",
+  "domain": "sales",
+  "question": "Estimate monthly biscuit sales (in tonnage and value) in a Tier-2 city like Indore.",
+  "idealClarificationQuestions": [
+    "All biscuit categories: glucose + cream + cookies + premium? Yes — all biscuits.",
+    "Organized + unorganized + bakery biscuits? Yes — total.",
+    "City limits or greater metropolitan? Indore municipal area (~24 lakh population).",
+    "Monthly average, FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita biscuit consumption × city-specific premium."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indore population: ~24 lakh; HHs: ~5.5 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual biscuit consumption Indore: 24 lakh × 3.3 kg = ~80 lakh kg = ~8,000 tonnes/year."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Organized (Parle, Britannia, ITC, Cadbury): ~80% = ~520 tonnes / ₹6.4 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~700 tonnes / ₹8 Cr monthly biscuit market in Indore."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indore population",
+      "value": "~24 lakh; HHs: ~5.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per-capita biscuit consumption",
+      "value": "~3 kg/year (per Q37 Generalist doc); Indore slightly above average (Tier 2 with higher disposable income): ~3.3 kg/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual biscuit consumption Indore",
+      "value": "24 lakh × 3.3 kg = ~80 lakh kg = ~8,000 tonnes/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly",
+      "value": "~660-700 tonnes.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Value",
+      "value": "avg ₹120/kg blended = ₹8 Cr/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Organized (Parle, Britannia, ITC, Cadbury)",
+      "value": "~80% = ~520 tonnes / ₹6.4 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Local bakery + unorganized",
+      "value": "~20% = ~140 tonnes / ₹1.6 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~700 tonnes / ₹8 Cr monthly biscuit market in Indore.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indore population: ~24 lakh; HHs: ~5.5 lakh.",
+    "Annual biscuit consumption Indore: 24 lakh × 3.3 kg = ~80 lakh kg = ~8,000 tonnes/year.",
+    "Value: avg ₹120/kg blended = ₹8 Cr/month.",
+    "- Organized (Parle, Britannia, ITC, Cadbury): ~80% = ~520 tonnes / ₹6.4 Cr.",
+    "- Local bakery + unorganized: ~20% = ~140 tonnes / ₹1.6 Cr.",
+    "Round: ~700 tonnes / ₹8 Cr monthly biscuit market in Indore."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~700 tonnes / ₹8 Cr monthly biscuit market in Indore."
+  }
+}

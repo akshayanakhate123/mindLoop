@@ -1,0 +1,87 @@
+{
+  "questionId": "marketing-34",
+  "domain": "marketing",
+  "question": "How many users who add a product to Flipkart cart actually complete the purchase?",
+  "idealClarificationQuestions": [
+    "Cart-to-purchase conversion in a typical session window (24 hours)? Yes.",
+    "Average product, average user? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Cart abandonment industry data."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian e-commerce cart abandonment rate: 65-75%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Cash on Delivery option available: higher CR (~35-40%) since payment friction is removed."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Apparel/lifestyle: ~20-30% (browse-heavy behavior)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Flipkart blended cart-to-purchase: ~30-35%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian e-commerce cart abandonment rate",
+      "value": "65-75%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Cart-to-purchase",
+      "value": "25-35%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cash on Delivery option available",
+      "value": "higher CR (~35-40%) since payment friction is removed.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- High-value items (>₹10K)",
+      "value": "lower CR (~20-25%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Discounted items / sale",
+      "value": "higher CR (~40-50%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Apparel/lifestyle",
+      "value": "~20-30% (browse-heavy behavior).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Electronics/utilities",
+      "value": "~35-40% (intentional shopping).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Flipkart blended cart-to-purchase",
+      "value": "~30-35%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- High-value items (>₹10K): lower CR (~20-25%)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Flipkart blended cart-to-purchase: ~30-35%."
+  }
+}

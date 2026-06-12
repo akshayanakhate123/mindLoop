@@ -1,0 +1,82 @@
+{
+  "questionId": "finance-4",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of MakeMyTrip (Indian operations).",
+  "idealClarificationQuestions": [
+    "MMT + Goibibo + redBus (all MMT-owned brands)? Yes.",
+    "Net revenue (commission + service fees) or gross bookings? Provide both.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Gross bookings × take rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "MMT gross bookings FY26: ~$10-11B (~₹85,000 Cr) — leader in OTA."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Net revenue: ₹85,000 × 7% = ~₹6,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total revenue: ~₹6,500-7,500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹7,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "MMT gross bookings FY26",
+      "value": "~$10-11B (~₹85,000 Cr) — leader in OTA.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take rate (commissions + service fees + ad revenue)",
+      "value": "~6-8% (varies by segment; hotels 12-15%, flights 5-6%, packages 10-12%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net revenue",
+      "value": "₹85,000 × 7% = ~₹6,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus advertising / payment processing fees / B2B (myBiz)",
+      "value": "~₹500-700 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total revenue",
+      "value": "~₹6,500-7,500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹7,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "MMT gross bookings FY26: ~$10-11B (~₹85,000 Cr) — leader in OTA.",
+    "Take rate (commissions + service fees + ad revenue): ~6-8% (varies by segment; hotels 12-15%, flights 5-6%, packages 10-12%).",
+    "Net revenue: ₹85,000 × 7% = ~₹6,000 Cr.",
+    "Plus advertising / payment processing fees / B2B (myBiz): ~₹500-700 Cr.",
+    "Total revenue: ~₹6,500-7,500 Cr.",
+    "Round: ~₹7,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹7,000 Cr."
+  }
+}

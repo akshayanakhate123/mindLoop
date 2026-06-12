@@ -1,0 +1,90 @@
+{
+  "questionId": "sales-45",
+  "domain": "sales",
+  "question": "Estimate the number of pharmacy stores McDonald's India would need to compete with KFC + Burger King + Domino's in any metro.",
+  "idealClarificationQuestions": [
+    "QSR store comparison — assume 'pharmacy' was a typo for 'QSR / restaurants'? Yes — McDonald's QSR outlets.",
+    "To match competitor density in a major metro like Mumbai or Delhi? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × per-capita QSR density × McDonald's catch-up."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai population: ~22M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- KFC: ~1.5 outlets/M = ~33 stores."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "To match BK level: McDonald's needs ~26 stores; to match KFC ~33."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: McDonald's would need ~10-15 additional Mumbai outlets to match KFC/BK density."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai population",
+      "value": "~22M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Domino's",
+      "value": "~2.5 outlets/M = ~55 stores.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- KFC",
+      "value": "~1.5 outlets/M = ~33 stores.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Burger King",
+      "value": "~1.2 outlets/M = ~26 stores.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- McDonald's currently",
+      "value": "~1 outlet/M = ~22 stores in Mumbai.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "To match BK level",
+      "value": "McDonald's needs ~26 stores; to match KFC ~33.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Gap",
+      "value": "4-11 additional Mumbai outlets needed for competitive parity.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "McDonald's would need ~10-15 additional Mumbai outlets to match KFC/BK density.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Domino's: ~2.5 outlets/M = ~55 stores.",
+    "- KFC: ~1.5 outlets/M = ~33 stores.",
+    "- Burger King: ~1.2 outlets/M = ~26 stores.",
+    "- McDonald's currently: ~1 outlet/M = ~22 stores in Mumbai."
+  ],
+  "finalAnswerRange": {
+    "low": "10",
+    "high": "15",
+    "ideal": "McDonald's would need ~10-15 additional Mumbai outlets to match KFC/BK density."
+  }
+}

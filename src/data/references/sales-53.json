@@ -1,0 +1,91 @@
+{
+  "questionId": "sales-53",
+  "domain": "sales",
+  "question": "Estimate number of credit cards sold by a single bank branch (HDFC / ICICI tier) monthly.",
+  "idealClarificationQuestions": [
+    "Tier 1 city branch, mid-sized? Yes.",
+    "Credit cards sold = new card issued (KYC + activated)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Branch funnel: walk-ins + outbound × conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Branch monthly walk-in customers (existing): ~3,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Apply for card: ~70% = 76."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total monthly card sales per branch: ~85-100 new cards."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Cross-sell to existing customers (loan, etc.): ~10."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Branch monthly walk-in customers (existing)",
+      "value": "~3,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Receptive to pitch + show interest",
+      "value": "~30% = ~108.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Apply for card",
+      "value": "~70% = 76.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Approved + issued",
+      "value": "~75% = ~57.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus branch outbound sales effort (DSAs working area)",
+      "value": "~30 new card customers / month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total monthly card sales per branch",
+      "value": "~85-100 new cards.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Walk-in/branch-initiated",
+      "value": "~57.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- DSA-channeled",
+      "value": "~30.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, eligible for credit card (good income, no card or wanting upgrade): ~12% = 360.",
+    "Receptive to pitch + show interest: ~30% = ~108.",
+    "Apply for card: ~70% = 76.",
+    "Approved + issued: ~75% = ~57.",
+    "- Cross-sell to existing customers (loan, etc.): ~10."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Cross-sell to existing customers (loan, etc.): ~10."
+  }
+}

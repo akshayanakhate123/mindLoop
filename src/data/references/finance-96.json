@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-96",
+  "domain": "finance",
+  "question": "Estimate the cost of providing free public Wi-Fi at Indian railway stations.",
+  "idealClarificationQuestions": [
+    "RailWire (RailTel + Google partnership, now operated by RailTel solo): Free Wi-Fi at ~6,000+ stations? Yes.",
+    "Total annual cost to run? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Per-station cost × stations."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Stations with free Wi-Fi (RailTel): ~6,100."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Installation + commissioning: ~₹30K."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Maintenance + monitoring: ~₹15K."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total annual cost: ~₹75-80 Cr (recovered partly via ads + commercial partnerships)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Stations with free Wi-Fi (RailTel)",
+      "value": "~6,100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Access points + routers",
+      "value": "~₹1.5-2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Backhaul + fiber to station",
+      "value": "~₹50K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Installation + commissioning",
+      "value": "~₹30K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per station capex",
+      "value": "~₹2.5-3 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Bandwidth (backhaul fiber lease)",
+      "value": "~₹40K/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maintenance + monitoring",
+      "value": "~₹15K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Power",
+      "value": "~₹5K.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Access points + routers: ~₹1.5-2 lakh.",
+    "- Backhaul + fiber to station: ~₹50K.",
+    "- Installation + commissioning: ~₹30K.",
+    "Total per station capex: ~₹2.5-3 lakh.",
+    "- Bandwidth (backhaul fiber lease): ~₹40K/year.",
+    "- Maintenance + monitoring: ~₹15K.",
+    "- Power: ~₹5K.",
+    "Per-station annual opex: ~₹60K.",
+    "Total annual opex for 6,100 stations: 6,100 × ₹60K = ~₹37 Cr.",
+    "Plus capex amortized: ~₹40 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total annual cost: ~₹75-80 Cr (recovered partly via ads + commercial partnerships)."
+  }
+}

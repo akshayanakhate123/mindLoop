@@ -1,0 +1,69 @@
+{
+  "questionId": "finance-58",
+  "domain": "finance",
+  "question": "Estimate the market size for Indian e-pharmacy by 2030.",
+  "idealClarificationQuestions": [
+    "Total e-pharmacy GMV? Yes.",
+    "By 2030? Yes.",
+    "Includes 1mg, PharmEasy, Apollo 247, Tata 1mg, Netmeds? All."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total pharma retail × digital penetration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian retail pharma market by 2030: ~₹3.5 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "E-pharmacy penetration of total pharma: ~20-25% by 2030 (vs ~8-10% in 2026)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~₹75,000-85,000 Cr by 2030."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note: regulatory landscape (NMRA bill) could limit or accelerate growth."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian retail pharma market by 2030",
+      "value": "~₹3.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "E-pharmacy penetration of total pharma",
+      "value": "~20-25% by 2030 (vs ~8-10% in 2026).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "E-pharmacy GMV",
+      "value": "~₹70,000-90,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹75,000-85,000 Cr by 2030.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian retail pharma market by 2030: ~₹3.5 lakh Cr.",
+    "E-pharmacy GMV: ~₹70,000-90,000 Cr.",
+    "Round: ~₹75,000-85,000 Cr by 2030."
+  ],
+  "finalAnswerRange": {
+    "low": "75,000",
+    "high": "85,000",
+    "ideal": "~₹75,000-85,000 Cr by 2030."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-65",
+  "domain": "generalist",
+  "question": "Estimate the total length of all Indian roads (NH + SH + rural + city).",
+  "idealClarificationQuestions": [
+    "All road categories combined? Yes.",
+    "Including PMGSY rural roads? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across categories."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "National Highways: ~1.46 lakh km."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "District + other roads: ~6.5 lakh km."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Urban roads (city + town): ~5.5 lakh km."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~63 lakh kilometres (~6.3 million km) of road."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "National Highways",
+      "value": "~1.46 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "State Highways",
+      "value": "~1.8 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "District + other roads",
+      "value": "~6.5 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural roads (PMGSY + others)",
+      "value": "~46-48 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Urban roads (city + town)",
+      "value": "~5.5 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~63 lakh km.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~63 lakh kilometres (~6.3 million km) of road.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "National Highways: ~1.46 lakh km.",
+    "State Highways: ~1.8 lakh km.",
+    "District + other roads: ~6.5 lakh km.",
+    "Rural roads (PMGSY + others): ~46-48 lakh km.",
+    "Urban roads (city + town): ~5.5 lakh km.",
+    "Total: ~63 lakh km.",
+    "Round: ~63 lakh kilometres (~6.3 million km) of road."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~63 lakh kilometres (~6.3 million km) of road."
+  }
+}

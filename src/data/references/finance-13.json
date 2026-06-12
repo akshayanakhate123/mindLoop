@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-13",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of Phoenix Mills (mall operator, top Indian shopping mall company).",
+  "idealClarificationQuestions": [
+    "Total revenue from all Phoenix malls in India? Yes.",
+    "Mall rental + hotel + residential? Mall + retail rental only.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Mall portfolio × rental per sqft × occupancy."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Phoenix Mills operates ~12 large malls across major cities (Mumbai, Bangalore, Pune, Chennai, Lucknow)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average annual rental: ~₹1,400-1,800/sqft (premium malls; varies)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus revenue-share from anchor tenants (% of tenant sales): ~₹500 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹2,500-3,000 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Total leasable retail area",
+      "value": "~12 million sqft.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average annual rental",
+      "value": "~₹1,400-1,800/sqft (premium malls; varies).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average occupancy",
+      "value": "~95%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rental revenue",
+      "value": "12M × 0.95 × ₹1,600 = ~₹1,800 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus revenue-share from anchor tenants (% of tenant sales)",
+      "value": "~₹500 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus advertising / parking / events",
+      "value": "~₹300 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹2,500-3,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Total leasable retail area: ~12 million sqft.",
+    "Average annual rental: ~₹1,400-1,800/sqft (premium malls; varies).",
+    "Rental revenue: 12M × 0.95 × ₹1,600 = ~₹1,800 Cr.",
+    "Plus revenue-share from anchor tenants (% of tenant sales): ~₹500 Cr.",
+    "Plus advertising / parking / events: ~₹300 Cr.",
+    "Total: ~₹2,500-3,000 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹2,500-3,000 Cr."
+  }
+}

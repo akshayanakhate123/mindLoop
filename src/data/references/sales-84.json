@@ -1,0 +1,95 @@
+{
+  "questionId": "sales-84",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for e-commerce enabler tools (Shopify, GoKwik, Razorpay, etc.) for Indian D2C brands.",
+  "idealClarificationQuestions": [
+    "Total tech stack for Indian D2C: storefront + payments + logistics integration + customer engagement + analytics? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "D2C brands × tech stack ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian D2C brands (active, with revenue): ~25,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Payment gateway fees (Razorpay, Cashfree, PhonePe PG): ~₹2-3L (% of GMV)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total per-brand: ~₹5-6L/year on enabler tech."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1,300-1,500 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian D2C brands (active, with revenue)",
+      "value": "~25,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Storefront (Shopify, Magento, WooCommerce)",
+      "value": "~₹1.5L avg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Payment gateway fees (Razorpay, Cashfree, PhonePe PG)",
+      "value": "~₹2-3L (% of GMV).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Logistics tech (Pickrr, Shiprocket, EasyEcom)",
+      "value": "~₹80K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Customer engagement / WhatsApp commerce (Wati, Interakt, AiSensy)",
+      "value": "~₹50K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Analytics + COD-checkout (GoKwik, Razorpay Magic Checkout)",
+      "value": "~₹40K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total per-brand",
+      "value": "~₹5-6L/year on enabler tech.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total enabler market",
+      "value": "17,500 × ₹5.5L = ~₹960 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, on full digital stack (Shopify + payment gateway + customer engagement + ad spend tools): ~70% = 17,500.",
+    "- Storefront (Shopify, Magento, WooCommerce): ~₹1.5L avg.",
+    "- Payment gateway fees (Razorpay, Cashfree, PhonePe PG): ~₹2-3L (% of GMV).",
+    "- Logistics tech (Pickrr, Shiprocket, EasyEcom): ~₹80K.",
+    "- Customer engagement / WhatsApp commerce (Wati, Interakt, AiSensy): ~₹50K.",
+    "- Analytics + COD-checkout (GoKwik, Razorpay Magic Checkout): ~₹40K.",
+    "Total per-brand: ~₹5-6L/year on enabler tech.",
+    "Total enabler market: 17,500 × ₹5.5L = ~₹960 Cr.",
+    "Plus enterprise D2C (large fashion + beauty): adds ~₹400 Cr.",
+    "Round: ~₹1,300-1,500 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "1,300",
+    "high": "1,500",
+    "ideal": "~₹1,300-1,500 Cr."
+  }
+}

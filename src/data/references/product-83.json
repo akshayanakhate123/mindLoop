@@ -1,0 +1,74 @@
+{
+  "questionId": "product-83",
+  "domain": "product",
+  "question": "Estimate the bandwidth required for India's IPL streaming peak (multiple OTTs combined).",
+  "idealClarificationQuestions": [
+    "Total combined peak concurrent viewers and bandwidth? Yes.",
+    "IPL final, all platforms streaming free + paid? Yes (JioHotstar/JioCinema dominates).",
+    "Peak concurrent moment (e.g., last over)? Yes.",
+    "Bandwidth in Tbps? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Concurrent viewers × per-stream bitrate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "IPL final peak concurrent streamers (2026 estimate): ~80M (2024 IPL final saw 60M, 2025 ~70M, growing)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Streaming quality split: ~30% HD (5 Mbps) = 24M × 5 = 120 Tbps; ~50% SD (2.5 Mbps) = 40M × 2.5 = 100 Tbps; ~20% Ultra-low (1 Mbps for slow networks) = 16M × 1 = 16 Tbps."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus CDN overhead, retries: ~20% buffer = ~290 Tbps."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~250-300 Tbps peak streaming bandwidth needed."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "IPL final peak concurrent streamers (2026 estimate)",
+      "value": "~80M (2024 IPL final saw 60M, 2025 ~70M, growing).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Streaming quality split",
+      "value": "~30% HD (5 Mbps) = 24M × 5 = 120 Tbps; ~50% SD (2.5 Mbps) = 40M × 2.5 = 100 Tbps; ~20% Ultra-low (1 Mbps for slow networks) = 16M × 1 = 16 Tbps.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total egress bandwidth at peak",
+      "value": "~230-240 Tbps.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus CDN overhead, retries",
+      "value": "~20% buffer = ~290 Tbps.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~250-300 Tbps peak streaming bandwidth needed.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Streaming quality split: ~30% HD (5 Mbps) = 24M × 5 = 120 Tbps; ~50% SD (2.5 Mbps) = 40M × 2.5 = 100 Tbps; ~20% Ultra-low (1 Mbps for slow networks) = 16M × 1 = 16 Tbps.",
+    "Plus CDN overhead, retries: ~20% buffer = ~290 Tbps."
+  ],
+  "finalAnswerRange": {
+    "low": "250",
+    "high": "300",
+    "ideal": "~250-300 Tbps peak streaming bandwidth needed."
+  }
+}

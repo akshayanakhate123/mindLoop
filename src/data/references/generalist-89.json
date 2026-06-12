@@ -1,0 +1,84 @@
+{
+  "questionId": "generalist-89",
+  "domain": "generalist",
+  "question": "Estimate the spike in food delivery orders on rainy days in Mumbai.",
+  "idealClarificationQuestions": [
+    "Average rainy day during monsoon vs average non-rainy day? Yes — multiplier basis.",
+    "Mumbai metropolitan? Yes.",
+    "Heavy rain day (red alert) or any rainy day? Heavy rainy day.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Demand uplift behavior on rainy days."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Mumbai average daily food delivery orders (Swiggy + Zomato + Magicpin): ~10 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- More people stay home (increased ordering): +30-40%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Heavy rainy day delivered orders: ~12-12.5 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "If we measure demand (orders attempted): spike is ~30-40% (~13-14 lakh attempted)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Mumbai average daily food delivery orders (Swiggy + Zomato + Magicpin)",
+      "value": "~10 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- More people stay home (increased ordering)",
+      "value": "+30-40%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Successful delivered orders",
+      "value": "+20-25% (despite higher demand).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Heavy rainy day delivered orders",
+      "value": "~12-12.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net spike",
+      "value": "~2-2.5 lakh extra orders.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If we measure demand (orders attempted)",
+      "value": "spike is ~30-40% (~13-14 lakh attempted).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Mumbai average daily food delivery orders (Swiggy + Zomato + Magicpin): ~10 lakh.",
+    "- More people stay home (increased ordering): +30-40%.",
+    "- But supply-side constraint: delivery partners can't ride safely → fewer fulfilled orders, +cancellations.",
+    "- Successful delivered orders: +20-25% (despite higher demand).",
+    "Heavy rainy day delivered orders: ~12-12.5 lakh.",
+    "Net spike: ~2-2.5 lakh extra orders.",
+    "If we measure demand (orders attempted): spike is ~30-40% (~13-14 lakh attempted)."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "If we measure demand (orders attempted): spike is ~30-40% (~13-14 lakh attempted)."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "questionId": "sales-36",
+  "domain": "sales",
+  "question": "Estimate the number of branded apparel retail stores in India (Reliance Trends, Zudio, Westside, Pantaloons, Max, etc.).",
+  "idealClarificationQuestions": [
+    "Organized branded apparel stores (large format multi-brand or own-label retail)? Yes.",
+    "Excludes Indian single-brand boutiques and online-only? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across major chains."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Reliance Trends: ~2,500."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Max Fashion (Landmark): ~480."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "FBB / Big Bazaar Fashion (now Reliance): ~250."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~9,000-10,000 branded apparel retail stores."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Reliance Trends",
+      "value": "~2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Zudio (Trent)",
+      "value": "~700 (rapid expansion).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Westside (Trent)",
+      "value": "~270.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pantaloons (ABFRL)",
+      "value": "~430.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Max Fashion (Landmark)",
+      "value": "~480.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Shoppers Stop",
+      "value": "~110.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Lifestyle",
+      "value": "~110.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Brand Factory",
+      "value": "~70.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~9,000-10,000 branded apparel retail stores."
+  }
+}

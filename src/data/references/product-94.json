@@ -1,0 +1,68 @@
+{
+  "questionId": "product-94",
+  "domain": "product",
+  "question": "Estimate the number of doctors that need to be on Practo / Apollo247 to serve daily online consultation demand.",
+  "idealClarificationQuestions": [
+    "Active monthly doctors (took at least 5 consultations)? Yes.",
+    "Pan-India? Yes.",
+    "Currently (2026)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Daily consultation demand / consultations per doctor per day."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Total online consultations daily India (across Practo, Apollo247, Tata Health, 1mg, MedibuddyJeena): ~500K-700K consultations/day."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average online consult: ~10-15 mins (faster than offline; many follow-ups)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Doctors needed: 175K / 16 = ~11,000 active daily consulting doctors."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "On payroll/empaneled (since not all are active daily): ~30,000-35,000."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Average online consult",
+      "value": "~10-15 mins (faster than offline; many follow-ups).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per doctor productivity (part-time or full-time online)",
+      "value": "~12-20 consults/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Doctors needed",
+      "value": "175K / 16 = ~11,000 active daily consulting doctors.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "On payroll/empaneled (since not all are active daily)",
+      "value": "~30,000-35,000.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Major platform (e.g., Practo or Apollo247) ~25-30% market share = 150K-200K daily consults.",
+    "Doctors needed: 175K / 16 = ~11,000 active daily consulting doctors."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "On payroll/empaneled (since not all are active daily): ~30,000-35,000."
+  }
+}

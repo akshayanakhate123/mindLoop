@@ -1,0 +1,75 @@
+{
+  "questionId": "product-64",
+  "domain": "product",
+  "question": "Estimate WhatsApp Pay adoption among small merchants in India by 2028.",
+  "idealClarificationQuestions": [
+    "Small merchants accepting payments via WhatsApp Pay (P2M)? Yes.",
+    "Currently (2026) and 2028? Both.",
+    "Pan-India? Yes.",
+    "Active monthly merchant (received at least one payment via WhatsApp Pay in past month)? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total small merchants → WhatsApp business app users → WhatsApp Pay accept conversion."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian small merchants (kirana, tailors, etc.): ~70M total."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, accepting any digital payment: ~80% = 20M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "By 2028: assuming RBI lifts user cap, deeper integration, and Meta marketing push, plausible adoption: ~15-20% of WhatsApp Business users = ~5-7M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "If RBI doesn't lift cap and Meta deprioritizes: 2-3M only."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian small merchants (kirana, tailors, etc.)",
+      "value": "~70M total.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "WhatsApp Business app users (catalog, customer chat)",
+      "value": "~25M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, accepting any digital payment",
+      "value": "~80% = 20M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2028",
+      "value": "assuming RBI lifts user cap, deeper integration, and Meta marketing push, plausible adoption: ~15-20% of WhatsApp Business users = ~5-7M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "If RBI doesn't lift cap and Meta deprioritizes",
+      "value": "2-3M only.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, accepting any digital payment: ~80% = 20M.",
+    "Currently using WhatsApp Pay specifically (low — RBI cap and discoverability issues): <5% = ~1M.",
+    "By 2028: assuming RBI lifts user cap, deeper integration, and Meta marketing push, plausible adoption: ~15-20% of WhatsApp Business users = ~5-7M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "If RBI doesn't lift cap and Meta deprioritizes: 2-3M only."
+  }
+}

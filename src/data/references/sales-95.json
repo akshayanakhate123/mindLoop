@@ -1,0 +1,82 @@
+{
+  "questionId": "sales-95",
+  "domain": "sales",
+  "question": "Estimate the B2B opportunity for cold-chain logistics (refrigerated transport + cold storage) in India.",
+  "idealClarificationQuestions": [
+    "Indian cold-chain market value (logistics + storage + processing)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Cold-chain ecosystem."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian cold-chain market FY26: ~₹3.5 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Reefer transport (refrigerated trucks): ~₹40,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Pure cold-chain B2B services (excluding processed value): ~₹90,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Players: Snowman Logistics, Coldex, GATI Kintetsu, Mahindra Logistics cold-chain, Crystal Logistic."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian cold-chain market FY26",
+      "value": "~₹3.5 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Cold storage (8,500+ facilities)",
+      "value": "~₹50,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Reefer transport (refrigerated trucks)",
+      "value": "~₹40,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Processing infra (slaughterhouses, dairy, vaccine cold-chain)",
+      "value": "~₹2.5 lakh Cr (large, mainly perishables value-add).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Pure cold-chain B2B services (excluding processed value)",
+      "value": "~₹90,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which organized",
+      "value": "~₹35,000-40,000 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian cold-chain market FY26: ~₹3.5 lakh Cr.",
+    "- Cold storage (8,500+ facilities): ~₹50,000 Cr.",
+    "- Reefer transport (refrigerated trucks): ~₹40,000 Cr.",
+    "- Processing infra (slaughterhouses, dairy, vaccine cold-chain): ~₹2.5 lakh Cr (large, mainly perishables value-add).",
+    "Pure cold-chain B2B services (excluding processed value): ~₹90,000 Cr.",
+    "Of which organized: ~₹35,000-40,000 Cr.",
+    "Players: Snowman Logistics, Coldex, GATI Kintetsu, Mahindra Logistics cold-chain, Crystal Logistic."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of which organized: ~₹35,000-40,000 Cr."
+  }
+}

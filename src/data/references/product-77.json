@@ -1,0 +1,81 @@
+{
+  "questionId": "product-77",
+  "domain": "product",
+  "question": "Estimate the server load (peak concurrent users) during IPL final ticket booking on BookMyShow.",
+  "idealClarificationQuestions": [
+    "Peak concurrent users in the first 5 minutes of ticket sale? Yes.",
+    "IPL final at Wankhede (~33K capacity) or Narendra Modi (~1L capacity)? Use Narendra Modi for biggest case (~1L seats).",
+    "BookMyShow only or all booking partners (Paytm Insider, Insider.in)? BookMyShow as primary.",
+    "Including users who fail to log in / time out in queue? Yes — total trying."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Stadium capacity → demand multiplier → user/ticket ratio → spike concentration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "IPL final tickets available: ~70K-80K public sale (after sponsor / hospitality)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total interested ticket-buyers nationwide: ~5-7M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Concurrent peak (first 60 seconds): ~50% of these load simultaneously = 2-3M concurrent users."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Successful purchases: 70K tickets / ~3 tix per booking = ~23K successful transactions in first 30 min."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "IPL final tickets available",
+      "value": "~70K-80K public sale (after sponsor / hospitality).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Demand multiplier (typical demand",
+      "value": "supply for IPL final): ~50-100x.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total interested ticket-buyers nationwide",
+      "value": "~5-7M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, attempt to book in first 5 min of sale",
+      "value": "~80% = 4-5.5M unique users hitting site.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Concurrent peak (first 60 seconds)",
+      "value": "~50% of these load simultaneously = 2-3M concurrent users.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Successful purchases",
+      "value": "70K tickets / ~3 tix per booking = ~23K successful transactions in first 30 min.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, attempt to book in first 5 min of sale: ~80% = 4-5.5M unique users hitting site.",
+    "Concurrent peak (first 60 seconds): ~50% of these load simultaneously = 2-3M concurrent users.",
+    "BookMyShow servers see ~2-3 million concurrent users in the peak minute.",
+    "Successful purchases: 70K tickets / ~3 tix per booking = ~23K successful transactions in first 30 min."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Successful purchases: 70K tickets / ~3 tix per booking = ~23K successful transactions in first 30 min."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": "generalist-22",
+  "domain": "generalist",
+  "question": "Estimate the number of people who travel by Indian Railways daily.",
+  "idealClarificationQuestions": [
+    "Daily passenger trips (each boarding = one trip)? Yes.",
+    "Both reserved + unreserved + suburban + metro under IR? All including suburban.",
+    "Year 2026 average day? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual passengers / 365."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual rail passenger trips (FY26 estimate): ~750-800 crore."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Suburban (Mumbai locals, Chennai EMU, Kolkata): ~80 lakh/day."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Reserved (mail/express, Vande Bharat, Rajdhani, Shatabdi): ~30 lakh/day."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~2.1 crore daily."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual rail passenger trips (FY26 estimate)",
+      "value": "~750-800 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Daily",
+      "value": "~2.1-2.2 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Suburban (Mumbai locals, Chennai EMU, Kolkata)",
+      "value": "~80 lakh/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Unreserved long-distance",
+      "value": "~80 lakh/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Reserved (mail/express, Vande Bharat, Rajdhani, Shatabdi)",
+      "value": "~30 lakh/day.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~2.1 crore daily.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual rail passenger trips (FY26 estimate): ~750-800 crore.",
+    "Daily: ~2.1-2.2 crore.",
+    "- Suburban (Mumbai locals, Chennai EMU, Kolkata): ~80 lakh/day.",
+    "- Unreserved long-distance: ~80 lakh/day.",
+    "- Reserved (mail/express, Vande Bharat, Rajdhani, Shatabdi): ~30 lakh/day.",
+    "Total: ~2.1 crore daily."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~2.1 crore daily."
+  }
+}

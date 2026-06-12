@@ -1,0 +1,69 @@
+{
+  "questionId": "sales-41",
+  "domain": "sales",
+  "question": "Estimate the number of authorized service centers Maruti Suzuki has in India.",
+  "idealClarificationQuestions": [
+    "Maruti Service workshops (authorized) including standalone + dealership-attached? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct disclosure."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Maruti Suzuki service workshops: ~5,400 (including authorized service stations)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Maruti Authorized Service Stations (MASS, standalone): ~1,800."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Round: ~5,400 service touchpoints."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Larger than ICICI Bank branch network or any retail chain."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Maruti Suzuki service workshops",
+      "value": "~5,400 (including authorized service stations).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Dealership-attached service",
+      "value": "~3,300 (matches dealer count).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Maruti Authorized Service Stations (MASS, standalone)",
+      "value": "~1,800.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Express service centers (smaller, drive-through)",
+      "value": "~300.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~5,400 service touchpoints.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~5,400 service touchpoints."
+  }
+}

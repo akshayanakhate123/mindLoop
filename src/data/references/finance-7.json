@@ -1,0 +1,87 @@
+{
+  "questionId": "finance-7",
+  "domain": "finance",
+  "question": "Estimate the annual revenue of a top mutual fund AMC (e.g., HDFC AMC or SBI MF).",
+  "idealClarificationQuestions": [
+    "Top-tier AMC with ~₹6-8 lakh Cr AUM? Yes (HDFC AMC scale).",
+    "Total revenue: fund management fees + advisory? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "AUM × management fee rate."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "AUM: ₹7 lakh Cr."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Take blended TER: 0.6%."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Net AMC revenue: ₹4,200 × 52% = ~₹2,200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹2,500-2,700 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "AUM",
+      "value": "₹7 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average management fee (TER weighted blend)",
+      "value": "~0.55-0.70% (debt funds 0.25-0.5%; equity 1.0-1.5%; passive 0.05-0.2%).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take blended TER",
+      "value": "0.6%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Management fee revenue",
+      "value": "₹7L Cr × 0.6% = ~₹4,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Net AMC revenue",
+      "value": "₹4,200 × 52% = ~₹2,200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus advisory + alternate assets revenue",
+      "value": "~₹250 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹2,500-2,700 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "AUM: ₹7 lakh Cr.",
+    "Management fee revenue: ₹7L Cr × 0.6% = ~₹4,200 Cr.",
+    "But AMC retains only ~50-55% of TER (rest goes to distributors as commission + scheme expenses).",
+    "Net AMC revenue: ₹4,200 × 52% = ~₹2,200 Cr.",
+    "Plus advisory + alternate assets revenue: ~₹250 Cr.",
+    "Total: ~₹2,500-2,700 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹2,500-2,700 Cr."
+  }
+}

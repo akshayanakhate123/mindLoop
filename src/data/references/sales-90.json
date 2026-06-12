@@ -1,0 +1,93 @@
+{
+  "questionId": "sales-90",
+  "domain": "sales",
+  "question": "Estimate the B2B sales potential for hotel + restaurant management software in India.",
+  "idealClarificationQuestions": [
+    "Hotel PMS (Property Management Systems): Cloudbeds, Oyo Tech, eZee, Hotelogix + Restaurant POS (Petpooja, Posist)? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Properties + restaurants × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian hotels (organized + budget): ~2 lakh."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Total addressable: ~8 lakh establishments."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Plus inventory management + supply chain (UrbanPiper, Khateraho): ~₹200 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total: ~₹1,800-2,000 Cr Indian hospitality SaaS B2B market."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian hotels (organized + budget)",
+      "value": "~2 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Restaurants formal/POS-eligible",
+      "value": "~6 lakh (per Q77).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total addressable",
+      "value": "~8 lakh establishments.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hotel PMS adoption",
+      "value": "~35% = 70,000 hotels @ ~₹50K/year average = ₹350 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Restaurant POS adoption",
+      "value": "~40% = 2.6 lakh @ ~₹40K = ₹1,040 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus inventory management + supply chain (UrbanPiper, Khateraho)",
+      "value": "~₹200 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus channel manager + online distribution (RateGain, STAAH)",
+      "value": "~₹250 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~₹1,800-2,000 Cr Indian hospitality SaaS B2B market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian hotels (organized + budget): ~2 lakh.",
+    "Restaurants formal/POS-eligible: ~6 lakh (per Q77).",
+    "Total addressable: ~8 lakh establishments.",
+    "Hotel PMS adoption: ~35% = 70,000 hotels @ ~₹50K/year average = ₹350 Cr.",
+    "Restaurant POS adoption: ~40% = 2.6 lakh @ ~₹40K = ₹1,040 Cr.",
+    "Plus inventory management + supply chain (UrbanPiper, Khateraho): ~₹200 Cr.",
+    "Plus channel manager + online distribution (RateGain, STAAH): ~₹250 Cr.",
+    "Total: ~₹1,800-2,000 Cr Indian hospitality SaaS B2B market."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total: ~₹1,800-2,000 Cr Indian hospitality SaaS B2B market."
+  }
+}

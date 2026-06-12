@@ -1,0 +1,81 @@
+{
+  "questionId": "marketing-70",
+  "domain": "marketing",
+  "question": "Estimate the addressable market for premium SUV buyers in India (cars ₹20-50 lakh).",
+  "idealClarificationQuestions": [
+    "Annual SUV buyers in ₹20-50L bracket (Toyota Fortuner, Hyundai Tucson, Tata Harrier top variants, Mahindra Scorpio-N, Jeep Compass, MG Hector, etc.)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total SUV sales × premium-segment share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian SUV market FY26: ~22 lakh units/year (60% of PV market)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- ₹20-30L: ~4 lakh (Scorpio-N, Hyrider, Tucson, Hector, Harrier)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- ₹40-50L: ~70K (Toyota Hilux, Compass diesel, BMW X1, Audi Q3 entry)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~6 lakh annual premium SUV buyers."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian SUV market FY26",
+      "value": "~22 lakh units/year (60% of PV market).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Premium SUV bracket (₹20-50L)",
+      "value": "~6 lakh units/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ₹20-30L",
+      "value": "~4 lakh (Scorpio-N, Hyrider, Tucson, Hector, Harrier).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ₹30-40L",
+      "value": "~1.3 lakh (Fortuner, Innova Hycross, MU-X, Endeavour).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- ₹40-50L",
+      "value": "~70K (Toyota Hilux, Compass diesel, BMW X1, Audi Q3 entry).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~6 lakh annual premium SUV buyers.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian SUV market FY26: ~22 lakh units/year (60% of PV market).",
+    "Premium SUV bracket (₹20-50L): ~6 lakh units/year.",
+    "- ₹20-30L: ~4 lakh (Scorpio-N, Hyrider, Tucson, Hector, Harrier).",
+    "- ₹30-40L: ~1.3 lakh (Fortuner, Innova Hycross, MU-X, Endeavour).",
+    "- ₹40-50L: ~70K (Toyota Hilux, Compass diesel, BMW X1, Audi Q3 entry).",
+    "Round: ~6 lakh annual premium SUV buyers."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~6 lakh annual premium SUV buyers."
+  }
+}

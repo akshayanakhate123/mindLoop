@@ -1,0 +1,96 @@
+{
+  "questionId": "finance-28",
+  "domain": "finance",
+  "question": "Estimate the profitability (EBITDA margin) of EV charging stations in India.",
+  "idealClarificationQuestions": [
+    "Public EV charging station (DC fast charger, Tata Power-tier)? Yes.",
+    "Mature station with reasonable utilization? Yes.",
+    "FY26? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Revenue per kWh × utilization vs cost."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Single DC fast charger (60 kW) capacity: 60 kW × 12 hrs effective use × 365 = 2,62,800 kWh/year theoretical."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Electricity input (commercial rate): ₹8/kWh × 45,000 = ₹3.6 lakh."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total cost: ~₹6.1 lakh."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Profitability hinges entirely on utilization. At <10% utilization, loss-making."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Single DC fast charger (60 kW) capacity",
+      "value": "60 kW × 12 hrs effective use × 365 = 2,62,800 kWh/year theoretical.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average utilization in 2026 (still low)",
+      "value": "~15-20% = 45,000 kWh/year.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Revenue",
+      "value": "45,000 kWh × ₹20/kWh (charging operator selling price) = ~₹9 lakh/year per charger.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Electricity input (commercial rate)",
+      "value": "₹8/kWh × 45,000 = ₹3.6 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Lease + maintenance",
+      "value": "~₹1.5 lakh.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Software/network/payment fees",
+      "value": "~₹50K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Staff (allocated for cluster)",
+      "value": "~₹50K.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total cost",
+      "value": "~₹6.1 lakh.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Single DC fast charger (60 kW) capacity: 60 kW × 12 hrs effective use × 365 = 2,62,800 kWh/year theoretical.",
+    "Average utilization in 2026 (still low): ~15-20% = 45,000 kWh/year.",
+    "Revenue: 45,000 kWh × ₹20/kWh (charging operator selling price) = ~₹9 lakh/year per charger.",
+    "- Electricity input (commercial rate): ₹8/kWh × 45,000 = ₹3.6 lakh.",
+    "- Lease + maintenance: ~₹1.5 lakh.",
+    "- Software/network/payment fees: ~₹50K.",
+    "- Staff (allocated for cluster): ~₹50K.",
+    "Total cost: ~₹6.1 lakh.",
+    "EBITDA per charger: ~₹2.9 lakh = ~32%.",
+    "But: depreciation on ₹15-20 lakh charger over 7 years = ~₹2.5 lakh/year → PAT close to break-even."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Profitability hinges entirely on utilization. At <10% utilization, loss-making."
+  }
+}

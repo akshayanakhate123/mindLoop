@@ -1,0 +1,65 @@
+{
+  "questionId": "product-74",
+  "domain": "product",
+  "question": "Estimate the adoption of Made-in-India payment apps (BHIM, Paytm UPI, NPCI's own) over Google Pay/PhonePe in coming years.",
+  "idealClarificationQuestions": [
+    "Market share by transaction value or volume? Volume.",
+    "Made-in-India = Indian-owned + India-headquartered (Paytm, BHIM, MobiKwik, Cred, Bhim Aadhaar)? Yes.",
+    "Foreign apps with India ops = Google Pay, PhonePe (technically Indian but Walmart-owned), Amazon Pay? PhonePe debatable; treat PhonePe as Indian-headquartered.",
+    "3-year horizon? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Track current shares + regulatory and policy push for Made-in-India."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "UPI market share by volume (mid-2026): PhonePe ~47%, Google Pay ~36%, Paytm ~9%, others (BHIM, Cred, Amazon Pay, Slice, MobiKwik) ~8%."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "If 'Made-in-India' = Paytm + BHIM + Cred + MobiKwik + Slice + Amazon Pay UPI ≈ 17% currently. PhonePe technically has Indian HQ but US parent (Walmart-owned, until full IPO completion)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Projected 3-year shift: PhonePe + Google Pay capped; Paytm rebound (post-RBI lifting curbs), BHIM push: Made-in-India (excluding PhonePe) reaches ~25-28%."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Note answer is sensitive to whether PhonePe is classified as Indian — flag this."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "UPI market share by volume (mid-2026)",
+      "value": "PhonePe ~47%, Google Pay ~36%, Paytm ~9%, others (BHIM, Cred, Amazon Pay, Slice, MobiKwik) ~8%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Drivers for Made-in-India share growth",
+      "value": "NPCI's volume cap regulation (no single app >30% by Dec 2026) — forces redistribution; Bharat-first sentiment; UPI Lite default in BHIM.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 3-year shift",
+      "value": "PhonePe + Google Pay capped; Paytm rebound (post-RBI lifting curbs), BHIM push: Made-in-India (excluding PhonePe) reaches ~25-28%.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "UPI market share by volume (mid-2026): PhonePe ~47%, Google Pay ~36%, Paytm ~9%, others (BHIM, Cred, Amazon Pay, Slice, MobiKwik) ~8%.",
+    "If 'Made-in-India' = Paytm + BHIM + Cred + MobiKwik + Slice + Amazon Pay UPI ≈ 17% currently. PhonePe technically has Indian HQ but US parent (Walmart-owned, until full IPO completion).",
+    "Projected 3-year shift: PhonePe + Google Pay capped; Paytm rebound (post-RBI lifting curbs), BHIM push: Made-in-India (excluding PhonePe) reaches ~25-28%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Projected 3-year shift: PhonePe + Google Pay capped; Paytm rebound (post-RBI lifting curbs), BHIM push: Made-in-India (excluding PhonePe) reaches ~25-28%."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "questionId": "product-10",
+  "domain": "product",
+  "question": "Estimate annual ride bookings on Ola + Uber + Rapido in Delhi NCR.",
+  "idealClarificationQuestions": [
+    "All ride formats: cab + auto + bike taxi? Yes, combined across platforms.",
+    "Geography: Delhi NCR (Delhi + Gurgaon + Noida + Ghaziabad + Faridabad)? Yes — ~32M people.",
+    "Include rentals/outstation? Only city rides.",
+    "Latest year? FY26."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: user base × ride frequency. Segment by office-goer vs occasional vs auto/bike-taxi short-trip user."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Delhi NCR population: ~32M; adults ~22M; smartphone-enabled: ~18M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Ride-hailing app users (any platform, any month): ~40% of smartphone adults = ~7.2M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Monthly rides: 720K×40 + 1.8M×15 + 2.9M×6 + 1.8M×1.5 = 29M + 27M + 17M + 2.7M ≈ 76M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Annual rides Delhi NCR: 76M × 12 = ~910M rides."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Delhi NCR population",
+      "value": "~32M; adults ~22M; smartphone-enabled: ~18M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Ride-hailing app users (any platform, any month)",
+      "value": "~40% of smartphone adults = ~7.2M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Segment",
+      "value": "Daily commuters (office, school) ~10% = 720K @ ~40 rides/month (round trips); Frequent (3-4x/week) ~25% = 1.8M @ ~15/month; Occasional (1-3x/week) ~40% = 2.9M @ ~6/month; Rare (1-2x/month) ~25% = 1.8M @ 1.5.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Monthly rides",
+      "value": "720K×40 + 1.8M×15 + 2.9M×6 + 1.8M×1.5 = 29M + 27M + 17M + 2.7M ≈ 76M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual rides Delhi NCR",
+      "value": "76M × 12 = ~910M rides.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Ride-hailing app users (any platform, any month): ~40% of smartphone adults = ~7.2M.",
+    "Segment: Daily commuters (office, school) ~10% = 720K @ ~40 rides/month (round trips); Frequent (3-4x/week) ~25% = 1.8M @ ~15/month; Occasional (1-3x/week) ~40% = 2.9M @ ~6/month; Rare (1-2x/month) ~25% = 1.8M @ 1.5.",
+    "Monthly rides: 720K×40 + 1.8M×15 + 2.9M×6 + 1.8M×1.5 = 29M + 27M + 17M + 2.7M ≈ 76M.",
+    "Annual rides Delhi NCR: 76M × 12 = ~910M rides."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Annual rides Delhi NCR: 76M × 12 = ~910M rides."
+  }
+}

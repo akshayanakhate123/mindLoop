@@ -1,0 +1,94 @@
+{
+  "questionId": "marketing-75",
+  "domain": "marketing",
+  "question": "Estimate the size of the Indian rural consumer segment for FMCG.",
+  "idealClarificationQuestions": [
+    "Rural India = villages with <5,000 population? Yes.",
+    "FMCG = packaged food + personal care + home care? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Rural population × per-capita FMCG spend."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Rural India population: ~95 crore (65% of India)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Annual rural FMCG spend per HH: ~₹20,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Total Indian FMCG market: ~₹10 lakh Cr (FY26)."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test commercial intuition: revenue, CAC, LTV, ARPU, contribution margin. The pattern: build revenue bottom-up (customers × frequency × price) or top-down (industry size × your share). Always validate against operator disclosures or industry reports."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Rural India population",
+      "value": "~95 crore (65% of India).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural HH",
+      "value": "~20 crore.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average rural HH FMCG spend per month",
+      "value": "~₹1,500-2,000 (vs urban ₹3,500).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Annual rural FMCG spend per HH",
+      "value": "~₹20,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total rural FMCG market",
+      "value": "20 crore × ₹20,000 = ~₹4 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Rural share of total Indian FMCG market",
+      "value": "~40-43%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total Indian FMCG market",
+      "value": "~₹10 lakh Cr (FY26).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹4 lakh Cr rural FMCG market.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Rural India population: ~95 crore (65% of India).",
+    "Rural HH: ~20 crore.",
+    "Average rural HH FMCG spend per month: ~₹1,500-2,000 (vs urban ₹3,500).",
+    "Annual rural FMCG spend per HH: ~₹20,000.",
+    "Total rural FMCG market: 20 crore × ₹20,000 = ~₹4 lakh Cr.",
+    "Total Indian FMCG market: ~₹10 lakh Cr (FY26).",
+    "Round: ~₹4 lakh Cr rural FMCG market.",
+    "These questions test commercial intuition: revenue, CAC, LTV, ARPU, contribution margin. The pattern: build revenue bottom-up (customers × frequency × price) or top-down (industry size × your share). Always validate against operator disclosures or industry reports."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~₹4 lakh Cr rural FMCG market."
+  }
+}

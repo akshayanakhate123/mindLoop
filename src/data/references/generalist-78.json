@@ -1,0 +1,88 @@
+{
+  "questionId": "generalist-78",
+  "domain": "generalist",
+  "question": "Estimate the total flower demand during India's wedding season (Nov-Feb).",
+  "idealClarificationQuestions": [
+    "Cut flowers + garland + petals + decoration? Yes — all weddings only.",
+    "Fresh flowers, not artificial? Fresh.",
+    "Indian wedding season Nov-Feb (~4 months) and post-monsoon Apr-Jun? Use 4-month main season.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Number of weddings in season × flower per wedding."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual Indian weddings: ~10-12M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Average flower consumption per wedding:"
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Modest (30%): 5 kg/wed = 1.8M × 5 = 9 million kg."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~2-2.5 lakh tonnes of flower demand during wedding season."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual Indian weddings",
+      "value": "~10-12M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which during peak season (Nov-Feb)",
+      "value": "~50% = ~5-6M weddings.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Affluent (10%)",
+      "value": "200 kg/wedding (decoration heavy) = 600K wed × 200 = 120 million kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Middle class (60%)",
+      "value": "30 kg/wed = 3.6M × 30 = 108 million kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Modest (30%)",
+      "value": "5 kg/wed = 1.8M × 5 = 9 million kg.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Subtotal",
+      "value": "~237 million kg = ~2.4 lakh tonnes in 4 months.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~2-2.5 lakh tonnes of flower demand during wedding season.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of which during peak season (Nov-Feb): ~50% = ~5-6M weddings.",
+    "- Affluent (10%): 200 kg/wedding (decoration heavy) = 600K wed × 200 = 120 million kg.",
+    "- Middle class (60%): 30 kg/wed = 3.6M × 30 = 108 million kg.",
+    "- Modest (30%): 5 kg/wed = 1.8M × 5 = 9 million kg.",
+    "Subtotal: ~237 million kg = ~2.4 lakh tonnes in 4 months.",
+    "Round: ~2-2.5 lakh tonnes of flower demand during wedding season."
+  ],
+  "finalAnswerRange": {
+    "low": "2",
+    "high": "2.5",
+    "ideal": "~2-2.5 lakh tonnes of flower demand during wedding season."
+  }
+}

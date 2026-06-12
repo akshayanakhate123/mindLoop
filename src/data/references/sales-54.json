@@ -1,0 +1,97 @@
+{
+  "questionId": "sales-54",
+  "domain": "sales",
+  "question": "Estimate the SaaS sales funnel for a B2B Indian SaaS company doing outbound to enterprise prospects.",
+  "idealClarificationQuestions": [
+    "Outbound: cold email + LinkedIn outreach to enterprise decision-makers? Yes.",
+    "Top-of-funnel size: 5,000 outreach attempts? Yes.",
+    "Indian SaaS targeting Indian + US mid-market? Mix.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Top-down outbound funnel."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Outreach (cold email + LinkedIn) sent: 5,000."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Positive replies / call willingness: 25% of replies = 100."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Move to demo + technical eval: 60% of qualified = 15."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Net outreach-to-deal: 3-4 deals from 5,000 outreaches = ~0.07%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Outreach (cold email + LinkedIn) sent",
+      "value": "5,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Opens / engagement",
+      "value": "30% = 1,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Replies (any kind, including 'not interested')",
+      "value": "8% of sent = 400.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Positive replies / call willingness",
+      "value": "25% of replies = 100.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Discovery call held",
+      "value": "70% of positive = 70.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Qualified opportunity (MEDDIC / BANT pass)",
+      "value": "35% of disco = 25.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Move to demo + technical eval",
+      "value": "60% of qualified = 15.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Move to commercial discussion",
+      "value": "60% = 9.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Outreach (cold email + LinkedIn) sent: 5,000.",
+    "Opens / engagement: 30% = 1,500.",
+    "Replies (any kind, including 'not interested'): 8% of sent = 400.",
+    "Positive replies / call willingness: 25% of replies = 100.",
+    "Discovery call held: 70% of positive = 70.",
+    "Qualified opportunity (MEDDIC / BANT pass): 35% of disco = 25.",
+    "Move to demo + technical eval: 60% of qualified = 15.",
+    "Move to commercial discussion: 60% = 9.",
+    "Closed-won deals: 35-40% of commercial = 3-4 deals.",
+    "Net outreach-to-deal: 3-4 deals from 5,000 outreaches = ~0.07%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Net outreach-to-deal: 3-4 deals from 5,000 outreaches = ~0.07%."
+  }
+}

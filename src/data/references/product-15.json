@@ -1,0 +1,94 @@
+{
+  "questionId": "product-15",
+  "domain": "product",
+  "question": "Estimate the TAM for fitness apps (workout + nutrition + wearable-linked) in urban India.",
+  "idealClarificationQuestions": [
+    "Paid TAM only or include free-user advertising potential? Both, with paid as primary.",
+    "Standalone fitness apps (Cure.fit, HealthifyMe, Nike Training, Strava) — include OEM apps (Mi Fit, Boat)? Standalone primarily.",
+    "Urban only or all-India? Urban (Tier 1 + Tier 2).",
+    "Include premium gym/class bookings via app (Cult.fit centers)? Include digital subscription only, not center memberships."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Bottom-up: urban affluent → fitness-conscious segment → willing to pay × ARPU."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Urban India population: ~520M; affluent + middle class: ~250M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Fitness-conscious / wearable owners / gym goers: ~25-30% = ~38M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "TAM: 19M × ₹1,500 = ~₹2,850 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Total TAM: ~₹3,200 Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Urban India population",
+      "value": "~520M; affluent + middle class: ~250M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Adults 18-50 in this segment",
+      "value": "~140M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Fitness-conscious / wearable owners / gym goers",
+      "value": "~25-30% = ~38M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Willing to pay for fitness app subscription at TAM",
+      "value": "~50% = ~19M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Average ARPU",
+      "value": "~₹1,500/year (₹125/month, blended across HealthifyMe ₹3,000/yr to free Nike/Strava paid plans).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "TAM",
+      "value": "19M × ₹1,500 = ~₹2,850 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Add free-tier ad-supported potential",
+      "value": "38M free users × ₹100/yr ad ARPU = ~₹380 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total TAM",
+      "value": "~₹3,200 Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban India population: ~520M; affluent + middle class: ~250M.",
+    "Fitness-conscious / wearable owners / gym goers: ~25-30% = ~38M.",
+    "Willing to pay for fitness app subscription at TAM: ~50% = ~19M.",
+    "Average ARPU: ~₹1,500/year (₹125/month, blended across HealthifyMe ₹3,000/yr to free Nike/Strava paid plans).",
+    "TAM: 19M × ₹1,500 = ~₹2,850 Cr.",
+    "Add free-tier ad-supported potential: 38M free users × ₹100/yr ad ARPU = ~₹380 Cr.",
+    "Total TAM: ~₹3,200 Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Total TAM: ~₹3,200 Cr."
+  }
+}

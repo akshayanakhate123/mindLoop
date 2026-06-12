@@ -1,0 +1,69 @@
+{
+  "questionId": "product-75",
+  "domain": "product",
+  "question": "Estimate the adoption of vernacular content apps (ShareChat, Moj, Josh, Roposo, Chingari) in India by 2028.",
+  "idealClarificationQuestions": [
+    "Active monthly users on vernacular short-video / social apps? Yes.",
+    "By 2028? Yes.",
+    "Pan-India? Yes.",
+    "Counted across apps with overlap (most users on multiple)? Net unique users."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total Indian short-video users → Hindi/regional preference subset → vernacular app adoption."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian short-video app users (Instagram Reels + YouTube Shorts + vernacular apps): ~400M MAU."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Currently on dedicated vernacular apps (ShareChat, Moj, Josh): ~150-180M MAU (significant but losing share to Reels/Shorts since 2022)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Note: ShareChat saw decline post-2022; Moj, Josh stabilized lower."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "These questions test operations and scale thinking: fleet sizes, data center capacity, support headcount, server load. Translate user-side demand into the supply-side resources required. Most go bottom-up (load per unit × units needed) and cross-check with operator disclosures."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Of these, primarily vernacular content consumers",
+      "value": "~250M (Reels and Shorts also have Indic content).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Currently on dedicated vernacular apps (ShareChat, Moj, Josh)",
+      "value": "~150-180M MAU (significant but losing share to Reels/Shorts since 2022).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2028",
+      "value": "vernacular dedicated apps MAU likely flat to declining as Reels/Shorts continue dominating; ~140-160M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Note",
+      "value": "ShareChat saw decline post-2022; Moj, Josh stabilized lower.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian short-video app users (Instagram Reels + YouTube Shorts + vernacular apps): ~400M MAU.",
+    "These questions test operations and scale thinking: fleet sizes, data center capacity, support headcount, server load. Translate user-side demand into the supply-side resources required. Most go bottom-up (load per unit × units needed) and cross-check with operator disclosures."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "4. Capacity / Infrastructure"
+  }
+}

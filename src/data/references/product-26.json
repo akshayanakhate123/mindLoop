@@ -1,0 +1,77 @@
+{
+  "questionId": "product-26",
+  "domain": "product",
+  "question": "How many times does an average urban Indian household order groceries online per month?",
+  "idealClarificationQuestions": [
+    "Online grocery includes BigBasket + Amazon Fresh + Blinkit + Zepto + Instamart? Yes — all aggregators combined.",
+    "Per household or per individual? Per household.",
+    "Urban metro / Tier-1 only or all urban (Tier 1+2)? Urban Tier 1+2.",
+    "Average user (any user who ordered) or average across all households (including non-users)? Average across active grocery-app households."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Segment online grocery shoppers by behavior pattern (top-up vs full-week vs occasional impulse) and weight by share."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Active online grocery shopping households in urban Tier 1+2: ~25M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Heavy quick-commerce + planned weekly users: 25% = 6.25M @ ~10-12 orders/month."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Light users (1-2 a month): 35% = 8.75M @ ~1.5 orders/month."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Weighted average orders/HH/month: (0.25×11 + 0.40×5.5 + 0.35×1.5) = 2.75 + 2.2 + 0.5 = ~5.5 orders/month."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Active online grocery shopping households in urban Tier 1+2",
+      "value": "~25M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Heavy quick-commerce + planned weekly users",
+      "value": "25% = 6.25M @ ~10-12 orders/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regular users (weekly + impulse)",
+      "value": "40% = 10M @ ~5-6 orders/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Light users (1-2 a month)",
+      "value": "35% = 8.75M @ ~1.5 orders/month.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Weighted average orders/HH/month",
+      "value": "(0.25×11 + 0.40×5.5 + 0.35×1.5) = 2.75 + 2.2 + 0.5 = ~5.5 orders/month.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Active online grocery shopping households in urban Tier 1+2: ~25M.",
+    "- Heavy quick-commerce + planned weekly users: 25% = 6.25M @ ~10-12 orders/month.",
+    "- Regular users (weekly + impulse): 40% = 10M @ ~5-6 orders/month.",
+    "- Light users (1-2 a month): 35% = 8.75M @ ~1.5 orders/month.",
+    "Weighted average orders/HH/month: (0.25×11 + 0.40×5.5 + 0.35×1.5) = 2.75 + 2.2 + 0.5 = ~5.5 orders/month."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Weighted average orders/HH/month: (0.25×11 + 0.40×5.5 + 0.35×1.5) = 2.75 + 2.2 + 0.5 = ~5.5 orders/month."
+  }
+}

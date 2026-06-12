@@ -1,0 +1,87 @@
+{
+  "questionId": "generalist-51",
+  "domain": "generalist",
+  "question": "How many petrol pumps are there in India?",
+  "idealClarificationQuestions": [
+    "Operational retail outlets across all OMCs (IOCL + BPCL + HPCL + RIL + Nayara + Shell)? Yes.",
+    "Includes CNG-only and EV charging stations? Petrol pumps only (CNG/EV mention separately).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Sum across major OMCs based on public disclosures + extrapolation."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Oil (IOCL): ~37,000 outlets."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Hindustan Petroleum (HPCL): ~21,500 outlets."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Shell + others: ~700 outlets."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Plus CNG-only stations: ~6,000 (separate count)."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Oil (IOCL)",
+      "value": "~37,000 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Bharat Petroleum (BPCL)",
+      "value": "~22,500 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Hindustan Petroleum (HPCL)",
+      "value": "~21,500 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Reliance (RIL/Jio-bp)",
+      "value": "~2,000 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Nayara Energy (Essar)",
+      "value": "~6,500 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Shell + others",
+      "value": "~700 outlets.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Total",
+      "value": "~90,000 petrol pumps in India.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Plus CNG-only stations",
+      "value": "~6,000 (separate count).",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Shell + others: ~700 outlets."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Plus CNG-only stations: ~6,000 (separate count)."
+  }
+}

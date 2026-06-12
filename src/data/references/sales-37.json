@@ -1,0 +1,81 @@
+{
+  "questionId": "sales-37",
+  "domain": "sales",
+  "question": "Estimate the number of bank branches in a Tier 2 city like Coimbatore.",
+  "idealClarificationQuestions": [
+    "All commercial bank branches (PSU + private + small finance + cooperative)? Yes.",
+    "Coimbatore metro? Yes (~22 lakh population).",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Population × branch density."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "India total bank branches: ~1.78 lakh (per Generalist Q56)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Coimbatore (urban Tier 2, higher banking density than average): ~150 branches/million."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- PSU (SBI, IOB, Canara, Bank of Baroda): ~190."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Small finance + cooperatives: ~30."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "India total bank branches",
+      "value": "~1.78 lakh (per Generalist Q56).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "India population",
+      "value": "~1.45B → branches per million population: ~123 branches/million.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Coimbatore (urban Tier 2, higher banking density than average)",
+      "value": "~150 branches/million.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Coimbatore branches",
+      "value": "22L × 150 / 10L = ~330 branches.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- PSU (SBI, IOB, Canara, Bank of Baroda)",
+      "value": "~190.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Small finance + cooperatives",
+      "value": "~30.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "India total bank branches: ~1.78 lakh (per Generalist Q56).",
+    "India population: ~1.45B → branches per million population: ~123 branches/million.",
+    "Coimbatore (urban Tier 2, higher banking density than average): ~150 branches/million.",
+    "Coimbatore branches: 22L × 150 / 10L = ~330 branches.",
+    "- Small finance + cooperatives: ~30."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Small finance + cooperatives: ~30."
+  }
+}

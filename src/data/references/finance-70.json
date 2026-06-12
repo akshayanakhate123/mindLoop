@@ -1,0 +1,95 @@
+{
+  "questionId": "finance-70",
+  "domain": "finance",
+  "question": "Estimate the size of the Indian D2C industry opportunity by 2030.",
+  "idealClarificationQuestions": [
+    "Total D2C GMV (digitally-native brands selling directly to consumers)? Yes.",
+    "All categories: beauty, food, fashion, electronics, home, wellness? Yes.",
+    "By 2030? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Category-wise D2C TAM."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian D2C market FY26: ~₹1.7 lakh Cr GMV (Inc42 estimate)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Beauty/personal care: ~25% = ₹1.2 lakh Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- Electronics + tech accessories: ~10% = ₹50K Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "- Pet care + others: ~5% = ₹25K Cr."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian D2C market FY26",
+      "value": "~₹1.7 lakh Cr GMV (Inc42 estimate).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Growth CAGR",
+      "value": "~30-35%.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "By 2030",
+      "value": "~₹4.5-5 lakh Cr GMV (~$55-60B).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Beauty/personal care",
+      "value": "~25% = ₹1.2 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Food + nutrition",
+      "value": "~20% = ₹95K Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Fashion + accessories",
+      "value": "~22% = ₹1.05 lakh Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Electronics + tech accessories",
+      "value": "~10% = ₹50K Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Home + lifestyle",
+      "value": "~12% = ₹55K Cr.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Indian D2C market FY26: ~₹1.7 lakh Cr GMV (Inc42 estimate).",
+    "By 2030: ~₹4.5-5 lakh Cr GMV (~$55-60B).",
+    "- Beauty/personal care: ~25% = ₹1.2 lakh Cr.",
+    "- Food + nutrition: ~20% = ₹95K Cr.",
+    "- Fashion + accessories: ~22% = ₹1.05 lakh Cr.",
+    "- Electronics + tech accessories: ~10% = ₹50K Cr.",
+    "- Home + lifestyle: ~12% = ₹55K Cr.",
+    "- Wellness + supplements: ~6% = ₹30K Cr.",
+    "- Pet care + others: ~5% = ₹25K Cr."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "- Pet care + others: ~5% = ₹25K Cr."
+  }
+}

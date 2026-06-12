@@ -1,0 +1,65 @@
+{
+  "questionId": "product-59",
+  "domain": "product",
+  "question": "Estimate the adoption of UPI Lite (offline small-value payments without PIN) in next 2 years.",
+  "idealClarificationQuestions": [
+    "Active UPI Lite users (used Lite for at least one transaction in past month)? Yes.",
+    "By end of 2027 (2 years from now)? Yes.",
+    "Pan-India? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "TAM: existing UPI users → those who do small-value transactions where UPI Lite saves friction → adoption ramp."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Current active UPI users: ~420M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "UPI Lite current adoption (early 2026): ~30M users (NPCI disclosed ~25M+ activations)."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Realistic adoption by end of 2027: ~30-35% of TAM = ~55-60M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "By that time, total UPI users may grow to ~500M, so penetration of total UPI = ~12%."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Current active UPI users",
+      "value": "~420M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "UPI Lite current adoption (early 2026)",
+      "value": "~30M users (NPCI disclosed ~25M+ activations).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Realistic adoption by end of 2027",
+      "value": "~30-35% of TAM = ~55-60M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Of these, frequent small-value transactors (multiple ₹100-500 transactions daily): ~40% = ~168M (TAM for UPI Lite).",
+    "UPI Lite current adoption (early 2026): ~30M users (NPCI disclosed ~25M+ activations).",
+    "Realistic adoption by end of 2027: ~30-35% of TAM = ~55-60M.",
+    "By that time, total UPI users may grow to ~500M, so penetration of total UPI = ~12%."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "By that time, total UPI users may grow to ~500M, so penetration of total UPI = ~12%."
+  }
+}

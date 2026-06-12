@@ -1,0 +1,70 @@
+{
+  "questionId": "generalist-92",
+  "domain": "generalist",
+  "question": "Estimate the e-commerce GMV during 5-day Amazon Great Indian Festival.",
+  "idealClarificationQuestions": [
+    "Amazon India only? Yes.",
+    "5-day kickoff window (Prime Early Access + first wave)? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Annual GMV × festive share × daily concentration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Amazon India annual GMV (FY26): ~$32-35B (~₹2.7-2.9 lakh Cr)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Festive sale (15-20 days) accounts for: ~20-25% of annual GMV = ~₹65,000 Cr."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "First 5-day kickoff window concentrates: ~50% of festive period = ~₹30,000-35,000 Cr."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹30,000-35,000 Cr GMV in Amazon GIF first 5 days."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Amazon India annual GMV (FY26)",
+      "value": "~$32-35B (~₹2.7-2.9 lakh Cr).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Festive sale (15-20 days) accounts for",
+      "value": "~20-25% of annual GMV = ~₹65,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "First 5-day kickoff window concentrates",
+      "value": "~50% of festive period = ~₹30,000-35,000 Cr.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹30,000-35,000 Cr GMV in Amazon GIF first 5 days.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Amazon India annual GMV (FY26): ~$32-35B (~₹2.7-2.9 lakh Cr).",
+    "Festive sale (15-20 days) accounts for: ~20-25% of annual GMV = ~₹65,000 Cr.",
+    "First 5-day kickoff window concentrates: ~50% of festive period = ~₹30,000-35,000 Cr.",
+    "Round: ~₹30,000-35,000 Cr GMV in Amazon GIF first 5 days."
+  ],
+  "finalAnswerRange": {
+    "low": "30,000",
+    "high": "35,000",
+    "ideal": "~₹30,000-35,000 Cr GMV in Amazon GIF first 5 days."
+  }
+}

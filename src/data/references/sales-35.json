@@ -1,0 +1,68 @@
+{
+  "questionId": "sales-35",
+  "domain": "sales",
+  "question": "Estimate the number of fuel pumps Indian Oil (IOC) operates in India.",
+  "idealClarificationQuestions": [
+    "IOC-branded retail outlets? Yes.",
+    "Includes COCO (Company Owned Company Operated) + DODO (Dealer Owned Dealer Operated)? Yes — total.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Direct disclosure."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Indian Oil Corporation retail outlets FY26: ~37,000-38,000 (largest OMC by network)."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- DODO (private dealers): ~93% = ~35,000."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "- COCO (company operated): ~7% = ~2,500."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~37,000 IOC fuel pumps."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Indian Oil Corporation retail outlets FY26",
+      "value": "~37,000-38,000 (largest OMC by network).",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- DODO (private dealers)",
+      "value": "~93% = ~35,000.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- COCO (company operated)",
+      "value": "~7% = ~2,500.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~37,000 IOC fuel pumps.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- DODO (private dealers): ~93% = ~35,000.",
+    "- COCO (company operated): ~7% = ~2,500."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "~37,000 IOC fuel pumps."
+  }
+}

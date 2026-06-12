@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-89",
+  "domain": "marketing",
+  "question": "Estimate the cost per minute of TV ad airtime during IPL prime time.",
+  "idealClarificationQuestions": [
+    "10-second TVC unit rate? Yes — per 10 seconds.",
+    "Prime time IPL match (e.g., evening match)? Yes.",
+    "Per 10-sec rate, multiplied to per-minute? Yes.",
+    "Year 2026? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Industry rate cards."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "IPL 2026 broadcaster (Star/Disney/JioStar) per 10-sec rate during prime evening match:"
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "- Regular prime match: ~₹15-22 lakh / 10-sec."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Per minute (6 × 10-sec): ~₹1.08 Cr/minute on TV."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~₹1.0-1.2 Cr per minute of IPL prime TV ad airtime."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "- Final / India-Pak / opening match",
+      "value": "~₹25-35 lakh / 10-sec.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "- Regular prime match",
+      "value": "~₹15-22 lakh / 10-sec.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Take regular match rate",
+      "value": "~₹18 lakh / 10 seconds.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Per minute (6 × 10-sec)",
+      "value": "~₹1.08 Cr/minute on TV.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "On JioCinema/JioHotstar digital — different model (CPM-based)",
+      "value": "equivalent to ~₹70-100 lakh per minute for premium concurrent inventory.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~₹1.0-1.2 Cr per minute of IPL prime TV ad airtime.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "- Final / India-Pak / opening match: ~₹25-35 lakh / 10-sec.",
+    "- Regular prime match: ~₹15-22 lakh / 10-sec.",
+    "Take regular match rate: ~₹18 lakh / 10 seconds.",
+    "Per minute (6 × 10-sec): ~₹1.08 Cr/minute on TV.",
+    "On JioCinema/JioHotstar digital — different model (CPM-based): equivalent to ~₹70-100 lakh per minute for premium concurrent inventory.",
+    "Round: ~₹1.0-1.2 Cr per minute of IPL prime TV ad airtime."
+  ],
+  "finalAnswerRange": {
+    "low": "1.0",
+    "high": "1.2",
+    "ideal": "~₹1.0-1.2 Cr per minute of IPL prime TV ad airtime."
+  }
+}

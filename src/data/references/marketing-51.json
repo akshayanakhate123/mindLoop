@@ -1,0 +1,83 @@
+{
+  "questionId": "marketing-51",
+  "domain": "marketing",
+  "question": "Estimate the size of premium coffee consumers in India (Starbucks/Blue Tokai/Third Wave/specialty).",
+  "idealClarificationQuestions": [
+    "Premium coffee = café-purchased specialty coffee OR home-prepared specialty (Blue Tokai, Sleepy Owl, Rage)? Both.",
+    "Active monthly consumer (consumed at least once in past month)? Yes.",
+    "Year 2026? Yes.",
+    "Pan-India urban + Tier 2? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Urban affluent funnel: total urban → coffee-drinkers → premium price-acceptors."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Urban + Tier 2 population: ~280M; adults 22-50: ~150M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, coffee-drinkers (vs tea-only): ~50% = 19M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Heavy premium consumers (Starbucks/Third Wave 2+/week): ~1.5M."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Round: ~6-7 million monthly active premium coffee consumers in India."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Urban + Tier 2 population",
+      "value": "~280M; adults 22-50: ~150M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, in income bracket affording ₹250+ coffee (top 25%)",
+      "value": "~38M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, coffee-drinkers (vs tea-only)",
+      "value": "~50% = 19M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Heavy premium consumers (Starbucks/Third Wave 2+/week)",
+      "value": "~1.5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Occasional premium consumers (1-2/month)",
+      "value": "~5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Round",
+      "value": "~6-7 million monthly active premium coffee consumers in India.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Urban + Tier 2 population: ~280M; adults 22-50: ~150M.",
+    "Of these, in income bracket affording ₹250+ coffee (top 25%): ~38M.",
+    "Of these, coffee-drinkers (vs tea-only): ~50% = 19M.",
+    "Of coffee-drinkers, regular premium coffee consumption (cafe + home premium): ~35% = ~6.5M monthly active.",
+    "Heavy premium consumers (Starbucks/Third Wave 2+/week): ~1.5M.",
+    "Round: ~6-7 million monthly active premium coffee consumers in India."
+  ],
+  "finalAnswerRange": {
+    "low": "6",
+    "high": "7",
+    "ideal": "~6-7 million monthly active premium coffee consumers in India."
+  }
+}

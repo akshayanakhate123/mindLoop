@@ -1,0 +1,77 @@
+{
+  "questionId": "product-72",
+  "domain": "product",
+  "question": "Estimate the adoption of AI tutors in IIT-JEE / NEET prep among aspirants by 2027.",
+  "idealClarificationQuestions": [
+    "AI tutor = personalized doubt-solving / problem generation app (PhysicsWallah AI, Doubtnut AI, Embibe AI)? Yes.",
+    "JEE + NEET aspirants combined: ~3M sit JEE Main, ~2.4M sit NEET annually = ~5M aspirants per year.",
+    "Active using AI tutoring features? Yes.",
+    "By 2027? Yes."
+  ],
+  "expectedLogicalStructure": [
+    {
+      "step": 1,
+      "label": "Frame the approach",
+      "description": "Total aspirants × digital learning adoption × AI tool penetration."
+    },
+    {
+      "step": 2,
+      "label": "Calculate",
+      "description": "Annual JEE + NEET aspirants: ~5M."
+    },
+    {
+      "step": 3,
+      "label": "Calculate",
+      "description": "Of these, using any digital prep tool (paid or free): ~80% = 9.6M."
+    },
+    {
+      "step": 4,
+      "label": "Calculate",
+      "description": "Drivers to 2027: PhysicsWallah AI launch, Allen Digital AI, Embibe IIT-Madras AI, ChatGPT/Gemini for problem-solving used informally."
+    },
+    {
+      "step": 5,
+      "label": "Calculate",
+      "description": "Of which paying for premium AI features: ~15-20% = ~1.2-1.5M."
+    }
+  ],
+  "benchmarkAssumptions": [
+    {
+      "parameter": "Annual JEE + NEET aspirants",
+      "value": "~5M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Multi-year prep cohort (Class 11 + 12 + droppers)",
+      "value": "~12M total aspirant pool.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of these, using any digital prep tool (paid or free)",
+      "value": "~80% = 9.6M.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Projected 2027",
+      "value": "~7-8M aspirants using AI tutors.",
+      "reasoning": ""
+    },
+    {
+      "parameter": "Of which paying for premium AI features",
+      "value": "~15-20% = ~1.2-1.5M.",
+      "reasoning": ""
+    }
+  ],
+  "calculationFlow": [
+    "Annual JEE + NEET aspirants: ~5M.",
+    "Multi-year prep cohort (Class 11 + 12 + droppers): ~12M total aspirant pool.",
+    "Of these, using any digital prep tool (paid or free): ~80% = 9.6M.",
+    "Of these, using AI-powered features (doubt-solving, personalized practice): ~50% in 2026 = ~5M.",
+    "Of which paying for premium AI features: ~15-20% = ~1.2-1.5M."
+  ],
+  "finalAnswerRange": {
+    "low": "",
+    "high": "",
+    "ideal": "Of which paying for premium AI features: ~15-20% = ~1.2-1.5M."
+  }
+}
