@@ -146,6 +146,53 @@ export default function FeedbackPage() {
     );
   }
 
+  if (feedbackData.notAttempted) {
+    return (
+      <div className={styles.page}>
+        <motion.div
+          className={styles.notAttemptedCard}
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35 }}
+        >
+          <div className={styles.notAttemptedIcon}>
+            <AlertCircle size={40} color="#F59E0B" />
+          </div>
+          <h1 className={styles.notAttemptedTitle}>Time&apos;s up — challenge not attempted</h1>
+          <p className={styles.notAttemptedDesc}>
+            You didn&apos;t submit an answer before the timer ran out. No score was recorded for this session.
+          </p>
+          {feedbackData.question && (
+            <div className={styles.notAttemptedQuestion}>
+              <p className={styles.notAttemptedQLabel}>The question was</p>
+              <p className={styles.notAttemptedQText}>{feedbackData.question}</p>
+            </div>
+          )}
+          <div className={styles.notAttemptedActions}>
+            <button
+              className={styles.retryBtn}
+              onClick={() => {
+                if (feedbackData.question) {
+                  sessionStorage.setItem("mindloop_retry_question", feedbackData.question);
+                }
+                const sid = feedbackData.streakId;
+                const ridx = feedbackData.dayIndex != null ? feedbackData.dayIndex - 1 : 0;
+                router.push(sid ? `/question?streakId=${sid}&retry=true&retryDayIndex=${ridx}` : `/question?retry=true&retryDayIndex=${ridx}`);
+              }}
+            >
+              <RotateCcw size={16} />
+              Try again
+            </button>
+            <button className={styles.homeBtn} onClick={() => router.push("/home")}>
+              <House size={16} />
+              Go home
+            </button>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
+
   const readiness = feedbackData.InterviewReadiness || "Almost Ready";
   const readinessBadgeClass =
     readiness === "Ready" ? styles.badgeReady :
@@ -407,7 +454,11 @@ export default function FeedbackPage() {
           className={styles.footerBtnSecondary}
           onClick={() => {
             const streakId = feedbackData.streakId;
-            router.push(streakId ? `/question?streakId=${streakId}` : "/question");
+            if (feedbackData.question) {
+              sessionStorage.setItem("mindloop_retry_question", feedbackData.question);
+            }
+            const ridx = feedbackData.dayIndex != null ? feedbackData.dayIndex - 1 : 0;
+            router.push(streakId ? `/question?streakId=${streakId}&retry=true&retryDayIndex=${ridx}` : `/question?retry=true&retryDayIndex=${ridx}`);
           }}
         >
           <RotateCcw size={16} style={{marginRight:'6px'}} />Try Again

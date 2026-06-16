@@ -31,7 +31,7 @@ export default function OnboardingPage() {
   const [step, setStep] = useState(1);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [selectedGoal, setSelectedGoal] = useState<number | null>(null);
+  const [selectedGoals, setSelectedGoals] = useState<number[]>([]);
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
 
@@ -50,7 +50,7 @@ export default function OnboardingPage() {
   }, [router]);
 
   const handleComplete = () => {
-    const goalText = selectedGoal !== null ? GOALS[selectedGoal].title : "";
+    const goalText = selectedGoals.map((i) => GOALS[i].title).join(", ");
     localStorage.setItem("mindloop_name", name.trim());
     localStorage.setItem("mindloop_goal", goalText);
     localStorage.setItem("mindloop_email", email);
@@ -153,22 +153,26 @@ export default function OnboardingPage() {
               {GOALS.map((goal, i) => (
                 <button
                   key={i}
-                  className={`${styles.goalCard} ${selectedGoal === i ? styles.goalCardSelected : ""}`}
-                  onClick={() => setSelectedGoal(i)}
+                  className={`${styles.goalCard} ${selectedGoals.includes(i) ? styles.goalCardSelected : ""}`}
+                  onClick={() =>
+                    setSelectedGoals((prev) =>
+                      prev.includes(i) ? prev.filter((g) => g !== i) : [...prev, i]
+                    )
+                  }
                 >
                   <span className={styles.goalEmoji}>{goal.icon}</span>
                   <div className={styles.goalText}>
                     <p className={styles.goalTitle}>{goal.title}</p>
                     <p className={styles.goalDesc}>{goal.description}</p>
                   </div>
-                  {selectedGoal === i && <span className={styles.goalCheck}><Check size={16} /></span>}
+                  {selectedGoals.includes(i) && <span className={styles.goalCheck}><Check size={16} /></span>}
                 </button>
               ))}
             </div>
 
             <button
               className={styles.primaryBtn}
-              disabled={selectedGoal === null}
+              disabled={selectedGoals.length === 0}
               onClick={handleComplete}
             >
               Get Started →

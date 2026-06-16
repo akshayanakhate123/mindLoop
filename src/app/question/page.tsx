@@ -7,6 +7,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 import styles from "./question.module.css";
 import { Target, Users, Sparkles, Lightbulb, Mic, Flame, Clock, Lock, Brain, ShieldCheck, Pencil, BarChart2, TrendingUp } from "lucide-react";
 import { saveSession, saveStreaks, saveCompletedDay, saveBestStreak } from "@/lib/db";
+import { setNavigationGuard, clearNavigationGuard } from "@/lib/navigationGuard";
 import type { Session } from "@/lib/db";
 
 const FALLBACK_QUESTION = "Estimate the number of ping pong balls that can fit in a Boeing 747.";
@@ -40,7 +41,22 @@ function QuestionPageInner() {
   const [timeoutWarning, setTimeoutWarning] = useState("");
 
   const [finalAnswer, setFinalAnswer] = useState("");
+  const [retryQuestion, setRetryQuestion] = useState<string | null>(null);
   const [streakStartNudge, setStreakStartNudge] = useState<string | null>(null);
+
+  const [showLeaveModal, setShowLeaveModal] = useState(false);
+  const [leaveTarget, setLeaveTarget] = useState<string | null>(null);
+  const hasProgressRef = useRef(false);
+  const [inactivityNudge, setInactivityNudge] = useState<string | null>(null);
+  const inactivityNudgeShownRef = useRef(false);
+  const inactivityTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const nudgeDismissTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const [encourageToast, setEncourageToast] = useState<string | null>(null);
+  const encourageTimer2Ref = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const encourageTimer4Ref = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const encourageTimer8Ref = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const encourageDismissRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [name] = useLocalStorage("mindloop_name", "");
   const [activeStreaksList] = useLocalStorage<any[]>("mindloop_active_streaks", []);
@@ -50,9 +66,13 @@ function QuestionPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const streakId = searchParams.get("streakId") ?? "";
+  const retryParam = searchParams.get("retry") === "true";
+  const retryDayIndexParam = searchParams.get("retryDayIndex");
+  const retryDayIndex = retryDayIndexParam !== null ? parseInt(retryDayIndexParam, 10) : null;
   const recognitionRef = useRef<any>(null);
   const chatRecognitionRef = useRef<any>(null);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
+  const chatBottomRef = useRef<HTMLDivElement>(null);
 
   // ── Derived question data ───────────────────────────────────────────────
   const currentStreak = streakId
@@ -63,16 +83,25 @@ function QuestionPageInner() {
   // Use completion count as the day index — stays in sync with home tab's completedDates.length
   const completedDatesCount: number = currentStreak?.completedDates?.length ?? 0;
   const dayIndex = completedDatesCount;
-  const isStreakComplete = activeQuestions && dayIndex >= activeQuestions.length;
-  const currentQuestionObj = activeQuestions
-    ? activeQuestions[Math.min(dayIndex, activeQuestions.length - 1)]
-    : null;
-  const questionText = currentQuestionObj?.question || FALLBACK_QUESTION;
+  // In retry mode, lock the question object to the original day's index so the
+  // correct questionId, category, difficulty, and hint are used for evaluation.
+  const currentQuestionObj = (() => {
+    if (retryDayIndex !== null && activeQuestions && retryDayIndex >= 0 && retryDayIndex < activeQuestions.length) {
+      return activeQuestions[retryDayIndex];
+    }
+    return activeQuestions ? activeQuestions[Math.min(dayIndex, activeQuestions.length - 1)] : null;
+  })();
+  // Never show the "streak complete" screen mid-retry
+  const isStreakComplete = retryParam ? false : (activeQuestions !== null && dayIndex >= activeQuestions.length);
+  const questionText = retryQuestion || currentQuestionObj?.question || FALLBACK_QUESTION;
   const questionCategory = currentQuestionObj?.category || "Guesstimate";
   const questionDomain = currentQuestionObj?.domain || "generalist";
   // For practice mode (no streak), domain falls back to the question's own domain
   const streakDomain: string = currentStreak?.domain ?? questionDomain;
-  const displayDay = activeQuestions ? Math.min(dayIndex + 1, activeQuestions.length) : 1;
+  // For retry, displayDay reflects the original day (retryDayIndex is 0-based → +1 for display)
+  const displayDay = retryDayIndex !== null
+    ? retryDayIndex + 1
+    : (activeQuestions ? Math.min(dayIndex + 1, activeQuestions.length) : 1);
   const totalDays = activeQuestions?.length || 1;
   const userInitial = (name || "S")[0].toUpperCase();
 
@@ -86,11 +115,144 @@ function QuestionPageInner() {
   };
   const infoFocus = DOMAIN_FOCUS[streakDomain] ?? DOMAIN_FOCUS.Generalist;
 
-  // ── Ref for auto-submit ─────────────────────────────────────────────────
-  const latestStateRef = useRef({ transcriptEntries, liveText, finalAnswer, hintUsed, chatMessages });
+  // ── Ref for auto-submit + timer no-attempt ──────────────────────────────
+  const latestStateRef = useRef({ transcriptEntries, liveText, finalAnswer, hintUsed, chatMessages, questionText, questionCategory, streakDomain, displayDay, totalDays, streakId });
   useEffect(() => {
-    latestStateRef.current = { transcriptEntries, liveText, finalAnswer, hintUsed, chatMessages };
-  }, [transcriptEntries, liveText, finalAnswer, hintUsed, chatMessages]);
+    latestStateRef.current = { transcriptEntries, liveText, finalAnswer, hintUsed, chatMessages, questionText, questionCategory, streakDomain, displayDay, totalDays, streakId };
+  }, [transcriptEntries, liveText, finalAnswer, hintUsed, chatMessages, questionText, questionCategory, streakDomain, displayDay, totalDays, streakId]);
+
+  // ── Track whether user has started work (for back-nav guard) ───────────
+  useEffect(() => {
+    hasProgressRef.current =
+      transcriptEntries.length > 0 ||
+      liveText.trim().length > 0 ||
+      finalAnswer.trim().length > 0 ||
+      chatMessages.length > 0;
+  }, [transcriptEntries, liveText, finalAnswer, chatMessages]);
+
+  // ── Intercept browser back button ───────────────────────────────────────
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.history.pushState(null, "", window.location.href);
+    const handlePopState = () => {
+      window.history.pushState(null, "", window.location.href);
+      setLeaveTarget("back");
+      setShowLeaveModal(true);
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const guardedNavigate = (url: string) => {
+    if (hasProgressRef.current) {
+      setLeaveTarget(url);
+      setShowLeaveModal(true);
+    } else {
+      router.push(url);
+    }
+  };
+
+  const confirmLeave = () => {
+    setShowLeaveModal(false);
+    if (leaveTarget === "back") {
+      router.push("/home");
+    } else if (leaveTarget) {
+      router.push(leaveTarget);
+    }
+  };
+
+  // ── Inactivity nudge (40 s, once per visit) ─────────────────────────────
+  useEffect(() => {
+    if (!mounted) return;
+    const MESSAGES = [
+      "Still with us? Your estimation is waiting.",
+      "Take your best shot. There's no perfect answer here.",
+      "Stuck? Try starting with what you do know.",
+    ];
+
+    const showNudge = () => {
+      if (inactivityNudgeShownRef.current) return;
+      inactivityNudgeShownRef.current = true;
+      setInactivityNudge(MESSAGES[Math.floor(Math.random() * MESSAGES.length)]);
+      nudgeDismissTimerRef.current = setTimeout(() => setInactivityNudge(null), 5000);
+    };
+
+    const resetTimer = () => {
+      if (inactivityNudgeShownRef.current) {
+        setInactivityNudge(null);
+        return;
+      }
+      if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+      inactivityTimerRef.current = setTimeout(showNudge, 30000);
+    };
+
+    resetTimer();
+    window.addEventListener("keydown", resetTimer);
+    window.addEventListener("mousedown", resetTimer);
+    window.addEventListener("touchstart", resetTimer);
+
+    return () => {
+      window.removeEventListener("keydown", resetTimer);
+      window.removeEventListener("mousedown", resetTimer);
+      window.removeEventListener("touchstart", resetTimer);
+      if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+      if (nudgeDismissTimerRef.current) clearTimeout(nudgeDismissTimerRef.current);
+    };
+  }, [mounted]);
+
+  // Dismiss inactivity nudge when recording starts
+  useEffect(() => {
+    if (isRecording && inactivityNudge) setInactivityNudge(null);
+  }, [isRecording, inactivityNudge]);
+
+  // ── Timed encouragement toasts ───────────────────────────────────────────
+  useEffect(() => {
+    if (!mounted) return;
+
+    const MSGS_2 = [
+      "2 minutes in! You are building momentum.",
+      "Great start! Keep that thinking flowing.",
+      "You are doing great so far. Stay with it.",
+    ];
+    const MSGS_4 = [
+      "Halfway there! You are in the zone.",
+      "4 minutes strong. Trust your framework.",
+      "Keep going! Your best thinking is coming through.",
+    ];
+    const MSGS_8 = [
+      "Almost done! Finish strong.",
+      "2 minutes left. Give it everything you have got.",
+      "You are so close. Wrap it up with confidence.",
+    ];
+
+    const pick = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)];
+
+    const showToast = (msg: string) => {
+      if (encourageDismissRef.current) clearTimeout(encourageDismissRef.current);
+      setEncourageToast(msg);
+      encourageDismissRef.current = setTimeout(() => setEncourageToast(null), 4000);
+    };
+
+    encourageTimer2Ref.current = setTimeout(() => showToast(pick(MSGS_2)), 2 * 60 * 1000);
+    encourageTimer4Ref.current = setTimeout(() => showToast(pick(MSGS_4)), 4 * 60 * 1000);
+    encourageTimer8Ref.current = setTimeout(() => showToast(pick(MSGS_8)), 8 * 60 * 1000);
+
+    return () => {
+      if (encourageTimer2Ref.current) clearTimeout(encourageTimer2Ref.current);
+      if (encourageTimer4Ref.current) clearTimeout(encourageTimer4Ref.current);
+      if (encourageTimer8Ref.current) clearTimeout(encourageTimer8Ref.current);
+      if (encourageDismissRef.current) clearTimeout(encourageDismissRef.current);
+    };
+  }, [mounted]);
+
+  // ── Register sidebar navigation guard ────────────────────────────────────
+  useEffect(() => {
+    setNavigationGuard((url) => {
+      setLeaveTarget(url);
+      setShowLeaveModal(true);
+    });
+    return () => clearNavigationGuard();
+  }, []);
 
   // ── Helpers ─────────────────────────────────────────────────────────────
   const formatTime = (s: number) =>
@@ -164,7 +326,7 @@ function QuestionPageInner() {
         const existingRaw = localStorage.getItem("mindloop_sessions");
         const allSessions: Session[] = existingRaw ? JSON.parse(existingRaw) : [];
         const existingIdx = allSessions.findIndex(
-          e => e.question === questionText && e.date?.startsWith(todayStr)
+          e => e.question === questionText && new Date(e.date).toLocaleDateString("sv") === todayStr
         );
         if (existingIdx >= 0) {
           console.log("[SESSION_SAVE_BLOCKED]", {
@@ -271,7 +433,18 @@ function QuestionPageInner() {
   // ── Speech recognition setup ────────────────────────────────────────────
   useEffect(() => {
     setMounted(true);
+
+    // Retry mode: restore the original question from the previous attempt
+    if (retryParam) {
+      const saved = sessionStorage.getItem("mindloop_retry_question");
+      if (saved) {
+        setRetryQuestion(saved);
+        sessionStorage.removeItem("mindloop_retry_question");
+      }
+    }
+
     if (typeof window === "undefined") return;
+
     const SpeechRecognition =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
     if (!SpeechRecognition) return;
@@ -313,7 +486,7 @@ function QuestionPageInner() {
       setTimeLeft((prev) => {
         if (prev > 1) return prev - 1;
         clearInterval(id);
-        const { finalAnswer: fa, transcriptEntries: te, liveText: lt } = latestStateRef.current;
+        const { finalAnswer: fa, transcriptEntries: te, liveText: lt, questionText: qt, questionCategory: qc, streakDomain: sd, displayDay: dd, totalDays: td, streakId: sid } = latestStateRef.current;
         const hasAnswer = fa.trim().length > 0;
         const hasTranscript = te.length > 0 || lt.trim().length > 0;
         if (hasAnswer) {
@@ -321,7 +494,19 @@ function QuestionPageInner() {
         } else if (hasTranscript) {
           setTimeoutWarning("Time's up! Please enter your final estimate to submit.");
         } else {
-          setTimeoutWarning("Time's up! You haven't entered a final answer yet. Please type your estimate and submit.");
+          // Nothing entered — write a not-attempted marker and go straight to feedback
+          const payload = {
+            notAttempted: true,
+            date: new Date().toISOString(),
+            question: qt,
+            category: qc,
+            domain: sd,
+            dayIndex: dd,
+            totalDays: td,
+            streakId: sid,
+          };
+          localStorage.setItem("mindloop_latest_evaluation", JSON.stringify(payload));
+          router.push("/feedback");
         }
         return 0;
       });
@@ -350,6 +535,11 @@ function QuestionPageInner() {
   useEffect(() => {
     transcriptEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [transcriptEntries, liveText]);
+
+  // ── Auto-scroll clarification chat ──────────────────────────────────────
+  useEffect(() => {
+    chatBottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [chatMessages]);
 
   // ── Mic toggle ───────────────────────────────────────────────────────────
   const toggleRecording = () => {
@@ -482,45 +672,58 @@ function QuestionPageInner() {
           <Flame size={16} style={{marginRight:'4px'}} />{streakStartNudge}
         </div>
       )}
+      {encourageToast && (
+        <div className={styles.encourageToast}>
+          {encourageToast}
+        </div>
+      )}
+      {inactivityNudge && (
+        <div className={styles.inactivityToast}>
+          {inactivityNudge}
+        </div>
+      )}
       {/* ── Top bar ── */}
       <motion.div
         className={styles.topBar}
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className={styles.topBarLeft}>
+        {/* Row 1: label + meta badges */}
+        <div className={styles.topRow}>
           <p className={styles.breadcrumb}>
             DAILY CHALLENGE&nbsp;·&nbsp;{questionDomain.toUpperCase()}
           </p>
-          <h1 className={styles.questionTitle}>{questionText}</h1>
-          <p className={styles.tagline}>
-            Sharpen your thinking. Structure your approach. Estimate with clarity.
-          </p>
+          <div className={styles.topBarRight}>
+            <div className={`${styles.statChip} ${timeLeft < 60 ? styles.statChipWarn : ""}`}>
+              <span className={styles.chipIcon}><Clock size={16} /></span>
+              <div>
+                <p className={styles.chipValue}>{formatTime(timeLeft)}</p>
+                <p className={styles.chipLabel}>Time Remaining</p>
+              </div>
+            </div>
+            <div className={styles.statChip}>
+              <span className={styles.chipIcon}><BarChart2 size={16} /></span>
+              <div>
+                <p className={styles.chipValue}>Round {displayDay} of {totalDays}</p>
+                <p className={styles.chipLabel}>Estimation Round</p>
+              </div>
+            </div>
+            <div className={styles.statChip}>
+              <span className={styles.chipIcon}><BarChart2 size={16} /></span>
+              <div>
+                <p className={styles.chipValue}>{currentQuestionObj?.difficulty || "Medium"}</p>
+                <p className={styles.chipLabel}>Difficulty</p>
+              </div>
+            </div>
+            <div className={styles.avatar}>{userInitial}</div>
+          </div>
         </div>
-        <div className={styles.topBarRight}>
-          <div className={`${styles.statChip} ${timeLeft < 60 ? styles.statChipWarn : ""}`}>
-            <span className={styles.chipIcon}><Clock size={16} /></span>
-            <div>
-              <p className={styles.chipValue}>{formatTime(timeLeft)}</p>
-              <p className={styles.chipLabel}>Time Remaining</p>
-            </div>
-          </div>
-          <div className={styles.statChip}>
-            <span className={styles.chipIcon}><BarChart2 size={16} /></span>
-            <div>
-              <p className={styles.chipValue}>Round {displayDay} of {totalDays}</p>
-              <p className={styles.chipLabel}>Estimation Round</p>
-            </div>
-          </div>
-          <div className={styles.statChip}>
-            <span className={styles.chipIcon}><BarChart2 size={16} /></span>
-            <div>
-              <p className={styles.chipValue}>{currentQuestionObj?.difficulty || "Medium"}</p>
-              <p className={styles.chipLabel}>Difficulty</p>
-            </div>
-          </div>
-          <div className={styles.avatar}>{userInitial}</div>
-        </div>
+        {/* Rows 2–4: question title */}
+        <h1 className={styles.questionTitle}>{questionText}</h1>
+        {/* Row 5: tagline */}
+        <p className={styles.tagline}>
+          Sharpen your thinking. Structure your approach. Estimate with clarity.
+        </p>
       </motion.div>
 
 
@@ -574,6 +777,7 @@ function QuestionPageInner() {
                     <em>Interviewer is thinking…</em>
                   </div>
                 )}
+                <div ref={chatBottomRef} />
               </div>
             )}
 
@@ -758,6 +962,20 @@ function QuestionPageInner() {
         </div>
         <span className={styles.bottomBannerTarget}><Target size={20} /></span>
       </motion.div>
+
+      {/* ── Leave challenge modal ── */}
+      {showLeaveModal && (
+        <div className={styles.leaveOverlay} onClick={() => setShowLeaveModal(false)}>
+          <div className={styles.leaveModal} onClick={(e) => e.stopPropagation()}>
+            <h2 className={styles.leaveTitle}>Leave this challenge?</h2>
+            <p className={styles.leaveBody}>Your progress won&apos;t be saved if you go back now.</p>
+            <div className={styles.leaveBtns}>
+              <button className={styles.leaveStayBtn} onClick={() => setShowLeaveModal(false)}>Stay</button>
+              <button className={styles.leaveConfirmBtn} onClick={confirmLeave}>Leave anyway</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

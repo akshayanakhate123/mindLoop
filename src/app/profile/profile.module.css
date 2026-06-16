@@ -92,52 +92,58 @@
   margin-top: -2px;
 }
 
-/* Right: top % */
+/* Right: personal performance comparison */
 .heroRight {
   text-align: right;
   grid-row: 1;
   grid-column: 2;
 }
 
-.topPct {
-  font-size: 2rem;
+.monthCount {
+  font-size: 2.4rem;
   font-weight: 800;
-  color: #16A34A;
-  margin: 0 0 0.15rem;
+  color: var(--foreground);
   line-height: 1;
+  margin: 0;
 }
 
-.topArrow {
-  font-size: 1.4rem;
-}
-
-.topSub {
-  font-size: 0.78rem;
+.monthLabel {
+  font-size: 0.75rem;
   color: var(--text-muted);
-  margin: 0 0 0.6rem;
+  margin: 0.25rem 0 0.5rem;
 }
 
-.progressTrack {
-  width: 180px;
-  height: 8px;
-  background: #E5E7EB;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-left: auto;
-}
-
-.progressFill {
-  height: 100%;
-  background: #22C55E;
-  border-radius: 4px;
-  transition: width 0.6s ease;
-}
-
-.progressPct {
+.trendUp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 0.78rem;
+  font-weight: 600;
+  color: #16A34A;
+  margin: 0;
+}
+
+.trendDown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #DC2626;
+  margin: 0;
+}
+
+.trendNew {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7C3AED;
+  margin: 0;
+}
+
+.trendNeutral {
+  font-size: 0.75rem;
   color: var(--text-muted);
-  margin: 0.3rem 0 0;
-  text-align: right;
+  margin: 0;
 }
 
 /* Chips row — spans full width */

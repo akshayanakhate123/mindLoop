@@ -204,9 +204,9 @@
 }
 
 .goalCardSelected {
-  border-color: var(--primary) !important;
-  background: #FFFBF2 !important;
-  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.12);
+  border-color: #22C55E !important;
+  background: #F0FDF4 !important;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
 }
 
 .goalEmoji {
@@ -238,7 +238,7 @@
 .goalCheck {
   font-size: 0.9rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #22C55E;
   flex-shrink: 0;
   width: 20px;
   text-align: center;

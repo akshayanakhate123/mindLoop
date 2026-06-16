@@ -135,8 +135,20 @@ export default function ChallengesPage() {
 
   const todaySessions = useMemo(() => {
     const todayStr = new Date().toLocaleDateString("sv");
-    return sessions
-      .filter((s) => s.date.startsWith(todayStr) && s.status === "submitted")
+
+    // Keep only the latest submission per question for today
+    const latestByQuestion = new Map<string, SessionEntry>();
+    for (const s of sessions) {
+      if (s.status === "forfeited") continue;
+      const sessionLocalDate = new Date(s.date).toLocaleDateString("sv");
+      if (sessionLocalDate !== todayStr) continue;
+      const existing = latestByQuestion.get(s.question);
+      if (!existing || new Date(s.date) > new Date(existing.date)) {
+        latestByQuestion.set(s.question, s);
+      }
+    }
+
+    return Array.from(latestByQuestion.values())
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [sessions]);
 

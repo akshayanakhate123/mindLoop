@@ -1077,7 +1077,9 @@
 }
 
 .streakScrollCard {
+  width: 320px;
   min-width: 320px;
+  max-width: 320px;
   flex-shrink: 0;
   background: var(--navy);
   border-radius: 16px;

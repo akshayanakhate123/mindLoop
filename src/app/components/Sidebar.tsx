@@ -1,9 +1,12 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { Menu, ChevronLeft } from "lucide-react";
 import styles from "./Sidebar.module.css";
+import { tryNavigate } from "@/lib/navigationGuard";
 
 type NavItem =
   | { href: string; label: string; icon: string; divider?: never }
@@ -74,6 +77,13 @@ function NavIcon({ name }: { name: string }) {
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [collapsed, setCollapsed] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.innerWidth <= 768) {
+      setCollapsed(true);
+    }
+  }, []);
 
   const isActive = (item: NavItem) => {
     if (item.divider || !item.href) return false;
@@ -82,10 +92,19 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className={styles.sidebar}>
+    <aside className={`${styles.sidebar} ${collapsed ? styles.collapsed : ""}`}>
+      {/* Hamburger toggle */}
+      <button
+        className={styles.hamburger}
+        onClick={() => setCollapsed((c) => !c)}
+        aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+      >
+        {collapsed ? <Menu size={18} /> : <ChevronLeft size={18} />}
+      </button>
+
       {/* Logo */}
       <div className={styles.logoWrapper}>
-        <Link href="/home" className={styles.logoLink}>
+        <Link href="/home" className={styles.logoLink} onClick={(e) => { if (!tryNavigate("/home")) e.preventDefault(); }}>
           <Image
             src="/owlly-icon.png"
             alt="MINDLOOP"
@@ -113,28 +132,18 @@ export default function Sidebar() {
               key={`${item.href}-${item.label}`}
               href={item.href!}
               className={`${styles.navItem} ${active ? styles.active : ""}`}
+              onClick={(e) => { if (!tryNavigate(item.href!)) e.preventDefault(); }}
+              title={collapsed ? item.label : undefined}
             >
               <span className={styles.navIcon}>
                 <NavIcon name={item.icon!} />
               </span>
-              <span>{item.label}</span>
+              <span className={styles.navLabel}>{item.label}</span>
             </Link>
           );
         })}
       </nav>
 
-      {/* Bottom back arrow */}
-      <div className={styles.bottom}>
-        <button
-          className={styles.backButton}
-          onClick={() => window.history.back()}
-          aria-label="Go back"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="15 18 9 12 15 6" />
-          </svg>
-        </button>
-      </div>
     </aside>
   );
 }

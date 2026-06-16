@@ -8,8 +8,16 @@ interface HeroBannerProps {
   name: string;
 }
 
+function getGreeting(): string {
+  const h = new Date().getHours();
+  if (h >= 5  && h < 12) return "Good morning";
+  if (h >= 12 && h < 17) return "Good afternoon";
+  if (h >= 17 && h < 21) return "Good evening";
+  return "Hey, night owl";
+}
+
 export function HeroBanner({ name }: HeroBannerProps) {
-  const firstName = name ? name.split(" ")[0] : "Scholar";
+  const firstName = name ? name.split(" ")[0] : null;
 
   return (
     <div className={styles.hero} role="banner" aria-label="Learning journey overview">
@@ -27,8 +35,9 @@ export function HeroBanner({ name }: HeroBannerProps) {
         transition={{ duration: 0.5 }}
       >
         <p className={styles.greeting}>
-          Welcome back,{" "}
-          <span className={styles.greetName}>{firstName}!</span>
+          {getGreeting()}{firstName ? (
+            <>{", "}<span className={styles.greetName}>{firstName}!</span></>
+          ) : "!"}
         </p>
         <p className={styles.greetSub}>
           Consistency builds clarity. You&apos;re doing great.

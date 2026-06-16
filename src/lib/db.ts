@@ -217,7 +217,7 @@ export async function saveSession(session: Session): Promise<void> {
   try { all = raw ? JSON.parse(raw) : []; } catch { all = []; }
 
   const todayStr = new Date().toLocaleDateString("sv");
-  const idx = all.findIndex(s => s.question === session.question && s.date?.startsWith(todayStr));
+  const idx = all.findIndex(s => s.question === session.question && new Date(s.date).toLocaleDateString("sv") === todayStr);
   if (idx >= 0) { all[idx] = session; } else { all.push(session); }
   localStorage.setItem("mindloop_sessions", JSON.stringify(all));
 

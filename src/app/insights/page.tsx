@@ -3,7 +3,7 @@
 import styles from "./insights.module.css";
 import { motion } from "framer-motion";
 import { useState, useEffect, useMemo, useRef } from "react";
-import { loadSessions, loadBestStreak } from "@/lib/db";
+import { loadSessions, loadBestStreak, loadCompletedDays } from "@/lib/db";
 import { Calendar, Flame, Trophy, Target, TrendingUp, ThumbsUp, Lightbulb, MessageSquare, RotateCcw, PartyPopper, AlertTriangle } from "lucide-react";
 
 interface Session {
@@ -85,17 +85,19 @@ function LineChart({ data, color, yKey }: { data: any[]; color: string; yKey: "a
   );
 }
 
-function TypeDonut({ segments }: { segments: { name: string; avg: number; color: string }[] }) {
-  const total = segments.reduce((s, x) => s + x.avg, 0) || 1;
+function TypeDonut({ segments }: { segments: { name: string; avg: number; count: number; color: string }[] }) {
+  // Only include types that have actual sessions in the donut
+  const active = segments.filter(s => s.count > 0);
+  const total = active.reduce((s, x) => s + x.avg, 0) || 1;
   let cumulative = 0;
-  const gradient = segments
-    .map(s => {
-      const pct = (s.avg / total) * 100;
-      const start = cumulative;
-      cumulative += pct;
-      return `${s.color} ${start}% ${cumulative}%`;
-    })
-    .join(", ");
+  const gradient = active.length > 0
+    ? active.map(s => {
+        const pct = (s.avg / total) * 100;
+        const start = cumulative;
+        cumulative += pct;
+        return `${s.color} ${start}% ${cumulative}%`;
+      }).join(", ")
+    : "#E7E5E4 0% 100%";
   return (
     <div className={styles.typeDonutWrap}>
       <div className={styles.typeDonut} style={{ background: `conic-gradient(${gradient})` }}>
@@ -141,6 +143,7 @@ const RANGE_LABELS: Record<RangeKey, string> = {
 export default function InsightsPage() {
   const [sessions, setSessions] = useState<Session[]>([]);
   const [bestStreak, setBestStreak] = useState<number>(0);
+  const [completedDays, setCompletedDays] = useState<string[]>([]);
   const [mounted, setMounted] = useState(false);
   const [range, setRange] = useState<RangeKey>("7");
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -150,6 +153,7 @@ export default function InsightsPage() {
     setMounted(true);
     loadSessions().then(setSessions).catch(() => {});
     loadBestStreak().then(setBestStreak).catch(() => {});
+    loadCompletedDays().then(setCompletedDays).catch(() => {});
   }, []);
 
   // Close dropdown on outside click
@@ -163,64 +167,80 @@ export default function InsightsPage() {
 
   const stats = useMemo(() => {
     const now = new Date();
-    const allSubmitted = sessions.filter(s => s.status === "submitted" || !s.status);
+
+    // ── Dedup: keep only the latest submission per question per LOCAL calendar day ──
+    const dedupMap = new Map<string, Session>();
+    for (const s of sessions) {
+      if (s.status === "forfeited") continue;
+      const localDay = new Date(s.date).toLocaleDateString("sv");
+      const key = `${s.question}||${localDay}`;
+      const existing = dedupMap.get(key);
+      if (!existing || new Date(s.date) > new Date(existing.date)) {
+        dedupMap.set(key, s);
+      }
+    }
+    const allSubmitted = Array.from(dedupMap.values());
+
     const cutoff = new Date(now);
     cutoff.setDate(cutoff.getDate() - parseInt(range));
     const submitted = allSubmitted.filter(s => new Date(s.date) >= cutoff);
     if (submitted.length === 0) return null;
 
-    const avgAccuracy = Math.round(submitted.reduce((acc, s) => acc + s.accuracyScore, 0) / submitted.length);
+    const avgAccuracy  = Math.round(submitted.reduce((acc, s) => acc + s.accuracyScore,  0) / submitted.length);
     const avgStructure = Math.round(submitted.reduce((acc, s) => acc + s.structureScore, 0) / submitted.length);
 
-    const completedDays = [...new Set(submitted.map(s => s.date.split("T")[0]))].sort((a, b) => b.localeCompare(a));
+    // ── Current streak from completedDays (YYYY-MM-DD local dates) ──
+    const sortedDays = [...completedDays].sort((a, b) => b.localeCompare(a));
     let currentStreak = 0;
-    if (completedDays.length > 0) {
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const lastDate = new Date(completedDays[0]);
-      lastDate.setHours(0, 0, 0, 0);
-      const diffDays = Math.floor((today.getTime() - lastDate.getTime()) / 86400000);
-      if (diffDays <= 1) {
+    if (sortedDays.length > 0) {
+      const todayStr    = new Date().toLocaleDateString("sv");
+      const yesterdayStr = (() => { const d = new Date(); d.setDate(d.getDate() - 1); return d.toLocaleDateString("sv"); })();
+      const mostRecent  = sortedDays[0];
+      if (mostRecent === todayStr || mostRecent === yesterdayStr) {
         currentStreak = 1;
-        let prev = lastDate;
-        for (let i = 1; i < completedDays.length; i++) {
-          const curr = new Date(completedDays[i]);
-          curr.setHours(0, 0, 0, 0);
-          if (Math.floor((prev.getTime() - curr.getTime()) / 86400000) === 1) {
+        let prevDay = mostRecent;
+        for (let i = 1; i < sortedDays.length; i++) {
+          const prev = new Date(prevDay + "T12:00:00");
+          prev.setDate(prev.getDate() - 1);
+          if (sortedDays[i] === prev.toLocaleDateString("sv")) {
             currentStreak++;
-            prev = curr;
+            prevDay = sortedDays[i];
           } else break;
         }
       }
     }
 
-    // Aggregate sessions by calendar day, average scores per day
+    // ── Trend: aggregate by LOCAL calendar day ──
     const dayMap: Record<string, { accTotal: number; strTotal: number; count: number }> = {};
     submitted.forEach(s => {
-      const day = s.date.split("T")[0];
+      const day = new Date(s.date).toLocaleDateString("sv"); // local YYYY-MM-DD
       if (!dayMap[day]) dayMap[day] = { accTotal: 0, strTotal: 0, count: 0 };
       dayMap[day].accTotal += s.accuracyScore;
       dayMap[day].strTotal += s.structureScore;
-      dayMap[day].count += 1;
+      dayMap[day].count   += 1;
     });
     const trendData = Object.entries(dayMap)
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([day, d]) => ({
-        dateLabel: new Date(day + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }),
-        accuracy: Math.round(d.accTotal / d.count),
+        // Use noon to avoid any midnight DST edge cases when formatting labels
+        dateLabel: new Date(day + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }),
+        accuracy:  Math.round(d.accTotal / d.count),
         structure: Math.round(d.strTotal / d.count),
       }));
 
     let improvementRate: number | null = null;
     if (submitted.length >= 6) {
-      const last3Avg = submitted.slice(-3).reduce((acc, s) => acc + s.accuracyScore, 0) / 3;
-      const prev3Avg = submitted.slice(-6, -3).reduce((acc, s) => acc + s.accuracyScore, 0) / 3;
+      const sorted = [...submitted].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+      const last3Avg = sorted.slice(-3).reduce((acc, s) => acc + s.accuracyScore, 0) / 3;
+      const prev3Avg = sorted.slice(-6, -3).reduce((acc, s) => acc + s.accuracyScore, 0) / 3;
       improvementRate = Math.round(last3Avg - prev3Avg);
     }
 
+    // ── Performance by type — normalise domain to Title Case ──
     const typeMap: Record<string, { total: number; count: number }> = {};
     submitted.forEach(s => {
-      const t = s.domain ? s.domain.charAt(0).toUpperCase() + s.domain.slice(1) : "General";
+      const raw = s.domain || s.category || "Generalist";
+      const t   = raw.charAt(0).toUpperCase() + raw.slice(1).toLowerCase();
       if (!typeMap[t]) typeMap[t] = { total: 0, count: 0 };
       typeMap[t].total += s.accuracyScore;
       typeMap[t].count += 1;
@@ -228,21 +248,26 @@ export default function InsightsPage() {
     const typeAvgs = Object.entries(typeMap).map(([name, d]) => ({ name, avg: Math.round(d.total / d.count) }));
     typeAvgs.sort((a, b) => b.avg - a.avg);
     const strongest = typeAvgs[0];
-    const weakest = typeAvgs.length > 1 ? typeAvgs[typeAvgs.length - 1] : null;
+    const weakest   = typeAvgs.length > 1 ? typeAvgs[typeAvgs.length - 1] : null;
 
+    // Interview readiness: avg of last 5 sessions sorted by date
+    const sorted5 = [...submitted].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
     const last5Avg = Math.round(
-      submitted.slice(-5).reduce((acc, s) => acc + (s.accuracyScore + s.structureScore) / 2, 0) /
-        Math.min(submitted.length, 5)
+      sorted5.slice(-5).reduce((acc, s) => acc + (s.accuracyScore + s.structureScore) / 2, 0) /
+        Math.min(sorted5.length, 5)
     );
 
     const typeSegments = ALL_TYPES.map(name => ({
       name,
-      avg: typeMap[name] ? Math.round(typeMap[name].total / typeMap[name].count) : 0,
+      avg:   typeMap[name] ? Math.round(typeMap[name].total / typeMap[name].count) : 0,
+      count: typeMap[name]?.count ?? 0,
       color: TYPE_COLORS[name] || "#999",
     }));
 
+    console.log("[INSIGHTS] submitted sessions:", submitted.map(s => ({ domain: s.domain, category: s.category, accuracy: s.accuracyScore, date: s.date })));
+    console.log("[INSIGHTS] typeMap:", JSON.stringify(typeMap));
     return { avgAccuracy, avgStructure, currentStreak, trendData, improvementRate, strongest, weakest, last5Avg, typeSegments, sessionCount: submitted.length };
-  }, [sessions, range]);
+  }, [sessions, range, completedDays]);
 
   const dateRangeLabel = useMemo(() => {
     const end = new Date();
@@ -434,14 +459,15 @@ export default function InsightsPage() {
             <div className={styles.typeLegend}>
               {typeSegments.map(s => (
                 <div key={s.name} className={styles.legendItem}>
-                  <span className={styles.legendDot} style={{ background: s.color }} />
-                  <span className={styles.legendName}>{s.name}</span>
-                  <span className={styles.legendPct}>{s.avg}%</span>
+                  <span className={styles.legendDot} style={{ background: s.count > 0 ? s.color : "#D1D5DB" }} />
+                  <span className={styles.legendName} style={{ color: s.count > 0 ? undefined : "#9CA3AF" }}>{s.name}</span>
+                  <span className={styles.legendPct} style={{ color: s.count > 0 ? undefined : "#D1D5DB" }}>
+                    {s.count > 0 ? `${s.avg}%` : "—"}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
-          <button className={styles.typeExampleBtn} onClick={() => (window.location.href = "/question")}>View All Types →</button>
         </div>
       </motion.div>
 

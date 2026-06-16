@@ -8,7 +8,7 @@ import Image from "next/image";
 import { createBrowserClient } from "@/lib/supabase/client";
 import {
   loadUserProfile, saveUserProfile,
-  loadSessions, loadBestStreak, loadCompletedDays,
+  loadSessions, loadBestStreak, loadCompletedDays, loadStreaks,
 } from "@/lib/db";
 import { Flame, Calendar, Pencil, User, Settings, Mail, Globe, Key, Lock, Brain, TrendingUp, Lightbulb, Trophy, Check } from "lucide-react";
 
@@ -111,6 +111,7 @@ export default function ProfilePage() {
   const [sessions, setSessions]   = useState<Session[]>([]);
   const [bestStreak, setBestStreak] = useState<number>(0);
   const [completedDays, setCompletedDays] = useState<string[]>([]);
+  const [currentStreak, setCurrentStreak] = useState<number>(0);
 
   const [mounted, setMounted] = useState(false);
   const [showApiKey, setShowApiKey] = useState(false);
@@ -132,6 +133,10 @@ export default function ProfilePage() {
     loadSessions().then(setSessions).catch(() => {});
     loadBestStreak().then(setBestStreak).catch(() => {});
     loadCompletedDays().then(setCompletedDays).catch(() => {});
+    loadStreaks().then(streaks => {
+      const max = streaks.reduce((m, s) => Math.max(m, s.currentDay ?? 0), 0);
+      setCurrentStreak(max);
+    }).catch(() => {});
 
     // Get real member-since date from Supabase auth
     const supabase = createBrowserClient();
@@ -153,6 +158,15 @@ export default function ProfilePage() {
       }
     }).catch(() => {});
   }, []);
+
+  const daysThisWeek = useMemo(() => {
+    const now = new Date();
+    const weekStart = new Date(now);
+    weekStart.setDate(weekStart.getDate() - ((weekStart.getDay() + 6) % 7));
+    weekStart.setHours(0, 0, 0, 0);
+    const weekStartStr = weekStart.toLocaleDateString("sv");
+    return completedDays.filter(d => d >= weekStartStr).length;
+  }, [completedDays]);
 
   const stats = useMemo(() => {
     const submitted = sessions.filter(s => s.status === "submitted" || !s.status);
@@ -186,9 +200,19 @@ export default function ProfilePage() {
     const daysThisWeek = [...new Set(submitted.map(s => s.date.split("T")[0]))]
       .filter(d => new Date(d) >= weekStart).length;
 
-    // Top % — fun computed metric based on avg accuracy
-    const topPct = avgAcc >= 90 ? 5 : avgAcc >= 80 ? 10 : avgAcc >= 70 ? 18 : avgAcc >= 60 ? 30 : avgAcc >= 50 ? 45 : 60;
-    const progressPct = Math.round((1 - topPct / 100) * 100);
+    // This month vs last month session counts
+    const now2 = new Date();
+    const thisYear = now2.getFullYear();
+    const thisMonth = now2.getMonth();
+    const lastMonthDate = new Date(thisYear, thisMonth - 1, 1);
+    const thisMonthCount = submitted.filter(s => {
+      const d = new Date(s.date);
+      return d.getFullYear() === thisYear && d.getMonth() === thisMonth;
+    }).length;
+    const lastMonthCount = submitted.filter(s => {
+      const d = new Date(s.date);
+      return d.getFullYear() === lastMonthDate.getFullYear() && d.getMonth() === lastMonthDate.getMonth();
+    }).length;
 
     // Thinking profile
     const typeMap: Record<string, { total: number; count: number }> = {};
@@ -216,7 +240,7 @@ export default function ProfilePage() {
       ? new Date(submitted[0].date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
       : null;
 
-    return { avgAcc, avgStr, streak, daysThisWeek, topPct, progressPct, strongest, weakest, estCount, strImproved, hintFreeCount, firstDate };
+    return { avgAcc, avgStr, streak, daysThisWeek, thisMonthCount, lastMonthCount, strongest, weakest, estCount, strImproved, hintFreeCount, firstDate };
   }, [sessions]);
 
   const handleSave = (e: React.FormEvent) => {
@@ -251,25 +275,36 @@ export default function ProfilePage() {
           </div>
         </div>
         <div className={styles.heroRight}>
-          {stats ? (
-            <>
-              <p className={styles.topPct}>Top {stats.topPct}% <span className={styles.topArrow}><TrendingUp size={14} /></span></p>
-              <p className={styles.topSub}>of the month</p>
-              <div className={styles.progressTrack}>
-                <div className={styles.progressFill} style={{ width: `${stats.progressPct}%` }} />
-              </div>
-              <p className={styles.progressPct}>{stats.progressPct}%</p>
-            </>
-          ) : (
-            <p className={styles.topSub} style={{ color: "#9CA3AF", fontSize: "0.8rem", textAlign: "center" }}>
-              Complete sessions<br />to earn your rank
-            </p>
+          {stats ? (() => {
+            const { thisMonthCount: tmc, lastMonthCount: lmc } = stats;
+            let trendEl: React.ReactNode;
+            if (lmc === 0 && tmc > 0) {
+              trendEl = <p className={styles.trendNew}>New this month!</p>;
+            } else if (lmc === 0 && tmc === 0) {
+              trendEl = <p className={styles.trendNeutral}>No sessions yet. Start your first challenge!</p>;
+            } else if (tmc > lmc) {
+              const pct = Math.round(((tmc - lmc) / lmc) * 100);
+              trendEl = <p className={styles.trendUp}><TrendingUp size={13} style={{marginRight:'4px'}} />Up {pct}% from last month</p>;
+            } else if (tmc < lmc) {
+              const pct = Math.round(((lmc - tmc) / lmc) * 100);
+              trendEl = <p className={styles.trendDown}><TrendingUp size={13} style={{marginRight:'4px', transform:'rotate(180deg)'}} />Down {pct}% from last month</p>;
+            } else {
+              trendEl = <p className={styles.trendNeutral}>Same as last month. Stay consistent!</p>;
+            }
+            return (
+              <>
+                <p className={styles.monthCount}>{tmc}</p>
+                {trendEl}
+              </>
+            );
+          })() : (
+            <p className={styles.trendNeutral}>Complete sessions<br />to see your progress</p>
           )}
         </div>
         {/* Stat chips */}
         <div className={styles.heroChips}>
-          <span className={styles.chipAmber}><Flame size={16} style={{marginRight:'4px'}} />{stats?.streak ?? 0} Day Streak</span>
-          <span className={styles.chipGreen}><Calendar size={16} style={{marginRight:'4px'}} />{stats?.daysThisWeek ?? 0} of 7 days this week</span>
+          <span className={styles.chipAmber}><Flame size={16} style={{marginRight:'4px'}} />{currentStreak} Day Streak</span>
+          <span className={styles.chipGreen}><Calendar size={16} style={{marginRight:'4px'}} />{daysThisWeek} of 7 days this week</span>
         </div>
       </motion.div>
 
@@ -350,8 +385,8 @@ export default function ProfilePage() {
           <div className={styles.consistencyRow}>
             <span className={styles.consistencyCheck}><Check size={16} /></span>
             <p className={styles.consistencyText}>
-              {stats && stats.daysThisWeek > 0 ? (
-                <><strong className={styles.consistencyGreen}>Great consistency!</strong>{" "}You practiced {stats.daysThisWeek} of the last 7 days.</>
+              {daysThisWeek > 0 ? (
+                <><strong className={styles.consistencyGreen}>Great consistency!</strong>{" "}You practiced {daysThisWeek} of the last 7 days.</>
               ) : (
                 <><strong style={{ color: "#9CA3AF" }}>No sessions yet.</strong>{" "}Start your first challenge today!</>
               )}
