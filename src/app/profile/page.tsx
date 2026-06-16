@@ -461,6 +461,9 @@ export default function ProfilePage() {
             onClick={async () => {
               const supabase = createBrowserClient();
               await supabase.auth.signOut();
+              Object.keys(localStorage)
+                .filter((k) => k.startsWith("mindloop_"))
+                .forEach((k) => localStorage.removeItem(k));
               router.push("/");
             }}
           >
