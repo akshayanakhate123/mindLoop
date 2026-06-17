@@ -652,7 +652,7 @@ function QuestionPageInner() {
           animate={{ opacity: 1, scale: 1 }}
         >
           <h1>Streak Complete!</h1>
-          <p>You&apos;ve successfully completed all {activeQuestions.length} days!</p>
+          <p>You&apos;ve successfully completed all {activeQuestions?.length} days!</p>
           <button onClick={() => router.push("/home")} className={styles.completeBtn}>
             Return Home to Start a New Streak
           </button>
