@@ -46,6 +46,7 @@ function QuestionPageInner() {
 
   const [showLeaveModal, setShowLeaveModal] = useState(false);
   const [leaveTarget, setLeaveTarget] = useState<string | null>(null);
+  const [showStartModal, setShowStartModal] = useState(true);
   const hasProgressRef = useRef(false);
   const [inactivityNudge, setInactivityNudge] = useState<string | null>(null);
   const inactivityNudgeShownRef = useRef(false);
@@ -481,7 +482,7 @@ function QuestionPageInner() {
 
   // ── Timer ────────────────────────────────────────────────────────────────
   useEffect(() => {
-    if (!mounted || isStreakComplete || isLoading) return;
+    if (!mounted || isStreakComplete || isLoading || showStartModal) return;
     const id = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev > 1) return prev - 1;
@@ -512,7 +513,7 @@ function QuestionPageInner() {
       });
     }, 1000);
     return () => clearInterval(id);
-  }, [mounted, isStreakComplete, isLoading, submitAssessment]);
+  }, [mounted, isStreakComplete, isLoading, showStartModal, submitAssessment]);
 
   // ── Nudge 1: streak-start toast (day 1 of a new streak) ─────────────────
   useEffect(() => {
@@ -663,9 +664,47 @@ function QuestionPageInner() {
 
   const usedQuestions = chatMessages.filter((m) => m.role === "user").length;
 
+  const difficulty = currentQuestionObj?.difficulty || "Medium";
+  const difficultyColor = difficulty === "Hard" ? "#EF4444" : difficulty === "Easy" ? "#22C55E" : "#F59E0B";
+
   // ── Main render ────────────────────────────────────────────────────────────
   return (
     <div className={styles.page}>
+      {/* ── Challenge start modal ── */}
+      {showStartModal && (
+        <div className={styles.leaveOverlay}>
+          <motion.div
+            className={styles.startModal}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.2 }}
+          >
+            <div className={styles.startModalIconWrap}>
+              <Pencil size={22} color="#142850" />
+            </div>
+            <h2 className={styles.startModalTitle}>Before You Begin</h2>
+            <p className={styles.startModalBody}>
+              Use pen and paper to work through this guesstimate. Structure your assumptions, break the problem down step by step, and commit to a final number.
+            </p>
+            <p className={styles.startModalNote}>
+              If you run out of time, you can always retry the same challenge from your history.
+            </p>
+            <div className={styles.startModalMeta}>
+              <div className={styles.startMetaChip}>
+                <Clock size={14} />
+                <span>10 min</span>
+              </div>
+              <div className={styles.startMetaChip} style={{ background: difficultyColor + "18", color: difficultyColor, borderColor: difficultyColor + "40" }}>
+                <BarChart2 size={14} />
+                <span>{difficulty}</span>
+              </div>
+            </div>
+            <button className={styles.startModalBtn} onClick={() => setShowStartModal(false)}>
+              Got it, Let&apos;s Go
+            </button>
+          </motion.div>
+        </div>
+      )}
       {/* ── Nudge 1: streak-start toast ── */}
       {streakStartNudge && (
         <div className={styles.nudgeToast}>
