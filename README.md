@@ -94,8 +94,3 @@ src/
 
 Deployed on Vercel. Set the same three environment variables in the Vercel dashboard under Project > Settings > Environment Variables. Add your Vercel deployment URL to Supabase's allowed redirect URLs.
 
----
-
-## License
-
-MIT
